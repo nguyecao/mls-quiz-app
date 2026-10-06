@@ -1,5 +1,6 @@
-// MedLab Boards — default question bank
-// Schema: { id, section, chapter, question, options: [4 strings], answer: "A"-"D", explanation, image? (data URI) }
+// MedLab Boards — default question bank (Hematology, Hemostasis & Coagulation, Urinalysis & Body Fluids, Immunology, Clinical Chemistry)
+// Schema: { id, section, chapter, question, options: [4 strings], answer: "A"-"D", explanation, image? (data URI), table? { rows: [[header cells],[row cells],...], note? } }
+// In a question, {{table}} marks where its table appears within the question text.
 window.QUIZ_DEFAULT_QUESTIONS = [
   {
     "id": 1,
@@ -489,7 +490,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "All of these options"
     ],
     "answer": "D",
-    "explanation": "Autoagglutination at room temperature may cause a low RBC count and high MCV"
+    "explanation": "Autoagglutination at room temperature may cause a low RBC count and high MCV from an electronic counter. The Hct will be low because it is calculated from the RBC count. Low RBC count and low Hct cause falsely high values of MCH and MCHC, respectively."
   },
   {
     "id": 36,
@@ -909,7 +910,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "Bite cells"
     ],
     "answer": "C",
-    "explanation": "HP is a membrane defect characterized by a spectrin abnormality and thermal"
+    "explanation": "HP is a membrane defect characterized by a spectrin abnormality and thermal instability. MCV is decreased, and RBCs appear to be budding and fragmented."
   },
   {
     "id": 66,
@@ -1077,7 +1078,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "Pappenheimer bodies"
     ],
     "answer": "B",
-    "explanation": "Thirty to fifty percent of the individuals with anemia of chronic inflammation"
+    "explanation": "Thirty to fifty percent of the individuals with anemia of chronic inflammation demonstrate a microcytic hypochromic blood picture, with decrease in serum iron. Serum iron is decreased because it is unable to escape from the RE cells to be delivered to the NRBCs in bone marrow."
   },
   {
     "id": 78,
@@ -1217,7 +1218,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "Increased RBC count"
     ],
     "answer": "B",
-    "explanation": "The patient will have increased MCV. One of the causes of a macrocytic anemia that"
+    "explanation": "The patient will have increased MCV. One of the causes of a macrocytic anemia that is not megaloblastic is increased reticulocyte count, here noted as increased polychromasia. Reticulocytes are polychromatic macrocytes; therefore, MCV is slightly increased."
   },
   {
     "id": 88,
@@ -1385,7 +1386,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "All of these options"
     ],
     "answer": "D",
-    "explanation": "Both reactive lymphocytes and blasts may have basophilic cytoplasm, a high N:C"
+    "explanation": "Both reactive lymphocytes and blasts may have basophilic cytoplasm, a high N:C ratio, and the presence of prominent nucleoli. Blasts, however, have an extremely fine nuclear chromatin staining pattern as viewed on a Wright– and Giemsa–stained smear."
   },
   {
     "id": 100,
@@ -1721,7 +1722,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "Acute leukemias of ambiguous lineage"
     ],
     "answer": "C",
-    "explanation": "Acute megakaryoblastic leukemia, which is equivalent to FAB M7, is a relatively"
+    "explanation": "Acute megakaryoblastic leukemia, which is equivalent to FAB M7, is a relatively uncommon form of leukemia characterized by neoplastic proliferation of megakaryoblasts and atypical megakaryocytes. Recognition of this entity was aided by the use of platelet peroxidase (PPO) ultrastructural studies. PPO is distinct from myeloperoxidase and is specific for the megakaryocytic cell line. Acute megakaryoblastic leukemia is defined as an acute leukemia in which 50% or greater of the blasts are of megakaryocytic lineage. In the WHO 2016 revision, it is classified under “AML (not otherwise categorized).”"
   },
   {
     "id": 124,
@@ -2071,7 +2072,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "Evidence of clonality"
     ],
     "answer": "D",
-    "explanation": "In the revised 2016 WHO classification, diagnosis of ET requires meeting four major"
+    "explanation": "In the revised 2016 WHO classification, diagnosis of ET requires meeting four major WHO diagnostic criteria, which include: PLT count 450 × 109/L or greater; bone marrow proliferation of megakaryocyte lineage with large and mature megakaryocytes with hyperlobulated nuclei and no or little granulocyte or erythroid proliferation; not meeting WHO criteria for CML, PV, PMF, MDS, or other myeloid neoplasm; and demonstration of JAK2(V617F), CALR, or MPL mutation or other clonal marker. Diagnosis can also be made with the first three major criteria and one minor criterion, either evidence of clonality or absence of reactive thrombocytosis."
   },
   {
     "id": 149,
@@ -2332,7 +2333,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "Bone marrow examination"
     ],
     "answer": "B",
-    "explanation": "The findings of moderate anemia, numerous target cells seen on the peripheral blood"
+    "explanation": "The findings of moderate anemia, numerous target cells seen on the peripheral blood smear, and the presence of NRBCs are often associated with hemoglobinopathies. Hgb electrophoresis at alkaline pH is a commonly performed test to correctly diagnose the type of hemoglobinopathy."
   },
   {
     "id": 167,
@@ -2682,7 +2683,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "Monoclonal antibody against D-dimer"
     ],
     "answer": "D",
-    "explanation": "The D-dimer is the fibrin degradation product generated by the action of plasmin on"
+    "explanation": "The D-dimer is the fibrin degradation product generated by the action of plasmin on cross-linked fibrin formed by XIIIa. The patient’s plasma is mixed with latex particles coated with monoclonal antibodies against D-domains. The test can be automated, or performed manually on a glass slide by looking macroscopically for agglutination. Enzyme-linked immunosorbent assay (ELISA) methods are also available. Normal D- dimer in plasma is less than 2 ng/mL. Increased levels of D-dimer are associated with DIC, thrombolytic therapy, venous thrombosis, and thromboembolic disorders. The D- dimer assay has a 90% to 95% negative predictive value and has been used to rule out thrombosis and thromboembolic disorders."
   },
   {
     "id": 192,
@@ -3004,7 +3005,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "EPI"
     ],
     "answer": "B",
-    "explanation": "Collagen is the only commonly used agent that demonstrates a single-wave"
+    "explanation": "Collagen is the only commonly used agent that demonstrates a single-wave (monophasic) response preceded by a lag time."
   },
   {
     "id": 215,
@@ -3326,7 +3327,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "Factor IX"
     ],
     "answer": "B",
-    "explanation": "Factor V (common pathway factor) deficiency is most likely suspected because both"
+    "explanation": "Factor V (common pathway factor) deficiency is most likely suspected because both PT and APTT are prolonged, and both are corrected when mixed with normal plasma."
   },
   {
     "id": 238,
@@ -3942,7 +3943,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "ACT"
     ],
     "answer": "C",
-    "explanation": "The anti–factor Xa heparin assay is used to monitor LMWH therapy, when required,"
+    "explanation": "The anti–factor Xa heparin assay is used to monitor LMWH therapy, when required, because the APTT test is insensitive to LMWH. The assay can be performed by chromogenic endpoint detection used on automated analyzers. The principle of the test is to measure the inhibition of factor Xa by heparin. The reagent is a mixture of a fixed concentration of factor Xa, a substrate which is specific for factor Xa, and a fixed concentration of AT. Some kits rely on the AT in the patient’s plasma. Heparin forms a complex with AT and factor Xa (AT–heparin–factor Xa). Excess free factor Xa cleaves the chromogenic substrate and releases a yellow product. The color intensity of the product is inversely proportional to plasma heparin concentration and is measured by a photodetector at 405 nm. LMWH therapy usually does not require monitoring; however, exceptions include pediatric, obese, and pregnant patients and those with renal failure."
   },
   {
     "id": 282,
@@ -4222,7 +4223,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "Lupus anticoagulant"
     ],
     "answer": "B",
-    "explanation": "The absence of a positive family history in this patient indicates acquired"
+    "explanation": "The absence of a positive family history in this patient indicates acquired coagulopathy. Because both the PT and APTT test results are abnormal, the clotting factor involved is most probably in the common pathway. The lack of correction by mixing studies suggests the presence of an inhibitor. Factor V antibodies are the most common antibodies among the clotting factors of the common pathway (I, II, V, and X). Factor V antibodies are reported to be associated with surgery; some antibiotics, such as streptomycin; exposure to blood products or the bovine form of “fibrin glue.” Patients with antibodies to factor V may require long-term therapy with immunosuppressive drugs. Acute bleeding episodes may be treated by platelet transfusions. The PT test is normal in patients with factor VIII deficiency and factor VIII inhibitor. Lupus anticoagulant is not present with bleeding unless associated with coexisting thrombocytopenia."
   },
   {
     "id": 302,
@@ -5062,7 +5063,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "116 mL/min"
     ],
     "answer": "B",
-    "explanation": "The clearance formula is U ÷ P × V × 1.73/A, where U = urine creatinine (mg/dL), P"
+    "explanation": "The clearance formula is U ÷ P × V × 1.73/A, where U = urine creatinine (mg/dL), P = plasma creatinine (mg/dL), V = urine volume (mL/min), and 1.73 = mean body surface area (m2): 100 mg/dL ÷ 1.2 mg/dL × 1.4L/day × 1,000 mL/L × 1 day/1,440 min × (1.73 m2 ÷ 1.8 m2) = 78 mL/min Note that the creatinine clearance is low (lower reference limit approximately 95 mL/min for males and 85 mL/min for females), although the serum creatinine is still within normal limits (0.5–1.2 mg/dL). The clearance test is more sensitive if done properly because as serum creatinine goes up, urine creatinine goes down."
   },
   {
     "id": 362,
@@ -5692,7 +5693,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "Stones are usually composed of single salts"
     ],
     "answer": "A",
-    "explanation": "Three-fourths of all stones contain calcium, and three-fourths of these contain"
+    "explanation": "Three-fourths of all stones contain calcium, and three-fourths of these contain calcium oxalate. Stones are usually composed of several inorganic salts, but calcium oxalate is the most common component of urinary stones. Oxalates are hard, dark, and coarse stones. Uric acid stones are always pigmented yellow to reddish brown. They are small translucent stones not apparent on radiography. Stones made of primarily calcium phosphate (as hydroxyapatite) are light and crumble easily. Stones made of struvite (ammonium magnesium phosphate) are radiodense and lodge in the renal pelvis, forming an outline of the structures resembling the antlers of a deer (staghorn calculi)."
   },
   {
     "id": 407,
@@ -6252,7 +6253,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "20,000/μL 5% 500,000/μL"
     ],
     "answer": "A",
-    "explanation": "The WBC count of normal joint fluid is 200/µL or less. Values greater than 5,000/µL"
+    "explanation": "The WBC count of normal joint fluid is 200/µL or less. Values greater than 5,000/µL cause the fluid to be purulent and occur in septic arthritis, RA, and gout. WBC counts greater than 50,000 µL indicate septic arthritis. The majority of WBCs in normal fluid are monocytes, which usually account for 50% to 65%. Neutrophils and lymphocytes should account for no greater than 25% each. An increase in RBCs occurs in cases of infectious and hemorrhagic arthritis or results from a traumatic tap. Hemorrhagic fluid will appear turbid, red to brown, and often clotted. Inflammatory arthritis can allow fibrinogen to enter the fluid and thus clot. Fluid from a person with hemophilia will not clot in spite of the bloody appearance."
   },
   {
     "id": 447,
@@ -6672,7 +6673,7 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "Plasma lipase"
     ],
     "answer": "C",
-    "explanation": "Digestive enzyme tests are used to identify infants and children with pancreatic"
+    "explanation": "Digestive enzyme tests are used to identify infants and children with pancreatic insufficiency as a consequence of cystic fibrosis, and adults who have chronic pancreatitis. Such tests include fecal trypsin and chymotrypsin, serum immunoreactive trypsin, serum lipase, and fecal elastase-1. Fecal chymotrypsin is somewhat more sensitive in diagnosing pancreatic insufficiency and chronic pancreatitis than fecal trypsin or serum immunoreactive trypsin, but the most sensitive and specific enzyme test is fecal elastase-1, which is low in about 90% of persons with cystic fibrosis as well as pancreatic insufficiency and in greater than 75% of adults with moderate to severe chronic pancreatitis. Lipase is neither sensitive nor specific for chronic pancreatitis."
   },
   {
     "id": 477,
@@ -7162,6 +7163,10871 @@ window.QUIZ_DEFAULT_QUESTIONS = [
       "A manual RBC and WBC count should be performed and reported instead"
     ],
     "answer": "A",
-    "explanation": "Electronic cell counters are validated for body fluid cell counts with specific"
+    "explanation": "Electronic cell counters are validated for body fluid cell counts with specific minimum detection limits. For most counters, this is 50 to 200 total nucleated cells (TNCs)/µL and 10,000 RBC/µL. Specialized counters using fluorescent and image analysis can achieve low end sensitivities for both TNC and RBC counts of 0 to 1/µL. Because the RBCs are lysed in the WBC bath, the WBC count represents the number of nucleated cells present. When cell counters that perform CBCs are used, the WBCs are not lysed in the RBC bath and would be counted as RBCs. In this case, the empyemic fluid would cause the RBC count to be erroneously elevated, and this should be corrected before reporting by subtracting the WBC count from the RBC count."
+  },
+  {
+    "id": 512,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "From the following, identify a specific component of the adaptive immune system that is formed in response to antigenic stimulation:",
+    "options": [
+      "Lysozyme",
+      "Complement",
+      "Commensal organisms",
+      "Immunoglobulin (Ig)"
+    ],
+    "answer": "D",
+    "explanation": "Ig is a specific part of the adaptive immune system and is formed only in response to a specific antigenic stimulation. Complement, lysozyme, and commensal organisms all act nonspecifically as a part of the adaptive immune system. These three components do not require any type of specific antigenic stimulation."
+  },
+  {
+    "id": 513,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which two organs are considered the primary lymphoid organs in which immunocompetent cells originate and mature?",
+    "options": [
+      "Thyroid and Peyer patches",
+      "Thymus and bone marrow",
+      "Spleen and mucosal-associated lymphoid tissue (MALT)",
+      "Lymph nodes and thoracic duct"
+    ],
+    "answer": "B",
+    "explanation": "Bone marrow and the thymus are considered primary lymphoid organs because immunocompetent cells either originate from them or mature in them. Some immunocompetent cells mature or reside in bone marrow (the source of all hematopoietic cells) until transported to the thymus, spleen, or Peyer patches, where they process antigen or manufacture antibody. T lymphocytes, after originating in bone marrow, travel to the thymus to mature and differentiate."
+  },
+  {
+    "id": 514,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "What type of B cells is formed after antigen stimulation?",
+    "options": [
+      "Plasma cells and memory B cells",
+      "Mature B cells",
+      "Antigen-dependent B cells",
+      "Receptor-activated B cells"
+    ],
+    "answer": "A",
+    "explanation": "Mature B cells exhibit surface Ig that may cross-link a foreign antigen, thus forming the activated B cell and leading to capping and internalization of antigen. The activated B cell gives rise to plasma cells that produce and secrete Igs and memory cells that reside in lymphoid organs."
+  },
+  {
+    "id": 515,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "T cells travel from bone marrow to the thymus for maturation. What is the correct order of the maturation sequence for T cells in the thymus?",
+    "options": [
+      "Bone marrow to the cortex; after thymic education, released back to peripheral circulation",
+      "Maturation and selection occur in the cortex; migration to the medulla; release of mature T cells to secondary lymphoid organs",
+      "Storage in either the cortex or medulla; release of T cells into the peripheral circulation",
+      "Activation and selection occur in the medulla; mature T cells are stored in the cortex until activated by antigen"
+    ],
+    "answer": "B",
+    "explanation": "Immature T cells travel from bone marrow to the thymus to mature into functional T cells. Once in the thymus, T cells undergo a selection and maturation sequence that begins in the cortex and moves to the medulla of the thymus. Thymic factors, such as thymosin and thymopoietin, and cells within the thymus, such as macrophages and dendritic cells, assist in this sequence. After completion of the maturation cycle, T cells are released to secondary lymphoid organs to await antigen recognition and activation."
+  },
+  {
+    "id": 516,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which cluster of differentiation (CD) marker is the most specific identifying marker for mature T cells?",
+    "options": [
+      "CD1",
+      "CD2",
+      "CD3",
+      "CD4 or CD8"
+    ],
+    "answer": "C",
+    "explanation": "The CD3 marker appears during the early stages of T-cell development and can be used to differentiate T cells from other lymphocytes."
+  },
+  {
+    "id": 517,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which markers are found on mature, peripheral helper T cells?",
+    "options": [
+      "CD1, CD2, CD4",
+      "CD2, CD3, CD8",
+      "CD1, CD3, CD4",
+      "CD2, CD3, CD4"
+    ],
+    "answer": "D",
+    "explanation": "Mature, peripheral helper T cells have the CD2, CD3 (mature T cell), and CD4 (helper) markers."
+  },
+  {
+    "id": 518,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which T cells express the CD8 marker and act specifically to kill tumors or virally infected cells?",
+    "options": [
+      "Helper T cells",
+      "Suppressor T cells",
+      "Cytotoxic T cells (TC cells)",
+      "Regulator T cells"
+    ],
+    "answer": "C",
+    "explanation": "TC cells recognize antigen in association with major histocompatibility complex (MHC) class I complexes and act against target cells that express foreign antigens. These include viral antigens and the HLAs that are the target of graft rejection."
+  },
+  {
+    "id": 519,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "How are TC cells and natural killer (NK) cells similar?",
+    "options": [
+      "Require antibody to be present",
+      "Effective against virally infected cells",
+      "Recognize antigen in association with human leukocyte antigen (HLA) class II markers",
+      "Do not bind to infected cells"
+    ],
+    "answer": "B",
+    "explanation": "Both TC and NK cells are effective against virally infected cells, and neither requires antibody to be present to bind to infected cells. NK cells do not exhibit MHC class restriction, whereas activation of TC cells requires the presence of MHC class I molecules in association with the viral antigen."
+  },
+  {
+    "id": 520,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "What is the name of the process by which phagocytic cells are attracted to a substance, such as a bacterial peptide?",
+    "options": [
+      "Diapedesis",
+      "Degranulation",
+      "Chemotaxis",
+      "Phagotaxis"
+    ],
+    "answer": "C",
+    "explanation": "Chemotaxis is the process by which phagocytic cells are attracted toward an area where they detect a disturbance in the normal functions of body tissues. Products from bacteria and viruses, complement components, coagulation proteins, and cytokines from other immune cells may all act as chemotactic factors."
+  },
+  {
+    "id": 521,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "All of the following are immunologic functions of complement except:",
+    "options": [
+      "Induction of an antiviral state",
+      "Opsonization",
+      "Chemotaxis",
+      "Anaphylatoxin formation"
+    ],
+    "answer": "A",
+    "explanation": "Complement components are serum proteins that function in opsonization, chemotaxis, and anaphylatoxin formation but do not induce an antiviral state in target cells. This function is performed by interferons."
+  },
+  {
+    "id": 522,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which complement component is found in both the classic and alternative pathways?",
+    "options": [
+      "C1",
+      "C4",
+      "Factor D",
+      "C3"
+    ],
+    "answer": "D",
+    "explanation": "C3 is found in both the classic and alternative (alternate) pathways of the complement system. In the classic pathway, C3b forms a complex on the cell with C4b2a that enzymatically cleaves C5. In the alternative pathway, C3b binds to an activator on the cell surface. It forms a complex with factor B called C3bBb, which, like C4b2a3b, can split C5."
+  },
+  {
+    "id": 523,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which Ig(s) help(s) initiate the classic complement pathway?",
+    "options": [
+      "IgA and IgD",
+      "IgM only",
+      "IgG and IgM",
+      "IgG only"
+    ],
+    "answer": "C",
+    "explanation": "Both IgG and IgM are the Igs that help to initiate the activation of the classic complement pathway. IgM is, however, a more potent complement activator."
+  },
+  {
+    "id": 524,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "How is complement activity destroyed in vitro?",
+    "options": [
+      "Heating serum at 56°C for 30 minutes",
+      "Keeping serum at room temperature of 22°C for 1 hour",
+      "Heating serum at 37°C for 45 minutes",
+      "Freezing serum at 0°C for 24 hours"
+    ],
+    "answer": "A",
+    "explanation": "Complement activity in serum, in vitro, is destroyed by heating serum at 56°C for 30 minutes. In test procedures where complement may interfere with the test system, it may be necessary to destroy complement activity in the test sample by heat inactivation."
+  },
+  {
+    "id": 525,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "What is the purpose of C3a, C4a, and C5a, the split products of the complement cascade?",
+    "options": [
+      "To bind with specific membrane receptors of lymphocytes and cause release of cytotoxic substances",
+      "To cause increased vascular permeability, contraction of smooth muscle, and release of histamine from basophils",
+      "To bind with membrane receptors of macrophages to facilitate phagocytosis and the removal of debris and foreign substances",
+      "To regulate and degrade membrane cofactor protein after activation by C3 convertase"
+    ],
+    "answer": "B",
+    "explanation": "C3a, C4a, and C5a are split products of the complement cascade that participate in various biological functions, such as vasodilation and smooth muscle contraction. These small peptides act as anaphylatoxins, for example, effector molecules that participate in the inflammatory response to assist in the destruction and clearance of foreign antigens."
+  },
+  {
+    "id": 526,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which region of the Ig molecule can bind antigen?",
+    "options": [
+      "Fragment antigen binding (Fab)",
+      "Fragment crystallizable (Fc)",
+      "Constant light (CL)",
+      "Constant heavy (CH)"
+    ],
+    "answer": "A",
+    "explanation": "Fab is the region of the Ig molecule that can bind antigen. Two Fab fragments are formed from hydrolysis of the Ig molecule by papain. Each consists of a light chain and the VH and CH1 regions of the heavy chain. The variable regions of the light and heavy chains interact, forming a specific antigen-combining site."
+  },
+  {
+    "id": 527,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which region determines whether an Ig molecule can fix complement?",
+    "options": [
+      "Variable heavy (VH)",
+      "Constant heavy (CH)",
+      "Variable light (VL)",
+      "Constant light (CL)"
+    ],
+    "answer": "B",
+    "explanation": "The composition and structure of the constant region of the heavy chain determine whether that Ig will fix complement. Fc is formed by partial Ig digestion with papain and includes the CH2 and CH3 domains of both heavy chains. The complement component C1q molecule will bind to the CH2 region of an IgG or IgM molecule."
+  },
+  {
+    "id": 528,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which Ig class(es) has (have) a J-chain?",
+    "options": [
+      "IgM",
+      "IgE and IgD",
+      "IgM and surface IgA (sIgA)",
+      "IgG3 and IgA"
+    ],
+    "answer": "C",
+    "explanation": "Both IgM and sIgA have a J-chain joining individual molecules together; the J-chain in IgM joins five molecules and the J-chain in sIgA joins two molecules."
+  },
+  {
+    "id": 529,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which Ig appears first in the primary immune response?",
+    "options": [
+      "IgG",
+      "IgM",
+      "IgA",
+      "IgE"
+    ],
+    "answer": "B",
+    "explanation": "The first antibody to appear in the primary immune response to an antigen is IgM. The titer of antiviral IgM (e.g., IgM antibody to cytomegalovirus [anti-CMV]) is more specific for acute or active viral infection than IgG and may be measured to help differentiate active infection from prior infection."
+  },
+  {
+    "id": 530,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which immunoglobulin appears in highest titer in the secondary response?",
+    "options": [
+      "IgG",
+      "IgM",
+      "IgA",
+      "IgE"
+    ],
+    "answer": "A",
+    "explanation": "A high titer of IgG characterizes the secondary immune response. Consequently, IgG antibodies comprise about 80% of the total Ig concentration in normal serum."
+  },
+  {
+    "id": 531,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which Ig can cross the placenta?",
+    "options": [
+      "IgG",
+      "IgM",
+      "IgA",
+      "IgE"
+    ],
+    "answer": "A",
+    "explanation": "IgG is the only Ig class that can cross the placenta. All subclasses of IgG can cross the placenta, but IgG2 crosses more slowly. This process requires recognition of the Fc region of the IgG by placental cells. These cells take up the IgG from maternal blood and secrete it into fetal blood, providing humoral immunity to the neonate for the first few months after delivery."
+  },
+  {
+    "id": 532,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which Ig cross-links mast cells to release histamine?",
+    "options": [
+      "IgG",
+      "IgM",
+      "IgA",
+      "IgE"
+    ],
+    "answer": "D",
+    "explanation": "IgE is the Ig that cross-links with basophils and mast cells. IgE causes the release of such immune response modifiers as histamine and mediates an allergic immune response."
+  },
+  {
+    "id": 533,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "All of the following are functions of Igs except:",
+    "options": [
+      "Neutralizing toxic substances",
+      "Facilitating phagocytosis through opsonization",
+      "Interacting with TC cells to lyse viruses",
+      "Combining with complement to destroy cellular antigens"
+    ],
+    "answer": "C",
+    "explanation": "Tc cells lyse virally infected cells directly, without requirement for specific antibody. The TC cell is activated by viral antigen that is associated with MHC class I molecules on the surface of the infected cell. The activated TC cell secretes several toxins, such as tumor necrosis factor, which destroy the infected cell and virions."
+  },
+  {
+    "id": 534,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which of the following cell surface molecules is classified as an MHC class II antigen?",
+    "options": [
+      "HLA-A",
+      "HLA-B",
+      "HLA-C",
+      "HLA-DR"
+    ],
+    "answer": "D",
+    "explanation": "The MHC region is located on the short arm of chromosome 6 and codes for antigens expressed on the surface of leukocytes and tissues. The MHC region genes control immune recognition; their products include the antigens that determine transplant rejection. HLA-DR antigens are expressed on B cells. HLA-DR2, -DR3, -DR4, and - DR5 antigens show linkage with a wide range of autoimmune diseases."
+  },
+  {
+    "id": 535,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which MHC class of molecule is necessary for antigen recognition by CD4-positive T cells?",
+    "options": [
+      "Class I",
+      "Class II",
+      "Class III",
+      "No MHC molecule is necessary for antigen recognition"
+    ],
+    "answer": "B",
+    "explanation": "Helper T lymphocytes (CD4-positive T cells) recognize antigens only in the context of a class II molecule. Because class II antigens are expressed on macrophages, monocytes, and B cells, the helper-T-cell response is mediated by interaction with processed antigen on the surface of these cells."
+  },
+  {
+    "id": 536,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Which of the following are products of HLA class III genes?",
+    "options": [
+      "T-cell immune receptors",
+      "HLA-D antigens on immune cells",
+      "Complement proteins C2, C4, and factor B",
+      "Ig VL regions"
+    ],
+    "answer": "C",
+    "explanation": "Complement components C2 and C4 of the classic pathway and factor B of the alternative pathway are class III molecules. HLA-A, HLA-B, and HLA-C antigens are classified as class I antigens, and HLA-D, HLA-DR, HLA-DQ, and HLA-DP antigens are classified as class II antigens."
+  },
+  {
+    "id": 537,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "What molecule on the surface of most T cells recognizes antigen?",
+    "options": [
+      "IgT, a four-chain molecule that includes the tau heavy chain",
+      "MHC protein, a two-chain molecule encoded by the HLA region",
+      "CD3, consisting of six different chains",
+      "T-cell receptor (TcR), consisting of two chains: α-chain and β-chain"
+    ],
+    "answer": "D",
+    "explanation": "T cells have a membrane bound receptor (TcR) that is antigen specific. This two- chain molecule consists of a single α-chain, similar to an Ig light chain, and a single β- chain, similar to an Ig heavy chain. Some T cells may express a γ-δ receptor instead of the α-β molecule. There is no τ heavy chain. MHC and CD3 molecules are present on T cells, but they are not the molecules that give antigen specificity to the cell."
+  },
+  {
+    "id": 538,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "TcR is similar to Ig molecules in that it:",
+    "options": [
+      "Remains bound to the cell surface and is never secreted",
+      "Contains V and C regions on each of its chains",
+      "Binds complement",
+      "Can cross the placenta and provide protection to a fetus"
+    ],
+    "answer": "B",
+    "explanation": "The antigen binding regions of both the α- and β-chains of the TcR are encoded by V genes that undergo rearrangement similar to that observed in Ig genes. The α-chain gene consists of V and J segments, similar to an Ig light chain. The β-chain consists of V, D, and J segments, similar to an Ig heavy chain. The α- and β-chains each have a single C-region gene encoding the constant region of the molecule. Although answer A is true for TcRs, it is not true for Igs that can be cell bound or secreted. Answers C and D are true for certain Ig heavy-chain isotypes but are not true for the TcR."
+  },
+  {
+    "id": 539,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Toll-like receptors (TLRs) are found on which cells?",
+    "options": [
+      "T cells",
+      "Dendritic cells",
+      "B cells",
+      "Large granular lymphocytes"
+    ],
+    "answer": "B",
+    "explanation": "TLRs are the primary antigen recognition protein of the innate immune system. They are found on antigen-presenting cells, such as dendritic cells and macrophages. Eleven TLRs have been described. TLRs recognize certain structural motifs common to infecting organisms. TLR 4, for example, recognizes bacterial lipopolysaccharide (LPS). The name TLR comes from its similarity to the Toll protein in Drosophila."
+  },
+  {
+    "id": 540,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "Macrophages produce which of the following proteins during antigen processing?",
+    "options": [
+      "IL-1 and IL-6",
+      "γ-Interferon",
+      "IL-4, IL-5, and IL-10",
+      "Complement components C1 and C3"
+    ],
+    "answer": "A",
+    "explanation": "Interleukin-1 (IL-1) and IL-6 are proinflammatory macrophage-produced cytokines. In addition to their inflammatory properties, they activate T-helper cells during antigen presentation. γ-Interferon, IL-4, IL-5, and IL-10 are all produced by T cells. Complement components are produced by a variety of cells but are not part of the macrophage antigen-presentation process."
+  },
+  {
+    "id": 541,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "A superantigen, such as toxic shock syndrome toxin-1 (TSST-1), bypasses the normal antigen-processing stage by binding to and cross-linking:",
+    "options": [
+      "A portion of an Ig molecule and complement component C1",
+      "TLRs and an MHC class 1 molecule",
+      "A portion of an Ig and a portion of a TcR",
+      "A portion of a TcR and an MHC class II molecule"
+    ],
+    "answer": "D",
+    "explanation": "A superantigen binds to the V β-portion of the TcR and an MHC class II molecule. This binding can activate T cells without the involvement of an antigen-presenting cell. In some individuals, a single V β-protein that recognizes TSST-1 is expressed on up to 10% to 20% of T cells. The simultaneous activation of this amount of T cells causes a heavy cytokine release, resulting in the vascular collapse and pathology of toxic shock syndrome."
+  },
+  {
+    "id": 542,
+    "section": "Basic Principles of Immunology",
+    "chapter": "Immunology",
+    "question": "T-regulator cells, responsible for controlling autoimmune antibody production, express which of the following phenotypes?",
+    "options": [
+      "CD3, CD4, CD8",
+      "CD3, CD8, CD25",
+      "CD3, CD4, CD25",
+      "CD8, CD25, CD56"
+    ],
+    "answer": "C",
+    "explanation": "T-regulator cells are believed to be the primary immune suppressor cells and express CD3, CD4, and CD25. CD25 is the IL-2 receptor. CD25 may be expressed by activated T cells, but is constitutively expressed by the T-regulator cells. CD25 expression on T-regulator cells occurs in the thymus and is regulated by the FOXP3 protein."
+  },
+  {
+    "id": 543,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "The interaction between individual antigen and antibody molecules depends on several types of bonds, such as ionic bonds, hydrogen bonds, hydrophobic bonds, and van der Waals forces. How is the strength of this attraction characterized?",
+    "options": [
+      "Avidity",
+      "Affinity",
+      "Reactivity",
+      "Valency"
+    ],
+    "answer": "B",
+    "explanation": "Affinity refers to the strength of a single antibody–antigen interaction. Avidity is the strength of interactions between many different antibodies in a serum against a particular antigen (i.e., the sum of many affinities)."
+  },
+  {
+    "id": 544,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "A laboratory is evaluating an enzyme-linked immunosorbent assay (ELISA) for detecting an antibody to cyclic citrullinated peptide (CCP), which is a marker for rheumatoid arthritis (RA). The laboratory includes serum from healthy volunteers and from patients with other connective tissue diseases in the evaluation. These specimens determine which factor of the assay?",
+    "options": [
+      "Sensitivity",
+      "Precision",
+      "Bias",
+      "Specificity"
+    ],
+    "answer": "D",
+    "explanation": "Specificity is defined as a negative result in the absence of the disease. The non–RA specimens would be expected to test negative if the assay has high specificity. Precision is the ability of the assay to repeatedly yield the same results on a single specimen. Both bias and sensitivity calculations would include specimens from RA persons. Although those specimens would be included in the evaluation, they are not listed in the question."
+  },
+  {
+    "id": 545,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "The detection of precipitation reactions depends on the presence of optimal proportions of antigen and antibody. A patient’s sample contains a large amount of antibody, but the reaction in a test system containing antigen is negative. What has happened?",
+    "options": [
+      "Performance error",
+      "Low specificity",
+      "A shift in the zone of equivalence",
+      "Prozone phenomenon"
+    ],
+    "answer": "D",
+    "explanation": "Although performance error and low specificity should be considered, if a test system fails to yield the expected reaction, excessive antibody preventing a precipitation reaction is usually the cause. Prozone occurs when antibody molecules saturate the antigen sites, preventing cross-linking of the antigen–antibody complexes by other antibody molecules. Because antigen and antibody do not react at equivalence, a visible product is not formed, leading to a false-negative result."
+  },
+  {
+    "id": 546,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "The positive and negative control values for an ELISA procedure are below their acceptable ranges. What is the most likely cause?",
+    "options": [
+      "Decay of the positive and negative controls",
+      "Incomplete washing following specimen addition",
+      "Overly long incubation times",
+      "Decay of the antibody–enzyme conjugate"
+    ],
+    "answer": "D",
+    "explanation": "The antibody–enzyme conjugate is very sensitive to storage conditions and is easy to dissociate. Control specimens are unlikely to decay, and the other options would lead to higher values."
+  },
+  {
+    "id": 547,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "What is the interpretation when an Ouchterlony plate shows crossed lines between wells 1 and 2 (antigen is placed in the center well and antisera in wells 1 and 2)?",
+    "options": [
+      "No reaction between wells 1 and 2",
+      "Partial identity between wells 1 and 2",
+      "Nonidentity between wells 1 and 2",
+      "Identity between wells 1 and 2"
+    ],
+    "answer": "C",
+    "explanation": "Crossed lines indicate nonidentity between wells 1 and 2. The antibody from well 1 recognizes a different antigenic determinant than the antibody from well 2."
+  },
+  {
+    "id": 548,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "A weight lifter taking many supplements is tested monthly for thyroid-stimulating hormone (TSH) in a direct capture assay, which uses a streptavidin–biotin indicator system. She has had normal TSH levels for the past 3 months on specimens collected in the late evening. This month she comes in right after breakfast for her blood draw. The TSH level is three times her previous level. What may be the cause of this difference?",
+    "options": [
+      "Diurnal variation in TSH levels",
+      "Exogenous biotin in her system from a supplement taken that morning",
+      "Reduced thyroid function caused by an unidentified pathology",
+      "Pipetting error"
+    ],
+    "answer": "B",
+    "explanation": "High levels of exogenous biotin may be present in blood up to 10 to 15 hours after ingestion and will usually cause falsely elevated values in avidin–biotin direct ELISA assays and competitive immunoassays but lower values in sandwich (immunometric) assays. Monthly variation in TSH should not approach the level seen in this situation."
+  },
+  {
+    "id": 549,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "What comprises the indicator system in an indirect ELISA for detecting antibody?",
+    "options": [
+      "Enzyme-conjugated antibody + chromogenic substrate",
+      "Enzyme conjugated antigen + chromogenic substrate",
+      "Enzyme + antigen",
+      "Substrate + antigen"
+    ],
+    "answer": "A",
+    "explanation": "ELISA measures antibody by using immobilized reagent antigen. The antigen is fixed to the walls of a tube or bottom of a microtiter well. Serum is added (and incubated) and the antibody binds, if present. After washing, the antigen–antibody complexes are detected by adding an enzyme-labeled antiimmunoglobulin (anti-Ig). The unbound enzyme label is removed by washing, and the bound enzyme label is detected by adding chromogenic substrate. The enzyme catalyzes the conversion of substrate to a colored product."
+  },
+  {
+    "id": 550,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "What outcome results from improper washing of a tube or well after adding the enzyme–antibody conjugate in an ELISA system?",
+    "options": [
+      "Result will be falsely decreased",
+      "Result will be falsely increased",
+      "Result will be unaffected",
+      "Result is impossible to determine"
+    ],
+    "answer": "B",
+    "explanation": "If unbound enzyme-conjugated anti-Ig is not washed away, it will catalyze the conversion of the substrate to a colored product, yielding a falsely elevated result."
+  },
+  {
+    "id": 551,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "What would happen if the color reaction phase is prolonged in one tube or well of an ELISA test?",
+    "options": [
+      "Result will be falsely decreased",
+      "Result will be falsely increased",
+      "Result will be unaffected",
+      "Impossible to determine"
+    ],
+    "answer": "B",
+    "explanation": "If the color reaction is not stopped within the time limits specified by the procedure, the enzyme will continue to act on the substrate, producing a falsely elevated test result."
+  },
+  {
+    "id": 552,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "The absorbance of a sample measured by ELISA is greater than the highest standard. What corrective action should be taken?",
+    "options": [
+      "Extrapolate an estimated value from the highest reading",
+      "Repeat the test using a standard of higher concentration",
+      "Repeat the assay using one half the volume of the sample",
+      "Dilute the test sample"
+    ],
+    "answer": "D",
+    "explanation": "Usually, when a test sample reads at a value above the highest standard in an ELISA, the sample is diluted and measured again. In those instances where no additional clinical value can be obtained by dilution, the result may be reported as greater than the highest standard (citing the upper reportable limit of the assay)."
+  },
+  {
+    "id": 553,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "A patient was suspected of having a lymphoproliferative disorder. After several laboratory tests were completed, the patient was found to have an IgMκ paraprotein. In what sequence should the laboratory tests leading to this diagnosis have been performed?",
+    "options": [
+      "Serum protein electrophoresis (SPE) followed by immunofixation electrophoresis (IFE)",
+      "Ig levels, followed by SPE",
+      "Total lymphocyte count, followed by Ig levels",
+      "Ig levels, followed by urine protein electrophoresis"
+    ],
+    "answer": "A",
+    "explanation": "SPE should be performed initially to detect the presence of an abnormal Ig that demonstrates restricted electrophoretic mobility. A patient producing only monoclonal light chains may not show an abnormal serum finding because the light chains may be excreted in urine. A positive finding for either serum or urine should be followed by IFE on the positive specimen. This is required to confirm the presence of monoclonal Ig and to identify the heavy and light chain types."
+  },
+  {
+    "id": 554,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "An IFE performed on a serum sample showed a narrow dark band in the lanes containing anti-γ and anti-λ. How should this result be interpreted?",
+    "options": [
+      "Abnormally decreased IgG concentration",
+      "Abnormal test result demonstrating monoclonal IgGλ",
+      "Normal test result",
+      "Impossible to determine without densitometric quantitation"
+    ],
+    "answer": "B",
+    "explanation": "A narrow dark band formed in both the lane containing anti-γ and anti-λ indicates the presence of a monoclonal IgG-λ. A diffuse dark band would indicate a polyclonal increase in IgG that often accompanies chronic inflammatory disorders, such as systemic lupus erythematosus (SLE)."
+  },
+  {
+    "id": 555,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "Which type of nephelometry is used to measure immune complex formation almost immediately after reagent has been added?",
+    "options": [
+      "Rate",
+      "Endpoint",
+      "Continuous",
+      "One-dimensional"
+    ],
+    "answer": "A",
+    "explanation": "Rate nephelometry is used to measure the formation of small immune complexes as they are formed under conditions of antibody excess. The rate of increase in the photodetector output is measured within seconds or minutes, and the rate increases with increasing antigen concentration. Antigen concentration is determined by comparing the rate for the sample with that for standards by using an algorithm that compensates for nonlinearity. In endpoint nephelometry, reactions are read after equivalence. Immune complexes are of maximal size but may have a tendency to settle out of solution, thereby decreasing the amount of scatter."
+  },
+  {
+    "id": 556,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "An antinuclear antibody (ANA) test was performed by using immunofluorescence microscopy assay (IFA), and a clinically significant pattern and titer were reported. Positive and negative controls performed as expected. However, the clinical evaluation of the patient was not consistent with the reported pattern. What is the most likely explanation for this situation?",
+    "options": [
+      "The clinical condition of the patient changed since the sample was tested",
+      "The pattern of fluorescence was misinterpreted",
+      "The control results were misinterpreted",
+      "The wrong cell line was used for the test"
+    ],
+    "answer": "B",
+    "explanation": "In an IFA for antinuclear antibodies, the fluorescence pattern must be correlated correctly with the specificity of the antibodies. Both pathological and nonpathological antibodies can occur, and antibodies may be detected at a significant titer in a patient whose disease is inactive. Failure to correctly identify subcellular structures may result in misinterpretation of the antibody specificity or a false-positive result caused by nonspecific fluorescence."
+  },
+  {
+    "id": 557,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "What corrective action should be taken when a specific pattern cannot be identified in a specimen with a positive ANA IFA?",
+    "options": [
+      "Repeat the test using a larger volume of sample",
+      "Call the physician",
+      "Have another medical laboratory scientist read the slide",
+      "Dilute the sample and retest"
+    ],
+    "answer": "D",
+    "explanation": "An unexpected pattern may indicate the presence of more than one antibody. Diluting the sample may help to clearly show the antibody specificities, if they are found in different titers. If the pattern is still atypical, a new sample should be collected and the test repeated or the specimen should be tested by an alternative method, such as ELISA or multiplex."
+  },
+  {
+    "id": 558,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "Which statement best describes passive agglutination reactions used for serodiagnosis?",
+    "options": [
+      "Such agglutination reactions are more rapid because they are a single-step process",
+      "Reactions require the addition of a second antibody",
+      "Passive agglutination reactions require biphasic incubation",
+      "Carrier particles for antigen, such as latex particles, are used"
+    ],
+    "answer": "D",
+    "explanation": "Most agglutination tests used in serology employ passive or indirect agglutination, where carrier particles are coated with the antigen. The carrier molecule is of sufficient size so that the reaction of the antigen with antibody results in the formation of a complex that is more easily visible."
+  },
+  {
+    "id": 559,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "What has happened in a titer, if tube Nos. 5 to 7 show a stronger reaction than tube Nos.1 to 4?",
+    "options": [
+      "Prozone reaction",
+      "Postzone reaction",
+      "Equivalence reaction",
+      "Poor technique"
+    ],
+    "answer": "A",
+    "explanation": "In tubes Nos.1 to 4, insufficient antigen is present to give a visible reaction because excess antibody has saturated all available antigen sites. After dilution of antibody, tubes Nos.1 to 4 have the equivalent concentrations of antigen and antibody to allow formation of visible complexes."
+  },
+  {
+    "id": 560,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "What is the titer in tube No. 8 if tube No. 1 is undiluted and dilutions are doubled?",
+    "options": [
+      "64",
+      "128",
+      "256",
+      "512"
+    ],
+    "answer": "B",
+    "explanation": "The antibody titer is reciprocal of the highest dilution of serum giving a positive reaction. For doubling dilutions, each tube has one half the amount of serum as the previous tube. Because the first tube was undiluted (neat), the dilution in tube No. 8 is (1/2)7 and the titer equals 27 or 128."
+  },
+  {
+    "id": 561,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "The directions for a slide agglutination test instruct that after mixing the patient’s serum and antigen-coated latex particles, the slide must be rotated for 2 minutes. What would happen if the slide were rotated for 10 minutes?",
+    "options": [
+      "Possible false-positive result",
+      "Possible false-negative result",
+      "No effect",
+      "Depends on the amount of antibody present in the sample"
+    ],
+    "answer": "A",
+    "explanation": "Failure to follow directions, as in this case where the reaction was allowed to proceed beyond the recommended time, may result in a false-positive reading. Drying on the slide may lead to a possible erroneous positive reading."
+  },
+  {
+    "id": 562,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "Which outcome indicates a negative result in a complement fixation test?",
+    "options": [
+      "Hemagglutination",
+      "Absence of hemagglutination",
+      "Hemolysis",
+      "Absence of hemolysis"
+    ],
+    "answer": "C",
+    "explanation": "In complement fixation, hemolysis indicates a negative test result. The absence of hemolysis indicates that complement was fixed in an antigen–antibody reaction and, therefore, that the specific complement binding antibody was present in the patient’s serum. Consequently, it was not available to react in the indicator system."
+  },
+  {
+    "id": 563,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "What effect does selecting the wrong gate have on the results when cells are counted by flow cytometry?",
+    "options": [
+      "No effect",
+      "Failure to count the desired cell population",
+      "Falsely elevated results",
+      "Impossible to determine"
+    ],
+    "answer": "B",
+    "explanation": "Gating is the step performed to select the correct cells to be counted. Failure to properly perform this procedure will result in problems in isolating and counting the desired cells. It is impossible to determine if the final result would be falsely elevated or falsely lowered by problems with gating."
+  },
+  {
+    "id": 564,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "Which statement best describes immunophenotyping?",
+    "options": [
+      "Lineage determination by detecting antigens on the surface of the gated cells by using fluorescent antibodies",
+      "Identification of cell maturity by using antibodies to detect antigens within the nucleus",
+      "Identification and sorting of cells by front and side scatter of light from a laser",
+      "Analysis of cells collected by flow cytometry by using traditional agglutination reactions"
+    ],
+    "answer": "A",
+    "explanation": "Immunophenotyping refers to classification of cells (lineage and maturity assignment) with use of a panel of fluorescent-labeled antibodies directed against specific surface antigens on the cells. Antibodies are referred to by their CD number. Monoclonal antibodies having a common CD number do not necessarily bind to the same epitope but recognize the same antigen on the cell surface. Reactivity of the selected cells with a panel of antibodies differentiates lymphoid cells from myeloid cells and identifies the stage of cell maturation."
+  },
+  {
+    "id": 565,
+    "section": "Immunologic Procedures",
+    "chapter": "Immunology",
+    "question": "A flow cytometry scattergram of a bone marrow sample shows a dense population of cells located in-between normal lymphoid and normal myeloid cells. What is the most likely explanation?",
+    "options": [
+      "The sample was improperly collected",
+      "An abnormal cell population is present",
+      "The laser optics are out of alignment",
+      "The cells are most likely not leukocytes"
+    ],
+    "answer": "B",
+    "explanation": "Lymphoid cells and myeloid cells display in predictable regions of the scatterplot because of their characteristic size and density. Lymphoid cells cause less forward scatter and side scatter from the laser compared with myeloid cells. A dense zone of cells in-between those regions is caused by the presence of a large number of abnormal cells, usually blasts. The lineage of the cells can be determined by immunophenotyping with a panel of fluorescent-labeled antibodies."
+  },
+  {
+    "id": 566,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which serum antibody response usually characterizes the primary (early) stage of syphilis?",
+    "options": [
+      "Antibodies against syphilis are undetectable",
+      "Detected 1 to 3 weeks after appearance of the primary chancre",
+      "Detected in 50% of cases before the primary chancre disappears",
+      "Detected within 2 weeks after infection"
+    ],
+    "answer": "B",
+    "explanation": "During the primary stage of syphilis, about 90% of patients develop antibodies between 1 and 3 weeks after the appearance of the primary chancre."
+  },
+  {
+    "id": 567,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "What substance is detected in the sample by the rapid plasma reagin (RPR) and Venereal Disease Research Laboratory (VDRL) tests for syphilis?",
+    "options": [
+      "Cardiolipin",
+      "Anticardiolipin antibody (ACA)",
+      "Anti–Treponema pallidum antibody",
+      "T. pallidum"
+    ],
+    "answer": "B",
+    "explanation": "Reagin is the name for a nontreponemal antibody that appears in the serum of individuals with syphilis and is detected by the RPR and VDRL assays. Reagin reacts with cardiolipin, a lipid-rich extract of beef heart and other animal tissues."
+  },
+  {
+    "id": 568,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "What type of antigen is used in the RPR card test?",
+    "options": [
+      "Live treponemal organisms",
+      "Killed suspension of treponemal organisms",
+      "Cardiolipin",
+      "Tanned sheep cells"
+    ],
+    "answer": "C",
+    "explanation": "Cardiolipin is extracted from animal tissues, such as beef hearts, and attached to carbon particles. In the presence of reagin, the particles will agglutinate."
+  },
+  {
+    "id": 569,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which of the following is the most sensitive test to detect congenital syphilis?",
+    "options": [
+      "VDRL",
+      "RPR",
+      "T. pallidum particle agglutination (TP-PA)",
+      "Polymerase chain reaction (PCR)"
+    ],
+    "answer": "D",
+    "explanation": "PCR will amplify a very small amount of DNA from T. pallidum and allow for the detection of the organism in the infant. Antibody tests, such as VDRL and RPR, may detect maternal antibody only and do not indicate if the infant has been infected."
+  },
+  {
+    "id": 570,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "A biological false-positive reaction is least likely with which test for syphilis?",
+    "options": [
+      "VDRL",
+      "TP-PA",
+      "RPR",
+      "All are equally likely to yield a false-positive result"
+    ],
+    "answer": "B",
+    "explanation": "The TP-PA test is more specific for T. pallidum compared with nontreponemal tests, such as the VDRL and RPR tests, and would be the least likely to yield a biological false-positive result. Nontreponemal tests have a biological false-positive rate of 1% to 10%, depending on the patient population tested. False-positive findings are caused commonly by infectious mononucleosis (IM), SLE, viral hepatitis, and human immunodeficiency virus (HIV) infection."
+  },
+  {
+    "id": 571,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "A 12-year old girl has symptoms of fatigue and localized lymphadenopathy. Laboratory tests reveal peripheral blood lymphocytosis, positive RPR, and positive spot test for IM. What test should be performed next?",
+    "options": [
+      "HIV screen",
+      "VDRL",
+      "Epstein-Barr virus (EBV)–specific antigen test",
+      "TP-PA test"
+    ],
+    "answer": "D",
+    "explanation": "The patient’s symptoms are nonspecific and could be attributed to many potential causes. However, the patient’s age, lymphocytosis, and serological results point to IM. The rapid spot test for antibodies seen in IM is highly specific. The EBV-specific antigen test is more sensitive but is unnecessary when the spot test is positive. HIV infection is uncommon at this age and is often associated with generalized lymphadenopathy and a normal or reduced total lymphocyte count. IM antibodies are commonly implicated as a cause of biological false-positive nontreponemal test results for syphilis. Therefore, a treponemal test for syphilis should be performed to document this phenomenon in this case."
+  },
+  {
+    "id": 572,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which test is most likely to be positive in the tertiary stage of syphilis?",
+    "options": [
+      "Treponemal-specific antibody",
+      "RPR",
+      "VDRL",
+      "Reagin screen test (RST)"
+    ],
+    "answer": "A",
+    "explanation": "A treponemal-specific antibody test is more likely to be positive compared with a nontreponemal test in the tertiary stage of syphilis. In some cases, systemic lesions have subsided by the tertiary stage, and the nontreponemal tests become seronegative. Although the treponemal-specific antibody test is the most sensitive test for tertiary syphilis, it will be positive in both treated and untreated cases."
+  },
+  {
+    "id": 573,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "What is the most likely interpretation of the following syphilis serological results? RPR: reactive; TP-PA: nonreactive",
+    "options": [
+      "Neurosyphilis",
+      "Secondary syphilis",
+      "Syphilis that has been successfully treated",
+      "Biological false positive"
+    ],
+    "answer": "D",
+    "explanation": "A positive reaction with nontreponemal antigen and a negative reaction with a treponemal antigen is most likely caused by a biological false-positive nontreponemal test result."
+  },
+  {
+    "id": 574,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which specimen is the sample of choice to evaluate latent or tertiary syphilis?",
+    "options": [
+      "Serum sample",
+      "Chancre fluid",
+      "Cerebrospinal fluid (CSF)",
+      "Joint fluid"
+    ],
+    "answer": "C",
+    "explanation": "Latent syphilis usually begins after the second year of untreated infection. In some cases, the serological tests become negative. However, if neurosyphilis is present, CSF serology will be positive and the CSF will display increased protein and pleocytosis characteristic of central nervous system infection."
+  },
+  {
+    "id": 575,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Interpret the following quantitative RPR test results. RPR titer: weakly reactive—1:4; reactive—1:8 to 1:64",
+    "options": [
+      "Excess antibody, prozone effect",
+      "Excess antigen, postzone effect",
+      "Equivalence of antigen and antibody",
+      "Impossible to interpret; testing error"
+    ],
+    "answer": "A",
+    "explanation": "This patient may be in the secondary stage of syphilis and is producing large amounts of antibody to T. pallidum sufficient to cause a prozone reaction as a result of antibody excess in the test. The test became strongly reactive only after the antibody was diluted."
+  },
+  {
+    "id": 576,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Tests to identify infection with HIV fall into which three general classification types of tests?",
+    "options": [
+      "Tissue culture, antigen, and antibody tests",
+      "Tests for antigens, antibodies, and nucleic acid",
+      "DNA probe, DNA amplification, and Western blot tests",
+      "ELISA, Western blot, and Southern blot tests"
+    ],
+    "answer": "B",
+    "explanation": "The fourth- and fifth-generation HIV assays detect both antibodies to HIV and the HIV p24 antigen. Molecular assays can be used to resolve discrepant screening results or to confirm results, as well as to quantitate the amount of virus present."
+  },
+  {
+    "id": 577,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which tests are considered screening tests for HIV?",
+    "options": [
+      "ELISA, chemiluminescent, and rapid antibody tests",
+      "IFA, Western blot, radioimmunoprecipitation assay",
+      "Culture, antigen capture assay, DNA amplification",
+      "Reverse transcriptase and messenger RNA (mRNA) assay"
+    ],
+    "answer": "A",
+    "explanation": "The fourth- and fifth-generation HIV assays detect both antibody and the p24 antigen. These assays are available in ELISA, automated chemiluminescent systems, and mutilplex systems and in a rapid card format."
+  },
+  {
+    "id": 578,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which tests are the recommended confirmatory tests for HIV?",
+    "options": [
+      "ELISA and rapid antibody tests",
+      "HIV-1,2 antibody differentiation assays, and qualitative PCR test",
+      "Culture, antigen capture assay, quantitative PCR",
+      "Reverse transcriptase and mRNA assay"
+    ],
+    "answer": "B",
+    "explanation": "The current HIV testing algorithm begins with a screening assay, followed by an HIV-1,2 antibody differentiation assay (HIV-1,2 supplemental assay) and, if those results are discordant, an HIV qualitative PCR assay is performed. Western blot is not included in this algorithm."
+  },
+  {
+    "id": 579,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "How do fourth- and fifth-generation HIV tests reduce the time from infection to the test becoming positive?",
+    "options": [
+      "They are PCR tests detecting viral RNA",
+      "They detect p24 antigen in addition to HIV antibody",
+      "They detect proviral DNA",
+      "They detect antibodies to more antigens than earlier generations of HIV tests"
+    ],
+    "answer": "B",
+    "explanation": "Including the p24 antigen in the fourth- and fifth-generation tests allows for the detection of HIV infection approximately 1 week earlier compared with the third- generation antibody-only assays and up to 3 weeks earlier compared with Western blot."
+  },
+  {
+    "id": 580,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "A woman who has had five pregnancies subsequently tests positive for HIV on a fourth- generation assay and is negative on an HIV-1,2 differentiation assay and a follow-up molecular assay. The initial reactivity may be caused by:",
+    "options": [
+      "Possible cross-reaction with herpes or EBV antibodies",
+      "Interference from medication",
+      "Cross-reacting antibodies elicited during pregnancy",
+      "Possible technical error; a repeat specimen should be requested"
+    ],
+    "answer": "C",
+    "explanation": "Pregnancy is a common cause of false-positive HIV screening results."
+  },
+  {
+    "id": 581,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Interpret the following results for HIV testing: Fourth-generation ELISA: positive; repeat ELISA: positive; HIV 1,2 antibody differentiation assay: negative; qualitative HIV RNA rtPCR assay: positive",
+    "options": [
+      "False-positive fourth-generation assay",
+      "False-negative antibody differentiation assay",
+      "Indeterminate; further testing indicated",
+      "HIV p24 antigen detected on fourth-generation ELISA"
+    ],
+    "answer": "D",
+    "explanation": "The fourth-generation HIV assay detects antibody and the p24 antigen but does not differentiate between those results. In this case, the antibody-confirming test is negative, suggesting the initial reactive fourth-generation test result is either a false- positive one or is caused by the presence of p24 in the specimen. The positive molecular assay confirms the presence of the virus in the specimen. This usually occurs in early infection, prior to antibody being produced."
+  },
+  {
+    "id": 582,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "What is the most likely explanation when antibody tests for HIV are negative but the PCR test is positive?",
+    "options": [
+      "Probably not HIV infection",
+      "Patient is in the “window phase” before antibody production",
+      "Tests were performed incorrectly",
+      "Clinical signs may be misinterpreted"
+    ],
+    "answer": "B",
+    "explanation": "In early seroconversion, patients may not be making antibodies in sufficient amounts to be detected by antibody tests. The period between infection with HIV and the appearance of detectable antibodies is called the window phase. This period has been reduced to a few weeks by antibody and antigen-detecting fourth- and fifth-generation assays, and an algorithm that includes PCR testing."
+  },
+  {
+    "id": 583,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "What criteria constitute the classification system for HIV infection?",
+    "options": [
+      "CD4-positive T-cell count and clinical symptoms",
+      "Clinical symptoms, condition, duration, and strength of reactivity on a fourth-generation HIV test",
+      "Presence or absence of lymphadenopathy",
+      "Strong fourth-generation HIV test reactivity and CD8-positive T-cell count"
+    ],
+    "answer": "A",
+    "explanation": "The classification (not diagnostic) system for HIV infection is based on a combination of CD4-positive T-cell count (helper T cells) and various categories of clinical symptoms. Classification is important in determining treatment options and the progression of the disease."
+  },
+  {
+    "id": 584,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "What is the main difficulty associated with the development of an HIV vaccine?",
+    "options": [
+      "The virus has been difficult to culture; antigen extraction and concentration are extremely laborious",
+      "Human trials cannot be performed",
+      "Different strains of the virus are genetically diverse",
+      "Anti-idiotype antibodies cannot be developed"
+    ],
+    "answer": "C",
+    "explanation": "Vaccine development has been difficult primarily because of the genetic diversity among different strains of the virus, and new strains are constantly emerging. HIV-1 can be divided into two main subtypes designated M (for main) and O (for outlier). The M group is further divided into nine subgroups, designated A through J (there is no E subgroup), based on differences in the nucleotide sequence of the gag gene. Two remaining subtypes are designated N (non-M and non-O) and P (a subtype related to SIVgor). A vaccine that is effective for all of the subgroups of HIV-1 has yet to be developed."
+  },
+  {
+    "id": 585,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which CD4:CD8 ratio is most likely in a patient with AIDS?",
+    "options": [
+      "2:1",
+      "3:1",
+      "2:3",
+      "1:3"
+    ],
+    "answer": "D",
+    "explanation": "An inverted CD4:CD8 ratio (less than 1.0) is a common finding in a patient with AIDS. The Centers for Disease Control and Prevention (CDC) requires a CD4-positive (helper T) cell count of less than 200/µL or 14% in the absence of an AIDS-defining illness (e.g., Pneumocystis carinii pneumonia) in the case surveillance definition of AIDS."
+  },
+  {
+    "id": 586,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "What is the advantage of fourth-generation rapid HIV tests over earlier rapid HIV tests?",
+    "options": [
+      "They use recombinant antigens",
+      "They detect multiple strains of HIV",
+      "They detect p24 antigen",
+      "They are quantitative"
+    ],
+    "answer": "C",
+    "explanation": "Both third-generation and fourth-generation rapid tests for HIV use recombinant and synthetic HIV antigens conjugated to a solid phase. The multivalent nature of these tests allows for detection of less common subgroups of HIV-1 and simultaneous detection of both HIV-1 and HIV-2. However, the fourth-generation assays also use solid-phase antibodies to p24 antigen to detect its presence. Because p24 antigen appears before antibodies to HIV, fourth-generation tests can detect infection 4 to 7 days earlier compared with tests based on antibody detection alone."
+  },
+  {
+    "id": 587,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which method is used to test for HIV infection in infants who are born to HIV-positive mothers?",
+    "options": [
+      "ELISA",
+      "Western blot test",
+      "PCR test",
+      "Viral culture"
+    ],
+    "answer": "C",
+    "explanation": "Fourth- and fifth-generation ELISA and chemiluminescent assays reflect the presence of maternal antibody. The PCR test uses small amounts of blood and does not rely on the antibody response. PCR amplifies small amounts of viral nucleic acid and can detect less than 20 copies of viral RNA per milliliter of plasma. These qualities make PCR ideal for the testing of infants. Nucleic acid methods for HIV RNA include both qualitative (for diagnosis) and quantitative (for monitoring) reverse-transcriptase real- time PCR (RT-PCR) assays."
+  },
+  {
+    "id": 588,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "What is the most likely cause when a fourth-generation HIV assay is positive for all controls and samples?",
+    "options": [
+      "Improper pipetting",
+      "Improper washing",
+      "Improper addition of sample",
+      "Improper reading"
+    ],
+    "answer": "B",
+    "explanation": "Improper washing may not remove unbound, enzyme-conjugated antihuman Ig, and every sample may appear positive."
+  },
+  {
+    "id": 589,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "What constitutes a diagnosis of viral hepatitis?",
+    "options": [
+      "Abnormal test results for liver enzymes",
+      "Clinical signs and symptoms",
+      "Positive results for hepatitis markers",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "To diagnose a case of hepatitis, the physician must consider clinical signs as well as the results of laboratory tests that measure liver enzymes and hepatitis markers."
+  },
+  {
+    "id": 590,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which of the following statements regarding infection with hepatitis D virus (HDV) is true?",
+    "options": [
+      "Occurs in patients with HIV infection",
+      "Does not progress to chronic hepatitis",
+      "Occurs in patients with hepatitis B virus (HBV) infection",
+      "Is not spread through blood or sexual contact"
+    ],
+    "answer": "C",
+    "explanation": "HDV is an RNA virus that requires the surface antigen or envelope of the HBV for entry into the hepatocyte. Consequently, HDV can infect only patients who are coinfected with hepatitis B."
+  },
+  {
+    "id": 591,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "All of the following hepatitis viruses are spread through blood or blood products except:",
+    "options": [
+      "Hepatitis A virus (HAV)",
+      "HBV",
+      "HCV",
+      "HDV"
+    ],
+    "answer": "A",
+    "explanation": "HAV is spread through the fecal–oral route and is the cause of infectious hepatitis. HAV has a shorter incubation period (2–7 weeks) than HBV (1–6 months). Epidemics of HAV can occur, especially when food and water become contaminated with raw sewage. Hepatitis E virus is also spread via the oral–fecal route and, like HAV, has a short incubation period."
+  },
+  {
+    "id": 592,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which hepatitis B marker is the best indicator of early acute infection?",
+    "options": [
+      "Hepatitis B surface antigen (HBsAg)",
+      "Hepatitis B e-antigen (HBeAg)",
+      "Hepatitis B core antibody (anti-HBc)",
+      "Hepatitis B surface antibody (anti-HBs)"
+    ],
+    "answer": "A",
+    "explanation": "HBsAg is the first marker to appear in HBV infection. It is usually detected within 4 weeks of exposure (prior to the rise in transaminases) and persists for about 3 months after serum enzyme levels return to normal."
+  },
+  {
+    "id": 593,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which is the first antibody detected in serum after infection with HBV?",
+    "options": [
+      "Anti-HBs",
+      "Anti-HBc IgM",
+      "Anti-HBe",
+      "All are detectable at the same time"
+    ],
+    "answer": "B",
+    "explanation": "Antibody to the hepatitis B core antigen (anti-HBc) is the first detectable hepatitis B antibody. It persists in serum for years after infection and is found in the serum of asymptomatic carriers of HBV. Because levels of total anti-HBc are high after recovery, IgM anti-HBc is a more useful marker for acute infection. Both anti-HBc and anti-HBs can persist for life, but only anti-HBs is considered protective."
+  },
+  {
+    "id": 594,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which antibody persists in low-level carriers of HBV?",
+    "options": [
+      "IgM anti-HBc",
+      "IgG anti-HBc",
+      "IgM anti-HBe",
+      "IgG anti-HBs"
+    ],
+    "answer": "B",
+    "explanation": "IgG anti-HBc can be detected in carriers who are HBsAg and anti-HBs negative. These persons are hepatitis B DNA positive also and, thus, are presumed infective, even though the level of HBsAg is too low to detect. No specific B core IgG test is available, however. This patient would be positive in the anti-B core total antibody assay and negative in the anti-HB core IgM test."
+  },
+  {
+    "id": 595,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "What is the most likely explanation when a patient has clinical signs of viral hepatitis but tests negative for HAV IgM, HBsAg, and HCV antibody?",
+    "options": [
+      "Tests were performed improperly",
+      "The patient does not have hepatitis",
+      "The patient may be in the “core window”",
+      "Clinical evaluation was performed improperly"
+    ],
+    "answer": "C",
+    "explanation": "The patient may be in the “core window,” the period of HBV infection when both the surface antigen and surface antibody are undetectable. The IgM anti-HBc and the anti- HBc total antibody assays, along with the hepatitis B DNA PCR assay would be the only detectable markers in the serum of a patient in the core window phase of HBV infection."
+  },
+  {
+    "id": 596,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which hepatitis B markers should be performed on blood products?",
+    "options": [
+      "HBsAg and anti-HBc",
+      "Anti-HBs and anti-HBc",
+      "HBeAg and HBcAg",
+      "Anti-HBs and HBeAg"
+    ],
+    "answer": "A",
+    "explanation": "Blood products are tested for HBsAg, an early indicator of infection, and anti-HBc, a marker that may persist for life. Following recovery from HBV infection, some patients demonstrate negative serology for HBsAg and anti-HBs but are positive for anti-HBc. Such patients are considered infective."
+  },
+  {
+    "id": 597,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which hepatitis antibody confers immunity against reinfection with HBV?",
+    "options": [
+      "Anti-HBc IgM",
+      "Anti-HBc IgG",
+      "Anti-HBe",
+      "Anti-HBs"
+    ],
+    "answer": "D",
+    "explanation": "Anti-HBs appears later in infection compared with anti-HBc and is used as a marker for immunity after infection or vaccination, rather than for diagnosis of current infection."
+  },
+  {
+    "id": 598,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which test, other than serological markers, is most consistently elevated in viral hepatitis?",
+    "options": [
+      "Antinuclear antibodies",
+      "Alanine aminotransferase (ALT)",
+      "Absolute lymphocyte count",
+      "Lactate dehydrogenase"
+    ],
+    "answer": "B",
+    "explanation": "ALT is a liver enzyme and may be increased in hepatic disease. Highest levels occur in acute viral hepatitis, reaching 20 to 50 times the upper limit of normal."
+  },
+  {
+    "id": 599,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "If only anti-HBs is positive, which of the following can be ruled out?",
+    "options": [
+      "HBV vaccination",
+      "Distant past infection with HBV",
+      "Hepatitis B immune globulin (HBIG) injection",
+      "Chronic HBV infection"
+    ],
+    "answer": "D",
+    "explanation": "Persons with chronic HBV infection show a positive test result for anti-HBc (IgG or total) and HBsAg but not anti-HBs. Patients with active chronic hepatitis have not become immune to the virus."
+  },
+  {
+    "id": 600,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Interpret the following results for EBV infection: IgG and IgM antibodies to viral capsid antigen (VCA) are positive.",
+    "options": [
+      "Infection in the past",
+      "Infection with a mutual enhancer virus, such as HIV",
+      "Current infection",
+      "Impossible to interpret; need more information"
+    ],
+    "answer": "C",
+    "explanation": "IgM and IgG antibodies to VCA are found in a current infection with EBV. The IgG antibody may persist for life, but the IgM anti-VCA disappears within 4 months after the infection resolves."
+  },
+  {
+    "id": 601,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Rapid mono tests use latex particles coated with which of the following?",
+    "options": [
+      "Guinea pig antigen",
+      "Beef proteins",
+      "Horse proteins",
+      "Sheep proteins"
+    ],
+    "answer": "B",
+    "explanation": "Rapid mono tests detect a heterophile antibody directed against beef proteins. Although these antibodies may also react with horse or sheep red blood cells (RBCs), those proteins are not used in these tests."
+  },
+  {
+    "id": 602,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Blood products are tested for which virus before being transfused to newborns?",
+    "options": [
+      "EBV",
+      "Human T-lymphotropic virus II (HTLV-II)",
+      "CMV",
+      "HDV"
+    ],
+    "answer": "C",
+    "explanation": "CMV can be life threatening if transmitted to a newborn through a blood product. HTLV-II is a rare virus, which like HIV, is a T-cell tropic RNA retrovirus. The virus has been associated with hairy cell leukemia, but this is not a consistent finding."
+  },
+  {
+    "id": 603,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "What is the endpoint for the antistreptolysin O (ASO) latex agglutination assay?",
+    "options": [
+      "Highest serum dilution that shows no agglutination",
+      "Highest serum dilution that shows agglutination",
+      "Lowest serum dilution that shows agglutination",
+      "Lowest serum dilution that shows no agglutination"
+    ],
+    "answer": "B",
+    "explanation": "The latex test for ASO includes latex particles coated with streptolysin O. Serial dilutions are prepared and the highest dilution showing agglutination is the endpoint."
+  },
+  {
+    "id": 604,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "A streptozyme test was performed, but the result was negative, even though the patient showed clinical signs of a streptococcal throat infection. What should be done next?",
+    "options": [
+      "Either ASO or anti-deoxyribonuclease B (anti-DNase B) test",
+      "Another streptozyme test using diluted serum",
+      "Antihyaluronidase test",
+      "Wait for 3 to 5 days and repeat the streptozyme test"
+    ],
+    "answer": "A",
+    "explanation": "The streptozyme test is used for screening and contains several of the antigens associated with streptococcal products. Because some patients produce an antibody response to a limited number of streptococcal products, no single test is sufficiently sensitive to rule out infection. Clinical sensitivity is increased by performing additional tests when initial results are negative. The streptozyme test generally yields more false- positive and false-negative results compared with the ASO and anti-DNase B tests. A positive result occurs in a smaller number of patients with recent streptococcal infections in the antihyaluronidase test compared with the ASO and anti-DNase B tests."
+  },
+  {
+    "id": 605,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Rapid assays for influenza that utilize specimens obtained from nasopharyngeal swabs detect:",
+    "options": [
+      "IgM anti-influenza",
+      "IgA anti-influenza",
+      "IgA–influenza antigen immune complexes",
+      "Influenza nucleoprotein antigens"
+    ],
+    "answer": "D",
+    "explanation": "The rapid influenza assays are antigen detection methods. They are designed to detect early infection, before antibody is produced."
+  },
+  {
+    "id": 606,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "How can interfering cold agglutinins be removed from a test sample?",
+    "options": [
+      "Centrifuge the serum and remove the top layer",
+      "Incubate the clot at 1°C to 4°C for several hours and then remove the serum",
+      "Incubate the serum at 56°C in a water bath for 30 minutes",
+      "Use an anticoagulated sample"
+    ],
+    "answer": "B",
+    "explanation": "Cold agglutinins will attach to autologous RBCs if incubated at 1°C to 4°C. The absorbed serum will be free of cold agglutinins."
+  },
+  {
+    "id": 607,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "All tubes (dilutions) except the negative control are positive for cold agglutinins. This indicates:",
+    "options": [
+      "Contaminated RBCs",
+      "A rare antibody against RBC antigens",
+      "The sample was stored at 4°C prior to separating serum and cells",
+      "Further serial dilution is necessary"
+    ],
+    "answer": "D",
+    "explanation": "Cold agglutinins may be measured in patients who have cold agglutinin disease, that is, cold autoimmune hemolytic anemia. In such cases, titers can be as high as 106. If all tubes (dilutions) for cold agglutinins are positive, except the negative control, then a high titer of cold agglutinins is present in the sample. Further serial dilutions should be performed."
+  },
+  {
+    "id": 608,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "All positive cold agglutinin tubes remain positive after 37°C incubation except the positive control. What is the most likely explanation for this situation?",
+    "options": [
+      "High-titer cold agglutinins",
+      "Contamination of the test system",
+      "Antibody other than cold agglutinins",
+      "Faulty water bath"
+    ],
+    "answer": "C",
+    "explanation": "Cold agglutinins do not remain reactive above 30°C, and agglutination must disperse after incubation at 37°C. The most likely explanation when agglutination remains after 37°C incubation is that a warm alloantibody or autoantibody is present."
+  },
+  {
+    "id": 609,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which increase in antibody titer (dilution) best indicates an acute infection?",
+    "options": [
+      "From 1:2 to 1:8",
+      "From 1:4 to 1:16",
+      "From 1:16 to 1:256",
+      "From 1:64 to 1:128"
+    ],
+    "answer": "C",
+    "explanation": "A fourfold (two-tube) or greater increase in antibody titer is usually indicative of an acute infection. Although answers A and B show a fourfold rise in titer, answer C shows a 16-fold rise in titer and is the most definitive. In most serological tests, a single high titer is insufficient evidence of acute infection unless specific IgM antibodies are measured because age, individual variation, immunologic status, and history of previous exposure (or vaccination) cause a wide variation in normal serum antibody titers."
+  },
+  {
+    "id": 610,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which of the following positive antibody tests may be an indication of recent vaccination or early primary infection for rubella in a patient with no clinical symptoms?",
+    "options": [
+      "Only IgG antibodies positive",
+      "Only IgM antibodies positive",
+      "Both IgG and IgM antibodies positive",
+      "Fourfold rise in titer for IgG antibodies"
+    ],
+    "answer": "B",
+    "explanation": "If only IgM antibodies are positive, this result indicates recent vaccination or early primary infection."
+  },
+  {
+    "id": 611,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Why is laboratory diagnosis difficult in cases of Lyme disease?",
+    "options": [
+      "Clinical response may not be apparent upon initial infection; IgM antibody may not be detected until 3 to 6 weeks after the infection",
+      "Laboratory tests may be designed to detect whole Borrelia burgdorferi, not flagellar antigen found early in infection",
+      "Most laboratory tests are technically demanding and lack specificity",
+      "Antibodies formed initially to B. burgdorferi may cross react in antigen tests for autoimmune diseases"
+    ],
+    "answer": "A",
+    "explanation": "Lyme disease is caused by B. burgdorferi, a spirochete, and typical clinical symptoms, such as rash or erythema chronicum migrans, may be absent in some infected individuals. Additionally, IgM antibody is not detectable by laboratory tests until 3 to 6 weeks after a tick bite, and IgG antibody develops later."
+  },
+  {
+    "id": 612,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Serological tests for which disease may give a false-positive result if the patient has Lyme disease?",
+    "options": [
+      "HIV",
+      "Syphilis",
+      "EBV",
+      "Hepatitis C"
+    ],
+    "answer": "B",
+    "explanation": "Lyme disease is caused by a spirochete, and positive results may occur with some specific treponemal antibody tests for syphilis."
+  },
+  {
+    "id": 613,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "In monitoring a patient with HIV infection, which parameter may be expected to be the most sensitive indicator of the effectiveness of antiretroviral treatment?",
+    "options": [
+      "HIV antibody titer",
+      "CD4:CD8 ratio",
+      "HIV viral load",
+      "Absolute total T-cell count"
+    ],
+    "answer": "C",
+    "explanation": "The HIV viral load will rise or fall in response to treatment more quickly compared with any of the other listed parameters. The absolute CD4 count is also an indicator of treatment effectiveness and is used in resource-poor areas that might not have facilities for molecular testing. Note, however, that the absolute CD4 count is not one of the choices."
+  },
+  {
+    "id": 614,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "A renal transplant recipient is found to have a rising creatinine level and reduced urine output. The physician orders a “urine PCR” assay. When you call to find out what organism the physician wants to identify, you are told:",
+    "options": [
+      "HCV",
+      "Legionella pneumophila",
+      "EBV",
+      "BK virus"
+    ],
+    "answer": "D",
+    "explanation": "BK virus is a polyoma virus that can cause renal and urinary tract infections. The virus is an opportunistic pathogen and has become a well-recognized cause of poor renal function in kidney transplant recipients. Antibody testing is not practical or useful for this infection. The principal diagnostic assays are urinary cytology, and specific BK virus PCR testing in urine and serum. Although L. pneumophila can be diagnosed through a urinary antigen assay, that organism is not a primary cause of renal insufficiency in transplant recipients."
+  },
+  {
+    "id": 615,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "A newborn is to be tested for vertically transmitted HIV infection. Which of the following tests is most useful?",
+    "options": [
+      "HIV PCR",
+      "CD4 count",
+      "Rapid HIV antibody test",
+      "HIV IgM antibody test"
+    ],
+    "answer": "A",
+    "explanation": "Neonatal HIV diagnosis is performed by screening for the presence of the virus. The current antibody tests are either an IgG-specific assay or an IgG/IgM combination assay. Thus, an infant whose mother is HIV positive will also be positive in the HIV antibody assay. Although the CD4 count may be a useful assay to determine disease activity, there are many causes of reduced CD4 numbers, so this assay should not be used to diagnose HIV infection."
+  },
+  {
+    "id": 616,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Which of the following fungal organisms is best diagnosed by an antigen detection test as opposed to an antibody detection assay?",
+    "options": [
+      "Histoplasma",
+      "Cryptococcus",
+      "Candida",
+      "Aspergillus"
+    ],
+    "answer": "B",
+    "explanation": "The Cryptococcus antibody response is not a reliable indicator of a current infection; thus, an antigen assay is normally used to monitor the disease. The antigen assay may be used for serum or CSF and will decline in response to treatment much faster than a traditional antibody test. A urinary antigen test is available for histoplasmosis, and a serum galactomannan assay is available for Aspergillus. Those two assays perform better than antibody detection. No antigen test is available for Candida, and thus, antibody detection is the best serological procedure for this organism."
+  },
+  {
+    "id": 617,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "Your cytology laboratory refers a Papanicolaou smear specimen to you for an assay designed to detect the presence of a virus associated with cervical cancer. You perform:",
+    "options": [
+      "An ELISA for anti-human simplex virus 2 (anti-HSV-2) antibodies",
+      "A molecular assay for HSV-2",
+      "An ELISA for human papilloma virus (HPV) antibodies",
+      "A molecular assay for HPV"
+    ],
+    "answer": "D",
+    "explanation": "Cervical cell atypia and cervical cancer are associated with specific high-risk serotypes of HPV infections. Although HPV antibody assays are available, they are not serotype specific, nor do they relate to disease activity. Thus, molecular probe assays are the tests of choice to detect high-risk HPV infection. Although HSV-2 is associated with genital herpesvirus, that virus has not been shown to cause cervical cancer."
+  },
+  {
+    "id": 618,
+    "section": "Infectious Diseases",
+    "chapter": "Immunology",
+    "question": "An immunosuppressed patient has unexplained anemia. The physician suspects a parvovirus B19 infection. The parvovirus IgM test result is negative. The next course of action is to tell the physician that:",
+    "options": [
+      "The patient does not have parvovirus",
+      "A convalescent specimen is recommended in 4 weeks to determine if a fourfold rise in titer has occurred",
+      "A parvovirus PCR is recommended",
+      "A recent transfusion for the patient’s anemia may have resulted in a false-negative result and the patient should be retested in 4 weeks"
+    ],
+    "answer": "C",
+    "explanation": "A negative IgM assay rarely rules out an infection. Although a convalescent specimen may be useful in many cases, in an immunosuppressed patient, the convalescent specimen may remain negative in the presence of an infection. Thus, a parvovirus PCR test is the preferred choice in this case. A false-negative result could be caused by multiple whole blood or plasma transfusions, but retesting for antibody a month later would not be beneficial to the patient."
+  },
+  {
+    "id": 619,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "What is a general definition for autoimmunity?",
+    "options": [
+      "Increase of tolerance to self-antigens",
+      "Loss of tolerance to self-antigens",
+      "Increase in clonal deletion of mutant cells",
+      "Manifestation of immunosuppression"
+    ],
+    "answer": "B",
+    "explanation": "Autoimmunity is a loss of tolerance to self-antigens and the subsequent formation of autoantibodies."
+  },
+  {
+    "id": 620,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "An ANA test is performed on a specimen from a 55-year-old woman who has unexplained joint pain. The IFA result shows a titer of 40 and a homogeneous pattern. The appropriate follow-up for this patient is:",
+    "options": [
+      "Anti-DNA assay",
+      "Extractable nuclear antigen (ENA) testing",
+      "Retest ANA in 3 to 6 months",
+      "CH50 complement assay"
+    ],
+    "answer": "C",
+    "explanation": "Approximately 25% of women in this age range may have low titer–positive ANA assays with no demonstrable connective tissue disease. A patient with anti-DNA– positive SLE would be expected to have a much higher titer (greater than 160) in an IFA. A similar titer would be expected for an ENA positive specimen, although the pattern would be speckled. Complement testing would not be indicated with this low titer in a 55-year-old female."
+  },
+  {
+    "id": 621,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "Which disease is likely to show a rim (peripheral) pattern in an immunofluorescence (IF) microscopy test for ANA?",
+    "options": [
+      "Mixed connective tissue disease (MCTD)",
+      "RA",
+      "SLE",
+      "Scleroderma"
+    ],
+    "answer": "C",
+    "explanation": "The rim or peripheral pattern seen in indirect immunofluorescence techniques is most commonly found in cases of active SLE. The responsible autoantibody is highly correlated to anti–double-stranded DNA (anti-dsDNA)."
+  },
+  {
+    "id": 622,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "A patient’s specimen is strongly positive in an ANA ELISA. Which of the following would not be an appropriate follow-up to this result?",
+    "options": [
+      "IFA on human epithelial type 2 (HEp-2) cells",
+      "Specific ENA ELISA tests",
+      "Specific anti-DNA ELISA",
+      "Rheumatoid factor (RF) assay"
+    ],
+    "answer": "D",
+    "explanation": "The ANA ELISA is a screening assay. A positive result may be followed up by more specific antibody ELISA tests or an ANA IFA to determine pattern and titer. The ANA ELISA does not screen for RF."
+  },
+  {
+    "id": 623,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "What type of antibodies is represented by the homogeneous pattern in the IFA for ANAs?",
+    "options": [
+      "Antihistone antibodies",
+      "Anticentromere antibodies",
+      "Anti-ENA (anti-Smith [anti-Sm] and anti-ribonucleoprotein [anti-RNP]) antibodies",
+      "Anti-RNA antibodies"
+    ],
+    "answer": "A",
+    "explanation": "Antihistone antibodies (and also anti-DNA antibodies) cause the solid or homogeneous pattern, which is commonly found in patients with SLE, RA, MCTD, and Sjögren syndrome. Antibodies to the centromere of chromosomes is a marker for the CREST (calcinosis, Raynaud phenomenon, esophageal dysfunction, sclerodactyly, and telangiectasia) form of systemic sclerosis."
+  },
+  {
+    "id": 624,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "What disease is indicated by a high titer of anti-Sm antibody?",
+    "options": [
+      "MCTD",
+      "RA",
+      "SLE",
+      "Scleroderma"
+    ],
+    "answer": "C",
+    "explanation": "High titer anti-Sm is indicative of SLE. Anti-Sm is an antibody against saline ENAs. and causes a speckled pattern of immunofluorescence."
+  },
+  {
+    "id": 625,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "Which disease is least likely when a nucleolar pattern occurs in an IFA for ANAs?",
+    "options": [
+      "MCTD",
+      "Sjögren syndrome",
+      "SLE",
+      "Scleroderma"
+    ],
+    "answer": "A",
+    "explanation": "All of the diseases except MCTD may cause a nucleolar pattern of immunofluorescence. Nucleolar fluorescence is caused by anti-RNA antibodies and is seen in about 50% of patients with scleroderma."
+  },
+  {
+    "id": 626,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "What antibodies are represented by the nucleolar pattern in the IFA for ANAs?",
+    "options": [
+      "Antihistone antibodies",
+      "Anti-dsDNA antibodies",
+      "Anti-ENA (anti-Sm and anti-RNP) antibodies",
+      "Anti-RNA antibodies"
+    ],
+    "answer": "D",
+    "explanation": "Anti-RNA antibodies are represented by the nucleolar pattern. This pattern may be seen in most systemic autoimmune diseases and is especially common in patients with scleroderma. Anti-RNA and anti-Sm are not usually found in patients with MCTD. This is a syndrome involving aspects of SLE, RA, scleroderma, and polymyositis. The immunofluorescence pattern most often seen in MCTD is the speckled pattern caused by anti-RNP."
+  },
+  {
+    "id": 627,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "Which test would best distinguish between SLE and MCTD?",
+    "options": [
+      "Multiplex or ELISA test for anti-Sm and anti-RNP",
+      "IFA using Crithidia as substrate",
+      "Slide agglutination testing",
+      "Laboratory tests cannot distinguish between these disorders"
+    ],
+    "answer": "A",
+    "explanation": "Line blots, multiplex, and ELISA assays, using purified or recombinant antigens, are available for differentiating anti-RNP from anti-Sm. Anti-Sm with or without anti- RNP is found in approximately one third of patients with SLE. Anti-RNP in the absence of anti-Sm is found in over 95% of patients with MCTD."
+  },
+  {
+    "id": 628,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "An ANA test on HEp-2 cells shows nucleolar staining in interphase cells and dense chromatin staining in mitotic cells. The most likely cause of this staining pattern is:",
+    "options": [
+      "Antifibrillarin antibody",
+      "Anti–ribosomal P antibody",
+      "A serum with nucleolar and homogeneous patterns",
+      "Technical artifact"
+    ],
+    "answer": "A",
+    "explanation": "Antifibrillarin antibody has this appearance. Ribosomal P antibody has nucleolar staining and a background homogeneous and cytoplasmic stain. A combination nucleolar/homogeneous specimen will also show homogeneous staining in the interphase cells. This pattern is not seen in typical technical artifacts."
+  },
+  {
+    "id": 629,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "Which immunofluorescence pattern indicates the need for ENA testing by multiplex, line blots, or ELISA assays?",
+    "options": [
+      "Homogeneous or solid",
+      "Peripheral or rim",
+      "Speckled",
+      "Nucleolar"
+    ],
+    "answer": "C",
+    "explanation": "A speckled pattern is often caused by the presence of antibodies against the ENAs, such as Sm, RNP, SSA, and SSB. Homogeneous and rim patterns suggest antibodies to dsDNA. The homogeneous pattern may also be seen with antibodies to deoxyribonuclear protein, which is not an ENA. Nucleolar patterns often indicate antibodies to RNA or fibrillarin."
+  },
+  {
+    "id": 630,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "Which of the following is used in rapid slide tests for detection of RFs?",
+    "options": [
+      "Whole IgM molecules",
+      "Fc portion of the IgG molecule",
+      "Fab portion of the IgG molecule",
+      "Fc portion of the IgM molecule"
+    ],
+    "answer": "B",
+    "explanation": "RFs react with the Fc portion of the IgG molecule and are usually IgM. This is the basis of rapid agglutination tests for RA. Particles of latex or cells are coated with IgG. Addition of serum containing RF results in visible agglutination."
+  },
+  {
+    "id": 631,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "Which of the following methods is least likely to give a definitive result for the diagnosis of RA?",
+    "options": [
+      "Nephelometric measurement of anti-IgG",
+      "Agglutination testing for RF",
+      "Anti-CCP",
+      "IFA for ANAs"
+    ],
+    "answer": "D",
+    "explanation": "Patients with RA often show a homogeneous pattern of fluorescence in tests for ANAs. However, this pattern is seen in a wide range of systemic autoimmune diseases and in many normal persons at a titer below 10. The first two methods listed may be used to identify anti-IgG, which is one laboratory criterion used to establish a diagnosis of RA. Anti-CCP is an additional laboratory criterion used in the RA diagnostic algorithm."
+  },
+  {
+    "id": 632,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "Which disease might be indicated by antibodies to smooth muscle?",
+    "options": [
+      "Atrophic gastritis",
+      "Autoimmune hepatitis",
+      "Myasthenia gravis",
+      "Sjögren syndrome"
+    ],
+    "answer": "B",
+    "explanation": "Antibodies to smooth muscle are found in the serum of up to 70% of patients with active chronic hepatitis and up to 50% of patients with primary biliary cirrhosis."
+  },
+  {
+    "id": 633,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "Antibodies to thyroid peroxidase may appear in which of the following diseases?",
+    "options": [
+      "Graves disease and Hashimoto thyroiditis",
+      "Myasthenia gravis",
+      "Granulomatous thyroid disease",
+      "Addison disease"
+    ],
+    "answer": "A",
+    "explanation": "Antibodies to thyroid peroxidase may be detected in both Graves disease (hyperthyroidism) and Hashimoto thyroiditis (hypothyroidism). If a positive result is found to thyroid peroxidase, thyroxine levels and clinical presentation can be used to distinguish between the two diseases."
+  },
+  {
+    "id": 634,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "What is the main use of laboratory tests to detect antibodies to islet cells and insulin in cases of insulin-dependent diabetes mellitus (IDDM)?",
+    "options": [
+      "To regulate levels of injected insulin",
+      "To diagnose IDDM",
+      "To rule out the presence of other autoimmune diseases",
+      "To screen susceptible individuals prior to destruction of β-cells"
+    ],
+    "answer": "D",
+    "explanation": "Fasting hyperglycemia and hemoglobin A1C levels are the primary findings used to diagnose IDDM. For individuals with an inherited susceptibility to the development of IDDM, laboratory tests for the detection of antibodies to islet cells and insulin may help to initiate early treatment before complete destruction of β-cells."
+  },
+  {
+    "id": 635,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "A patient presents with clinical symptoms of celiac disease. Tests for anti-tissue transglutaminase and antigliadin antibodies are negative. Which of the following tests should be ordered?",
+    "options": [
+      "IgG level",
+      "HLA DQ2 and DQ8 typing",
+      "HLA DR3 and DR7 typing",
+      "IgM level"
+    ],
+    "answer": "B",
+    "explanation": "Although antibodies to tissue transglutaminase and gliadin are often found in celiac disease, their combined sensitivity is less than 100%. Celiac disease is almost exclusively associated with the presence of HLA DQ2 and/or HLA DQ8. These HLA genes are not diagnostic of celiac disease, but provide a testing alternative in antibody- negative individuals who meet the clinical diagnostic criteria for celiac disease."
+  },
+  {
+    "id": 636,
+    "section": "Autoimmune Diseases",
+    "chapter": "Immunology",
+    "question": "A specimen appears to have a perinuclear staining pattern in an antineutrophil cytoplasmic antibody (ANCA) immunofluorescent assay using ethanol-fixed neutrophils, suggesting the possibility of a perinuclear ANCA (pANCA). On which of the following substrates would this specimen display cytoplasmic speckling?",
+    "options": [
+      "Formalin-fixed neutrophils",
+      "Unfixed neutrophils",
+      "HEp-2 cells",
+      "Rabbit kidney tissue"
+    ],
+    "answer": "A",
+    "explanation": "Antibodies to neutrophil cytoplasmic antigen demonstrating a perinuclear pattern of fluorescence indicate a diagnosis of vasculitis. However, atypical ANCAs and ANAs also demonstrate a perinuclear staining pattern on ethanol-fixed neutrophils. To differentiate these from pANCA, specimens appearing as pANCAs on ethanol-fixed cells are tested on formalin-fixed neutrophils. The myeloperoxidase-containing granules that coalesce around the nuclear membrane during ethanol fixation will remain in the cytoplasm during formalin fixation. Thus, pANCAs will have a cytoplasmic (cANCA) pattern on a formalin-fixed slide, but ANAs will retain a perinuclear pattern and the fluorescence will be diminished."
+  },
+  {
+    "id": 637,
+    "section": "Hypersensitivity",
+    "chapter": "Immunology",
+    "question": "Which of the following is a description of a type I hypersensitivity reaction?",
+    "options": [
+      "Ragweed antigen cross-links with IgE on the surface of mast cells, causing release of preformed mediators and resulting in symptoms of an allergic reaction",
+      "Anti-Fya from a pregnant woman crosses the placenta and attaches to the Fya antigen- positive RBCs of the fetus, destroying the RBCs",
+      "Immune complex deposition occurs on the glomerular basement membrane of the kidney, leading to renal failure",
+      "Exposure to poison ivy causes sensitized T cells to release lymphokines that cause a localized inflammatory reaction"
+    ],
+    "answer": "A",
+    "explanation": "Type I immediate hypersensitivity (anaphylactic) responses are characterized by IgE molecules binding to mast cells via the Fc receptor. Cross-linking of surface IgE caused by binding of allergens causes the mast cell to degranulate, releasing histamine and other chemical mediators of allergy. Answer B describes a type II reaction; C describes a type III reaction; and D describes a type IV reaction."
+  },
+  {
+    "id": 638,
+    "section": "Hypersensitivity",
+    "chapter": "Immunology",
+    "question": "Why is skin testing the most widely used method to test for a type I hypersensitivity reaction?",
+    "options": [
+      "It causes less trauma and is more cost effective than other methods",
+      "It has greater sensitivity than in vitro measurements",
+      "It is more likely to be positive for IgE-specific allergens compared with other methods",
+      "It may be used to predict the development of further allergen sensitivity"
+    ],
+    "answer": "B",
+    "explanation": "Skin testing is considered much more sensitive than in vitro tests that measure either total or antigen-specific IgE."
+  },
+  {
+    "id": 639,
+    "section": "Hypersensitivity",
+    "chapter": "Immunology",
+    "question": "Which in vitro test measures IgE levels against a specific allergen?",
+    "options": [
+      "Histamine release assay",
+      "Radioimmunosorbent test (RIST)",
+      "Fluorescent allergosorbent test (FAST)",
+      "Precipitin radioimmunosorbent test (PRIST)"
+    ],
+    "answer": "C",
+    "explanation": "FAST is a fluorescent assay that measures specific IgE; RIST and PRIST tests are radioimmunoassays that measure total IgE. The FAST procedure and a chemiluminescent assay have replaced the radioallergosorbent test (RAST), for measuring allergen specific IgE. The histamine release assay is a more general assay."
+  },
+  {
+    "id": 640,
+    "section": "Hypersensitivity",
+    "chapter": "Immunology",
+    "question": "A patient who is blood group O is accidentally transfused with group A blood and develops a reaction during the transfusion. What antibody is involved in this type II reaction?",
+    "options": [
+      "IgM",
+      "IgE",
+      "IgG and IgE",
+      "IgG"
+    ],
+    "answer": "A",
+    "explanation": "IgG and IgM are the antibodies involved in a type II cytotoxic reaction. Naturally occurring anti-A in the form of IgM is present in the blood of a group O individual and would cause an immediate transfusion reaction. Cell destruction occurs when antibodies bind to cells causing destruction via complement activation, thereby triggering intravascular hemolysis."
+  },
+  {
+    "id": 641,
+    "section": "Hypersensitivity",
+    "chapter": "Immunology",
+    "question": "Which test would measure the coating of RBCs by antibody as occurs in hemolytic transfusion reactions?",
+    "options": [
+      "Indirect antiglobulin test (IAT)",
+      "Direct antiglobulin test (DAT)",
+      "ELISA",
+      "Hemagglutination"
+    ],
+    "answer": "B",
+    "explanation": "The DAT measures antibody that has already coated RBCs in vivo. DAT and direct IFAs use anti-Ig to detect antibody-sensitized cells."
+  },
+  {
+    "id": 642,
+    "section": "Hypersensitivity",
+    "chapter": "Immunology",
+    "question": "Which test detects antibodies that have attached to tissues, resulting in a type-II cytotoxic reaction?",
+    "options": [
+      "Indirect immunofluorescence",
+      "Direct immunofluorescence (DIF)",
+      "Immunofixation electrophoresis (IFE)",
+      "Hemagglutination"
+    ],
+    "answer": "B",
+    "explanation": "The direct IFA detects the presence of antibody that may cause a type II cytotoxic reaction. For example, renal biopsies from patients with Goodpasture syndrome exhibit a smooth pattern of fluorescence along the basement membrane after reaction with fluorescein isothiocyanate (FITC)–conjugated anti-Ig. The reaction detects antibodies against the basement membrane of the glomeruli."
+  },
+  {
+    "id": 643,
+    "section": "Hypersensitivity",
+    "chapter": "Immunology",
+    "question": "Which of the following conditions will most likely result in a false-negative DAT test?",
+    "options": [
+      "Insufficient washing of RBCs",
+      "Use of heavy chain–specific polyclonal anti-human Ig",
+      "Use of excessive centrifugal force",
+      "Use of a sample obtained by finger puncture"
+    ],
+    "answer": "A",
+    "explanation": "Insufficient washing can cause incomplete removal of excess or unbound Igs and other proteins, which may neutralize the antiglobulin reagent."
+  },
+  {
+    "id": 644,
+    "section": "Hypersensitivity",
+    "chapter": "Immunology",
+    "question": "Which of the following tests will detect circulating immune complexes in the serum of some patients with systemic autoimmune diseases, such as RA?",
+    "options": [
+      "Direct IFA",
+      "Enzyme immunoassay (EIA)",
+      "Assay of cryoglobulins",
+      "IAT"
+    ],
+    "answer": "C",
+    "explanation": "Most autoimmune diseases involve the formation of antigen–antibody complexes that deposit in tissues, causing local inflammation and necrosis induced by complement activation, phagocytosis, white blood cell (WBC) infiltration, and lysosomal damage. Some patients make monoclonal or polyclonal antibodies with RF activity that bind to serum Igs, forming aggregates that are insoluble at 4°C. These circulating immune complexes are detected by allowing a blood sample to clot at 37°C, transferring the serum to a sedimentation rate tube, and then incubating the serum at 4°C for 3 days."
+  },
+  {
+    "id": 645,
+    "section": "Hypersensitivity",
+    "chapter": "Immunology",
+    "question": "What immune elements are involved in a positive skin test for tuberculosis?",
+    "options": [
+      "IgE antibodies",
+      "T cells and macrophages",
+      "NK cells and IgG antibody",
+      "B cells and IgM antibody"
+    ],
+    "answer": "B",
+    "explanation": "T cells and macrophages are the immune elements primarily responsible for the clinical manifestations of a positive tuberculosis test. Reactions usually take 48 to 72 hours to reach peak development and are characteristic of localized type IV cell-mediated hypersensitivity. The skin reaction is characterized by a lesion containing a mononuclear cell infiltrate."
+  },
+  {
+    "id": 646,
+    "section": "Hypersensitivity",
+    "chapter": "Immunology",
+    "question": "A patient receives a transfusion of packed RBCs and fresh frozen plasma (FFP) and develops an anaphylactic, nonhemolytic reaction. She reports receiving a transfusion 20 years earlier. She had no reaction to the previous transfusion, but she did feel “poorly” a few weeks later. Which of the following transfused substances most likely elicited the reaction?",
+    "options": [
+      "IgA",
+      "Group A antigen",
+      "Rho (D) antigen",
+      "An antigen belonging to the Duffy system"
+    ],
+    "answer": "A",
+    "explanation": "The fact that this is a nonhemolytic reaction suggests that a non-RBC antigen may be involved. Selective IgA deficiency occurs in approximately one in 700 individuals and is often asymptomatic. Individuals deficient in IgA may make an antibody against the α-heavy chain if they are exposed to IgA via a transfusion. This antibody may lead to a serum sickness reaction if the IgA is still present after antibody formation. This could explain the “poor feeling” the patient had after the initial transfusion. A subsequent transfusion may lead to an Arthus reaction if IgG anti-IgA is present or an anaphylactic reaction if IgE anti-IgA is present."
+  },
+  {
+    "id": 647,
+    "section": "Hypersensitivity",
+    "chapter": "Immunology",
+    "question": "A patient deficient in the C3 complement component would be expected to mount a normal:",
+    "options": [
+      "Type I and IV hypersensitivity response",
+      "Type II and IV hypersensitivity response",
+      "Type I and III hypersensitivity response",
+      "Type II and III hypersensitivity response"
+    ],
+    "answer": "A",
+    "explanation": "Complement is involved in types II and III hypersensitivity; thus an individual deficient in C3 will be deficient in those responses. The complement deficiency should have no effect on IgE (type I) or cell-mediated (type IV) hypersensitivities."
+  },
+  {
+    "id": 648,
+    "section": "Immunoglobulins, Complement, and Cellular Testing",
+    "chapter": "Immunology",
+    "question": "Which of the following symptoms in a young child may indicate an immunodeficiency syndrome?",
+    "options": [
+      "Anaphylactic reactions",
+      "Severe rashes and myalgia",
+      "Recurrent bacterial, fungal, and viral infections",
+      "Weight loss, rapid heartbeat, breathlessness"
+    ],
+    "answer": "C",
+    "explanation": "An immunodeficiency syndrome should be considered in a young child who has a history of recurrent bacterial, fungal, and viral infections manifested after the disappearance of maternal IgG. Immunodeficiency disorders may involve deficiencies in production and/or function of lymphocytes and phagocytic cells or a deficiency in production of a complement factor. Choice of laboratory tests is based on the patient’s clinical presentation, age, and history."
+  },
+  {
+    "id": 649,
+    "section": "Immunoglobulins, Complement, and Cellular Testing",
+    "chapter": "Immunology",
+    "question": "What screening test should be performed first in a young patient suspected of having an immune dysfunction disorder?",
+    "options": [
+      "Complete blood count (CBC) and WBC differential",
+      "Chemotaxis assay",
+      "Complement levels",
+      "Bone marrow biopsy"
+    ],
+    "answer": "A",
+    "explanation": "The first screening tests performed in the initial evaluation of a young patient who is suspected of having an immune dysfunction are the CBC and differential. WBCs that are decreased in number or abnormal in appearance may indicate further testing."
+  },
+  {
+    "id": 650,
+    "section": "Immunoglobulins, Complement, and Cellular Testing",
+    "chapter": "Immunology",
+    "question": "Which test should be performed when a patient has a reaction to transfused plasma products?",
+    "options": [
+      "Ig levels",
+      "T-cell count",
+      "Hemoglobin levels",
+      "RBC enzymes"
+    ],
+    "answer": "A",
+    "explanation": "A reaction to plasma products may be found in an IgA-deficient person who has formed anti-IgA antibodies. Ig levels would aid in this determination. Selective IgA deficiency is the most common immunodeficiency disease and is characterized by serum IgA levels below 5 mg/dL. IgA is usually absent from secretions, but the B-cell count is usually normal."
+  },
+  {
+    "id": 651,
+    "section": "Immunoglobulins, Complement, and Cellular Testing",
+    "chapter": "Immunology",
+    "question": "What is the “M” component in monoclonal gammopathies?",
+    "options": [
+      "IgM produced in excess",
+      "Heavy chain produced in excess",
+      "Malignant proliferation of B cells",
+      "Monoclonal antibody or cell line"
+    ],
+    "answer": "D",
+    "explanation": "The “M” component refers to any monoclonal protein or cell line produced in a monoclonal gammopathy, such as multiple myeloma."
+  },
+  {
+    "id": 652,
+    "section": "Immunoglobulins, Complement, and Cellular Testing",
+    "chapter": "Immunology",
+    "question": "A child suspected of having an inherited humoral immunodeficiency disease is given diphtheria/tetanus vaccine. Two weeks after the immunization, his level of antibody to the specific antigens is measured. Which result is expected for this patient if he, indeed, has a humoral deficiency?",
+    "options": [
+      "Increased levels of specific antibody",
+      "No change in the level of specific antibody",
+      "An increase in IgG-specific antibody but not IgM-specific antibody",
+      "Increased levels of nonspecific antibody"
+    ],
+    "answer": "B",
+    "explanation": "In a patient with immunodeficiency, the expected levels of specific antibody to the antigens in the vaccine would be decreased or not present. This response provides evidence of deficient antibody production."
+  },
+  {
+    "id": 653,
+    "section": "Immunoglobulins, Complement, and Cellular Testing",
+    "chapter": "Immunology",
+    "question": "Which disease may be expected to show an IgM spike on an electrophoretic pattern?",
+    "options": [
+      "Hypogammaglobulinemia",
+      "Multicystic kidney disease",
+      "Waldenström macroglobulinemia",
+      "Wiskott-Aldrich syndrome"
+    ],
+    "answer": "C",
+    "explanation": "Waldenström macroglobulinemia is a malignancy of plasmacytoid lymphocytes involving both bone marrow and lymph nodes. The malignant cells secrete monoclonal IgM and are in transition from B cells to plasma cells. In contrast to multiple myeloma, osteolytic bone lesions are not found."
+  },
+  {
+    "id": 654,
+    "section": "Immunoglobulins, Complement, and Cellular Testing",
+    "chapter": "Immunology",
+    "question": "In testing for DiGeorge syndrome, what type of laboratory analysis would be most helpful in determining the number of mature T cells?",
+    "options": [
+      "CBC",
+      "Dihydrorhodamine reduction (DHR) test",
+      "T-cell mitogen assays",
+      "Flow cytometry"
+    ],
+    "answer": "D",
+    "explanation": "DiGeorge syndrome is caused by a developmental failure or hypoplasia of the thymus and results in deficiency of T lymphocytes and cell-mediated immune function. The T- cell count is low, but the level of Igs is usually normal. Flow cytometry is most helpful in determining numbers and subpopulations of T cells."
+  },
+  {
+    "id": 655,
+    "section": "Immunoglobulins, Complement, and Cellular Testing",
+    "chapter": "Immunology",
+    "question": "Interpret the following description of an IFE assay of urine. Dense wide bands in both the κ- and λ-lanes. No bands present in the heavy-chain lanes.",
+    "options": [
+      "Normal",
+      "Light-chain disease",
+      "Increased polyclonal Fab fragments",
+      "Multiple myeloma"
+    ],
+    "answer": "C",
+    "explanation": "Heavy wide bands seen with both anti-κ and anti-λ antisera indicate excessive polyclonal light-chain excretion. Light-chain disease would show a heavy restricted band for one of the light-chain reactions, but not both. The finding of excess λ- and κ- chains indicates a polyclonal gammopathy with increased Ig turnover and excretion of the light chains as Fab fragments."
+  },
+  {
+    "id": 656,
+    "section": "Immunoglobulins, Complement, and Cellular Testing",
+    "chapter": "Immunology",
+    "question": "Free monoclonal light chains are often present in the serum of patients with multiple myeloma and may be useful for disease monitoring. Which of the following assays would be recommended to detect the presence of free light chains in serum?",
+    "options": [
+      "SPE",
+      "Urine immunofixation",
+      "Nephelometry",
+      "ELISA"
+    ],
+    "answer": "C",
+    "explanation": "Free light chains in serum are a sensitive indicator of a monoclonal gammopathy. They are often not present in sufficient quantity to show a band on a protein electrophoresis gel. Detecting light chains in urine is not an indicator of what the serum levels may be. Serum Ig heavy and light chains are most commonly measured by using rate or endpoint nephelometry. ELISA assays are most often used to measure specific antibody levels, not to quantitate Ig heavy- or light-chain isotypes."
+  },
+  {
+    "id": 657,
+    "section": "Immunoglobulins, Complement, and Cellular Testing",
+    "chapter": "Immunology",
+    "question": "What is measured in the CH50 assay?",
+    "options": [
+      "RBC quantity needed to agglutinate 50% of antibody",
+      "Complement needed to lyse 50% of RBCs",
+      "Complement needed to lyse 50% of antibody-sensitized RBCs",
+      "Antibody and complement needed to sensitize 50% of RBCs"
+    ],
+    "answer": "C",
+    "explanation": "CH50 is the amount of complement needed to lyse 50% of standardized antibody- sensitized sheep RBCs. It is expressed as the reciprocal of the serum dilution resulting in 50% hemolysis. Low levels are associated with deficiency of some complement components and active systemic autoimmune diseases in which complement is being consumed."
+  },
+  {
+    "id": 658,
+    "section": "Immunoglobulins, Complement, and Cellular Testing",
+    "chapter": "Immunology",
+    "question": "What type of disorders would show a decrease in C3, C4, and CH50?",
+    "options": [
+      "Autoimmune disorders, such as SLE and RA",
+      "Immunodeficiency disorders, such as common variable immunodeficiency",
+      "Tumors",
+      "Bacterial, viral, fungal, or parasitic infections"
+    ],
+    "answer": "A",
+    "explanation": "The pattern of decreased C3, C4, and CH50 indicates classic pathway activation. This results in consumption of complement and is associated with SLE, serum sickness, subacute bacterial endocarditis, and other immune complex diseases. The inflammatory response seen in malignancy and acute infections gives rise to an increase in complement components. Immunodeficiency caused by an inherited deficiency in complement constitutes only about 1% of immunodeficiency diseases. Such disorders reduce the CH50 but involve a deficient serum level of only one complement factor."
+  },
+  {
+    "id": 659,
+    "section": "Immunoglobulins, Complement, and Cellular Testing",
+    "chapter": "Immunology",
+    "question": "All of the following tests measure phagocyte function except:",
+    "options": [
+      "Leukocyte adhesion molecule analysis",
+      "DHR assay",
+      "Nitro blue tetrazolium (NBT) test",
+      "IL-2 assay"
+    ],
+    "answer": "D",
+    "explanation": "The DHR assay and the older NBT tests are used to diagnose chronic granulomatous disease, an inherited disorder in which phagocytic cells fail to kill microorganisms because of a defect in peroxide production (respiratory burst). Leukocyte adhesion deficiency is associated with a defect in the production of integrin molecules on the surface of WBCs and their granules. IL-2 is a cytokine produced by activated T-helper and B cells. It causes B-cell proliferation and increased production of antibody, interferon, and other cytokines. IL-2 can be measured by EIA and is used to detect transplant rejection, which is associated with an increase in the serum and urine levels."
+  },
+  {
+    "id": 660,
+    "section": "Tumor Testing and Transplantation",
+    "chapter": "Immunology",
+    "question": "A patient had surgery for colorectal cancer, after which he received chemotherapy for 6 months. The test for carcinoembryonic antigen (CEA) was normal at this time. One year later, the bimonthly level of CEA was elevated (above 10 ng/mL). An examination and biopsy revealed recurrence of a small tumor. What was the value of the results provided by the CEA test in this clinical situation?",
+    "options": [
+      "Diagnostic information",
+      "Information for further treatment",
+      "Information on the immunologic response of the patient",
+      "No useful clinical information in this case"
+    ],
+    "answer": "B",
+    "explanation": "CEA is a glycoprotein that is elevated in about 60% of patients with colorectal cancer and one third or more patients with pulmonary, gastric, and pancreatic cancers. CEA may be positive in smokers and in patients with cirrhosis, Crohn disease, and other nonmalignant conditions. Because sensitivity for malignant disease is low, CEA is not recommended for use as a diagnostic test. However, an elevated CEA level after treatment is evidence of tumor recurrence and the need for second-look surgery."
+  },
+  {
+    "id": 661,
+    "section": "Tumor Testing and Transplantation",
+    "chapter": "Immunology",
+    "question": "A carbohydrate antigen 125 assay (CA-125) was performed on a woman with ovarian cancer. After treatment, the levels fell significantly. An examination performed later revealed recurrence of the tumor, but the CA-125 levels remained low. How can this finding be explained?",
+    "options": [
+      "Test error",
+      "CA-125 was the wrong laboratory test; α-fetoprotein (AFP) is a better test to monitor ovarian cancer",
+      "CA-125 may not be sensitive enough when used alone to monitor tumor development",
+      "CA-125 is not specific enough to detect only one type of tumor"
+    ],
+    "answer": "C",
+    "explanation": "CA-125 is a tumor associated carbohydrate antigen that is elevated in 70% to 80% of patients with ovarian cancer and about 20% of patients with pancreatic cancer. Although an increase in CA-125 may indicate recurrent or progressive disease, low levels do not necessarily indicate the absence of tumor growth."
+  },
+  {
+    "id": 662,
+    "section": "Tumor Testing and Transplantation",
+    "chapter": "Immunology",
+    "question": "What is the correct procedure upon receipt of a test request for human chorionic gonadotropin (hCG) on the serum of a 60-year-old man?",
+    "options": [
+      "Return the request; hCG is not performed on men",
+      "Perform a qualitative hCG test to see if hCG is present",
+      "Perform the test; hCG may be increased in testicular tumors",
+      "Perform the test but use different standards and controls"
+    ],
+    "answer": "C",
+    "explanation": "hCG is normally tested for in pregnancy; it is increased in approximately 60% of patients with testicular tumors and a lower percentage of those with ovarian, gastrointestinal, breast, and pulmonary tumors. Malignant cells secreting hCG may produce only the β-subunit; therefore, qualitative and quantitative tests that detect both intact hCG and free β-subunits provide better sensitivity than either test by itself."
+  },
+  {
+    "id": 663,
+    "section": "Tumor Testing and Transplantation",
+    "chapter": "Immunology",
+    "question": "Would an hCG test using a monoclonal antibody against the β-subunit of hCG likely be affected by an increased level of follicle-stimulating hormone (FSH)?",
+    "options": [
+      "Yes, the β-subunit of FSH is identical to that of hCG",
+      "No, the test would be specific for the β-subunit of hCG",
+      "Yes, a cross reaction would occur because of structural similarities",
+      "No, the structure of FSH and hCG are not at all similar"
+    ],
+    "answer": "B",
+    "explanation": "Luteinizing hormone, FSH, and hCG share a common α-subunit but have different β- subunits. A test for hCG using a monoclonal antibody would be specific for hCG, provided that the antibody was directed against an antigenic determinant on the carboxy terminal end of the β-subunit."
+  },
+  {
+    "id": 664,
+    "section": "Tumor Testing and Transplantation",
+    "chapter": "Immunology",
+    "question": "Which of the following substances, sometimes used as a tumor marker, is increased two- or threefold in a normal pregnancy?",
+    "options": [
+      "Alkaline phosphatase (ALP)",
+      "Calcitonin",
+      "Adrenocortocotropic hormone (ACTH)",
+      "Neuron-specific enolase"
+    ],
+    "answer": "A",
+    "explanation": "Isoenzymes of ALP are sometimes used as tumor markers, but they have a low specificity because they are also increased in nonmalignant diseases. These include placental-like (heat-stable) ALP isoenzymes, which are found (infrequently) in some malignancies, such as cancer of the lung; bone-derived ALP, which is a marker for metastatic bone cancer; and the fast-migrating liver isoenzyme, which is a marker for metastatic liver cancer. ACTH is secreted as an ectopic hormone in some patients with cancer of the lung. Calcitonin is a hormone produced by the medulla of the thyroid and is increased in the serum of patients with medullary thyroid carcinoma. Neuron- specific enolase is an enzyme that is used as a tumor marker primarily for neuroblastoma."
+  },
+  {
+    "id": 665,
+    "section": "Tumor Testing and Transplantation",
+    "chapter": "Immunology",
+    "question": "What is an advantage of performing a prostate-specific antigen (PSA) test for prostate cancer?",
+    "options": [
+      "PSA is stable in serum and not affected by digital rectal examination",
+      "PSA is increased only in prostatic malignancy",
+      "A normal serum level rules out malignant prostatic disease",
+      "The percentage of free PSA is elevated in persons with malignant disease"
+    ],
+    "answer": "A",
+    "explanation": "PSA is a glycoprotein with protease activity that is specific for the prostate gland. High levels may be caused by prostate malignancy, benign prostatic hypertrophy, or prostatitis, but PSA is not increased by physical examination of the prostate. PSA has a sensitivity of 80% and a specificity of about 75% for prostate cancer. The sensitivity is sufficiently high to warrant its use in screening tests, but its sensitivity for stage A cancer is below 60%. Most of the serum PSA is bound to protease inhibitors, such as α1-antitrypsin and α1-antichymotrypsin. Patients with borderline PSA levels (4–10 ng/mL) and a low percentage of free PSA are more likely to have cancer of the prostate compared with patients with a normal percentage of free PSA."
+  },
+  {
+    "id": 666,
+    "section": "Tumor Testing and Transplantation",
+    "chapter": "Immunology",
+    "question": "Which method is the most sensitive for quantitation of AFP?",
+    "options": [
+      "Double immunodiffusion",
+      "Electrophoresis",
+      "Enzyme immunoassay",
+      "Particle agglutination"
+    ],
+    "answer": "C",
+    "explanation": "AFP is a glycoprotein that is produced in about 80% to 90% of patients with hepatoma and in a lower percentage of patients with other tumors, including retinoblastoma, breast cancer, uterine cancer, and pancreatic cancer. The upper reference limit for serum is only 10 ng/mL, which requires a sensitive method of assay, such as EIA. The high analytical sensitivity of chemiluminescent immunoassays permits detection of reduced AFP levels in maternal serum associated with Down syndrome, as well as elevated levels associated with spina bifida."
+  },
+  {
+    "id": 667,
+    "section": "Tumor Testing and Transplantation",
+    "chapter": "Immunology",
+    "question": "How is HLA typing used in the investigation of genetic diseases?",
+    "options": [
+      "For prediction of the severity of the disease",
+      "For genetic linkage studies",
+      "For direct diagnosis of disease",
+      "Is not useful in this situation"
+    ],
+    "answer": "B",
+    "explanation": "HLA typing is useful in predicting some genetic diseases and for genetic counseling because certain HLA types show strong linkage to some diseases. HLA typing is not specifically used to diagnose a disease or assess its severity. In linkage studies, a disease gene can be predicted because it is located next to the locus of a normal gene with which it segregates. For example, the relative risk of developing ankylosing spondylitis is 87% in persons who are positive for HLA-B27. Analysis of family pedigrees for the linkage marker and disease can be used to determine the probability that a family member will inherit the disease gene."
+  },
+  {
+    "id": 668,
+    "section": "Tumor Testing and Transplantation",
+    "chapter": "Immunology",
+    "question": "Select the best donor for a man, blood type AB, in need of kidney transplantation.",
+    "options": [
+      "His brother, type AB, HLA matched for class II antigens",
+      "His mother, type B, HLA matched for class I antigens",
+      "His cousin, type O, HLA matched for major class II antigens",
+      "Deceased donor, type O, HLA matched for some class I and II antigens"
+    ],
+    "answer": "A",
+    "explanation": "A twin or sibling donor of the same blood type and HLA matched for class II antigens is the best donor in this situation. Class II antigens (HLA-D, -DR, -DQ, and -DP) determine the ability of the transplant recipient to recognize the graft. The HLA genes are located close together on chromosome 6, and crossover between HLA genes is rare. Siblings with closely matched class II antigens most likely inherited the same class I genes. The probability of siblings inheriting the same HLA haplotypes from both parents is 1:4."
+  },
+  {
+    "id": 669,
+    "section": "Tumor Testing and Transplantation",
+    "chapter": "Immunology",
+    "question": "Interpret the following microcytotoxicity target cell results: A9 and B12 cells = damaged; A1 and Aw19 cells = intact.",
+    "options": [
+      "Positive for A1 and Aw19; negative for A9 and B12",
+      "Negative for A1 and Aw19; positive for A9 and B12",
+      "Error in test system; retest",
+      "Impossible to determine"
+    ],
+    "answer": "B",
+    "explanation": "The microcytotoxicity test is based on the reaction of specific antisera and HLA antigens on test cells. Cells damaged by the binding of antibody and complement are detected with a supravital dye, such as eosin."
+  },
+  {
+    "id": 670,
+    "section": "Tumor Testing and Transplantation",
+    "chapter": "Immunology",
+    "question": "Which method, classically used for HLA-D typing, is often used to determine the compatibility between a living organ donor and a recipient?",
+    "options": [
+      "Flow cytometry",
+      "Mixed lymphocyte culture (MLC)",
+      "Primed lymphocyte test",
+      "Restriction fragment length polymorphism (RFLP)"
+    ],
+    "answer": "B",
+    "explanation": "Flow cytometry can be used in transplantation to type serologically defined HLA antigens. The one-way mixed lymphocyte reaction is used to identify HLA-D antigens on the donor’s lymphocytes and is used for crossmatching living donors with transplant recipients. The assay is time consuming and would not be used as part of a workup for a transplant from a deceased donor. HLA-D incompatibility is associated with the recognition phase of allograft rejection. The primed lymphocyte test is used to identify HLA-DP antigens."
+  },
+  {
+    "id": 671,
+    "section": "Tumor Testing and Transplantation",
+    "chapter": "Immunology",
+    "question": "SITUATION: Cells type negative for all HLA antigens in a complement-dependent cytotoxicity assay. What is the most likely cause?",
+    "options": [
+      "Too much supravital dye was added",
+      "Rabbit complement is inactivated",
+      "All leukocytes are dead",
+      "Antisera is too concentrated"
+    ],
+    "answer": "B",
+    "explanation": "Inactive rabbit complement may not become fixed to antibodies that have bound test leukocytes; therefore, no lysis of cells will occur. When the supravital dye is added, all cells will appear negative (exclude the dye) for all HLAs."
+  },
+  {
+    "id": 672,
+    "section": "Tumor Testing and Transplantation",
+    "chapter": "Immunology",
+    "question": "What method may be used for tissue typing instead of serological HLA typing?",
+    "options": [
+      "PCR",
+      "Southern blotting",
+      "RFLP",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "PCR, Southern blotting, and testing for RFLPs may all be used to identify HLA genes. Many laboratories use PCR technology for the routine determination of HLA type."
+  },
+  {
+    "id": 673,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "Which of the following serial dilutions contains an incorrect factor?",
+    "options": [
+      "1:4, 1:8, 1:16",
+      "1:1, 1:2, 1:4",
+      "1:5, 1:15, 1:45",
+      "1:2, 1:6, 1:12"
+    ],
+    "answer": "D",
+    "explanation": "All the dilutions are multiplied by the same factor in a progression except the last one: 1:2 to 1:6 is × 3, whereas 1:6 to 1:12 is × 2. Threefold dilutions of a 1:2 dilution would result in a 1:6 followed by a 1:18."
+  },
+  {
+    "id": 674,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "A patient was tested for syphilis by the RPR method and was reactive. A TP-PA test was performed and the result was negative. Subsequent testing showed the patient to have a high titer of ACAs by the ELISA method. Which routine laboratory test is most likely to be abnormal for this patient?",
+    "options": [
+      "Activated partial thromboplastin time (APTT)",
+      "Anti–smooth muscle antibodies",
+      "Aspartate aminotransferase (AST)",
+      "C3 assay by immunonephelometry"
+    ],
+    "answer": "A",
+    "explanation": "Approximately 50% to 70% of patients with ACAs also have the lupus anticoagulant (LAC) in their serum. LAC is an Ig that interferes with in vitro coagulation tests: prothrombin time (PT), APTT, and dilute Russell viper venom (DRVV) time. These tests require phospholipid for the activation of factor X. About 30% of patients with antibodies to cardiolipin or phospholipids have a biological false-positive RPR result. Anti–smooth muscle is most commonly associated with chronic active hepatitis, and increased AST with necrotic liver diseases. Although ACA and LAC may be associated with SLE, the majority of patients with these antibodies do not have SLE and would have a normal C3 level."
+  },
+  {
+    "id": 675,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "Inflammation involves a variety of biochemical and cellular mediators. Which of the following may be increased within 72 hours after an initial infection?",
+    "options": [
+      "Neutrophils, macrophages, antibody, complement, α1-antitrypsin",
+      "Macrophages, T cells, antibody, haptoglobin, fibrinogen",
+      "Neutrophils, macrophages, complement, fibrinogen, C-reactive protein",
+      "Macrophages, T cells, B cells, ceruloplasmin, complement"
+    ],
+    "answer": "C",
+    "explanation": "The correct list, in which all mediators are involved in an inflammatory response within 72 hours after initial infection, is neutrophils, macrophages, complement, fibrinogen, and C-reactive protein. Phagocytic cells, acute phase reactants, and fibrinolytic factors enter the site of inflammation. Antibody and lymphocytes do not enter until later."
+  },
+  {
+    "id": 676,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "An 18-month-old boy has recurrent sinopulmonary infections and septicemia. Bruton thymidine kinase deficiency is suspected. Which test result would be markedly decreased?",
+    "options": [
+      "Serum IgG, IgA, and IgM",
+      "Total T-cell count",
+      "Both B- and T-cell counts",
+      "Lymphocyte proliferation with phytohemagglutinin stimulation"
+    ],
+    "answer": "A",
+    "explanation": "The patient with Bruton thymidine kinase deficiency presents with clinical symptoms related to recurrent infections, demonstrated in the laboratory by decreased or absent Igs. Peripheral blood B cells are absent or markedly reduced, but T cells are normal in number and function. Because phytohemagglutinin is a T-cell mitogen, the lymphocyte proliferation test using PHA would be normal for this patient."
+  },
+  {
+    "id": 677,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "A patient received 5 units of FFP and developed a severe anaphylactic reaction. He has a history of respiratory and gastrointestinal infections. Post-transfusion studies showed all 5 units to be ABO compatible. What immunologic test would help to determine the cause of this transfusion reaction?",
+    "options": [
+      "Complement levels, particularly C3 and C4",
+      "Flow cytometry for T-cell counts",
+      "Measurement of Igs",
+      "NBT test for phagocytic function"
+    ],
+    "answer": "C",
+    "explanation": "The patient had an anaphylactic reaction to a plasma product. This, combined with the history of respiratory and gastrointestinal infections, suggests a selective IgA deficiency. Measurement of Igs would be helpful in this case. A low serum IgA and normal IgG substantiate the diagnosis of selective IgA deficiency. Such patients frequently produce anti-IgA, which is often responsible for a severe transfusion reaction when ABO-compatible plasma is administered."
+  },
+  {
+    "id": 678,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "IFE revealed excessive amounts of polyclonal IgM and low concentrations of IgG and IgA. What is the most likely explanation of these findings and the best course of action?",
+    "options": [
+      "Proper amounts of antisera were not added; repeat both tests",
+      "Test specimen was not added properly; repeat both procedures",
+      "Patient has common variable immunodeficiency; perform B-cell count",
+      "Patient has immunodeficiency with hyper-M; perform CD40 ligand (CD154) analysis"
+    ],
+    "answer": "D",
+    "explanation": "Low plasma concentrations of IgG and IgA and an abundance of IgM is consistent with the CD40 ligand deficiency. Most cases are X-linked and result from a mutation of the gene TNFSF5, which encodes a receptor needed for switching Ig production. Patients with common variable immunodeficiency have low serum IgG, IgA, and IgM."
+  },
+  {
+    "id": 679,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "SITUATION: A 54-year-old man was admitted to the hospital after having a seizure. Many laboratory tests were performed, including an RPR, but none of the results was positive. The physician suspects a case of late (tertiary) syphilis. Which test should be performed next?",
+    "options": [
+      "Repeat RPR, followed by VDRL",
+      "Treponemal test, such as TP-PA on serum",
+      "VDRL on CSF",
+      "No laboratory test is positive for late (tertiary) syphilis"
+    ],
+    "answer": "B",
+    "explanation": "Serum antibody tests, such as RPR and VDRL, are often negative in cases of late syphilis. However, treponemal tests remain positive in greater than 95% of cases. The VDRL test on CSF is the most specific test for diagnosis of neurosyphilis because treponemal test results remain positive after treatment. It should be used as the confirmatory test when the serum treponemal test result is positive. However, the CSF VDRL is limited in sensitivity and would not be positive if the serum treponemal- specific antibody test was negative."
+  },
+  {
+    "id": 680,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "A patient came to his physician complaining of a rash, severe headaches, stiff neck, and sleep problems. Laboratory tests of significance were an elevated sedimentation rate (ESR) and slightly increased liver enzymes. Further questioning of the patient revealed that he had returned from a hunting trip in upstate New York 4 weeks ago. His physician ordered a serological test for Lyme disease, and the assay was negative. What is the most likely explanation of these results?",
+    "options": [
+      "The antibody response is not sufficient to be detected at this stage",
+      "The clinical symptoms and laboratory results are not characteristic of Lyme disease",
+      "The patient likely has early-stage HBV infection",
+      "Laboratory error has caused a false-negative result"
+    ],
+    "answer": "A",
+    "explanation": "The antibody response to B. burgdorferi may not develop until several weeks after initial infection. The antibody test should be repeated 2 to 4 weeks later. To confirm a positive EIA, samples that initially test positive or equivocal (indeterminate) should be retested using a second enzyme immunoassay or immunoblot method. Regardless of the laboratory results, if the physician suspects Lyme disease, treatment should begin immediately."
+  },
+  {
+    "id": 681,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "A 19-year-old girl came to her physician complaining of a sore throat and fatigue. Upon physical examination, lymphadenopathy was noted. Reactive lymphocytes were noted on the differential, but a rapid test for antibodies to IM was negative. Liver enzymes were only slightly elevated. What test(s) should be ordered next?",
+    "options": [
+      "Hepatitis testing",
+      "EBV serological panel",
+      "HIV confirmatory testing",
+      "Bone marrow biopsy"
+    ],
+    "answer": "B",
+    "explanation": "An EBV serological panel would give a more accurate assessment than a rapid slide IM test. The time of appearance of the various antibodies to the viral antigens differs according to the clinical course of the infection."
+  },
+  {
+    "id": 682,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "A patient received 2 units of RBCs following surgery. Two weeks after the surgery, the patient was seen by his physician and was found to have mild jaundice and slightly elevated liver enzymes. Hepatitis testing, however, was negative. What should be done next?",
+    "options": [
+      "Nothing until more severe or definitive clinical signs develop",
+      "Repeat hepatitis testing immediately",
+      "Repeat hepatitis testing in a few weeks",
+      "Check blood bank donor records and contact donor(s) of transfused units"
+    ],
+    "answer": "C",
+    "explanation": "The level of HBsAg may not have reached detectable levels, and antibodies to HBc and HCV would not have yet developed. Waiting 1 or 2 weeks and repeating the tests may reveal evidence of hepatitis virus infection."
+  },
+  {
+    "id": 683,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "A hospital employee received the final dose of the hepatitis B vaccine 3 weeks ago. She wants to donate blood. Which of the following results are expected from the hepatitis screen, and will she be allowed to donate blood?",
+    "options": [
+      "HBsAg, positive; anti-HBc, negative—she may donate",
+      "HBsAg, negative; anti-HBc, positive—she may not donate",
+      "HBsAg, positive; anti-HBc, positive—she may not donate",
+      "HBsAg, negative; anti-HBc, negative—she may donate"
+    ],
+    "answer": "D",
+    "explanation": "She may donate if she is symptom free. The response to hepatitis B vaccine would include a positive result for anti-HBs, a test not normally a part of routine donor testing. She will be negative for HBsAg and anti-HBc; however, transient antigen positivity (less than 2 weeks) may be seen following vaccination."
+  },
+  {
+    "id": 684,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "A pregnant woman came to her physician with a maculopapular rash on her face and neck. Her temperature was 37.7°C. Rubella tests for both IgG and IgM antibody were positive. What positive test(s) would reveal a diagnosis of congenital rubella syndrome in her baby after birth?",
+    "options": [
+      "Positive rubella tests for both IgG and IgM antibody",
+      "Positive rubella test for IgM",
+      "Positive rubella test for IgG",
+      "No positive test is revealed in congenital rubella syndrome"
+    ],
+    "answer": "B",
+    "explanation": "A finding of IgG is not definitive for congenital rubella syndrome because IgG crosses the placenta from the mother; however, demonstration of IgM, even in a single neonatal sample, is diagnostic."
+  },
+  {
+    "id": 685,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "SITUATION: A patient with RA has acute pneumonia but a negative result on throat culture. The physician suspects an infection with Mycoplasma pneumoniae and requests an IgM-specific antibody test. The test is performed directly on serial dilutions of serum less than 4 hours old. The result is positive, giving a titer of 1:32. However, the test is repeated 3 weeks later, and the titer remains at 1:32. What test should be performed to determine if the patient is truly infected with M. pneumoniae?",
+    "options": [
+      "IgG anti-M. pneumoniae",
+      "Cold agglutinins",
+      "M. pneumoniae PCR or other molecular assay",
+      "Respiratory culture"
+    ],
+    "answer": "C",
+    "explanation": "The IgM-specific antibody test for M. pneumoniae detects antibodies to mycoplasmal membrane antigens and, unlike cold agglutinins, is specific for M. pneumoniae. A positive result (titer of 1:32 or higher) occurs during the acute phase in about 87% of M. pneumoniae infections and does not need to be confirmed by assay of convalescent serum. However, Mycoplasma IgM may last a year or more, thus its presence does not always indicate a current infection. PCR performed on a respiratory specimen is the definitive test and should be performed if there is a question about an IgM result."
+  },
+  {
+    "id": 686,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "A patient had a PSA level of 60 ng/mL the day before surgery to remove a localized prostate tumor. One week after surgery, serum PSA was determined to be 8 ng/mL by the same method. What is the most likely cause of these results?",
+    "options": [
+      "Incomplete removal of the malignancy",
+      "Cross reactivity of the antibody with another tumor antigen",
+      "Testing too soon after surgery",
+      "Hook effect with the PSA assay"
+    ],
+    "answer": "C",
+    "explanation": "When monitoring the level of a tumor marker for treatment efficacy or recurrence, the half-life of the protein must be considered when determining the testing interval. PSA has a half-life of almost 4 days and would not reach normal levels after surgery for approximately 3 to 4 weeks. The hook effect is the result of very high antigen levels giving a lower than expected result in a double antibody sandwich assay when both antibodies and sample are added at the same time."
+  },
+  {
+    "id": 687,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "A patient with symptoms associated with SLE and scleroderma was evaluated by immunofluorescence microscopy for ANAs by using the HEp-2 cell line as substrate. The cell line displayed a mixed pattern of fluorescence that could not be separated by serial dilutions of the serum. Which procedure would be most helpful in determining the antibody profile of this patient?",
+    "options": [
+      "Use of a different tissue substrate",
+      "Absorption of the serum using the appropriate tissue extract",
+      "Requesting a new specimen",
+      "ELISA tests for specific antibodies"
+    ],
+    "answer": "D",
+    "explanation": "Many patients with multiorgan autoimmune disease display symptoms that overlap two or more diseases and have complex mixtures of serum autoantibodies. The HEp-2 substrate is the most sensitive cell line for immunofluorescent microscopy because it contains cells in various mitotic stages, which exposes the serum to more antigens. Use of a nonhuman substrate, such as Crithidia, may help identify dsDNA antibodies but would not aid in differentiating all of the antibodies in a complex mixture. The best methods are ELISA, line blots, and multiplex tests because they are more specific than immunofluorescence microscopy for identifying antibodies to specific antigens. These assays are often used to measure antibodies to ENAs, which may be partially or completely lost during fixation of cells used for immunofluorescent microscopy. These antibodies cause a speckled pattern and are seen in a wide range of autoimmune diseases. Identification of the anti-ENA specificities is helpful in differentiating these diseases."
+  },
+  {
+    "id": 688,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "A patient with joint swelling and pain tested negative for serum RF by both latex agglutination and ELISA methods. What other test would help establish a diagnosis of RA in this patient?",
+    "options": [
+      "Anti-CCP",
+      "ANA testing",
+      "Flow cytometry",
+      "Complement levels"
+    ],
+    "answer": "A",
+    "explanation": "Antibodies to CCP are often found in RF-negative patients with RA. The absence of RFs from serum does not rule out a diagnosis of RA, and more than half the patients who are diagnosed with RA present initially with a negative serum RF result. Both RF and anti-CCP are criteria assays for diagnosing RA, and at least one of them must be positive for a confirmed diagnosis."
+  },
+  {
+    "id": 689,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "What is the main advantage of the recovery and reinfusion of autologous stem cells?",
+    "options": [
+      "It slows the rate of rejection of transplanted cells",
+      "It prevents graft-versus-host disease",
+      "No HLA testing is required",
+      "Engraftment occurs in a more efficient sequence"
+    ],
+    "answer": "B",
+    "explanation": "The main advantage to the patient from the reinfusion of autologous stem cells is that the procedure prevents graft-versus-host disease, especially in the immunocompromised patient. Although HLA testing is not required, this is not the primary advantage for patient care."
+  },
+  {
+    "id": 690,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "A transplant recipient began to show signs of rejection 8 days after transplantation, and the organ was removed. What immune elements might be found in the rejected organ?",
+    "options": [
+      "Antibody and complement",
+      "Primarily antibody",
+      "Macrophages",
+      "T cells"
+    ],
+    "answer": "D",
+    "explanation": "Acute rejection occurs within 3 weeks of transplantation. The immune element most likely to be involved in an acute rejection is the T cell in a type IV, delayed hypersensitivity (cell-mediated) reaction. Preformed antibody, and possibly complement, is usually involved in hyperacute (immediate) rejection and chronic rejection."
+  },
+  {
+    "id": 691,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "A patient with ovarian cancer who has been treated with chemotherapy is being monitored for recurrence by using serum CA-125, CA-50, and CA 15–3. Six months after treatment the CA 15–3 is elevated, but the CA-125 and CA-50 remain low. What is the most likely explanation of these findings?",
+    "options": [
+      "Ovarian malignancy has recurred",
+      "CA 15–3 is specific for breast cancer and indicates metastatic breast cancer",
+      "Testing error occurred in the measurement of CA 15–3 caused by poor analytical specificity",
+      "The CA 15–3 elevation is spurious and probably benign"
+    ],
+    "answer": "A",
+    "explanation": "Although CA-125 is the most commonly used tumor marker for ovarian cancer, not all ovarian tumors produce CA-125. Greatest sensitivity in monitoring for recurrence is achieved when several markers known to be increased in the malignant tissue type are measured simultaneously and when the markers are elevated (by malignancy) prior to treatment. In addition to limited sensitivity, no single tumor marker is entirely specific. Carbohydrate and other oncofetal antigens are produced by several malignant and benign conditions. Although testing errors may occur in any situation, measurements of carbohydrate antigens use purified monoclonal antibodies with very low cross reactivities."
+  },
+  {
+    "id": 692,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "An initial and repeat fourth-generation HIV screening test are both positive. The antibody differentiation assay is negative, as is the qualitative RNA PCR test. The patient shows no clinical signs of HIV infection, and the patient’s CD4 T-cell count is normal. Based on these results, which conclusion is correct?",
+    "options": [
+      "Patient is diagnosed as HIV-1 positive",
+      "Patient is diagnosed as HIV-2 positive",
+      "Results are inconclusive",
+      "Patient is diagnosed as HIV-1 negative"
+    ],
+    "answer": "D",
+    "explanation": "The fourth-generation algorithm detects infection approximately 2 weeks after exposure. This patient has negative follow-up test results for both antibody and nucleic acid, so she would be considered HIV negative. The lack of symptoms would not be consistent with a very recent infection; the patient would likely have an acute retroviral syndrome. However, a repeat test may be performed if clinical suspicion remains high."
+  },
+  {
+    "id": 693,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "A woman who has been pregnant for 12 weeks is tested for toxoplasmosis. Her IgM ELISA titer is 2.6 (reference range less than 1.6), and her IgG ELISA value is 66 (reference range less than 8). The physician asks you if these results indicated an infection during the past 12 weeks. Which of the following tests would you recommend to determine if the woman was infected during her pregnancy?",
+    "options": [
+      "Toxoplasmosis PCR on amniotic fluid",
+      "Toxoplasmosis IgM on amniotic fluid",
+      "Toxoplasmosis IgG avidity",
+      "Amniotic fluid culture"
+    ],
+    "answer": "C",
+    "explanation": "Although IgM is positive, in toxoplasmosis, specific IgM may remain detectable for a year or more following infection. IgG avidity, or the strength of binding of a serum to the antigen of interest, is a useful method to determine if an infection is recent or in the distant past. IgG avidity will increase with time following an infection. Amniotic fluid testing is not useful for determining when the mother might have been infected."
+  },
+  {
+    "id": 694,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "On January 4, an SPE on a specimen obtained at your hospital in North Dakota from a 58-year-old patient shows a band at the β—γ junction. The specimen was also positive for RF. You recommend that an immunofixation test be performed to determine if the band represents a monoclonal Ig. Another specimen is obtained 2 weeks later by the physician in his office 30 miles away, and whole blood is submitted to you for IFE. The courier placed the whole blood specimen in an ice chest for transport. In this specimen, no β-γ band is seen in the serum protein lane, and the IgM lane is very faint. The RF on this specimen was negative. The physician wants to know what went wrong in your laboratory. Your response is:",
+    "options": [
+      "Nothing went wrong in our laboratory; the patient had an infection 2 weeks ago, and it had cleared up",
+      "Something went wrong in our laboratory—we likely mislabeled one of the specimens; please resubmit a new specimen, and we will test it at no charge",
+      "We will run a second specimen after 2-mercaptoethanol treatment, which will eliminate IgM aggregates and allow for more sensitive monoclonal IgM detection",
+      "Please redraw another specimen from the patient, and this time, separate the serum from the clot in your office before placing the specimen on ice and sending it to us by courier"
+    ],
+    "answer": "D",
+    "explanation": "The most likely cause of the discrepant results is the presence of a type II cryoglobulin. This is a monoclonal RF. The protein likely precipitated during the courier ride and was, thus, in the clot when the laboratory separated the serum."
+  },
+  {
+    "id": 695,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "A patient undergoing dialysis is positive for both HBsAg and anti-HBs. The physician suspects a laboratory error. Do you agree?",
+    "options": [
+      "Yes; the patient should not test positive for both HBsAg and anti-HBs",
+      "No; incomplete dialysis of a patient in the core window phase of HBV infection will yield this result",
+      "No; it is likely the patient has recently received a hepatitis B booster vaccination within the past week, and this could have caused these results",
+      "Perhaps; a new specimen should be submitted to clear up the confusion"
+    ],
+    "answer": "C",
+    "explanation": "HBsAg will remain detectable at low levels following a vaccination for up to 1 to 2 weeks. Thus, patients who have received a second injection of hepatitis B vaccine may have anti-HBs and detectable antigen for a brief period. This has been reported more frequently in patients undergoing dialysis and in pediatric populations."
+  },
+  {
+    "id": 696,
+    "section": "Immunology Problem-Solving",
+    "chapter": "Immunology",
+    "question": "You are evaluating an ELISA assay as a replacement for your IFA ANA test. You test 50 specimens in duplicate on each assay. The ELISA assay uses a HEp-2 extract as its antigen source. The correlation between the ELISA and IFA tests is only 60% (30 of 50 specimens agree). Which of the following is the next best course of action?",
+    "options": [
+      "Test another 50 specimens",
+      "Perform a competency check on the medical laboratory scientists who performed the tests",
+      "Order a new lot of both kits and then retest on the new lots",
+      "Refer the discrepant specimens for testing by another method"
+    ],
+    "answer": "D",
+    "explanation": "In this situation, you have already tested the specimens in duplicate. Testing an additional 50 specimens will not change the fact that you have 20 discrepant specimens. The best course of action is to determine what antibodies are actually present in these specimens. Then, you can determine whether ELISA or IFA is a better procedure for detecting the most clinically relevant antibodies. You could perform clinical chart reviews as an alternative, but obtaining that data would be difficult and much of it may be subjective."
+  },
+  {
+    "id": 697,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which formula correctly describes the relationship between absorbance and percent transmittance (%T)?",
+    "options": [
+      "A = 2 – log %T",
+      "A = log T",
+      "A = –log %T",
+      "A = 2 – %T"
+    ],
+    "answer": "A",
+    "explanation": "Absorbance is proportional to the inverse log of transmittance: A = –log T = log 1/T Multiplying the numerator and denominator by 100 gives: A = log (100/100 × T) 100 × T = %T, substituting %T for 100 × T gives: A = log 100/%T A = log 100 – log %T A = 2.0 – log %T For example, if %T = 10.0, then: A = 2.0 – log 10.0 log 10.0 = 1.0 A = 2.0 – 1.0 = 1.0"
+  },
+  {
+    "id": 698,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "A solution that has a transmittance of 1.0%T would have an absorbance of:",
+    "options": [
+      "1.0",
+      "2.0",
+      "1.0%",
+      "99.0%"
+    ],
+    "answer": "B",
+    "explanation": "A = 2.0 – log %T A = 2.0 – log 1.0 The log of 1.0 = 0 A = 2.0"
+  },
+  {
+    "id": 699,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "In absorption spectrophotometry:",
+    "options": [
+      "Absorbance is directly proportional to transmittance",
+      "Percent transmittance is directly proportional to concentration",
+      "Percent transmittance is directly proportional to the light path length",
+      "Absorbance is directly proportional to concentration"
+    ],
+    "answer": "D",
+    "explanation": "Beer’s law states that A = a × b × c, where a is the absorptivity coefficient (a constant), b is the path length, and c is concentration. Absorbance is directly proportional to both b and c. Doubling the path length results in incident light contacting twice the number of molecules in solution. This causes absorbance to double, the same effect as doubling the concentration of molecules."
+  },
+  {
+    "id": 700,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which wavelength would be absorbed strongly by a red-colored solution?",
+    "options": [
+      "450 nm",
+      "585 nm",
+      "600 nm",
+      "650 nm"
+    ],
+    "answer": "A",
+    "explanation": "A solution transmits light corresponding in wavelength to its color, and usually absorbs light of wavelengths complementary to its color. A red solution transmits light of 600 to 650 nm and strongly absorbs 400 to 500 nm light."
+  },
+  {
+    "id": 701,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "A green-colored solution would show highest transmittance at:",
+    "options": [
+      "475 nm",
+      "525 nm",
+      "585 nm",
+      "620 nm"
+    ],
+    "answer": "B",
+    "explanation": "Green light consists of wavelengths from 500 to 550 nm. A green-colored solution with a transmittance maximum of 525 nm and a 50-nm bandpass transmits light of 525 nm and absorbs light below 475 nm and above 575 nm. A solution that is green would be quantitated using a wavelength that it absorbs strongly, such as 450 nm."
+  },
+  {
+    "id": 702,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A technologist is performing an enzyme assay at 340 nm using a visible- range spectrophotometer with a tungsten light source. After setting the wavelength and adjusting the readout to zero %T with the light path blocked, a cuvette with deionized water is inserted. With the light path fully open and the 100%T control at maximum, the instrument readout will not rise above 90%T. What is the most appropriate first course of action?",
+    "options": [
+      "Replace the source lamp",
+      "Insert a wider cuvette into the light path",
+      "Measure the voltage across the lamp terminals",
+      "Change the wavelength to 335 nm"
+    ],
+    "answer": "A",
+    "explanation": "Visible spectrophotometers are usually supplied with a tungsten or quartz halogen source lamp. Tungsten lamps produce a continuous range of wavelengths from greater than 320 to 2,000 nm. Output increases as wavelength becomes longer peaking at around 1,000 nm, and is poor below 400 nm. As the lamp envelope darkens with age, the amount of light reaching the photodetector at 340 nm becomes insufficient to set the blank reading to 100%T. Changing the wavelength to 335 nm will decrease the assay sensitivity as well as result in less light reaching the photodetector."
+  },
+  {
+    "id": 703,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which type of monochromator produces the purest monochromatic light in the ultraviolet (UV) range?",
+    "options": [
+      "A diffraction grating and a fixed exit slit",
+      "A sharp cutoff filter and a variable exit slit",
+      "Interference filters and a variable exit slit",
+      "A prism and a variable exit slit"
+    ],
+    "answer": "D",
+    "explanation": "Diffraction gratings and prisms both produce a continuous range of wavelengths. A diffraction grating produces a uniform separation of wavelengths. A prism produces much better separation of high-frequency light because refraction is greater for higher- energy wavelengths. Instruments using a prism and a variable exit slit can produce UV light of high purity (very narrow bandpass). The adjustable slit is required to allow sufficient light to reach the detector to set 100%T."
+  },
+  {
+    "id": 704,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which monochromator specification is required to measure the true absorbance of a compound having a natural absorption bandwidth of 30 nm?",
+    "options": [
+      "50-nm bandpass",
+      "25-nm bandpass",
+      "15-nm bandpass",
+      "5-nm bandpass"
+    ],
+    "answer": "D",
+    "explanation": "Bandpass refers to the range of wavelengths passing through the sample. The narrower the bandpass, the greater is the photometric resolution. Bandpass can be made smaller by reducing the width of the exit slit. Accurate absorbance measurements require a bandpass less than one-fifth the natural bandpass of the chromophore."
+  },
+  {
+    "id": 705,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which photodetector is most sensitive to low levels of light?",
+    "options": [
+      "Barrier layer cell",
+      "Photodiode",
+      "Diode array",
+      "Photomultiplier tube"
+    ],
+    "answer": "D",
+    "explanation": "The photomultiplier tube uses dynodes of increasing voltage to amplify the current produced by the photosensitive cathode. It is 10,000 times as sensitive as a barrier layer cell, which has no amplification. A photomultiplier tube requires a DC-regulated lamp because it responds to light fluctuations caused by the alternating current (AC) cycle."
+  },
+  {
+    "id": 706,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which condition is a common cause of stray light?",
+    "options": [
+      "Unstable source lamp voltage",
+      "Improper wavelength calibration",
+      "Dispersion from second-order spectra",
+      "Misaligned source lamp"
+    ],
+    "answer": "C",
+    "explanation": "Stray light is caused by the presence of any light other than the wavelength of measurement reaching the detector. It is most often caused by second-order spectra, deteriorated optics, light dispersed by a darkened lamp envelope, and extraneous room light."
+  },
+  {
+    "id": 707,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "A linearity study is performed on a visible spectrophotometer at 650 nm and the following absorbance readings are obtained:{{table}}The study was repeated using freshly prepared standards and reagents, but results were identical to those shown. What is the most likely cause of these results?",
+    "options": [
+      "Wrong wavelength used",
+      "Insufficient chromophore concentration",
+      "Matrix interference",
+      "Stray light"
+    ],
+    "answer": "D",
+    "explanation": "Stray light is the most common cause of loss of linearity at high-analyte concentrations. Light transmitted through the cuvette is lowest when absorption is highest. Therefore, stray light is a greater percentage of the detector response when sample concentration is high. Stray light is usually most significant when measurements are made at the extremes of the visible spectrum because lamp output and/or detector response are low.",
+    "table": {
+      "rows": [
+        [
+          "Concentration of Standard",
+          "Absorbance"
+        ],
+        [
+          "10.0 mg/dL",
+          "0.20"
+        ],
+        [
+          "20.0 mg/dL",
+          "0.41"
+        ],
+        [
+          "30.0 mg/dL",
+          "0.62"
+        ],
+        [
+          "40.0 mg/dL",
+          "0.79"
+        ],
+        [
+          "50.0 mg/dL",
+          "0.92"
+        ]
+      ]
+    }
+  },
+  {
+    "id": 708,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which type of filter is best for measuring stray light?",
+    "options": [
+      "Wratten",
+      "Didymium",
+      "Sharp cutoff",
+      "Neutral density"
+    ],
+    "answer": "C",
+    "explanation": "Sharp cutoff filters transmit almost all incident light until the cutoff wavelength is reached. At that point, they cease to transmit light. Because they give an “all or none effect,” only stray light reaches the detector when the selected wavelength is beyond the cutoff."
+  },
+  {
+    "id": 709,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following materials is best suited for verifying the wavelength calibration of a spectrophotometer?",
+    "options": [
+      "Neutral density filters",
+      "Potassium dichromate solutions traceable to the National Bureau of Standards reference",
+      "Wratten filters",
+      "Holmium oxide glass"
+    ],
+    "answer": "D",
+    "explanation": "Wavelength accuracy is verified by determining the wavelength reading that gives the highest absorbance (or transmittance) when a substance with a narrow natural bandwidth (sharp absorbance or transmittance peak) is scanned. For example, didymium glass has a sharp absorbance peak at 585 nm. Therefore, an instrument should give its highest absorbance reading when the wavelength dial is set at 585 nm. Holmium oxide produces a very narrow absorbance peak at 361 nm; likewise, the hydrogen lamp of a UV spectrophotometer produces a 656-nm emission line that can be used to verify wavelength. Neutral density filters and dichromate solutions are used to verify absorbance accuracy or linearity. A Wratten filter is a wide-bandpass filter made by placing a thin layer of colored gelatin between two glass plates and is unsuitable for spectrophotometric calibration."
+  },
+  {
+    "id": 710,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Why do many optical systems in chemistry analyzers utilize a reference light path?",
+    "options": [
+      "To increase the sensitivity of the measurement",
+      "To minimize error caused by source lamp fluctuation",
+      "To obviate the need for wavelength adjustment",
+      "To reduce stray light effects"
+    ],
+    "answer": "B",
+    "explanation": "A reference beam is used to produce an electrical signal at the detector with which the measurement of light absorption by the sample is compared. This safeguards against measurement errors caused by power fluctuations that change the source lamp intensity. Although reference beams increase the accuracy of measurements, they do so at the expense of optical sensitivity if some of the incident light is used to produce the reference beam."
+  },
+  {
+    "id": 711,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which component is required in a spectrophotometer to produce a spectral absorbance curve?",
+    "options": [
+      "Multiple monochromators",
+      "A reference optical beam",
+      "Photodiode array",
+      "Laser light source"
+    ],
+    "answer": "C",
+    "explanation": "There are two ways to perform spectral scanning for compound identification. One is to use a stepping motor that continuously turns the monochromator so that the wavelength aligned with the exit slit changes at a constant rate. A more practical method is to use a diode array detector. This consists of a chip embedded with as many as several hundred photodiodes. Each photodiode is aligned with a narrow part of the spectrum produced by a diffraction grating and produces current proportional to the intensity of the band of light striking it (usually 1–2 nm in range). The diode signals are processed by a computer to create a spectral absorbance or transmittance curve."
+  },
+  {
+    "id": 712,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "The half bandwidth of a monochromator is defined by:",
+    "options": [
+      "The range of wavelengths passed at 50% maximum transmittance",
+      "One half the lowest wavelength of optical purity",
+      "The wavelength of peak transmittance",
+      "One half the wavelength of peak absorbance"
+    ],
+    "answer": "A",
+    "explanation": "Half bandwidth is a measure of bandpass made using a solution or filter having a narrow natural bandwidth (transmittance peak). The wavelength giving maximum transmittance is set to 100%T (or 0 A). Then, the wavelength dial is adjusted downward, until a readout of 50%T (0.301 A) is obtained. Next, the wavelength is adjusted upward until 50%T is obtained. The wavelength difference is the half bandwidth. The narrower the half bandwidth, the better is the photometric resolution of the instrument."
+  },
+  {
+    "id": 713,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "The reagent blank corrects for absorbance caused by:",
+    "options": [
+      "The color of reagents",
+      "Sample turbidity",
+      "Bilirubin and hemolysis",
+      "The intrinsic absorbance of both the reagents and sample matrix"
+    ],
+    "answer": "A",
+    "explanation": "When a spectrophotometer is set to 100%T with the reagent blank instead of water, the absorbance of reagents is automatically subtracted from each unknown reading. The reagent blank does not correct for absorbance caused by interfering molecules in the sample, such as bilirubin, hemoglobin, or lipids."
+  },
+  {
+    "id": 714,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "A plasma sample is hemolyzed and turbid. What is required to perform a sample blank to correct the measurement for the intrinsic absorbance of the sample when performing a spectrophotometric assay?",
+    "options": [
+      "Substitute deionized water for the sample",
+      "Dilute the sample 1:2 with a standard of known concentration",
+      "Substitute saline for the reagent",
+      "Use a larger volume of the sample"
+    ],
+    "answer": "C",
+    "explanation": "A sample blank is used to subtract the intrinsic absorbance of the sample usually caused by hemolysis, icterus, turbidity, or drug interference. On automated analyzers, this is accomplished by measuring the absorbance after the addition of sample and a first reagent, usually a diluent. For tests using a single reagent, sample blanking can be done prior to the incubation phase before any color develops. Substituting deionized water for sample is done to subtract the absorbance of the reagent (reagent blanking). Diluting the sample with a standard (standard addition) may be done when the absorbance is below the minimum detection limit for the assay. Using a larger volume of sample will make the interference worse."
+  },
+  {
+    "id": 715,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which instrument requires a highly regulated direct current (DC) power supply?",
+    "options": [
+      "A spectrophotometer with a barrier layer cell",
+      "A colorimeter with multilayer interference filters",
+      "A spectrophotometer with a photomultiplier tube",
+      "A densitometer with a photodiode detector"
+    ],
+    "answer": "C",
+    "explanation": "When AC voltage regulators are used to isolate source lamp power, light output fluctuates as the voltage changes. Because this occurs at 60 hertz (Hz), it is not detected by eyesight or slow-responding detectors. Photomultiplier tubes are sensitive enough to respond to the AC frequency and require a DC-regulated power supply."
+  },
+  {
+    "id": 716,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding reflectometry is true?",
+    "options": [
+      "The relation between reflectance density and concentration is linear",
+      "Single-point calibration can be used to determine concentration",
+      "100% reflectance is set with an opaque film called a white reference",
+      "The diode array is the photodetector of choice"
+    ],
+    "answer": "C",
+    "explanation": "Reflectometry does not follow Beer’s law, but the relationship between concentration and reflectance can be described by a logistic formula or algorithm that can be solved for concentration. For example, K/S = (1 – R)2/2R, where K = Kubelka–Munk absorptivity constant, S = scattering coefficient, R = reflectance density. K/S is proportional to concentration. The white reference is analogous to the 100%T setting in spectrophotometry and serves as a reference signal. Dr = log R0/R1, where Dr is the reflectance density, R0 is the white reference signal, and R1 is the photodetector signal for the test sample."
+  },
+  {
+    "id": 717,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Bichromatic measurement of absorbance can correct for interfering substances if:",
+    "options": [
+      "The contribution of the interferent to absorbance is the same at both wavelengths",
+      "Both wavelengths pass through the sample simultaneously",
+      "The side band is a harmonic of the primary wavelength",
+      "The chromogen has the same absorbance at both wavelengths"
+    ],
+    "answer": "A",
+    "explanation": "In bichromatic photometry, the absorbance of sample is measured at two different wavelengths. The primary wavelength is at or near the absorbance maximum. An interfering substance having the same absorbance at both primary and secondary (side band) wavelengths does not affect the absorbance difference (Ad)."
+  },
+  {
+    "id": 718,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which instrument requires a primary and secondary monochromator?",
+    "options": [
+      "Spectrophotometer",
+      "Atomic absorption spectrophotometer",
+      "Fluorometer",
+      "Nephelometer"
+    ],
+    "answer": "C",
+    "explanation": "A fluorometer uses a primary monochromator to isolate the wavelength for excitation and a secondary monochromator to isolate the wavelength emitted by the fluorochrome. Fluorescence is directly proportional to analyte concentration."
+  },
+  {
+    "id": 719,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements about fluorometry is accurate?",
+    "options": [
+      "Fluorometry is less sensitive than spectrophotometry",
+      "Fluorometry is less specific than spectrophotometry",
+      "Unsaturated cyclic molecules are often fluorescent",
+      "Fluorescence is directly proportional to temperature"
+    ],
+    "answer": "C",
+    "explanation": "Increasing temperature results in more random collision between molecules by increasing their motion. This causes energy to be dissipated as heat instead of fluorescence. Temperature is inversely proportional to fluorescence. Fluorescence is more sensitive than spectrophotometry because the detector signal can be amplified when dilute solutions are measured. It is also more specific than spectrophotometry because both the excitation and emission wavelengths are characteristics of the compound being measured."
+  },
+  {
+    "id": 720,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following components is not needed in a chemiluminescent immunoassay analyzer?",
+    "options": [
+      "Source lamp",
+      "Monochromator",
+      "Photodetector",
+      "Wash station"
+    ],
+    "answer": "A",
+    "explanation": "Chemiluminescence is the production of light following a chemical reaction. Immunoassays based on chemiluminescence generate light when the chemiluminescent molecule becomes excited; therefore, a light source is not used. In immunoassay platforms, chemiluminescent molecules, such as acridinium, can be used to label antigens or antibodies. Alternatively, chemiluminescent substrates, such as luminol or dioxetane phosphate, may be used. Light will be emitted when the enzyme-labeled molecule reacts with the substrate. In such assays, free and bound antigen separation is required and is usually accomplished by using paramagnetic particles bound to either antibody or reagent antigen."
+  },
+  {
+    "id": 721,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which substance is used to generate the light signal in electrochemiluminescence?",
+    "options": [
+      "Acridinium",
+      "Luminol",
+      "Dioxetane phosphate",
+      "Ruthenium"
+    ],
+    "answer": "D",
+    "explanation": "All of these substances are chemiluminescent. Dioxetane phosphate is excited by alkaline phosphatase (ALP). Acridinium and luminol are excited by hydrogen peroxide (H2O2). In electrochemiluminesence, ruthenium is used to label the antibody. Antigen– antibody complexes containing the ruthenium label are bound to paramagnetic particles via a streptavidin–biotin reaction. The paramagnetic particles are attracted to an electrode surface. The flow cell is washed with a solution containing tripropylamine (TPA) to remove unbound ruthenium label. At the electrode surface, the TPA is oxidized and the electrons excite the ruthenium, causing production of 620-nm light."
+  },
+  {
+    "id": 722,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Light scattering when the wavelength is greater than 10 times the particle diameter is described by:",
+    "options": [
+      "Rayleigh’s law",
+      "The Beer–Lambert law",
+      "Mie’s law",
+      "The Rayleigh–Debye law"
+    ],
+    "answer": "A",
+    "explanation": "Rayleigh’s law states that when the incident wavelength is much longer than the particle diameter, there is maximum backscatter and minimum right-angle scatter. Rayleigh–Debye’s law predicts maximum right-angle scatter when wavelength and particle diameter approach equality. Mie’s law predicts maximum forward scatter when particle diameter is much longer than wavelength. In nephelometry, the relationship between wavelength and diameter determines the angle at which the detector is located."
+  },
+  {
+    "id": 723,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding nephelometry is true?",
+    "options": [
+      "Nephelometry is less sensitive than absorption spectrophotometry",
+      "Nephelometry follows Beer’s law",
+      "The optical design is identical to a turbidimeter except that a helium–neon (HeNe) laser light source is used",
+      "The detector response is directly proportional to concentration"
+    ],
+    "answer": "D",
+    "explanation": "In nephelometry, the detector output is proportional to concentration (as opposed to turbidimetry, where the detector is behind the cuvette). The detector(s) is (are) usually placed at an angle between 25° and 90° to the incident light, depending on the application. Nephelometers, like fluorometers, are calibrated to zero with the light path blocked, and sensitivity can be increased up to 1,000 times by amplification of the detector output, usually done by increasing the photomultiplier tube dynode voltage."
+  },
+  {
+    "id": 724,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "The purpose of the nebulizer in an atomic absorption spectrophotometer that uses a flame is to:",
+    "options": [
+      "Uniformly distribute the sample in the flame",
+      "Cause ejection of an outer shell electron",
+      "Reduce evaporation of the sample",
+      "Burn off organic impurities"
+    ],
+    "answer": "A",
+    "explanation": "The atomizer of the atomic absorption spectrophotometer consists of either a nebulizer and flame or a graphite furnace. The nebulizer disperses the sample into a fine aerosol, distributing it evenly into the flame. Heat from the flame is used to evaporate water and break the ionic bonds of salts, forming ground state atoms. The flame also excites a small percentage of the atoms, which release a characteristic emission line."
+  },
+  {
+    "id": 725,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "A flameless atomic absorption spectrophotometer dehydrates and atomizes a sample using:",
+    "options": [
+      "A graphite capillary furnace",
+      "An electron gun",
+      "A thermoelectric semiconductor",
+      "A thermospray platform"
+    ],
+    "answer": "A",
+    "explanation": "Flameless atomic absorption uses a hollow tube of graphite with quartz ends. The tube is heated in stages by an electric current to successively dry, ash, and atomize the sample. During the ash and atomization steps, argon is injected into the tube to distribute the atoms. The furnace is more sensitive than a flame atomizer and more efficient in atomizing thermostable salts. However, it is prone to greater matrix interference and is slower than the flame atomizer because it must cool down before introduction of the next sample."
+  },
+  {
+    "id": 726,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "When measuring lead (Pb) in whole blood using atomic absorption spectrophotometry, what reagent is required to obtain the needed sensitivity and precision?",
+    "options": [
+      "Lanthanum",
+      "Lithium",
+      "Triton X-100",
+      "Chloride"
+    ],
+    "answer": "C",
+    "explanation": "A graphite furnace is preferred over a flame for measuring lead because it is sufficiently sensitive to detect levels below 5 µg/dL, the cutoff needed for lead screening of children. The matrix modifier consists of Triton X-100, ammonium phosphate, and nitric acid. This allows for release of Pb from the red blood cells (RBCs), and solubilization of cell stroma. The matrix modifier also prevents loss of Pb caused by formation of lead halides and promotes interaction between Pb and the tube wall, preventing its loss during the ashing cycle."
+  },
+  {
+    "id": 727,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Interference in atomic absorption spectrophotometry caused by differences in viscosity is called:",
+    "options": [
+      "Absorption interference",
+      "Matrix effect",
+      "Ionization interference",
+      "Quenching"
+    ],
+    "answer": "B",
+    "explanation": "Significant differences in aspiration and atomization result when the matrix of the sample and unknowns differ. Differences in viscosity and protein content are major causes of matrix error. Matrix effects can be reduced by using protein-based calibrators and diluting both standards and samples prior to assay."
+  },
+  {
+    "id": 728,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is required when measuring magnesium by atomic absorption spectrophotometry?",
+    "options": [
+      "A mercury vapor source lamp",
+      "A chopper to prevent optical interference from magnesium emission",
+      "A neutral density filter",
+      "A 285-nm reference beam to correct for background absorption"
+    ],
+    "answer": "B",
+    "explanation": "Atomic absorption requires a lamp with a cathode made from the metal to be assayed. The lamp emits the line spectrum of the metal, providing the wavelength that the atoms can absorb. The chopper pulses the source light, allowing it to be discriminated from light emitted by excited atoms. A diffraction grating eliminates light emitted by the ideal gas in the lamp. Deuterium (wide bandpass light) or Zeeman correction (splitting the incident light into side bands by a magnetic field) may be used to correct for background absorption."
+  },
+  {
+    "id": 729,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "When measuring calcium by atomic absorption spectrophotometry, which is required?",
+    "options": [
+      "An organic extraction reagent to deconjugate calcium from protein",
+      "An internal standard",
+      "A magnesium chelator",
+      "Lanthanum oxide to chelate phosphates"
+    ],
+    "answer": "D",
+    "explanation": "An acidic diluent, such as hydrochloric acid (HCl), will displace calcium bound to albumin. However, calcium forms a thermostable bond with phosphate that causes chemical interference in atomic absorption. Lanthanum displaces calcium, forming lanthanum phosphate, and eliminates interference from phosphates. Unlike in some colorimetric methods for calcium (e.g., o-cresolphthalein complexone), magnesium does not interfere because it does not absorb the 422.7-nm emission line from the calcium–hollow cathode lamp."
+  },
+  {
+    "id": 730,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Ion selective analyzers using undiluted samples have what advantage over analyzers that use a diluted sample?",
+    "options": [
+      "Can measure over a wider range of concentration",
+      "Are not subject to pseudohyponatremia caused by high lipids",
+      "Do not require temperature equilibration",
+      "Require less maintenance"
+    ],
+    "answer": "B",
+    "explanation": "Ion-selective analyzers measure the electrolyte dissolved in the fluid phase of the sample in millimoles per liter of plasma water. When undiluted blood is assayed, the measurement is independent of colloids, such as protein and lipid. Hyperlipemic samples cause falsely low sodium measurements when assayed by ion-selective analyzers requiring dilution because lipids displace plasma water containing the electrolytes. One drawback to undiluted or direct-measuring systems is that the electrodes require more frequent deproteinization and usually have a shorter duty cycle."
+  },
+  {
+    "id": 731,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the equation describing the potential that develops at the surface of an ion- selective electrode (ISE).",
+    "options": [
+      "van Deemter equation",
+      "van Slyke equation",
+      "Nernst equation",
+      "Henderson–Hasselbalch equation"
+    ],
+    "answer": "C",
+    "explanation": "The van Deemter equation describes the relation between the velocity of mobile phase to column efficiency in gas chromatography (GC). The Henderson–Hasselbalch equation is used to determine the pH of a solution containing a weak acid and its salt. van Slyke developed an apparatus to measure carbon dioxide (CO2) and oxygen (O2) content by using a manometer."
+  },
+  {
+    "id": 732,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "The reference potential of a silver–silver chloride electrode is determined by the:",
+    "options": [
+      "Concentration of the potassium chloride filling solution",
+      "Surface area of the electrode",
+      "Activity of total anion in the paste covering the electrode",
+      "The concentration of silver in the paste covering the electrode"
+    ],
+    "answer": "A",
+    "explanation": "The activity of any solid or ion in a saturated solution is unity. For a silver electrode covered with silver chloride paste, the Nernst equation is E = E° – RT/nF × 2.3 log10 [Ag° × Cl–]/[AgCl]. Because silver and silver chloride have an activity of 1.0, and all components except chloride are constants, the potential of the reference electrode is determined by the chloride concentration of the filling solution. E = Eo – RT/nF × 2.3 log10[Cl–] = E° – 59.2 mV × log[Cl–] (at room temperature)"
+  },
+  {
+    "id": 733,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "The term RT/nF in the Nernst equation defines the:",
+    "options": [
+      "Potential at the ion-selective membrane",
+      "Slope of the electrode",
+      "Decomposition potential",
+      "Isopotential point of the electrode"
+    ],
+    "answer": "B",
+    "explanation": "In the term RT/nF, R = the molar gas constant, T = temperature in degrees Kelvin, F = Faraday’s constant, and n = the number of electrons donated per atom of reductant. The slope depends on the temperature of the solution and the valence of the reductant. At room temperature, the slope is 59.2 mV for a univalent ion and 29.6 mV for a divalent ion."
+  },
+  {
+    "id": 734,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "The ion-selective membrane used to measure potassium is made of:",
+    "options": [
+      "High-borosilicate glass membrane",
+      "Polyvinyl chloride dioctylphenyl phosphonate ion exchanger",
+      "Valinomycin gel",
+      "Calomel"
+    ],
+    "answer": "C",
+    "explanation": "Valinomycin is an antibiotic with a highly selective reversible-binding affinity for potassium ions. Sodium electrodes are usually composed of a glass membrane with a high content of aluminum silicate. Calcium and lithium ISEs are made from organic liquid ion exchangers called neutral carrier ionophores. Calomel is made of mercury covered with a paste of mercurous chloride (Hg°/Hg2Cl2) and is used as a reference electrode for pH."
+  },
+  {
+    "id": 735,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "The response of a sodium electrode to a 10-fold increase in sodium concentration should be:",
+    "options": [
+      "A 10-fold drop in potential",
+      "An increase in potential of approximately 60 mV",
+      "An increase in potential of approximately 10 mV",
+      "A decrease in potential of approximately 10 mV"
+    ],
+    "answer": "B",
+    "explanation": "The Nernst equation predicts an increase of approximately 60 mV per 10-fold increase in sodium activity. For sodium: E = E° + RT/nF × 2.3 log10[Na+] RT/nF × 2.3 = 60 mV at 37°C. Therefore: E = E° + 60 mV × log10[Na+]. If sodium concentration is 10 mmol/L, then: E = E° + 60 mV × log10[10] = E° + 60 mV. If sodium concentration increases from 10 mmol/L to 100 mmol/L, then: E = E° + 60 mV × log10[100] = E° + 60 mV × 2 = E° + 120 mV."
+  },
+  {
+    "id": 736,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the electrodes below is a current-producing (amperometric) rather than a voltage-producing (potentiometric) electrode?",
+    "options": [
+      "Clark electrode",
+      "Severinghaus electrode",
+      "pH electrode",
+      "Ionized calcium electrode"
+    ],
+    "answer": "A",
+    "explanation": "The Clark electrode is composed of two half cells that generate current, not voltage. It is used to measure partial pressure of oxygen (PO2), and is based on an amperometric method called polarography. When –0.8 V is applied to the cathode, O2 is reduced, causing current to flow. Current is proportional to the PO2 of the sample."
+  },
+  {
+    "id": 737,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following would cause a “response” error from an ISE for sodium when measuring serum but not the calibrator?",
+    "options": [
+      "Interference from other electrolytes",
+      "Protein coating the ion-selective membrane",
+      "An over-range in sodium concentration",
+      "Protein binding to sodium ions"
+    ],
+    "answer": "B",
+    "explanation": "Response is the time required for an electrode to reach steady-state potential. Ion- selective analyzers use a microprocessor to monitor electrode response, slope, drift, and noise. When an electrode gives an acceptable response time when measuring an aqueous calibrator, but not when measuring serum, the cause is often protein buildup on the membrane."
+  },
+  {
+    "id": 738,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "In polarography, the voltage needed to cause depolarization of the cathode is called the:",
+    "options": [
+      "Half-wave potential",
+      "Isopotential point",
+      "Decomposition potential",
+      "Polarization potential"
+    ],
+    "answer": "C",
+    "explanation": "In polarography, a minimum negative voltage must be applied to the cathode to cause reduction of metal ions (or O2) in solution. This is called the decomposition potential. It is concentration dependent (dilute solutions require greater negative voltage) and can be determined by using the Nernst equation."
+  },
+  {
+    "id": 739,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Persistent noise from an ISE is most often caused by:",
+    "options": [
+      "Contamination of the sample",
+      "Blocked junction at the salt bridge",
+      "Over-range from high concentration",
+      "Improper calibration"
+    ],
+    "answer": "B",
+    "explanation": "Electrode noise most often results from an unstable junction potential. Most reference electrodes contain a high concentration of the potassium chloride (KCl) internal solution used to produce the reference potential. This forms a salt bridge with the measuring half cell by contacting sample but is kept from equilibrating via a barrier, called a junction. When this junction becomes blocked by salt crystals, the reference potential will be unstable, resulting in fluctuation in the analyzer readout."
+  },
+  {
+    "id": 740,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which element is reduced at the cathode of a Clark polarographic electrode?",
+    "options": [
+      "Silver",
+      "Oxygen",
+      "Chloride",
+      "Potassium"
+    ],
+    "answer": "B",
+    "explanation": "The Clark electrode is designed to measure O2. O2 diffuses through a gas-permeable membrane covering the electrode. It is reduced at the cathode, which is made of platinum or other inert metal. Electrons are supplied by the anode, which is made of silver. The net reaction is: 4 KCl + 2 H2O + O2 + 4 Ag° → 4 AgCl + 4 KOH"
+  },
+  {
+    "id": 741,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements accurately characterizes the coulometric titration of chloride?",
+    "options": [
+      "The indicator electrodes generate voltage",
+      "Constant current must be present across the generator electrodes",
+      "Silver ions are formed at the generator cathode",
+      "Chloride concentration is inversely proportional to titration time"
+    ],
+    "answer": "B",
+    "explanation": "The Cotlove chloridometer is based on the principle of coulometric titration with amperometric detection. Charge in the form of silver ions is generated by oxidation of silver wire at the generator anode. Silver ions react with chloride ions, forming insoluble silver chloride (AgCl). When all of the chloride is titrated, free silver ions are detected by reduction back to elemental silver, which causes an increase in current across the indicator electrodes (a pair of silver electrodes with a voltage difference of about 1.0 V DC). Charge or titration time is directly proportional to chloride concentration as long as the rate of oxidation remains constant at the generator anode."
+  },
+  {
+    "id": 742,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "In the coulometric chloride titration:",
+    "options": [
+      "Acetic acid in the titrating solution furnishes the counter ion for reduction",
+      "The endpoint is detected by amperometry",
+      "The titrating reagent contains a phosphate buffer to keep pH constant",
+      "Nitric acid (HNO3) is used to lower the solubility of AgCl"
+    ],
+    "answer": "B",
+    "explanation": "Reduction of Ag+ back to Ag° generates the current, which signals the endpoint. The titrating reagent contains HNO3, acetic acid, H2O, and either gelatin or polyvinyl alcohol. The HNO3 furnishes nitrate, which is reduced at the generator cathode, forming ammonium ions. The ammonium becomes oxidized back to nitrate at the indicator anode. Gelatin or polyvinyl alcohol is needed to prevent pitting of the generator anode. Acetic acid lowers the solubility of AgCl, preventing dissociation back to Ag+."
+  },
+  {
+    "id": 743,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following compounds can interfere with the coulometric chloride assay?",
+    "options": [
+      "Bromide",
+      "Ascorbate",
+      "Acetoacetate",
+      "Nitrate"
+    ],
+    "answer": "A",
+    "explanation": "Chloride assays based on either coulometric or chemical titration are subject to positive interference from other anions and electronegative radicals that may be titrated instead of chloride ions. These include other halogens, such as bromide, cyanide, and cysteine."
+  },
+  {
+    "id": 744,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following compounds contributes to the osmolality of plasma?",
+    "options": [
+      "Cholesterol",
+      "Protein",
+      "Drug metabolites",
+      "Triglyceride"
+    ],
+    "answer": "C",
+    "explanation": "Osmolality is the concentration (in moles [mol]) of dissolved solute per kilogram solvent. Proteins and lipids are not in solution, and do not contribute to osmolality. The nonionized solutes, such as glucose and urea, contribute 1 osmole per mole per kilogram (Osmol/mol/kg) water, whereas dissociated salts contribute 1 Osmol/mol of each dissociated ion or radical."
+  },
+  {
+    "id": 745,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "One mole per kilogram water (H2O) of any solute will cause which of the following:",
+    "options": [
+      "Lower the freezing point by 1.86°C",
+      "Raise vapor pressure by 0.3 mm Hg",
+      "Lower the boiling point by 0.52°C",
+      "Lower osmotic pressure by 22.4 atm"
+    ],
+    "answer": "A",
+    "explanation": "Both freezing point and vapor pressure are lowered by increasing solute concentration. Boiling point and osmotic pressure are raised. Increasing solute concentration of a solution opposes a change in its physical state and lowers the concentration of H2O molecules."
+  },
+  {
+    "id": 746,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "What component of a freezing point osmometer measures the sample temperature?",
+    "options": [
+      "Thermistor",
+      "Thermocouple",
+      "Capacitor",
+      "Electrode"
+    ],
+    "answer": "A",
+    "explanation": "A thermistor is a temperature-sensitive resistor. The resistance to current flow increases as temperature falls. The temperature at which a solution freezes can be determined by measuring the resistance of the thermistor. Resistance is directly proportional to the osmolality of the sample."
+  },
+  {
+    "id": 747,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "What type of measuring circuit is used in a freezing point osmometer?",
+    "options": [
+      "Electrometer",
+      "Potentiometer",
+      "Wheatstone bridge",
+      "Thermal conductivity bridge"
+    ],
+    "answer": "C",
+    "explanation": "The resistance of the thermistor is measured using a network of resistors called a Wheatstone bridge. When the sample is frozen, the bridge is balanced by using a calibrated variable resistor so that no current flows to the readout. The resistance required to balance the meter is equal to the resistance of the thermistor."
+  },
+  {
+    "id": 748,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which measurement principle is employed in a vapor pressure osmometer?",
+    "options": [
+      "Seebeck",
+      "Peltier",
+      "Hayden",
+      "Darlington"
+    ],
+    "answer": "A",
+    "explanation": "The term Seebeck effect refers to the increase in voltage across the two junctions of a thermocouple caused by a difference in the temperature at the junctions. Increasing osmolality lowers the dew point of a sample. When sample is cooled to its dew point, the voltage change across the thermocouple is directly proportional to osmolality."
+  },
+  {
+    "id": 749,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "The freezing point osmometer differs from the vapor pressure osmometer in that only the freezing point osmometer:",
+    "options": [
+      "Cools the sample",
+      "Is sensitive to ethanol",
+      "Requires a thermoelectric module",
+      "Requires calibration with aqueous standards"
+    ],
+    "answer": "B",
+    "explanation": "Alcohol enters the vapor phase so rapidly that it evaporates before the dew point of the sample is reached. Therefore, ethanol does not contribute to osmolality as measured by using the vapor pressure osmometer. Freezing-point osmometers measure alcohol and can be used in emergency department (ED) settings to estimate ethanol toxicity."
+  },
+  {
+    "id": 750,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "The method for measuring iron or lead by plating the metal and then oxidizing it is called:",
+    "options": [
+      "Polarography",
+      "Coulometry",
+      "Anodic stripping voltometry",
+      "Amperometry"
+    ],
+    "answer": "C",
+    "explanation": "Anodic stripping voltometry is used to measure lead. The cation of the metal is plated onto a mercury cathode by applying a negative charge. The voltage of this electrode is reversed until the plated metal is oxidized back to a cation. Current produced by oxidation of the metal is proportional to concentration."
+  },
+  {
+    "id": 751,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "The term isocratic is used in high-performance liquid chromatography (HPLC) to mean that the:",
+    "options": [
+      "Mobile phase is at constant temperature",
+      "Stationary phase is equilibrated with the mobile phase",
+      "Mobile phase consists of a constant solvent composition",
+      "Flow rate of the mobile phase is regulated"
+    ],
+    "answer": "C",
+    "explanation": "An isocratic separation uses a single mobile phase of constant composition, pH, and polarity, and requires a single pump. Some HPLC separations use a gradient mobile phase to increase distance between peaks. Gradients are made by mixing two or more solvents by using a controller to change the proportions of solvent components."
+  },
+  {
+    "id": 752,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "The term reverse phase is used in HPLC to indicate that the mobile phase is:",
+    "options": [
+      "More polar than the stationary phase",
+      "Liquid and the stationary phase is solid",
+      "Organic and the stationary phase is aqueous",
+      "A stronger solvent than the stationary phase"
+    ],
+    "answer": "A",
+    "explanation": "In reverse-phase HPLC, the separation takes place using a nonpolar sorbent (stationary phase), such as octadecylsilane (C18). Solutes that are nonpolar are retained longer compared with polar solutes. Most clinical separations of drugs, hormones, and metabolites use reverse phase because aqueous mobile phases are far less toxic and flammable."
+  },
+  {
+    "id": 753,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the primary means of solute separation in HPLC using a C18 column?",
+    "options": [
+      "Anion exchange",
+      "Size exclusion",
+      "Partitioning",
+      "Cation exchange"
+    ],
+    "answer": "C",
+    "explanation": "Stationary phases (column packings) used in HPLC separate solutes by multiple means, but in reverse-phase HPLC using C18, the relative solubility between the mobile phase and stationary phase is most important and depends on solvent polarity, pH, and ionic strength. Stationary phases with particles less than 2.5 microns in diameter are designated as ultraperformance liquid chromatography (UPLC) because they increase column resolution over standard size sorbents."
+  },
+  {
+    "id": 754,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "The most commonly used detector for clinical gas–liquid chromatography (GLC) is based on:",
+    "options": [
+      "UV light absorbance at 254 nm",
+      "Flame ionization",
+      "Refractive index",
+      "Thermal conductance"
+    ],
+    "answer": "B",
+    "explanation": "Volatile solutes can be detected in GLC using flame ionization, thermal conductivity, electron capture, and mass spectroscopy. In flame ionization, energy from a flame is used to excite the analytes as they elute from the column. The flame is made by igniting a mixture of hydrogen, carrier gas, and air. Current is produced when an outer shell electron is ejected from the excited analyte."
+  },
+  {
+    "id": 755,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "What type of detector is used in high-performance liquid chromatography with electrochemical detection (HPLC–ECD)?",
+    "options": [
+      "Calomel electrode",
+      "Conductivity electrode",
+      "Glassy carbon electrode",
+      "Polarographic electrode"
+    ],
+    "answer": "C",
+    "explanation": "HPLC–ECD uses a glassy carbon-measuring electrode and a silver–silver chloride reference. The analyte is oxidized or reduced by holding the glassy carbon electrode at a positive voltage (oxidization) or negative voltage (reduction). The resulting current flow is directly proportional to concentration. Phenolic groups, such as catecholamines, can be measured by using HPLC–ECD."
+  },
+  {
+    "id": 756,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "In GC, the elution order of volatiles is usually based on the:",
+    "options": [
+      "Boiling point",
+      "Molecular size",
+      "Carbon content",
+      "Polarity"
+    ],
+    "answer": "A",
+    "explanation": "The order of elution is dependent on the velocity of the analyte. Usually, the lower the boiling point of the compound, the greater is its velocity or solubility in carrier gas."
+  },
+  {
+    "id": 757,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the chemical that is used in most HPLC procedures to decrease solvent polarity.",
+    "options": [
+      "Hexane",
+      "Nonane",
+      "Chloroform",
+      "Acetonitrile"
+    ],
+    "answer": "D",
+    "explanation": "All of the compounds mentioned have nonpolar properties. Because most HPLC is reverse phase (a polar solvent is used), hexane and nonane are too nonpolar. Acetonitrile is more polar and less toxic than chloroform and along with methanol is a common polarity modifier for HPLC."
+  },
+  {
+    "id": 758,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "In thin-layer chromatography (TLC), the distance the solute migrates divided by the distance the solvent migrates is the:",
+    "options": [
+      "tR",
+      "Kd",
+      "Rf",
+      "pK"
+    ],
+    "answer": "C",
+    "explanation": "Rf is the distance migrated by the solute divided by the distance migrated by the solvent. The tR refers to the retention time of the solute in HPLC or GC. The Kd is the partition coefficient and is a measure of the relative affinity of solutes for the stationary phase. The solute with the greater Kd will be retained longer. The pK is the negative logarithm of K, the ionization constant and is a measure of ionization."
+  },
+  {
+    "id": 759,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which reagent is used to extract alkaline drugs, such as cocaine metabolites, from urine?",
+    "options": [
+      "Acid and sodium chloride",
+      "Alkali and organic solvent",
+      "Chloroform and sodium acetate",
+      "Neutral solution of ethyl acetate"
+    ],
+    "answer": "B",
+    "explanation": "Alkaline drugs, such as cocaine, amphetamine, and morphine, are extracted at alkaline pH. Ideally, the pH for extracting alkaline drugs into an organic solvent should be 2 pH units greater than the negative log of dissociation constant (pKa) of the drug. More than 90% of the drug will be nonionized and will extract in ethyl acetate or another organic solvent."
+  },
+  {
+    "id": 760,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the purpose of an internal standard in HPLC and GC methods?",
+    "options": [
+      "To compensate for variation in extraction and injection",
+      "To correct for background absorbance",
+      "To compensate for changes in flow rate",
+      "To correct for coelution of solutes"
+    ],
+    "answer": "A",
+    "explanation": "Internal standards should have the same affinity as the analyte for the extraction reagents. Dividing peak height (or area) of all samples (standards and unknowns) by the peak height (or area) of the internal standard reduces error caused by variation in extraction recovery and injection volume."
+  },
+  {
+    "id": 761,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the confirmatory method for measuring drugs of abuse?",
+    "options": [
+      "HPLC",
+      "Enzyme-multiplied immunoassay technique (EMIT)",
+      "Gas chromatography with mass spectroscopy (GC-MS)",
+      "TLC"
+    ],
+    "answer": "C",
+    "explanation": "GC-MS determines the mass spectrum of the compounds eluting from the analytic column. Each substance has a unique and characteristic spectrum of mass fragments. This spectrum is compared with spectra in a library of standards to determine the percent match. A match of greater than 95% is considered confirmatory."
+  },
+  {
+    "id": 762,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "The fragments typically produced and analyzed in methods employing mass spectroscopy are typically:",
+    "options": [
+      "Of low molecular size ranging from 10 to 100 daltons",
+      "Cations caused by electron loss or proton attachment",
+      "Anions caused by bombarding the molecule with an electron source",
+      "Neutral species formed after excited molecules form a stable resonance structure"
+    ],
+    "answer": "B",
+    "explanation": "In most MS applications, cations of the molecule are measured. Cations can be formed by various methods, the most common of which is electron bombardment (electron ionization). The energy transferred to the molecule causes ejection of an outer shell electron. MS can analyze sizes from trace metals through macromolecules. Proteins are measured after conversion to cations by ionization procedures, such as matrix-assisted laser desorption/ionization (MALDI), in which energy from a nitrogen laser causes transfer of a proton from the matrix (an acid) to the protein."
+  },
+  {
+    "id": 763,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "What component is used in a GC-MS but not used in an LC-MS?",
+    "options": [
+      "Electron source",
+      "Mass filter",
+      "Detector",
+      "Vacuum"
+    ],
+    "answer": "A",
+    "explanation": "The mass spectrometer requires a sample that is suspended in a gas phase, and therefore, the separated analytes from a GC directly transfer into the mass spectrometer. Although chemical ionization of the sample is possible, most GC-MS instruments utilize electron ionization. Electrons are produced by applying 70 electron volts to a filament of tungsten or rhenium under vacuum. The electrons collide with the neutral molecules coming from the GC, splitting them into fragments. The array of fragments is a unique identifier of each molecule. A vacuum is needed in MS instruments to control the path of ions as they move through the mass filter."
+  },
+  {
+    "id": 764,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "What process is most often used in LC-MS to introduce the sample into the mass filter?",
+    "options": [
+      "Electrospray ionization (ESI)",
+      "Chemical ionization",
+      "Electron impact ionization",
+      "Fast atom bombardment"
+    ],
+    "answer": "A",
+    "explanation": "HPLC instruments use solvent rather than gas to separate molecules. The sample is converted into a gaseous state by ESI before it enters the mass filter. ESI uses a small- bore tube that forms a 1- to 4-micron nozzle at the mass filter inlet and which is charged by several kilovolts. The sample enters the tube along with inert drying gas. The tube is heated to evaporate the solvent, but unlike the electron impact used in GC- MS, the ionizer is not under vacuum. When a droplet of the sample reaches the nozzle, it becomes highly charged. The size of the droplet is decreased as a result of evaporation. This causes the charge density to become excessive, and the droplets break apart. The tiny charged droplets repel each other and break apart again, forming a plume. These particles are drawn into the mass filter by “ion optics” (a system of repeller plates, counter-electrode, and magnets). ESI does not result in extensive fragmentation, producing mostly the parent or “molecular” ion, a process called soft ionization."
+  },
+  {
+    "id": 765,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "In mass spectroscopy, the term base peak typically refers to:",
+    "options": [
+      "The peak with the lowest mass",
+      "The peak with the most abundance",
+      "A natural isotope of the molecular ion",
+      "The first peak to reach the mass detector"
+    ],
+    "answer": "B",
+    "explanation": "The base peak is typically the “molecular ion” or parent ion, meaning that it is the initial fragment made by releasing an electron. The cation thus formed has a charge of +1, and therefore, its mass:charge (m/z) ratio is equal to its mass. The base peak is used for selective ion monitoring (SIM). It is the most abundant and most stable ion and gives the best sensitivity for quantitative analysis."
+  },
+  {
+    "id": 766,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is the most useful method when screening for errors of amino acid and organic acid metabolism?",
+    "options": [
+      "Two-dimensional TLC",
+      "GC",
+      "Electrospray ionization tandem-mass spectroscopy (MS/MS)",
+      "Inductively coupled-mass spectroscopy (ICP-MS)"
+    ],
+    "answer": "C",
+    "explanation": "While two-dimensional TLC can separate both amino acids and organic acids, it is not sufficiently sensitive for newborn screening. ESI allows a small alcohol-extracted whole blood sample to be analyzed by two mass spectrometers without prior separation by LC or GC. Disorders of both organic and fatty acid metabolism are identified by the specific pattern of acylcarnitine ions produced. Amino acids are detected as amino species that have lost a carboxyl group during ionization, a process called neutral loss."
+  },
+  {
+    "id": 767,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "In MS/MS, the first mass filter performs the same function as:",
+    "options": [
+      "The ion source",
+      "The chromatography column",
+      "Extraction",
+      "The vacuum system"
+    ],
+    "answer": "B",
+    "explanation": "A tandem mass spectrometer uses two or more mass filters in sequence. The first filter functions as an ion trap. Once the sample is ionized, the filter selects molecular or parent ions of interest by excluding ions outside a specified size range. Therefore, it effectively separates the analyte(s) of interest from unwanted compounds. MS/MS uses ESI to introduce the sample into the first mass filter, usually a quadrapole. The radiofrequency (RF) and DC voltages of the quadrapole are set to optimize the trajectory of the parent ions of interest and cause ejection of unwanted ions. The parent ions are drawn into a second mass filter where they are bombarded by argon atoms. The collisions result in the formation of mass fragments called daughter ions. This process is called collision-induced dissociation, and the second filter is called a collision chamber. The process can be repeated in a third mass filter that generates granddaughter ions. A total-ion chromatogram is produced from these, enabling the compound of interest to be identified and quantified. MS/MS is used to screen for inborn errors of fatty acid, amino acid, and organic acid metabolism."
+  },
+  {
+    "id": 768,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A GC-MS analysis using nitrogen as the carrier gas shows an extensively noisy baseline. A sample of the solvent (ethyl acetate) used for the extraction procedure was injected and showed the same noise. Results of an Autotune test showed the appearance of a base peak at 16 with two smaller peaks at 17 and 18. These results indicate that:",
+    "options": [
+      "The solvent is contaminated",
+      "The carrier gas is contaminated",
+      "There is electrical noise in the detector",
+      "The ion source is dirty"
+    ],
+    "answer": "B",
+    "explanation": "All of these situations are sources of baseline noise in GC-MS. However, the peak at 16 indicates the presence of O2 in the carrier gas. O2 in the atmosphere also contains small quantities of two isotopes with molecular weights of 17 and 18 because of the presence of one and two extra neutrons, respectively."
+  },
+  {
+    "id": 769,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Why is vacuum necessary in the mass filter of a GC-MS?",
+    "options": [
+      "Ionization does not occur at atmospheric pressure",
+      "It prevents collision between fragments",
+      "It removes electrons from the ion source",
+      "It prevents contamination"
+    ],
+    "answer": "B",
+    "explanation": "Vacuum is needed in the mass filter of GC-MS instruments to prevent random collisions between ions that would alter their trajectory or time of flight. The vacuum prevents collision between the carrier gas molecules and the ions. However, in spectrometers that use ESI, chemical ionization, and matrix-assisted laser desorption/ionization-time of flight (MALDI-TOF) and surface-enhanced laser desorption/ionization-time of flight (SELDI-TOF), the ion source is not under vacuum."
+  },
+  {
+    "id": 770,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "What method is used to introduce the sample into a mass spectrometer for analysis of a trace element?",
+    "options": [
+      "ESI",
+      "Laser desorption",
+      "ICP ionization",
+      "Direct injection"
+    ],
+    "answer": "C",
+    "explanation": "Mass spectrometers can be used to measure trace metals, but the atoms need to be vaporized and ionized like molecules before they enter the mass filter. This is done by introducing the sample into a very hot plasma (6,000–10,000°K) called a torch. The torch is made by circulating argon through inner and outer quartz tubes. The tubes are wrapped with a coil of wire that receives a radio frequency. This creates current flow through the wire and a magnetic field at the torch end. Argon atoms are excited by the current and magnetic field and ionize. When the argon is ignited by a spark, it forms a plasma. The sample is mixed with argon at the other end to create an aerosol. When it reaches the torch, the solvent is evaporated and the energy from the torch and collisions with argon ions cause ejection of outer-shell electrons, forming cations of the element. ICP-MS is used to measure any trace element that readily forms cations."
+  },
+  {
+    "id": 771,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which component is needed for a thermal cycler to amplify DNA?",
+    "options": [
+      "Programmable heating and cooling unit",
+      "Vacuum chamber with zero head space",
+      "Sealed airtight constant-temperature chamber",
+      "Temperature-controlled ionization chamber"
+    ],
+    "answer": "A",
+    "explanation": "The PCR for DNA amplification consists of three phases. Denaturation requires a temperature of 90°C to 94°C and separates the double-stranded DNA. Annealing requires a temperature of 40°C to 65°C and allows the primers to bind to the target base sequence. Extension requires a temperature of 72°C and allows the heat-stable polymerase to add complementary bases to the primer in the 5’ to 3’ direction. A cycle consists of each temperature stage for a specific number of minutes and most procedures require 20 or more cycles to generate a detectable quantity of target DNA. Rapid heating and cooling is usually achieved using a thermoelectric block that is cooled by forced air flow."
+  },
+  {
+    "id": 772,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "In real-time polymerase chain reaction (PCR), what value is needed to determine the threshold?",
+    "options": [
+      "Background signal",
+      "Melt temperature",
+      "Maximum fluorescence",
+      "Threshold cycle"
+    ],
+    "answer": "A",
+    "explanation": "In real-time PCR, the fluorescence of the reporter probe is proportional to the concentration of PCR products. For quantitation of PCR products, a well factor and background fluorescence must be determined. Well-factor values are analogous to cuvette blanks. They are used to correct the measurements from each well so that the same concentration of fluorescent dye gives the same signal intensity regardless of the well. The threshold is the lowest signal that indicates the presence of product. It can be calculated manually from a real-time amplification curve by finding the average standard deviation of the fluorescent signal (relative fluorescence units [RFU]) from cycles 2 to 10. This is multiplied by 10 to obtain the threshold value in RFUs."
+  },
+  {
+    "id": 773,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Given the following real-time PCR amplification curve, what is the threshold cycle (Ct)?",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "30"
+    ],
+    "answer": "C",
+    "explanation": "The maximum curvature of the plot approximates the Ct. A line is drawn from the threshold value on the y-axis through the curve, and a perpendicular dropped to the x- axis. The Ct is determined by the intersection point on the x-axis. The threshold is usually determined by an algorithm but can be calculated manually as 10 times the average standard deviation of the RFUs for cycles 2 to 10.",
+    "image": "data:image/jpeg;base64,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"
+  },
+  {
+    "id": 774,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "In addition to velocity, what variable is also needed to calculate the relative centrifugal force (g force) of a centrifuge?",
+    "options": [
+      "Head radius",
+      "Angular velocity coefficient",
+      "Diameter of the centrifuge tube",
+      "Ambient temperature in degrees Centigrade"
+    ],
+    "answer": "A",
+    "explanation": "The relative centrifugal force (number times the force of gravity) is proportional to the square of the rotor speed in revolutions per minute and the radius in centimeters of the head (distance from the shaft to the end of the tube). RCF = s2 × r × 1.118 × 10–5 where s is the speed in revolutions per minute (RPM), r is the radius in centimeters and 1.118 × 10–5 is a conversion constant."
+  },
+  {
+    "id": 775,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following situations is likely to cause an error when weighing with an electronic analytical balance?",
+    "options": [
+      "Failure to keep the knife edge clean",
+      "Failure to close the doors of the balance before reading the weight",
+      "Oxidation on the surface of the substitution weights",
+      "Using the balance without allowing it to warm up for at least 10 minutes"
+    ],
+    "answer": "B",
+    "explanation": "Electronic balances do not use substitution weights or knife edges to balance the weight on the pan. Instead, they measure the displacement of the pan by the weight on it by using electromagnetic force to return it to its reference position. Regardless of the type of balance used, all need to be located on a firm weighing table free of vibration. Doors must be closed to prevent air currents from influencing the weighing, and the pan and platform must be clean and free of dust and chemical residue."
+  },
+  {
+    "id": 776,
+    "section": "Instrumentation",
+    "chapter": "Clinical Chemistry",
+    "question": "When calibrating a semiautomatic pipet that has a fixed delivery of 10.0 µL using a gravimetric method, what should be the average weight of deionized water transferred?",
+    "options": [
+      "10.0 µg",
+      "100.0 µg",
+      "1.0 mg",
+      "10.0 mg"
+    ],
+    "answer": "D",
+    "explanation": "Gravimetric and spectrophotometric analyses are the two methods used to verify pipet volume accuracy and precision. Since spectrophotometric analysis involves dilution, gravimetric analysis is associated with greater certainty. At 20°C, the density of pure water is 0.99821 g/mL. Therefore, each microliter weighs almost exactly 1.0 mg."
+  },
+  {
+    "id": 777,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following represents the Henderson-Hasselbalch equation as applied to blood pH?",
+    "options": [
+      "pH = 6.1 + log HCO3–/PCO2",
+      "pH = 6.1 + log HCO3–/(0.03 × PCO2)",
+      "pH = 6.1 + log DCO2/HCO3–",
+      "pH = 6.1 + log (0.03 × PCO2)/HCO3–"
+    ],
+    "answer": "B",
+    "explanation": "The Henderson–Hasselbalch equation describes the pH of a buffer comprising a weak acid and its salt. pH = pKa + log salt/acid, where pKa is the negative logarithm of the dissociation constant of the acid. In this case, the salt is sodium bicarbonate (NaHCO3) and the acid is the dissolved CO2, which is equal to 0.03 (mmol/L per mm Hg) × PCO2. The pKa includes both the hydration and dissociation constant for dissolved CO2 in blood, 6.1."
+  },
+  {
+    "id": 778,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the PO2 of calibration gas containing 20.0% O2, when the barometric pressure is 30 in?",
+    "options": [
+      "60 mm Hg",
+      "86 mm Hg",
+      "143 mm Hg",
+      "152 mm Hg"
+    ],
+    "answer": "C",
+    "explanation": "Convert barometric pressure in inches to millimeters of mercury by multiplying by 25.4 (mm/in). Next, subtract the vapor pressure of H2O at 37°C, 47 mm Hg, to obtain dry gas pressure. Multiply dry gas pressure by the %O2: 25.4 mm/in × 30 in = 762 mm Hg 762 mm Hg – 47 mm Hg (vapor pressure) = 715 mm Hg (dry gas pressure) 0.20 × 715 mm Hg = 143 mm Hg PO2"
+  },
+  {
+    "id": 779,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the blood pH when the partial pressure of carbon dioxide (PCO2) is 60 mm Hg and the bicarbonate concentration is 18 millimoles per liter (mmol/L)?",
+    "options": [
+      "6.89",
+      "7.00",
+      "7.10",
+      "7.30"
+    ],
+    "answer": "C",
+    "explanation": "Solve using the Henderson-Hasselbalch equation. pH = pK’ + log HCO3–/(0.03 × PCO2), where pK’, the negative logarithm of the combined hydration and dissociation constants for dissolved CO2 and carbonic acid, is 6.1, and the solubility coefficient for CO2 gas is 0.03. pH = 6.1 + log 18/(0.03 × 60) = 6.1 + log 18/1.8 pH = 6.1 + log 10. Because log 10 = 1, pH = 7.10"
+  },
+  {
+    "id": 780,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following best represents the reference (normal) range for arterial pH?",
+    "options": [
+      "7.35 to 7.45",
+      "7.42 to 7.52",
+      "7.38 to 7.68",
+      "6.85 to 7.56"
+    ],
+    "answer": "A",
+    "explanation": "The reference range for arterial blood pH is 7.35 to 7.45 and is only 0.03 pH units lower for venous blood owing to the buffering effects of hemoglobin (Hgb), known as the chloride isohydric shift. Most laboratories consider less than 7.20 and greater than 7.60 the critical values for pH."
+  },
+  {
+    "id": 781,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the normal ratio of bicarbonate to dissolved carbon dioxide (HCO3–:DCO2) in arterial blood?",
+    "options": [
+      "1:10",
+      "10:1",
+      "20:1",
+      "30:1"
+    ],
+    "answer": "C",
+    "explanation": "When the ratio of HCO3–:DCO2 is 20:1, the log of salt/acid becomes 1.3. Substituting this in the Henderson-Hasselbalch equation and solving for pH gives pH = 6.1 + log 20; pH = 6.1 + 1.3 = 7.4. Acidosis results when this ratio is decreased and alkalosis when it is increased."
+  },
+  {
+    "id": 782,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the PCO2 if the DCO2 is 1.8 mmol/L?",
+    "options": [
+      "24 mm Hg",
+      "35 mm Hg",
+      "60 mm Hg",
+      "72 mm Hg"
+    ],
+    "answer": "C",
+    "explanation": "Dissolved CO2 is calculated from the measured PCO2 × 0.0306, the solubility coefficient for CO2 gas in blood at 37°C. DCO2 = PCO2 × 0.03 Therefore, PCO2 = DCO2/0.03 PCO2 = 1.8 mmol/L ÷ 0.03 mmol/ L per mm Hg = 60 mm Hg"
+  },
+  {
+    "id": 783,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "In the Henderson-Hasselbalch expression pH = 6.1 + log HCO3–/DCO2, the 6.1 represents:",
+    "options": [
+      "The combined hydration and dissociation constant for CO2 in blood at 37°C",
+      "The solubility constant for CO2 gas",
+      "The dissociation constant of H2O",
+      "The ionization constant of NaHCO3"
+    ],
+    "answer": "A",
+    "explanation": "The equilibrium constant, Kh, for the hydration of CO2 (DCO2 + H2O → H2CO3) is only about 2.3 × 10–3M, making DCO2 far more prevalent than carbonic acid. The dissociation constant, Kd, for the reaction H2CO3→H+ + HCO3– is about 2 × 10–4 M. The product of these constants is the combined equilibrium constant, K‘. The negative logarithm of K’ is the pK’, which is 6.103 in blood at 37°C."
+  },
+  {
+    "id": 784,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following contributes the most to serum total CO2 (TCO2)?",
+    "options": [
+      "PCO2",
+      "DCO2",
+      "HCO3–",
+      "Carbonium ion"
+    ],
+    "answer": "C",
+    "explanation": "The total CO2 is the sum of the DCO2, H2CO3 (carbonic acid or hydrated CO2), and bicarbonate (as mainly NaHCO3). When serum is used to measure total CO2, the DCO2 is insignificant because all the CO2 gas has escaped into the air. Therefore, serum total CO2 is equivalent to the bicarbonate concentration. Total CO2 is measured by potentiometry. An organic acid is used to release CO2 gas from bicarbonate and PCO2 is measured with a Severinghaus electrode. Alternatively, bicarbonate can be measured by an enzymatic reaction using phosphoenol pyruvate carboxylase. The enzyme forms oxaloacetate and phosphate from phosphoenol pyruvate and bicarbonate. The oxaloacetate is reduced to malate by malate dehydrogenase and nicotinamide adenine dinucleotide (NADH) is oxidized to NAD+. The negative reaction rate is proportional to plasma bicarbonate concentration."
+  },
+  {
+    "id": 785,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "In addition to NaHCO3, what other substance contributes the most to the amount of base in blood?",
+    "options": [
+      "Hgb concentration",
+      "Dissolved O2 concentration",
+      "Inorganic phosphorus",
+      "Organic phosphate"
+    ],
+    "answer": "A",
+    "explanation": "The primary blood buffer bases preventing acidosis, in order of concentration, are bicarbonate, deoxyhemoglobin, albumin, and monohydrogen phosphate. At physiological pH, there is significantly more H2PO4–1 than HPO4–2, and phosphate is a buffer system that is more efficient at preventing alkalosis than acidosis. Because all of the blood buffer systems are in equilibrium, pH can be calculated accurately from the concentration of bicarbonate and dissolved CO2 by using the Henderson-Hasselbalch equation."
+  },
+  {
+    "id": 786,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following effects results from exposure of a normal arterial blood sample to room air?",
+    "options": [
+      "PO2 increased PCO2 decreased pH increased",
+      "PO2 decreased PCO2 increased pH decreased",
+      "PO2 increased PCO2 decreased pH decreased",
+      "PO2 decreased PCO2 decreased pH decreased"
+    ],
+    "answer": "A",
+    "explanation": "The PO2 of air at sea level (21% O2) is about 150 mm Hg. The PCO2 of air is only about 0.3 mm Hg. Consequently, blood releases CO2 gas and gains O2 when exposed to air. Loss of CO2 shifts the equilibrium of the bicarbonate buffer system to the right, decreasing hydrogen ion (H+) concentration and blood becomes more alkaline."
+  },
+  {
+    "id": 787,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following formulas for O2 content is correct?",
+    "options": [
+      "O2 content = %O2 saturation/100 × Hgb g/dL × 1.39 mL/g + (0.0031 × PO2)",
+      "O2 content = PO2 × 0.0306 mmol/L/mm",
+      "O2 content = O2 saturation × Hgb g/dL × 0.003 mL/g",
+      "O2 content = O2 capacity × 0.003 mL/g"
+    ],
+    "answer": "A",
+    "explanation": "Oxygen content is the sum of O2 bound to Hgb and O2 dissolved in the plasma. It is dependent on the Hgb concentration and the percentage of Hgb bound to O2 (O2 saturation). Each gram of Hgb binds 1.39 mL of O2. The dissolved O2 is determined from the solubility coefficient of O2 (0.0031 mL per dL/mm Hg) and the PO2. O2 content = % Sat/100 × Hgb in g/dL × 1.39 mL/g + (0.0031 × PO2)"
+  },
+  {
+    "id": 788,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "The normal difference between alveolar and arterial PO2 (PAO2–PaO2 difference) is:",
+    "options": [
+      "3 mm Hg",
+      "10 mm Hg",
+      "40 mm Hg",
+      "50 mm Hg"
+    ],
+    "answer": "B",
+    "explanation": "The PAO2–PaO2 difference results from the low ratio of ventilation to perfusion in the base of the lungs. The Hgb in the blood coming from the base of the lung has a lower O2 saturation. This blood will take up O2 from the plasma of blood leaving well- ventilated areas of the lung, thus lowering the mixed arterial PO2."
+  },
+  {
+    "id": 789,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "A decreased PAO2–PaO2 difference is found in:",
+    "options": [
+      "A/V (arteriovenous) shunting",
+      "V/Q (ventilation/perfusion) inequality",
+      "Ventilation defects",
+      "All of these options"
+    ],
+    "answer": "C",
+    "explanation": "Patients with A/V shunts, V/Q inequalities, and cardiac failure will have an increased PAO2–PaO2 difference. However, patients with ventilation problems have low alveolar PO2 as a result of retention of CO2 in the airway. This reduces the PAO2–PaO2 difference."
+  },
+  {
+    "id": 790,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "The determination of the O2 saturation of Hgb is best accomplished by:",
+    "options": [
+      "Polychromatic absorbance measurements of a whole blood hemolysate",
+      "Near infrared transcutaneous absorbance measurement",
+      "Treatment of whole blood with alkaline dithionite prior to measuring absorbance",
+      "Calculation using PO2 and total Hgb by direct spectrophotometry"
+    ],
+    "answer": "A",
+    "explanation": "Measurement of oxyhemoglobin, deoxyhemoglobin (reduced Hgb), carboxyhemoglobin, methemoglobin, and sulfhemoglobin can be accomplished by using direct spectrophotometry at multiple wavelengths and the absorptivity coefficients of each pigment at those wavelengths. The O2 saturation is determined by dividing the fraction of oxyhemoglobin by the sum of all pigments. This eliminates much of the errors that occur in the other methods when the quantity of an abnormal Hgb pigment is increased."
+  },
+  {
+    "id": 791,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Correction of pH for a patient with a body temperature of 38°C would require:",
+    "options": [
+      "Subtraction of 0.015",
+      "Subtraction of 0.01%",
+      "Addition of 0.020",
+      "Subtraction of 0.020"
+    ],
+    "answer": "A",
+    "explanation": "The pH decreases by 0.015 for each degree Celsius above the 37°C. Because the blood gas analyzer measures pH at 37°C, the in vivo pH would be 0.015 pH units below the measured pH."
+  },
+  {
+    "id": 792,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the anticoagulant of choice for blood gas studies.",
+    "options": [
+      "Sodium citrate 3.2%",
+      "Lithium heparin 100 units/mL blood",
+      "Sodium citrate 3.8%",
+      "Ammonium oxalate 5.0%"
+    ],
+    "answer": "B",
+    "explanation": "Heparin is the only anticoagulant that does not alter the pH of blood; heparin salts must be used for pH and blood gases. Solutions of heparin are air equilibrated and must be used sparingly to prevent contamination of the sample by gas in the solution."
+  },
+  {
+    "id": 793,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the maximum recommended storage time and temperature for an arterial blood gas sample drawn in a plastic syringe?",
+    "options": [
+      "10 min at 2°C–8°C",
+      "20 min at 2°C–8°C",
+      "30 min at 2°C–8°C",
+      "30 min at 22°C"
+    ],
+    "answer": "D",
+    "explanation": "Arterial blood gas samples collected in plastic syringes should be stored at room temperature because cooling the sample allows O2 to enter the syringe. Storage time should be no more than 30 minutes because longer storage results in a significant drop in pH and PO2 and increased PCO2."
+  },
+  {
+    "id": 794,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "A patient’s blood gas results are as follows: pH = 7.26 DCO2 = 2.0 mmol/L HCO3– = 29 mmol/L These results would be classified as:",
+    "options": [
+      "Metabolic acidosis",
+      "Metabolic alkalosis",
+      "Respiratory acidosis",
+      "Respiratory alkalosis"
+    ],
+    "answer": "C",
+    "explanation": "Imbalances are classified as respiratory when the primary disturbance is with PCO2 because PCO2 is regulated by ventilation. PCO2 = DCO2/0.03 or 60 mm Hg (normal 35– 45 mm Hg). Increased DCO2 will increase H+ concentration, causing acidosis. Bicarbonate is moderately increased, but a primary increase in NaHCO3 causes alkalosis. Thus, the cause of this acidosis is CO2 retention (respiratory acidosis), and it is partially compensated for by renal retention of bicarbonate."
+  },
+  {
+    "id": 795,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "A patient’s blood gas results are: pH = 7.50 PCO2 = 55 mm Hg HCO3– = 40 mmol/L These results indicate:",
+    "options": [
+      "Respiratory acidosis",
+      "Metabolic alkalosis",
+      "Respiratory alkalosis",
+      "Metabolic acidosis"
+    ],
+    "answer": "B",
+    "explanation": "A pH above 7.45 corresponds with alkalosis. Both bicarbonate and PCO2 are elevated. Bicarbonate is the conjugate base and is under metabolic (renal) control, whereas PCO2 is an acid and is under respiratory control. Increased bicarbonate (but not increased CO2) results in alkalosis; therefore, the classification is metabolic alkalosis, partially compensated for by increased PCO2."
+  },
+  {
+    "id": 796,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which set of results is consistent with uncompensated respiratory alkalosis?",
+    "options": [
+      "pH 7.70 HCO3 30 mmol/L PCO2 25 mm Hg",
+      "pH 7.66 HCO3 22 mmol/L PCO2 20 mm Hg",
+      "pH 7.46 HCO3 38 mmol/L PCO2 55 mm Hg",
+      "pH 7.36 HCO3 22 mmol/L PCO2 38 mm Hg"
+    ],
+    "answer": "B",
+    "explanation": "Respiratory alkalosis is caused by hyperventilation, inducing low PCO2. Very often, in the early phase of an acute respiratory disturbance, the kidneys have not had time to compensate, and the bicarbonate is within normal limits. In option A, the bicarbonate is high and PCO2 low; thus, both are contributing to alkalosis and this would be classified as a combined acid–base disturbance. In answer C, the pH is almost normal, and both bicarbonate and PCO2 are increased. This can occur in the early stage of a metabolic acid–base disturbance when full respiratory compensation occurs or in a combined acid–base disorder. In answer D, both bicarbonate and PCO2 are within normal limits (22–26 mmol/L, 35–45 mm Hg, respectively) as is the pH."
+  },
+  {
+    "id": 797,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following will shift the O2 dissociation curve to the left?",
+    "options": [
+      "Anemia",
+      "Hyperthermia",
+      "Hypercapnia",
+      "Alkalosis"
+    ],
+    "answer": "D",
+    "explanation": "A left shift in the oxyhemoglobin dissociation curve signifies an increase in the affinity of Hgb for O2. This occurs in alkalosis, hypothermia, and in those hemoglobinopathies, such as Hgb Chesapeake, which increase the binding of O2 to heme. A right shift in the oxyhemoglobin dissociation curve lowers the affinity of Hgb for O2. This occurs in anemia which increases 2,3-diphosphoglycerate (2,3-DPG); with increased body temperature, increased H+ concentration, hypercapnia (increased PCO2); and in some hemoglobinopathies, such as Hgb Kansas."
+  },
+  {
+    "id": 798,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "In which circumstance will the reporting of calculated O2 saturation of Hgb based on PO2, PCO2, pH, temperature, and Hgb be in error?",
+    "options": [
+      "Carbon monoxide (CO) poisoning",
+      "Diabetic ketoacidosis",
+      "Oxygen therapy",
+      "Assisted ventilation for respiratory failure"
+    ],
+    "answer": "A",
+    "explanation": "CO has about 200 times the affinity as O2 for Hgb and will displace O2 from Hgb at concentrations that have no significant effect on the PAO2. Consequently, calculated O2 saturation will be erroneously high. Other cases in which the calculated O2Sat should not be used include any hemoglobinopathy that affects O2 affinity and methemoglobinemia. The other situations above affect the O2 saturation of Hgb in a manner that can be predicted by the effect of pH, PO2, and PCO2 on the oxyhemoglobin dissociation curve."
+  },
+  {
+    "id": 799,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which would be consistent with partially compensated respiratory acidosis?",
+    "options": [
+      "pH PCO2 Bicarbonate increased increased increased",
+      "pH PCO2 Bicarbonate increased decreased decreased",
+      "pH PCO2 Bicarbonate decreased decreased decreased",
+      "pH PCO2 Bicarbonate decreased increased increased"
+    ],
+    "answer": "D",
+    "explanation": "Acidosis = low pH; respiratory = disturbance of PCO2; a low pH is caused by increased PCO2. In partially compensated respiratory acidosis, the metabolic component of the buffer system, bicarbonate, is retained. This helps to compensate for retention of PCO2 by titrating hydrogen ions. The compensatory component always moves in the same direction as the cause of the acid–base disturbance."
+  },
+  {
+    "id": 800,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which condition results in metabolic acidosis with severe hypokalemia and chronic alkaline urine?",
+    "options": [
+      "Diabetic ketoacidosis",
+      "Phenformin-induced acidosis",
+      "Renal tubular acidosis",
+      "Acidosis caused by starvation"
+    ],
+    "answer": "C",
+    "explanation": "Metabolic acidosis can be caused by any condition that lowers bicarbonate. In nonrenal causes, the kidneys will attempt to compensate by increased acid excretion. However, in renal tubular acidosis (RTA), an intrinsic defect in the tubules prevents bicarbonate reabsorption. This causes alkaline instead of acidic urine. Excretion of bicarbonate as potassium bicarbonate (KHCO3) results in severe hypokalemia."
+  },
+  {
+    "id": 801,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following mechanisms is responsible for metabolic acidosis?",
+    "options": [
+      "Bicarbonate deficiency",
+      "Excessive retention of dissolved CO2",
+      "Accumulation of volatile acids",
+      "Hyperaldosteronism"
+    ],
+    "answer": "A",
+    "explanation": "Metabolic acidosis is caused by bicarbonate deficiency and metabolic alkalosis by bicarbonate excess. Respiratory acidosis is caused by PCO2 retention (defective ventilation), and respiratory alkalosis is caused by PCO2 loss (hyperventilation). Important causes of metabolic acidosis include renal failure, diabetic ketoacidosis, lactate acidosis, and diarrhea."
+  },
+  {
+    "id": 802,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following disorders is associated with lactate acidosis?",
+    "options": [
+      "Diarrhea",
+      "Renal tubular acidosis",
+      "Hypoaldosteronism",
+      "Alcoholism"
+    ],
+    "answer": "D",
+    "explanation": "Lactate acidosis often results from hypoxia, which causes a deficit of NAD+. This promotes the reduction of pyruvate to lactate, regenerating NAD+ needed for glycolysis. In alcoholic acidosis, oxidation of ethanol to acetaldehyde consumes the NAD+. In diabetes, lactate acidosis can result from depletion of Krebs cycle intermediates. Diarrhea and renal tubular acidosis result in metabolic acidosis via bicarbonate loss. Hypoaldosteronism causes metabolic acidosis via H+ and potassium ion (K+) retention."
+  },
+  {
+    "id": 803,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is the primary mechanism of compensation for metabolic acidosis?",
+    "options": [
+      "Hyperventilation",
+      "Release of epinephrine",
+      "Aldosterone release",
+      "Bicarbonate excretion"
+    ],
+    "answer": "A",
+    "explanation": "In metabolic acidosis, the respiratory center is stimulated by chemoreceptors in the carotid sinus, causing hyperventilation. This results in increased release of CO2. Respiratory compensation begins almost immediately unless blocked by pulmonary disease or respiratory therapy. Hyperventilation can bring the PCO2 down to approximately 10 to 15 mm Hg."
+  },
+  {
+    "id": 804,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "The following conditions are all causes of alkalosis. Which condition is associated with respiratory (rather than metabolic) alkalosis?",
+    "options": [
+      "Anxiety",
+      "Hypovolemia",
+      "Hyperaldosteronism",
+      "Hypoparathyroidism"
+    ],
+    "answer": "A",
+    "explanation": "Respiratory alkalosis is caused by hyperventilation, which leads to decreased PCO2. Anxiety and drugs that stimulate the respiratory center, such as epinephrine, are common causes of respiratory alkalosis. Excess aldosterone increases net acid excretion by the kidneys. Low levels of parathyroid hormone (PTH) cause increased bicarbonate reabsorption, resulting in alkalosis. Hypovolemia increases the relative concentration of bicarbonate. This is common and is called dehydrational alkalosis, chloride responsive alkalosis, or alkalosis of sodium deficit."
+  },
+  {
+    "id": 805,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is associated with both metabolic and respiratory alkalosis?",
+    "options": [
+      "Hyperchloremia",
+      "Hypernatremia",
+      "Hyperphosphatemia",
+      "Hypokalemia"
+    ],
+    "answer": "D",
+    "explanation": "Hypokalemia is both a cause and result of alkalosis. In alkalosis, hydrogen ions may move from the cells into the extracellular fluid and potassium into the cells. In hypokalemia caused by overproduction of aldosterone, hydrogen ions are secreted by the renal tubules. This increase in net acid excretion results in metabolic alkalosis."
+  },
+  {
+    "id": 806,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "In uncompensated metabolic acidosis, which of the following will be normal?",
+    "options": [
+      "Plasma bicarbonate",
+      "PCO2",
+      "p50",
+      "Total CO2"
+    ],
+    "answer": "B",
+    "explanation": "The normal compensatory mechanism for metabolic acidosis is respiratory hyperventilation. In uncompensated cases, PCO2 is not reduced, indicating a concomitant problem in respiratory control."
+  },
+  {
+    "id": 807,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is classified as normochloremic acidosis?",
+    "options": [
+      "Diabetic ketoacidosis",
+      "Chronic pulmonary obstruction",
+      "Uremic acidosis",
+      "Diarrhea"
+    ],
+    "answer": "A",
+    "explanation": "Bicarbonate deficit will lead to hyperchloremia unless the bicarbonate is replaced by an unmeasured anion. In diabetic ketoacidosis, acetoacetate and other ketoacids replace bicarbonate. The chloride remains normal or low, and there is an increased anion gap."
+  },
+  {
+    "id": 808,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which PCO2 value would be seen in maximally compensated metabolic acidosis?",
+    "options": [
+      "15 mm Hg",
+      "30 mm Hg",
+      "40 mm Hg",
+      "60 mm Hg"
+    ],
+    "answer": "A",
+    "explanation": "In metabolic acidosis, hyperventilation increases the ratio of bicarbonate to dissolved CO2. The extent of compensation is limited by the rate of both gas diffusion and diaphragm contraction. The lower limit is between 10 and 15 mm Hg PCO2, which is the maximum compensatory effect."
+  },
+  {
+    "id": 809,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "A patient has the following arterial blood gas results: pH = 7.56 PCO2 = 25 mm Hg PO2 = 100 mm Hg HCO3– = 22 mmol/L These results are most likely the result of which condition?",
+    "options": [
+      "Improper specimen collection",
+      "Prolonged storage",
+      "Hyperventilation",
+      "Hypokalemia"
+    ],
+    "answer": "C",
+    "explanation": "The pH is alkaline (reference range 7.35–7.45) and this can be caused by either low PCO2 or increased bicarbonate. This patient has a normal bicarbonate (reference range 22–26 mmol/L) and a low PCO2 (reference range 35–45 mm Hg). Low PCO2 is always caused by hyperventilation, and therefore, this is a case of uncompensated respiratory alkalosis. The acute stages of respiratory disorders are often uncompensated. Prolonged storage would cause the pH and PO2 to fall, and the PCO2 to rise. Hypokalemia causes alkalosis, but usually is associated with the retention of CO2 as compensation."
+  },
+  {
+    "id": 810,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Why are three levels used for quality control of pH and blood gases?",
+    "options": [
+      "Systematic errors can be detected earlier than with two controls",
+      "Analytical accuracy needs to be greater than for other analytes",
+      "High, normal, and low ranges must always be evaluated",
+      "A different level is needed for pH, PCO2, and PO2"
+    ],
+    "answer": "A",
+    "explanation": "Error detection occurs sooner when more controls are used. Some errors, such as those resulting from temperature error and protein coating of electrodes, are not as pronounced near the calibration point as in the acidosis and alkalosis range. The minimum requirement for blood gas quality control (QC) is one sample every 8 hours and at three levels (acidosis, normal, alkalosis) every 24 hours. Three levels of control are also used commonly for therapeutic drug monitoring and hormone assays because precision differs significantly in the high and low ranges."
+  },
+  {
+    "id": 811,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "A single-point calibration is performed between each blood gas sample to:",
+    "options": [
+      "Correct the electrode slope",
+      "Correct electrode and instrument drift",
+      "Compensate for temperature variance",
+      "Prevent contamination by the previous sample"
+    ],
+    "answer": "B",
+    "explanation": "Calibration using a single standard corrects the instrument for error at the labeled value of the calibrator but does not correct for analytic errors away from the set point. A two-point calibration adjusts the slope response of the electrode, eliminating proportional error caused by poor electrode performance."
+  },
+  {
+    "id": 812,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "In which condition would hypochloremia be expected?",
+    "options": [
+      "Respiratory alkalosis",
+      "Metabolic acidosis",
+      "Metabolic alkalosis",
+      "All of these options"
+    ],
+    "answer": "C",
+    "explanation": "Chloride is the major extracellular anion and is retained or lost to preserve electroneutrality. Low chloride will occur in metabolic alkalosis because excess bicarbonate is present. Low chloride also will occur in partially compensated respiratory acidosis because the kidneys compensate by increased retention of bicarbonate."
+  },
+  {
+    "id": 813,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Given the following serum electrolyte data, determine the anion gap: Na = 132 mmol/L K = 4.0 mmol/L Cl = 90 mmol/L HCO3– = 22 mmol/L",
+    "options": [
+      "12 mmol/L",
+      "24 mmol/L",
+      "64 mmol/L",
+      "Cannot be determined from the information provided"
+    ],
+    "answer": "B",
+    "explanation": "The anion gap is defined as unmeasured anions minus unmeasured cations in the plasma or serum. It is calculated by subtracting the measured anions (bicarbonate and chloride) from the measured cations (sodium plus potassium although some laboratories ignore the potassium). A normal anion gap is approximately 12 to 20 mmol/L (8–16 mmol/L when potassium is not included). Anion gap = (Na + K) – (HCO3 + Cl) Anion gap = (132 + 4) – (90 + 22) = 24 mmol/L"
+  },
+  {
+    "id": 814,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions will cause an increased anion gap?",
+    "options": [
+      "Diarrhea",
+      "Hypoaldosteronism",
+      "Hyperkalemia",
+      "Renal failure"
+    ],
+    "answer": "D",
+    "explanation": "An increased anion gap occurs when there is production or retention of anions other than bicarbonate or chloride (measured anions). For example, in renal failure, retention of phosphates and sulfates (as sodium salts) increases the anion gap. Other common causes of metabolic acidosis with an increased anion gap are diabetic ketoacidosis and lactate acidosis. The anion gap may also be increased in the absence of an acid–base disorder. Common causes include hypocalcemia, drug overdose, and laboratory error when measuring electrolytes."
+  },
+  {
+    "id": 815,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Alcoholism, liver failure, and hypoxia induce acidosis by causing:",
+    "options": [
+      "Depletion of cellular NAD+",
+      "Increased excretion of bicarbonate",
+      "Increased retention of PCO2",
+      "Loss of carbonic anhydrase"
+    ],
+    "answer": "A",
+    "explanation": "Oxygen debt and liver failure block oxidative phosphorylation, preventing NADH from being oxidized back to NAD+. Oxidation of ethanol to acetate results in accumulation of NADH. When NAD+ is depleted, glycolysis cannot proceed. It is regenerated by reduction of pyruvate to lactate, causing lactate acidosis."
+  },
+  {
+    "id": 816,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is the primary mechanism causing respiratory alkalosis?",
+    "options": [
+      "Hyperventilation",
+      "Deficient alveolar diffusion",
+      "Deficient pulmonary perfusion",
+      "Parasympathetic inhibition"
+    ],
+    "answer": "A",
+    "explanation": "Hyperventilation via stimulation of the respiratory center (or induced by a respirator) is the mechanism of respiratory alkalosis. Causes include low PO2, anxiety, fever, and drugs that stimulate the respiratory center. Acute respiratory alkalosis is often uncompensated because renal compensation is not rapid. Uncompensated respiratory alkalosis is characterized by an elevated pH and a low PCO2 with normal bicarbonate."
+  },
+  {
+    "id": 817,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which condition can result in acidosis?",
+    "options": [
+      "Cystic fibrosis",
+      "Vomiting",
+      "Hyperaldosteronism",
+      "Excessive O2 therapy"
+    ],
+    "answer": "D",
+    "explanation": "When O2 saturation of venous blood is greatly elevated, Hgb cannot release O2. Oxyhemoglobin cannot bind CO2 or H+, and acidosis results. Pure O2 may cause neurological damage, leading to convulsion and blindness, especially in infants. It can induce respiratory failure by causing pulmonary hemorrhage, edema, and hyalinization. The other three conditions cause alkalosis. Vomiting and cystic fibrosis cause loss of chloride, resulting in hypovolemia and intestinal bicarbonate absorption. Hyperaldosteronism causes hypokalemia; this results in increased renal H+ excretion and a shift of H+ into cells in exchange for K+."
+  },
+  {
+    "id": 818,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is associated with an increase in ionized calcium (Cai) in blood?",
+    "options": [
+      "Alkalosis",
+      "Hypoparathyroidism",
+      "Hyperalbuminemia",
+      "Malignancy"
+    ],
+    "answer": "D",
+    "explanation": "Increased Cai occurs in hyperparathyroidism, malignancy, and acidosis. Cai is elevated in primary hyperparathyroidism as a result of resorption of calcium from bone. Many nonparathyroid malignancies create products called parathyroid hormone- related proteins (PTHRPs) that stimulate the parathyroid receptors of cells. Acidosis alters the equilibrium between bound and free calcium, favoring ionization. Hyperalbuminemia increases the total calcium by increasing the protein-bound fraction, but does not affect the Cai."
+  },
+  {
+    "id": 819,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following laboratory results is consistent with primary hypoparathyroidism?",
+    "options": [
+      "Low calcium; high inorganic phosphorus Pi",
+      "Low calcium; low Pi",
+      "High calcium; high Pi",
+      "High calcium; low Pi"
+    ],
+    "answer": "A",
+    "explanation": "PTH deficiency causes reduced resorption of calcium from bone, increased renal excretion of calcium, and decreased renal excretion of phosphorus. It is distinguished from other causes of hypocalcemia by Cai, which is reduced only by primary hypoparathyroidism and alkalosis."
+  },
+  {
+    "id": 820,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is associated with hypophosphatemia?",
+    "options": [
+      "Rickets",
+      "Multiple myeloma",
+      "Renal failure",
+      "Hypervitaminosis D"
+    ],
+    "answer": "A",
+    "explanation": "Rickets can result from dietary phosphate deficiency, vitamin D deficiency, or an inherited disorder of either vitamin D or phosphorus metabolism. Vitamin D– dependent rickets (VDDR) can be reversed by megadoses of vitamin D. Type 1 is caused by a deficiency in renal cells of 1-α-hydroxylase, an enzyme that converts 25 hydroxyvitamin D to the active form, 1,25 hydroxyvitamin D. Type 2 is caused by a deficiency in the vitamin D receptor of bone tissue. Vitamin D–resistant rickets (VDRR) is caused by a deficiency in the renal reabsorption of phosphate. Consequently, affected persons (usually men because it is most commonly X-linked) have a normal serum calcium and a low Pi."
+  },
+  {
+    "id": 821,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following tests is consistently abnormal in osteoporosis?",
+    "options": [
+      "High urinary calcium",
+      "High serum Pi",
+      "Low serum calcium",
+      "High urine or serum N-telopeptide of type 1 collagen"
+    ],
+    "answer": "D",
+    "explanation": "Commonly used markers for other bone diseases (e.g., serum or urinary calcium, inorganic phosphorus, total ALP, and vitamin D) are neither sensitive nor specific for osteoporosis. Calcium and phosphorus are usually within normal limits. Although estrogen deficiency reduces formation of 1,25 hydroxyvitamin D (1,25 hydroxycholecalciferol), promoting postmenopausal osteoporosis, the 1,25 hydroxyvitamin D is low in only 30% to 35% of cases, and low levels may be caused by other bone disorders. Serum markers for osteoporosis include both N-telopeptide of type 1 collagen (NTx) and C-telopeptide of type 1 collagen (CTx). NTx and CTx can be used to assess treatment with resorption antagonists (bisphosphonates) because they decrease significantly when therapy is successful."
+  },
+  {
+    "id": 822,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is a marker for bone formation?",
+    "options": [
+      "Osteocalcin",
+      "Tartrate resistant acid phosphatase (TRAP)",
+      "Urinary pyridinoline and deoxypyridinoline",
+      "Urinary C-telopeptide and N-telopeptide crosslinks (CTx and NTx)"
+    ],
+    "answer": "A",
+    "explanation": "Biochemical markers for osteoporosis are classified as either markers for bone formation or resorption. Osteocalcin is a protein hormone that stimulates osteoblasts and increases bone mineralization. Pyridinoline is formed when hydroxylysine groups on adjacent fibrils are joined together, and deoxypyridinoline when hydroxylysine and lysine groups are joined. These form cross-links between the C and N terminal ends of one fibril (which are nonhelical) and the helical portion of an adjacent fibril. The resulting products are called C- and N-telopeptide cross-links of type 1 collagen. Osteoclasts cause cleavage of these bonds, resulting in loss of both telopeptides— deoxypyridinoline and pyridinoline—in urine. TRAP is an enzyme (produced by osteoclasts) that hydrolyzes phosphate in the hydroxyapatite matrix of the bone."
+  },
+  {
+    "id": 823,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "What role do CTx and NTx play in the management of osteoporosis?",
+    "options": [
+      "Increased urinary excretion is diagnostic of early-stage disease",
+      "Increased levels indicate a low risk of developing osteoporosis",
+      "Decreased urinary excretion indicates a positive response to treatment",
+      "The rate of urinary excretion correlates with the stage of the disease"
+    ],
+    "answer": "C",
+    "explanation": "Markers for both bone formation and resorption are used to monitor treatment for osteoporosis. Serum and urinary measurements of CTx and NTx and urinary deoxypyridinoline are used to monitor medications that inhibit bone resorption (e.g., bisphosphonates). CTx, NTx and deoxypyridinoline decrease with successful treatment. DEXA scan, an x-ray procedure based on subtraction of surrounding tissue, is the most sensitive diagnostic test for osteoporosis and can show bone loss as small as 1%. However, it takes months before a dual-energy x-ray absorptiometry (DEXA) scan shows increased bone remodeling after treatment."
+  },
+  {
+    "id": 824,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "What role does vitamin D measurement play in the management of osteoporosis?",
+    "options": [
+      "Vitamin D deficiency must be demonstrated to establish the diagnosis",
+      "Vitamin D is consistently elevated in osteoporosis",
+      "A normal vitamin D level rules out osteoporosis",
+      "Vitamin D deficiency is a risk factor for developing osteoporosis"
+    ],
+    "answer": "D",
+    "explanation": "Vitamin D assay is not used to diagnose osteoporosis. Vitamin D deficiency is a cause of secondary osteoporosis, and low levels of PTH, calcium, and estrogen are additional important risk factors. If one or more of these are abnormal, then bone resorption or remodeling may be abnormal, predisposing the individual to osteoporosis. Deficiency of vitamin D also causes rickets (called osteomalacia in adults), a condition in which bones become soft as a result of reduced deposition of hydroxyapatite."
+  },
+  {
+    "id": 825,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement best describes testing recommendations for vitamin D?",
+    "options": [
+      "Vitamin D testing should be reserved only for those persons who demonstrate hypercalcemia of an undetermined cause",
+      "Vitamin D testing should be specific for the 1,25(OH)D3 form",
+      "Testing should be for total vitamin D when screening for deficiency",
+      "Vitamin D testing should not be performed if the patient is receiving vitamin D supplementation"
+    ],
+    "answer": "C",
+    "explanation": "Vitamin D deficiency is far more common than vitamin D excess, and screening for vitamin D deficiency is advocated especially for dark-skinned persons and people who do not get adequate sunlight. Provitamin D is a steroid, and vitamin D is considered a hormone, rather than a vitamin. The hormone regulates transcription of over 200 genes and has pronounced effects on both dendritic cells and T lymphocytes. Deficiency is associated with many chronic diseases, including autoimmune diseases, cancers, hypertension, and heart disease. There are two forms of the vitamin—ergocalciferol (D2) and cholecalciferol (D3). Active D2 and D3 are formed when two hydroxyl groups are added, the first being at the 25 position by the liver and the second at the α-1 position by the kidney. The majority of the circulating vitamin D is in the 25- hydroxylated form of D2 and D3, called 25(OH)D. The plasma 25(OH)D concentration is an expression of both dietary and endogenous vitamin D and is the most appropriate test for detecting nutritional vitamin D deficiency. Because the effect on calcium is derived from the active 1,25 form of the vitamin, plasma 1,25(OH)D concentration is a more specific test for hypervitaminosis D."
+  },
+  {
+    "id": 826,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "The serum level of which of the following laboratory tests is decreased in both VDDR and VDRR?",
+    "options": [
+      "Vitamin D",
+      "Calcium",
+      "Pi",
+      "Parathyroid hormone"
+    ],
+    "answer": "C",
+    "explanation": "Persons with VDDR and VDRR have a low Pi. However, persons with VDDR have decreased serum calcium as well. PTH is increased in persons with VDDR because calcium is the primary stimulus for PTH release, but not in persons with VDRR. Vitamin D levels vary depending on the type of rickets and the vitamin D metabolite that is measured. 1,25(OH)D, the active form of vitamin D, is low in type 1 but high in type 2 VDDR. Vitamin D levels are variable in VDRR."
+  },
+  {
+    "id": 827,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is the most accurate measurement of inorganic phosphorus (Pi) in serum?",
+    "options": [
+      "Rate of unreduced phosphomolybdate formation at 340 nm",
+      "Measurement of phosphomolybdenum blue at 680 nm",
+      "Use of aminonaptholsulfonic acid to reduce phosphomolybdate",
+      "Formation of a complex with malachite green dye"
+    ],
+    "answer": "A",
+    "explanation": "Inorganic phosphorus is proportional to the rate of absorbance increase at 340 nm when it combines with ammonium molybdate. Colorimetric methods suffer from interferences resulting from the reduction of ammonium phosphomolybdate."
+  },
+  {
+    "id": 828,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the percentage of serum calcium that is ionized?",
+    "options": [
+      "30%",
+      "45%",
+      "60%",
+      "80%"
+    ],
+    "answer": "B",
+    "explanation": "Calcium exists in serum in three forms: protein bound, ionized, and complexed (as undissociated salts). Only Cai is physiologically active. Protein bound and Cai each account for approximately 45% of total calcium, and the remaining 10% is complexed."
+  },
+  {
+    "id": 829,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions will cause erroneous Cai results? Assume that the samples are collected and stored anaerobically, kept at 4°C until measurement, and stored for no longer than 1 hour.",
+    "options": [
+      "Slight hemolysis during venipuncture",
+      "Assay of whole blood collected in sodium oxalate",
+      "Analysis of serum in a barrier gel tube stored at 4°C until the clot has formed",
+      "Analysis of whole blood collected in sodium heparin, 20 units/mL (low-heparin tube)"
+    ],
+    "answer": "B",
+    "explanation": "Unlike Pi, the intracellular calcium level is not significantly different from plasma calcium, and calcium is not greatly affected by diet. Whole blood collected with 5 to 20 units/mL heparin and stored on ice no longer than 2 hours is the sample of choice for Cai. Blood gas syringes prefilled with 100 units/mL heparin should not be used because the high heparin concentration will cause low results. Citrate, oxalate, and EDTA must not be used because they chelate calcium. Serum may be used provided that the sample is iced, kept capped while clotting, and assayed within 2 hours (barrier gel tubes may be stored longer)."
+  },
+  {
+    "id": 830,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is associated with a low serum magnesium?",
+    "options": [
+      "Addison disease",
+      "Hemolytic anemia",
+      "Hyperparathyroidism",
+      "Pancreatitis"
+    ],
+    "answer": "D",
+    "explanation": "Low magnesium can be caused by gastrointestinal (GI) loss, as occurs in diarrhea and pancreatitis (loss of magnesium and calcium as soaps). Hyperparathyroidism causes increased release of both calcium and magnesium from bone. Addison disease (adrenocorticosteroid deficiency) may be associated with increased magnesium accompanying hyperkalemia. Hemolytic anemia causes increased release of magnesium as well as potassium from damaged RBCs."
+  },
+  {
+    "id": 831,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "When measuring calcium with the complexometric dye o-cresolphthalein complexone, magnesium is kept from interfering by:",
+    "options": [
+      "Using an alkaline pH",
+      "Adding 8-hydroxyquinoline",
+      "Measuring at 450 nm",
+      "Complexing to ethylenediaminetetraacetic acid (EDTA)"
+    ],
+    "answer": "B",
+    "explanation": "o-Cresolphthalein complexone can be used to measure either magnesium or calcium. Interference in calcium assays is prevented by addition of 8-hydroxyquinoline, which chelates magnesium. When magnesium is measured, ethyleneglycol bistetraacetic acid (EGTA) or EDTA is used to chelate calcium. Two other dyes that can be used for both magnesium and calcium assays are calmagite and methylthymol blue. Arsenazo III dye is commonly used to measure calcium. It is more specific for Ca+2 than the others, and does not require addition of a Mg+2 chelator."
+  },
+  {
+    "id": 832,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which electrolyte measurement is least affected by hemolysis?",
+    "options": [
+      "Potassium",
+      "Calcium",
+      "Inorganic phosphorus",
+      "Magnesium"
+    ],
+    "answer": "B",
+    "explanation": "Potassium, phosphorus, and magnesium are the major intracellular ions, and even slight hemolysis will cause falsely elevated results. Serum samples with visible hemolysis (20 mg/dL free Hgb) should be redrawn."
+  },
+  {
+    "id": 833,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is associated with hypokalemia?",
+    "options": [
+      "Addison disease",
+      "Hemolytic anemia",
+      "Digoxin intoxication",
+      "Alkalosis"
+    ],
+    "answer": "D",
+    "explanation": "Addison disease (adrenocortical insufficiency) results in low levels of adrenal corticosteroid hormones, including aldosterone and cortisol. Because these hormones promote reabsorption of sodium and secretion of potassium by the collecting tubules, patients with Addison disease display hyperkalemia and hyponatremia. Hemolytic anemia and digoxin intoxication cause release of intracellular potassium. Alkalosis causes potassium to move from the extracellular fluid into the cells as H+ moves from the cells into the extracellular fluid to compensate for alkalosis."
+  },
+  {
+    "id": 834,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is most likely to produce an elevated plasma potassium?",
+    "options": [
+      "Hypoparathyroidism",
+      "Cushing syndrome",
+      "Diarrhea",
+      "Digitalis overdose"
+    ],
+    "answer": "D",
+    "explanation": "Digitalis toxicity causes potassium to leave the cells and enter the extracellular fluid, resulting in hyperkalemia. Renal failure, hemolytic anemia, and Addison disease are other frequent causes of hyperkalemia. Hypoparathyroidism indirectly causes hypokalemia by inducing alkalosis via increased renal retention of phosphate and bicarbonate. Cushing syndrome (adrenal cortical hyperfunction) results in low potassium and elevated sodium. Diarrhea causes loss of sodium and potassium."
+  },
+  {
+    "id": 835,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following values is the threshold critical value (alert or action level) for low plasma potassium?",
+    "options": [
+      "1.5 mmol/L",
+      "2.0 mmol/L",
+      "2.5 mmol/L",
+      "3.5 mmol/L"
+    ],
+    "answer": "C",
+    "explanation": "The reference range for potassium is 3.6 to 5.4 mmol/L. However, values below 2.5 mmol/L require immediate intervention because below that level there is a grave risk of cardiac arrhythmia, which can lead to cardiac arrest. The upper alert level for potassium is usually 6.5 mmol/L, except for neonatal and hemolyzed samples. Above this level, there is danger of cardiac failure."
+  },
+  {
+    "id": 836,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which electrolyte is least likely to be elevated in renal failure?",
+    "options": [
+      "Potassium",
+      "Magnesium",
+      "Inorganic phosphorus",
+      "Sodium"
+    ],
+    "answer": "D",
+    "explanation": "Reduced glomerular filtration coupled with decreased tubular secretion causes accumulation of potassium, magnesium, and inorganic phosphorus. Poor tubular reabsorption of sodium offsets reduced glomerular filtration. Unfiltered sodium draws both chloride and water, causing osmotic equilibration among filtrate, serum, and tissues. In renal disease, serum sodium is often normal, although total body sodium is increased owing to fluid and salt retention."
+  },
+  {
+    "id": 837,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is the primary mechanism for vasopressin (antidiuretic hormone [ADH]) release?",
+    "options": [
+      "Hypovolemia",
+      "Hyperosmolar plasma",
+      "Renin release",
+      "Reduced renal blood flow"
+    ],
+    "answer": "B",
+    "explanation": "ADH is released by the posterior pituitary in response to increased plasma osmolality. Normally, this is triggered by release of aldosterone caused by ineffective arterial pressure in the kidney. Aldosterone causes sodium reabsorption, which raises plasma osmolality; release of ADH causes reabsorption of water, which increases blood volume and restores normal osmolality. A deficiency of ADH (diabetes insipidus) results in dehydration and hypernatremia. An excess of ADH (syndrome of inappropriate ADH release [SIADH]) results in dilutional hyponatremia. This may be caused by regional hypovolemia, hypothyroidism, central nervous system (CNS) injury, drugs, and malignancy."
+  },
+  {
+    "id": 838,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is associated with hypernatremia?",
+    "options": [
+      "Diabetes insipidus",
+      "Hypoaldosteronism",
+      "Burns",
+      "Diarrhea"
+    ],
+    "answer": "A",
+    "explanation": "Diabetes insipidus results from failure to produce ADH. Because the collecting tubules are impermeable to water in the absence of ADH, severe hypovolemia and dehydration result. Hypovolemia stimulates aldosterone release, causing sodium reabsorption, which worsens the hypernatremia. Burns, hypoaldosteronism, diarrhea, and diuretic therapy are common causes of hyponatremia."
+  },
+  {
+    "id": 839,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following values is the threshold critical value (alert or action level) for high plasma sodium?",
+    "options": [
+      "150 mmol/L",
+      "160 mmol/L",
+      "170 mmol/L",
+      "180 mmol/L"
+    ],
+    "answer": "B",
+    "explanation": "The adult reference range for plasma sodium is approximately 135 to 145 mmol/L. Levels in excess of 160 mmol/L are associated with severe dehydration, hypovolemia, and circulatory and heart failure. The threshold for the low critical value for sodium is 120 mmol/L. This is associated with edema, hypervolemia, and circulatory overload. Alert levels must also be established for potassium, bicarbonate, calcium, pH, PO2, glucose, bilirubin, Hgb, platelet count, and prothrombin time. When a sample result is below or above the low or high alert level, respectively, the physician must be notified immediately."
+  },
+  {
+    "id": 840,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is associated with total body sodium excess?",
+    "options": [
+      "Renal failure",
+      "Hyperthyroidism",
+      "Hypoparathyroidism",
+      "Diabetic ketoacidosis"
+    ],
+    "answer": "A",
+    "explanation": "Total body sodium excess often occurs in persons with renal failure, congestive heart failure (CHF), and cirrhosis of the liver. When water is retained along with sodium, the result is total body sodium excess, rather than hypernatremia. Heart failure causes sodium and water retention by reducing blood flow to the kidneys. Cirrhosis causes obstruction of hepatic lymphatics and portal veins, leading to local hypertension and accumulation of ascites fluid. Renal failure results in poor glomerular filtration and isosmotic equilibration of salt and water."
+  },
+  {
+    "id": 841,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is associated with hyponatremia?",
+    "options": [
+      "Diuretic therapy",
+      "Cushing syndrome",
+      "Diabetes insipidus",
+      "Nephrotic syndrome"
+    ],
+    "answer": "A",
+    "explanation": "Diuretics lower blood pressure by promoting water loss. This is accomplished by causing sodium loss from the proximal tubule and/or loop. Addison disease, SIADH, burns, diabetic ketoacidosis, hypopituitarism, vomiting, diarrhea, and cystic fibrosis also cause hyponatremia. Cushing syndrome causes hypernatremia by promoting sodium reabsorption in the collecting tubule in exchange for potassium. Diabetes insipidus and nephrotic syndrome promote hypernatremia by causing water loss."
+  },
+  {
+    "id": 842,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions involving electrolytes is described correctly?",
+    "options": [
+      "Pseudohyponatremia occurs only when undiluted samples are measured",
+      "Potassium levels are slightly higher in heparinized plasma than in serum",
+      "Hypoalbuminemia causes low total calcium but does not affect Cai",
+      "Hypercalcemia may be induced by low serum magnesium"
+    ],
+    "answer": "C",
+    "explanation": "When serum albumin is low, the equilibrium between bound and Cai is shifted, producing increased Cai. This inhibits release of PTH by negative feedback until the Cai level returns to normal. Potassium is released from platelets and leukocytes during coagulation, causing serum levels to be higher than plasma levels. Pseudohyponatremia is a measurement error caused by diluting samples containing excessive fat or protein. The colloids displace plasma water, resulting in less electrolytes being delivered into the diluent. Only ISEs that measure whole blood or undiluted serum are unaffected. Magnesium is needed for release of PTH, and PTH causes release of calcium and magnesium from bone. Hypocalcemia can be associated with either magnesium deficiency or magnesium excess."
+  },
+  {
+    "id": 843,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following laboratory results is usually associated with cystic fibrosis?",
+    "options": [
+      "Sweat chloride greater than 60 mmol/L",
+      "Elevated serum sodium and chloride",
+      "Elevated fecal trypsin activity",
+      "Low glucose"
+    ],
+    "answer": "A",
+    "explanation": "Cystic fibrosis causes obstruction of the exocrine glands, including the sweat glands, mucous glands, and pancreas. Newborns with pancreatic involvement demonstrate fecal trypsin deficiency, which may be detected by low fecal chymotrypsin or immunoreactive trypsin. However, these tests require confirmation. Serum sodium and chloride levels are low. Greater than 98% of affected infants have elevated sweat sodium and chloride and low serum levels. Sweat chloride in excess of 60 mmol/L confirms the clinical diagnosis. Some persons with the disease have insulin deficiency and elevated blood glucose. Genetic tests are available to detect several mutations that occur at the cystic fibrosis transmembrane conductance regulator (CFTR) locus on chromosome 7."
+  },
+  {
+    "id": 844,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "When performing a sweat chloride collection, which of the following steps will result in analytical error?",
+    "options": [
+      "Using unweighed gauze soaked in pilocarpine nitrate on the inner surface of the forearm to stimulate sweating",
+      "Collecting greater than 75 mg of sweat in 30 minutes",
+      "Leaving the preweighed gauze on the inside of the arm exposed to air during collection",
+      "Rinsing the collected sweat from the gauze pad using chloride titrating solution"
+    ],
+    "answer": "C",
+    "explanation": "The sweat chloride procedure requires the application of pilocarpine to stimulate sweating, and the use of iontophoresis (application of 0.16-mA current for 5 minutes) to bring the sweat to the surface. After iontophoresis, the skin on the inner surface of the forearm is washed with deionized water and dried, and a preweighed pair of 2-inch square pads is taped to the skin. During the 30-minute collection of sweat, the gauze must be completely covered to prevent contamination and loss of sweat by evaporation. The Gibson-Cooke reference method for sweat chloride uses the Schales and Schales method (titration by Hg(NO3)2 with diphenylcarbazone indicator) to assay 1.0 mL of sweat eluted from the gauze with 5 mL of water. A Cotlove chloridometer is often used to measure sweat chloride. The sweat is eluted from the gauze with the titrating solution to facilitate measurement. Alternatively, a macroduct collection system that does not require weighing may be used. A minimum mass of 75 mg sweat is required for collection in gauze and 15 µL sweat for collection in macroduct tubing."
+  },
+  {
+    "id": 845,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which electrolyte level best correlates with plasma osmolality?",
+    "options": [
+      "Sodium",
+      "Chloride",
+      "Bicarbonate",
+      "Calcium"
+    ],
+    "answer": "A",
+    "explanation": "Sodium and chloride are the major extracellular ions. Chloride passively follows sodium, making sodium the principal determinant of plasma osmolality."
+  },
+  {
+    "id": 846,
+    "section": "Blood Gases, pH, and Electrolytes",
+    "chapter": "Clinical Chemistry",
+    "question": "Which formula is most accurate in predicting plasma osmolality?",
+    "options": [
+      "Na + 2(Cl) + BUN + glucose",
+      "2(Na) + 2(Cl) + glucose + urea",
+      "2(Na) + (glucose ÷ 18) + (BUN ÷ 2.8)",
+      "Na + Cl + K + HCO3"
+    ],
+    "answer": "C",
+    "explanation": "Calculated plasma osmolality is based on measurement of sodium, glucose, and urea. Because sodium associates with a counter ion, two times the sodium estimates the millimoles per liter of electrolytes. Some laboratories multiply by 1.86 instead of 2 to correct for undissociated salts. Dividing glucose by 18 converts from milligrams per deciliter to millimoles per liter. Dividing blood urea nitrogen (BUN) by 2.8 converts from milligrams per deciliter BUN to millimoles per liter urea."
+  },
+  {
+    "id": 847,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following biochemical processes is promoted by insulin?",
+    "options": [
+      "Glycogenolysis",
+      "Gluconeogenesis",
+      "Lipolysis",
+      "Uptake of glucose by cells"
+    ],
+    "answer": "D",
+    "explanation": "Insulin reduces blood glucose levels by increasing glucose uptake by cells. It promotes lipid and glycogen production, induces synthesis of glycolytic enzymes, and inhibits formation of glucose from pyruvate and Krebs cycle intermediates."
+  },
+  {
+    "id": 848,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following hormones promotes hyperglycemia?",
+    "options": [
+      "Calcitonin",
+      "Growth hormone",
+      "Aldosterone",
+      "Renin"
+    ],
+    "answer": "B",
+    "explanation": "Growth hormone and cortisol promote gluconeogenesis, and epinephrine stimulates glycogenolysis. Excess thyroid hormone causes hyperglycemia by increasing glucagon and inactivation of insulin, thereby promoting both gluconeogenesis and glycogenolysis. An increase in any of these hormones can cause hyperglycemia. Calcitonin opposes the action of PTH. Aldosterone is the primary mineralocorticoid hormone and stimulates sodium reabsorption and potassium secretion by the kidneys. Renin is released from the kidney as a result of ineffective arterial pressure and promotes activation of angiotensinogen and aldosterone secretion."
+  },
+  {
+    "id": 849,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is characteristic of type 1 diabetes mellitus?",
+    "options": [
+      "Requires an oral glucose tolerance test for diagnosis",
+      "Is the most common form of diabetes mellitus",
+      "Usually occurs after age 40 years",
+      "Requires insulin replacement to prevent ketosis"
+    ],
+    "answer": "D",
+    "explanation": "Type 1 is called insulin-dependent diabetes because patients must be given insulin to prevent ketosis. It is also called juvenile diabetes because peak incidence is at age 14 years. Type 1 accounts for only about 10% to 20% of cases of diabetes mellitus, and is usually diagnosed by a fasting plasma glucose (FBS) or HgbA1c. Diagnostic criteria include any two consecutive results exceeding the following values: FBS 126 mg/dL or greater 2-hour oral glucose challenge or casual (nonfasting) glucose with symptoms 200 mg/Dl or greater HgbA1c 6.5% or greater Approximately 95% of patients produce autoantibodies against the beta cells of the pancreatic islets. Other autoantibodies may be produced against insulin, glutamate decarboxylase, and tyrosine phosphatase-related islet antigen 2 (IA-2). There is genetic association between type 1 diabetes and human leukocyte antigens (HLA) DR3 and HLA DR4."
+  },
+  {
+    "id": 850,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is characteristic of type 2 diabetes mellitus?",
+    "options": [
+      "Insulin levels are consistently low",
+      "Most cases require a 3-hour oral glucose tolerance test for diagnosis",
+      "Hyperglycemia is often controlled without insulin replacement",
+      "The condition is associated with unexplained weight loss"
+    ],
+    "answer": "C",
+    "explanation": "Type 2, or late-onset diabetes, is associated with a defect in the receptor site for insulin. Insulin levels may be low, normal, or high. Patients are usually obese and age greater than 40 years, although the incidence is increasing in both children and young adults. The American Diabetes Association (ADA) recommends screening all adults for diabetes who are overweight and have one additional risk factor and all adults age greater than 45 years, and to retest them every 3 years, if the result is negative. Patients do not require insulin to prevent ketosis and hyperglycemia can be controlled in most patients with diet and drugs that promote insulin release or glucose loss via the kidneys. Type 2 accounts for 80% to 90% of all cases of diabetes mellitus."
+  },
+  {
+    "id": 851,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following results falls within the diagnostic criteria for diabetes mellitus?",
+    "options": [
+      "Fasting plasma glucose of 120 mg/dL",
+      "Two-hour postprandial plasma glucose of 160 mg/dL",
+      "Two-hour plasma glucose of 180 mg/dL following a 75 g oral glucose challenge",
+      "Random plasma glucose of 250 mg/dL and presence of symptoms"
+    ],
+    "answer": "D",
+    "explanation": "The ADA recommends the following criteria for diagnosing diabetes mellitus: Fasting glucose 126 mg/dL or greater Casual (random) glucose 200 mg/dL or greater in the presence of symptoms (polyuria, increased thirst, weight loss) Glucose 200 mg/dL or greater at 2 hours after an oral dose of 75 g of glucose HgbA1c ≥ 6.5% A diagnosis of diabetes mellitus is indicated if any one criterion or a combination of these four criteria is met on more than a single testing event. The fasting plasma glucose test requires at least 8 hours with no food or drink except water. The 2-hour postloading test should be conducted according to the oral glucose tolerance guidelines currently recommended by the World Health Organization."
+  },
+  {
+    "id": 852,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the most appropriate adult reference range for fasting blood glucose.",
+    "options": [
+      "40–105 mg/dL (2.22–5.82 mmol/L)",
+      "60–140 mg/dL (3.33–7.77 mmol/L)",
+      "65–99 mg/dL (3.61–5.50 mmol/L)",
+      "75–150 mg/dL (4.16–8.32 mmol/L)"
+    ],
+    "answer": "C",
+    "explanation": "Reference ranges vary slightly depending on the method and the specimen type. Enzymatic methods specific for glucose have an upper limit of normal no greater than 99 mg/dL. This is the cutoff value for impaired fasting plasma glucose (prediabetes) recommended by the ADA. Although 65 mg/dL is considered the 2.5 percentile, a fasting level below 50 mg/dL is often seen without associated clinical hypoglycemia, and neonates have a lower limit of approximately 40 mg/dL because of maternal insulin."
+  },
+  {
+    "id": 853,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "When preparing a patient for an oral glucose tolerance test (OGTT), which of the following conditions will lead to erroneous results?",
+    "options": [
+      "The patient remains ambulatory for 3 days prior to the test",
+      "Carbohydrate intake is restricted to below 150 g/day for 3 days prior to test",
+      "No food, coffee, tea, or smoking is allowed 8 hours before and during the test",
+      "Administration of 75 g of glucose is given to an adult patient after a 10- to 12-hour fast"
+    ],
+    "answer": "B",
+    "explanation": "Standardized OGTTs require that patients receive at least 150 g of carbohydrate per day for 3 days prior to the test to stabilize the synthesis of inducible glycolytic enzymes. The 2-hour OGTT test is no longer recommended for screening and should be reserved for confirmation of diabetes in cases that are difficult to diagnose, as in persons who lack symptoms and signs of fasting hyperglycemia."
+  },
+  {
+    "id": 854,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following 2-hour glucose challenge results would be classified as impaired glucose tolerance (IGT)?",
+    "options": [
+      "130 mg/dL",
+      "135 mg/dL",
+      "150 mg/dL",
+      "204 mg/dL"
+    ],
+    "answer": "C",
+    "explanation": "Except in pregnancy, IGT is defined by the ADA as a serum or plasma glucose at 2 hours following a 75-g oral glucose load of 140 mg/dL or greater and less than 200 mg/dL. Persons who have a fasting plasma glucose of 100 or greater but less than 126 mg/dL are classified as having impaired fasting glucose (IFG). Both IGT and IFG are risk factors for developing diabetes later in life. Such persons are classified as having prediabetes and should be tested annually."
+  },
+  {
+    "id": 855,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding gestational diabetes mellitus (GDM) is correct?",
+    "options": [
+      "Is diagnosed using the same oral glucose tolerance criteria as in nonpregnancy",
+      "Converts to diabetes mellitus after pregnancy in 60% to 75% of cases",
+      "Presents no increased health risk to the fetus",
+      "Is defined as glucose intolerance originating during pregnancy"
+    ],
+    "answer": "D",
+    "explanation": "Control of GDM reduces perinatal complications, such as respiratory distress syndrome, high birth weight, and neonatal jaundice. Women at risk are usually screened between 24 and 28 weeks’ gestation. There are different testing approaches and criteria. The ADA recommends a one-step approach. An oral 75-g dose of glucose is used and at least one of the following cutoffs must be exceeded: fasting 92 mg/dL or greater; 1-hour 180 mg/dL or greater; 2-hour 153 mg/dL or greater. This results in identification of significantly more cases than with the 2-step approach recommended by the American College of Obstetricians and Gynecologists. GDM converts to diabetes mellitus within 10 years in 30% to 40% of cases. The ADA recommends testing persons with GDM for diabetes 6 to 12 weeks after delivery."
+  },
+  {
+    "id": 856,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following findings is characteristic of all forms of clinical hypoglycemia?",
+    "options": [
+      "A fasting blood glucose value less than 55 mg/dL",
+      "High fasting insulin levels",
+      "Neuroglycopenic symptoms at the time of low blood sugar",
+      "Decreased serum C peptide"
+    ],
+    "answer": "C",
+    "explanation": "Clinical hypoglycemia can be caused by insulinoma, drugs, alcoholism, and reactive hypoglycemia. Reactive hypoglycemia is characterized by delayed or excessive insulin output after eating and is very rare. Fasting insulin is normal but postprandial levels are increased. High fasting insulin levels (usually greater than 6 µg/L) are seen in insulinoma, and patients with insulinoma almost always display fasting hypoglycemia, especially when the fast is extended to 48 to 72 hours. C peptide is a subunit of proinsulin that is hydrolyzed when insulin is released. In hypoglycemia, low levels indicate an exogenous insulin source, whereas high levels indicate overproduction of insulin."
+  },
+  {
+    "id": 857,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding glycated (glycosylated) Hgb (G-Hgb) is true?",
+    "options": [
+      "Has a sugar attached to the C-terminal end of the β chain",
+      "Is a highly reversible aminoglycan",
+      "Reflects the extent of glucose regulation in the 8- to 12-week interval prior to sampling",
+      "Will be abnormal within 4 days following an episode of hyperglycemia"
+    ],
+    "answer": "C",
+    "explanation": "G-Hgb results from the nonenzymatic attachment of a sugar, such as glucose, to the N-terminal valine of the β-chain. The reaction is nonreversible and is related to the time-averaged blood glucose concentration over the life span of the RBCs. There are three G-Hgb fractions, which are designated A1a, A1b, and A1c. HgbA1c makes up about 80% of glycated Hgb and is used to determine the adequacy of insulin therapy. The time-averaged blood glucose is approximated by the formula: (G-Hgb × 33.3) –86 mg/dL. Insulin adjustments can be made to bring this level to within reference limits. In addition, glycated protein assay (called fructosamine) provides similar data for the period between 2 and 4 weeks before sampling."
+  },
+  {
+    "id": 858,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which HgbA1c value equates to an average blood glucose of less than 100 mg/dL?",
+    "options": [
+      "5%",
+      "6.5%",
+      "9.5%",
+      "11%"
+    ],
+    "answer": "A",
+    "explanation": "An A1c level of 6.5% equates to an average blood sugar of approximately 130 mg/dL. For controlling diabetes, the A1c target is usually 6% to 7%. A glycated Hgb test should be performed at the time of diagnosis and every 6 months thereafter if the result is less than 6.5%. If the result is 6.5% or greater, the treatment plan should be adjusted to achieve a lower level, and the test should be performed every 3 months until better control is achieved."
+  },
+  {
+    "id": 859,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding measurement of Hgb A1c is true?",
+    "options": [
+      "Levels do not need to be done fasting",
+      "Both the labile and stable Hgb A1c fractions are measured",
+      "Samples should be measured within 2 hours of collection",
+      "The assay must be done by liquid chromatography"
+    ],
+    "answer": "A",
+    "explanation": "Since Hgb A1c represents the average blood glucose 2 to 3 months prior to blood collection, the dietary status of the patient on the day of the test has no effect on the results. Refrigerated whole blood samples are stable for up to 1 week. Hgb A1c is assayed by cation exchange HPLC or immunoassay (immunoturbidimetric inhibition) because both methods are specific for stable Hgb A1c, and do not demonstrate errors caused by abnormal Hgbs, temperature of reagents, or fractions other than A1c."
+  },
+  {
+    "id": 860,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which stationary phase is used for the measurement of HgbA1c by HPLC?",
+    "options": [
+      "Octadecylsilane (C18)",
+      "Cation exchanger",
+      "Anion exchanger",
+      "Polystyrene divinylbenzene"
+    ],
+    "answer": "B",
+    "explanation": "HPLC methods for measuring Hgb A1c are performed by diluting whole blood with an acid buffer that hemolyzes the sample. Normal Hgb A has a weak positive charge at an acidic pH and binds weakly to the resin. Glycated Hgb has an even weaker positive charge and is eluted before Hgb A. Abnormal Hgb molecules S, D, E, and C have a higher positive charge than Hgb A and are retained longer on the column. Elution is accomplished by increasing the ionic strength of the mobile phase. Cations in the buffer displace the Hgb pigments from the column."
+  },
+  {
+    "id": 861,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Evaluate the following chromatogram of a whole blood hemolysate, identify the cause, and choose the best course of action.",
+    "options": [
+      "Result is not reportable because Hgb F is present and interferes",
+      "The result is not reportable because Hgb C is present and interferes",
+      "The result is not reportable because labile Hgb A1c is present",
+      "The result is reportable; neither Hgb F nor C interferes"
+    ],
+    "answer": "D",
+    "explanation": "The chromatogram is from a person with Hgb AC; however, Hgb C is completely separated from Hgb A1c and does not interfere. Hgb F is also present but does not interfere unless its concentration is greater than 30%. Labile Hgb is formed initially when the aldehyde of glucose reacts with the N-terminal valine of the β-globin chain. This Shiff base is reversible but is converted to Hgb A1c by rearrangement to a ketoamine. It is called labile A1c and produces a peak (LA1c) after Hgb F and before Hgb A1c. Therefore, it does not interfere.",
+    "table": {
+      "rows": [
+        [
+          "Peak",
+          "Calibrated % Area",
+          "% Area",
+          "Retention Time",
+          "Peak Area"
+        ],
+        [
+          "Alb",
+          "",
+          "0.60",
+          "0.25",
+          "12500"
+        ],
+        [
+          "F",
+          "",
+          "0.50",
+          "0.50",
+          "11300"
+        ],
+        [
+          "LA₁c",
+          "",
+          "0.75",
+          "0.70",
+          "15545"
+        ],
+        [
+          "A₁c",
+          "6.2",
+          "",
+          "0.90",
+          "45112"
+        ],
+        [
+          "P₃",
+          "",
+          "2.6",
+          "1.60",
+          "57489"
+        ],
+        [
+          "Ao",
+          "",
+          "48.0",
+          "1.8",
+          "994813"
+        ],
+        [
+          "C",
+          "",
+          "43.0",
+          "2.00",
+          "926745"
+        ]
+      ]
+    },
+    "image": "data:image/jpeg;base64,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"
+  },
+  {
+    "id": 862,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement best describes the use of the HgbA1c test? Peak Calibrated % Area % Area Retention Time Peak Area Alb 0.60 0.25 12500 F 0.50 0.50 11300 LA1c 0.75 0.70 15545 A1c 6.2 0.90 45112 P3 2.6 1.60 57489 Ao 48.0 1.8 994813 C 43.0 2.00 926745",
+    "options": [
+      "Should be used for monitoring glucose control only",
+      "May be used for both diagnosis and monitoring",
+      "Should be used only to monitor persons with type 1 diabetes",
+      "May be used only to monitor persons with type 2 diabetes"
+    ],
+    "answer": "B",
+    "explanation": "The ADA recommends that the HgbA1c test be used both for diagnosis and for monitoring of blood glucose levels. The cutoff for the diagnosis of diabetes is HgbA1c of 6.5%. Persons with HgbA1c of 5.7% to 6.4% are classified as being at high risk for diabetes within 5 years (prediabetes). HgbA1c between 4% to 5.5% is defined as within normal limits."
+  },
+  {
+    "id": 863,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "According to the ADA criteria, which result is consistent with a diagnosis of impaired fasting glucose?",
+    "options": [
+      "99 mg/dL",
+      "117 mg/dL",
+      "126 mg/dL",
+      "135 mg/dL"
+    ],
+    "answer": "B",
+    "explanation": "IFG is defined as a plasma glucose 100 or greater but less than 126 mg/dL. A fasting glucose of 126 or greater on two consecutive occasions indicates diabetes. A fasting glucose of 99 mg/dL is considered WNL."
+  },
+  {
+    "id": 864,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the recommended cutoff for the early detection of chronic kidney disease in diabetics using the test for microalbuminuria?",
+    "options": [
+      "Greater than 30 mg/g creatinine",
+      "Greater than 80 mg/g creatinine",
+      "Greater than 200 mg/g creatinine",
+      "Greater than 80 mg/L"
+    ],
+    "answer": "A",
+    "explanation": "Microalbuminuria is the excretion of small quantities of albumin in urine. In those with diabetes, excretion of albumin that is within allowable limits for healthy persons may signal the onset of chronic kidney disease. The term microalbuminuria is defined as albumin excretion of 30 mg/g creatinine or greater but 299 mg/g or less. The use of the albumin:creatinine ratio is preferred to measures of albumin excretory rate (microgram per minute [µg/min]) because the latter is subject to error associated with timed specimen collection. The ADA recommends that the test be done annually for all those with type 2 diabetes and for those with type 1 diabetes who have had the disease for greater than 5 years."
+  },
+  {
+    "id": 865,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "In addition to measuring blood glucose, Hgb A1c, and microalbumin, which test should be done on persons with diabetes once per year?",
+    "options": [
+      "Urine glucose",
+      "Urine ketone",
+      "Plasma fructosamine",
+      "Estimated glomerular filtration rate (eGFR)"
+    ],
+    "answer": "D",
+    "explanation": "Although urinary glucose can identify persons who may have diabetes, it is not sensitive enough to manage glucose control on a daily basis and has been replaced by whole blood glucose monitoring or continuous glucose monitoring. The urinary ketone test is a useful screening test for diabetic and other forms of ketosis, but the plasma β- hydroxybutyrate test should be used to identify and monitor ketosis in those with diabetes. Fructosamine is a useful adjunct to Hgb A1c to identify poor control of blood glucose in the past 2 to 4 weeks, but it has not been recommended for routine use for all patients with diabetes."
+  },
+  {
+    "id": 866,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which testing situation is appropriate for the use of point-of-care whole blood glucose methods?",
+    "options": [
+      "Screening for type 2 diabetes mellitus",
+      "Diagnosis of diabetes mellitus",
+      "Monitoring of blood glucose control in those with type 1 and type 2 diabetes",
+      "Monitoring patients with diabetes for hyperglycemic episodes only"
+    ],
+    "answer": "C",
+    "explanation": "The ADA does not recommend the use of whole blood glucose monitors for establishing a diagnosis of or screening for diabetes. The analytical measurement range of these devices varies greatly, and whole blood glucose is approximately 10% lower than serum or plasma glucose. In addition, analytical variance is greater and the accuracy less than that of for laboratory instruments. Whole blood glucose meters should be used by patients with diabetes and caregivers to monitor glucose control, and these devices can detect both hyper- and hypoglycemic states that result from too little or too much insulin replacement. Note that some point-of-care glucose devices are not approved for use on critically ill patients and the U.S. Food and Drug Administration (FDA) considers such use off-label."
+  },
+  {
+    "id": 867,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is the reference method for measuring serum glucose?",
+    "options": [
+      "Somogyi-Nelson",
+      "Hexokinase",
+      "Glucose oxidase",
+      "Glucose dehydrogenase"
+    ],
+    "answer": "B",
+    "explanation": "The hexokinase method is considered more accurate than glucose oxidase methods because the coupling reaction using glucose-6-phosphate dehydrogenase (G-6-PD) is highly specific. The hexokinase method may be used on serum or plasma collected by using heparin, EDTA, fluoride, oxalate, or citrate. The method can also be used for analysis of urine, cerebrospinal fluid (CSF), and serous fluids."
+  },
+  {
+    "id": 868,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Polarographic methods for glucose analysis are based on which principle of measurement?",
+    "options": [
+      "Nonenzymatic oxidation of glucose",
+      "The rate of O2 depletion",
+      "Chemiluminescence caused by formation of adenosine triphosphate (ATP)",
+      "The change in electrical potential as glucose is oxidized"
+    ],
+    "answer": "B",
+    "explanation": "Polarographic glucose electrodes measure the consumption of O2 as glucose is oxidized. Glucose oxidase in the reagent catalyzes the oxidation of glucose by O2 under first-order conditions, forming H2O2. As the dissolved O2 decreases, less is reduced at the cathode, resulting in a decrease in current proportional to glucose concentration. It is important that the H2O2 not breakdown to re-form O2. This is prevented by adding molybdate and iodide that react with H2O2, forming iodine and water, and by adding catalase and ethanol that react with H2O2, forming acetaldehyde and water."
+  },
+  {
+    "id": 869,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "In addition to polarography, what other electrochemical method can be used to measure glucose in plasma?",
+    "options": [
+      "Conductivity",
+      "Potentiometry",
+      "Anodic stripping voltammetry",
+      "Amperometry"
+    ],
+    "answer": "D",
+    "explanation": "In some critical care analyzers, amperometric measurement of glucose is used. The glucose oxidase is impregnated into the membrane covering the electrode. It reacts with glucose in the sample, forming H2O2. This diffuses across the membrane to the anode of the electrode, where it is oxidized to O2. The electrons produced are used to reduce oxygen at the cathode, completing the current path. At the anode (usually platinum), 2H2O2 → 4e– + 2O2 + 4H+. At the cathode (usually silver), O2 + 4H+ + 4e– → 2H2O. The net equation is: 2H2O2 → O2 + 2H2O."
+  },
+  {
+    "id": 870,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the enzyme that is most specific for β-D-glucose.",
+    "options": [
+      "Hexokinase",
+      "G-6-PD",
+      "Phosphohexisomerase",
+      "Glucose oxidase"
+    ],
+    "answer": "D",
+    "explanation": "Glucose oxidase is the most specific enzyme reacting with only β-D-glucose. However, the peroxidase coupling reaction used in the glucose oxidase method is subject to positive and negative interference. Therefore, hexokinase is used in the reference method."
+  },
+  {
+    "id": 871,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the coupling enzyme used in the hexokinase method for glucose.",
+    "options": [
+      "Glucose-6-phosphate dehydrogenase",
+      "Peroxidase",
+      "Glucose dehydrogenase",
+      "Glucose-6-phosphatase"
+    ],
+    "answer": "A",
+    "explanation": "The hexokinase reference method uses a protein-free filtrate prepared with barium hydroxide (BaOH) and zinc sulfate (ZnSO4). Hexokinase catalyzes the phosphorylation of glucose in the filtrate using ATP as the phosphate donor. Glucose- 6-phosphate (glucose-6-PO4) is oxidized to 6-phosphogluconate and NAD+ is reduced to NADH using G-6-PD. The increase in absorbance at 340 nm is proportional to glucose concentration. Although hexokinase will phosphorylate some other hexoses, including mannose, fructose, and glucosamine, the coupling reaction is entirely specific for glucose-6-PO4 eliminating interference from other sugars."
+  },
+  {
+    "id": 872,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which glucose method is subject to falsely low results caused by ascorbate?",
+    "options": [
+      "Hexokinase",
+      "Glucose dehydrogenase",
+      "Trinder glucose oxidase",
+      "Polarography"
+    ],
+    "answer": "C",
+    "explanation": "Although glucose oxidase is specific for β-D-glucose, the coupling (indicator) reaction is prone to negative interference from ascorbate, uric acid, acetoacetic acid, and other reducing agents. These compete with the chromogen (e.g., o-dianisidine) for peroxide, resulting in less dye being oxidized to chromophore. The choice of chromogen determines the specificity and linearity. 4-Aminophenazone and phenol is more resistant to interference from azo compounds and proteins than is o-dianisidine."
+  },
+  {
+    "id": 873,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is a potential source of error in the hexokinase method?",
+    "options": [
+      "Galactosemia",
+      "Hemolysis",
+      "Sample collected in fluoride",
+      "Ascorbic acid"
+    ],
+    "answer": "B",
+    "explanation": "The hexokinase method can be performed on serum or plasma by using heparin, EDTA, citrate, or oxalate. RBCs contain glucose-6-PO4 and intracellular enzymes that generate NADH, causing positive interference. Therefore, hemolyzed samples require a serum blank correction (subtraction of the reaction rate with hexokinase omitted from the reagent)."
+  },
+  {
+    "id": 874,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement about glucose in CSF is correct?",
+    "options": [
+      "Levels below 40 mg/dL occur in septic meningitis, cancer, and multiple sclerosis",
+      "CSF glucose is normally the same as the plasma glucose level",
+      "Hyperglycorrhachia is caused by dehydration",
+      "In some clinical conditions, CSF glucose can be greater than plasma glucose"
+    ],
+    "answer": "A",
+    "explanation": "High glucose in CSF is a reflection of hyperglycemia and not CNS disease. The CSF glucose is usually 50% to 65% of the plasma glucose. Low levels are significant and are most often associated with bacterial or fungal meningitis, malignancy in the CNS, and some cases of subarachnoid hemorrhage, rheumatoid arthritis, and multiple sclerosis."
+  },
+  {
+    "id": 875,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "In peroxidase-coupled glucose methods, which reagent complexes with the chromogen?",
+    "options": [
+      "Nitroprusside",
+      "Phenol",
+      "Tartrate",
+      "Hydroxide"
+    ],
+    "answer": "B",
+    "explanation": "The coupling step in the Trinder glucose oxidase method uses peroxidase to catalyze the oxidation of a dye by H2O2. Dyes, such as 4-aminophenozone or 4- aminoantipyrine, are coupled to phenol to form a quinoneimine dye that is red and is measured at about 500 nm."
+  },
+  {
+    "id": 876,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Point-of-care-tests (POCTs) for whole blood glucose monitoring are based mainly on the use of:",
+    "options": [
+      "Glucose oxidase as the enzyme",
+      "Amperometric detection",
+      "Immunochromatography",
+      "Peroxidase coupling reactions"
+    ],
+    "answer": "B",
+    "explanation": "All POCT devices for monitoring blood glucose use either glucose dehydrogenase (GDH) or glucose oxidase and are amperometric. For glucose oxidase methods, the electrons derive from the oxidation of H2O2. For GDH, the electrons are transferred from one of several coenzymes that are reduced when glucose is oxidized, FAD+, NAD+, or PQQ (pyrroloquinoline quinone). Interferences depend on which enzyme/coenzyme pair is used. For example, maltose and xylose interference can be pronounced with GDH-/PQQ-based strips, but not with other GDH or glucose oxidase strips. Uric acid depresses glucose oxidase reactions but has no effect on GDH reactions."
+  },
+  {
+    "id": 877,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "What effect does hematocrit have on POCTs for whole blood glucose monitoring?",
+    "options": [
+      "Low hematocrit decreases glucose readings on all devices",
+      "High hematocrit raises glucose readings on all devices",
+      "The effect is variable and dependent on the enzyme/coenzyme system",
+      "Low hematocrit raises readings and high hematocrit lowers readings unless corrected"
+    ],
+    "answer": "D",
+    "explanation": "Hematocrit affects POCT glucose measurements. High hematocrit lowers the glucose because RBC glucose concentration is lower than plasma concentration. Other factors include binding of oxygen to Hgb and the slower diffusion of glucose onto the solid phase—both of which occur when the hematocrit is high. Bias caused by an abnormal hematocrit can be avoided by simultaneously measuring the conductivity of the sample. The hematocrit is calculated and used to mathematically correct the glucose measurement."
+  },
+  {
+    "id": 878,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding sample collection and processing of a fasting blood glucose sample is true?",
+    "options": [
+      "Fasting should be for at least 8 hours before the sample is collected",
+      "Blood can be allowed to clot at room temperature for up to 60 minutes before measuring",
+      "Heparin-barrier gel tubes interfere with enzymatic methods",
+      "Antiglycolytic agents, such as sodium fluoride, cause negative interference"
+    ],
+    "answer": "A",
+    "explanation": "An 8-hour fast is required for a fasting blood glucose test. Water and most medications are permitted. Samples can be collected with or without anticoagulants. Sodium fluoride, heparin, EDTA, citrate, and oxalate are acceptable for enzymatic methods. Samples collected in tubes without barrier gel should be stored no longer than 30 minutes at room temperature. Serum and plasma in tubes with barrier gel are stable for several hours at room temperature if centrifuged immediately after collection."
+  },
+  {
+    "id": 879,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is classified as a mucopolysaccharide storage disease?",
+    "options": [
+      "Pompe disease",
+      "von Gierke disease",
+      "Hers disease",
+      "Hurler syndrome"
+    ],
+    "answer": "D",
+    "explanation": "Hurler syndrome is an autosomal recessive disease resulting from a deficiency of iduronidase. Glycosaminoglycans (mucopolysaccharides) accumulate in the lysosomes. Multiple organ failure and mental retardation occur, resulting in early mortality. Excess dermatan and heparin sulfate are excreted in urine. Other mucopolysaccharidoses (MPS storage diseases) are Hunter, Scheie, Sanfilippo, and Morquio syndromes."
+  },
+  {
+    "id": 880,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Identify the enzyme deficiency responsible for type 1 glycogen storage disease (GSD1 or von Gierke disease).",
+    "options": [
+      "Glucose-6-phosphatase",
+      "Glycogen phosphorylase",
+      "Glycogen synthetase",
+      "β-Glucosidase"
+    ],
+    "answer": "A",
+    "explanation": "Type 1 glycogen storage disease (von Gierke disease) is an autosomal recessive deficiency of glucose-6-phosphatase. Glycogen accumulates in tissues, causing hypoglycemia, ketosis, and fatty liver. There are seven types of glycogen storage disease, designated type 1 through type 7, involving deficiency of an enzyme that acts on glycogen. Types 1, 4, and 6 cause deficient glycogen breakdown in the liver. Types 2, 5, and 7 involve skeletal muscle and are less severe. Type 3 usually involves both liver and muscle, although an uncommon subtype (3B) involves only the liver."
+  },
+  {
+    "id": 881,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following abnormal laboratory results is found in von Gierke disease?",
+    "options": [
+      "Hyperglycemia",
+      "Increased glucose response to epinephrine administration",
+      "Metabolic alkalosis",
+      "Hyperlipidemia"
+    ],
+    "answer": "D",
+    "explanation": "Von Gierke disease (type 1 glycogen storage disease) results from a deficiency of glucose-6-phosphatase. This blocks the hydrolysis of glucose-6-PO4 to glucose and Pi, preventing degradation of glycogen to glucose. There are two subtypes, designated GSD1a and GSD1b. The disease is associated with increased triglyceride levels because fats are mobilized for energy and lactate acidosis caused by increased glycolysis. Fasting hypoglycemia is a characteristic finding. The disease is confirmed by demonstrating a deficiency of glucose-6-phosphatase in hepatocytes obtained via liver biopsy or identification of the two mutations that cause the disease."
+  },
+  {
+    "id": 882,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements about carbohydrate intolerance is true?",
+    "options": [
+      "Galactosemia results from deficiency of galactose-1-phosphate (galactose-1-PO4) uridine diphosphate transferase",
+      "Galactosemia results in a positive glucose oxidase test for glucose in urine",
+      "Urinary galactose is seen in both galactosemia and lactase deficiency",
+      "A galactose tolerance test is used to confirm a diagnosis of galactosemia"
+    ],
+    "answer": "A",
+    "explanation": "Galactose is metabolized to galactose-1-PO4 by the action of galactokinase. Galactose-1-PO4 uridine diphosphate (UDP) transferase converts galactose-1-PO4 to glucose. Deficiency of either enzyme causes elevated blood and urine galactose. Lactase deficiency results in the presence of urinary lactose because it is not broken down to glucose and galactose. Non–glucose-reducing sugars are not detected by the glucose oxidase reaction. They are detected in urine by chromatography and the specific diagnosis is established by demonstration of the enzyme deficiency in RBCs or blood spot. Years ago, the galactose tolerance test was used to diagnose liver failure because the liver is the site of galactose metabolism."
+  },
+  {
+    "id": 883,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding iron metabolism is correct?",
+    "options": [
+      "Iron absorption is decreased by alcohol ingestion",
+      "Normally, 40% to 50% of ingested iron is absorbed",
+      "The daily requirement is higher for pregnant and menstruating women",
+      "Absorption increases with the amount of iron in the body stores"
+    ],
+    "answer": "C",
+    "explanation": "For adult men and nonmenstruating women, approximately 1 to 2 mg/day of iron is needed to replace the small amount lost mainly by exfoliation of cells. Because 5% to 10% of dietary iron is absorbed normally, the daily dietary requirement in this group is 10 to 20 mg/day. Menstruating women have an additional requirement of 1 mg/day and pregnant women 2 mg/day. Absorption efficiency will increase in iron deficiency and decrease in iron overload. Iron absorption is enhanced by low gastric pH and is increased by alcohol ingestion."
+  },
+  {
+    "id": 884,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following processes occurs when iron is in the oxidized (Fe3+) state?",
+    "options": [
+      "Absorption by intestinal epithelium",
+      "Binding to transferrin and incorporation into ferritin",
+      "Incorporation into protoporphyrin IX to form functional heme",
+      "Reaction with chromogens in colorimetric assays"
+    ],
+    "answer": "B",
+    "explanation": "Intestinal absorption occurs only if the iron is in the reduced (Fe+2) state. After absorption, Fe+2 is oxidized to Fe+3 by gut mucosal cells. Transferrin and ferritin bind iron efficiently only when in the oxidized state. Iron within Hgb binds to O2 by coordinate bonding, which occurs only if the iron is in the reduced state. Likewise, in colorimetric methods, Fe+2 forms coordinate bonds with carbon and nitrogen atoms of the chromogen."
+  },
+  {
+    "id": 885,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is associated with low serum iron and high total iron-binding capacity (TIBC)?",
+    "options": [
+      "Iron-deficiency anemia",
+      "Hepatitis",
+      "Nephrosis",
+      "Non–iron-deficiency anemias"
+    ],
+    "answer": "A",
+    "explanation": "Iron-deficiency anemia is the principal cause of low serum iron and high TIBC because it promotes increased transferrin. Pregnancy without iron supplementation depletes maternal iron stores and also results in low serum iron and high TIBC. Iron- supplemented pregnancy and use of contraceptives increase both iron and TIBC. Nephrosis causes low iron and TIBC as a result of loss of both iron and transferrin by the kidneys. Hepatitis causes increased release of storage iron, resulting in high levels of iron and transferrin. Non–iron-deficiency anemias may cause high iron and usually show low TIBC and normal or high ferritin."
+  },
+  {
+    "id": 886,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which condition is associated with the lowest percent saturation of transferrin?",
+    "options": [
+      "Hemochromatosis",
+      "Anemia of chronic infection",
+      "Iron-deficiency anemia",
+      "Non–iron-deficiency anemia"
+    ],
+    "answer": "C",
+    "explanation": "Percent saturation = Serum Fe × 100/TIBC. Normally, transferrin is one-third saturated with iron. In iron-deficiency states, serum iron falls, but transferrin rises. This causes the numerator and denominator to move in opposite directions, resulting in very low percent saturation (about 10%). The opposite occurs in hemochromatosis and sideroblastic anemia, resulting in an increased percent saturation."
+  },
+  {
+    "id": 887,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which condition is most often associated with a high serum iron level?",
+    "options": [
+      "Nephrosis",
+      "Chronic infection or inflammation",
+      "Polycythemia vera",
+      "Non–iron-deficiency anemias"
+    ],
+    "answer": "D",
+    "explanation": "Anemia associated with chronic infection causes a low serum iron, but unlike iron deficiency, causes a low (or normal) TIBC and does not cause low ferritin. Non–iron- deficiency anemias, such as pernicious anemia and sideroblastic anemia, produce high serum iron and low TIBC. Nephrosis causes iron loss by the kidneys. Polycythemia is associated with increased iron within the RBCs and depletion of iron stores."
+  },
+  {
+    "id": 888,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is likely to occur first in iron deficiency anemia?",
+    "options": [
+      "Decreased serum iron",
+      "Increased TIBC",
+      "Decreased serum ferritin",
+      "Increased transferrin"
+    ],
+    "answer": "C",
+    "explanation": "Body stores must be depleted of iron before serum iron falls. Thus, serum ferritin falls in the early stages of iron deficiency, making it a more sensitive test than serum iron in uncomplicated cases. Ferritin levels are low only in iron deficiency. However, concurrent illness such as malignancy, infection, and inflammation may promote ferritin release from the tissues, causing the serum ferritin to be normal in iron deficiency. A low reticulocyte Hgb (less than 29 pg/cell) is an early indicator of iron deficiency, and is less variable than ferritin."
+  },
+  {
+    "id": 889,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which formula provides the best estimate of serum TIBC?",
+    "options": [
+      "Serum transferrin in mg/dL × 0.70 = TIBC (µg/dL)",
+      "Serum transferrin in mg/dL × 1.43 = TIBC (µg/dL)",
+      "Serum iron (µg/dL)/1.2 + 0.06 = TIBC (µg/dL)",
+      "Serum Fe (µg/dL) × 1.25 = TIBC (µg/dL)"
+    ],
+    "answer": "B",
+    "explanation": "Transferrin, a β-globulin, has a molecular size of about 77,000. Transferrin is the principal iron transport protein, and TIBC is determined by the serum transferrin concentration. One mole of transferrin binds two moles of Fe+3, so the transferrin concentration can be used to predict the TIBC. Because the direct measurement of TIBC requires manual pretreatment to remove the excess iron added and is prone to overestimation if all of the unbound iron is not removed, some laboratories prefer to measure transferrin immunochemically and calculate TIBC. This formula may underestimate TIBC because albumin and other proteins will bind iron when the percent iron saturation of transferrin is abnormally high."
+  },
+  {
+    "id": 890,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding the diagnosis of iron deficiency is correct?",
+    "options": [
+      "Serum iron levels are always higher at night than during the day",
+      "Serum iron levels begin to fall before the body stores become depleted",
+      "A normal level of serum ferritin rules out iron deficiency",
+      "A low serum ferritin is diagnostic of iron deficiency"
+    ],
+    "answer": "D",
+    "explanation": "Serum iron levels are falsely elevated by hemolysis and subject to diurnal variation. Levels are highest in the morning and lowest at night, but this pattern is reversed in persons who work at night. A low ferritin is specific for iron deficiency. However, only about 1% of ferritin is in the vascular system. Any disease that increases ferritin release may mask iron deficiency."
+  },
+  {
+    "id": 891,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement about iron methods is true?",
+    "options": [
+      "Interference from Hgb can be corrected by a serum blank",
+      "Colorimetric methods measure binding of Fe2+ to a ligand, such as ferrozine",
+      "Atomic absorption is the method of choice for measurement of serum iron",
+      "Serum iron can be measured by potentiometry"
+    ],
+    "answer": "B",
+    "explanation": "Atomic absorption is not the method of choice for serum iron because matrix error and variation of iron recovered by extraction cause bias and poor precision. Most methods use HCl to deconjugate Fe3+ from transferrin followed by reduction to Fe2+. This reacts with a neutral ligand, such as ferrozine, tripyridyltriazine (TPTZ), or bathophenanthroline to give a blue complex. Hemolysis must be avoided because RBCs, compared with plasma, contain a much higher concentration of iron."
+  },
+  {
+    "id": 892,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding the TIBC assay is correct?",
+    "options": [
+      "All TIBC methods require addition of excess iron to saturate transferrin",
+      "All methods require the removal of unbound iron",
+      "Measurement of TIBC is specific for transferrin-bound iron",
+      "The chromogen used must be different from the one used for measuring serum iron"
+    ],
+    "answer": "A",
+    "explanation": "All TIBC methods require addition of excess iron to saturate transferrin. Excess iron is removed by ion exchange or alumina gel columns or precipitation with magnesium carbonate (MgCO3) and the bound iron is measured by the same procedure as is used for serum iron. Alternatively, excess iron in the reduced state can be added at an alkaline pH. Under these conditions, transferrin will bind Fe2+ and the unbound Fe2+ can be measured. The unsaturated iron-binding capacity (UIBC) is calculated by subtracting the unbound Fe2+ from the amount added: TIBC = serum iron + UIBC."
+  },
+  {
+    "id": 893,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding the metabolism of bilirubin is true?",
+    "options": [
+      "It is formed by hydrolysis of the α methene bridge of urobilinogen",
+      "It is reduced to biliverdin prior to excretion",
+      "It is a by-product of porphyrin production",
+      "It is produced from the destruction of RBCs"
+    ],
+    "answer": "D",
+    "explanation": "Synthesis of porphyrins results in production of heme and metabolism of porphyrins other than protoporphyrin IX yields uroporphyrins and coproporphyrins, not bilirubin. Reticuloendothelial cells in the spleen digest Hgb and release the iron from heme. The tetrapyrrole ring is opened at the α -methene bridge by heme oxygenase, forming biliverdin. Bilirubin is formed by reduction of biliverdin at the γ-methene bridge. It is complexed to albumin and transported to the liver."
+  },
+  {
+    "id": 894,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Bilirubin is transported from reticuloendothelial cells to the liver by:",
+    "options": [
+      "Albumin",
+      "Bilirubin-binding globulin",
+      "Haptoglobin",
+      "Transferrin"
+    ],
+    "answer": "A",
+    "explanation": "Albumin transports bilirubin, haptoglobin transports free Hgb, and transferrin transports ferric iron. When albumin binding is exceeded, unbound bilirubin, called free bilirubin, increases. This may cross the blood–brain barrier, resulting in kernicterus."
+  },
+  {
+    "id": 895,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "In the liver, bilirubin is conjugated by addition of:",
+    "options": [
+      "Vinyl groups",
+      "Methyl groups",
+      "Hydroxyl groups",
+      "Glucuronyl groups"
+    ],
+    "answer": "D",
+    "explanation": "The esterification of glucuronic acid to the propionyl side chains of the inner pyrrole rings (I and II) makes bilirubin water soluble. Conjugation is required before bilirubin can be excreted via the bile."
+  },
+  {
+    "id": 896,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which enzyme is responsible for the conjugation of bilirubin?",
+    "options": [
+      "β-Glucuronidase",
+      "UDP-glucuronyl transferase",
+      "Bilirubin oxidase",
+      "Biliverdin reductase"
+    ],
+    "answer": "B",
+    "explanation": "UDP-glucuronyl transferase esterifies glucuronic acid to unconjugated bilirubin, making it water soluble. Most conjugated bilirubin is diglucuronide; however, the liver makes a small amount of monoglucuronide and other glycosides. β-Glucuronidase hydrolyzes glucuronide from bilirubin, hormones, or drugs. It is used prior to organic extraction to deconjugate urinary metabolites (e.g., total cortisol). Biliverdin reductase forms bilirubin from biliverdin (and heme oxygenase forms biliverdin from heme). Bilirubin oxidase is used in an enzymatic bilirubin assay in which bilirubin is oxidized back to biliverdin and the rate of biliverdin formation is measured at 410 nm."
+  },
+  {
+    "id": 897,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "The delta bilirubin fraction refers to:",
+    "options": [
+      "Water-soluble bilirubin",
+      "Free unconjugated bilirubin",
+      "Bilirubin tightly bound to albumin",
+      "Direct-reacting bilirubin"
+    ],
+    "answer": "C",
+    "explanation": "HPLC separates bilirubin into four fractions: α = unconjugated, β = monoglucuronide, γ = diglucuronide, and δ = irreversibly albumin bound. δ-Bilirubin is a separate fraction from the unconjugated bilirubin, which is bound loosely to albumin. δ- Bilirubin and conjugated bilirubin react with diazo reagent in the direct bilirubin assay."
+  },
+  {
+    "id": 898,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following processes is part of the normal metabolism of bilirubin?",
+    "options": [
+      "Both conjugated and unconjugated bilirubin are excreted into bile",
+      "Methene bridges of bilirubin are reduced by intestinal bacteria, resulting in formation of urobilinogens",
+      "Most of the bilirubin delivered into the intestine is reabsorbed",
+      "Bilirubin and urobilinogen reabsorbed from the intestine are mainly excreted by the kidneys"
+    ],
+    "answer": "B",
+    "explanation": "Most of the conjugated bilirubin delivered into the intestine is deconjugated by β- glucuronidase and then reduced by intestinal flora to form three different reduction products collectively called urobilinogens. The majority of bilirubin and urobilinogen in the intestine are not reabsorbed. Most of that which is reabsorbed is re-excreted by the liver. The portal vein delivers blood from the bowel to the sinusoids. Hepatocytes take up about 90% of the returned bile pigments and secrete them again into the bile. This process is called the enterohepatic circulation."
+  },
+  {
+    "id": 899,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is a characteristic of conjugated bilirubin?",
+    "options": [
+      "It is water soluble",
+      "It reacts more slowly than unconjugated bilirubin",
+      "It is more stable than unconjugated bilirubin",
+      "It has the same absorbance properties as unconjugated bilirubin"
+    ],
+    "answer": "A",
+    "explanation": "Conjugated bilirubin refers to bilirubin mono- and diglucuronides. Conjugated bilirubin reacts almost immediately with the aqueous diazo reagent without need for a nonpolar solvent. Historically, conjugated bilirubin has been used synonymously with direct-reacting bilirubin, although the latter includes the δ-bilirubin fraction when measured by the Jendrassik-Grof method. Conjugated bilirubin is excreted in both bile and urine. It is easily photo-oxidized and has very limited stability. For this reason, bilirubin standards are usually prepared from unconjugated bilirubin stabilized by the addition of alkali and albumin."
+  },
+  {
+    "id": 900,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding urobilinogen is true?",
+    "options": [
+      "It is formed in the intestines by bacterial reduction of bilirubin",
+      "It consists of a single water-soluble bile pigment",
+      "It is measured by its reaction with p-aminosalicylate",
+      "In hemolytic anemia, it is decreased in urine and feces"
+    ],
+    "answer": "A",
+    "explanation": "Urobilinogen is a collective term given to the reduction products of bilirubin formed by the action of enteric bacteria. Urobilinogen excretion is increased in extravascular hemolytic anemias and decreased in obstructive jaundice (cholestatic disease). Urobilinogen is measured using the Ehrlich reagent, an acid solution of p- dimethylaminobenzaldehyde."
+  },
+  {
+    "id": 901,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding bilirubin metabolism is true?",
+    "options": [
+      "Bilirubin undergoes rapid photo-oxidation when exposed to daylight",
+      "Bilirubin excretion is inhibited by barbiturates",
+      "Bilirubin excretion is increased by chlorpromazine",
+      "Bilirubin is excreted only as the diglucuronide"
+    ],
+    "answer": "A",
+    "explanation": "Samples for bilirubin analysis must be protected from direct sunlight. Drugs may have a significant in vivo effect on bilirubin levels. Barbiturates lower serum bilirubin by increasing excretion. Other drugs that cause cholestasis, such as chlorpromazine, increase the serum bilirubin. Although most conjugated bilirubin is in the form of diglucuronide, some monoglucuronide and other glycosides are excreted. In glucuronyl transferase deficiency, some bilirubin is excreted as sulfatides."
+  },
+  {
+    "id": 902,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which condition is caused by deficient secretion of bilirubin into the bile canaliculi?",
+    "options": [
+      "Gilbert disease",
+      "Neonatal hyperbilirubinemia",
+      "Dubin-Johnson syndrome",
+      "Crigler-Najjar syndrome"
+    ],
+    "answer": "C",
+    "explanation": "Dubin-Johnson syndrome is an autosomal recessive condition arising from mutation of an ABC (ATP-binding cassette) transporter gene. It produces mild jaundice from accumulation of conjugated bilirubin that is not secreted into the bile canaliculi. Direct (and total) bilirubin are elevated, but other liver function is normal. Rotor syndrome is an autosomal recessive condition that also results in retention of conjugated bilirubin. The mechanism in Rotor syndrome is unknown, and like Dubin–Johnson syndrome, it is commonly asymptomatic. It can be differentiated from Dubin–Johnson syndrome by the pattern of urinary coproporphyrin excretion and because it produces no black pigmentation in the liver."
+  },
+  {
+    "id": 903,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "In hepatitis, the rise in serum conjugated bilirubin can be caused by:",
+    "options": [
+      "Secondary renal insufficiency",
+      "Failure of the enterohepatic circulation",
+      "Enzymatic conversion of urobilinogen to bilirubin",
+      "Extrahepatic conjugation"
+    ],
+    "answer": "B",
+    "explanation": "Conjugated bilirubin is increased in hepatitis and other causes of hepatic necrosis as a result of failure to re-excrete conjugated bilirubin reabsorbed from the intestine. Increased direct bilirubin can also be attributed to accompanying intrahepatic obstruction, which blocks the flow of bile."
+  },
+  {
+    "id": 904,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is a characteristic of obstructive jaundice?",
+    "options": [
+      "The ratio of direct to total bilirubin is greater than 1:2",
+      "Conjugated bilirubin is elevated, but unconjugated bilirubin is normal",
+      "Urinary urobilinogen is increased",
+      "Urinary bilirubin is normal"
+    ],
+    "answer": "A",
+    "explanation": "Obstruction prevents conjugated bilirubin from reaching the intestine, resulting in decreased production, excretion, and absorption of urobilinogen. Conjugated bilirubin regurgitates into sinusoidal blood and enters the general circulation via the hepatic vein. The level of serum direct (conjugated) bilirubin becomes greater than unconjugated bilirubin. The unconjugated form is also increased because of accompanying necrosis, deconjugation, and inhibition of UDP-glucuronyl transferase."
+  },
+  {
+    "id": 905,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following would cause an increase in only the unconjugated bilirubin?",
+    "options": [
+      "Hemolytic anemia",
+      "Obstructive jaundice",
+      "Hepatitis",
+      "Hepatic cirrhosis"
+    ],
+    "answer": "A",
+    "explanation": "Conjugated bilirubin increases as a result of obstructive processes within the liver or biliary system or from failure of the enterohepatic circulation. Hemolytic anemia (prehepatic jaundice) presents a greater bilirubin load to a normal liver, resulting in increased bilirubin excretion. When the rate of bilirubin formation exceeds the rate of excretion, the unconjugated bilirubin rises."
+  },
+  {
+    "id": 906,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which form of hyperbilirubinemia is caused by an inherited absence of UDP- glucuronyl transferase?",
+    "options": [
+      "Gilbert syndrome",
+      "Rotor syndrome",
+      "Crigler-Najjar syndrome",
+      "Dubin-Johnson syndrome"
+    ],
+    "answer": "C",
+    "explanation": "Crigler-Najjar syndrome is a rare condition that occurs in two forms. Type 1 is inherited as an autosomal recessive trait and causes a total deficiency of UDP- glucuronyl transferase. Life expectancy is less than 1 year. Type 2 is an autosomal dominant trait and is characterized by lesser jaundice and usually absence of kernicterus. Bilirubin levels can be controlled with phenobarbital, which promotes bilirubin excretion. Gilbert syndrome is an autosomal recessive condition characterized by decreased bilirubin uptake and decreased formation of bilirubin diglucuronide. It is the most common form of inherited jaundice. UDP-glucuronyl transferase activity is reduced as a result of an increase in the number of AT repeats in the promoter region of the gene. Dubin-Johnson and Rotor syndromes are autosomal recessive disorders associated with defective delivery of bilirubin into the biliary system."
+  },
+  {
+    "id": 907,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding total and direct bilirubin levels is true?",
+    "options": [
+      "Total bilirubin level is a less sensitive and specific marker of liver disease compared with the direct level",
+      "Direct bilirubin exceeds 3.5 mg/dL in most cases of hemolytic anemia",
+      "Direct bilirubin is normal in cholestatic liver disease",
+      "The ratio of direct to total bilirubin exceeds 0.40 in hemolytic anemia"
+    ],
+    "answer": "A",
+    "explanation": "Direct bilirubin measurement is a sensitive and specific marker for hepatic and posthepatic jaundice because it is not elevated by hemolytic anemia. In hemolytic anemia, the total bilirubin does not exceed 3.5 mg/dL, and the direct:total ratio is less than 0.20. Unconjugated bilirubin is the major fraction in necrotic liver disease because microsomal enzymes are lost. Unconjugated bilirubin is elevated along with direct bilirubin in cholestasis because some necrosis takes place and some conjugated bilirubin is hydrolyzed back to unconjugated bilirubin."
+  },
+  {
+    "id": 908,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement best characterizes serum bilirubin levels in the first week following delivery?",
+    "options": [
+      "Serum bilirubin 24 hours after delivery should not exceed the upper reference limit for adults",
+      "Jaundice is usually first seen 48 to 72 hours after delivery in neonatal hyperbilirubinemia",
+      "Serum bilirubin above 5.0 mg/dL occurring 2 to 5 days after delivery indicates hemolytic or hepatic disease",
+      "Conjugated bilirubin accounts for about 50% of the total bilirubin in neonates"
+    ],
+    "answer": "B",
+    "explanation": "Bilirubin levels may reach as high as 2 to 3 mg/dL in the first 24 hours after birth as a result of the trauma of delivery, such as resorption of a subdural hematoma. Neonatal hyperbilirubinemia occurs 2 to 3 days after birth as a result of increased hemolysis at birth and transient deficiency of the microsomal enzyme, UDP-glucuronyl transferase. Normally, levels rise to about 5 to 10 mg/dL but may be greater than 15 mg/dL, requiring therapy with UV light to photo-oxidize the bilirubin. Neonatal jaundice can last up to 1 week in a mature neonate and up to 2 weeks in premature babies. Neonatal bilirubin is almost exclusively unconjugated."
+  },
+  {
+    "id": 909,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which form of jaundice occurs within days of delivery and usually lasts 1 to 3 weeks but is not caused by normal neonatal hyperbilirubinemia or hemolytic disease of the newborn?",
+    "options": [
+      "Gilbert syndrome",
+      "Lucey-Driscoll syndrome",
+      "Rotor syndrome",
+      "Dubin-Johnson syndrome"
+    ],
+    "answer": "B",
+    "explanation": "Lucey-Driscoll syndrome is a rare form of jaundice caused by unconjugated bilirubin that presents within 2 to 4 days of birth and can last several weeks. It is caused by an inhibitor of UDP-glucuronyl transferase in maternal plasma that crosses the placenta. Jaundice is usually severe enough to require treatment."
+  },
+  {
+    "id": 910,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "A laboratory measures total bilirubin by the Jendrassik-Grof bilirubin method with sample blanking. What would be the effect of moderate hemolysis on the test result?",
+    "options": [
+      "Falsely increased because of optical interference",
+      "Falsely increased because of release of bilirubin from RBCs",
+      "Falsely low because of inhibition of the diazo reaction by Hgb",
+      "No effect because of correction of positive interference by sample blanking"
+    ],
+    "answer": "C",
+    "explanation": "The sample blank measures the absorbance of the sample and reagent in the absence of azobilirubin formation and corrects the measurement for optical interference caused by Hgb absorbing the wavelength of measurement. However, Hgb is an inhibitor of the diazo reaction and will cause falsely low results in a blank corrected sample. For this reason, direct bichromatic spectrophotometric methods are preferred when measuring bilirubin in neonatal samples, which are often hemolyzed."
+  },
+  {
+    "id": 911,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which reagent is used in the Jendrassik-Grof method to solubilize unconjugated bilirubin?",
+    "options": [
+      "50% methanol",
+      "N-butanol",
+      "Caffeine",
+      "Acetic acid"
+    ],
+    "answer": "C",
+    "explanation": "A polarity modifier is required to make unconjugated bilirubin soluble in diazo reagent. The Malloy-Evelyn method used 50% methanol to reduce the polarity of the diazo reagent. Caffeine is used in the Jendrassik-Grof method. This method is recommended because it is not falsely elevated by hemolysis and gives quantitative recovery of both conjugated and unconjugated bilirubin."
+  },
+  {
+    "id": 912,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement about colorimetric bilirubin methods is true?",
+    "options": [
+      "Direct bilirubin must react with diazo reagent under alkaline conditions",
+      "Most methods are based upon reaction with diazotized sulfanilic acid",
+      "Ascorbic acid can be used to eliminate interference caused by Hgb",
+      "The color of the azobilirubin product is independent of pH"
+    ],
+    "answer": "B",
+    "explanation": "Unconjugated bilirubin is poorly soluble in acid, and therefore, direct bilirubin is assayed using diazotized sulfanilic acid diluted in weak HCl. The direct diazo reaction should be measured after no longer than 3 minutes to prevent reaction of unconjugated bilirubin, or the diazo group can be reduced using ascorbate or hydroxylamine preventing any further reaction."
+  },
+  {
+    "id": 913,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding the measurement of bilirubin by the Jendrassik-Grof method is correct?",
+    "options": [
+      "The same diluent is used for both total and direct assays to minimize differences in reactivity",
+      "Positive interference by Hgb is prevented by the addition of HCl after the diazo reaction",
+      "The color of the azobilirubin product is intensified by the addition of ascorbic acid",
+      "Fehling reagent is added after the diazo reaction to reduce optical interference by Hgb"
+    ],
+    "answer": "D",
+    "explanation": "The Jendrassik-Grof method uses HCl as the diluent for the measurement of direct bilirubin because unconjugated bilirubin is poorly soluble at low pH. Total bilirubin is measured using an acetate buffer with caffeine added to increase the solubility of the unconjugated bilirubin. After addition of diazotized sulfanilic acid and incubation, the diazo group is reduced by ascorbic acid, and the Fehling reagent is added to alkalinize the diluent. At an alkaline pH the azobilirubin products change from pink to blue, shifting the absorbance maximum to 600 nm where Hgb does not contribute significantly to absorbance."
+  },
+  {
+    "id": 914,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "A neonatal bilirubin assay performed by bichromatic direct spectrophotometry is 4.1 mg/dL. Four hours later, a second sample assayed for total bilirubin by the Jendrassik- Grof method gives a result of 3.5 mg/dL. Both samples are reported to be hemolyzed. What is the most likely explanation of these results?",
+    "options": [
+      "Hgb interference in the second assay",
+      "δ-Bilirubin contributing to the result of the first assay",
+      "Falsely high results from the first assay caused by direct bilirubin",
+      "Physiological variation owing to premature hepatic microsomal enzymes"
+    ],
+    "answer": "A",
+    "explanation": "The Jendrassik-Grof method is based on a diazo reaction that may be suppressed by Hgb. Because serum blanking and measurement at 600 nm correct for positive interference from Hgb, the results may be falsely low when significant hemolysis is present. Direct spectrophotometric bilirubin methods employing bichromatic optics correct for the presence of Hgb. These are often called “neonatal bilirubin” tests. A commonly used approach is to measure absorbance at 454 nm and 540 nm. The absorbance contributed by Hgb at 540 nm is equal to the absorbance contributed by Hgb at 454 nm. Therefore, the absorbance difference will correct for free Hgb. Neonatal samples contain little or no direct or δ-bilirubin. They also lack carotene pigments that could interfere with the direct spectrophotometric measurement of bilirubin."
+  },
+  {
+    "id": 915,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "In the enzymatic assay of bilirubin, how is measurement of both total and direct bilirubin accomplished?",
+    "options": [
+      "Using different pH for total and direct assays",
+      "Using UDP-glucuronyl transferase and bilirubin reductase",
+      "Using different polarity modifiers",
+      "Measuring the rate of absorbance decrease at different time intervals"
+    ],
+    "answer": "A",
+    "explanation": "Enzymatic methods use bilirubin oxidase to convert bilirubin back to biliverdin, and measure the decrease in absorbance that results. At pH 8, conjugated, unconjugated, and δ-bilirubin react with the enzyme, but at pH 4 only the conjugated form reacts."
+  },
+  {
+    "id": 916,
+    "section": "Glucose, Hemoglobin, Iron, and Bilirubin",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the principle of the transcutaneous bilirubin assay?",
+    "options": [
+      "Conductivity",
+      "Amperometric inhibition",
+      "Multi-wavelength reflectance photometry",
+      "Infrared spectroscopy"
+    ],
+    "answer": "C",
+    "explanation": "Measurement of bilirubin concentration through the skin requires the use of multiple wavelengths to correct for absorbance by melanin and other light-absorbing constituents of skin and blood. More than 100 wavelengths and multiple reflectance measurements at various sites may be used to derive the venous bilirubin concentration in milligrams per deciliter. Such devices have been shown to have a high specificity. They can be used to identify neonates with hyperbilirubinemia, and to monitor treatment."
+  },
+  {
+    "id": 917,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Creatinine is formed from the:",
+    "options": [
+      "Oxidation of creatine",
+      "Oxidation of protein",
+      "Deamination of dibasic amino acids",
+      "Metabolism of purines"
+    ],
+    "answer": "A",
+    "explanation": "Creatinine is produced at a rate of approximately 2% daily from the oxidation of creatine mainly in skeletal muscle. Creatine can be converted to creatinine by addition of strong acid or alkali or by the enzyme creatine hydroxylase."
+  },
+  {
+    "id": 918,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Creatinine is considered one of the substances of choice to measure endogenous renal clearance because:",
+    "options": [
+      "The rate of formation per day is independent of body size",
+      "It is completely filtered by the glomeruli",
+      "Plasma levels are highly dependent upon diet",
+      "Clearance is the same for both men and women"
+    ],
+    "answer": "B",
+    "explanation": "Creatinine concentration is dependent on muscle mass, but varies by less than 15% per day. Creatinine is not metabolized by the liver or dependent on diet and is 100% filtered by the glomeruli. It is not reabsorbed significantly but is secreted slightly, especially when filtrate flow is slow. Plasma creatinine and cystatin C are the two substances of choice for evaluating the GFR."
+  },
+  {
+    "id": 919,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding creatinine is true?",
+    "options": [
+      "Serum levels are elevated in early renal disease",
+      "High serum levels result from reduced glomerular filtration",
+      "Serum creatine has the same diagnostic utility as serum creatinine",
+      "Serum creatinine is a more sensitive measure of renal function than creatinine clearance"
+    ],
+    "answer": "B",
+    "explanation": "Serum creatinine is a specific but not a sensitive measure of glomerular function. About 60% of the filtration capacity of the kidneys is lost when serum creatinine becomes elevated. Because urine creatinine diminishes as serum creatinine increases in renal disease, the creatinine clearance is more sensitive than serum creatinine in detecting glomerular disease. A creatinine clearance less than 60 mL/min indicates loss of about 50% functional nephron capacity and is classified as moderate (stage 3) chronic kidney disease."
+  },
+  {
+    "id": 920,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following formulas is the correct expression for creatinine clearance?",
+    "options": [
+      "Creatinine clearance = U/P × V × 1.73/A",
+      "Creatinine clearance = P/V × U × A/1.73",
+      "Creatinine clearance = P/V × U × 1.73/A",
+      "Creatinine clearance = U/V × P × 1.73/A"
+    ],
+    "answer": "A",
+    "explanation": "Clearance is the volume of plasma that contains the same quantity of substance that is excreted in the urine in 1 minute. Creatinine clearance is calculated as the ratio of urine creatinine to plasma creatinine in milligrams per deciliter. This is multiplied by the volume of urine produced per minute and corrected for lean body mass by multiplying by 1.73/A, where A is the patient’s body surface area in square meters. Separate reference ranges are needed for males, females, and children because each has a different percentage of lean muscle mass."
+  },
+  {
+    "id": 921,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is most likely to cause a falsely high creatinine clearance result?",
+    "options": [
+      "The patient uses the midstream voiding procedure when collecting his or her urine",
+      "The patient adds tap water to the urine container because he or she forgets to save one of the urine samples",
+      "The patient does not empty his or her bladder at the conclusion of the test",
+      "The patient empties his or her bladder at the start of the test and adds the urine to the collection"
+    ],
+    "answer": "D",
+    "explanation": "Urine in the bladder should be eliminated and not saved at the start of the test because it represents urine formed prior to the test period. The other conditions (choices A to C) will result in falsely low urine creatinine or volume and, therefore, falsely lower clearance results. Error is introduced by incomplete emptying of the bladder when short times are used to measure clearance. A 24-hour timed urine is the specimen of choice. When filtrate flow falls to less than 2 mL/min, error is introduced because tubular secretion of creatinine occurs. The patient must be kept well hydrated during the test to prevent this."
+  },
+  {
+    "id": 922,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "The modification of diet in renal disease (MDRD) formula for calculating estimated glomerular filtration rate (eGFR) requires which four parameters?",
+    "options": [
+      "Urine creatinine, serum creatinine, height, weight",
+      "Serum creatinine, age, gender, race",
+      "Serum creatinine, height, weight, age",
+      "Urine creatinine, gender, weight, age"
+    ],
+    "answer": "B",
+    "explanation": "The National Kidney Foundation recommends screening for chronic kidney disease using eGFR because of the high frequency of sample collection errors associated with measuring creatinine clearance. eGFR is usually calculated by using the MDRD formula and reported along with the serum or plasma creatinine. eGFR (mL/min/1.73m2) = 186 × Plasma Cr–1.154 × Age–0.203 × 0.742 (if female) × 1.21 (if black)"
+  },
+  {
+    "id": 923,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "What substance may be measured as an alternative to creatinine for evaluating GFR?",
+    "options": [
+      "Plasma urea",
+      "Cystatin C",
+      "Uric acid",
+      "Potassium"
+    ],
+    "answer": "B",
+    "explanation": "Although all of the analytes listed are increased in chronic kidney disease as a result of low GFR, potassium, urea, and uric acid may be increased by other mechanisms, and therefore, they are not specific for glomerular function. Cystatin C is an inhibitor of cysteine proteases. Being only 13 kilodaltons, it is completely filtered by the glomerulus then reabsorbed by the tubules. The plasma level is highly correlated to GFR because little is eliminated by nonrenal routes. Plasma levels are not influenced by diet, age, gender, or nutritional status. Low GFR causes retention of cystatin C in plasma and levels become abnormally high at clearance rates below 90 mL/min, making the test more sensitive than creatinine."
+  },
+  {
+    "id": 924,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following enzymes allows creatinine to be measured by coupling to a peroxidase reaction?",
+    "options": [
+      "Glucose-6-phosphate dehydrogenase",
+      "Creatinine deaminase",
+      "Sarcosine oxidase",
+      "Creatine kinase (CK)"
+    ],
+    "answer": "C",
+    "explanation": "The peroxidase-coupled enzymatic assay of creatinine is based on the conversion of creatinine to creatine by creatinine amidohydrolase (creatininase). The enzyme creatinine amidinohydrolase (creatinase) then hydrolyzes creatine to produce sarcosine and urea. The enzyme sarcosine oxidase converts sarcosine to glycine, producing formaldehyde and H2O2. Peroxidase then catalyzes the oxidation of a dye (4- aminophenazone and phenol) by the peroxide forming a red-colored product. This method is more specific than the Jaffe reaction, which tends to overestimate creatinine by about 5% in persons with normal renal function."
+  },
+  {
+    "id": 925,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the primary reagent used in the Jaffe method for creatinine.",
+    "options": [
+      "Alkaline copper II sulfate",
+      "Saturated picric acid and sodium hydroxide (NaOH)",
+      "Sodium nitroprusside and phenol",
+      "Phosphotungstic acid"
+    ],
+    "answer": "B",
+    "explanation": "The Jaffe method uses saturated picric acid, which oxidizes creatinine in alkali, forming creatinine picrate. The reaction is nonspecific; ketones, ascorbate, proteins, and other reducing agents contribute to the final color. Alkaline copper II sulfate (CuIISO4) is used in the biuret method for protein."
+  },
+  {
+    "id": 926,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Interference from other reducing substances can be partially eliminated in the Jaffe reaction by:",
+    "options": [
+      "Measuring the product at 340 nm",
+      "Measuring the product with an electrode",
+      "Measuring the timed rate of product formation",
+      "Performing a sample blank"
+    ],
+    "answer": "C",
+    "explanation": "The Jaffe reaction is nonspecific; proteins and other reducing substances, such as pyruvate, protein and ascorbate, cause positive interference. Performing a sample blank does not correct for interfering substances that react with alkaline picrate. Much of the interference is reduced by using a timed rate reaction. Ketoacids react with alkaline picrate almost immediately, and proteins react slowly. Therefore, reading the absorbance at 20 and 80 seconds, and using the absorbance difference minimizes the effects of those compounds. Creatinine can be measured by using an amperometric electrode. However, this requires the enzymes creatininase, creatinase, and sarcosine oxidase. The last enzyme produces H2O2 from sarcosine, which is oxidized. This produces current in proportion to creatinine concentration."
+  },
+  {
+    "id": 927,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements is true?",
+    "options": [
+      "Cystatin C is measured immunochemically",
+      "The calibrator used for cystatin C is traceable to the National Bureau of Standards calibrator",
+      "Cystatin C assays have a lower coefficient of variation compared with plasma creatinine",
+      "Enzymatic and rate Jaffe reactions for creatinine give comparable results"
+    ],
+    "answer": "A",
+    "explanation": "Cystatin C can be measured by enzyme immunoassay, immunonephelometry, and immunoturbidimetry. However, there is no standardized calibrator as for cystatin C, and therefore, results vary considerably among laboratories. The coefficient of variation for these methods tends to be slightly higher than for creatinine. Because the enzymatic methods are specific, they give lower plasma creatinine results compared with the Jaffe method in persons with normal renal function. However, the enzymatic methods tend to give higher clearance results than for inulin or iohexol clearance because some creatinine is secreted by the renal tubules."
+  },
+  {
+    "id": 928,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "In which case would eGFR derived from the plasma creatinine likely give a more accurate measurement of GFR compared with measurement of plasma cystatin C?",
+    "options": [
+      "Diabetes",
+      "Chronic renal failure",
+      "After renal transplantation",
+      "Chronic hepatitis"
+    ],
+    "answer": "C",
+    "explanation": "Cystatin C is eliminated almost exclusively by the kidneys, and plasma levels are not dependent on age, gender, or nutritional status. However, plasma levels are affected by some drugs, including those used to prevent renal transplant rejection. Increased plasma levels have been reported in chronic inflammatory diseases and cancer. Formulas are available to calculate eGFR from plasma cystatin C, but unlike for creatinine, the formulas must be matched to the method of assay. The eGFR derived from cystatin C can detect a fall in GFR sooner and may be more sensitive for those with diabetes and other populations at risk for chronic kidney disease."
+  },
+  {
+    "id": 929,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "A sample of amniotic fluid collected for fetal lung maturity studies from a woman whose pregnancy was compromised by hemolytic disease of the fetus and newborn (HDFN) has a creatinine level of 88 mg/dL. What is the most likely cause of this result?",
+    "options": [
+      "The specimen is contaminated by blood",
+      "Bilirubin has interfered with the measurement of creatinine",
+      "A random error occurred when the absorbance signal was being processed by the analyzer",
+      "The fluid is urine from accidental puncture of the urinary bladder"
+    ],
+    "answer": "D",
+    "explanation": "Creatinine levels in this range are found only in urine specimens. Adults usually excrete 1.2 to 1.5 g of creatinine per day. For this reason, creatinine is routinely measured in 24-hour urine samples to determine the completeness of collection. A 24- hour urine with less than 0.8 g/day indicates that some of the urine was probably discarded."
+  },
+  {
+    "id": 930,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Which analyte should be reported as a ratio using creatinine concentration as a reference?",
+    "options": [
+      "Urinary microalbumin",
+      "Urinary estriol",
+      "Urinary sodium",
+      "Urinary urea"
+    ],
+    "answer": "A",
+    "explanation": "Measurement of urinary microalbumin concentration should be reported as a ratio of albumin to creatinine (e.g., milligram of albumin per gram of creatinine). This eliminates the need for 24-hour collection to avoid variation caused by differences in fluid intake. A dry reagent strip test for creatinine, which measures the ability of a creatinine–copper complex to break down H2O2, forming a colored complex, is available. The strip uses buffered CuIISO4, tetramethylbenzidine, and anhydrous peroxide. Binding of creatinine in urine to copper forms a peroxidase-like complex that results in oxidation of the benzidine compound. In addition, when measured in infants and children, 24-hour urinary metanephrines, vanillylmandelic acid (VMA), and homovanillic acid (HVA) are reported per gram of creatinine to compensate for differences in body size."
+  },
+  {
+    "id": 931,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Urea is produced from:",
+    "options": [
+      "The catabolism of proteins and amino acids",
+      "Oxidation of purines",
+      "Oxidation of pyrimidines",
+      "The breakdown of complex carbohydrates"
+    ],
+    "answer": "A",
+    "explanation": "Urea is generated by deamination of amino acids. Most is derived from the hepatic catabolism of proteins. Uric acid is produced by the catabolism of purines. Oxidation of pyrimidines produces orotic acid."
+  },
+  {
+    "id": 932,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Urea concentration is calculated from the BUN by multiplying by a factor of:",
+    "options": [
+      "0.5",
+      "2.14",
+      "6.45",
+      "14"
+    ],
+    "answer": "B",
+    "explanation": "BUN is multiplied by 2.14 to give the urea concentration in mg/dL. BUN (mg/dL) = urea × (%N in urea ÷ 100) Urea = BUN × 1/(%N in urea ÷ 100) Urea = BUN × (1/0.467) = 2.14"
+  },
+  {
+    "id": 933,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the statements below about serum urea is true?",
+    "options": [
+      "The levels are independent of diet",
+      "Urea is not reabsorbed by the renal tubules",
+      "High BUN levels can result from necrotic liver disease",
+      "BUN is elevated in prerenal as well as renal failure"
+    ],
+    "answer": "D",
+    "explanation": "Urea is completely filtered by the glomeruli but reabsorbed by the renal tubules at a rate dependent on filtrate flow and tubular status. Urea levels are a sensitive indicator of renal disease, becoming elevated by glomerular injury, tubular damage, or poor blood flow to the kidneys (prerenal failure). Serum urea (and BUN) levels are influenced by diet and are low in necrotic liver disease."
+  },
+  {
+    "id": 934,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "A patient’s BUN is 60 mg/dL and serum creatinine is 3.0 mg/dL. These results suggest:",
+    "options": [
+      "Laboratory error measuring BUN",
+      "Renal failure",
+      "Prerenal failure",
+      "Patient was not fasting"
+    ],
+    "answer": "C",
+    "explanation": "BUN is affected by renal blood flow as well as by glomerular and tubular function. When blood flow to the kidneys is diminished by circulatory insufficiency (prerenal failure), glomerular filtration decreases and tubular reabsorption increases because of slower filtrate flow. Because urea is reabsorbed, BUN levels rise higher than plasma creatinine. This causes the BUN:creatinine ratio to be greater than 10:1 in prerenal failure."
+  },
+  {
+    "id": 935,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Urinary urea measurements may be used for calculation of:",
+    "options": [
+      "Glomerular filtration",
+      "Renal blood flow",
+      "Nitrogen balance",
+      "All of these options"
+    ],
+    "answer": "C",
+    "explanation": "Because BUN is handled by the tubules, serum levels are not specific for GFR. Urea clearance is influenced by diet and liver function as well as by renal function. Protein intake minus excretion determines nitrogen balance. A negative balance (excretion exceeds intake) occurs in stress, starvation, fever, cachexia, and chronic illness. Nitrogen balance = (Protein intake in grams per day ÷ 6.25) – (Urine urea nitrogen in grams per day + 4) where 4 estimates the protein nitrogen lost in the feces per day, and dividing by 6.25 converts protein to protein nitrogen."
+  },
+  {
+    "id": 936,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "BUN is determined electrochemically by coupling the urease reaction to the measurement of:",
+    "options": [
+      "H2O2",
+      "The timed rate of increase in conductivity",
+      "The oxidation of ammonia",
+      "CO2"
+    ],
+    "answer": "B",
+    "explanation": "A conductivity electrode is used to measure the increase in conductance of the solution as urea is hydrolyzed by urease in the presence of sodium carbonate.\nUrea + H2O → 2NH3 + CO2\n2NH3 + 2H2O + Na2CO3 → 2NH4+ + CO3(2−) + 2NaOH\nAmmonium ions increase the conductance of the solution. The timed rate of current increase is proportional to the BUN concentration. Alternatively, the ammonium ions produced can be measured by using an ISE."
+  },
+  {
+    "id": 937,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "In the ultraviolet enzymatic method for BUN, the urease reaction is coupled to a second enzymatic reaction using:",
+    "options": [
+      "Aspartate aminotransferase (AST)",
+      "Glutamate dehydrogenase (GLD)",
+      "Glutamine synthetase",
+      "Alanine aminotransferase (ALT)"
+    ],
+    "answer": "B",
+    "explanation": "BUN is most frequently measured by the urease-UV method in which the urease reaction is coupled to the GLD reaction, generating NAD+. When the urease reaction is performed under first-order conditions, the decrease in absorbance at 340 nm is proportional to the urea concentration.\nUrea + H2O → (urease) 2NH3 + CO2\n2-Oxoglutarate + NH3 + NADH + H+ → (GLD) Glutamate + NAD+ + H2O"
+  },
+  {
+    "id": 938,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Which product is measured in the coupling step of the urease-UV method for BUN?",
+    "options": [
+      "CO2",
+      "Dinitrophenylhydrazine",
+      "Diphenylcarbazone",
+      "NAD+"
+    ],
+    "answer": "D",
+    "explanation": "In the urease-UV method, urease is used to hydrolyze urea, forming CO2 and ammonia. GLD catalyzes the oxidation of NADH, forming glutamate from 2- oxoglutarate and ammonia. The GLD reaction is used for measuring both BUN and ammonia."
+  },
+  {
+    "id": 939,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Which enzyme deficiency is responsible for phenylketonuria (PKU)?",
+    "options": [
+      "Phenylalanine hydroxylase",
+      "Tyrosine transaminase",
+      "p-Hydroxyphenylpyruvic acid oxidase",
+      "Homogentisic acid oxidase"
+    ],
+    "answer": "A",
+    "explanation": "PKU is an overflow aminoaciduria resulting from the accumulation of phenylalanine. It is caused by a deficiency of phenylalanine hydroxylase, which converts phenylalanine to tyrosine. Excess phenylalanine accumulates in blood. This is transaminated, forming phenylpyruvic acid, which is excreted in urine."
+  },
+  {
+    "id": 940,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is classified as a renal-type aminoaciduria?",
+    "options": [
+      "Fanconi syndrome",
+      "Wilson disease",
+      "Hepatitis",
+      "Homocystinuria"
+    ],
+    "answer": "A",
+    "explanation": "Fanconi syndrome is an inherited disorder characterized by anemia, mental retardation, rickets, and aminoaciduria. Because the aminoaciduria results from a defect in the renal tubule, it is classified as a (secondary-inherited) renal-type aminoaciduria. Wilson disease (inherited ceruloplasmin deficiency) causes hepatic failure. It is classified as a secondary-inherited overflow-type aminoaciduria because the aminoaciduria results from urea cycle failure. Hepatitis is classified as a secondary- acquired overflow-type aminoaciduria. Homocystinuria is a primary-inherited overflow-type aminoaciduria and is caused by a deficiency of cystathionine synthase."
+  },
+  {
+    "id": 941,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Which aminoaciduria results in the overflow of branched chain amino acids?",
+    "options": [
+      "Hartnup disease",
+      "Alkaptonuria",
+      "Homocystinuria",
+      "Maple syrup urine disease"
+    ],
+    "answer": "D",
+    "explanation": "Valine, leucine, and isoleucine accumulate as a result of branched-chain decarboxylase deficiency in maple syrup urine disease. These are transaminated to ketoacids, which are excreted, giving urine a maple sugar odor. Alkaptonuria is caused by homogentisic acid oxidase deficiency, causing homogentisic aciduria. Homocystinuria is a no-threshold overflow-type aminoaciduria, which results from cystathionine synthase deficiency."
+  },
+  {
+    "id": 942,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "In addition to phenylketonuria, maple syrup urine disease, and homocystinuria, what other aminoaciduria can be detected by MS/MS?",
+    "options": [
+      "Alkaptonuria",
+      "Hartnup disease",
+      "Citrullinemia",
+      "Cystinuria"
+    ],
+    "answer": "C",
+    "explanation": "Most states use ESI tandem-mass spectroscopy (MS/MS), which can detect greater than 30 inborn errors of metabolism from a single blood spot. Typically, this includes phenylketonuria, tyrosinemia, maple syrup urine disease, homocystinuria, citrullinemia, argininosuccinate acidemia, argininemia, and hypermethioninemia."
+  },
+  {
+    "id": 943,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Of the methods used to measure amino acids, which is capable of measuring fatty acids simultaneously?",
+    "options": [
+      "MS/MS",
+      "HPLC",
+      "Capillary electrophoresis",
+      "Two-dimensional TLC"
+    ],
+    "answer": "A",
+    "explanation": "All four methods are able to separate each amino acid (up to 40 species); however, MS/MS can measure amino acids; organic acids, such as methylmalonic acid; and fatty acids. The acids are eluted from the dried blood spot with methanol after addition of internal standards and then derivatized with butanol–hydrochloric acid. Soft ionization of the butyl esters of the amino acids and butyl acylcarnitines of organic and fatty acids yields parent ions, and these are fragmented by collision with argon in the second mass filter to produce daughter ions. A process called multiple reaction monitoring identifies both parent ions and neutral fragments that identify the acids. Carnitines are quarternary ammonium compounds that carry the acids across the mitochondrial membrane."
+  },
+  {
+    "id": 944,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Blood ammonia levels are usually measured to evaluate:",
+    "options": [
+      "Renal failure",
+      "Acid–base status",
+      "Hepatic coma",
+      "GI malabsorption"
+    ],
+    "answer": "C",
+    "explanation": "Hepatic coma is caused by accumulation of ammonia in the brain as a result of liver failure. The ammonia increases CNS pH and is coupled to glutamate, a CNS neurotransmitter, forming glutamine. Blood and CSF ammonia levels are used to distinguish encephalopathy caused by liver diseases (e.g., hepatic cirrhosis) from nonhepatic causes and to monitor patients with hepatic coma."
+  },
+  {
+    "id": 945,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Enzymatic measurement of ammonia requires which of the following substrates and coenzymes?",
+    "options": [
+      "2-oxogluterate/NADH",
+      "Glutamate/NADH",
+      "Glutamine/ATP",
+      "Glutamine/NAD+"
+    ],
+    "answer": "A",
+    "explanation": "Enzymatic assays of ammonia utilize GLD. This enzyme forms glutamate from 2- oxoglutarate (α–ketoglutarate) and ammonia, resulting in oxidation of NADH. The rate of absorbance decrease at 340 nm is proportional to ammonia concentration when the reaction rate is maintained under first-order conditions."
+  },
+  {
+    "id": 946,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement about ammonia is true?",
+    "options": [
+      "Normally, most of the plasma ammonia is derived from peripheral blood deamination of amino acids",
+      "Ammonia-induced coma can result from salicylate poisoning",
+      "Hepatic coma can result from Reye syndrome",
+      "High plasma ammonia is usually caused by respiratory alkalosis"
+    ],
+    "answer": "C",
+    "explanation": "Ammonia produced in the intestines from the breakdown of proteins by bacterial enzymes is the primary source of plasma ammonia. Most of the ammonia absorbed from the intestines is transported to the liver via the portal vein and converted to urea. Blood ammonia levels will rise in any necrotic liver disease, including hepatitis, Reye syndrome, and in drug-induced injury, such as acetaminophen poisoning. In hepatic cirrhosis, shunting of portal blood to the general circulation causes blood ammonia levels to rise. Ammonia crosses the blood–brain barrier, which accounts for the frequency of CNS complications and, if severe, hepatic coma."
+  },
+  {
+    "id": 947,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A sample for ammonia assay is taken from an IV line that had been capped and injected with lithium heparin (called a heparin lock). The sample is drawn in a syringe containing lithium heparin and immediately capped and iced. The plasma is separated and analyzed within 20 minutes of collection, and the result is 50 µg/dL higher than one measured 4 hours before. What is the most likely explanation of these results?",
+    "options": [
+      "Significantly greater physiological variation is seen with patients with systemic, hepatic, and GI diseases",
+      "The syringe was contaminated with ammonia",
+      "One of the two samples was collected from the wrong patient",
+      "Stasis of blood in the line caused increased ammonia"
+    ],
+    "answer": "D",
+    "explanation": "Falsely elevated blood ammonia levels are commonly caused by improper specimen collection. Venous stasis and prolonged storage cause peripheral deamination of amino acids, causing a falsely high ammonia level. Plasma is the sample of choice because ammonia levels increase with storage. Lithium heparin and EDTA are acceptable anticoagulants; the anticoagulant used should be tested to make sure it is free of ammonia. A vacuum tube can be used if filled completely. The patient should be fasting and must not have smoked for 8 hours because tobacco smoke can double the plasma ammonia level."
+  },
+  {
+    "id": 948,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Uric acid is derived from:",
+    "options": [
+      "Oxidation of proteins",
+      "Catabolism of purines",
+      "Oxidation of pyrimidines",
+      "Reduction of catecholamines"
+    ],
+    "answer": "B",
+    "explanation": "Uric acid is the principal product of purine (adenosine and guanosine) metabolism. Oxidation of proteins yields urea along with CO2, H2O, and inorganic acids. Catecholamines are oxidized, forming VMA and HVA."
+  },
+  {
+    "id": 949,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is associated with hyperuricemia?",
+    "options": [
+      "Renal failure",
+      "Chronic liver disease",
+      "Xanthine oxidase deficiency",
+      "Paget disease of the bone"
+    ],
+    "answer": "A",
+    "explanation": "Excessive retention of uric acid results from renal failure and diuretics (or other drugs) that block uric acid excretion. Hyperuricemia may result from overproduction of uric acid in primary essential gout or excessive cell turnover associated with malignancy and chemotherapy. Overproduction may also result from an enzyme deficiency in the pathway forming guanosine triphosphate (GTP) or adenosine monophosphate (AMP) (purine salvage). Hyperuricemia is also associated with ketoacidosis and lactate acidosis, hypertension, and hyperlipidemia. Xanthine oxidase converts xanthine to uric acid; therefore, a deficiency of this enzyme results in low serum levels of uric acid. Paget disease of bone causes cyclic episodes of bone degeneration and regeneration and is associated with very high serum ALP and urinary calcium levels."
+  },
+  {
+    "id": 950,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Orders for uric acid are legitimate stat requests because:",
+    "options": [
+      "Levels above 10 mg/dL cause urinary tract calculi",
+      "Uric acid is hepatotoxic",
+      "High levels induce aplastic anemia",
+      "High levels cause joint pain"
+    ],
+    "answer": "A",
+    "explanation": "Uric acid calculi form quickly when the serum uric acid level reaches 10 mg/dL. They are translucent compact stones that often lodge in the ureters, causing postrenal failure."
+  },
+  {
+    "id": 951,
+    "section": "Creatinine, Uric Acid, BUN, and Ammonia",
+    "chapter": "Clinical Chemistry",
+    "question": "Which uric acid method is associated with negative bias caused by reducing agents?",
+    "options": [
+      "Uricase coupled to the Trinder reaction",
+      "UV uricase reaction coupled to catalase and alcohol dehydrogenase (ADH) reactions",
+      "Measurement of the rate of absorbance decrease at 290 nm after addition of uricase",
+      "Amperometry"
+    ],
+    "answer": "A",
+    "explanation": "The peroxidase-coupled uricase reaction is the most common method for measuring uric acid in serum or plasma. Uricase methods form allantoin, CO2, and H2O2 from the oxidation of uric acid. When peroxide is used to oxidize a Trinder dye (e.g., a phenol derivative and 4-aminoantipyrine), some negative bias may occur when high levels of ascorbate or other reducing agents are present. Rate UV methods are free from this interference. As with other reactions that generate H2O2, the uricase reaction can be used to measure uric acid by using either polarography or amperometry."
+  },
+  {
+    "id": 952,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "The Kjeldahl procedure for total protein is based on the premise that:",
+    "options": [
+      "Proteins are negatively charged",
+      "The pKa of proteins is the same",
+      "The nitrogen content of proteins is constant",
+      "Proteins have similar tyrosine and tryptophan content"
+    ],
+    "answer": "C",
+    "explanation": "The Kjeldahl method measures the nitrogen content of proteins as ammonium ion by back titration after oxidation of proteins by sulfuric acid and heat. It assumes that proteins average 16% nitrogen by weight. Protein in grams per deciliter is calculated by multiplying protein nitrogen by 6.25. The Kjeldahl method is a reference method for total protein that is used to assign a protein assay value to the calibrators."
+  },
+  {
+    "id": 953,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "The biuret method is based on which principle?",
+    "options": [
+      "The reaction of phenolic groups with CuIISO4",
+      "Coordinate bonds between Cu+2 and carbonyl and imine groups of peptide bonds",
+      "The protein error of indicator effect producing color when dyes bind protein",
+      "The reaction of phosphomolybdic acid with protein"
+    ],
+    "answer": "B",
+    "explanation": "Biuret is a compound with two carbonyl groups and three amino groups and forms coordinate bonds with Cu+2 in the same manner as protein. Therefore, proteins and peptides are both measured in the biuret reaction. The biuret reagent consists of an alkaline solution of CuIISO4. Tartrate salts are added to keep the copper in solution and prevent turbidity. Potassium iodide prevents autoreduction of Cu+2."
+  },
+  {
+    "id": 954,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement about the biuret reaction for total protein is true?",
+    "options": [
+      "It is sensitive to protein levels below 0.1 mg/dL",
+      "It is suitable for urine, exudates, and transudates",
+      "Polypeptides and compounds with repeating imine groups react",
+      "Hemolysis will not interfere"
+    ],
+    "answer": "C",
+    "explanation": "The biuret reaction is not sensitive to protein levels below 0.1 g/dL and, therefore, is not sensitive enough for assays of total protein in CSF, urine, or transudates. Slight hemolysis does not cause falsely high results, if the absorbance of the Cu+2–protein complexes is measured bichromatically. However, frankly hemolyzed samples contain sufficient globin to cause positive interference. The reagent reacts with peptides containing at least two peptide bonds, but because of the high concentration of proteins in plasma relative to peptides present this reactivity causes insignificant bias."
+  },
+  {
+    "id": 955,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following protein methods has the highest analytical sensitivity?",
+    "options": [
+      "Refractometry",
+      "Folin-Lowry",
+      "Turbidimetry",
+      "Direct ultraviolet absorption"
+    ],
+    "answer": "B",
+    "explanation": "The Folin-Lowry (Lowry) method uses both biuret reagent and phosphotungstic and molybdic acids to oxidize the aromatic side groups on proteins. The acids oxidize the phenolic rings of tyrosine and tryptophan. These, in turn, reduce the Cu+2 in the biuret reagent, increasing sensitivity about 100-fold."
+  },
+  {
+    "id": 956,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding proteins is true?",
+    "options": [
+      "Total protein and albumin are about 10% higher in ambulatory patients",
+      "Plasma total protein is about 20% higher than serum levels",
+      "Albumin normally accounts for about one third of the CSF total protein",
+      "Transudative serous fluid protein is about two-thirds of the serum total protein"
+    ],
+    "answer": "A",
+    "explanation": "Water pools in the vascular bed in nonambulatory patients, lowering the total protein, albumin, hematocrit, and calcium. Plasma levels of total protein are 0.2 to 0.4 g/dL higher than those in serum (about 5%) because of fibrinogen. CSF albumin levels are normally 10 to 30 mg/dL, which is approximately two-thirds of the CSF total protein. Transudates have a total protein below 3.0 g/dL and less than 50% of the serum total protein."
+  },
+  {
+    "id": 957,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Hyperalbuminemia is caused by:",
+    "options": [
+      "Dehydration syndromes",
+      "Liver disease",
+      "Burns",
+      "Gastroenteropathy"
+    ],
+    "answer": "A",
+    "explanation": "A high serum albumin level is caused only by dehydration or administration of albumin. Liver disease, burns, gastroenteropathy, nephrosis, starvation, and malignancy cause hypoalbuminemia."
+  },
+  {
+    "id": 958,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "High serum total protein but low albumin is usually seen in:",
+    "options": [
+      "Multiple myeloma",
+      "Hepatic cirrhosis",
+      "Glomerulonephritis",
+      "Nephrotic syndrome"
+    ],
+    "answer": "A",
+    "explanation": "In multiple myeloma, synthesis of large quantities of monoclonal immunoglobulin by plasma cells often results in decreased synthesis of albumin. In glomerulonephritis and nephrotic syndrome, both total protein and albumin are low because of loss of proteins through the glomeruli. In hepatic cirrhosis, decreased hepatic production of protein results in low total protein and albumin."
+  },
+  {
+    "id": 959,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is most commonly associated with an elevated level of total protein?",
+    "options": [
+      "Glomerular disease",
+      "Starvation",
+      "Liver failure",
+      "Malignancy"
+    ],
+    "answer": "D",
+    "explanation": "Malignant disease is usually associated with increased production of immunoglobulin and acute-phase proteins. However, nutrients required for protein synthesis are consumed, causing reduced hepatic albumin production. Glomerular damage causes albumin and other low-molecular-weight proteins to be lost through the kidneys. Liver failure and starvation result in decreased protein synthesis."
+  },
+  {
+    "id": 960,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following dyes is the most specific for measurement of albumin?",
+    "options": [
+      "Bromcresol green (BCG)",
+      "Bromcresol purple (BCP)",
+      "Tetrabromosulfophthalein",
+      "Tetrabromphenol blue"
+    ],
+    "answer": "B",
+    "explanation": "Tetrabromphenol blue and tetrabromosulfophthalein are dyes that change pKa in the presence of protein. Although they have greater affinity for albumin than for globulins, they are not sufficiently specific to be used for the measurement of serum albumin. BCG and BCP are anionic dyes that undergo a spectral shift when they bind albumin at acid pH. BCP is more specific for albumin compared with BCG. The reaction of both dyes with globulins requires a longer incubation time than with albumin, and reaction times are kept at 30 seconds or less to increase specificity. Both dyes are free of interference from bilirubin. However, BCG is the method used most often. One reason for this is that patients undergoing renal dialysis produce an organic acid that competes with BCP for the binding site on albumin, causing a falsely low result."
+  },
+  {
+    "id": 961,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following factors is most likely to cause a falsely low result when using the BCG dye–binding assay for albumin?",
+    "options": [
+      "The presence of penicillin",
+      "An incubation time of 120 seconds",
+      "The presence of bilirubin",
+      "Lipemia"
+    ],
+    "answer": "A",
+    "explanation": "BCG and BCP are not significantly affected by bilirubin or hemolysis, although negative interference caused by free Hgb has been reported with some BCG methods. Lipemic samples may cause positive interference, which can be eliminated by serum blanking. Incubation times as long as 2 minutes result in positive interference from globulins, which react with the dye. Penicillin and some other anionic drugs bind to albumin at the same site as the dye, causing falsely low results."
+  },
+  {
+    "id": 962,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "At pH 8.6, proteins are __________ charged and migrate toward the ________.",
+    "options": [
+      "Negatively, anode",
+      "Positively, cathode",
+      "Positively, anode",
+      "Negatively, cathode"
+    ],
+    "answer": "A",
+    "explanation": "Proteins are amphoteric owing to ionization of acidic and basic side chains of amino acids. When the pH of the solution equals the isoelectric point (pI), the protein will have no net charge and is insoluble. When the pH of the solution is above the pI, the protein will have a net negative charge. Anions migrate toward the anode (positive electrode)."
+  },
+  {
+    "id": 963,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Electrophoretic movement of proteins toward the anode will decrease by increasing the:",
+    "options": [
+      "Buffer pH",
+      "Ionic strength of the buffer",
+      "Current",
+      "Voltage"
+    ],
+    "answer": "B",
+    "explanation": "Electrophoresis is the migration of charged molecules in an electric field. Increasing the strength of the field by increasing voltage (or current) increases migration. However, increasing ionic strength decreases the migration of proteins. Counterions (cations) in the buffer move with the proteins, reducing their electromagnetic attraction for the anode."
+  },
+  {
+    "id": 964,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "At pH 8.6, the cathodal movement of γ globulins is caused by:",
+    "options": [
+      "Electroendosmosis",
+      "Wick flow",
+      "A net positive charge",
+      "Cathodal sample application"
+    ],
+    "answer": "A",
+    "explanation": "Agarose and cellulose acetate contain fixed anions (e.g., acetate) that attract counterions when hydrated with buffer. When voltage is applied the cations migrate to the cathode, creating an osmotic force that draws H2O with them. This force, called electroendosmosis, opposes protein migration toward the anode and may cause some γ- globulins to be displaced toward the cathode."
+  },
+  {
+    "id": 965,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions will prevent any migration of proteins across an electrophoretic support medium, such as agarose?",
+    "options": [
+      "Using too high a voltage",
+      "Excessive current during the procedure",
+      "Loss of contact between a buffer chamber and the medium",
+      "Evaporation of solvent from the surface of the medium"
+    ],
+    "answer": "C",
+    "explanation": "Movement of proteins is dependent upon the presence of a salt bridge that allows current to flow via transport of ions to the electrodes across the support medium. If the salt bridge is not intact, there will be no migration, even if voltage is maintained across the electrodes. For agarose and cellulose acetate, heat causes evaporation of solvent from the buffer. This increases the ionic strength, causing current to rise during the run. Excessive heat can damage the support medium and denature proteins. Power = E (voltage) × I (current) × t (time); because E = I × R (resistance), heat is proportional to the square of current (P = I2 × R × t). Constant current or power mode is used for long runs to prevent heat damage."
+  },
+  {
+    "id": 966,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following proteins has the highest pI?",
+    "options": [
+      "Albumin",
+      "Transferrin",
+      "Ceruloplasmin",
+      "Immunoglobulin G (IgG)"
+    ],
+    "answer": "D",
+    "explanation": "Albumin is the fastest migrating protein toward the anode at pH 8.6 followed by α1-, α2-, β-, and γ-globulins. Thus, albumin has the greatest net negative charge and lowest pI (about 4.6). γ-Globulins are predominantly immunoglobulins and have the highest pI (about 7.2)."
+  },
+  {
+    "id": 967,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following proteins migrates in the β region at pH 8.6?",
+    "options": [
+      "Haptoglobin",
+      "Orosomucoprotein",
+      "Antichymotrypsin",
+      "Transferrin"
+    ],
+    "answer": "D",
+    "explanation": "Transferrin, β-lipoprotein, C3, and C4 are the dominant proteins in the β-globulin region. Haptoglobin and α2-macroglobulin are the principal proteins in the α2-fraction. α1-Antitrypsin, α1-lipoprotein, and α1-acid glycoprotein (orosomucoprotein) make up most of the α1-fraction. Immunoglobulins dominate the γ-region. Plasma is not used for protein electrophoresis because fibrinogen will produce a band resembling a small monoclonal protein in the β-region."
+  },
+  {
+    "id": 968,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is one advantage of high-resolution (HR) agarose electrophoresis over lower-current electrophoresis?",
+    "options": [
+      "HR procedures detect monoclonal and oligoclonal bands at a lower concentration",
+      "A smaller sample volume is used",
+      "Results are obtained more rapidly",
+      "Densitometric scanning of HR gels is more accurate"
+    ],
+    "answer": "A",
+    "explanation": "HR agarose procedures use higher current and a cooling device to resolve 12 or more bands. Advantages include phenotyping of α1-antitrypsin (detection of Z and S variants); detection of β2-microglobulin in urine, indicating tubular proteinuria (often associated with drug-induced nephrosis); and greater sensitivity detecting monoclonal gammopathies, immune complexes, and oligoclonal bands in CSF associated with multiple sclerosis. Its disadvantage is that densitometric scans of HR gels usually underestimate albumin."
+  },
+  {
+    "id": 969,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is associated with “β-γ bridging”?",
+    "options": [
+      "Multiple myeloma",
+      "Malignancy",
+      "Hepatic cirrhosis",
+      "Rheumatoid arthritis"
+    ],
+    "answer": "C",
+    "explanation": "Hepatic cirrhosis produces a polyclonal gammopathy associated with a high IgA level. This obliterates the valley between β- and γ-zones. Malignancy and rheumatoid arthritis produce polyclonal gammopathies classified as chronic inflammatory or delayed response patterns. Multiple myeloma produces a zone of restricted mobility usually in the γ-region although sometimes in the β- or α2-region."
+  },
+  {
+    "id": 970,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which support medium can be used to determine the molecular weight of a protein?",
+    "options": [
+      "Cellulose acetate",
+      "Polyacrylamide gel",
+      "Agar gel",
+      "Agarose gel"
+    ],
+    "answer": "B",
+    "explanation": "Polyacrylamide gels separate by molecular sieving as well as charge. Sodium dodecyl sulfate (SDS) is a nonionic detergent that binds to proteins, neutralizing their charge. Polyacrylamide gel electrophoresis (PAGE) after treating with SDS separates proteins on the basis of molecular size. The smaller proteins become trapped in the pores of the gel and migrate more slowly."
+  },
+  {
+    "id": 971,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following stains is used for lipoprotein electrophoresis?",
+    "options": [
+      "Oil Red O",
+      "Coomassie Brilliant Blue",
+      "Amido Black",
+      "Ponceau S"
+    ],
+    "answer": "A",
+    "explanation": "Oil Red O and Sudan Black B stain neutral fats and are used to stain lipoproteins as well as fat in urine or stool. The other stains are used for proteins. Coomassie Brilliant Blue is more sensitive than Ponceau S or Amido Black, and all three stains have slightly greater affinity for albumin than for globulins. In addition, silver nitrate may be used to stain CSF proteins because it has greater sensitivity than the other stains."
+  },
+  {
+    "id": 972,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following serum protein electrophoresis results suggests an acute inflammatory process?",
+    "options": [
+      "Albumin decreased; α₁ increased; α₂ decreased; β normal; γ normal",
+      "Albumin normal; α₁ increased; α₂ normal; β increased; γ increased",
+      "Albumin decreased; α₁ increased; α₂ increased; β normal; γ normal",
+      "Albumin increased; α₁ increased; α₂ increased; β increased; γ increased"
+    ],
+    "answer": "C",
+    "explanation": "Acute inflammation is characterized by increased production of acute-phase proteins. These include α1-antitrypsin, α1-acid glycoprotein, α1-antichymotrypsin, and haptoglobin. Albumin is slightly decreased. γ- and β-fractions are normal."
+  },
+  {
+    "id": 973,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is usually associated with an acute inflammatory pattern?",
+    "options": [
+      "Myocardial infarction (MI)",
+      "Malignancy",
+      "Rheumatoid arthritis",
+      "Hepatitis"
+    ],
+    "answer": "A",
+    "explanation": "MI produces a pattern of acute inflammation usually associated with tissue injury. This pattern results from production of acute-phase proteins, including α1-antitrypsin, α1-antichymotrypsin, and haptoglobin. It is also seen in early infection, pregnancy, and early nephritis. Malignancy, rheumatoid arthritis, and hepatitis are associated with a chronic inflammatory pattern. This differs from the acute pattern by the addition of a polyclonal gammopathy."
+  },
+  {
+    "id": 974,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "The electrophoretic pattern shown in the following densitometric tracing (shaded gray area) most likely indicates:",
+    "options": [
+      "α1-Antitrypsin deficiency",
+      "Infection",
+      "Nephrosis",
+      "Systemic sclerosis"
+    ],
+    "answer": "A",
+    "explanation": "This pattern shows a marked decrease in the α1-globulin (slightly less than one-fifth of the expected peak area). Staining of the α1-globulin fraction is predominately determined by the α1-antitrypsin level. A value of less than 20% of normal (0.2–0.4 g/dL) is usually caused by homozygous α1-antitrypsin deficiency. There is a slight decrease in albumin and increase in the α2-fraction. Patients with α1-antitrypsin deficiency often display elevations in the α2-globulin and γ-globulin fraction because the condition is associated with chronic emphysema and hepatic cirrhosis.",
+    "image": "data:image/jpeg;base64,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XtIIHkki0ixvQE67Y9Vs9xI7gI7sfTb6ZqnsxR3R+oVFZvh+9/tPQtN1HczC7tIZ8sME7kByffmtKpNAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAPi/wD4KeeZL4H+E9mJNqTfEvS8jtuEU4B/AM3515jXpf8AwUuimutN+DNmk2yM/EC3nYEZBMcTsPxxuA+teaURIn0CqvjG3W8+FPxTsypbzPBt/IADg5iKTZ+g8nJ9gatU69tpb/wp450yCFpZb7wZ4ghiRfvM/wDZtwyKvqS6quO+fWqZKPuH4GayniH4L+ANejMxTU/C+l3qmc5kxJaxsN/J+b5ueTznk13dePfsh3gvv2YPhVMHkYL4S02HL8n5IFTH0G3A9gK9hqTRBRRRQMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAPif8A4KQS3D6p8ELCJh5cniyedwQOscAwc/Rm475rzmu5/wCCjeqSR/EL4BaGtvvF3rGsXZkB5XyreBMYxyCJyc542+/HDU47ES6BW14OgW61drJy2L2xvbM7fvES20keF68/PxweccHpWLXQ/Dg58b+HU3iMTanbwliMhVaQKx/AMTVW0JR7z+wPq8Wt/sjfDS8inaYRaXLaFmBBDQ3EsLLg9gYioPfGec5r6Er5U/4JlXv2r9jvwbB5u/7Jc6pBtxjZm+nk2+/+sz36+3H1XUGoUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAHwh/wUVmjb40/s9wBv3kc3iR2GDwrW9rg56clT+VchXW/8FCI1f4+/AQMuQI/ER/EW8JH6gVyVOOxEgrW8I3H2PxNo10WCiDUIJct0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"
+  },
+  {
+    "id": 975,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the clinical utility of testing for serum prealbumin?",
+    "options": [
+      "Low levels are associated with increased free cortisol",
+      "High levels are an indicator of acute inflammation",
+      "Serial low levels indicate compromised nutritional status",
+      "Levels correlate with glomerular injury in patients with diabetes mellitus"
+    ],
+    "answer": "C",
+    "explanation": "Prealbumin (also called transthyretin) is a small protein with a half-life of only 2 days. Serum levels fall rapidly in patients with deficient protein nutrition. As a result, prealbumin is used to detect malnutrition and to measure the patient’s response to dietary supplementation. The cutoff used to identify nutritional deficiency in older patients is usually 11 mg/dL. Prealbumin is usually measured by immunonephelometry."
+  },
+  {
+    "id": 976,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which serum protein should be measured in a patient suspected of having Wilson disease?",
+    "options": [
+      "Hemopexin",
+      "α1-Antitrypsin",
+      "Haptoglobin",
+      "Ceruloplasmin"
+    ],
+    "answer": "D",
+    "explanation": "α1-Antitrypsin, haptoglobin, and ceruloplasmin are acute-phase proteins and will be increased in inflammatory diseases. Ceruloplasmin is an α2 globulin that binds the majority of the serum copper. Levels are low in almost all patients with Wilson disease, an autosomal recessive disorder caused by accumulation of copper in liver, brain, kidney, and other tissues. Low ceruloplasmin may occur in patients with nephrosis, malnutrition, and hepatobiliary disease. Therefore, the diagnosis of Wilson disease is made by demonstrating decreased plasma ceruloplasmin, increased urinary copper, and the presence of Kayser-Fleischer rings (brown deposits at the edge of the cornea)."
+  },
+  {
+    "id": 977,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "A patient with hemolytic–uremic syndrome associated with septicemia has a haptoglobin level that is normal, although the plasma free Hgb is elevated and hemoglobinuria is present. Which test would be more appropriate than haptoglobin to measure this patient’s hemolytic episode?",
+    "options": [
+      "Hemopexin",
+      "α1-Antitrypsin",
+      "C-reactive protein (CRP)",
+      "Transferrin"
+    ],
+    "answer": "A",
+    "explanation": "Hemopexin is a small β-globulin that binds to free heme. Haptoglobin is an α2 globulin that binds to free Hgb and disappears from the serum when intravascular hemolysis produces greater than 3 g of free plasma Hgb. However, haptoglobin is an acute phase protein, and hepatic production and release are increased in response to acute infections. The normal serum haptoglobin is most likely the result of increased synthesis and would not accurately estimate the hemolytic episode in this patient."
+  },
+  {
+    "id": 978,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Quantitative determination of HgbA2 and Hgb F are best performed by:",
+    "options": [
+      "High-performance liquid chromatography",
+      "Alkali denaturation",
+      "Electrophoresis",
+      "Direct bichromatic spectrophotometry"
+    ],
+    "answer": "A",
+    "explanation": "Hgb A2 and Hgb F are often quantitated to diagnose persons with thalassemia. The method of choice is HPLC using cation exchange chromatography. Hgbs are eluted from the column in order of increasing positive charge by using a sodium phosphate buffer to produce a gradient of increasing ionic strength. Hgb F elutes from the column earlier than Hgb A2 because it is less positively charged."
+  },
+  {
+    "id": 979,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the correct order of Hgb migration on agarose or cellulose acetate at pH 8.6.",
+    "options": [
+      "– C→F→S→A +",
+      "– S→C→A→F +",
+      "– C→S→F→A +",
+      "– S→F→A→C +"
+    ],
+    "answer": "C",
+    "explanation": "Hgb A2 is the slowest of the normal Hgbs, and Hgb A is the fastest. Hgb F migrates just behind Hgb A. Hgb S migrates midway between Hgb A2 and Hgb A. Hgbs C, CHarlem (Georgetown), OArab, and E migrate with Hgb A2. Hgbs G, DPunjab, and HgbLepore migrate with Hgb S."
+  },
+  {
+    "id": 980,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following abnormal types of Hgb migrates to the same position as Hgb S on agarose or cellulose acetate at pH 8.6?",
+    "options": [
+      "Hgb C",
+      "Hgb DPunjab",
+      "Hgb OArab",
+      "Hgb E"
+    ],
+    "answer": "B",
+    "explanation": "Hgb DPunjab migrates with Hgb S on cellulose acetate or agarose at pH 8.6 to 9.2. Hgb C, E, OArab, and CHarlem migrate to the same position as Hgb A2 on cellulose acetate or agarose at pH 8.6 to 9.2. Hgb S may be differentiated from Hgb DPunjab by using citrate (acid) agar at pH 6.2. When this technique is used, Hgb S migrates further toward the anode than Hgb DPunjab."
+  },
+  {
+    "id": 981,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which Hgb is a β-δ chain hybrid and migrates to the same position as Hgb S at pH 8.6?",
+    "options": [
+      "Hgb CHarlem",
+      "HgbLepore",
+      "Hgb GPhiladelphia",
+      "Hgb DPunjab"
+    ],
+    "answer": "B",
+    "explanation": "HgbLepore results from translocation of β- and δ-globin genes, resulting in a polypeptide chain that migrates midway between Hgb A2 and Hgb A. The chain is transcribed more slowly than the β-polypeptide chain, causing the quantity of HgbLepore to be less than 15%. HgbLepore is suspected when Hgb migrating in the “S” zone comprises less than 20% of the total Hgb. In Hgb S trait, the AS phenotype produces 20% to 40% Hgb S."
+  },
+  {
+    "id": 982,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the correct order of Hgb migration on citrate agar at pH 6.2.",
+    "options": [
+      "– F→S→C→A +",
+      "– F→A→S→C +",
+      "– A→S→F→C +",
+      "– A→C→S→F +"
+    ],
+    "answer": "B",
+    "explanation": "In an acid buffer, the Hgbs are expected to migrate to the cathode, with Hgb A being the slowest because it has the weakest net positive charge. However, Hgb C and Hgb S bind to sulfated pectins in the agar gel, forming a complex that is negatively charged causing them to migrate toward the anode. Hgb C migrates furthest toward the anode, followed by Hgb S. Hgb F migrates furthest toward the cathode. Hgbs A, A2, DPunjab, E, G, OArab, and HgbLepore migrate slightly toward the cathode."
+  },
+  {
+    "id": 983,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which Hgb separates from Hgb S on citrate (acid) agar, but not agarose or cellulose acetate?",
+    "options": [
+      "Hgb DPunjab",
+      "Hgb E",
+      "Hgb CHarlem (Georgetown)",
+      "Hgb OArab"
+    ],
+    "answer": "A",
+    "explanation": "Hgbs OArab, E, and CHarlem migrate to the same position as Hgbs A2 and C on agarose (or cellulose acetate) at pH 8.6. Hgb DPunjab migrates to the same position as Hgb S on agarose, but moves with Hgb A on citrate agar. Agarose is a purified form of agar; it lacks the sulfated pectins required to separate Hgbs DPunjab and G from Hgb S, and Hgbs E, CHarlem, and OArab from Hgb C. Hgb CHarlem is a sickling Hgb, and it migrates to the same position as Hgb S on citrate (acid) agar."
+  },
+  {
+    "id": 984,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement best describes immunofixation electrophoresis (IFE)?",
+    "options": [
+      "Proteins are separated by electrophoresis followed by overlay of monospecific anti- immunoglobulins",
+      "Proteins react with monospecific antisera followed by electrophoresis",
+      "Antisera are electrophoresed and then diffused against the patient’s serum",
+      "Serum is electrophoresed; the separated immunoglobulins diffuse against specific antisera placed into troughs"
+    ],
+    "answer": "A",
+    "explanation": "IFE is used to identify monoclonal bands in serum or urine. Electrophoresis is performed on the serum or urine sample in the same manner as for protein electrophoresis, except that six lanes are used for the same sample. After the proteins are separated, a monospecific antiserum is applied across the surface of lanes 2 to 5 (SSA is used in the first lane). After incubating, the gel is washed and blotted to remove uncomplexed proteins and salts. The immune complexes that remain are stained. Monoclonal bands will be seen only in those lanes where the monoclonal immunoglobulin was recognized by the corresponding antiserum. It should also be present at the same position in the first lane which shows the five-band separation of the sample."
+  },
+  {
+    "id": 985,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "In double immunodiffusion reactions, the precipitin band is:",
+    "options": [
+      "Invisible before the equivalence point is reached",
+      "Concave to the protein of greatest molecular weight",
+      "Closest to the well containing the highest level of antigen",
+      "Located in an area of antibody excess"
+    ],
+    "answer": "B",
+    "explanation": "In double immunodiffusion (Ouchterlony), the molecules of lower molecular weight move fastest through the gel, causing a visible precipitin arc when antigen and antibody approach equivalence. At equivalence the precipitin arc remains stationary. If the concentration of antisera is constant, the distance of the precipitin arc from the antigen well is proportional to antigen concentration."
+  },
+  {
+    "id": 986,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding the identification of monoclonal proteins by IFE is true?",
+    "options": [
+      "The monoclonal band must be present in the γ region",
+      "When testing for a monoclonal gammopathy, both serum and urine must be examined",
+      "A diagnosis of monoclonal gammopathy is based upon quantitation of IgG, IgA, and IgM",
+      "A monoclonal band always indicates a malignant disorder"
+    ],
+    "answer": "B",
+    "explanation": "Quantitation of IgG, IgA, and IgM indicates the concentration of each class of immunoglobulin but does not distinguish monoclonal gammopathies from polyclonal gammopathies. Monoclonal characteristics are determined by demonstrating restricted electrophoretic mobility, indicating that all immunoglobulins in the band are of the same amino acid sequence. Monoclonal light chains can be demonstrated in about 60% of monoclonal gammopathies. In up to 25% of multiple myeloma patients, a heavy- chain gene deletion results in production of monoclonal light chains only. Because these are filtered by the glomerulus, the procedure must be performed on urine as well as serum. Some patients with a monoclonal protein fail to develop malignant plasma cell proliferation. This state is called a monoclonal gammopathy of undetermined significance (MGUS). Within 10 to 15 years, 15% to 20% of persons with MGUS develop some form of lymphoproliferative disease."
+  },
+  {
+    "id": 987,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding paraproteins is true?",
+    "options": [
+      "Oligoclonal banding is seen in the CSF of greater than 90% of patients with multiple sclerosis",
+      "The Bence-Jones protein heat test is confirmatory for monoclonal light chains",
+      "Light chains found in urine are always derived from monoclonal protein",
+      "The IgA band is usually cathodal to the IgG precipitin band"
+    ],
+    "answer": "A",
+    "explanation": "The α-heavy chain is more acidic than the γ- or μ-chains, giving IgA a greater net negative charge at alkaline pH. The IgA band is anodal to the IgG or IgM band. In hepatic cirrhosis, the β-γ bridging observed on serum protein electrophoresis results from increased IgA. Light chains in the form of Fab fragments are often found in increased amounts in the urine of patients with polyclonal gammopathies, especially from patients with an autoimmune disease. These can cause a positive Bence-Jones test and will produce a polyclonal (spread-out) appearance on IFE gels."
+  },
+  {
+    "id": 988,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding IFE is true?",
+    "options": [
+      "Serum containing a monoclonal protein should have a κ:λ ratio of 0.5",
+      "A monoclonal band seen with monospecific antiserum should not be visible in the lane where polyvalent antiserum or sulfosalicylic acid was added",
+      "CSF should be concentrated 50- to100-fold before performing IFE",
+      "When oligoclonal bands are seen in CSF, they must also be present in serum to indicate multiple sclerosis"
+    ],
+    "answer": "C",
+    "explanation": "Any monoclonal precipitin band formed when heavy- or light-chain–specific antiserum reacts with a sample should also be found in the same position when sample is fixed with sulfosalicylic acid or reacted with polyvalent antihuman Ig. The normal free κ:λ ratio can vary between 0.26 and 1.65. In a monoclonal gammopathy, this ratio always heavily favors the light chain type of M protein. A diagnosis of multiple sclerosis is usually confirmed by demonstration of oligoclonal banding in CSF, which is not present in serum. CSF is usually concentrated 50 to 100 times to increase sensitivity."
+  },
+  {
+    "id": 989,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which test is the most sensitive in detecting early monoclonal gammopathies?",
+    "options": [
+      "HR serum protein electrophoresis",
+      "Urinary electrophoresis for monoclonal light chains",
+      "Capillary electrophoresis of serum and urine",
+      "Serum-free light chain immunoassay"
+    ],
+    "answer": "D",
+    "explanation": "Immunonephelometric free light chain assays can detect monoclonal protein production before the mass is sufficient to cause a monoclonal spike on protein electrophoresis or capillary electrophoresis but will be positive only in cases where monoclonal light chain production occurs. An increase in free κ or λ light chains may be seen in IgD or IgE myelomas in the absence of a monoclonal band. Therefore, measurement of free light chains is recommended along with protein electrophoresis when testing for myeloma. Free light chains are normally present in serum because L chains are made at a faster rate than H chains. However, in cases where free L chains are the result of monoclonal plasma cell proliferation, the κ:λ ratio will be abnormal in addition to one of the L chain types being elevated."
+  },
+  {
+    "id": 990,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which test is the most useful way to evaluate the response to treatment for multiple myeloma?",
+    "options": [
+      "Measure of total immunoglobulin",
+      "Measurement of 24-hour urinary light chain concentration (Bence-Jones protein)",
+      "Capillary electrophoresis to detect M-protein recurrence",
+      "Measurement of serum-free light chains"
+    ],
+    "answer": "D",
+    "explanation": "Unlike electrophoresis methods, serum-free light chain assays are quantitative and an increase in free light chain production with an abnormal κ:λ ratio occurs earliest in recurrence of myeloma. Light chains have a shorter plasma half-life than intact immunoglobulin and therefore, the reduction in free light chain concentration is an earlier indicator of treatment effect than measurement of intact immunoglobulin. It is not subject to the variation in 24-hour urinary light chain measurement caused by sample collection error and abnormal renal function. A 50% or more reduction in serum-free light chain concentration is considered a partial response to treatment. A full response is indicated by reduction to within normal limits (WNL) and a return of the κ:λ ratio to normal. An abnormal free light chain ratio has a 3.5-fold higher risk of progression to myeloma in persons with MGUS."
+  },
+  {
+    "id": 991,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is more commonly associated with a MGUS?",
+    "options": [
+      "Bone marrow plasma cells comprise 20% of nucleated cells",
+      "Monoclonal protein (M-protein) concentration is 3.5 g/dL",
+      "M-protein is IgG",
+      "Age greater than 60 at the time of monoclonal protein discovery"
+    ],
+    "answer": "D",
+    "explanation": "MGUS is the most common cause of monoclonal gammopathy. About 3% of the U.S. population at age 50 years and 5% at age 70 years have MGUS. The absence of bone lesions and organ damage, plasma cells below 10% of nucleated bone marrow cells, and M-protein below 3.0 g/dL are characteristic of MGUS as opposed to myeloma or other malignant gammopathy. About 50% of persons with MGUS have IgH gene translocations or chromosome 13 deletion associated with multiple myeloma. The risk of transformation of MGUS to malignant disease is about 1% per year."
+  },
+  {
+    "id": 992,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Capillary electrophoresis differs from agarose gel electrophoresis in which respect?",
+    "options": [
+      "A stationary support is not used",
+      "An acidic buffer is used",
+      "A low voltage is used",
+      "Electroendosmosis does not occur"
+    ],
+    "answer": "A",
+    "explanation": "Capillary electrophoresis is a rapid automated procedure for separating Hgb, serum or body fluid proteins. Instead of a stationary support, the proteins migrate based on their charge/mass ratio inside a small-bore silica capillary tube (20–200 μm). The cations in the buffer are attracted to the negatively charged silicates and migrate to the cathode rapidly when voltage is applied. The electroendosmotic force created moves the proteins toward the cathode, and they are detected by an in-line UV photometer that measures their absorbance. High voltage (e.g., 9,000 volts) is used to effect separation of serum proteins in an 8- to 10-minute run, giving resolution equal to or greater than HR agarose gel electrophoresis."
+  },
+  {
+    "id": 993,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the order of mobility of lipoproteins electrophoresed on agarose at pH 8.6.",
+    "options": [
+      "– Chylomicrons→pre-β→β→α+",
+      "– β→pre-β→α→chylomicrons +",
+      "– Chylomicrons→β→pre-β→α +",
+      "– α→β→pre-β→chylomicrons +"
+    ],
+    "answer": "C",
+    "explanation": "Although pre-β-lipoprotein is lower in density than β-lipoprotein, it migrates faster on agarose or cellulose acetate because of its more negative apoprotein composition. When lipoproteins are separated on polyacrylamide gel, pre-β-lipoprotein moves slower than β-lipoprotein. Molecular sieving causes migration to correlate with lipoprotein density when PAGE is used."
+  },
+  {
+    "id": 994,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Following ultracentrifugation of plasma, which fraction correlates with pre-β lipoprotein?",
+    "options": [
+      "Very low-density lipoprotein (VLDL)",
+      "Low-density lipoprotein (LDL)",
+      "High-density lipoprotein (HDL)",
+      "Chylomicrons"
+    ],
+    "answer": "A",
+    "explanation": "VLDL migrates in the pre-β zone. VLDL is about 50% triglyceride, whereas LDL is only 10% triglyceride by weight. LDL is formed from VLDL in the circulation. The process is initiated by apoC-II on VLDL activating peripheral lipoprotein lipase. Hydrolysis of triglycerides and transfer of apoproteins from VLDL to HDL result in formation of intermediate-density lipoprotein (IDL). Larger IDLs are returned to the liver as remnant lipoproteins. Further hydrolysis of triglycerides, transfer cholesterol esters from HDL, and transfer of apoproteins to HDL convert IDL to LDL."
+  },
+  {
+    "id": 995,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the lipoprotein fraction that carries most of the endogenous triglycerides.",
+    "options": [
+      "VLDL",
+      "LDL",
+      "HDL",
+      "Chylomicrons"
+    ],
+    "answer": "A",
+    "explanation": "VLDL is formed in the liver largely from chylomicron remnants and hepatic-derived triglycerides. Therefore, VLDL transports the majority of endogenous triglycerides, whereas the triglycerides of chylomicrons are derived entirely from dietary absorption."
+  },
+  {
+    "id": 996,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "The protein composition of HDL is what percentage by weight?",
+    "options": [
+      "Less than 2%",
+      "25%",
+      "50%",
+      "90%"
+    ],
+    "answer": "C",
+    "explanation": "About 50% of the weight of HDL is protein, largely apo A-I and apo A-II. HDL is about 30% phospholipid and 20% cholesterol by weight. HDL binds and esterifies free cholesterol from cells and transports it to the liver, where it can be eliminated in bile."
+  },
+  {
+    "id": 997,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which apoprotein is inversely related to risk of coronary heart disease?",
+    "options": [
+      "Apoprotein A-I",
+      "Apoprotein B-100",
+      "Apoprotein C-II",
+      "Apoprotein E4"
+    ],
+    "answer": "A",
+    "explanation": "Apoprotein A-I and apo A-II are the principal apoproteins of HDL, and low apo A-I has a high correlation with atherosclerosis. Conversely, apo B-100 is the principal apoprotein of LDL, and an elevated level is a major risk factor in the development of coronary heart disease. Apoprotein assays are not recommended as screening tests because they are not as well standardized as LDL cholesterol assays. However, apo B- 100 assay is more sensitive than LDL cholesterol in predicting coronary artery disease (CAD) risk. Apo B-100 may be abnormal in persons with increased small dense LDL. Small dense LDL is more atherogenic than large LDL molecules. In addition, persons with hyperapobetalipoproteinemia overproduce apo B-100 without having significantly elevated LDL cholesterol."
+  },
+  {
+    "id": 998,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which lipoprotein accumulates in familial β dyslipoproteinemia?",
+    "options": [
+      "Chylomicrons",
+      "VLDL",
+      "IDL",
+      "HDL"
+    ],
+    "answer": "C",
+    "explanation": "IDL has roughly equal amounts of cholesterol and triglyceride. IDL has a density of about 1.006 to 1.020, causing it to float on the 1.063 density potassium bromide solution used to recover LDL by ultracentrifugation. IDL has faster electrophoretic mobility on agarose than beta lipoprotein. These observations gave rise to the terms “floating beta” and “broad beta,” respectively. Familial dysbetalipoproteinemia is, in part, caused by a polymorphism of apo E (apo E2) that has poor affinity for the apo E receptor on hepatocytes. Not all persons with the homozygous polymorphism develop the disease; thus, other factors are necessary for the accumulation of IDL."
+  },
+  {
+    "id": 999,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following mechanisms accounts for the elevated plasma level of β lipoproteins seen in familial hypercholesterolemia?",
+    "options": [
+      "Hyperinsulinemia",
+      "ApoB-100 receptor defect",
+      "ApoC-II activated lipase deficiency",
+      "ApoE3 deficiency"
+    ],
+    "answer": "B",
+    "explanation": "The production of excess insulin leads to hypertriglyceridemia and is one mechanism responsible for familial endogenous hypertriglyceridemia. ApoC-II is an activator of lipoprotein lipase, and a homozygous deficiency results in high plasma chylomicrons and VLDL. ApoE3 deficiency is synonymous with inheritance of two apo-E2 alleles that lead to β-dyslipoproteinemia. Familial hypercholesterolemia is inherited as an autosomal dominant trait. Over 150 mutations affecting the LDL receptor have been described, and its incidence is approximately 1 in 230. A related hypercholesterolemia occurs in people of European ancestry as a result of a mutation of the apo B-100 gene that causes LDL to have a lower affinity for the LDL receptor. Together, they make familial hypercholesterolemia the most common inherited hyperlipoproteinemia."
+  },
+  {
+    "id": 1000,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which enzyme deficiency is most commonly associated with familial hypertriglyceridemia associated with fasting plasma cholomicrons?",
+    "options": [
+      "β-Glucocerebrosidase deficiency",
+      "Post–heparin-activated lipoprotein lipase deficiency",
+      "Apo B deficiency",
+      "Apo C-III deficiency"
+    ],
+    "answer": "B",
+    "explanation": "Deficiency of capillary endothelial lipase is the most common cause of fasting chylomicronemia. This lipase is also known as post–heparin-activated lipase and apo C-II–activated lipase. β-Glucocerebrosidase deficiency results in accumulation of glucocerebrosides and is the cause of Gaucher disease. Apo C-II deficiency results in decreased activity of peripheral and hepatic lipases and is associated with hypertriglyceridemia. Apo B deficiency resulting from a point mutation in the apo B gene, is responsible for hypobetalipoproteinemia, and is inherited as an autosomal dominant trait. LDL levels are about half normal in heterozygotes, and this reduces their risk of CAD."
+  },
+  {
+    "id": 1001,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is most consistently associated with secondary hypercholesterolemia?",
+    "options": [
+      "Hypothyroidism",
+      "Pancreatitis",
+      "Oral contraceptive therapy",
+      "Diabetes mellitus"
+    ],
+    "answer": "A",
+    "explanation": "The conditions listed are very commonly encountered causes of secondary hyperlipoproteinemia. Oral contraceptives, pregnancy, and estrogens may cause secondary hypertriglyceridemia as a result of increased VLDL and endogenous triglycerides. Hypothyroidism and obstructive hepatobiliary diseases are usually associated with secondary hypercholesterolemia caused by high LDL. Diabetes mellitus and chronic pancreatitis may produce hypertriglyceridemia, chylomicronemia, or mixed hyperlipidemia."
+  },
+  {
+    "id": 1002,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is associated with Tangier disease?",
+    "options": [
+      "Apoprotein C-II deficiency",
+      "Homozygous apo B-100 deficiency",
+      "Apoprotein C-II activated lipase",
+      "Apoprotein A-I deficiency"
+    ],
+    "answer": "D",
+    "explanation": "Deficiency of apo A-I is seen in Tangier disease, a familial hypocholesterolemia. Heterozygotes have about half of the normal level of HDL (familial hypoalphalipoproteinemia), and homozygotes have almost no detectable HDL. Tangier disease is caused by a mutation of the ATP-binding cassette gene. The deficient gene prevents apo A-I from binding lipids, and it is rapidly catabolized. Abetalipoproteinemia results from defective hepatic transport of apo B-100 and is inherited as an autosomal recessive condition. LDL is absent, and the condition is associated with hemolytic anemia and CNS damage."
+  },
+  {
+    "id": 1003,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Both HDL and LDL are homogenous",
+      "There are several subfractions of LDL but not HDL",
+      "There are several subfractions of HDL but not LDL",
+      "There are several subfractions of both HDL and LDL"
+    ],
+    "answer": "D",
+    "explanation": "There are seven subfractions of LDL and 10 subfractions of HDL. These are grouped into subclasses defined by their molecular sizes. In general, the small, dense LDL subclasses contain more oxidized LDL and are more atherogenic than the larger LDL molecules. The larger HDL subfractions comprising the HDL-3 subclass are associated with a lower risk of CAD."
+  },
+  {
+    "id": 1004,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the lipid testing protocol for adults recommended by the National Cholesterol Education Program (NCEP) to evaluate risk for atherosclerosis beginning at age 20 years?",
+    "options": [
+      "Total cholesterol every year",
+      "Total cholesterol every 2 years",
+      "Lipid profile every 5 years",
+      "LDL cholesterol every 2 years"
+    ],
+    "answer": "C",
+    "explanation": "Because LDL cholesterol, HDL cholesterol, VLDL cholesterol, and triglycerides are all risk factors for CAD, the NCEP recommends a lipid profile to include triglycerides, total cholesterol, HDL cholesterol, and LDL cholesterol be performed every 5 years beginning at age 20 years. However, because LDL cholesterol is the target of treatment, therapeutic goals are based on LDL cholesterol. Guidelines recommend an LDL cholesterol goal as low as possible for individuals with the highest risk."
+  },
+  {
+    "id": 1005,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the most appropriate procedure when a fasting lipid study of triglyceride, total cholesterol, HDL cholesterol, and LDL cholesterol tests are ordered?",
+    "options": [
+      "8 hours; nothing but water allowed",
+      "10 hours; water, smoking, coffee, tea (no sugar or cream) allowed",
+      "12 hours; nothing but water allowed",
+      "16 hours; water, smoking, coffee, tea (no sugar or cream) allowed"
+    ],
+    "answer": "C",
+    "explanation": "Lipid orders that include triglyceride and LDL cholesterol should be performed by using a fasting plasma or serum specimen whenever possible. A 12- to 14-hour fast is preferred, especially when nonfasting lipids are high. The patient should be instructed to drink nothing but water during this period. Fasting specimens are preferred for total cholesterol and HDL cholesterol as well, but nonfasting specimens may be used for initial screening purposes."
+  },
+  {
+    "id": 1006,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Treatment recommendations for patients with coronary heart disease are based on the measurement of which analyte?",
+    "options": [
+      "HDL cholesterol",
+      "Apo B-100",
+      "LDL cholesterol",
+      "Total cholesterol"
+    ],
+    "answer": "C",
+    "explanation": "The NECP has identified LDL cholesterol as the target of therapy for reducing the risk of heart attack because lowering LDL cholesterol has proven to be an effective intervention. The greater the risk of coronary heart disease, the lower the cutoff for intervention. For persons at high risk (a 10-year risk of heart attack greater than 20%) the cutoff is 100 mg/dL or greater for initiation of statin therapy. For highest-risk persons (those with acute coronary syndrome [ACS] and multiple or uncontrolled risk factors) the treatment goal is LDL cholesterol that is as low as possible."
+  },
+  {
+    "id": 1007,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the HDL cholesterol cutoff that constitutes a risk factor for CAD as recommend by NCEP?",
+    "options": [
+      "Less than 30 mg/dL",
+      "Less than 40 mg/dL",
+      "Less than 30 mg/dL for males and less than 40 mg/dL for females",
+      "Less than 45 mg/dL for males and less than 50 mg/dL for females"
+    ],
+    "answer": "B",
+    "explanation": "The HDL cholesterol cutoff recommended by NCEP is less than 40 mg/dL regardless of gender. A result below 40 mg/dL counts as a risk factor for CAD. Conversely, if the HDL cholesterol is 60 mg/dL or greater, then one risk factor is subtracted from the total number. The therapeutic goal for someone with low HDL cholesterol is still reduction of LDL cholesterol (if elevated), weight loss, and increased exercise."
+  },
+  {
+    "id": 1008,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "An EDTA blood sample is collected from a nonfasting person for a complete blood count (CBC). The physician collected the sample from the femoral vein because venipuncture from the arm was unsuccessful. He called the laboratory 15 minutes after the sample arrived and requested a lipid study, including triglyceride, total cholesterol, HDL cholesterol, and LDL cholesterol. Which test results should be used to evaluate the patient’s risk for CAD?",
+    "options": [
+      "Total cholesterol and LDL cholesterol",
+      "LDL cholesterol and triglyceride",
+      "Total cholesterol and HDL cholesterol",
+      "All four lipid results can be used if the nonfasting triglyceride level is less than 200 mg/dL"
+    ],
+    "answer": "D",
+    "explanation": "The American Heart Association (AHA) prefers a 12-hour fasting sample when screening persons for risk of CAD. However, if a fasting sample is unavailable, the AHA recommends performing the lipid panel with a nonfasting sample, provided the triglyceride levels are less than 200 mg/dL. An EDTA plasma sample is acceptable for most enzymatic cholesterol and triglyceride assays."
+  },
+  {
+    "id": 1009,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which mutation results in high levels of LDL cholesterol?",
+    "options": [
+      "Lipoprotein lipase (LPL)",
+      "Apoprotein A1 (APOA1)",
+      "Proprotein convertase subtilisin/kexin type 9 (PCSK9)",
+      "Lipin1 (LPIN1)"
+    ],
+    "answer": "C",
+    "explanation": "Mutations of PCSK9 can result in overexpression of the PCSK9 protein, which binds to the LDL receptor on cells and downregulates it. This results in accumulation of LDL cholesterol in plasma. Monoclonal antibodies that block this binding are approved for treating patients with familial hypercholesterolemia and arteriosclerotic cardiovascular disease if the patients do not respond adequately to statins. Homozygous LPIN1 mutations are very rare and cause childhood rhabdomyolysis. APOA1 mutations cause low HDL and are inherited as an autosomal dominant trait, whereas Tangier disease is caused by an autosomal recessive mutation of the ABCAI transporter gene. LPL mutations cause hypertriglyceridemia. One LPL mutation, (Asn291Ser) causes low HDL cholesterol and is often found along with apoB 100 receptor mutations; this explains why many persons with familial hypercholesterolemia have low HDL as well."
+  },
+  {
+    "id": 1010,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following diseases is caused by a deficiency of sphingomyelinase?",
+    "options": [
+      "Gaucher disease",
+      "Fabry disease",
+      "Niemann-Pick disease",
+      "Tay-Sachs disease"
+    ],
+    "answer": "C",
+    "explanation": "The diseases mentioned result from inborn errors of lipid metabolism (lipidoses) caused by deficiency of an enzyme needed for lipid degradation. Specific lipids accumulate in the lysosomes. Niemann-Pick disease results from a deficiency of sphingomyelinase; Gaucher disease from β-glucocerebrosidase; Fabry disease (sex- linked) from α-galactosidase A; and Tay-Sachs from N acetylglucosaminidase A."
+  },
+  {
+    "id": 1011,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following enzymes is common to all enzymatic methods for triglyceride measurement?",
+    "options": [
+      "Glycerol phosphate oxidase",
+      "Glycerol phosphate dehydrogenase",
+      "Glycerol kinase",
+      "Pyruvate kinase"
+    ],
+    "answer": "C",
+    "explanation": "All enzymatic triglyceride methods require lipase to hydrolyze triglycerides, and glycerol kinase to phosphorylate glycerol, forming glycerol-3-phosphate. The most common method couples glycerol kinase with glycerol phosphate oxidase and peroxidase.\n1. Triglyceride + H2O → (lipase) glycerol + fatty acids\n2. Glycerol + ATP → (GK) glycerol-3-phosphate + ADP\n3. Glycerol-3-phosphate + O2 → (GPO) dihydroxyacetone phosphate + H2O2\n4. H2O2 + phenol + 4-aminophenazone → (Px) quinoneimine dye + H2O\nGK = glycerol kinase; GPO = glycerol phosphate oxidase; Px = peroxidase"
+  },
+  {
+    "id": 1012,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the reagent needed in the coupling enzyme reaction used to generate a colored product in the cholesterol oxidase method for cholesterol.",
+    "options": [
+      "Cholestahexaene",
+      "H2O2",
+      "4-Aminoantipyrine",
+      "Cholest-4-ene-3-one"
+    ],
+    "answer": "C",
+    "explanation": "In the cholesterol oxidase method, cholesterol ester hydrolase converts cholesterol esters to free cholesterol by hydrolyzing the fatty acid from the C3-OH group. Cholesterol oxidase catalyzes the oxidation of free cholesterol at the C3-OH group forming cholest-4-ene-3-one and H2O2. The peroxide is used in a peroxidase reaction to oxidize a dye (e.g., 4-aminoantipyrine), which couples to phenol, forming a red quinoneimine complex."
+  },
+  {
+    "id": 1013,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the purpose of the saponification step used in the Abell-Kendall method for cholesterol measurement?",
+    "options": [
+      "Remove phospholipids",
+      "Reduce sterol molecules structurally similar to cholesterol",
+      "Convert cholesterol esters to free cholesterol",
+      "Remove proteins that can interfere with color formation"
+    ],
+    "answer": "C",
+    "explanation": "The Abell–Kendall method is the reference method for cholesterol assay because differences in esterase activity and interference in the peroxidase step are potential sources of error in enzymatic assays. Saponification is performed to hydrolyze the fatty acid esters of cholesterol, forming free cholesterol. This is required because the reagents react more intensely with cholesterol esters than with free cholesterol. Saponification is followed by extraction of cholesterol in petroleum ether to separate it from proteins and interfering substances. The extract is reacted with sulfuric acid, acetic anhydride, and acetic acid (Liebermann-Burchard reagent), which oxidizes the cholesterol and forms a colored product."
+  },
+  {
+    "id": 1014,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following methods for HDL cholesterol is the reference method?",
+    "options": [
+      "Selective inhibition by anti-apo B-100 and apo CII",
+      "Magnesium–phosphotungstate precipitation",
+      "Magnesium–dextran precipitation",
+      "Ultracentrifugation followed by manganese-heparin precipitation"
+    ],
+    "answer": "D",
+    "explanation": "Ultracentrifugation of plasma in a salt solution with a density of 1.006 is used first to remove VLDL that can block the complete precipitation of LDL. This is followed by precipitation of LDL and any other non-HDL lipoproteins in the bottom layer with Mn-heparin. The supernatant is assayed for cholesterol content by the Abell–Kendall method."
+  },
+  {
+    "id": 1015,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Cholesterol esterase is used in enzymatic assays to:",
+    "options": [
+      "Oxidize cholesterol to form peroxide",
+      "Hydrolyze fatty acids bound to the third carbon atom of cholesterol",
+      "Separate cholesterol from apoproteins A-I and A-II by hydrolysis",
+      "Reduce NAD+ to NADH"
+    ],
+    "answer": "B",
+    "explanation": "Approximately two-thirds of the serum cholesterol has a fatty acid esterified to the hydroxyl group of the third carbon atom of the cholesterol molecule. Cholesterol esterase hydrolyzes fatty acids and is required because cholesterol oxidase cannot utilize esterified cholesterol as a substrate."
+  },
+  {
+    "id": 1016,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following reagents is used in the direct HDL cholesterol method?",
+    "options": [
+      "Sulfated cyclodextrin",
+      "Magnesium sulfate and dextran sulfate",
+      "Anti-apoA-I",
+      "Manganese heparin"
+    ],
+    "answer": "A",
+    "explanation": "The direct HDL cholesterol method most commonly employed uses cholesterol esterase and oxidase enzymes conjugated to polyethylene glycol (PEG). In the presence of sulfated cyclodextrin, the enzymes do not react with non-HDL cholesterol molecules. Anti-apoA-I binds to HDL and is not used in HDL assays."
+  },
+  {
+    "id": 1017,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "What do “direct” or homogenous methods for LDL cholesterol assay have in common?",
+    "options": [
+      "They are inaccurate when plasma triglyceride is above 250 mg/dL",
+      "All use a detergent to facilitate selective reactivity with reagent enzymes",
+      "All use monoclonal antibodies to apo A-1 and apo C",
+      "All are free of interference from abnormal lipoproteins"
+    ],
+    "answer": "B",
+    "explanation": "The direct LDL cholesterol assays are all detergent-based methods. One commonly used method employs a polyanionic detergent to release cholesterol from HDL, chylomicrons, and VLDL. The detergent binds to LDL and blocks its reaction with the esterase and oxidase enzymes in the reagent. Cholesterol oxidase oxidizes the non- LDL cholesterol, forming H2O2, and peroxidase catalyzes the oxidation of an electron donor by the H2O2, which does not result in color formation. A second nonionic detergent and chromogen are added. The second detergent removes the first from the LDL, allowing it to react with the enzymes. The resulting H2O2 reacts with the chromogen, forming a colored product."
+  },
+  {
+    "id": 1018,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Lipoprotein (a), or Lp(a), is significant when elevated in serum because it:",
+    "options": [
+      "Is an independent risk factor for atherosclerosis",
+      "Blocks the clearance of VLDLs",
+      "Displaces apo A-I from HDLs",
+      "Is linked closely to a gene for obesity"
+    ],
+    "answer": "A",
+    "explanation": "Lp(a) is a complex of apo B-100 and protein (a) formed by a disulfide bridge. The complex is structurally similar to plasminogen and is thought to promote coronary heart disease by interfering with the normal fibrinolytic process. Lp(a) is measured by immunoassay; however, the measurement will vary, depending on the type of antibodies used and their epitope specificity."
+  },
+  {
+    "id": 1019,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "Which type of dietary fatty acid is not associated with an increase in serum LDL cholesterol production?",
+    "options": [
+      "Monounsaturated trans fatty acids",
+      "Saturated fatty acids",
+      "Monounsaturated cis fatty acids",
+      "Monounsaturated trans Ω-9 fatty acids"
+    ],
+    "answer": "C",
+    "explanation": "Polyunsaturated and cis monounsaturated fatty acids are not associated with increased production of LDL cholesterol. On the other hand, saturated and trans monounsaturated fatty acids are both associated with increased LDL. Cis fatty acids are those in which the hydrogen atoms belonging to the double-bonded carbons are on the same side of the molecule. Ω-9 (n-9) fatty acids are those with a double bond located 9 carbons from the terminal methyl group. Ω-Fatty acids are associated with increased cholesterol, if the hydrogens attached to the double-bonded carbons are in the trans position."
+  },
+  {
+    "id": 1020,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A lipemic specimen collected from an adult after a 12-hour fast was assayed for total cholesterol, triglycerides, and HDL cholesterol by using a direct HDL method. Following are the results: Total cholesterol = 220 mg/Dl HDL cholesterol = 40 mg/dL Triglyceride = 420 mg/dL The physician requests an LDL cholesterol assay after receiving the results. How should the LDL cholesterol be determined?",
+    "options": [
+      "Dilute the specimen 1:10 and repeat all tests. Calculate LDL cholesterol using the Friedewald equation",
+      "Perform a direct LDL cholesterol assay",
+      "Ultracentrifuge the sample and repeat the HDL cholesterol on the infranate. Use the new result to calculate the LDL cholesterol",
+      "Repeat the HDL cholesterol using the manganese–heparin precipitation method. Use the new result to calculate the LDL cholesterol"
+    ],
+    "answer": "B",
+    "explanation": "An accurate LDL cholesterol can be reported if the direct (detergent) method for LDL cholesterol is employed. These methods are not subject to interference by triglycerides at a concentration below 700 mg/dL."
+  },
+  {
+    "id": 1021,
+    "section": "Proteins, Electrophoresis, and Lipids",
+    "chapter": "Clinical Chemistry",
+    "question": "A person has a fasting triglyceride level of 240 mg/dL. The physician wishes to know the patient’s non-HDL cholesterol level. What cholesterol fractions should be measured?",
+    "options": [
+      "Total cholesterol and HDL cholesterol",
+      "Total cholesterol and LDL cholesterol",
+      "HDL cholesterol and LDL cholesterol",
+      "Total cholesterol and chylomicrons"
+    ],
+    "answer": "A",
+    "explanation": "When HDL cholesterol is subtracted from total cholesterol, the result is called non- HDL cholesterol. This result includes LDL cholesterol, VLDL cholesterol, and atherogenic remnant lipoproteins. Individuals who have a fasting triglyceride 200 mg/dL or greater may be at increased risk for CAD because of atherogenic VLDL remnants, and the treatment goal is to have a non-HDL cholesterol level no more than 30 mg/dL greater than the LDL cholesterol level."
+  },
+  {
+    "id": 1022,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "An international unit (IU) of enzyme activity is the quantity of enzyme that:",
+    "options": [
+      "Converts 1 µmol of substrate to product per liter",
+      "Forms 1 mg of product per deciliter",
+      "Converts 1 µmol of substrate to product per minute",
+      "Forms 1 µmol of product per deciliter"
+    ],
+    "answer": "C",
+    "explanation": "The international unit is a rate expressed in micromoles per minute. Activity is reported as international units per liter (IU/L) or milli–international units per milliliter (mIU/mL). The SI unit for enzyme activity is katal (1 katal converts 1 mole of substrate to product in 1 second)."
+  },
+  {
+    "id": 1023,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following measurement modes does not allow for continuous monitoring of enzyme activity?",
+    "options": [
+      "Initial absorbance is measured followed by a second reading after 5 minutes",
+      "Absorbance is measured at 10-second intervals for 100 seconds",
+      "Absorbance is monitored continuously for 1 minute using a chart recorder",
+      "Reflectance is measured from a xenon source lamp pulsing at 60 Hz"
+    ],
+    "answer": "A",
+    "explanation": "A kinetic assay uses several evenly spaced absorbance measurements to calculate the change in absorbance per unit time. A constant change in absorbance per unit of time occurs only when the rate of the reaction is zero order (independent of substrate concentration). Enzyme activity is proportional to rate only under zero-order conditions."
+  },
+  {
+    "id": 1024,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding enzymatic reactions is true?",
+    "options": [
+      "The enzyme shifts the equilibrium of the reaction to the right",
+      "The enzyme alters the equilibrium constant of the reaction",
+      "The enzyme increases the rate of the reaction",
+      "The enzyme alters the energy difference between reactants and products"
+    ],
+    "answer": "C",
+    "explanation": "An enzyme will accelerate the rate of a reaction, reducing the time required to reach equilibrium. The concentration of reactants and products at equilibrium will be the same with or without the enzyme."
+  },
+  {
+    "id": 1025,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement about enzymes is true?",
+    "options": [
+      "An enzyme alters the Gibbs free energy of the reaction",
+      "Enzymes cause a reaction with a positive free energy to occur spontaneously",
+      "An enzyme’s natural substrate has the highest Km",
+      "A competitive inhibitor will alter the apparent Km of the reaction"
+    ],
+    "answer": "D",
+    "explanation": "Enzymes alter the energy of activation by forming a metastable intermediate, the enzyme substrate complex. Enzymes do not alter the free energy or direction of a reaction. Competitive inhibitors bind to the active site where the enzyme binds substrate and are overcome by increasing the substrate concentration."
+  },
+  {
+    "id": 1026,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which substrate concentration is needed to achieve zero-order conditions?",
+    "options": [
+      "Greater than 99 × Km",
+      "[S] = Km",
+      "Less than 10 × Km",
+      "[S] = 0"
+    ],
+    "answer": "A",
+    "explanation": "A zero-order reaction rate is independent of substrate concentration because there is sufficient substrate to saturate the enzyme.\nV = Vmax × [S] / (Km + [S])\nwhere V = velocity, Vmax = maximum velocity, [S] = substrate concentration, and Km = substrate concentration required to give 1/2 Vmax. If [S] >>> Km, then the Km can be ignored.\nV = Vmax × [S] / [S] = Vmax × [S]⁰\nor velocity approaches maximum and is independent of substrate concentration. When [S] is 10× Km velocity will be greater than 90% of Vmax."
+  },
+  {
+    "id": 1027,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements is true?",
+    "options": [
+      "Apoenzyme + prosthetic group = holoenzyme",
+      "A coenzyme is an inorganic molecule required for activity",
+      "Cofactors are as tightly bound to the enzyme as prosthetic groups",
+      "All enzymes have optimal activity at pH 7.00"
+    ],
+    "answer": "A",
+    "explanation": "A coenzyme is an organic molecule required for full enzyme activity. A prosthetic group is a coenzyme that is tightly bound to the apoenzyme and is required for activity. Cofactors are inorganic atoms or molecules needed for full catalytic activity. Pyridoxyl-5’-phosphate (P-5’-P) is a prosthetic group for ALT and AST. Consequently, patients with low levels (vitamin B6 deficiency) may have reduced transaminase activity in vitro. Enzymes can have diverse pH (and temperature) optima."
+  },
+  {
+    "id": 1028,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements about enzymatic reactions is true?",
+    "options": [
+      "NADH has absorbance maxima at 340 and 366 nm",
+      "Enzyme concentration must be in excess to achieve zero-order kinetics",
+      "Rate is proportional to substrate concentration in a zero-order reaction",
+      "Accumulation of the product increases the reaction rate"
+    ],
+    "answer": "A",
+    "explanation": "Most enzymes are measured by monitoring the rate of absorbance change at 340 nm as NADH is produced or consumed. This rate will be proportional to enzyme activity when substrate is in excess. When the enzyme is present in excess, the initial reaction rate will be proportional to substrate concentration. This condition, called a first-order reaction, is needed when the enzyme is used as a reagent to measure a specific analyte."
+  },
+  {
+    "id": 1029,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "The increase in the level of serum enzymes used to detect cholestatic liver disease is caused mainly by:",
+    "options": [
+      "Enzyme release from dead cells",
+      "Leakage from cells with altered membrane permeability",
+      "Decreased perfusion of the tissue",
+      "Increased production and secretion by cells"
+    ],
+    "answer": "D",
+    "explanation": "The amount of enzyme in the serum can be increased by necrosis, altered permeability, secretion, or synthesis. It is also dependent on tissue perfusion, enzyme half-life, molecular size, and location of the enzyme within the cell. Most enzymes are liberated by necrosis, but a few are produced and secreted at a greater rate, such as ALP and γ- glutamyltransferase in obstructive liver disease."
+  },
+  {
+    "id": 1030,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following enzymes is considered most tissue specific?",
+    "options": [
+      "CK",
+      "Amylase",
+      "ALP",
+      "ADH"
+    ],
+    "answer": "D",
+    "explanation": "No enzyme is truly tissue specific and diagnostic accuracy depends on recognizing changes in plasma levels that characterize different diseases. This includes the mass or activity of enzyme released, its rise, peak, and return to normal, the isoenzyme(s) released, and the concomitant changes of other enzymes. ALT and ADH are primarily increased in necrotic liver disease."
+  },
+  {
+    "id": 1031,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following enzymes is activated by calcium ions?",
+    "options": [
+      "CK",
+      "Amylase",
+      "ALP",
+      "LD"
+    ],
+    "answer": "B",
+    "explanation": "Most enzymes require metals as activators or cofactors. CK and ALP require Mg+2 for full activity, and amylase requires Ca+2. Metals required for activity should be components of the substrate used for enzyme analysis. The substrate must also contain anions required (e.g., Cl– for amylase) and should not contain inhibiting cations or anions (e.g., Zn+2 and Mn+2 for CK)."
+  },
+  {
+    "id": 1032,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following enzymes is a transferase?",
+    "options": [
+      "ALP",
+      "CK",
+      "Amylase",
+      "LD"
+    ],
+    "answer": "B",
+    "explanation": "Enzymes are identified by a numeric system called the EC (Enzyme Commission) number. The first number refers to the class of the enzyme. There are six classes; in order, these are oxidoreductases, transferases, hydrolases, lyases, isomerases, and ligases. Dehydrogenases are oxidoreductases, whereas kinases and transaminases are transferases. CK is EC number 2.7.3.2, which distinguishes it from other kinases."
+  },
+  {
+    "id": 1033,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement about methods for measuring LD is true?",
+    "options": [
+      "The formation of pyruvate from lactate (forward reaction) generates NAD+",
+      "The pyruvate-to-lactate reaction proceeds at about twice the rate as the forward reaction",
+      "The lactate-to-pyruvate reaction is optimized at pH 7.4",
+      "The negative-rate reaction is preferred"
+    ],
+    "answer": "B",
+    "explanation": "Although the rate of the reverse reaction (P → L) is faster, the L → P reaction is more popular because it produces a positive rate (generates NADH), is not subject to product inhibition, and is highly linear. The optimal pH for the forward reaction is approximately 8.8."
+  },
+  {
+    "id": 1034,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which condition produces the highest elevation of serum lactate dehydrogenase (LD)?",
+    "options": [
+      "Pernicious anemia",
+      "Myocardial infarction",
+      "Acute hepatitis",
+      "Muscular dystrophy"
+    ],
+    "answer": "A",
+    "explanation": "Serum LD levels are highest in pernicious anemia, reaching 10 to 50 times the upper reference limit (URL) as a result of intramedullary hemolysis. Moderate elevations (5– 10 × URL) usually are seen in acute myocardial infarction (AMI), necrotic liver disease, and muscular dystrophy. Slight increases (2–3 × URL) are sometimes seen in obstructive liver disease."
+  },
+  {
+    "id": 1035,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "In which condition is the LD most likely to be within normal limits?",
+    "options": [
+      "Hepatic carcinoma",
+      "Pulmonary infarction",
+      "Acute appendicitis",
+      "Crush injury"
+    ],
+    "answer": "C",
+    "explanation": "LD is increased slightly to moderately in most types of liver disease. Smallest elevations are seen in obstructive jaundice and highest in hepatic carcinoma and toxic hepatitis, where levels can reach 10-fold the URL. LD is also increased in crush injury and muscular dystrophies as a result of skeletal muscle damage, and in pulmonary infarction resulting from embolism formation. Amylase is increased in a majority of persons with acute appendicitis, but LD is not."
+  },
+  {
+    "id": 1036,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "The LD pleural fluid:serum ratio for a transudative fluid is usually:",
+    "options": [
+      "3:1 or higher",
+      "2:1",
+      "1:1",
+      "1:2 or less"
+    ],
+    "answer": "D",
+    "explanation": "The LD activity of body fluids is normally less than half that of serum, and a fluid:serum LD ratio greater than 1:2 is highly suggestive of an exudative process. Elevated LD in chest fluid is often caused by lung malignancy, metastatic carcinoma, Hodgkin disease, and leukemia."
+  },
+  {
+    "id": 1037,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "In which type of liver disease would you expect the greatest elevation of LD?",
+    "options": [
+      "Toxic hepatitis",
+      "Alcoholic hepatitis",
+      "Cirrhosis",
+      "Acute viral hepatitis"
+    ],
+    "answer": "A",
+    "explanation": "Liver disease produces an elevated LD-4 and LD-5. Levels may reach up to 10 times the URL in toxic hepatitis and in hepatoma. However, LD levels are lower in viral hepatitis (2–5 × URL), only slightly elevated in cirrhosis (2–3 × URL) and not significantly elevated in alcoholic liver disease."
+  },
+  {
+    "id": 1038,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions will interfere with the measurement of LD?",
+    "options": [
+      "Slight hemolysis during sample collection",
+      "Storage at 4°C for 3 days",
+      "Storage at room temperature for 16 hours",
+      "Use of plasma collected in heparin"
+    ],
+    "answer": "A",
+    "explanation": "RBCs are rich in LD-1 and LD-2, and even slight hemolysis will falsely elevate results. Hemolytic, megaloblastic, and pernicious anemias are associated with LD levels of 10 to 50 times the URL. LD is stable for 2 days at room temperature or 1 week at 4°C; however, freezing causes deterioration of LD-5. The activity of LD is inhibited by EDTA, which binds divalent cations; serum or heparinized plasma should be used."
+  },
+  {
+    "id": 1039,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "In the Oliver-Rosalki method, the reverse reaction is used to measure CK activity. The enzyme(s) used in the coupling reactions is (are):",
+    "options": [
+      "Hexokinase and G-6-PD",
+      "Pyruvate kinase and LD",
+      "Luciferase",
+      "Adenylate kinase"
+    ],
+    "answer": "A",
+    "explanation": "The Oliver-Rosalki method for CK is based upon the formation of ATP from creatine phosphate. Hexokinase (HK) catalyzes the phosphorylation of glucose by ATP. This produces glucose-6-PO4 and adenosine diphosphate (ADP). Glucose-6-PO4 is oxidized to 6-phosphogluconate as NADP+ is reduced to NADPH.\nATP + glucose → (HK) ADP + glucose-6-PO4\nGlucose-6-PO4 + NADP+ → (G-6-PD) 6-phosphogluconate + NADPH + H+"
+  },
+  {
+    "id": 1040,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "In the Oliver-Rosalki method for CK, AMP is added to the substrate to:",
+    "options": [
+      "Inhibit adenylate kinase",
+      "Block the oxidation of glutathione",
+      "Increase the amount of ADP that is available",
+      "Block the action of diadenosine pentaphosphate"
+    ],
+    "answer": "A",
+    "explanation": "Positive interference in the Oliver-Rosalki method can occur when adenylate kinase is present in the serum from hemolysis or damaged tissue. Adenylate kinase hydrolyzes ADP, forming adenosine monophosphate (AMP) and ATP (2 ADP → (AK) AMP + ATP). This reaction is inhibited by adding AMP and diadenosine pentaphosphate (Ap5A) to the substrate."
+  },
+  {
+    "id": 1041,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which substance is used in the CK assay to activate the enzyme?",
+    "options": [
+      "Flavin adenine dinucleotide (FAD)",
+      "Imidazole",
+      "N-acetylcysteine",
+      "Pyridoxyl-5’-phosphate"
+    ],
+    "answer": "C",
+    "explanation": "In addition to Mg+2, CK requires a thiol compound to reduce interchain disulfide bridges and bind heavy metals that inactivate the enzyme. N-acetylcysteine is an activator of CK used for this purpose in the IFCC recommended method. Pyridoxyl-5’- phosphate is a prosthetic group of AST and ALT. FAD is a prosthetic group of glucose oxidase. Imidazole is used to buffer the CK reagent."
+  },
+  {
+    "id": 1042,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A specimen for CK performed on an automated analyzer using an optimized Oliver-Rosalki method gives an error flag indicating substrate depletion. The sample is diluted 1:2 and 1:4 by the serial dilution technique and reassayed. After correcting for the dilution, the results are as follows: 1:2 Dilution = 3,000 IU/L 1:4 Dilution = 3,600 IU/L Dilutions are made a second time and assayed again but give identical results. What is the most likely explanation?",
+    "options": [
+      "The serum became contaminated prior to making the 1:4 dilution",
+      "The wrong pipet was used to make one of the dilutions",
+      "An endogenous competitive inhibitor is present in the serum",
+      "An error has been made in calculating the enzyme activity of one of the two dilutions"
+    ],
+    "answer": "C",
+    "explanation": "When a competitive inhibitor is present in serum, a dilution of the sample will cause an increase in the reaction rate by reducing the concentration of the inhibitor. Dilution of serum frequently increases the activity of CK and amylase. The same effect will occur when a smaller volume of serum is used in the assay because less inhibitor will be present in the reaction mixture."
+  },
+  {
+    "id": 1043,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A physician calls to request a CK on a sample already sent to the laboratory for coagulation studies. The sample is 2-hour-old citrated blood and has been stored at 4°C. The plasma shows very slight hemolysis. What is the best course of action and the reason for it?",
+    "options": [
+      "Perform the CK assay on the sample because no interferent is present",
+      "Reject the sample because it is slightly hemolyzed",
+      "Reject the sample because it has been stored too long",
+      "Reject the sample because the citrate will interfere"
+    ],
+    "answer": "D",
+    "explanation": "CK activity is lost with excessive storage, the most labile isoenzyme being CK-1. However, CK in serum is stable at room temperature for about 4 hours and up to 1 week at 4°C, provided that an optimized method is used. Slight hemolysis does not interfere because CK is absent from RBCs. More significant hemolysis may cause positive interference by contributing ATP, glucose-6-PO4, and adenylate kinase to the serum. Calcium chelators remove magnesium as well as calcium and should not be used."
+  },
+  {
+    "id": 1044,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding total CK is true?",
+    "options": [
+      "Levels are unaffected by strenuous exercise",
+      "Levels are unaffected by repeated intramuscular injections",
+      "Highest levels are seen in Duchenne muscular dystrophy",
+      "The enzyme is highly specific for heart injury"
+    ],
+    "answer": "C",
+    "explanation": "Total CK is neither sensitive nor specific for AMI. An infarct can occur without causing an elevated total CK. Exercise and intramuscular injections cause a significant increase in total CK. Crush injuries and muscular dystrophy can increase the total CK up to 50 times the URL."
+  },
+  {
+    "id": 1045,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "A patient’s CK-MB isoenzyme concentration is reported as 18 µg/L and the total CK as 560 IU/L. What is the CK relative index (CKI)?",
+    "options": [
+      "0.10%",
+      "3.2%",
+      "10.0%",
+      "30.0%"
+    ],
+    "answer": "B",
+    "explanation": "The CKI is an expression of the portion of the total CK that is attributed to CK-MB.\nCKI = (CK-MB in µg/L ÷ Total CK in IU/L) × 100\nThe reference range is 0% to 2.5%. Values above 2.5% point to an increase in CK-MB from cardiac muscle."
+  },
+  {
+    "id": 1046,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "In a nonmyocardial as opposed to a myocardial cause of an increased serum or plasma CK-MB, which would be expected?",
+    "options": [
+      "An increase in CK-MB that is persistent",
+      "An increase in the percent CK-MB as well as concentration",
+      "The presence of increased troponin I (TnI)",
+      "A more modest increase in total CK than CK-MB"
+    ],
+    "answer": "A",
+    "explanation": "Plasma CK-MB becomes abnormal 4 hours post infarction, peaks in 16 to 20 hours, and usually returns to normal within 48 hours. In some noncardiac causes of elevated plasma CK-MB, such as muscular dystrophy, there is a persistent elevation of both total CK and CK-MB. TnI and troponin T (TnT) are cardiac-specific markers. They become elevated before CK-MB even when a CK-MB URL of 4 µg/L is used, remain elevated for 7 to 10 days after an AMI, and are not increased in muscular dystrophy, malignant hyperthermia, or crush injuries that are associated with an increase in the concentration of CK-MB. Absolute CK-MB increases are evaluated cautiously, when CK-MB is less than 2.5% of total enzyme because noncardiac sources may be responsible."
+  },
+  {
+    "id": 1047,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement best describes the clinical utility of plasma or serum myoglobin?",
+    "options": [
+      "Levels greater than 100 µg/L are diagnostic of AMI",
+      "Levels below 100 µg/L on admission and 2 to 4 hours after admission help exclude a diagnosis of AMI",
+      "Myoglobin peaks after the cardiac troponins but is more sensitive",
+      "The persistence of myoglobin greater than 110 µg/L for 3 days after chest pain favors a diagnosis of AMI"
+    ],
+    "answer": "B",
+    "explanation": "Myoglobin is a heme-containing pigment in both skeletal and cardiac muscle cells. The upper limit of normal is approximately 90 µg/L for males and 75 µg/L for females. The plasma myoglobin is a sensitive marker for AMI. Over 95% of affected persons have a value higher than the cutoff (typically greater than 110 µg/L). However, specificity is approximately 75% to 85% as a result of skeletal muscle injury or renal insufficiency. For this reason, a plasma myoglobin below the cutoff on admission, and within the first 3 hours after chest pain helps rule out AMI. A value above the cutoff must be confirmed using a cardiac-specific assay, such as TnI or TnT."
+  },
+  {
+    "id": 1048,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement best describes cardiac troponin I and T?",
+    "options": [
+      "An enzyme embedded in the endocardium released after MI",
+      "Two polypeptides that regulate the sliding of contractile proteins in cardiac muscle",
+      "A peptide that is released in response to ventricular stretching",
+      "A prohormone released from the pericardium in response to injury"
+    ],
+    "answer": "B",
+    "explanation": "Troponin is a complex of three polypeptides that function as a regulator of actin and tropomyosin. The three subunits are designated TnC, TnI, and TnT. All are present in both cardiac and some skeletal muscles, but cardiac and skeletal isoforms of TnI and TnT can be differentiated by specific antisera. cTnI and cTnT (cardiac isoforms) are not detectable in the plasma of 50% of healthy persons and are at near zero concentration in the remaining 50%. They can be detected within 1 hour after MI, peak within 24 hours, and usually remain elevated for 7 to 10 days. cTnT and cTnI have the same sensitivity and specificity. Both are elevated in chronic kidney disease, unstable angina (chest pain while at rest), and cardiac ischemia."
+  },
+  {
+    "id": 1049,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "What requirements must be met for a troponin assay to be considered a high-sensitivity test?",
+    "options": [
+      "Must have a detection limit of 30 ng/L",
+      "Must be able to give a value for 100% of the healthy population who have a concentration above the limit of detection",
+      "Must have a coefficient of variation (CV) of less than 10% at the 99th percentile of the healthy population",
+      "Must have a clinical specificity of 99% or greater"
+    ],
+    "answer": "C",
+    "explanation": "A troponin test qualifies as high sensitivity (guideline compliant) if it has a CV less than 10% at the 99th percentile of healthy persons, and gives a measurable result in at least 50% of the healthy population who have a troponin concentration above the limit of detection (LoD). The 99th percentile is method dependent but for a high-sensitivity assay is approximately 10 ng/L for females and 15 ng/L for males."
+  },
+  {
+    "id": 1050,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the typical time course for high-sensitivity (guideline compliant) cardiac troponin I (cTnI) or cardiac troponin T (cTnT) following an AMI?",
+    "options": [
+      "Abnormal within 1 hour; peak within 24 hours; return to normal in 7 to 10 days",
+      "Abnormal within 4 hours; peak within 18 hours; return to normal in 48 hours",
+      "Abnormal within 4 hours; peak within 24 hours; return to normal in 3 days",
+      "Abnormal within 6 hours; peak within 36 hours; return to normal in 5 days"
+    ],
+    "answer": "A",
+    "explanation": "High-sensitivity cTnI and cTnT exceed the 99th percentile of a healthy population within 1 hour after a heart attack and remain elevated for about 1 week. Some triage protocols use this to rule out MI within 1 hour of arrival at the ED in patients with symptoms of angina. However, a rise and fall of serial measurements must be documented to establish a diagnosis of MI when the test exceeds the URL established for the assay."
+  },
+  {
+    "id": 1051,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "What protocol is needed to rule out an MI with a high-sensitivity troponin assay?",
+    "options": [
+      "A single sample at arrival",
+      "Serial samples for up to 3 hours after arrival",
+      "Serial samples for up to 6 hours after arrival",
+      "A minimum of four samples over 4 hours"
+    ],
+    "answer": "B",
+    "explanation": "The high-sensitivity cTnI and cTnT tests obviate the need for either myoglobin or CK-MB to rule out an AMI. Evidence-based protocols have shown that these tests have at least a 99% negative predictive value for ruling out AMIs at 3 hours after arrival at the hospital by using a criterion of less than 14 ng/L when there is no significant change in serial measurements during that time. A single sample protocol using a cutoff of 6 ng/L has also been shown to have a negative predictive value greater than 99%. However, this protocol is associated with more false-positive results, which are eliminated by serial testing. Assays that do not meet high sensitivity criteria but have a CV in the 10% to 20% range are still clinically acceptable but require serial testing over 6 hours to conclusively rule out AMI."
+  },
+  {
+    "id": 1052,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement best describes the clinical significance of a single cTnI or cTnT result that is slightly above the limit of detection?",
+    "options": [
+      "A positive test in the absence of laboratory error is diagnostic of MI",
+      "A positive test in the absence of laboratory error or in vitro false positive result indicates cardiac injury",
+      "Serial increases indicate necrosis caused by plaque rupture or thrombosis",
+      "Serial increases indicate S-T segment elevated myocardial infarction (STEMI)"
+    ],
+    "answer": "B",
+    "explanation": "A true-positive TnI or TnT result at a low level is diagnostic of cardiac damage but not necessarily MI. The diagnosis of MI requires demonstration of a rise and subsequent fall in serial measurements and clinical signs of ischemic heart disease. Cardiac troponins can be increased in the absence of necrosis when heart muscle cell membrane permeability increases. Static increases can occur in chronic kidney disease, congestive heart failure, left ventricular hypertrophy, pulmonary embolism myocarditis, rhabdomyolysis involving the heart, and unstable angina. Cardiac troponins cannot differentiate between STEMI and non–S-T segment elevated myocardial infarction (NSTEMI)."
+  },
+  {
+    "id": 1053,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following cardiac markers is most often increased in persons who exhibit unstable angina?",
+    "options": [
+      "Troponin C",
+      "cTnT",
+      "CK-MB",
+      "Myoglobin"
+    ],
+    "answer": "B",
+    "explanation": "Persons with unstable angina (angina at rest) who have an elevated cTnT or cTnI are at eight times greater risk of having an MI within the next 6 months. This property is used to identify patients who have short-term risk and should be considered for coronary angioplasty. The reference range for cTnT is very low (approximately 0–14 ng/L) but differs with the assay used, gender, and age. Persons with unstable angina and a positive cardiac troponin test result are likely to have a cTnT or cTnI near the cutoff. CK-MB and myoglobin have not been useful in the risk assessment of unstable angina."
+  },
+  {
+    "id": 1054,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "A patient has a plasma cTnT of 10 ng/L at admission. One hour later, the cTnT is 34 ng/L, and 3 hours later 120 ng/L. Electrocardiography (ECG) showed no change over this time. These results are consistent with which condition?",
+    "options": [
+      "Skeletal muscle injury",
+      "Acute myocardial infarction",
+      "Unstable angina",
+      "No evidence of myocardial or skeletal muscle injury"
+    ],
+    "answer": "B",
+    "explanation": "These results are consistent with a type 2 heart attack. These are characterized by a serial rise in cardiac troponin with clinical signs of ischemia but the absence of typical ECG changes, such as S-T segment elevation or Q-wave."
+  },
+  {
+    "id": 1055,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A single heparinized plasma sample measured for troponin was found to have a concentration exceeding the laboratory’s upper reportable limit. However, the patient had a normal ECG result and was stable without showing any classic signs of MI and had no history of arteriosclerotic cardiovascular disease. What is the most likely cause?",
+    "options": [
+      "Chronic renal failure",
+      "Recent angioplasty",
+      "Non-transmural MI",
+      "False positive troponin"
+    ],
+    "answer": "D",
+    "explanation": "Although chronic kidney disease, recent angioplasty, and non-transmural MI (necrosis involving only part of the heart wall) can cause a positive cTnI result, they would not cause a level that exceeds the reportable range of the assay. False-positive troponins have been caused by heterophile antibodies; microfibrin clots in the sample; autoantibodies, such as rheumatoid factor, immune complexes, microparticles; and a markedly increased ALP. The other likely cause would be sample misidentification."
+  },
+  {
+    "id": 1056,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: An EDTA sample for cTnI assay gives a result of 40 ng/L (reference range 0–13 ng/L). The test is repeated 30 minutes later on a new specimen, and the result is 4 ng/L. A third sample collected 1 hour later gives a result of 5 ng/L. What is the most likely explanation?",
+    "options": [
+      "A false-positive result occurred as a result of matrix interference",
+      "Heparin should have been used instead of EDTA, which causes false-positive results",
+      "The patient has suffered a heart attack",
+      "The patient has had an ischemic episode without cardiac injury"
+    ],
+    "answer": "A",
+    "explanation": "EDTA is the additive of choice for troponin assays because it avoids microclots that can lead to false-positive results when serum or heparinized plasma is used. False- positive results caused by matrix effects usually revert to normal when the test is repeated on a new sample. An AMI will cause cTnI to increase in serial tests. Although cTnI can be high as a result of cardiac injury and noncardiac conditions, such as chronic kidney disease, the level should remain elevated in samples taken so closely together."
+  },
+  {
+    "id": 1057,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following laboratory tests is a marker for ischemic heart disease?",
+    "options": [
+      "Oxidized LDL",
+      "F2 isoprostanes",
+      "Albumin cobalt binding",
+      "Free fatty acid binding protein"
+    ],
+    "answer": "C",
+    "explanation": "When the heart muscle suffers reversible damage as a result of oxygen deprivation, free radicals are released from the cells and bind to circulating albumin. Albumin is modified at the N-terminus, causing a reduced ability to bind certain metals. This ischemia-modified albumin can be measured by its inability to bind cobalt. An excess of cobalt is incubated with plasma followed by addition of dithiothreitol. The sulfhydryl compound complexes with the free cobalt, forming a colored complex. The absorbance of the reaction mixture is directly proportional to the ischemia-modified albumin concentration. In addition to ischemia-modified albumin, glycogen phosphorylase-BB (GP-BB) is a marker for ischemia because it is released from heart muscle during an ischemic episode. Oxidized LDL and F2 isoprostanes are markers for risk of progression to ACS and thus are markers for early stage atherosclerotic disease."
+  },
+  {
+    "id": 1058,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which test becomes abnormal earliest in the progression of ACS?",
+    "options": [
+      "Proprotein convertase subtilisin/kexin type 9 (PCSK9)",
+      "B-type natriuretic peptide (BNP)",
+      "Myoglobin",
+      "High-sensitivity CRP"
+    ],
+    "answer": "D",
+    "explanation": "The term acute coronary syndrome (ACS) refers to the evolution of cardiac ischemia (unstable angina, NSTEMI, and ultimately STEMI). CAD begins with formation of a plaque comprising lipid from dead endothelium that proliferated into the artery lumen. The plaque becomes disrupted and the vessel wall inflamed in the asymptomatic stage of CAD. If platelet activation occurs and results in thrombosis, blood flow becomes significantly reduced, resulting in angina. This signals the transition to more advanced disease in which ischemia to heart muscle occurs and eventually to AMI. High- sensitivity C-reactive protein (hs-CRP) is an ultrasensitive CRP assay that accurately measures CRP levels less than 1 mg/L. CRP is an acute-phase protein increased in inflammation. Levels of CRP between 3.2 and 10 mg/L signal low-grade inflammation, which occurs in the asymptomatic phase of arteriosclerotic disease. Such inflammation occurs when coronary artery plaques become disrupted, and therefore, persons with CAD who have mildly increased CRP are at high risk of disease progression."
+  },
+  {
+    "id": 1059,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement best describes the clinical utility of BNP?",
+    "options": [
+      "Abnormal levels may be caused by obstructive lung disease",
+      "A positive test result indicates prior myocardial damage caused by AMI that occurred within the last 3 months",
+      "A normal test result (less than100 pg/mL) helps rule out CHF in persons with symptoms associated with coronary insufficiency",
+      "A level greater than 100 pg/mL is not significant if evidence of CHF is absent"
+    ],
+    "answer": "C",
+    "explanation": "B-type natriuretic peptide is a hormone produced by the ventricles in response to increased intracardiac blood volume and hydrostatic pressure. It is formed in the heart from a precursor peptide (preproBNP) by enzymatic hydrolysis, first forming proBNP followed by BNP and NT (N-terminal) proBNP that is not physiologically active. Both BNP and NT-proBNP are increased in persons with CHF. Levels are not increased in pulmonary obstruction, hypertension, edema associated with renal insufficiency, and other conditions that cause physical limitation and symptoms that overlap CHF. At a cutoff of less than 100 pg/mL the BNP test is effective in ruling out CHF. Diagnostic accuracy in distinguishing CHF from non-CHF ranges from 83% to 95%. In addition, persons with ischemia who have an increased BNP are at greater risk for MI. The NTpro-BNP assay is similar in clinical value, and can be used for persons being treated with nesiritide, a recombinant form of BNP used to treat CHF."
+  },
+  {
+    "id": 1060,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement best describes the clinical utility of plasma homocysteine?",
+    "options": [
+      "Levels are directly related to the quantity of LDL cholesterol in plasma",
+      "High plasma levels are associated with atherosclerosis and increased risk of thrombosis",
+      "Persons who have an elevated plasma homocysteine will also have an increased plasma Lp(a)",
+      "Plasma levels are increased only when there is an inborn error of amino acid metabolism"
+    ],
+    "answer": "B",
+    "explanation": "Homocysteine includes the monomeric amino acid as well as the dimers formed when two homocysteines are linked by a disulfide bond (homocystine) or homocysteine joins to cysteine. Plasma levels are measured as an independent risk factor for coronary artery disease. High levels of homocysteine are toxic to vascular endothelium and promote inflammation and plaque formation. Plasma levels are independent of LDL and other cholesterol fractions and help explain why approximately 35% of people with first-time AMI have LDL cholesterol levels less than 130 mg/dL. Increased plasma homocysteine occurs when there is a block in the conversion of methionine to cysteine. This can occur in homocystinuria, or deficiency of vitamins B6, B12, or folic acid."
+  },
+  {
+    "id": 1061,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following cardiac markers is derived from neutrophils and predicts an increased risk for MI?",
+    "options": [
+      "Lipoprotein-associated phospholipase A2 (Lp-PLA2)",
+      "Glycogen phosphorylase-BB (GP-BB)",
+      "Cystatin C",
+      "Myeloperoxidase (MPO)"
+    ],
+    "answer": "D",
+    "explanation": "All of the answer choices are markers for acute coronary syndrome and increased risk of AMI. MPO is released from neutrophils and is thought to destabilize the arterial plaque by oxidizing both LDL and HDL and reducing nitric oxide levels in the coronary arteries. Levels in the upper third quartile predict an increased risk of a coronary event even when troponin is normal. GPBB is released from myocytes early in an ischemic episode and becomes abnormal about 2 hours after an AMI. Cystatin C is a serine protease found in all nucleated cells that is a marker for early stage glomerular disease. Both high plasma cystatin C and microalbuminuria double the risk of AMI since persons with renal impairment are at higher risk for CVD. Lp-PLA2 is produced by the arterial wall. It removes a fatty acid from phospholipids and increases the amount of oxidized LDL, leading to foam cell formation. Like hs-CRP, it is a marker for an inflamed plaque."
+  },
+  {
+    "id": 1062,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements about the aminotransferases (AST and ALT) is true?",
+    "options": [
+      "Isoenzymes of AST and ALT are not found in humans",
+      "Both transfer an amino group to 2-oxogluterate (α-ketoglutarate)",
+      "Both require NADP+ as a coenzyme",
+      "Both utilize four carbon amino acids as substrates"
+    ],
+    "answer": "B",
+    "explanation": "ALT catalyzes the transfer of an amino group from alanine, a three-carbon amino acid, to 2-oxogluterate (α-ketoglutarate), forming pyruvate. AST catalyzes the transfer of an amino group from aspartate (four carbons) to 2-oxogluterate, forming oxaloacetate. The reactions are highly reversible and regulate the flow of aspartate into the urea cycle. Both transaminases require P-5’-P as an intermediate amino acceptor (coenzyme). Cytoplasmic and mitochondrial isoenzymes are produced but are not differentiated in clinical practice."
+  },
+  {
+    "id": 1063,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the products formed from the forward reaction for measurement of AST.",
+    "options": [
+      "Alanine and α–ketoglutarate",
+      "Oxaloacetate and glutamate",
+      "Aspartate and glutamine",
+      "Glutamate and NADH"
+    ],
+    "answer": "B",
+    "explanation": "AST forms oxaloacetate and glutamate from aspartate and 2-oxogluterate (α– ketoglutarate). Both transaminases use 2-oxogluterate and glutamate as a common substrate and product pair. Both aspartate and alanine can be used to generate glutamate in the CNS, where it acts as a neurotransmitter."
+  },
+  {
+    "id": 1064,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the products formed from the forward reaction for measurement of ALT.",
+    "options": [
+      "Aspartate and alanine",
+      "Alanine and α–ketoglutarate",
+      "Pyruvate and glutamate",
+      "Glutamine and NAD+"
+    ],
+    "answer": "C",
+    "explanation": "Because glutamate is a common product for transaminases, pyruvate (a three-carbon ketoacid) and glutamate would be generated from the transamination reaction between alanine and 2-oxogluterate."
+  },
+  {
+    "id": 1065,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the statements below regarding the methods of Henry for AST and ALT is correct?",
+    "options": [
+      "Hemolysis will cause positive interference in both AST and ALT assays",
+      "Loss of activity occurs if samples are frozen at –20°C",
+      "The absorbance at the start of the reaction should not exceed 1.0 A",
+      "Reaction rates are unaffected by addition of P-5’-P to the substrate"
+    ],
+    "answer": "A",
+    "explanation": "RBCs are rich in AST and to a lesser extent in ALT. Hemolysis causes positive interference in both assays, although the effect on AST is greater. Samples are stable for up to 24 hours at room temperature and up to 3 days at 4°C, and should be frozen if kept longer. The starting absorbance should be at least 1.5 A for both assays. Substrates with lower concentrations of NADH are subject to NADH depletion during the lag phase due to side reactions or high transaminase activity. When P-5’-P is added, a significant increase in activity sometimes occurs because some of the enzyme in the serum is in the inactive apoenzyme form."
+  },
+  {
+    "id": 1066,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the coupling enzyme used in the AST reaction of Henry.",
+    "options": [
+      "LD",
+      "Malate dehydrogenase (MD)",
+      "GLD",
+      "G-6-PD"
+    ],
+    "answer": "B",
+    "explanation": "The method of Henry for AST uses malate dehydrogenase (MD) to reduce oxaloacetate to malate. The electrons come from NADH forming NAD+.\nAspartate + α-ketoglutarate → (AST) Oxaloacetate + Glutamate\nOxaloacetate + NADH + H+ → (MD) Malate + NAD+"
+  },
+  {
+    "id": 1067,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the purpose of LD in the method of Henry for AST?",
+    "options": [
+      "Forms NADH, enabling the reaction to be monitored at 340 nm",
+      "Rapidly exhausts endogenous pyruvate in the lag phase",
+      "Reduces oxaloacetate, preventing product inhibition",
+      "Generates lactate, which activates AST"
+    ],
+    "answer": "B",
+    "explanation": "Patients with liver disease often have high levels of pyruvate and LD. The LD can catalyze the reaction of pyruvate with NADH in the substrate, forming NAD+ and lactate. This would give a falsely high rate for AST because NAD+ is the product measured. Adding LD to the substrate causes pyruvate to be depleted in the first 30 seconds, before AST and MD reactions reach steady state."
+  },
+  {
+    "id": 1068,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding the naming of transaminases is true?",
+    "options": [
+      "Serum glutamic oxaloacetic transaminase (SGOT) is the older abbreviation for ALT",
+      "Serum glutamic pyruvic transaminase (SGPT) is the older abbreviation for AST",
+      "SGPT is the older abbreviation for ALT",
+      "SGOT is the newer abbreviation for AST"
+    ],
+    "answer": "C",
+    "explanation": "SGOT refers to the products measured in the in vitro reaction, and is more correctly named AST for the four-carbon amino acid substrate aspartate. SGPT is the older name referring to the products of the reaction for ALT. SGPT is more correctly named ALT for the three-carbon amino acid substrate alanine."
+  },
+  {
+    "id": 1069,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement accurately describes serum transaminase levels in AMI?",
+    "options": [
+      "ALT is increased 5- to 10-fold after an AMI",
+      "AST peaks 24–48 hours after an AMI and returns to normal within 4–6 days",
+      "AST levels are usually 20–50 times the upper limit of normal after an AMI",
+      "Isoenzymes of AST are of greater diagnostic utility than the total enzyme level"
+    ],
+    "answer": "B",
+    "explanation": "ALT may be slightly elevated after an AMI. AST levels can be up to 5–10 times the URL after AMI, but elevations of this range are also seen in patients with muscular dystrophy, crush injury, pulmonary embolism, infectious mononucleosis, and cancer of the liver."
+  },
+  {
+    "id": 1070,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which condition gives rise to the highest serum level of transaminases?",
+    "options": [
+      "Acute hepatitis",
+      "Alcoholic cirrhosis",
+      "Obstructive biliary disease",
+      "Diffuse intrahepatic cholestasis"
+    ],
+    "answer": "A",
+    "explanation": "The transaminases usually reach 20–50 times the URL in acute viral and toxic hepatitis. Both transaminases are moderately increased (5–10 × URL) in infectious mononucleosis, diffuse intrahepatic obstruction, lymphoma, and cancer of the liver, and slightly increased (2–5 × URL) in cirrhosis and extrahepatic obstruction."
+  },
+  {
+    "id": 1071,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "In which liver disease is the DeRitis ratio (ALT:AST) usually greater than 1.0?",
+    "options": [
+      "Acute hepatitis",
+      "Chronic hepatitis",
+      "Hepatic cirrhosis",
+      "Hepatic carcinoma"
+    ],
+    "answer": "A",
+    "explanation": "ALT prevails over AST in hepatitis; however, AST is greater than ALT in carcinoma, alcoholic liver disease, and cirrhosis of the liver."
+  },
+  {
+    "id": 1072,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following liver diseases produces the highest levels of transaminases?",
+    "options": [
+      "Hepatic cirrhosis",
+      "Obstructive jaundice",
+      "Hepatic cancer",
+      "Alcoholic hepatitis"
+    ],
+    "answer": "C",
+    "explanation": "Elevation of transaminases is greatest in acute hepatitis (20–50 × URL). Levels are moderately elevated (5–10 × URL) in hepatic cancer. They are slightly elevated (2–5 × URL) in chronic hepatitis, hepatic cirrhosis, alcoholic hepatitis, and obstructive jaundice."
+  },
+  {
+    "id": 1073,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding transaminases is true?",
+    "options": [
+      "ALT is often increased in muscular disease, pancreatitis, and lymphoma",
+      "ALT is increased in infectious mononucleosis, but AST is usually normal",
+      "ALT is far more specific for liver diseases than is AST",
+      "Substrate depletion seldom occurs in assays of serum from persons with hepatitis"
+    ],
+    "answer": "C",
+    "explanation": "ALT is far more specific for liver disease than AST. High ALT may result from nonhepatic causes such as AMI, muscle injury or disease, and severe hemolysis, but nonhepatic sources can be ruled out by a high direct bilirubin. Elevation of ALT occurs early in hepatitis B; therefore, elevated ALT (e.g., greater than 65 IU/L) is used along with immunologic tests for hepatitis to disqualify blood donors. AST is increased in muscle disease, MI, pancreatitis, and lymphoma. Both transaminases are moderately increased in infectious mononucleosis."
+  },
+  {
+    "id": 1074,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the most sensitive marker for alcoholic liver disease.",
+    "options": [
+      "GLD",
+      "ALT",
+      "AST",
+      "γ-Glutamyltransferase (GGT)"
+    ],
+    "answer": "D",
+    "explanation": "Although AST and ALT are elevated in alcoholic hepatitis, GGT is a more sensitive indicator of alcoholic liver disease. Levels of GGT can reach in excess of 25 times the URL in alcoholic hepatitis. It is also markedly elevated in obstructive jaundice; a high GGT supports the inference that liver is the tissue source of an elevated ALP."
+  },
+  {
+    "id": 1075,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which enzyme is least useful in differentiating necrotic from obstructive jaundice?",
+    "options": [
+      "GGT",
+      "ALT",
+      "5’ Nucleotidase",
+      "LD"
+    ],
+    "answer": "D",
+    "explanation": "GGT and 5’ nucleotidase are markedly elevated in both intra- and posthepatic obstruction. ALT is slightly elevated in obstructive jaundice but is markedly elevated in necrotic jaundice. Although LD is usually greater in necrotic jaundice than in obstructive jaundice, elevations in these conditions overlap frequently and result from many other causes."
+  },
+  {
+    "id": 1076,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements about the phosphatases is true?",
+    "options": [
+      "They hydrolyze adenosine triphosphate and related compounds",
+      "They are divided into two classes based upon pH needed for activity",
+      "They exhibit a high specificity for substrate",
+      "They are activated by Pi"
+    ],
+    "answer": "B",
+    "explanation": "Phosphatases are classified as either alkaline or acid depending upon the pH needed for optimum activity. The phosphatases hydrolyze a wide range of monophosphoric acid esters. ALP is inhibited by phosphorus (product inhibition). The International Federation of Clinical Chemistry (IFCC) recommended method employs 2-amino-2- methyl-1-propanol, a buffer that binds Pi."
+  },
+  {
+    "id": 1077,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding ALP is true?",
+    "options": [
+      "In normal adults, the primary tissue source is fast-twitch skeletal muscle",
+      "Geriatric patients have a lower serum ALP than other adults",
+      "Serum ALP levels are lower in children than in adults",
+      "Pregnant women have a higher level of serum ALP than other adults"
+    ],
+    "answer": "D",
+    "explanation": "Age- and gender-specific reference intervals should be used when evaluating ALP levels. ALP is higher in children than in adults due to bone growth. Children and geriatric patients have higher serum ALP due to increased bone isoenzyme. Serum ALP levels are often two- or threefold higher than the URL in the third term of pregnancy. In nonpregnant normal adults, serum ALP is derived from liver and bone. Liver, bone, placental, renal, and intestinal isoenzymes of ALP can be separated by electrophoresis, and many other ALP isoenzymes have been identified by isofocusing."
+  },
+  {
+    "id": 1078,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which isoenzyme of ALP is most heat stable?",
+    "options": [
+      "Bone",
+      "Liver",
+      "Intestinal",
+      "Placental"
+    ],
+    "answer": "D",
+    "explanation": "Placental ALP and tumor-associated isoenzymes such as the Regan isoenzyme associated with lung cancer are the only isoenzymes that retain activity when serum is heated to 65°C for 10 minutes. Heat inactivation is used primarily to distinguish liver ALP from bone ALP. If less than 20% activity remains after heating serum to 56°C for 10 minutes, then bone ALP is most likely present."
+  },
+  {
+    "id": 1079,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which isoenzyme of ALP migrates farthest toward the anode when electrophoresed at pH 8.6?",
+    "options": [
+      "Placental",
+      "Bone",
+      "Liver",
+      "Intestinal"
+    ],
+    "answer": "C",
+    "explanation": "Liver ALP isoenzymes migrate farthest toward the anode, but fast and slow variants occur. The slow liver ALP band is difficult to distinguish from placental ALP. The order from cathode to anode is: – Renal→Intestinal→Bone→Placental→Liver + Improved separation of bone and liver isoenzymes can be achieved by incubating the serum with neuraminidase prior to electrophoresis. The enzyme reduces the sialic acid content of the bone isoenzyme, causing it to migrate at a slower rate."
+  },
+  {
+    "id": 1080,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding bone-specific ALP is true?",
+    "options": [
+      "The bone isoenzyme can be measured immunochemically",
+      "Bone ALP is increased in bone resorption",
+      "Bone ALP is used for the diagnosis of osteoporosis",
+      "There are two distinct bone isoenzymes"
+    ],
+    "answer": "A",
+    "explanation": "Bone ALP assays (Ostase and Alkphase-B) use monoclonal antibodies to measure the bone isoenzyme in mass units. The assays may be used to monitor bone remodeling by osteoblasts in osteoporosis, and thus, are useful for following treatment. Bone specific ALP is not sufficiently sensitive to diagnose osteoporosis, and antibodies may cross- react with other ALP isoenzymes, depending on their source. Three bone isoforms of ALP can be detected in serum."
+  },
+  {
+    "id": 1081,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding ALP is true?",
+    "options": [
+      "All isoenzymes of ALP are antigenically distinct and can be identified by specific antibodies",
+      "Highest serum levels are seen in intrahepatic obstruction",
+      "Elevated serum ALP seen with elevated GGT suggests a hepatic source",
+      "When jaundice is present, an elevated ALP suggests acute hepatitis"
+    ],
+    "answer": "C",
+    "explanation": "ALP isoenzymes can result from different genes or from modification of a common gene product in the tissues. Some differ mainly in carbohydrate content and cannot be identified by immunologic methods. Highest levels of ALP are seen in Paget disease of bone, where ALP can be as high as 25 times the URL. GGT in serum is derived from the hepatobiliary system and is increased in alcoholic hepatitis, hepatobiliary obstruction, and hepatic cancer. It is not increased in diseases of bone or in pregnancy. When the increase in GGT is twofold higher than the increase in ALP, the liver is assumed to be the source of the elevated ALP. Serum ALP is a sensitive marker for extrahepatic obstruction, which causes an increase of approximately 10 times the URL. A lesser increase is seen in intrahepatic obstruction. ALP is only mildly elevated in acute hepatitis as a result of accompanying obstruction."
+  },
+  {
+    "id": 1082,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "In which condition would an elevated serum ALP be likely to occur?",
+    "options": [
+      "Small cell lung carcinoma",
+      "Hemolytic anemia",
+      "Prostate cancer",
+      "Acute myocardial infarction"
+    ],
+    "answer": "A",
+    "explanation": "The primary diagnostic utility of ALP is to help differentiate necrotic jaundice (↑ ALT) from obstructive jaundice (↑ ALP). ALP is also increased in several bone diseases. Large increases are seen in Paget disease, moderate increases in bone cancer, and slight increases in rickets. Total ALP may be slightly increased in osteoporosis but often it is not. In addition to obstructive jaundice and bone diseases, ALP is a tumor marker. In most cases, the ALP is the product of fetal gene activation, and resembles placental ALP (e.g., hepatoma, small cell carcinoma of the lung, ovarian cancer). Leukemia and Hodgkin disease may cause an elevated leukocyte or bone-derived ALP."
+  },
+  {
+    "id": 1083,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which condition is least likely to be associated with increased serum ALP?",
+    "options": [
+      "Osteomalacia",
+      "Biliary obstruction",
+      "Hyperparathyroidism and hyperthyroidism",
+      "Osteoporosis"
+    ],
+    "answer": "D",
+    "explanation": "ALP is elevated in osteomalacia (rickets), bone cancer, and bone disease secondary to hyperthyroidism and hyperparathyroidism, but total ALP it is high in less than 30% of osteoporosis patients. Pancreatic disease associated with biliary obstruction, such as cancer at the head of the pancreas, is associated with elevated ALP."
+  },
+  {
+    "id": 1084,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which substrate is used in the Bowers-McComb method for ALP?",
+    "options": [
+      "p-Nitrophenyl phosphate",
+      "β-Glycerophosphate",
+      "Phenylphosphate",
+      "α-Naphthylphosphate"
+    ],
+    "answer": "A",
+    "explanation": "The method of Bowers–McComb (Szasz modification) is the IFCC-recommended method for ALP. This method uses 2-amino-2-methyl-1-propanol, pH 10.15, and measures the increase in absorbance at 405 nm as p-nitrophenyl phosphate is hydrolyzed to p-nitrophenol."
+  },
+  {
+    "id": 1085,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following buffers is used in the IFCC recommended method for ALP?",
+    "options": [
+      "Glycine",
+      "Phosphate",
+      "2-Amino-2-methyl-1-propanol",
+      "Citrate"
+    ],
+    "answer": "C",
+    "explanation": "The Szasz modification of the Bowers–McComb method measures the hydrolysis of p-nitrophenyl phosphate, and continuously monitors the formation of p-nitrophenol at 405 nm. AMP buffer chelates phosphorus, preventing product inhibition; Zn+2 and Mg+2 are added to the substrate to activate ALP. HEDTA is used to chelate the excess Zn+2, which is inhibitory at high concentrations."
+  },
+  {
+    "id": 1086,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "A serum ALP level greater than twice the elevation of GGT suggests:",
+    "options": [
+      "Misidentification of the specimen",
+      "Focal intrahepatic obstruction",
+      "Acute alcoholic hepatitis",
+      "Bone disease or malignancy"
+    ],
+    "answer": "D",
+    "explanation": "In obstructive jaundice, GGT is elevated more than ALP. A disproportionate increase in ALP points to a nonhepatic source of ALP, often bone disease. GGT is the most sensitive marker of acute alcoholic hepatitis, rising about fivefold higher than ALP or transaminases."
+  },
+  {
+    "id": 1087,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which condition is associated with a decrease in ALP activity?",
+    "options": [
+      "Pregnancy",
+      "VDDR",
+      "Hypophosphatasia",
+      "Bone fracture"
+    ],
+    "answer": "C",
+    "explanation": "ALP must be evaluated with age- and gender-specific reference ranges. Hypophosphatasia is a rare genetic disease caused by a mutation in the TNSALP gene causing diminished expression of tissue nonspecific ALP. Substrates such as pyridoxyl-5’-phosphate, pyrophosphate (diphosphate salts), and phosphoethanolamine accumulate in blood and tissues. Bone mineralization is blocked and both calcium and phosphorus are elevated in plasma. Bone, muscle, and vital organs are affected and the mortality rate is very high. The diagnosis is suspected when ALP is low and vitamin B6 is high, but can be missed if adult reference ranges for ALP are used."
+  },
+  {
+    "id": 1088,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "In which condition is the measurement of acid phosphatase clinically useful?",
+    "options": [
+      "Measuring the prostatic isoenzyme to screen for prostate cancer",
+      "Measuring the enzyme in a vaginal swab extract",
+      "The diagnosis of hemolytic anemia",
+      "As a marker for bone regeneration"
+    ],
+    "answer": "B",
+    "explanation": "The PSA test is clinically more sensitive than prostatic acid phosphatase in detecting prostatic cancer. The clinical use of prostatic acid phosphatase is confined to the investigation of sexual assault. Acid phosphatase activity greater than 50 IU/L establishes the presence of seminal fluid in the vaginal sample. Tartrate-resistant acid phosphatase is used as a cytochemical marker for hairy-cell leukemia, and may be measured in serum to identify diseases with increased osteoclast activity, particularly malignancies involving bone."
+  },
+  {
+    "id": 1089,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which definition best describes the catalytic activity of amylase?",
+    "options": [
+      "Hydrolyzes second α-1-4 glycosidic linkages of starch, glycogen, and other polyglucans",
+      "Hydrolyzes all polyglucans completely to produce glucose",
+      "Oxidatively degrades polysaccharides containing glucose",
+      "Splits polysaccharides and disaccharides by addition of water"
+    ],
+    "answer": "A",
+    "explanation": "Amylase in humans is a hydrolase that splits the second α-1-4 glycosidic bonds of polyglucans forming maltose. There are two major types of amylase: P-type derived from the pancreas and S-type derived from the salivary glands. These can be differentiated by both electrophoresis and immunoassay, and P-type amylase in plasma can be measured by immunoinhibition of S-type. In healthy persons, the principal form in plasma is the salivary isoenzyme. There are several genetic variants of the salivary isoenzyme, which in part accounts for the broad reference range."
+  },
+  {
+    "id": 1090,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following amylase substrates is recommended by the IFCC?",
+    "options": [
+      "Starch",
+      "Maltodextrose",
+      "Maltotetrose",
+      "Blocked maltohepatoside"
+    ],
+    "answer": "D",
+    "explanation": "Amylase is commonly measured using synthetic substrates. In the IFCC- recommended method, p-nitrophenyl maltohepatiside is used. One end of the polymer is covalently linked to p-nitrophenol and the other is linked to 4,6 ethylidine (EPS) to prevent its hydrolysis by α-glucosidase. Amylase hydrolyzes the substrate from both ends producing fragments of 2, 3, and 4 glucose subunits. α-Glucosidase hydrolyzes the subunits containing p-nitrophenyl groups, forming glucose and p-nitrophenol. The increase absorbance at 405 nm is proportional to amylase activity."
+  },
+  {
+    "id": 1091,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "How soon following acute abdominal pain due to pancreatitis is the serum amylase expected to peak?",
+    "options": [
+      "1–2 hours",
+      "2–12 hours",
+      "3–4 days",
+      "5–6 days"
+    ],
+    "answer": "B",
+    "explanation": "Serum amylase usually peaks 2–12 hours following acute abdominal pain resulting from pancreatitis. Levels reach 2–6 times the URL and return to normal within 3–4 days. Urinary amylase peaks concurrently with serum but rises higher and remains elevated for up to 1 week."
+  },
+  {
+    "id": 1092,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding the diagnosis of pancreatitis is correct?",
+    "options": [
+      "Amylase and lipase are as predictive in chronic as in acute pancreatitis",
+      "Diagnostic sensitivity is increased by assaying both amylase and lipase",
+      "Measuring the urinary amylase:creatinine ratio is useful only when patients have renal failure",
+      "Serum lipase peaks several hours before amylase after an episode of acute pancreatitis"
+    ],
+    "answer": "B",
+    "explanation": "Amylase is not increased in all persons with pancreatitis and can be increased in several nonpancreatic conditions. Lipase adds both sensitivity and specificity to the diagnosis of acute pancreatitis. Plasma or serum lipase becomes abnormal within 6 hours, peaks at approximately 24 hours, and remains abnormal for about 1 week following an episode of acute pancreatitis. In acute pancreatitis, the rate of urinary amylase excretion increases, and the amylase:creatinine clearance ratio is helpful in diagnosing some cases of pancreatitis. The normal A:C clearance ratio is 1%–4%. In acute pancreatitis, the ratio is usually above 4% and can be as high as 15%. In chronic pancreatitis, acinar cell degeneration often occurs, resulting in loss of amylase and lipase production. This lowers the sensitivity of amylase and lipase in detecting chronic disease to below 50%. Patients with chronic disease have pancreatic insufficiency giving rise to fatty stools, and decreased pancreatic digestive enzymes such as trypsin, chymotrypsin, and elastin."
+  },
+  {
+    "id": 1093,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is associated with a high level of S-type amylase?",
+    "options": [
+      "Mumps",
+      "Intestinal obstruction",
+      "Alcoholic liver disease",
+      "Peptic ulcers"
+    ],
+    "answer": "A",
+    "explanation": "Both salivary and pancreatic amylases designated S-type and P-type, respectively, are present in normal serum. High amylase occurs in mumps, ectopic pregnancy, biliary obstruction, peptic ulcers, alcoholism, malignancies, and other nonpancreatic diseases. Isoenzymes can be separated by electrophoresis (S-type is faster than P-type), but more commonly immunoinhibition of S-type amylase is used to rule out mumps, malignancy, and ectopic pregnancy, which give rise to high S-type amylase."
+  },
+  {
+    "id": 1094,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding amylase methods is true?",
+    "options": [
+      "Requires sulfhydryl compounds for full activity",
+      "Activity will vary depending on the method used",
+      "Amyloclastic methods measure the production of glucose",
+      "Over-range samples are diluted in deionized water"
+    ],
+    "answer": "B",
+    "explanation": "Chloride and Ca2+ ions are required for amylase activity. Samples with high activity should be diluted with NaCl to prevent inactivation. Lipase and CK require sulfhydryl activators. Saccharogenic methods measure the production of glucose, while amyloclastic methods measure the degradation of starch. Starch is a polymer of α-D glucose subunits linked together by both α 1-4 and α 1-6 glycosidic bonds. Different lots may have more or less branching owing to the number of α 1-6 bonds. Since amylase hydrolyzes at the α 1-4 sites only, the amount of product measured is influenced by the extent of branching."
+  },
+  {
+    "id": 1095,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding amylase methods is true?",
+    "options": [
+      "Dilution of serum may result in lower than expected activity",
+      "Methods generating NADH are preferred because they have higher sensitivity",
+      "Synthetic substrates can be conjugated to p-nitrophenol (PNP) for a kinetic assay",
+      "The reference range is consistent from method to method"
+    ],
+    "answer": "C",
+    "explanation": "Many endogenous inhibitors of amylase, such as wheat germ, are found in serum. Diluted samples often show higher than expected activity caused by dilution of the inhibitor. Units of amylase activity vary widely depending upon the method of assay and calibration. Synthetic substrates such as maltotetrose or 4-nitrophenyl maltohepatoside can be used for kinetic assays. Maltotetrose is hydrolyzed to maltose by amylase, and the maltose hydrolyzed by α-glucosidase or maltose phosphorylase, forming glucose or glucose-1-phosphate, respectively. These can be measured by coupling to NADH-generating reactions. Antibodies to the salivary isoenzyme can be added to synthetic substrate assays to inhibit S-type amylase."
+  },
+  {
+    "id": 1096,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement about the clinical utility of plasma or serum lipase is true?",
+    "options": [
+      "Lipase is not increased in mumps, breast cancer, or ectopic pregnancy",
+      "Lipase is not increased as dramatically as amylase in acute pancreatitis",
+      "Increased plasma or serum lipase is specific for pancreatitis",
+      "Lipase levels are elevated in both acute and chronic pancreatitis"
+    ],
+    "answer": "A",
+    "explanation": "Lipase elevation is of greater magnitude (2-50 × N) and duration than amylase in acute pancreatitis. When the lipase method is optimized by inclusion of colipase and bile salts, the test is more sensitive and specific than serum amylase for detection of acute pancreatitis. However, lipase is also increased in peptic ulcers, renal insufficiency, and intestinal obstruction. Lipase levels are often low in chronic pancreatitis, and are low in cystic fibrosis."
+  },
+  {
+    "id": 1097,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "In which condition would amylase but not lipase be elevated?",
+    "options": [
+      "Pancreatic cancer",
+      "Peptic ulcer",
+      "Macroamylasemia",
+      "Renal failure"
+    ],
+    "answer": "C",
+    "explanation": "Approximately 1%-2% of older adults have elevated plasma amylase due to macroamylasemia. This is an elevated blood amylase caused by formation of a complex between IgG and amylase. The aggregated molecule is too large to pass through the glomerulus resulting in a high plasma amylase. Lipase and urinary amylase are within normal limits, and there is no pathology associated with macroamylasemia."
+  },
+  {
+    "id": 1098,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "The most commonly employed method of assay for plasma or serum lipase is based on:",
+    "options": [
+      "Hydrolysis of olive oil",
+      "Rate turbidimetry",
+      "Immunoassay",
+      "Peroxidase coupling"
+    ],
+    "answer": "D",
+    "explanation": "Although olive oil is the natural and most specific substrate for lipase, the most commonly used method for lipase assay is based upon the hydrolysis of a synthetic diglyceride substrate yielding 2-monoglyceride. This is hydrolyzed and forms glycerol, which is phosphorylated and forms glycerol-3-phosphate. This is oxidized by glycerophosphate oxidase, yielding H2O2.\n1,2-Diglyceride + H2O → (lipase) 2-monoglyceride + fatty acid\n2-Monoglyceride + H2O → (monoglyceride esterase) glycerol + fatty acid\nGlycerol + ATP → (glycerol kinase) glycerol-3-phosphate + ADP\nGlycerol-3-PO4 + O2 → (glycerophosphate oxidase) dihydroxyacetone phosphate + H2O2\nH2O2 + 4-aminoantipyrine + TOOS → (peroxidase) quinoneimine dye + H2O"
+  },
+  {
+    "id": 1099,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following enzymes is usually depressed in liver disease?",
+    "options": [
+      "Elastase-1",
+      "GLD",
+      "Pseudocholinesterase",
+      "Aldolase"
+    ],
+    "answer": "C",
+    "explanation": "Pseudocholinesterase is found mainly in the liver and functions to hydrolyze acetylcholine. It is depressed by organophosphate insecticides and drugs that function as cholinesterase inhibitors and the serum assay is used to presumptively identify cases of insecticide poisoning. Levels of pseudocholinesterase are decreased in patients with liver disease as a result of depressed synthesis. In cirrhosis and hepatoma, there is a 50%–70% reduction in serum level and a 30%–50% reduction in hepatitis. Elastase-1 is a pancreatic digestive enzyme that breaks down connective tissue protein. Its level in feces is reduced in persons with pancreatic insufficiency. GLD is increased in necrotic jaundice, and aldolase in necrotic jaundice and muscle disease."
+  },
+  {
+    "id": 1100,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which enzyme is most likely to be elevated in the plasma of a person suffering from a muscle wasting disorder?",
+    "options": [
+      "5’-Nucleotidase",
+      "Pseudocholinesterase",
+      "Aldolase",
+      "Glutamate dehydrogenase"
+    ],
+    "answer": "C",
+    "explanation": "5’-Nucleotidase is increased primarily in obstructive liver disease and liver cancer. When elevated along with ALP, it identifies the liver as the source of ALP. GLD is increased in necrotic liver diseases along with transaminases, but because of its distribution it is elevated to a greater extent in toxic hepatitis and therefore is useful as a marker for halothane (anesthesia) toxicity. Aldolase is found in all tissues and is increased in many conditions including MI, viral hepatitis, and myelocytic leukemia. However, like CK, the greatest increase is seen in skeletal muscle-wasting disease such as muscular dystrophies."
+  },
+  {
+    "id": 1101,
+    "section": "Enzymes and Cardiac Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which enzyme is measured in whole blood?",
+    "options": [
+      "Chymotrypsin",
+      "Glucose-6-phosphate dehydrogenase",
+      "Glycogen phosphorylase",
+      "Lipase"
+    ],
+    "answer": "B",
+    "explanation": "G-6-PD deficiency is the most common inherited RBC enzyme deficiency and is X linked. The enzyme is measured on a whole-blood hemolysate using glucose-6-PO4 as the substrate, and forms 6-phosphogluconate as NADP+ is converted to NADPH. Persons with the deficiency are prone to a hemolytic episode upon exposure to certain oxidative drugs and fava beans and as a result of infections. Heinz bodies form in the RBCs, bite cells are seen in the circulation, and plasma haptoglobin is reduced in severe cases."
+  },
+  {
+    "id": 1102,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following hormones is often decreased by approximately 25% in the serum of pregnant women who have a fetus with Down syndrome?",
+    "options": [
+      "Estriol (E3)",
+      "Human chorionic gonadotropin (hCG)",
+      "Progesterone",
+      "Estradiol (E2)"
+    ],
+    "answer": "A",
+    "explanation": "E3 is produced in the placenta and fetal liver from dehydroepiandrosterone (DHEA) derived from the mother and from the fetal liver. E3 is the major estrogen produced during pregnancy, and levels rise throughout gestation. Serum-free E3 is often lower than expected for the gestational age in a pregnancy associated with Down syndrome. The combination of low serum-free estriol, low α-fetoprotein (AFP), high hCG, and high-inhibin A is used as a screening test to detect Down syndrome. When one of the four markers is abnormal, amniocentesis should be performed for the diagnosis of Down syndrome by karyotyping or fluorescence in situ hybridization (FISH). The four markers have a combined sensitivity (detection rate) of approximately 75%."
+  },
+  {
+    "id": 1103,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "The syndrome of inappropriate antidiuretic hormone secretion (SIADH) causes:",
+    "options": [
+      "Low serum vasopressin",
+      "Hypernatremia",
+      "Urine osmolality to be lower than plasma",
+      "Low serum electrolytes"
+    ],
+    "answer": "D",
+    "explanation": "SIADH results in excessive secretion of vasopressin (ADH) from the posterior pituitary, causing fluid retention and low plasma osmolality, sodium, potassium, and other electrolytes by hemodilution. It is suspected when urine osmolality is higher than that of plasma but urine sodium concentration is normal or increased. Patients with sodium depletion have urine osmolality higher than that of plasma, but low urine sodium."
+  },
+  {
+    "id": 1104,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the hormone which when elevated is associated with galactorrhea, pituitary adenoma, and amenorrhea.",
+    "options": [
+      "Estradiol",
+      "Progesterone",
+      "Follicle-stimulating hormone (FSH)",
+      "Prolactin"
+    ],
+    "answer": "D",
+    "explanation": "Serum prolactin may be increased from hypothalamic dysfunction or pituitary adenoma. When levels are greater than five times the URL, a pituitary tumor is suspected. Prolactin is measured by immunoassay."
+  },
+  {
+    "id": 1105,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Zollinger-Ellison (Z-E) syndrome is characterized by great (e.g., 20-fold) elevation of:",
+    "options": [
+      "Gastrin",
+      "Cholecystokinin",
+      "Pepsin",
+      "Glucagon"
+    ],
+    "answer": "A",
+    "explanation": "Z-E syndrome is caused by a pancreatic or intestinal tumor secreting gastrin (gastrinoma) and results in greatly increased gastric acid production. A serum gastrin level 10-fold greater than the URL in a person with hyperacidity and stomach or duodenal ulcers is diagnostic. Confirmation of gastric hyperacidity is demonstrated by using the basal acid output (BAO) test."
+  },
+  {
+    "id": 1106,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement about multiple endocrine neoplasia (MEN) is true?",
+    "options": [
+      "It is associated with hyperplasia or neoplasia of at least two endocrine organs",
+      "Insulinoma is always present when the pituitary is involved",
+      "It is inherited as an autosomal recessive disorder",
+      "Plasma hormone levels from affected organs are elevated at least 10-fold"
+    ],
+    "answer": "A",
+    "explanation": "MEN syndrome is inherited as an autosomal dominant disease involving excess production of hormones from several endocrine glands. MEN I results from adenomas (usually benign) of at least two glands, including the pituitary, adrenal cortex, parathyroid, and pancreas. The parathyroid gland is the organ most commonly involved, and in those patients, an elevated Cai is an early sign. The pancreas is the next most frequently involved organ, but the hormone most commonly oversecreted is gastrin (not insulin). MEN II is characterized by pheochromocytoma and thyroid carcinoma. MEN II-B is a variant of MEN II showing the addition of neurofibroma."
+  },
+  {
+    "id": 1107,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the main estrogen produced by the ovaries and used to evaluate ovarian function.",
+    "options": [
+      "E3",
+      "E2",
+      "Epiestriol",
+      "Hydroxyestrone"
+    ],
+    "answer": "B",
+    "explanation": "E2 is the major estrogen produced by the ovaries and gives rise to both estrone (E1) and E3. E2 is used to evaluate both ovarian function and menstrual cycle dysfunction."
+  },
+  {
+    "id": 1108,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement best describes the relationship between luteinizing hormone (LH) and FSH in cases of dysmenorrhea?",
+    "options": [
+      "Both are usually increased when there is pituitary adenoma",
+      "Increases in both hormones and a decrease in estrogen signal a pituitary cause of ovarian failure",
+      "Both hormones normally peak 1 to 2 days before ovulation",
+      "In menopause, the LH level at the midcycle peak is higher than the level of FSH"
+    ],
+    "answer": "C",
+    "explanation": "In women, serum or urine LH and FSH are measured along with estrogen, progesterone and prolactin to evaluate the cause of menstrual cycle abnormalities and anovulation. Both hormones show a pronounced serum peak 1 to 2 days prior to ovulation and urine peak 20 to 44 hours before ovulation. Normally, the LH peak is sharper and greater than the FSH peak; however, in menopause, the FSH level usually becomes higher than that of LH. In patients with primary ovarian failure, LH and FSH are elevated because low estrogen levels stimulate release of luteinizing hormone– releasing hormone (LHRH) from the hypothalamus. Conversely, in pituitary failure, levels of FSH and LH are reduced, and this reduction causes a deficiency of estrogen production by the ovaries."
+  },
+  {
+    "id": 1109,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "When pituitary adenoma is the cause of decreased estrogen production, an increase of which hormone is most frequently responsible?",
+    "options": [
+      "Prolactin",
+      "FSH",
+      "LH",
+      "Thyroid-stimulating hormone (TSH)"
+    ],
+    "answer": "A",
+    "explanation": "Prolactinoma can result in anovulation because high levels of prolactin suppress release of LHRH (gonadotropin-releasing hormone [GRH]), causing suppression of growth hormone (GH), FSH, and estrogen. Prolactinoma is the most commonly occurring pituitary tumor accounting for 40% to 60%. Adenomas producing FSH have a frequency of about 20%, whereas those pituitary tumors secreting LH and TSH are rare."
+  },
+  {
+    "id": 1110,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which set of results is most likely in an adult male with primary testicular failure?",
+    "options": [
+      "Increased LH, FSH, and decreased testosterone",
+      "Decreased LH, FSH, and testosterone",
+      "Decreased testosterone, androstenedione, and FSH",
+      "Increased androstenedione, decreased testosterone, and normal FSH"
+    ],
+    "answer": "A",
+    "explanation": "Primary testicular failure produces a picture of hypergonadotropism. LH and FSH are increased because the pituitary gland is normal and responds to decreased free testosterone. Androstenedione is an adrenal androgen that remains unaffected. In testicular failure secondary to pituitary deficiency (hypogonadotropic testicular failure), the levels of LH, FSH, and testosterone are low. In cases of mild hypogonadism, total testosterone may be normal as a result of high sex hormone– binding globulin (SHBG). In such cases, free testosterone, the bioavailable form, will be low."
+  },
+  {
+    "id": 1111,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "When should progesterone be measured when evaluating an adult female for anovulation?",
+    "options": [
+      "At the onset of menses",
+      "During the first 7 days of the menstrual cycle",
+      "At the midcycle just after LH peaks",
+      "At the end of the menstrual cycle"
+    ],
+    "answer": "C",
+    "explanation": "Progesterone is often measured along with LH, FSH, estrogen, and prolactin to evaluate female infertility and dysmenorrhea. Progesterone is produced by the corpus luteum and levels are very low during the early follicular phase of the cycle. Progesterone is released by the corpus luteum following the LH surge that occurs 1 to 2 days prior to ovulation and is an indication that ovulation occurred. Low progesterone at midcycle indicates that ovulation did not occur. This is often the case in polyovarian cyst syndrome."
+  },
+  {
+    "id": 1112,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "A female with severe excessive pubic and facial hair growth (hirsutism) should be tested for which of the following hormones?",
+    "options": [
+      "Estrogen and progesterone",
+      "Chorionic gonadotropin",
+      "Growth hormone",
+      "Testosterone and dehydroepiandrosterone sulfate"
+    ],
+    "answer": "D",
+    "explanation": "Excessive hair grown in females results from excessive androgen production and is most commonly seen in polycystic ovarian syndrome, which produces high levels of ovarian-derived testosterone. It will also occur as a consequence of Cushing syndrome and mild congenital adrenal hyperplasia (CAH). Therefore, cortisol and 17 α- hydroxyprogesterone can help identify those causes. Rapid onset of hirsutism can result from an ovarian or adrenal tumor. Dehydroepiandrosterone sulfate is produced only by the adrenals and would be useful in identifying those rare cases where the cause is an androgen-secreting adrenal tumor."
+  },
+  {
+    "id": 1113,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which set of results is most likely in a female with hypogonadotropic ovarian failure?",
+    "options": [
+      "Increased LH, FSH, and estrogen",
+      "Decreased LH, FSH, and estrogen",
+      "Decreased prolactin and estrogen",
+      "Increased LH and FSH, and decreased estrogen"
+    ],
+    "answer": "B",
+    "explanation": "Hypogonadotropic ovarian failure is the result of pituitary dysfunction. It may be caused by low levels of both LH and FSH, or it may be caused by high levels of prolactin as in prolactinoma because prolactin will inhibit LHRH and result in low LH and FSH."
+  },
+  {
+    "id": 1114,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "The onset of menopause is usually associated with what hormonal changes?",
+    "options": [
+      "Decreased estrogen, testosterone, and androgens",
+      "Decreased estrogen, FSH, LH, and progesterone",
+      "Decreased estrogen and progesterone, and increased LH and FSH",
+      "Decreased estrogen and progesterone, normal LH and FSH"
+    ],
+    "answer": "C",
+    "explanation": "In menopause, estrogen production decreases to the point where the menstrual cycle and ovarian follicle maturation stop. The decreased estrogen causes the pituitary release of LH and FSH. In menopause, the FSH level at midcycle is higher than that of LH. The increased LH causes the ovaries to secrete testosterone and androgens."
+  },
+  {
+    "id": 1115,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements is correct in assessing GH deficiency?",
+    "options": [
+      "Pituitary failure may involve one, several, or all adenohypophyseal hormones; but GH deficiency is usually found",
+      "A normal random serum level of GH in a child under 6 years old rules out GH deficiency",
+      "Administration of arginine, insulin, or glucagon will suppress GH release",
+      "GH levels in the blood show little variation within a 24-hour period"
+    ],
+    "answer": "A",
+    "explanation": "Because GH is the most abundant pituitary hormone, it may be used as a screening test for pituitary failure in adults. Pituitary hormone deficiencies are rare and are evaluated by measuring those hormones associated with the specific type of target organ dysfunction. GH secretion peaks during sleep, and pulsed increases are seen after exercise and meals. In adults, a deficiency of GH can be ruled out by demonstrating normal or high levels on two successive tests. In children, there is extensive overlap between normal and low GH levels, and a stimulation (provocative) test is usually needed to establish a diagnosis of deficiency. Exercise is often used to stimulate GH release. If GH levels are greater than 6 µg/L after vigorous exercise, then deficiency is ruled out. In addition to exercise, certain drugs, such as arginine, insulin, propranolol, and glucagon, can be used to stimulate GH release. Deficiency is documented by registering a subnormal response to two stimulating agents."
+  },
+  {
+    "id": 1116,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement best describes the level of GH in patients with pituitary adenoma associated with acromegaly?",
+    "options": [
+      "The fasting GH level is always elevated at least twofold",
+      "Some patients will require a glucose suppression test to establish a diagnosis",
+      "A normal fasting GH level rules out acromegaly",
+      "Patients produce a lower concentration of insulin-like growth factor I (IGF-1) than expected from their GH level"
+    ],
+    "answer": "B",
+    "explanation": "Approximately 90% of patients with acromegaly have an elevated fasting GH level, but 10% do not. In addition, a single measurement is not sufficient to establish a diagnosis of acromegaly because various metabolic and nutritional factors can cause an elevated serum GH in the absence of pituitary disease. The glucose suppression test is used to diagnose acromegaly. An oral dose of 100 g of glucose will suppress the serum GH level at 1 hour (after administration) to less than 1 µg/L in normal individuals, but not in patients with acromegaly. Patients with acromegaly also have high levels of IGF-1, also called somatomedin C, which is overproduced by the liver in response to excess release of GH."
+  },
+  {
+    "id": 1117,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Hyperparathyroidism is most consistently associated with:",
+    "options": [
+      "Hypocalcemia",
+      "Hypocalciuria",
+      "Hypophosphatemia",
+      "Metabolic alkalosis"
+    ],
+    "answer": "C",
+    "explanation": "Hyperparathyroidism causes increased resorption of calcium and decreased renal retention of phosphate. Increased serum calcium leads to increased urinary excretion. The distal collecting tubule of the nephron reabsorbs less bicarbonate as well as phosphate, resulting in acidosis."
+  },
+  {
+    "id": 1118,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding the use of PTH is true?",
+    "options": [
+      "Determination of serum PTH level is the best screening test for disorders of calcium metabolism",
+      "PTH levels differentiate primary and secondary causes of hypoparathyroidism",
+      "PTH levels differentiate primary and secondary causes of hypocalcemia",
+      "PTH levels are low in patients with pseudohypoparathyroidism"
+    ],
+    "answer": "C",
+    "explanation": "Serum Cai is the best screening test to determine if a disorder of calcium metabolism is present, and will distinguish primary hyperparathyroidism (high Cai) and secondary hyperparathyroidism (low Cai). PTH levels are used to distinguish primary and secondary causes of hypocalcemia. Serum PTH is low in primary hypocalcemia (which results from parathyroid gland disease) but is high in secondary hypocalcemia (e.g., renal failure). Serum PTH is also used for the early diagnosis of secondary hypocalcemia because PTH levels rise prior to a decrease in the serum Cai. Serum PTH is used to distinguish primary hyperparathyroidism (high PTH) and hypercalcemia of malignancy (usually low PTH), and pseudohypoparathyroidism from primary hypoparathyroidism. Pseudohypoparathyroidism results from a deficient response to PTH and is associated with normal or elevated serum PTH."
+  },
+  {
+    "id": 1119,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "The best method of analysis for serum PTH involves using antibodies that react with:",
+    "options": [
+      "The amino-terminal fragment of PTH",
+      "The carboxy-terminal end of PTH",
+      "The amino-terminal and either C-middle or C-terminal fragment",
+      "All fragments of PTH as well as intact hormone"
+    ],
+    "answer": "C",
+    "explanation": "PTH is a polypeptide comprised of 84 amino acids. The biological activity of the hormone resides in the N-terminal portion of the polypeptide, but the hormone is rapidly degraded and produces N-terminal, middle, and C-terminal fragments. Fragments lacking the N-terminal portion are inactive and N-terminal fragments do not circulate. Immunoassays for PTH using antibodies to different portions of the polypeptide will give different results. The assay of choice is a two-site double- antibody sandwich method that measures intact PTH. Methods that use single antibodies may detect inactive as well as active PTH fragments and are not as specific for parathyroid disease."
+  },
+  {
+    "id": 1120,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is most often elevated in hypercalcemia associated with malignancy?",
+    "options": [
+      "Parathyroid-derived PTH",
+      "Ectopic PTH",
+      "PTHRP",
+      "Calcitonin"
+    ],
+    "answer": "C",
+    "explanation": "PTHRP is a peptide produced by many tissues and normally present in blood at a very low level. The peptide has an N-terminal sequence of eight amino acids that are the same as those found in PTH and that will stimulate the PTH receptors of bone. Some malignancies (e.g., squamous, renal, bladder, and ovarian cancers) secrete PTHRP, causing hypercalcemia-associated malignancy. Because the region shared with PTH is small and poorly immunoreactive, the peptide does not cross-react in most assays for PTH. For this reason, and because tumors producing ectopic PTH are rare, almost all patients who have elevated Cai and elevated PTH have primary hyperparathyroidism. The immunoassay for PTHRP will frequently show elevated levels in patients not yet diagnosed with malignancy but who have elevated Cai, without elevated serum PTH. Calcitonin is a hormone produced in the medulla of the thyroid that opposes the action of PTH. However, calcitonin levels do not greatly influence serum calcium. Assay of calcitonin is used exclusively to diagnose medullary thyroid cancer, which produces very high serum levels. Procalcitonin, a precursor of calcitonin, is an acute phase reactant stimulated by bacterial endotoxin. It is measured in plasma and CSF as a marker for bacterial infection."
+  },
+  {
+    "id": 1121,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which is normally the most abundant corticosteroid hormone secreted by the adrenal cortex?",
+    "options": [
+      "Cortisol",
+      "Dehydroepiandrosterone",
+      "Aldosterone",
+      "Corticosterone"
+    ],
+    "answer": "A",
+    "explanation": "Cortisol is the most abundant adrenal hormone, and abnormal levels have pronounced effects on carbohydrate and lipid metabolism. Cortisol is a 21-carbon steroid with a dihydroxyacetone group at C17 and hydroxyl group at C11 which account for its glucocorticoid potency. Plasma and urinary cortisol measurements are used to diagnose most types of adrenocortical dysfunction. DHEA, an adrenal androgen, is the next most abundant adrenal hormone. Aldosterone is the principal mineral corticoid made by the adrenals, and corticosterone is the immediate precursor to aldosterone. Both regulate salt balance."
+  },
+  {
+    "id": 1122,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding adrenal cortical dysfunction is true?",
+    "options": [
+      "Patients with Cushing syndrome usually have hyperkalemia",
+      "Cushing syndrome is associated with glucose intolerance",
+      "Addison disease is associated with hypernatremia",
+      "Addison disease is caused by elevated levels of cortisol"
+    ],
+    "answer": "B",
+    "explanation": "Patients with Cushing syndrome have elevated levels of cortisol and other adrenal corticosteroids. This causes the characteristic cushingoid appearance that includes obesity, acne, and humpback posture. Osteoporosis, hypertension, hypernatremia, hypokalemia, and glycosuria are characteristic features. Addison disease results from adrenal hypoplasia and produces the opposite symptoms, including hypotension, hyponatremia, hyperkalemia, and hypoglycemia."
+  },
+  {
+    "id": 1123,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements about cortisol in Cushing syndrome is true?",
+    "options": [
+      "Twenty-four–hour urinary free cortisol is a more sensitive test than plasma total cortisol",
+      "Patients with Cushing disease show pronounced diurnal variation in serum cortisol",
+      "Free cortisol is increased by a high-serum cortisol-binding protein concentration",
+      "An elevated serum total cortisol level is diagnostic of Cushing syndrome"
+    ],
+    "answer": "A",
+    "explanation": "Serum cortisol can be increased by such factors as stress, medications, and cortisol- binding protein, and the cortisol level of normal individuals will overlap those seen in Cushing syndrome because of pulse variation. When cortisol levels become elevated, cortisol-binding protein becomes saturated, and free (unbound) cortisol is filtered by the glomeruli. Most of it is reabsorbed, but a significant amount reaches the urine as free cortisol. Twenty-four–hour urinary free cortisol avoids the diurnal variation that may affect plasma free cortisol levels and is a more sensitive test than serum total or free cortisol."
+  },
+  {
+    "id": 1124,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions is characterized by primary hyperaldosteronism caused by adrenal adenoma, carcinoma, or hyperplasia?",
+    "options": [
+      "Cushing syndrome",
+      "Addison disease",
+      "Conn syndrome",
+      "Pheochromocytoma"
+    ],
+    "answer": "C",
+    "explanation": "Conn syndrome is characterized by hypertension, hypokalemia, and hypernatremia, with increased plasma and urine aldosterone and decreased renin. Cushing syndrome results from excessive production of cortisol, and Addison disease results from deficient production of adrenal corticosteroids. Pheochromocytoma is a tumor of chromaffin cells (usually adrenal) that produces catecholamines."
+  },
+  {
+    "id": 1125,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is the most common cause of Cushing syndrome?",
+    "options": [
+      "Pituitary adenoma",
+      "Adrenal hyperplasia",
+      "Overuse of corticosteroids",
+      "Ectopic adrenocorticotropic hormone (ACTH) production by tumors"
+    ],
+    "answer": "C",
+    "explanation": "The most common cause of Cushing syndrome is the administration of medications with cortisol or glucocorticoid activity. Excluding iatrogenic causes, in approximately 60% to 70% of cases, Cushing syndrome results from hypothalamic–pituitary misregulation and is called Cushing disease. Adrenal adenoma or carcinoma (non- ACTH–mediated Cushing syndrome) comprise about 20% of cases, and ectopic ACTH production accounts for 10% to 20%."
+  },
+  {
+    "id": 1126,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is the mechanism causing Cushing disease?",
+    "options": [
+      "Excess secretion of pituitary ACTH",
+      "Adrenal adenoma",
+      "Treatment with corticosteroids",
+      "Ectopic ACTH production by tumors"
+    ],
+    "answer": "A",
+    "explanation": "Cushing disease refers to adrenal hyperplasia resulting from misregulation of the hypothalamic–pituitary axis. It is usually caused by small pituitary adenomas. Cushing syndrome may be caused by Cushing disease, adrenal adenoma or carcinoma, ectopic ACTH-producing tumors, or excessive corticosteroid administration. The cause of Cushing syndrome can be differentiated by using ACTH and dexamethasone suppression tests."
+  },
+  {
+    "id": 1127,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "In which situation is the plasma or 24-hour urinary cortisol not consistent with the clinical picture?",
+    "options": [
+      "In pregnant patients",
+      "In patients with a positive result on the overnight dexamethasone suppression test",
+      "In congenital adrenal hyperplasia",
+      "In Cushing syndrome caused by ectopic ACTH-producing tumors"
+    ],
+    "answer": "C",
+    "explanation": "CAH (adrenogenital syndrome) results from deficiency of an enzyme required for synthesis of cortisol. Approximately 90% of cases are caused by a deficiency of 21- hydroxylase blocking conversion of 17 α-hydroxyprogesterone to 11-deoxycortisol. Most other cases are caused by 11-hydroxylase deficiency, which blocks conversion of 11-deoxycortisol to cortisol. Precursors of cortisol, usually either 17 α- hydroxyprogesterone or 11-deoxycortisol are increased. This results in low serum cortisol levels but high levels of these intermediates. The two most common features of CAH are salt wasting caused by increased mineral corticoid activity and virilization caused by increased androgens."
+  },
+  {
+    "id": 1128,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which test is used to distinguish Cushing disease (pituitary Cushing) from Cushing syndrome caused by adrenal tumors?",
+    "options": [
+      "Low-dose overnight dexamethasone suppression",
+      "Inferior petrosal sinus sampling",
+      "Serum ACTH",
+      "24-hour urine free cortisol"
+    ],
+    "answer": "C",
+    "explanation": "Serum ACTH assays are very helpful in distinguishing the cause of Cushing syndrome. Patients with adrenal tumors have values approaching zero. Patients with ectopic ACTH tumors have values greater than 200 pg/dL. Fifty percent of patients with Cushing disease have high 8 a.m. ACTH levels (100–200 pg/dL). The high-dose dexamethasone suppression test is also used. Patients with Cushing disease show more than 50% suppression of cortisol release after receiving an 8-mg dose of dexamethasone, but patients with adrenal tumors or ACTH-producing tumors do not. Inferior petrosal sinus sampling (the petrosal sinuses drain the pituitary) is used to determine if a high ACTH is from the pituitary glands or from an ectopic source."
+  },
+  {
+    "id": 1129,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which is the most widely used screening test for Cushing syndrome?",
+    "options": [
+      "Overnight low-dose dexamethasone suppression test",
+      "Corticotropin-releasing hormone (CRH) stimulation test",
+      "Inferior petrosal sinus sampling",
+      "Metyrapone stimulation test"
+    ],
+    "answer": "A",
+    "explanation": "Dexamethasone is a synthetic corticosteroid that exhibits 30-fold greater negative feedback on the hypothalamus compared with cortisol. When an oral dose of 1 mg of the drug is given to a patient at 11 p.m., the 8 a.m. serum total cortisol level should be below 5.0 µg/dL. Patients with Cushing syndrome almost always exceed this cutoff. Therefore, a normal response to dexamethasone excludes Cushing syndrome with a sensitivity of about 98%. CRH stimulation and petrosal sinus sampling are confirmatory tests for Cushing disease and are used when the high-dose dexamethasone suppression test is inconclusive. The metyrapone stimulation test measures the patient’s ACTH reserve. Metyrapone blocks cortisol formation by inhibiting 11β-hydroxylase. This causes an increase in ACTH output in normal individuals. A subnormal ACTH response is seen in persons with Addison disease caused by pituitary failure."
+  },
+  {
+    "id": 1130,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which test is the most specific for establishing a diagnosis of Cushing disease (pituitary Cushing)?",
+    "options": [
+      "Low-dose dexamethasone suppression",
+      "High-dose dexamethasone suppression",
+      "24-hour urine free cortisol",
+      "Petrosal sinus sampling after CRH stimulation"
+    ],
+    "answer": "D",
+    "explanation": "Although dexamethasone suppression tests have a high sensitivity, some individuals without Cushing syndrome have indeterminate results (e.g., values between 5 and 10 µg/dL) or abnormal results caused by medications or other conditions. When CRH (or desmopressin) is given intravenously, patients with Cushing disease have an exaggerated ACTH response. Samples are drawn from the sinuses draining the pituitary gland and from the peripheral blood. In patients with pituitary tumors, the ACTH level will be several times higher in the sinus samples than in the peripheral blood samples. Inferior petrosal sinus sampling can determine if the microadenomas are bilateral and, if not, on which side they are on."
+  },
+  {
+    "id": 1131,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements about the diagnosis of Addison disease is true?",
+    "options": [
+      "Patients with primary Addison disease show a normal response to ACTH stimulation",
+      "Primary and secondary Addison disease can often be differentiated by plasma ACTH",
+      "24-hour urinary free cortisol is normal in Addison disease",
+      "Pituitary ACTH reserves are normal in secondary Addison disease"
+    ],
+    "answer": "B",
+    "explanation": "ACTH (Cortrosyn) stimulation is used as a screening test for Addison disease. A 250- µg dose of Cortrosyn is given intravenously. Normal individuals show a two to five times increase in serum cortisol. A subnormal response occurs in both primary and secondary Addison disease. Plasma ACTH is high in primary but is low in secondary Addison disease. Patients with secondary Addison disease (pituitary failure) do not respond to metyrapone because their ACTH reserve is diminished."
+  },
+  {
+    "id": 1132,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding the catecholamines is true?",
+    "options": [
+      "They are derived from tryptophan",
+      "They are produced by the zona glomerulosa of the adrenal cortex",
+      "Plasma levels show both diurnal and pulsed variation",
+      "They are excreted in urine primarily as free catecholamines"
+    ],
+    "answer": "C",
+    "explanation": "Catecholamines—epinephrine, norepinephrine, and dopamine—are produced from the amino acid tyrosine by the chromaffin cells of the adrenal medulla. Plasma and urinary catecholamines are measured to diagnose pheochromocytoma. Symptoms include hypertension, headache, sweating, and other endocrine involvement. Plasma catecholamines are oxidized rapidly to metanephrines and VMA; only about 2% is excreted as free catecholamines. The zona glomerulosa is the outermost portion of the adrenal cortex, where aldosterone is mainly produced. Cortisol is made in the zona fasciculata."
+  },
+  {
+    "id": 1133,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which assay is considered the best single screening test for pheochromocytoma?",
+    "options": [
+      "Total urinary catecholamines",
+      "VMA",
+      "HVA",
+      "Plasma free metanephrines"
+    ],
+    "answer": "D",
+    "explanation": "Catecholamines are metabolized to metanephrines and VMA. Urinary catecholamines are increased by exercise and dietary ingestion. Measurement of plasma free metanephrine is about 96% sensitive for pheochromocytoma, and is the best single test followed by 24-hour urinary metanephrines, which is slightly less sensitive but more specific. Specificity and sensitivity for detecting pheochromocytoma approach 100% when both VMA and metanephrines are measured."
+  },
+  {
+    "id": 1134,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which metabolite is most often increased in carcinoid tumors of the intestine?",
+    "options": [
+      "5-Hydroxyindolacetic acid (5-HIAA)",
+      "3-Methoxy-4-hydroxyphenylglycol (MHPG)",
+      "3-Methoxydopamine",
+      "Homovanillic acid"
+    ],
+    "answer": "A",
+    "explanation": "5-HIAA is a product of serotonin catabolism. Excess levels are found in the urine of patients with carcinoid tumors composed of argentaffin cells. Carcinoid tumors are usually found in the intestine or lung, and produce serotonin and 5-hydroxytryptophan, a serotonin precursor. Serotonin is deaminated by monamine oxidase, forming 5- HIAA, and the 5-HIAA is excreted in urine. Some carcinoid tumors produce mainly 5- hydroxytryptophan because they lack an enzyme needed to convert it to serotonin. 5- hydroxytryptophan is converted by the kidneys to serotonin resulting in high urinary serotonin. Both 5-HIAA and serotonin are usually measured by using HPLC with electrochemical detection."
+  },
+  {
+    "id": 1135,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding the measurement of urinary catecholamines is true?",
+    "options": [
+      "An increased excretion of total urinary catecholamines is specific for pheochromocytoma",
+      "Twenty-four–hour urinary catecholamine assay avoids pulse variations associated with measurement of plasma catecholamines",
+      "Total urinary catecholamine measurement provides greater specificity than measurement of urinary free fractionated catecholamines",
+      "Total urinary catecholamines are not affected by exercise"
+    ],
+    "answer": "B",
+    "explanation": "Measurement of total urinary catecholamines is not a specific test for pheochromocytoma. Urine levels may be increased by exercise and in muscular diseases. Catecholamines in urine may also be derived from dietary sources rather than endogenous production. Most catecholamines are excreted as the glucuronide, and the urinary free catecholamines increase only when there is increased secretion. Measurement of free fractionated hormones in urine is somewhat lower in both clinical sensitivity and specificity than measurement of metanephrines. Twenty-four–hour urine is the sample of choice because plasma levels are subject to pulse variation and affected by the patient’s psychological and metabolic condition at the time of sampling."
+  },
+  {
+    "id": 1136,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which method is most often used to measure fractionated catecholamines (epinephrine, norepinephrine, and dopamine)?",
+    "options": [
+      "Measurement of fluorescence following oxidation by potassium ferricyanide",
+      "Measurement by HPLC with electrochemical detection",
+      "Measure of radioactivity after conversion by catechol-O-methyltransferase (COMT) to tritiated metanephrines",
+      "Measurement by immunoassay"
+    ],
+    "answer": "B",
+    "explanation": "HPLC–ECD separates catecholamines by reverse-phase chromatography, then detects them by oxidizing the aromatic ring at +0.8 V to a quinone ring. Current is proportional concentration, and the method fractionates catecholamines into epinephrine, norepinephrine, and dopamine. Fluorescent methods employing ferricyanide (trihydroxyindole method) or ethylenediamine (EDA method) show interference from several drugs and are obsolete. ESI-MS/MS is an alternative to HPLC-EDC for measurement of fractionated catecholamines and metanephrines. Immunoassays require derivatization of catecholamines, have extensive incubation times and do not fractionate catecholamines. Measurement of fractionated catecholamines is preferred because it can detect an abnormal ratio of norepinephrine to epinephrine, which is seen in pheochromocytoma, and increased dopamine, which is found in extra-adrenal tumors."
+  },
+  {
+    "id": 1137,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement about sample collection for catecholamines and metabolites is true?",
+    "options": [
+      "Blood for catecholamines is collected in the usual manner following a 12-hour fast",
+      "Twenty-four–hour urine for VMA, catecholamines, or metanephrines is collected in 1 mL of boric acid",
+      "Twenty-four–hour urine creatinine should be measured with VMA, HVA, or metanephrines",
+      "There is no need to discontinue medications if a 24-hour urine collection is used"
+    ],
+    "answer": "C",
+    "explanation": "Stress, exercise, and an upright position induce catecholamine elevation, and therefore, patients must be resting in the supine position for at least 30 minutes prior to blood collection. The preferred method of collection is catheterization so that the anxiety of venipuncture is not a factor. A 4-hour fast is also recommended. Many drugs contain epinephrine, which may falsely elevate catecholamine levels. In addition, many drugs inhibit monoamine oxidase, which is needed to convert metanephrines to VMA. Therefore, medications should be temporarily discontinued prior to testing, whenever possible. Twenty-four–hour urine samples for catecholamines are usually preserved with 10 mL of 6N HCl because some degradation occurs during storage when pH is greater than 3. Renal clearance affects excretion of catecholamine metabolites; it is preferable to report VMA, HVA, and metanephrines, in micrograms per milligram of creatinine. Urine creatinine excretion should be at least 0.8 g/day, to validate the completeness of the 24-hour urine sample."
+  },
+  {
+    "id": 1138,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements applies to measurement of both VMA and metanephrines in urine?",
+    "options": [
+      "Both can be oxidized to vanillin and measured at 360 nm without interference from dietary compounds",
+      "Both can be measured immunochemically after hydrolysis and derivatization",
+      "Both require acid hydrolysis prior to measurement",
+      "Both can be measured by specific HPLC and MS assays"
+    ],
+    "answer": "D",
+    "explanation": "VMA and metanephrines can both be measured as vanillin after oxidation with periodate. However, these methods are affected by dietary sources of vanillin; coffee, chocolate, bananas, and vanilla must be excluded from the diet. Metanephrines, VMA, and HVA are most often measured by using HPLC-EDC."
+  },
+  {
+    "id": 1139,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Urinary HVA is most often assayed to detect:",
+    "options": [
+      "Pheochromocytoma",
+      "Neuroblastoma",
+      "Adrenal medullary carcinoma",
+      "Psychiatric disorders, such as manic depression"
+    ],
+    "answer": "B",
+    "explanation": "HVA is the major metabolite of dopa, and urinary HVA is elevated in greater than 75% of patients with neuroblastoma. Neuroblastomas also usually produce VMA from norepinephrine. Thus, HVA and VMA are assayed together, and this increases the sensitivity of detection to around 90%."
+  },
+  {
+    "id": 1140,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Thyroid hormones are derived from the amino acid:",
+    "options": [
+      "Phenylalanine",
+      "Methionine",
+      "Tyrosine",
+      "Histidine"
+    ],
+    "answer": "C",
+    "explanation": "Thyroid hormones are derived from the enzymatic modification of tyrosine residues on thyroglobulin. Tyrosine is halogenated enzymatically with iodine, forming monoiodotyrosine (MIT) and diiodotyrosine (DIT). Enzymatic coupling of these residues form T3 (3,5,3’-triiodothyronine) and T4 (3,5,3’,5’-tetraiodothyronine). These are hydrolyzed from thyroglobulin, forming active hormones."
+  },
+  {
+    "id": 1141,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding thyroid hormones is true?",
+    "options": [
+      "Circulating levels of T3 and T4 are about equal",
+      "T3 is about 10-fold more active than T4",
+      "The rate of formation of monoiodotyrosine and diiodotyrosine is about equal",
+      "Most of the T3 present in plasma is from its direct release from thyroid storage sites"
+    ],
+    "answer": "B",
+    "explanation": "The rate of DIT synthesis is twice that of MIT and the rate of coupling favors formation of T4. Levels of T4 are about 50 times those of T3, but T3 is approximately 10 times more active physiologically. Eighty percent of circulating T3 is derived from enzymatic conversion of T4 by T4 5’-deiodinase."
+  },
+  {
+    "id": 1142,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding thyroid hormones is true?",
+    "options": [
+      "Both protein-bound and free triiodothyronine (T3) and thyroxine (T4) are physiologically active",
+      "Total T3 and T4 are influenced by the level of thyroxine-binding globulin",
+      "Variation in thyroxine-binding protein levels affects both free T3 and T4",
+      "An elevated serum total T4 and T3 is diagnostic of hyperthyroidism"
+    ],
+    "answer": "B",
+    "explanation": "Total serum T4 and T3 are dependent on both thyroid function and the amount of T4- binding proteins, such as TBG. Total T4 or T3 may be abnormal in a patient with normal thyroid function, if the TBG level is abnormal. For this reason, free T3 and T4 are more specific indicators of thyroid function than are measurements of total hormone. Only free hormone is physiologically active."
+  },
+  {
+    "id": 1143,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following conditions will increase total T4 by increasing thyroxine-binding globulin (TBG)?",
+    "options": [
+      "Acute illness",
+      "Anabolic steroid use",
+      "Nephrotic syndrome",
+      "Pregnancy or estrogens"
+    ],
+    "answer": "D",
+    "explanation": "Pregnancy and estrogens are the most common causes of increased TBG. Other causes include hepatitis, morphine, and clofibrate therapy. Acute illness, anabolic steroids, and nephrotic syndrome decrease the level of TBG. Normal pregnancy causes an elevated serum total T4. Suitable assays that estimate free T4 and T3 are available and should be used instead of total hormone assays."
+  },
+  {
+    "id": 1144,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the most appropriate single screening test for thyroid disease.",
+    "options": [
+      "Free T4 index",
+      "Free T3",
+      "Free T4",
+      "TSH assay"
+    ],
+    "answer": "D",
+    "explanation": "TSH is produced by the anterior pituitary in response to low levels of free T4 or T3. A normal TSH rules out thyroid disease. TSH is low in primary hyperthyroidism and high in primary hypothyroidism."
+  },
+  {
+    "id": 1145,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "The serum TSH level is almost absent in:",
+    "options": [
+      "Primary hyperthyroidism",
+      "Primary hypothyroidism",
+      "Secondary hyperthyroidism",
+      "Euthyroid sick syndrome"
+    ],
+    "answer": "A",
+    "explanation": "Low TSH and a high T3 occur in primary hyperthyroidism but may also occur in systemic nonthyroid illnesses where T4 has been converted to T3. A twofold increase in free hormone can produce a 100-fold decrease in TSH. In primary hyperthyroidism, TSH will usually be within a range of 0 to 0.02 mU/mL, whereas in nonthyroid illnesses it will be 0.03 mU/mL or greater. High TSH and low T4 levels occur in primary hypothyroidism but may also be seen in an acutely ill patient without thyroid disease (euthyroid sick syndrome). Secondary hyperthyroidism is caused by pituitary hyperfunction that increases TSH."
+  },
+  {
+    "id": 1146,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which assay is used to confirm difficult cases of hypothyroidism?",
+    "options": [
+      "Free T3 assay",
+      "Free T4 index",
+      "Thyrotropin-releasing hormone (TRH) stimulation test",
+      "TBG assay"
+    ],
+    "answer": "C",
+    "explanation": "The TRH stimulation test is used to confirm borderline cases of abnormal thyroid function. In normal individuals, intravenous (IV) injection of 500 µg of TRH causes a peak TSH response within 30 minutes. In patients with primary hypothyroidism, there is an exaggerated response (greater than 30 mU/L). Patients with hyperthyroidism do not show the expected rise in TSH after TRH stimulation."
+  },
+  {
+    "id": 1147,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements is true regarding reverse T3 (rT3)?",
+    "options": [
+      "Formed in blood by degradation of T4",
+      "Physiologically active, but less than T3",
+      "Decreased in euthyroid sick syndrome",
+      "Interferes with the measurement of serum T3"
+    ],
+    "answer": "A",
+    "explanation": "Reverse T3 (3,3’,5’-triiodothyronine) is formed from the deiodination of T4 in blood. It is an inactive isomer of T3. Reverse T3 is increased in acute and chronic illnesses and is used to identify patients with euthyroid sick syndrome."
+  },
+  {
+    "id": 1148,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "A patient has an elevated serum-free T3 and free T4 and undetectable TSH. What is the most likely cause of these results?",
+    "options": [
+      "Primary hyperthyroidism",
+      "Secondary hyperthyroidism",
+      "Euthyroid with increased TBG",
+      "Euthyroid sick syndrome"
+    ],
+    "answer": "A",
+    "explanation": "An undetectable TSH with increased T3 is caused by primary hyperthyroidism (suppression via high free thyroid hormone). In secondary hyperthyroidism, TSH will be elevated in addition to, at least, T3. Patients with an increased TBG level will have an increase in total T3 and T4, but not free T3,T4 or TSH. Patients with euthyroid sick syndrome usually have a small decrease in free T4 and a normal or slightly elevated TSH as a result of peripheral conversion of T4 to rT3."
+  },
+  {
+    "id": 1149,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "A serum thyroid panel reveals an increase in total T4, normal TSH, and normal free T4. What is the most likely cause of these results?",
+    "options": [
+      "Primary hyperthyroidism",
+      "Secondary hyperthyroidism",
+      "Euthyroid with increased TBG",
+      "Subclinical hypothyroidism"
+    ],
+    "answer": "C",
+    "explanation": "Individuals with a normal TSH level are euthyroid, and most commonly, an increase in total T4 is caused by an increase in TBG. An increase in TBG causes an increase in total T4 but not free T4. Subclinical hypothyroidism is usually associated with a high TSH, but normal free T3 and free T4. When TSH is indeterminate, the diagnosis is made by demonstrating an exaggerated response to the TRH stimulation test."
+  },
+  {
+    "id": 1150,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement about TSH and T4 in early pregnancy is correct?",
+    "options": [
+      "TSH and thyroid hormones fall",
+      "TSH falls and thyroid hormones rise",
+      "TSH and thyroid hormones both rise",
+      "TSH rises and thyroid hormones fall"
+    ],
+    "answer": "B",
+    "explanation": "Estrogens released in pregnancy cause an increase in TBG, which causes an increase in total T4 and T3. In early pregnancy, hCG produced by the placenta stimulates the thyroid, causing an increase in free thyroid hormones. This suppresses TSH production. In the second trimester, as hCG diminishes, free T4 levels fall and may be lower than 0.8 ng/dL, the lower limit of the adult reference range resulting from expansion of the blood volume. Therefore, both TSH and free T4 should be evaluated during pregnancy by using trimester-specific reference ranges. In early pregnancy, a TSH above the first- trimester reference range should be followed up with free T4 and thyroid peroxidase antibody levels to assess the need for thyroid treatment."
+  },
+  {
+    "id": 1151,
+    "section": "Clinical Endocrinology",
+    "chapter": "Clinical Chemistry",
+    "question": "In which case might a very low plasma TSH result not correlate with thyroid status?",
+    "options": [
+      "Euthyroid sick syndrome",
+      "Congenital hypothyroidism",
+      "When TBG is elevated",
+      "After high-dose corticosteroid treatment"
+    ],
+    "answer": "D",
+    "explanation": "In persons with severe chronic diseases or in those who have hCG-secreting tumors, TSH production may be suppressed. Some drugs, especially high doses of corticosteroids, will suppress TSH production. Low TSH levels not matching thyroid status can also be seen in patients who have recently been treated for hyperthyroidism because there is a delay in the pituitary response. High-sensitivity TSH assays that can measure as little as 0.01 mIU/L and free T4 and T3 can help differentiate these conditions from clinical hyperthyroidism. If the TSH is below 0.03 mIU/L and the free hormone levels are increased, this points to hyperthyroidism. Laboratory values in euthyroid sick syndrome may mimic mild hypothyroidism. In euthyroid sick syndrome, thyroid function will be normal, but TSH may be slightly increased because of lower levels of free T3 or T4. In euthyroid sick syndrome, the rT3 will be increased."
+  },
+  {
+    "id": 1152,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "In which of the following cases is qualitative analysis of the drug usually adequate?",
+    "options": [
+      "To determine whether the dose of a drug with a low therapeutic index is likely to be toxic",
+      "To determine whether a patient is complying with the physician’s instructions",
+      "To adjust dose if individual differences or disease alter expected response",
+      "To determine whether the patient has been taking amphetamines"
+    ],
+    "answer": "D",
+    "explanation": "The purpose of therapeutic drug monitoring is to achieve a therapeutic blood drug level rapidly and minimize the risk of drug toxicity caused by overdose. Therapeutic drug monitoring is a quantitative procedure performed for drugs with a narrow therapeutic index (ratio of the concentration producing the desired effect to the concentration producing toxicity). Drug groups that require monitoring because of high risk of toxicity include aminoglycoside antibiotics, anticonvulsants, antiarrhythmics, antiasthmatics, immunosuppressive agents used for transplant rejection, and psychoactive drugs. When testing for abuse substances, the goal is usually to determine whether the drug is present or absent. The most common approach is to compare the result with a cutoff value determined by measuring a standard containing the lowest level of drug that is considered significant."
+  },
+  {
+    "id": 1153,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "The term pharmacokinetics refers to the:",
+    "options": [
+      "Relationship between drug dose and the drug blood level",
+      "Concentration of drug at its sites of action",
+      "Relationship between blood concentration and therapeutic response",
+      "The relationship between blood and tissue drug levels"
+    ],
+    "answer": "A",
+    "explanation": "Pharmacokinetics is the mathematical expression of the relationship between drug dose and drug blood level. When the appropriate formula is applied to quantitative measurements of drug dose, absorption, distribution, and elimination, the dose needed to achieve a therapeutic blood concentration can be accurately determined."
+  },
+  {
+    "id": 1154,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "The term pharmacodynamics is an expression of the relationship between:",
+    "options": [
+      "Dose and physiological effect",
+      "Drug concentration at target sites and physiological effect",
+      "Time and serum drug concentration",
+      "Blood and tissue drug levels"
+    ],
+    "answer": "B",
+    "explanation": "Pharmacodynamics is the relationship between the drug concentration at the receptor site (tissue concentration) and the response of the tissue to that drug. For example, the relationship between lidocaine concentration in the heart muscle and the duration of the action potential of Purkinje fibers."
+  },
+  {
+    "id": 1155,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "The study of pharmacogenomics involves which type of testing?",
+    "options": [
+      "Familial studies to determine the inheritance of drug resistance",
+      "Testing drugs with cell cultures to determine the minimum toxic dosage",
+      "Testing for single nucleotide polymorphisms known to affect drug metabolism",
+      "Comparison of dose–response curves between family members"
+    ],
+    "answer": "C",
+    "explanation": "Pharmacogenomics refers to the study of genes that affect the concentration of a drug in an individual. One method is to test for single nucleotide polymorphisms (SNPs) by using DNA microarrays in genes, such as those that code for the cytochrome P450 enzymes involved in the metabolism of many drugs. Genetic variations of one such enzyme may account for individual pharmacokinetic differences and can be used to predict the efficacy of the drug."
+  },
+  {
+    "id": 1156,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the five pharmacologic parameters that determine serum drug concentration.",
+    "options": [
+      "Absorption, anabolism, perfusion, bioactivation, excretion",
+      "Liberation, equilibration, biotransformation, reabsorption, elimination",
+      "Liberation, absorption, distribution, metabolism, excretion",
+      "Ingestion, conjugation, integration, metabolism, elimination"
+    ],
+    "answer": "C",
+    "explanation": "Liberation is the release of the drug, and absorption is the transport of drug from the site of administration to blood. The percent of drug absorption and the rate of absorption determine the bioavailable fraction, f. This is the fraction of the dose that reaches the bloodstream. Distribution refers to the delivery of the drug to tissues. It involves dilution and equilibration of the drug in various fluid compartments, including blood, and is influenced by binding to proteins and blood cells. Metabolism is the process of chemical modification of the drug by cells. This results in production of metabolites with altered activity and solubility. Excretion is the process by which the drug and its metabolites are removed from the body."
+  },
+  {
+    "id": 1157,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which route of administration is associated with 100% bioavailability?",
+    "options": [
+      "Sublingual",
+      "Intramuscular",
+      "Oral",
+      "Intravenous"
+    ],
+    "answer": "D",
+    "explanation": "When a drug is administered intravenously, all of the drug enters the bloodstream, and therefore, the bioavailable fraction is 1.0. All other routes of administration require absorption through cells, and this process reduces the bioavailable fraction. The bioavailable fraction for a drug given orally can be calculated by dividing the peak blood concentration after oral administration by the peak drug concentration after IV administration. A value of 0.7 or greater is desired for drugs given orally."
+  },
+  {
+    "id": 1158,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "The phrase “first-pass hepatic metabolism” means that:",
+    "options": [
+      "One hundred percent of a drug is excreted by the liver",
+      "All drug is inactivated by hepatic enzymes after one pass through the liver",
+      "Some drug is removed from the portal circulation, reducing bioavailability",
+      "The drug must be metabolized in the liver to an active form"
+    ],
+    "answer": "C",
+    "explanation": "Drugs given orally usually enter the blood via the portal circulation and are transported directly to the liver. Some drugs are excreted by the liver, and a fraction will be lost by hepatic excretion before the drug reaches the general circulation. An example is propranolol, a β-blocker that reduces heart rate and hypertension. The bioavailable fraction is 0.2 to 0.4 when given orally because much of the drug is removed by first- pass hepatic metabolism."
+  },
+  {
+    "id": 1159,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which formula can be used to estimate dosage needed to give a desired steady-state blood level?",
+    "options": [
+      "Dose per hour = clearance (milligrams per hour) × average concentration at steady state ÷ f",
+      "Dose per day = fraction absorbed – fraction excreted",
+      "Dose = fraction absorbed × (1/protein-bound fraction)",
+      "Dose per day = half-life × log Vd (volume distribution)"
+    ],
+    "answer": "A",
+    "explanation": "After a patient receives a loading dose to rapidly bring the drug level up to the desired therapeutic range, a maintenance dose must be given at consistent intervals to maintain the blood drug level at the desired concentration. The dose per hour is determined by multiplying the clearance per hour by the desired average steady-state concentration, then dividing by f (bioavailable fraction)."
+  },
+  {
+    "id": 1160,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement is true regarding the volume distribution (Vd) of a drug?",
+    "options": [
+      "Vd is equal to the peak blood concentration divided by the dose given",
+      "Vd is the theoretical volume in liters into which the drug distributes",
+      "The higher the Vd, the lower is the dose needed to reach the desired blood level of drug",
+      "The Vd is the principal determinant of the dosing interval"
+    ],
+    "answer": "A",
+    "explanation": "B The Vd of a drug represents the dilution of the drug after it has been distributed in the body. Vd is used to estimate the loading dose needed to achieve the desired peak drug blood level. The peak blood level equals the dose multiplied by f ÷ Vd. Vd can be calculated by dividing the dose, Xo, by the initial plasma drug concentration, Co, (Vd = Xo/Co) or by dividing the clearance rate by K, the elimination rate constant (K = 0.693 divided by drug half-life). The greater the Vd, the higher is the dose that will be needed to achieve the desired blood concentration of the drug. Vd is the principal determinant of the dose, and the clearance rate is the principal determinant of the dosing interval."
+  },
+  {
+    "id": 1161,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "For drugs with first-order elimination, which statement about drug clearance is true?",
+    "options": [
+      "Clearance = elimination rate ÷ serum level",
+      "It is most often performed by the liver",
+      "It is directly related to half-life",
+      "Clearance rate is independent of dose"
+    ],
+    "answer": "A",
+    "explanation": "First-order elimination represents a linear relationship between the amount of drug eliminated per hour and the blood level of the drug. For drugs following linear kinetics, clearance equals the elimination rate divided by the drug concentration in blood. When clearance (in milligrams per hour) and f are known, the dose per hour needed to give a desired average drug level at steady state can be calculated. Clearance is inversely related to the drug’s half-life and is accomplished mainly by the kidneys."
+  },
+  {
+    "id": 1162,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement about steady-state drug levels is true?",
+    "options": [
+      "The absorbed drug must be greater than the amount excreted",
+      "Steady state can be measured after two elimination half-lives",
+      "Constant IV infusion will give the same minima and maxima as an oral dose",
+      "Oral dosing intervals give peaks and troughs in the dose–response curve"
+    ],
+    "answer": "D",
+    "explanation": "When drugs are infused through a steady IV drip, both the distribution and elimination rates are constant. This eliminates the peaks and troughs seen in the dose– response curve. Peak and trough levels are characteristics of intermittent dosing regimens. The steady state is reached when drug in the next dose is sufficient only to replace the drug eliminated since the last dose. Steady state can be measured after five drug half-lives because blood levels will have reached 97% of steady state."
+  },
+  {
+    "id": 1163,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "If too small a peak–trough difference is seen for a drug given orally, then:",
+    "options": [
+      "The dose should be decreased",
+      "Time between doses should be decreased",
+      "Dose interval should be increased",
+      "Dose per day and time between doses should be decreased"
+    ],
+    "answer": "C",
+    "explanation": "Increasing the dosing interval will reduce the trough concentration of the drug, and increasing the dose will increase the peak concentration of the drug, resulting in a greater peak–trough difference. Initially, the peak–trough ratio is usually adjusted to 2 with the dose interval set to equal the drug half-life. Under these conditions, both peak and trough levels often fall within the therapeutic range."
+  },
+  {
+    "id": 1164,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "If the peak level is appropriate but the trough level too low at steady state, then the dose interval should:",
+    "options": [
+      "Be lengthened without changing the dose per day",
+      "Be lengthened and dose rate decreased",
+      "Not be changed, but dose per day increased",
+      "Be shortened, but dose per day not changed"
+    ],
+    "answer": "D",
+    "explanation": "Increasing the dose rate may result in peak drug levels in the toxic range. Decreasing the dosing interval will raise the trough level so that it is maintained in the therapeutic range. The trough level is affected by the drug clearance rate. If clearance increases, then trough level decreases."
+  },
+  {
+    "id": 1165,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "If the steady-state drug level is too high, the best course of action is to:",
+    "options": [
+      "Decrease the dose",
+      "Decrease the dose interval",
+      "Decrease the dose and decrease the dose interval",
+      "Change the route of administration"
+    ],
+    "answer": "A",
+    "explanation": "Decreasing both dose and dosing interval will have offsetting effects on peak and trough blood levels. The appropriate dose can be calculated if the clearance or Vd and f are known. For example, the initial IV dose is calculated by multiplying the desired peak blood concentration of the drug by the Vd."
+  },
+  {
+    "id": 1166,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "When should blood samples for trough drug levels be collected?",
+    "options": [
+      "30 minutes after peak levels",
+      "45 minutes before the next dose",
+      "1 to 2 hours after the last dose",
+      "Immediately before the next dose is given"
+    ],
+    "answer": "D",
+    "explanation": "The trough concentration of a drug is the lowest concentration obtained in the dosing interval. This occurs immediately before the absorption of the next dose given. Trough levels are usually collected just before the next dose is given."
+  },
+  {
+    "id": 1167,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Blood sample collection time for peak drug levels:",
+    "options": [
+      "Varies with the drug, depending on its rate of absorption",
+      "Is independent of drug formulation",
+      "Is independent of the route of administration",
+      "Is 30 minutes after a bolus IV injection is completed"
+    ],
+    "answer": "A",
+    "explanation": "The peak concentration of a drug is the highest concentration obtained in the dosing interval. For oral drugs, the time of peak concentration is dependent on their rates of absorption and elimination and is determined by serial blood measurements. Peak levels for oral drugs are usually drawn 1 to 2 hours after administration of the dose. For drugs given intravenously, peak levels are measured immediately after the infusion is completed."
+  },
+  {
+    "id": 1168,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which could account for drug toxicity following a normally prescribed dose?",
+    "options": [
+      "Decreased renal clearance caused by kidney disease",
+      "Discontinuance or administration of another drug",
+      "Altered serum protein binding caused by disease",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "Therapeutic drug monitoring is necessary for drugs that have a narrow therapeutic index. Individual differences alter pharmacokinetics, causing lack of correlation between dose and blood level of the drug. These include age, diet, ingestion with or without food, genetic factors, exercise, smoking, pregnancy, metabolism of other drugs, protein binding, and disease states."
+  },
+  {
+    "id": 1169,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Select the elimination model that best describes most oral drugs given at therapeutic doses.",
+    "options": [
+      "One compartment, linear first-order elimination",
+      "Michaelis-Menton or nonlinear elimination",
+      "Two compartment with a biphasic elimination curve",
+      "Logarithmic elimination"
+    ],
+    "answer": "A",
+    "explanation": "Most drugs given orally distribute uniformly through the tissues reaching rapid equilibrium, so both blood and tissues can be viewed as a single compartment. Elimination according to Michaelis-Menton kinetics is nonlinear because at high concentrations, the hepatic enzyme system becomes saturated, reducing the elimination efficiency. Therefore, at high serum concentrations, most first-order drugs transition to nonlinear elimination rates."
+  },
+  {
+    "id": 1170,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Drugs rapidly infused intravenously usually follow which elimination model?",
+    "options": [
+      "One compartment, first order",
+      "One compartment, logarithmic",
+      "Biphasic or two compartment with serum level rapidly falling in the first phase",
+      "Michaelis-Menton or concentration-dependent elimination"
+    ],
+    "answer": "C",
+    "explanation": "Drugs rapidly infused intravenously follow a two-compartment model of elimination. The central compartment is the blood and tissues that are well perfused. The second consists of tissues for which distribution of drug is time dependent. In determining the loading dose, the desired serum concentration should be multiplied by the volume of the central compartment to avoid toxic levels."
+  },
+  {
+    "id": 1171,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which fact must be considered when evaluating a patient who displays signs of drug toxicity?",
+    "options": [
+      "Drug metabolites (e.g., N-acetylprocainamide) may need to be measured as well as parent drug",
+      "If the concentration of total drug is within therapeutic limits, the concentration of free drug cannot be toxic",
+      "If the drug has a wide therapeutic index, then it will not be toxic",
+      "A drug level cannot be toxic if the trough is within the published therapeutic range"
+    ],
+    "answer": "A",
+    "explanation": "Altered drug pharmacokinetics may result in toxicity even when the dose of drug is within the accepted therapeutic range. Two common causes of this are the presence of unmeasured metabolites that are physiologically active and the presence of a higher than expected concentration of free drug. Because only free drug is physiologically active, decreased binding protein or factors that shift the equilibrium favoring more unbound drug can result in toxicity when the total drug concentration is within the therapeutic range. Some drugs with a wide therapeutic index are potentially toxic because they may be ingested in great excess with little or no initial toxicity. For example, acetaminophen overdose does not usually become apparent until 3 to 5 days after the overdose. This creates the potential for hepatic damage to occur from continued use, especially in patients who have decreased hepatic or renal function because the drug half-life is extended."
+  },
+  {
+    "id": 1172,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "When a therapeutic drug is suspected of causing toxicity, which specimen is the most appropriate for an initial investigation?",
+    "options": [
+      "Trough blood sample",
+      "Peak blood sample",
+      "Urine at the time of symptoms",
+      "Gastric fluid at the time of symptoms"
+    ],
+    "answer": "B",
+    "explanation": "When a drug is suspected of toxicity, the peak blood sample (sample after absorption and distribution are complete) should be obtained because it is most likely to exceed the therapeutic limit. If the peak level is above the upper therapeutic limit, then toxicity is confirmed, and the drug dose is lowered. If the peak drug concentration is within the therapeutic range, toxicity is less likely but cannot be ruled out. A high concentration of free drug, the presence of active metabolites, and abnormal response to the drug are causes of drug toxicity that may occur when the blood drug level is within the published therapeutic range."
+  },
+  {
+    "id": 1173,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "For a drug that follows first-order pharmacokinetics, adjustment of dosage to achieve the desired blood level can be made by using which formula?",
+    "options": [
+      "New dose = (current dose ÷ concentration at steady state) × desired concentration",
+      "New dose = (current dose ÷ desired concentration) × concentration at steady state",
+      "New dose = (concentration at steady state ÷ desired concentration) × half-life",
+      "New dose = (concentration at steady state ÷ current dose) × desired concentration"
+    ],
+    "answer": "A",
+    "explanation": "Most drugs follow first-order pharmacokinetics—that is, the clearance of drug is linearly related to the drug dose. The dose of such drugs can be adjusted by multiplying the ratio of the current dose to blood concentration by the desired drug concentration, provided the blood concentration is measured at steady state."
+  },
+  {
+    "id": 1174,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "For which drug group are both peak and trough measurements usually required?",
+    "options": [
+      "Antiarrhythmics",
+      "Analgesics",
+      "Tricyclic antidepressants",
+      "Aminoglycoside antibiotics"
+    ],
+    "answer": "D",
+    "explanation": "Aminoglycoside antibiotics cause damage to the eighth cranial nerve at toxic levels, resulting in hearing loss. When given at subtherapeutic doses, they fail to resolve infection. Most drugs falling in the other classes have a narrow peak–trough difference but are highly toxic when blood levels exceed the therapeutic range. Usually, these can be safely monitored by measuring trough levels."
+  },
+  {
+    "id": 1175,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following urine samples should be accepted for testing when processing samples for drugs of abuse (DAUs)?",
+    "options": [
+      "Urine of abnormal color",
+      "Urine with an abnormal odor",
+      "Container with seal not applied across the lid",
+      "Sample with a volume of 50 mL"
+    ],
+    "answer": "D",
+    "explanation": "Adulteration is a common problem with samples submitted for DAU testing. Approximately 8% of the U.S. population has reported using an illegal drug at some time, and approximately five per 1,000 samples submitted for testing are adulterated. Urine with a volume under 30 mL, abnormal color, odor, or sign of adulteration should be rejected. The label should be placed across the entire lid so that the seal would be broken if the lid were removed after collection. A temperature strip should be affixed to the container and read within 4 minutes of collection, and the temperature should be written on the custody control form. Temperature outside the range of 90oF to 100oF is cause for rejection."
+  },
+  {
+    "id": 1176,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "The enzyme-multiplied immunoassay technique (EMIT) for DAUs uses an:",
+    "options": [
+      "Antibody conjugated to a drug",
+      "Enzyme conjugated to an antibody",
+      "Enzyme conjugated to a drug",
+      "Antibody bound to a solid phase"
+    ],
+    "answer": "C",
+    "explanation": "In EMIT, enzyme-labeled drug competes with drug in the sample for a limited amount of reagent antibodies. When antibody binds to the enzyme–drug conjugate, it blocks the catalytic site of the enzyme. Enzyme activity is directly proportional to sample drug concentration because the quantity of unbound drug–enzyme conjugate will be highest when drug is present in the sample."
+  },
+  {
+    "id": 1177,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement about EMIT is true?",
+    "options": [
+      "Enzyme activity is inversely proportional to drug level",
+      "Formation of NADH is monitored at 340 nm",
+      "ALP is the commonly used conjugate",
+      "Assay use is restricted to serum"
+    ],
+    "answer": "B",
+    "explanation": "EMIT is a homogeneous immunoassay—that is, free antigen does not have to be separated from bound antigen. Most EMIT assays use a two-reagent system. Reagent A contains substrate (usually glucose-6-PO4), coenzyme (NAD+), and antibody to the drug. Reagent B contains enzyme-labeled drug (usually G-6-PD-drug) and buffer. The rate of NADH production is proportional to the drug concentration. EMIT assays are commonly used to test for drugs of abuse in urine. In such cases, the enzyme activity of the low calibrator (drug concentration equal to U.S. Substance Abuse and Mental Health Services Administration minimum for a positive test) is used as the cutoff."
+  },
+  {
+    "id": 1178,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement regarding cloned enzyme donor immunoassay (CEDIA) is true?",
+    "options": [
+      "The enzyme used is G-6-PD",
+      "The enzyme donor and acceptor molecules are fragments of β-galactosidase",
+      "Drug concentration is inversely related to fluorescence",
+      "The antibody is covalently linked to the enzyme donor"
+    ],
+    "answer": "B",
+    "explanation": "CEDIA is a homogeneous enzyme immunoassay that is commonly used to measure DAUs. Drug conjugated to a fragment of β-galactosidase that is catalytically inactive competes with drug in the sample for a limited number of antibodies to the drug. The fragment, called the enzyme donor (ED), and the substrate (chlorophenol red-β-D- galactopyranose) are mixed with the sample. A second reagent containing monoclonal antibody and a second fragment of β-galactosidase, called the enzyme acceptor (EA), is added. If the antibody is neutralized by drug from the sample, the ED and the EA combine to form an active enzyme. The concentration of drug in the sample is directly proportional to the amount of chlorophenol red formed."
+  },
+  {
+    "id": 1179,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement is true regarding particle-enhanced turbidimetric inhibition immunoassay methods for therapeutic drugs?",
+    "options": [
+      "Drug concentration is proportional to light scatter",
+      "Magnetic separation is needed to remove unbound conjugate",
+      "When particle-bound drug binds to antibody, light scattering is increased",
+      "Two antibodies to the drug are needed"
+    ],
+    "answer": "C",
+    "explanation": "Particle-enhanced turbidimetric inhibition immunoassays are homogeneous immunoassays frequently used to measure proteins and therapeutic drugs in serum or plasma. Polystyrene-modified latex particles conjugated to the drug (particle-bound drug) compete with the drug in the sample for a limited number of antibodies. If drug concentration is low, more of the antibody binds to the particle-bound drug, increasing the turbidity of the reaction. Therefore, light scattering is inversely proportional to the drug concentration."
+  },
+  {
+    "id": 1180,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Quantitation of a drug by GC-MS is usually performed in which mode?",
+    "options": [
+      "Total ion chromatography",
+      "Selective ion monitoring",
+      "Ion subtraction",
+      "Selective reaction monitoring"
+    ],
+    "answer": "B",
+    "explanation": "Most GC-MS instruments use an electron beam to split the drug emerging from the column into its component ions. These are drawn into the mass analyzer, usually a vacuum chamber containing two pairs of charged rods (a positive pair and a negative pair), called a quadrupole analyzer. By changing the potential and RF applied to the rods, the travel of ions will vary, depending on their m/z ratio. As ions emerge from the mass filter, they are detected by an electron multiplier tube. CG-MS instruments can be operated in two modes, total ion chromatography (TIC) and SIM. TIC displays the retention time of all ions detected and their abundance. It is primarily used for identification of unknown compounds. SIM measures the abundance of one or more principal ions that provide sufficient specificity to eliminate potential interfering substances and greater quantitative sensitivity. For example, tetrahydrocannabinol (THC) can be identified by ions with an m/z ratio of 371.3, 372.3, and 473.3."
+  },
+  {
+    "id": 1181,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A urine sample is received in the laboratory with the appropriate custody control form and a request for DAU screening. Which test result would be cause for rejecting the sample?",
+    "options": [
+      "Temperature after collection 95°F",
+      "pH 5.0",
+      "Specific gravity 1.005",
+      "Creatinine 5 mg/dL"
+    ],
+    "answer": "D",
+    "explanation": "Approximately five per 1,000 urine samples received for DAU testing have been adulterated through either dilution, substitution, or addition of substances, such as glutaraldehyde, which interfere with testing. The majority of these situations can be detected by determining temperature (90°F–100°F) pH (4.5–8.0), specific gravity (1.003–1.019), and creatinine (20 mg/dL or greater). All of the values listed are within the limits of an acceptable sample, with the exception of creatinine. Dry reagent strips that test for pH, specific gravity, creatinine, nitrite, peroxide, pyridinium, and glutaraldehyde are available."
+  },
+  {
+    "id": 1182,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which substance has the longest detection time in urine?",
+    "options": [
+      "Amphetamines",
+      "Cocaine",
+      "Benzodiazepines",
+      "Marijuana"
+    ],
+    "answer": "D",
+    "explanation": "Some drugs have a long half-life and can be detected for longer periods after use, but the detection window also depends on other variables, such as dosage, frequency of use, and method sensitivity. Marijuana is stored in fatty tissue and is metabolized slowly. In persons who use marijuana several times per week, cannabinoids can be detected several weeks after last use. For chronic daily users, this extends to months after discontinuation. Other drugs with detection windows of a week or more include long-acting barbiturates, lysergic acid diethylamide (LSD), anabolic steroids, and phencyclidine (PCP)."
+  },
+  {
+    "id": 1183,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which statement about the measurement of carboxyhemoglobin is true?",
+    "options": [
+      "Treatment with alkaline dithionite is used to convert carboxyhemoglobin to oxyhemoglobin",
+      "Oxyhemoglobin has no absorbance at 540 nm, but carboxyhemoglobin does",
+      "Polychromic analysis is used to eliminate interference by oxyhemoglobin",
+      "Carboxyhemoglobin can be measured by potentiometry"
+    ],
+    "answer": "C",
+    "explanation": "The absorbance spectra of oxy- and carboxyhemoglobin pigments overlap, and bichromatic or polychromatic analysis is required to accurately measure carboxyhemoglobin concentration. In bichromatic analysis, oxyhemoglobin and methemoglobin are converted to deoxyhemoglobin by the addition of alkaline sodium dithionite. The ratio of absorbance at 541:555 nm is directly proportional to carboxyhemoglobin concentration. Percent carboxyhemoglobin is commonly determined from simultaneous absorbance measurements at 548, 568, and 578 nm, or other wavelength combinations, a process called oximetry."
+  },
+  {
+    "id": 1184,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements about blood alcohol measurement is correct?",
+    "options": [
+      "Symptoms of intoxication usually begin when the level exceeds 0.05% weight per volume (w/v)",
+      "The skin puncture site should be disinfected with isopropanol",
+      "The reference method is based upon enzymatic oxidation of ethanol by ADH",
+      "GC methods require extraction of ethanol from serum"
+    ],
+    "answer": "A",
+    "explanation": "ADH is not specific for ethanol, and in vitro interference can occur with some ADH methods when skin is disinfected with other alcohols. For this reason, and to avoid interference with the interpretation of chromatograms for volatiles, blood samples are collected after disinfecting the skin site with benzalkonium chloride or other nonalcohol antiseptic. GLC is the legally accepted method of ethanol analysis. The low boiling point of ethanol permits direct analysis on blood or plasma diluted with water containing 1-propanol or other suitable internal standard."
+  },
+  {
+    "id": 1185,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which specimen is the sample of choice for lead screening?",
+    "options": [
+      "Whole blood",
+      "Hair",
+      "Serum",
+      "Urine"
+    ],
+    "answer": "A",
+    "explanation": "Lead accumulates in RBCs, bones, and neural tissues; whole blood, hair, and urine are suitable for demonstrating lead toxicity. The greatest sensitivity is obtained by using whole blood, which can detect exposure over time. Because lead is rapidly eliminated from plasma, serum or plasma should not be used to test for lead exposure. Lead binds to sulfhydryl groups of proteins, such as delta-aminolevulinic acid (Δ- ALA) dehydratase and ferrochelatase and interferes with heme synthesis. This results in increased free erythrocyte protoporphyrin, erythrocyte zinc protoporphyrin, urinary coproporphyrin III, and Δ-ALA, which are also useful markers for lead poisoning. When screening for lead poisoning in children, the method of choice is graphite furnace atomic absorption spectrophotometry or ICP-MS because these methods offer the best analytical sensitivity. The Centers for Disease Control and Prevention (CDC) cutoff for acceptable whole blood lead level in children is less than 5.0 µg/dL."
+  },
+  {
+    "id": 1186,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following enzymes can be used to measure plasma or serum salicylate?",
+    "options": [
+      "Peroxidase",
+      "Salicylate esterase",
+      "Salicylate hydroxylase",
+      "p-Aminosalicylate oxidase"
+    ],
+    "answer": "C",
+    "explanation": "The enzymatic assay of salicylate uses salicylate hydroxylase, which reduces salicylate with NADH and forms catechol and NAD+. Salicylate can also be measured by HPLC and various immunoassays, including EMIT. Salicylate toxicity causes an initial respiratory alkalosis because the drug stimulates the respiratory center. However, this is followed by metabolic acidosis as the drug is metabolized. Therefore, it is imperative to identify salicylate as the cause of toxicity before treatment of an acid–base imbalance caused by aspirin overdose."
+  },
+  {
+    "id": 1187,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following tests is least essential to the operation of an ED at a general hospital?",
+    "options": [
+      "Carboxyhemoglobin",
+      "Osmolality",
+      "Salicylate",
+      "Lead"
+    ],
+    "answer": "D",
+    "explanation": "The vast majority of acute toxicology situations seen in the ED involve poisoning with alcohol, acetaminophen, salicylate, abuse substances, or CO poisoning, and at a minimum, EDs should offer tests for these. In the absence of specific tests for DAUs or a comprehensive drug screen, serum osmolality measured by freezing point depression is a sensitive surrogate test for drug and alcohol overdose. In the ED environment a difference between measured and calculated osmolality greater than 10 mOsm/kg almost always indicates drug or alcohol poisoning. Toxicity from lead poisoning and most other trace metals is usually a chronic condition that does not often require immediate access to laboratory testing."
+  },
+  {
+    "id": 1188,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following trace elements is considered an essential micronutrient?",
+    "options": [
+      "Thallium",
+      "Aluminum",
+      "Mercury",
+      "Selenium"
+    ],
+    "answer": "D",
+    "explanation": "Trace elements can be divided into two categories: those that have no known biological purpose and those that do. The former include thallium, mercury, lead, cadmium, and aluminum. All others can be considered essential trace elements, including arsenic that has been shown to be necessary for normal methionine metabolism. Most trace elements are of medical importance because excessive levels lead to toxicity. However, a deficiency of trace elements, such as selenium, zinc, and copper, are commonly caused by total parenteral nutrition and is medically important."
+  },
+  {
+    "id": 1189,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "When measuring trace metals other than lead in blood, what type of tube should be used?",
+    "options": [
+      "Navy blue top",
+      "Green top",
+      "Purple top",
+      "Red top"
+    ],
+    "answer": "A",
+    "explanation": "To avoid trace contamination by metals present in the stopper lubricants, a tube with a navy blue top is used for measuring trace metals other than lead. These tubes are validated for most but not all trace metals. Such tubes are available with or without EDTA for whole blood or serum analysis, respectively. Tubes with tan stoppers containing EDTA are used for lead assay because they are certified to contain no more than 0.25 µg/dL lead. In addition, type 1 purity water (10 Mohm, 10 or less CFU/mL) and analytical reagent grade chemicals are always used to prepare reagents, such as matrix modifiers. Although most trace metals are measured in whole blood or serum, arsenic is usually measured in urine because it is metabolized and excreted within hours of ingestion."
+  },
+  {
+    "id": 1190,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "Which whole blood level is suggestive of excessive exposure to lead in children but not adults?",
+    "options": [
+      "4 µg/dL",
+      "14 µg/dL",
+      "28 µg/dL",
+      "32 µg/dL"
+    ],
+    "answer": "B",
+    "explanation": "Because lead exposure in children leads to learning impairment, the cutoff for exposure recommended by the CDC is 5 µg/dL in venous whole blood. Values of 5 µg/dL or more should be monitored closely with follow-up testing, and if they increase, steps should be taken to remove lead contamination from the home and the environment. For adults the recommended cutoff is 25 µg/dL. Because lead readily enters the RBCs and passes from plasma to urine quickly, whole blood is a more sensitive measure of exposure, rather than plasma. Because lead from the fingers may contaminate the specimen, a venous sample is preferred over a capillary sample collected by finger stick."
+  },
+  {
+    "id": 1191,
+    "section": "Toxicology and Therapeutic Drug Monitoring",
+    "chapter": "Clinical Chemistry",
+    "question": "What are the likely laboratory findings in a person suspected of having Wilson disease?",
+    "options": [
+      "Blood copper and ceruloplasmin low, urinary copper excretion high",
+      "Blood and urine copper concentration high, ceruloplasmin low",
+      "Blood and urine copper concentration high, ceruloplasmin high",
+      "Blood and urine copper concentration low, ceruloplasmin low"
+    ],
+    "answer": "A",
+    "explanation": "Wilson disease is an autosomal recessive disease in which copper transport is abnormal. The gene causing the disease codes for an adenosine triphosphatase (ATPase, called Wilson protein or ATP7B) that is needed to excrete copper into bile and incorporate copper into ceruloplasmin. There are over 200 reported mutations of this gene. Absence of Wilson protein results in failure to load ceruloplasmin with copper, dramatically reducing its half-life in blood. Therefore, blood levels of ceruloplasmin are low, and blood levels of copper are usually low because there is little ceruloplasmin to bind it. Copper deposits in tissues, particularly the liver and brain, causing necrosis, and urine levels are elevated."
+  },
+  {
+    "id": 1192,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following tumor markers is classified as a tumor suppressor gene?",
+    "options": [
+      "BRCA-1",
+      "Carcinoembryonic antigen (CEA)",
+      "hCG",
+      "Nuclear matrix protein (NMP)"
+    ],
+    "answer": "A",
+    "explanation": "Tumor markers may be enzymes, hormones, receptors, oncofetal (glycoprotein) antigens, or oncogenes. The BRCA-1 gene is located on the long arm of chromosome 17 and actionable mutations carry as high as an 85% lifetime risk of breast or ovarian cancer when present. BRCA-2 is located on chromosome 13 and mutation causes similar cancer risk. BRCA functions in homologous recombination mediated repair of double-stranded DNA breaks. Mutations are inherited as autosomal dominant. Approximately one million women in the U.S. have a BRCA mutation and are carriers. Screening is recommended for ethnic groups with a high prevalence of mutation. Mutations are identified by sequencing and classified as pathogenic (actionable), uncertain (vigilant follow up needed) and non pathogenic (not actionable). The majority of BRCA mutations are germline and thus inherited, but some are sporadic."
+  },
+  {
+    "id": 1193,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "In general, in which of the following situations is the analysis of a glycoprotein tumor marker, such as carbohydrate-associated antigen-125 (CA-125), most useful?",
+    "options": [
+      "Testing for recurrence",
+      "Prognosis",
+      "Screening",
+      "Diagnosis"
+    ],
+    "answer": "A",
+    "explanation": "Most tumor markers are often expressed at very low levels in normal cells so that the concentration in early malignancy overlaps that seen in normal individuals. This makes them ineffective for screening. Three exceptions are hCG in males for testicular cancer, calcitonin for thyroid medullary cancer, and prostate-specific antigen (PSA) for prostate cancer, and mutations that are the target of therapy. Most tumor markers are increased in nonmalignant disease, and this nonspecificity reduces their usefulness for the diagnosis of malignancy. In addition to the tumor markers mentioned, the hormones insulin (insulinoma), gastrin (gastrinoma), and prolactin (prolactinoma), and the catecholamines (pheochromocytoma) have some diagnostic utility. Some tumor markers are useful predictors of disease progression and response to treatment. These include BRCA-1, estrogen and progesterone receptors (PRs), cathepsin-D, and the Philadelphia chromosome (Ph1). The major use of tumor markers is to monitor recurrence and therapy. Successful treatment reduces the concentration of the marker significantly or results in an undetectable level. A rise in level following treatment signals recurrence."
+  },
+  {
+    "id": 1194,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following enzymes is increased in persons with prostate and small cell lung cancer?",
+    "options": [
+      "Creatine kinase-1 (CK-1)",
+      "Gamma glutamyl transferase (GGT)",
+      "Amylase",
+      "Lactate dehydrogenase"
+    ],
+    "answer": "A",
+    "explanation": "CK-1 [CK-BB]) is not normally found in plasma or serum except in neonates. It may be present in persons with CNS damage and some other disorders but its presence is often associated with various malignancies, especially prostate cancer and small cell carcinoma of the lung. Several other commonly measured enzymes are elevated by malignancy. ALP and LD are associated with various tumors. GGT levels are very high in hepatoma, and amylase is elevated in pancreatic cancer."
+  },
+  {
+    "id": 1195,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following is the best analyte to monitor for recurrence of ovarian cancer?",
+    "options": [
+      "CA-15-3",
+      "CA-19-9",
+      "CA-125",
+      "CEA"
+    ],
+    "answer": "C",
+    "explanation": "CA-125 is an oncofetal antigen, meaning that it is produced by genes that are active during fetal development but minimally active after birth except in malignant tissues. This group includes AFP, CEA, PSA, and the CAs. CA-15-3 (which shares the same antigenic determinant as CA-27.29) is used mainly to monitor breast cancer treatment and recurrence. CA-19-9 (which shares the same antigenic determinant as CA-50) is a glycoprotein shed from the surface of gastric, pancreatic, and colorectal cancer cells."
+  },
+  {
+    "id": 1196,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which tumor marker is associated with cancer of the urinary bladder?",
+    "options": [
+      "CA-19-9",
+      "CA-72-4",
+      "NMP",
+      "Cathepsin-D"
+    ],
+    "answer": "C",
+    "explanation": "NMPs are RNA-protein complexes. NMP-22 is shed into urine in persons with bladder carcinoma, and its level is about 25-fold higher than normal in this condition. It has a clinical sensitivity of about 70% but is likely to be negative when the tumor is a low- grade one. Other markers used for detection of bladder cancer include bladder tumor– associated analytes (BTAs), a variant of the complement factor H protein; cytokeratin- 20, a variant cytokeratin (fibrous protein) in the cytoplasm of malignant bladder epithelium; and telomerase, an enzyme that adds nucleotides to the ends of chromosomes, preventing telomere degradation. The specificity of these tests varies from approximately 75% to 80%. Bladder cancer can also be detected with FISH because this cancer is associated with a high incidence of ploidy and other chromosomal abnormalities that can be detected with fluorescent-labeled DNA probes. FISH specificity is greater than 94%, and, like immunoassays, its sensitivity is higher for high-grade tumors (approximately 78% for grade 2 cancers and 94% for grade 3 cancers)."
+  },
+  {
+    "id": 1197,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "A person presents with a cushingoid appearance and an elevated 24-hour urinary cortisol level. Plasma ACTH is very elevated, and the physician suspects that the cause is ectopic ACTH production. Which test would be most useful in substantiating this diagnosis?",
+    "options": [
+      "Plasma cortisol",
+      "CA-50",
+      "ALP isoenzymes",
+      "AFP"
+    ],
+    "answer": "C",
+    "explanation": "Most often, ectopic ACTH production occurs in lung cancer. Tumors of the lung are often associated with the production of placental-like ALP, and a positive finding would support the diagnosis of an ectopic (nonpituitary) source of ACTH. Many other tumor markers, including neuron-specific enolase and parathyroid hormone-related protein, are also increased in lung cancers. CA-50 (along with CA-19-9) shares the same antigenic determinant as Lewis A and is a marker for recurrence and treatment of GI and pancreatic cancers. AFP is the predominant protein produced by the fetus, and plasma levels are increased primarily in yolk sac, liver, and testicular tumors."
+  },
+  {
+    "id": 1198,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following tumor markers is used to monitor persons with breast cancer for recurrence of disease?",
+    "options": [
+      "Cathepsin-D",
+      "CA-15-3",
+      "Retinoblastoma gene",
+      "Estrogen receptor (ER)"
+    ],
+    "answer": "B",
+    "explanation": "CA-15-3 shares the same antigenic determinant with CA-27.29. Both are present on MUC1, a mucinous protein on the cell membrane of various tissues. The markers are used to monitor treatment and recurrence of breast cancer. However, abnormal plasma levels are seen in many nonmalignant conditions, and the test is not used for diagnostic purposes. CA-125 is a glycoprotein antigen shed by approximately 75% of ovarian cancers. It is an FDA-approved tumor marker for monitoring recurrence of ovarian cancer and evaluating the effectiveness of chemotherapy. Cathepsin-D and ER assays are performed to determine the prognosis of patients with breast cancer. Overexpression of cathepsin-D is associated with a higher relapse rate. Breast tissue that is negative for ER is poorly responsive to hormone suppression (tamoxifen) therapy. The retinoblastoma gene (RB) is a tumor-suppressor gene found missing in persons with retinoblastoma. Various mutations of the gene have been reported in breast, lung, bladder, and other cancers."
+  },
+  {
+    "id": 1199,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding Ph1 is true?",
+    "options": [
+      "It is seen exclusively in chronic myelogenous leukemia",
+      "It results from a translocation",
+      "It appears as a short-arm deletion of chromosome 21",
+      "It is associated with a poor prognosis"
+    ],
+    "answer": "B",
+    "explanation": "Ph1 is formed by translocation of the long arms of chromosomes 9 and 22. The result is that part of the ABL gene of chromosome 9 becomes inserted into the BCR of chromosome 22. The ABL gene is an oncogene and the product of the hybrid gene is a tyrosine kinase that signals cell proliferation. Ph1 appears on karyotyping as a long-arm deletion of chromosome 22 because only the terminal end of the long arm of chromosome 9 is exchanged for most of the long arm of chromosome 22. The BCR/ABL translocation can be detected by using FISH hybridization probes. Approximately 95% of patients with chronic myelogenous leukemia have Ph1. Patients who do not demonstrate Ph1 have a poorer prognosis. It is also present in the lymphocytes of up to 25% of adults with acute lymphocytic leukemia (ALL) and in a small number of children with ALL and persons with acute myelogenous leukemia."
+  },
+  {
+    "id": 1200,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "What is the primary clinical utility of measuring CEA?",
+    "options": [
+      "Diagnosis of liver cancer",
+      "Diagnosis of colorectal cancer",
+      "Screening for cancers of endodermal origin",
+      "Monitoring for recurrence of cancer"
+    ],
+    "answer": "D",
+    "explanation": "CEA is a glycoprotein that is secreted into plasma by various cancers of endodermal origin, including breast, lung, colorectal, and stomach cancers. However, it is present in only 40% to 60% of such cancers, is present at low levels (less than 3.0 ng/mL) in normal adults, and is increased by causes other than cancer (e.g., smoking). Its clinical use is to detect recurrence and the need for second-look surgery in patients who have been treated and to evaluate the response to treatment."
+  },
+  {
+    "id": 1201,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which tumor marker is used to determine the usefulness of trastuzumab (Herceptin) therapy for breast cancer?",
+    "options": [
+      "PR",
+      "CEA",
+      "HER-2/neu",
+      "Myc"
+    ],
+    "answer": "C",
+    "explanation": "Trastuzumab is an antibody to the HER-2/neu gene product, a tyrosine kinase receptor protein. HER-2/neu is an oncogene that is overexpressed in some breast cancers. Overexpression is associated with a more aggressive clinical course but responds to treatment with trastuzumab, which blocks the attachment of growth factor to the receptor. The PR, like the ER, is used to identify patients with breast cancer who are more likely to respond to estrogen-suppression therapy. Myc is a group of oncogenes that are activated in various cancers, including lung, breast, colon, and stomach cancers; leukemia; and lymphoma. HER-2/neu is measured in plasma by immunoassay. ER, PR, and Myc are measured in tissue and not plasma using immunohistologic stains or FISH."
+  },
+  {
+    "id": 1202,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "A person is suspected of having testicular cancer. Which type of hCG test would be the most useful?",
+    "options": [
+      "Plasma immunoassay for intact hCG only",
+      "Plasma immunoassay for intact hCG and the β-hCG subunit",
+      "Plasma immunoassay for the free alpha and beta-hCG subunits",
+      "Urine assay for hCG β-core"
+    ],
+    "answer": "B",
+    "explanation": "In addition to testicular cancer, hCG is produced by trophoblastic tumors and choriocarcinomas. Some of these tumors secrete the β-subunit without intact hCG. This is especially true after treatment when hCG is used to monitor for recurrence. The use of an immunoassay that measures both the intact and free β-hCG will have greater sensitivity compared with an assay for intact hCG or an assay for only free subunits. Free α-hCG subunits may be produced in persons with testicular and urinary bladder (urothelial) cancer, but the incidence of α-hCG subunit secretion only is relatively low. Urinary β-core (urinary gonadotropin peptide) is a metabolic product of the β-subunit and has been used to monitor for persistence of trophoblastic disease and recurrence of some hCG-producing tumors."
+  },
+  {
+    "id": 1203,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "A patient treated for a germ cell tumor has a total and free β-hCG assay performed prior to surgery. The result is 40,000 mIU/mL. One week after surgery, the hCG is 5,000 mIU/mL. Chemotherapy is started, and the hCG is measured 1 week later and found to be 10,000 mIU/mL. What does this indicate?",
+    "options": [
+      "Recurrence of the tumor",
+      "Falsely increased hCG as a result of drug interference with the assay",
+      "Analytical error with the test reported as 5,000 mIU/mL",
+      "Transient hCG increase caused by chemotherapy"
+    ],
+    "answer": "D",
+    "explanation": "Treatment of tumors with chemotherapy often causes a transient increase in the production of tumor markers as the drugs destroy tumor cells. The half-life of hCG is 24 to 36 hours; therefore, the expected decline 1 week after surgery is consistent with the result of 5,000 mIU/mL. Initiation of chemotherapy probably caused the hCG to double in the following week. The hCG assay should be monitored at regular intervals for several months because failure of hCG to decline or progressively increasing levels would suggest recurrence."
+  },
+  {
+    "id": 1204,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which set of results for ER and PR is associated with the highest likelihood of a favorable response to treatment with estrogen-suppression therapy (tamoxifen)?",
+    "options": [
+      "ER positive, PR positive",
+      "ER positive, PR negative",
+      "ER negative, PR positive",
+      "ER negative, PR negative"
+    ],
+    "answer": "A",
+    "explanation": "Both ER and PR assays are performed on breast tissue biopsy specimens to determine the probability of response to tamoxifen. The PR is produced from the ER, and expression of both predicts a positive response to the drug. Less than 15% of persons who are ER negative and PR negative have a favorable response, whereas over 75% of those who are positive for both receptors have a favorable response to tamoxifen."
+  },
+  {
+    "id": 1205,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which type of cancer is associated with the highest level of AFP?",
+    "options": [
+      "Hepatoma",
+      "Ovarian cancer",
+      "Testicular cancer",
+      "Breast cancer"
+    ],
+    "answer": "A",
+    "explanation": "AFP is increased in all patients with yolk sac tumors and greater than 80% of those with hepatoma. Levels above 1,000 ng/mL are diagnostic of hepatoma. Ectopic AFP- secreting tumors are produced by ovarian, testicular, breast, GI, and bladder cancers, and these sources should be considered when 10-fold or higher elevations are seen in the absence of abnormal liver function. AFP is used along with hCG to increase sensitivity for the diagnosis of nonseminoma testicular tumors and to stage the disease. Approximately 42% of persons with nonseminoma testicular cancer are positive for hCG but over 70% are positive for hCG or AFP."
+  },
+  {
+    "id": 1206,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following assays is recommended as a screening test for colorectal cancer in persons over age 50 years?",
+    "options": [
+      "CEA",
+      "AFP",
+      "Occult blood",
+      "Fecal trypsin"
+    ],
+    "answer": "C",
+    "explanation": "Bleeding in the GI tract occurs during the early stages of colorectal cancer when treatment can be most effective. Although occult blood can be caused by many other GI problems, it is not associated with benign polyps and has a sensitivity of greater than 80% for the detection of colorectal cancer. CEA is elevated in less than 60% of such cases. AFP is elevated in only about 5% of colon cancers. Fecal trypsin is not a marker for colorectal cancer, but α1-antitrypsin is present in the stool in a majority of malignant colon tumors as a result of intestinal protein loss. A more sensitive screening test identifies several mutations, methylated biomarkers, and Hgb associated with colorectal cancer."
+  },
+  {
+    "id": 1207,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following assays is used to determine the risk of cancer?",
+    "options": [
+      "Epidermal growth factor receptor (EGFR)",
+      "Squamous cell carcinoma (SCC) antigen",
+      "c-erb B-2 gene expression",
+      "p53 gene mutation"
+    ],
+    "answer": "D",
+    "explanation": "The p53 gene (tumor suppressor gene) is located on chromosome 17 and produces a protein that downregulates the cell cycle. A mutation of p53 is associated with an increased incidence of many cancers. The c-erb B-2 gene is the same as HER-2/neu; it codes for a growth factor receptor with tyrosine kinase activity on the cell membrane. EGFR is a receptor for epidermal growth factor, and its overexpression in breast tissue is associated with a poorer prognosis. SCC antigen is a glycoprotein antigen found in the cytoplasm of tumors of squamous origin and is secreted in the plasma of patients with uterine cancer."
+  },
+  {
+    "id": 1208,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "A person has elevated 24-hour urinary HVA and VMA levels. Urinary metanephrines, chromogranin A, and neuron-specific enolase levels are also elevated, but the 5- hydroxyindoleacetic acid (5-HIAA) level is within the reference range. What is the most likely diagnosis?",
+    "options": [
+      "Carcinoid tumors of the intestine",
+      "Pheochromocytoma",
+      "Neuroblastoma",
+      "Pancreatic cancer"
+    ],
+    "answer": "C",
+    "explanation": "Neuron-specific enolase is an isoenzyme containing two gamma polypeptides that are specific for nervous tissue and are found in neuroendocrine cells. Plasma levels are increased in neuroblastomas, carcinoid tumors, thyroid medullary carcinomas, and some lung cancers and seminomas. Urinary VMA, catecholamines, and metanephrines are increased in both pheochromocytoma (a tumor of chromaffin cells) and neuroblastoma (also a tumor of neuroectodermal cells derived from the neural crest neuroblasts of the sympathetic ganglia). Urinary HVA is increased in about 75% of patients with neuroblastoma but is not usually increased in pheochromocytoma. Chromogranin A is a protein that inhibits release of catecholamines and is increased in pheochromocytoma, neuroblastoma, and carcinoid tumors. 5-HAA is increased in carcinoid tumors (enterochromaffin tumors)."
+  },
+  {
+    "id": 1209,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "In which of the following situations is PSA least likely to be increased?",
+    "options": [
+      "Precancerous lesions of the prostate",
+      "Post–prostate biopsy",
+      "Benign prostatic hypertrophy",
+      "Post–digital rectal examination"
+    ],
+    "answer": "D",
+    "explanation": "PSA is a serine protease responsible for liquefaction of the seminal fluid. PSA has been used successfully to monitor for recurrence and follow the response of patients to androgen-suppression therapy. Currently, it is one of the few FDA-approved tumor markers for cancer screening (men with no history, age 55–69 years). Although digital rectal examination raises the prostatic acid phosphatase level, it does not increase the concentration of PSA in plasma. In addition to prostate cancer, PSA may be increased in acute or chronic prostate inflammation, benign prostate hypertrophy, and after transurethral prostate resection or prostate biopsy. As a result, the specificity of PSA is approximately 60%, and the positive predictive value is approximately 30%."
+  },
+  {
+    "id": 1210,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following statements regarding PSA is true?",
+    "options": [
+      "Complexed PSA in plasma is normally less than free PSA (fPSA)",
+      "fPSA less than 25% is a risk factor for malignant disease",
+      "A total PSA less than 4 ng/mL rules out malignant disease",
+      "A total PSA greater than 10 ng/mL is diagnostic of malignant disease"
+    ],
+    "answer": "B",
+    "explanation": "In normal plasma, 55% to 95% of the PSA is bound to protease inhibitors, primarily α1-antichymotrypsin, and the remainder is called fPSA. At a cutoff of 4 ng/mL commonly used for the URL, total PSA has a sensitivity of approximately 60%, and 22% of men with PSA less than 4 ng/mL have evidence of early prostate cancer on biopsy. For this reason, some laboratories prefer a cutoff of 2.5 ng/mL for total PSA. However, based on this cutoff alone, the number of false-positive findings (unnecessary biopsies) would be extremely high. A person with a PSA of 2.6 ng/mL who had the same result in the previous year would not be likely to have prostate cancer; however, a person with a PSA of 2.6 ng/mL, who had a PSA of 1.6 ng/mL in the previous year would warrant further testing. In persons with a total PSA between 2.6 and 10.0 ng/mL, a low ratio of fPSA:total PSA (less than 25% fPSA) or a high level of complexed PSA (cPSA) increases diagnostic sensitivity and specificity. Persons with a PSA between 2.6 and 10.0 ng/mL are selected for biopsy if either the fPSA is low or the complexed PSA is high. Initial studies also indicate that the incomplete cleavage of the proenzyme of PSA (proPSA) in patients with cancer results in a high proPSA:fPSA ratio. This ratio was reported to have better diagnostic sensitivity and specificity compared with the percentage of fPSA alone. The probability of cancer when the total PSA is greater than 10 ng/mL is approximately 50%, and this necessitates a biopsy to determine if the prostate tumor is malignant."
+  },
+  {
+    "id": 1211,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "A 55-year-old male with early-stage prostate cancer diagnosed through biopsy had his prostate gland removed (simple prostatectomy). His PSA prior to surgery was 10.0 ng/mL. If the surgery was successful in completely removing the tumor cells, what would the PSA result be 1 month after surgery?",
+    "options": [
+      "Undetectable",
+      "1 to 3 ng/mL",
+      "Less than 4 ng/mL",
+      "Less than 10 ng/mL"
+    ],
+    "answer": "A",
+    "explanation": "If the tumor were confined to the prostate, the PSA would be undetectable 1 month after successful surgery because there is no other tissue source of PSA. The half-life of PSA is 2.2 to 3.2 days, and the minimum detection limit of most assays is 0.2 ng/mL or lower. Therefore, it would require at least 2 weeks before the PSA level would be undetectable. The low minimum detection limit of the PSA assay, combined with the high tissue specificity of PSA, makes the test very sensitive in detecting recurrence."
+  },
+  {
+    "id": 1212,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of the following combinations of targeted therapy and gene mutation is associated with colon cancer?",
+    "options": [
+      "Pembudizmab for programmed death ligand 1 (PD-L1) mutation",
+      "Cetuximab for KRAS mutation",
+      "Gefitinib for EGFR mutation",
+      "Crizotinib for ALK mutation"
+    ],
+    "answer": "B",
+    "explanation": "Companion diagnostics (CDx) are tests developed to determine whether a patient with cancer has a gene mutation that will predict a positive response to a targeted monoclonal antibody or inhibitor. KRAS is a Ras oncogene which when mutated forms a continuously active guanosine triphosphatase (GTPase). Colorectal cancers with this mutation are resistant to treatment with drugs that block the EGFR. Drugs targeting PD-L1, EGFR, and ALK gene mutations are primarily approved for treating non–small cell lung cancers (NSCLCs) that exhibit the respective mutation."
+  },
+  {
+    "id": 1213,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "The mutation of which of the following genes results in the blocking of destruction of tumor cells by lymphocytes?",
+    "options": [
+      "ALK",
+      "PD-L1",
+      "BRAF",
+      "FTL3"
+    ],
+    "answer": "B",
+    "explanation": "PD-L1 produces a protein that blocks tumor cell lysis by T lymphocytes when it binds to the PD-1 (and B7.1) receptor on T cells. It is referred to as a checkpoint blocker. Generally, overexpression of the PD-L1 protein protects the tumor. Monoclonal antibodies against PD-L1 usually results in a significant therapeutic response. However, a positive therapeutic response is often seen in patients who do not overexpress PD-L1, and some patients who do overexpress PD-L1 do not respond to treatment with monoclonal antibodies against it. These observations indicate that other coinhibitory molecules are also involved and affect the response to anti–PD-L1. ALK, BRAF, and FTL3 are oncogenes."
+  },
+  {
+    "id": 1214,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "What process is used in next-generation sequencing (NGS) to analyze different samples simultaneously?",
+    "options": [
+      "Fluorescent labels",
+      "Reference genes",
+      "Sample barcodes",
+      "Molecular barcodes"
+    ],
+    "answer": "C",
+    "explanation": "Sample barcodes are specific sequences added to the target DNA of different samples so that they can be sequenced in parallel during the same run. After sequencing, the barcode sequence identifies the sample that the sequence belonged to. The process of sorting out which sequences belong to which samples is called demultiplexing. Molecular barcodes are unique sequences that are attached to DNA samples, also before amplification. They are used to detect duplicate reads from the same sample fragment. Two different fragments will have different molecular barcodes. This helps eliminate false-positive results when looking for variant alleles (mutations that occurred at low frequency)."
+  },
+  {
+    "id": 1215,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "Which is the most common modality used for cancer screening by NGS?",
+    "options": [
+      "Whole-genome sequencing (WGS)",
+      "Whole-exome sequencing (WES)",
+      "Panel screening",
+      "Single mutation screening"
+    ],
+    "answer": "C",
+    "explanation": "WGS screens for mutations in all coding and noncoding regions of the genome. WES sequences about 2% of the genome but includes about 85% of cancer-causing mutations. However, cancer panel screening, which is a more limited approach, is used most commonly because it targets mutations only in those genes that are actionable by targeted drugs, either prognostically or diagnostically. Panels eliminate mutations that have undetermined significance."
+  },
+  {
+    "id": 1216,
+    "section": "Tumor Markers",
+    "chapter": "Clinical Chemistry",
+    "question": "What type of NGS cancer panel is used to detect hereditary cancers?",
+    "options": [
+      "Hotspot panels",
+      "Disease-focused panels",
+      "Comprehensive panels",
+      "Actionable panels"
+    ],
+    "answer": "B",
+    "explanation": "Panels to detect hereditary cancers are an example of disease-focused panels. These are panels designed to determine risk for (susceptibility genes) or diagnosis of inherited cancers. Actionable panels are those designed to identify mutations that are targets of therapy. Hotspot panels look for high-frequency mutations that are either actionable or prognostic for one or more cancers while comprehensive panels look for both high- and low-frequency mutations associated with a wide range of different cancers."
+  },
+  {
+    "id": 1217,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "Which is the best procedure to measure proportional error in a new method for glucose?",
+    "options": [
+      "Compare the standard deviation of 40 patient samples to the hexokinase method",
+      "Measure a mixture made from equal parts of normal and high-QC sera",
+      "Add increasing amounts of glucose to a sample of known concentration and measure",
+      "Compare the mean of 40 normal samples with the hexokinase method"
+    ],
+    "answer": "C",
+    "explanation": "Proportional error is percentage deviation from the expected result, and affects the slope of the calibration curve. It causes a greater absolute error (loss of accuracy) as concentration increases. It is measured by a recovery study in which a sample is spiked with increasing amounts of analyte. For example, adding 5.0 mg of glucose to 1.0 mL of sample should increase the glucose concentration by 500 mg/dL."
+  },
+  {
+    "id": 1218,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "Which of two instruments can be assumed to have the narrower bandpass? Assume that wavelength is accurately calibrated.",
+    "options": [
+      "The instrument giving the highest absorbance for a solution of 0.1 mmol/L NADH at 340 nm",
+      "The instrument giving the lowest %T for a solution of nickel sulfate at 700 nm",
+      "The instrument giving the highest %T reading for 1.0% volume per volume (v/v) HCl at 350 nm",
+      "The instrument giving the most linear plot of absorbance versus concentration"
+    ],
+    "answer": "A",
+    "explanation": "Bandpass is defined by the range of wavelengths passed through the sample at the specified wavelength setting. It can be measured using any solution having a narrow absorbance peak (e.g., NADH at 340 nm). The instrument producing the purest monochromatic light will have the highest absorbance reading."
+  },
+  {
+    "id": 1219,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "A lipemic sample gives a sodium of 130 mmol/L on an analyzer that uses a 1:50 dilution of serum or plasma before introducing it to the ion-selective electrodes. The same sample gives a sodium of 142 mmol/L using a direct (undiluted) ion-selective electrode. Assuming acceptable quality control, which of the following is the most appropriate course of action?",
+    "options": [
+      "Report a sodium result of 136 mmol/L",
+      "Ultracentrifuge the sample and repeat by ISE",
+      "Dilute the sample 1:4 and repeat by ISE",
+      "Report a sodium result of 142 mmol/L"
+    ],
+    "answer": "D",
+    "explanation": "Lipemic samples give lower results for sodium (pseudohyponatremia) when diluted prior to measurement because the H2O phase is mostly diluent and a significant component of the sample volume is displaced by lipid. Direct ISEs measure sodium in plasma water, more accurately reflecting patient status."
+  },
+  {
+    "id": 1220,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A 22S QC error occurs for serum calcium by atomic absorption. Fresh standards prepared in 5% w/v albumin are found to be linear, but repeating the controls with fresh material does not improve the QC results. Select the most likely cause of this problem.",
+    "options": [
+      "Matrix effect caused by a viscosity difference between the standards and QC sera",
+      "Chemical interference caused incomplete atomization",
+      "Incomplete deconjugation of protein-bound calcium",
+      "Ionization interference caused by excessive heat"
+    ],
+    "answer": "B",
+    "explanation": "Poor recovery of calcium by atomic absorption is often caused by failure to break thermostable bonds between calcium and phosphate (a form of chemical interference). This may be caused by failure to add lanthanum to the diluent or by a low atomizer temperature. The use of 5% w/v albumin in the calibrator produces viscosity and protein-binding characteristics similar to those of plasma, helping eliminate matrix interference."
+  },
+  {
+    "id": 1221,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A serum osmolality measured in the emergency department is 326 mOsm/kg. Two hours later, chemistry results are: Na = 135 mmol/L BUN = 18 mg/dL glucose = 72 mg/dL measured osmolality = 318 mOsm/kg What do these results suggest?",
+    "options": [
+      "Laboratory error in electrolyte or glucose measurement",
+      "Drug or alcohol intoxication",
+      "Specimen misidentification",
+      "Successful rehydration of the patient"
+    ],
+    "answer": "B",
+    "explanation": "The osmolal gap is the difference between calculated and measured osmolality. Here, the osmolal gap is 38 mOsm/kg. When the osmolal gap is greater than 10 mOsm/kg, either an unmeasured solute is present or an analytical error occurred when measuring the osmolality, electrolytes, urea, or glucose. The reference range for serum osmolality is 280 to 295 mOsm/kg. Both osmolality measurements are above the URL. These results point to the presence of an unmeasured solute. In samples from ED patients, a significant osmolal gap usually results from alcohol or drug consumption. The difference in osmolality between the two samples is 8 mOsm/kg and can be explained by alcohol metabolism during the 2 hours between samples."
+  },
+  {
+    "id": 1222,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "When calibrating a pH meter, unstable readings occur for both pH 7.00 and 4.00 calibrators, although both can be set to within 0.1 pH unit. Select the most appropriate course of action.",
+    "options": [
+      "Measure the pH of the sample and report to the nearest 0.1 pH",
+      "Replace both calibrators with unopened buffers and recalibrate",
+      "Examine the reference electrode junction for salt crystals",
+      "Move the electrodes to another pH meter and calibrate"
+    ],
+    "answer": "C",
+    "explanation": "Noise in pH measurements often results from a blocked junction between the reservoir of the reference electrode and the test solution. This occurs when salt crystals collect at the junction or when KCl concentration in the reservoir increases as a result of evaporation of water. The fluid in the reference electrode should be replaced with warm deionized water. After the crystals have dissolved, the water is replaced with fresh reference electrolyte solution."
+  },
+  {
+    "id": 1223,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "A method calls for extracting an acidic drug from urine with an anion exchange column. The pKa of the drug is 6.5. Extraction is enhanced by adjusting the sample pH to:",
+    "options": [
+      "8.5",
+      "6.5",
+      "5.5",
+      "4.5"
+    ],
+    "answer": "A",
+    "explanation": "Extraction of a negatively charged drug onto an anion exchange (positively charged) column is optimal when greater than 99% of the drug is in the form of anion. The extraction pH should be 2 pH units above the pKa of an acidic drug. When pH = pKa, the drug will be 50% ionized, and when pH is 2 units higher than the pKa, almost all of the drug is anionic."
+  },
+  {
+    "id": 1224,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A patient who has a positive urinalysis result for glucose and ketones has a glycated Hgb of 4.0%. A fasting glucose performed the previous day was 180 mg/dL. Assuming acceptable QC, you would:",
+    "options": [
+      "Report the glycosylated Hgb",
+      "Request a new specimen and repeat the glycosylated Hgb",
+      "Perform a Hgb electrophoresis on the sample",
+      "Perform a glucose measurement on the sample"
+    ],
+    "answer": "B",
+    "explanation": "The glycated Hgb is at the lowest normal limit (4%–5.5%), but the fasting glucose indicates frank diabetes mellitus. Although the glycosylated Hgb reflects the average blood glucose 2 to 3 months earlier, the value reported is inconsistent with the other laboratory results. A high probability of sample misidentification or analytical error necessitates that the test be repeated."
+  },
+  {
+    "id": 1225,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "Quality control results for uric acid are as follows:{{table}}Results should be reported from:",
+    "options": [
+      "Run 1 only",
+      "Runs 1 and 2",
+      "Runs 1, 2, and 3",
+      "Runs 1, 2, 3, and 4"
+    ],
+    "answer": "C",
+    "explanation": "Although no single result exceeds the 2s limit, the 41s rule is broken on Run 4. This means that both QC1 and QC2 exceeded + 1s on Run 3 and Run 4.",
+    "table": {
+      "rows": [
+        [
+          "",
+          "Run 1",
+          "Run 2",
+          "Run 3",
+          "Run 4",
+          "Mean",
+          "s"
+        ],
+        [
+          "QC1",
+          "3.5",
+          "3.8",
+          "4.1",
+          "4.2",
+          "3.6",
+          "0.40"
+        ],
+        [
+          "QC2",
+          "6.8",
+          "7.2",
+          "7.4",
+          "7.5",
+          "7.0",
+          "0.25"
+        ]
+      ]
+    }
+  },
+  {
+    "id": 1226,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A peak blood level for gentamicin administered intramuscularly (therapeutic range 5–10 µg/mL) is 0.7 µg/mL. The preceding trough level was 0.5 µg/mL. What is the most likely explanation of these results?",
+    "options": [
+      "Laboratory error made on peak measurement",
+      "Specimen for peak level was collected from wrong patient",
+      "Blood for peak level was drawn too soon",
+      "Elimination rate has reached maximum"
+    ],
+    "answer": "C",
+    "explanation": "Sample collection time is critical for accurate therapeutic drug monitoring. Blood for trough levels must be collected immediately before the next dose. Blood collection time for peak levels must not occur prior to complete absorption and distribution of drug. This is typically 30 minutes after an IV dose or 60 minutes after an intramuscular dose of gentamicin. These results are most consistent with a peak sample having been drawn immediately after the intramuscular dose was given."
+  },
+  {
+    "id": 1227,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A patient breathing room air has the following arterial blood gas and electrolyte results: pH = 7.54 PCO2 = 18.5 mm Hg PO2 = 145 mm Hg HCO3 = Na = 135 mmol/L K = 4.6 mmol/L 18 mmol/L Cl = 98 mmol/L TCO2 = 20 mmol/L The best explanation for these results is:",
+    "options": [
+      "Blood for electrolytes was drawn above an IV site",
+      "Serum sample was hemolyzed",
+      "Venous blood was sampled for arterial blood gases",
+      "Blood gas sample was exposed to air"
+    ],
+    "answer": "D",
+    "explanation": "A patient breathing room air cannot have an arterial PO2 greater than 105 mm Hg because alveolar PO2 is 110 mm Hg when breathing 20% O2. Exposure to air caused loss of CO2 gas and increased pH."
+  },
+  {
+    "id": 1228,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: The following laboratory results are reported. Which result is most likely to be erroneous? Arterial blood gases: pH = 7.42 PO2 = 90 mm Hg PCO2 = 38.0 mm Hg HCO3= 24 mmol/L Plasma electrolytes: Na = 135 mmol/L Cl = 98 mmol/L K = 4.6 mmol/L TCO2 = 33 mmol/L",
+    "options": [
+      "pH",
+      "Na",
+      "K",
+      "TCO2"
+    ],
+    "answer": "D",
+    "explanation": "pH, PCO2, and HCO3- are normal, and therefore, agree. The electrolytes are normal also, but the TCO2 is increased significantly. The reference range for venous TCO2 is 22 to 28 mmol/L. Although TCO2 is the sum of HCO3- and dissolved CO2, the venous TCO2 is determined almost entirely by the HCO3- because DCO2 is lost as CO2 gas when the venous blood is exposed to air during processing. A TCO2 value of 32 mmol/L would be expected in a patient with metabolic alkalosis."
+  },
+  {
+    "id": 1229,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: Laboratory results on a patient from the ED are: Glucose = Na = 155 mmol/L K = 1.2 mmol/L 1,100 mg/dL Cl = 115 mmol/L TCO2 = 3.0 mmol/L What is the most likely explanation of these results?",
+    "options": [
+      "Sample drawn above an IV site",
+      "Metabolic acidosis with increased anion gap",
+      "Diabetic ketoacidosis",
+      "Laboratory error measuring electrolytes caused by hyperglycemia"
+    ],
+    "answer": "A",
+    "explanation": "These results are consistent with dilution of venous blood by the IV fluid containing 5% dextrose and normal saline. The IV fluid is free of potassium and HCO3-, accounting for the low level of these electrolytes (incompatible with life)."
+  },
+  {
+    "id": 1230,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A plasma sample from an adult male in a coma as a result of an automobile accident gave the following results: Total CK 480 IU/L CK-MB 8 µg/L Myoglobin 800 µg/L Troponin I 2.1 ng/L What is the best interpretation of these results?",
+    "options": [
+      "The person had a heart attack that caused the accident",
+      "The accident caused traumatic injury, but no heart attack had occurred",
+      "A heart attack had occurred in addition to a stroke",
+      "It is not possible to tell whether a heart attack had occurred because of the extensive trauma"
+    ],
+    "answer": "B",
+    "explanation": "The automobile accident caused skeletal muscle damage (myoglobin and total CK increases). The sandwich assay for MB uses antibodies to both the M and B subunits of CK-MB and therefore, is not subject to interference from CK-BB that could have resulted from brain injury. The CK relative index is 1.6, which is lower than would be expected if the CK-MB were derived from heart damage. Because the TnI is within normal limits, the slight increase in CK-MB is attributed to the gross increase in release of CK from skeletal muscle."
+  },
+  {
+    "id": 1231,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A patient has the following electrolyte results: Na = 130 mmol/L K = 4.8 mmol/L Cl = 105 mmol/L TCO2 = 26 mmol/L Assuming acceptable QC, select the best course of action.",
+    "options": [
+      "Report these results",
+      "Check the albumin, total protein, calcium, phosphorus, and magnesium results; if normal, repeat the sodium test",
+      "Request a new sample",
+      "Recalibrate and repeat the potassium test"
+    ],
+    "answer": "B",
+    "explanation": "The anion gap of this sample is less than 4 mmol/L. This may result from laboratory error, retention of an unmeasured cation (e.g., calcium), or low level of unmeasured anion, such as phosphorus or albumin. The sodium is inappropriately low for the chloride and HCO3- and should be repeated if no biochemical cause is apparent."
+  },
+  {
+    "id": 1232,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "A stat plasma lithium determined by using an ISE is measured at 14.0 mmol/L. Select the most appropriate course of action.",
+    "options": [
+      "Immediately report this result",
+      "Check sample for hemolysis",
+      "Call for a new specimen",
+      "Rerun the lithium calibrators"
+    ],
+    "answer": "C",
+    "explanation": "Lithium in excess of 2.0 mmol/L is toxic (in some laboratories 1.5 mmol/L is the upper therapeutic limit). A level of 14 mmol/L would not occur unless the sample was contaminated with lithium. This would most likely result from collection in a green-top tube containing the lithium salt of heparin."
+  },
+  {
+    "id": 1233,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "A chromatogram for blood alcohol (GC) gives broad trailing peaks and increased retention times for ethanol and internal standard. This is most likely caused by:",
+    "options": [
+      "A contaminated injection syringe",
+      "Water contamination of the column packing",
+      "Carrier gas flow rate that is too fast",
+      "Oven temperature that is too high"
+    ],
+    "answer": "B",
+    "explanation": "Increased oven temperature or gas flow rate will shorten retention times and decrease peak widths. Syringe contamination may cause the appearance of ghost peaks. Water in a PEG column, such as Carbowax, used for measuring volatiles causes longer retention times and loss of resolution."
+  },
+  {
+    "id": 1234,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: The amylase result is 550 units/L. A 1:4 dilution of the specimen in NaCl gives 180 units/L (before mathematical correction for dilution). The dilution is repeated with the same results. Select the best course of action.",
+    "options": [
+      "Report the amylase as 550 units/L",
+      "Report the amylase as 720 units/L",
+      "Report the amylase as 900 units/L",
+      "Dilute the sample 1:10 in distilled water and repeat"
+    ],
+    "answer": "B",
+    "explanation": "A 1:4 dilution refers to one part serum and three parts diluent; the result is multiplied by 4 to determine the serum concentration. Serum may contain wheat germ gluten or other natural amylase inhibitors, which, when diluted, results in increased enzyme activity. Serum for amylase should always be diluted with normal saline because chloride ions are needed for amylase activity."
+  },
+  {
+    "id": 1235,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A patient’s biochemistry results are: ALT = 55 IU/L AST = 165 IU/L Glucose = 87 mg/dL LD = 340 IU/L Na = 142 mmol/L K = 6.8 mmol/L Ca = 8.4 mg/dL Pi = 7.2 mg/dL Select the best course of action.",
+    "options": [
+      "Report results along with an estimate of the degree of hemolysis",
+      "Repeat LD, but report all other results",
+      "Request a new sample",
+      "Dilute the serum 1:2, and repeat AST and LD"
+    ],
+    "answer": "A",
+    "explanation": "Results indicate a moderately hemolyzed sample. Because sodium, calcium, and glucose are not significantly affected, results should be reported along with an estimate of visible hemolysis. The physician may reorder affected tests of interest."
+  },
+  {
+    "id": 1236,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "A blood sample is left on a phlebotomy tray for 4.5 hours before it is delivered to the laboratory. Which group of tests could be performed?",
+    "options": [
+      "Glucose, Na, K, Cl, TCO2",
+      "Uric acid, BUN, creatinine",
+      "Total and direct bilirubin",
+      "CK, ALT, ALP, AST"
+    ],
+    "answer": "B",
+    "explanation": "Glucose in serum is metabolized by cells at a rate of about 7% per hour. Bilirubin levels will fall if the sample is exposed to sunlight. Transaminases should be measured within 4 hours and ALP within 2 hours if the sample is stored at room temperature. Uric acid, BUN, and creatinine are least likely to be affected."
+  },
+  {
+    "id": 1237,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "An HPLC assay for procainamide gives an internal standard peak that is 15% greater in area and height for sample 1 compared with sample 2. What is the most likely cause?",
+    "options": [
+      "The column pressure increased while sample 2 was being analyzed",
+      "Less recovery from sample 2 occurred in the extraction step",
+      "The pH of the mobile phase increased during chromatography of sample 2",
+      "There was more procainamide in sample 1 than sample 2"
+    ],
+    "answer": "B",
+    "explanation": "The internal standard compensates for variation in extraction, evaporation, reconstitution, and injection volume. The same amount of internal standard is added to all samples and standards prior to assay. Increased column pH or pressure usually alters retention time and may not affect peak quantitation."
+  },
+  {
+    "id": 1238,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "After staining a silica gel plate to determine the lecithin:sphingomyelin (L/S) ratio, the medical laboratory scientist notes that the lipid standards both migrated 1 cm faster than usual. What is the best course of action?",
+    "options": [
+      "Repeat the separation on a new silica gel plate",
+      "Check the pH of the developing solvent",
+      "Prepare fresh developing solvent and repeat the assay",
+      "Reduce solvent migration time for all subsequent runs"
+    ],
+    "answer": "C",
+    "explanation": "TLC plates migrate in solvent until the front comes to 1 cm of the top of the plate. Separation of lipids on silica gel is based on adsorption. Higher retardation factor (Rf) values indicate greater solubility of lipids in the developing solvent. This may be caused by evaporation of H2O, lowering the polarity of the solvent."
+  },
+  {
+    "id": 1239,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "A quantitative urine glucose was determined to be 160 mg/dL by using the Trinder glucose oxidase method. The sample was refrigerated overnight. The next day, the glucose was repeated and found to be 240 mg/dL by using a polarographic method. What is the most likely cause of this discrepancy?",
+    "options": [
+      "Poor precision when performing one of the methods",
+      "Contamination resulting from overnight storage",
+      "High levels of reducing substances interfering with the Trinder reaction",
+      "Positive interference in the polarographic method caused by hematuria"
+    ],
+    "answer": "C",
+    "explanation": "Urine often contains high levels of ascorbate and other reducing substances. These may cause significant negative bias when measuring glucose using a peroxidase- coupled method. The reductants compete with chromogen for H2O2."
+  },
+  {
+    "id": 1240,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: Results of an iron profile are: Serum Fe = 40 µg/dL TIBC = 400 µg/dL Ferritin = 40µg/L Transferrin = 300 mg/dL (reference range 15–200) (reference range 200–360 mg/dL) These results indicate:",
+    "options": [
+      "Error in calculation of TIBC",
+      "Serum iron falls before ferritin in iron deficiency",
+      "A defect in iron transport and not iron deficiency",
+      "Iron deficiency but increased release of ferritin"
+    ],
+    "answer": "D",
+    "explanation": "Serum ferritin levels fall before iron or TIBC in iron deficiency, and a low level of serum ferritin is diagnostic. However, low tissue levels of ferritin may be masked by increased release into blood in liver disease, infection, and acute inflammation. Although this patient’s serum ferritin is within reference limits, serum iron is low and percent saturation is only 10%. Note that the TIBC and transferrin results are both elevated and agree. TIBC can be estimated by multiplying the serum transferrin by 1.4. These results point to iron deficiency."
+  },
+  {
+    "id": 1241,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: Results of an iron profile are: Serum Fe = 40 µg/dL TIBC = 400 µg/dL Ferritin = 50 µg/L All of the following tests are useful in establishing a diagnosis of iron deficiency except:",
+    "options": [
+      "Reticulocyte Hgb content",
+      "Erythrocyte zinc protoporphyrin",
+      "Serum transferrin",
+      "Hgb electrophoresis"
+    ],
+    "answer": "D",
+    "explanation": "Reticulocyte Hgb indicates the availability of iron for RBC production, and will be low in iron deficiency before serum iron falls. Transferrin is elevated in iron deficiency. Electrophoresis may show an elevated β-globulin (transferrin) characteristic of iron deficiency, or it may show inflammation that would help explain a normal ferritin. Zinc protoporphyrin is elevated in iron deficiency and in lead poisoning. Hemoglobinopathies and thalassemias are not associated with iron deficiency."
+  },
+  {
+    "id": 1242,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "Serum protein and immunofixation electrophoresis are ordered. The former is performed, but there is no evidence of a monoclonal protein. Select the best course of action.",
+    "options": [
+      "Perform quantitative IgG, IgA, and IgM",
+      "Perform the IFE on the serum",
+      "Report the result; request a urine sample for protein electrophoresis",
+      "Perform IFE on the serum and request a urine sample for IFE"
+    ],
+    "answer": "C",
+    "explanation": "An area of restricted mobility should be identified on serum protein electrophoresis before IFE is performed. About one of four patients with multiple myeloma have monoclonal free λ- or κ-chains in urine only, and therefore, urine electrophoresis should be included in initial testing."
+  },
+  {
+    "id": 1243,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: Hgb electrophoresis is performed and all of the Hgbs have greater anodal mobility than usual. A fast Hgb (Hgb H) is at the edge of the gel, and the bands are blurred. The voltage is set correctly, but the current reading on the ammeter is too low. Select the course of action that would correct this problem.",
+    "options": [
+      "Reduce the voltage",
+      "Dilute the buffer and adjust the pH",
+      "Prepare fresh buffer and repeat the test",
+      "Reduce the running time"
+    ],
+    "answer": "C",
+    "explanation": "Increased mobility, decreased resolution, and low current result from low ionic strength. Reducing voltage will slow migration but will not improve resolution. Diluting the buffer will reduce the current, resulting in poorer resolution."
+  },
+  {
+    "id": 1244,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "A physician asks the laboratory to use the serum from a clot tube left over from a chemistry profile run at 8 a.m. for a stat ionized calcium (Cai) at 11 a.m. What is the best course of action?",
+    "options": [
+      "Perform the assay on the 8 a.m. sample",
+      "Perform the test only if the serum container was tightly capped",
+      "Perform the assay on the 8 a.m. sample only if it was refrigerated",
+      "Request a new sample"
+    ],
+    "answer": "D",
+    "explanation": "Cai is pH dependent. Heparinized blood is preferred because it can be assayed immediately. Serum may be used, but the specimen must remain tightly capped while clotting and centrifuging and analyzed immediately thereafter. After 3 hours, the Cai will be inaccurate, changing in response to a change in pH."
+  },
+  {
+    "id": 1245,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A patient’s biochemistry results are: Na = 125 mmol/L Cl = 106 mmol/L K = 4.5 mmol/L TCO2 = 19 mmol/L Cholesterol = 240 mg/dL Triglyceride = 640 mg/dL Glucose = 107 mg/dL AST = 16 IU/L ALT = 11 IU/L Amylase = 200 U/L Select the most likely cause of these results.",
+    "options": [
+      "The sample is hemolyzed",
+      "Serum was not separated from cells in sufficient time",
+      "Lipemia is causing in vitro interference",
+      "The specimen is contaminated"
+    ],
+    "answer": "C",
+    "explanation": "The triglyceride level is about five times the normal, causing the sample to be lipemic. This will cause pseudohyponatremia (unbalanced electrolytes). Lipemia may cause a falsely high rate reaction when amylase is measured by using turbidimetry; however, the high amylase level may be associated with pancreatitis, which results in hyperlipidemia."
+  },
+  {
+    "id": 1246,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "A gastric fluid from a patient suspected of having taken an overdose of amphetamine is sent to the laboratory for analysis. The only test for amphetamines performed by the laboratory is EMIT. What is the best course of action?",
+    "options": [
+      "Perform an EMIT assay for amphetamine",
+      "Refuse the sample and request urine",
+      "Dilute 1:10 with H2O and filter; perform the test",
+      "Titrate to pH 7.0, then follow procedure for measuring amphetamine in urine"
+    ],
+    "answer": "C",
+    "explanation": "The gastric sample should not be used in place of serum or urine without documentation of acceptability by the reagent manufacturer or laboratory. EMIT is approved for measuring amphetamines in urine only, and will be positive after 3 hours of ingesting the drug and remain positive for 1 to 2 days. A positive amphetamine result on a screening test, such as immunoassay, may be caused by a related drug which interferes, and therefore, the result should be confirmed by GC-MS if there is any medicolegal implication."
+  },
+  {
+    "id": 1247,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: Results of biochemistry tests are: Na = 138 mmol/L K = 4.2 mmol/L Cl = 94 mmol/L TCO2 = 20 mmol/L Glucose = 100 mg/dL Total bilirubin = 1.2 mg/dL BUN = 6.8 mg/dL Creatinine= 1.0 mg/dL Albumin = 4.8 g/dL Total protein = 5.1 g/dL What should be done next?",
+    "options": [
+      "Request a new specimen",
+      "Repeat the total protein",
+      "Repeat all tests",
+      "Perform a protein electrophoresis"
+    ],
+    "answer": "B",
+    "explanation": "All results are normal, except for total protein. The albumin level cannot be 94% of the total protein, and a random error in total protein measurement should be assumed."
+  },
+  {
+    "id": 1248,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "The following chart compares the monthly total bilirubin mean of Laboratory A to the monthly mean of Laboratory B, which uses the same control materials, analyzer, and method:{{table}}Both laboratories performed controls at the beginning of each shift using commercially prepared liquid QC sera stored at –20°C. Which of the following conditions would explain these differences?",
+    "options": [
+      "Improper handling of the control material by Laboratory A resulted in loss of bilirubin because of photodegradation",
+      "The laboratories used a different source of bilirubin calibrator",
+      "Laboratory B obtained higher results because its precision was poorer",
+      "Carryover from another reagent falsely elevated the results of Laboratory B"
+    ],
+    "answer": "B",
+    "explanation": "Interlaboratory variation in bilirubin results is often caused by differences in the assigned value of the calibrator used. Bilirubin calibrators are either serum-based materials that have been reference assayed or unconjugated bilirubin stabilized by addition of alkali and albumin. Calibrator differences result in bias and should be suspected when the laboratory’s mean differs significantly from the peer group’s mean. The bias in this example is caused by a constant error, rather than a proportional error. When a bilirubin calibrator error is suspected, the molar absorptivity of the calibrator should be measured and the bilirubin concentration calculated. Photodegradation generally results in a greater loss of bilirubin at higher concentration and also contributes to random error.",
+    "table": {
+      "rows": [
+        [
+          "",
+          "Level 1 Control — Mean",
+          "Level 1 Control — CV",
+          "Level 2 Control — Mean",
+          "Level 2 Control — CV"
+        ],
+        [
+          "Lab A",
+          "1.1 mg/dL",
+          "2.1%",
+          "6.7 mg/dL",
+          "3.2%"
+        ],
+        [
+          "Lab B",
+          "1.4 mg/dL",
+          "2.2%",
+          "7.0 mg/dL",
+          "3.6%"
+        ]
+      ]
+    }
+  },
+  {
+    "id": 1249,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "After installing a new analyzer and reviewing the results of patients for 1 month, the lead laboratory scientist notices a greater frequency of patients with abnormally high triglyceride results. Analysis of all chemistry profiles run the next day indicated that triglyceride results are abnormal whenever the test is run immediately after any sample that is measured for lipase. These observations point to which type of error?",
+    "options": [
+      "Specificity of the triglyceride reagents",
+      "Precision in pipetting of lipemic samples",
+      "Bias caused by sequence of analysis",
+      "Reagent carryover"
+    ],
+    "answer": "D",
+    "explanation": "Carryover errors are usually attributed to interference caused by a sample with a very high concentration of analyte preceding a normal sample. However, reagent carryover may also occur on automated systems that use common reagent delivery lines or reusable cuvettes. In the case of lipase methods, diglyceride used in the reagent may coat the reagent lines or cuvettes interfering with the triglyceride measurements that directly follow."
+  },
+  {
+    "id": 1250,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: The digoxin level for a stable patient with a normal ECG result was reported as 7.4 ng/mL (URL 2.6 ng/mL) by using a particle-enhanced immunoturbidimetric inhibition method. Renal function test results were normal, and the patient was not taking any other medications. The assay was repeated, and the results were the same. The sample was frozen and sent to a reference laboratory for confirmation. The result was 1.6 ng/mL measured by a competitive chemiluminescent procedure. Which of the following best explains the discrepancy in results?",
+    "options": [
+      "The immunoturbidimetric inhibition method was performed improperly",
+      "Digoxin was lower by the chemiluminescent method because it is less sensitive",
+      "An interfering substance was present that cross-reacted with the antibody in the immunoturbidimetric inhibition assay",
+      "Freezing the specimen caused lower results by converting the digoxin to an inactive metabolite"
+    ],
+    "answer": "C",
+    "explanation": "An error was suspected because there was a discrepancy between the test result and the patient’s clinical status (i.e., signs of digoxin toxicity, such as ventricular arrhythmia and hyperkalemia, were not present.) Some substances, called digoxin-like immunologic factors (DLIFs) can cross-react with the antibodies used to measure digoxin. The extent of interference varies with the source of anti-digoxin used. In addition, falsely elevated digoxin results may result from accidental ingestion of plant poisons, such as oleandrin, and from administration of Digibind, a Fab fragment against digoxin that is used to reverse digoxin toxicity."
+  },
+  {
+    "id": 1251,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "The following results are reported on an adult male patient being evaluated for chest pain:{{table}}What is the most likely cause of these results?",
+    "options": [
+      "The wrong patient was drawn for the 1-hour post-admission sample",
+      "The patient did not suffer an MI until after admission",
+      "Hemolysis caused interference with the 1-hour sample",
+      "The patient is experiencing unstable angina"
+    ],
+    "answer": "A",
+    "explanation": "The admission TnI and CK-MB are both elevated, and above the diagnostic cutoff for MI. Both assays are within normal limits 1 hour after admission, making an analytical error highly unlikely. The rise and fall of both markers take significantly longer than 1 hour after AMI, so the normal result at 1 hour cannot be explained by the pathophysiology of cardiac injury. The likely explanation is that the 1-hour post- admission sample was drawn from the wrong patient or the wrong specimen was analyzed.",
+    "table": {
+      "rows": [
+        [
+          "",
+          "Troponin I (Cutoff = 0.018 µg/L)",
+          "CK-MB (Cutoff = 4 µg/L)"
+        ],
+        [
+          "Admission",
+          "0.21 µg/L",
+          "18 µg/L"
+        ],
+        [
+          "1-hour post admission",
+          "0.015 µg/L",
+          "3 µg/L"
+        ],
+        [
+          "2-hours post admission",
+          "0.24 µg/L",
+          "20 µg/L"
+        ]
+      ]
+    }
+  },
+  {
+    "id": 1252,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "Analysis of normal and abnormal QCs performed at the beginning of the evening shift revealed a 22s error across levels for triglyceride. Both controls were within the 3s limit. The controls were assayed again, and one control was within the acceptable range, and the other was slightly above the 2s limit. No further action was taken, and the results that were part of the run were reported. Which statement best describes this situation?",
+    "options": [
+      "Appropriate operating procedures were followed",
+      "Remedial evaluation should have been taken, but otherwise, the actions were appropriate",
+      "Corrective action should have been taken before the controls were repeated",
+      "The controls should have been run twice before reporting results"
+    ],
+    "answer": "C",
+    "explanation": "QC limits are chosen to achieve a low probability of false rejection. For example, a 22s error occurs only once in 1,600 occurrences by chance. Therefore, such an error can be assumed to be significant. However, this does not mean the error will occur if the controls are repeated again. The error detection rate (power function) of the 22s rule is only about 30% for a single run. This means that there is a greater chance the repeated controls will be within range than outside acceptable limits. Therefore, controls should never be repeated until the test system is evaluated for potential sources of error. Calibration should have been performed prior to repeating the controls, and samples should have been evaluated to determine the magnitude of the error before reporting the results."
+  },
+  {
+    "id": 1253,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "A biochemical profile routinely performed bimonthly on a patient receiving renal dialysis showed decreased serum calcium and decreased PTH levels. Such a laboratory result may be explained by which of the following circumstances?",
+    "options": [
+      "Malignancy",
+      "Aluminum toxicity",
+      "Hypervitaminosis D",
+      "Acidosis"
+    ],
+    "answer": "B",
+    "explanation": "Aluminum present in medications and dialysis bath fluid can cause aluminum toxicity in patients receiving dialysis. Patients with renal failure often display high PTH levels because of poor retention of calcium and are at risk of developing osteitis fibrosa (soft bones) as a result. Excess aluminum causes osteomalacia by inhibiting release of PTH. The finding of low PTH would not be expected with low serum calcium unless aluminum poisoning was present. Malignancy, hypervitaminosis D, and acidosis are associated with high serum calcium."
+  },
+  {
+    "id": 1254,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: The laboratory reports a very high cardiac troponin level, and the attending physician questions the result because it does not correlate with the patient’s condition. The laboratory scientist suspects a false-positive result caused by a heterophile antibody. Which course of action might confirm this?",
+    "options": [
+      "Have the sample assayed on a different platform",
+      "Dilute the specimen with saline and repeat the test",
+      "Call for a new specimen, and compare results",
+      "Ultracentrifuge the sample, and perform the test on the supernatant"
+    ],
+    "answer": "A",
+    "explanation": "Heterophile antibodies (e.g., human anti-mouse antibodies [HAMAs]) may cross-link the two antibodies used in a cardiac troponin immunoassay causing very high results. Although manufacturers may add blocking agents to neutralize them, high-titer antibodies to mouse immunoglobulins may still interfere. Binding of heterophile antibodies will differ, depending on the source of antibodies used in the assay; thus, other manufacturer’s reagents may give very different results. Serial dilution of the sample will give less than expected reduction in the result and is another means to support that this type of interference is present. Alternatively, the sample can be mixed with mouse serum and reassayed. If a greater-than-expected drop in concentration occurs, then antibodies to mouse immunoglobulins may have been the cause. Negative interference in sandwich immunoassays that use streptavidin/biotin labeling can occur when the sample contains high concentration of biotin. Biotin is often present in the serum or plasma from persons taking high-dose vitamin supplements. Na K Cl HCO3 BUN Glucose Creatinine Uric Acid 140 5.8 102 18 2.6 20 DL DL mmol/L mmol/L mmol/L mmol/L mg/dL mg/dL 132 4.8 98 mmol/L 24 DL DL DL DL mmol/L mmol/L mmol/L DL detection limit flag (absorbance below detectable limit)."
+  },
+  {
+    "id": 1255,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "Hemoglobin electrophoresis performed on agarose at pH 8.8 gives the following results:{{table}}All components of the Hgb C, S, F, A control hemolysate were within the acceptable range. What is the most likely cause of this patient’s result?",
+    "options": [
+      "HgbLepore",
+      "Hgb S-β-thalassemia (Hgb S/β+)",
+      "Hgb SC disease after transfusion",
+      "Specimen contamination"
+    ],
+    "answer": "C",
+    "explanation": "HgbLepore results from a hybridization of the β- and δ-genes and produces a pattern that is similar to Hgb S trait (AS), except that the quantity of HgbLepore at the Hgb S position is below 20%. Hgb S–β-thalassemia minor results in an increase in Hgb A2 (and possibly Hgb F) because there is reduced transcription of the structurally normal β-chain. However, Hgb S should be greater than Hgb A, and the amount at the Hgb A2 is far too high. The concentration of Hgb at the A2 position is too high to result from contamination or to be considered Hgb A2. This pattern appears to express two abnormal Hgbs (Hgb S and C) as well as the normal adult Hgb A. This pattern would occur if the patient has been transfused with normal RBCs. Hgb SC disease usually produces almost equal amounts of Hgb C and S (and usually a slight increase in Hgb F) and is the most likely cause of these results. This could be confirmed by acid agar electrophoresis or isofocusing to identify the abnormal Hgbs and review of the patient’s medical record for evidence of recent blood transfusion.",
+    "table": {
+      "rows": [
+        [
+          "A₂ Position",
+          "S Position",
+          "F Position",
+          "A Position"
+        ],
+        [
+          "35%",
+          "30%",
+          "5%",
+          "30%"
+        ]
+      ]
+    }
+  },
+  {
+    "id": 1256,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "{{table}}Two consecutive serum samples give the results shown in the table above for a metabolic function profile. The instrument is a random-access analyzer that uses two sample probes. The first probe aspirates a variable amount of serum for the spectrophotometric chemistry tests, and the second probe makes a 1:50 dilution of serum for electrolyte measurements. What is the most likely cause of these results?",
+    "options": [
+      "Both patients have renal failure",
+      "There is an insufficient amount of sample in both serum tubes",
+      "There is a fibrin strand in the probe used for the spectrophotometric chemistry tests",
+      "The same patient’s sample was accidentally run twice"
+    ],
+    "answer": "C",
+    "explanation": "Electrolyte results for both patients are within the physiological range but are distinctly different. The first results indicate a high potassium and increased anion gap, and one would expect the BUN, uric acid, and creatinine levels to be elevated. However, the results for BUN and glucose are unlikely for any patient, and the creatinine and uric acid signals are below the detection limit of the analyzer, indicating that little or no sample was added. This could be caused by a partially obstructed sample probe, or insufficient sample volume. The results for the second sample are below detection limits for all spectrophotometric tests, which may be the result of complete probe obstruction or the inability to generate a detectable signal with the trace quantity of serum that was added. Because all of the low or undetectable signals are for tests sampled by the first probe, the only explanation is that the probe is obstructed or malfunctioning.",
+    "table": {
+      "rows": [
+        [
+          "Na",
+          "K",
+          "Cl",
+          "HCO₃",
+          "BUN",
+          "Glucose",
+          "Creatinine",
+          "Uric Acid"
+        ],
+        [
+          "140 mmol/L",
+          "5.8 mmol/L",
+          "102 mmol/L",
+          "18 mmol/L",
+          "2.6 mg/dL",
+          "20 mg/dL",
+          "DL",
+          "DL"
+        ],
+        [
+          "132 mmol/L",
+          "4.8 mmol/L",
+          "98 mmol/L",
+          "24 mmol/L",
+          "DL",
+          "DL",
+          "DL",
+          "DL"
+        ]
+      ],
+      "note": "DL = detection limit flag (absorbance below detectable limit)."
+    }
+  },
+  {
+    "id": 1257,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A blood sample in a red-top tube is delivered to the laboratory for electrolytes, calcium, and phosphorus. The tube is approximately half full and is accompanied by a purple-top tube for a CBC that is approximately three quarters full. The chemistry results are as follows:{{table}}What is the most likely explanation of these serum calcium results?",
+    "options": [
+      "Severe hemolysis during sample collection",
+      "Laboratory error in the calcium measurement",
+      "The wrong order of draw was used for vacuum tube collection",
+      "Some anticoagulated blood was added to the red-top tube"
+    ],
+    "answer": "D",
+    "explanation": "The potassium and the calcium results are above and below physiological limit values, respectively. Although hemolysis could explain the high potassium, hemolysis does not cause a significant change in serum calcium. The wrong order of draw could result in the falsely low calcium value but would not be sufficient to cause a result that is incompatible with life (and does not explain a grossly elevated potassium). The results and the condition of the tubes indicate that blood from a full tube collected in K3 EDTA was added to the clot tube, chelating the calcium and increasing the potassium.",
+    "table": {
+      "rows": [
+        [
+          "Na",
+          "K",
+          "Cl",
+          "HCO₃",
+          "Ca",
+          "Pi"
+        ],
+        [
+          "135",
+          "11.2",
+          "103",
+          "14",
+          "2.6",
+          "3.8"
+        ],
+        [
+          "mmol/L",
+          "mmol/L",
+          "mmol/L",
+          "mmol/L",
+          "mg/dL",
+          "mg/dL"
+        ]
+      ]
+    }
+  },
+  {
+    "id": 1258,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A patient previously diagnosed with primary hypothyroidism and started on T4 replacement therapy is seen for follow-up testing after 2 weeks. The serum-free T4 is normal, but the TSH is still elevated. What is the most likely explanation for these results?",
+    "options": [
+      "Laboratory error in measurement of free T4",
+      "Laboratory error in measurement of TSH",
+      "In vitro drug interference with the free T4 assay",
+      "Results are consistent with a euthyroid patient in the early phase of therapy"
+    ],
+    "answer": "D",
+    "explanation": "Results of thyroid tests (especially in hospitalized patients) may sometimes appear discrepant because medications and nonthyroid illnesses can affect the test results. The pituitary is slow to respond to thyroxine replacement, and 6 to 8 weeks are usually required before TSH levels fall back to normal. In the early stage of therapy, the patient should be monitored by the free T4 result. This patient’s free T4 is normal, indicating that replacement therapy is adequate. The high TSH sometimes seen in treated patients is called pituitary lag."
+  },
+  {
+    "id": 1259,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: A 6-year-old child being treated with phenytoin was recently placed on valproic acid for better control of seizures. After displaying signs of phenytoin toxicity, including ataxia, a stat phenytoin is determined to be 15.0 mg/L (reference range 10–20 mg/L). A peak blood level drawn 5 hours after the last dose is 18.0 mg/L. The valproic acid measured at the same time is within therapeutic limits. Quality control is within acceptable limits for all tests, but the physician questions the accuracy of the results. What is the most appropriate next course of action?",
+    "options": [
+      "Repeat the valproic acid level using the last specimen",
+      "Repeat the phenytoin on both trough and peak samples using a different method",
+      "Recommend measurement of free phenytoin on the last specimen",
+      "Recommend a second trough level be measured"
+    ],
+    "answer": "C",
+    "explanation": "Phenytoin levels must be monitored closely because toxic drug levels can occur unexpectedly as a result of changing pharmacokinetics. Phenytoin follows a nonlinear rate of elimination, which means that clearance decreases as blood levels increase. At high blood levels, saturation of the hepatic hydroxylating enzymes can occur, causing an abrupt increase in the blood level from a small increase in dose. The drug half-life estimated from the two drug levels is approximately 15 hours, which is within the range expected for children, so decreased clearance is not likely the problem. Valproic acid competes with phenytoin for binding sites on albumin. Free phenytoin is the physiologically active fraction and is normally very low, so small changes in protein binding can cause a large change in free drug. For example, a 5% fall in protein binding caused by valproic acid can increase the free phenytoin level by 50%. This patient’s free phenytoin level should be measured, and the dose of phenytoin reduced to produce a free drug level that is within the therapeutic range. Na K Cl HCO3 BUN Glucose Creatinine Uric Acid 140 3.6 100 28 130 110 1.2 mg/dL 4.8 mmol/L mmol/L mmol/L mmol/L mg/dL mg/dL mg/dL 148 4.2 110 24 135 86 mg/dL 0.8 mg/dL 3.9 mmol/L mmol/L mmol/L mmol/L mg/dL mg/dL 138 4.0 105 22 142 190 1.0 mg/dL 4.6 mmol/L mmol/L mmol/L mmol/L mg/dL mg/dL mg/dL"
+  },
+  {
+    "id": 1260,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "{{table}}The results shown in the table above are obtained from three consecutive serum samples using an automated random access analyzer that samples directly from a bar-coded tube. Calibration and QC performed at the start of the shift are within the acceptable range, and no error codes are reported by the analyzer for any tests on the three samples. Upon results verification, what is the most appropriate course of action?",
+    "options": [
+      "Report the results, and proceed with other tests because no analytical problems have been noted",
+      "Repeat the controls before continuing with further testing, but report the results",
+      "Check sample identification prior to reporting",
+      "Do not report BUN results for these patients or continue BUN testing"
+    ],
+    "answer": "D",
+    "explanation": "In three consecutive patients, BUN is found to be elevated five- to 10-fold in the absence of any other laboratory evidence of renal disease. The glucose results show conclusively that the samples are not from the same patient. Therefore, the BUN results must be caused by a systematic error and should not be reported. Further testing for BUN should be withheld until the analytical components of the BUN assay are completely evaluated and the cause of these results identified and corrected. This is demonstrated by successful recalibration and performance of controls within acceptable limits. After this, the BUN assay should be repeated on the three samples along with all other specimens with a spurious BUN result that have occurred since the start of the shift.",
+    "table": {
+      "rows": [
+        [
+          "Na",
+          "K",
+          "Cl",
+          "HCO₃",
+          "BUN",
+          "Glucose",
+          "Creatinine",
+          "Uric Acid"
+        ],
+        [
+          "140 mmol/L",
+          "3.6 mmol/L",
+          "100 mmol/L",
+          "28 mmol/L",
+          "130 mg/dL",
+          "110 mg/dL",
+          "1.2 mg/dL",
+          "4.8 mg/dL"
+        ],
+        [
+          "148 mmol/L",
+          "4.2 mmol/L",
+          "110 mmol/L",
+          "24 mmol/L",
+          "135 mg/dL",
+          "86 mg/dL",
+          "0.8 mg/dL",
+          "3.9 mg/dL"
+        ],
+        [
+          "138 mmol/L",
+          "4.0 mmol/L",
+          "105 mmol/L",
+          "22 mmol/L",
+          "142 mg/dL",
+          "190 mg/dL",
+          "1.0 mg/dL",
+          "4.6 mg/dL"
+        ]
+      ]
+    }
+  },
+  {
+    "id": 1261,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "AFP measured in the serum of a 30-year-old pregnant woman at approximately 12 weeks’ gestation is 2.5 multiples of the median (MOM). What course of action is most appropriate?",
+    "options": [
+      "Repeat the serum AFP in 2 weeks",
+      "Recommend AFP assay on amniotic fluid",
+      "Repeat the AFP using the same sample by another method",
+      "Repeat the AFP using the sample by the same method"
+    ],
+    "answer": "A",
+    "explanation": "The analytical sensitivity of immunochemical AFP tests is approximately 5.0 ng/mL. The maternal serum AFP at 12 weeks’ gestation is barely above the analytical detection limit. Therefore, to achieve the needed sensitivity, the test should be repeated at 14 weeks. If the result is still 2.5 MOM or greater, then ultrasonography should be performed to verify the date of the last menstrual period. AFP normally first becomes detectable in maternal serum at week 12 and increases by 15% per week through the 26th week of pregnancy. Levels of 2.5 MOM or greater are associated with spina bifida but also occur in ventral wall and abdominal wall defects, fetal death, Turner syndrome, trisomy 13, congenital hypothyroidism, tyrosinemia, and several other fetal conditions. A positive serum test should always be repeated, and if positive again, followed by ultrasonography. If ultrasonography does not explain the elevation, amniotic fluid testing, including AFP and acetylcholinesterase, is usually recommended. AST ALT ALP LD CK GGT TP ALB TBIL GLU TG CA InP U/L U/L U/L U/L U/L U/L g/dL g/dL mg/dL mg/dL mg/dL mg/dL mg/dL Day 20 15 40 100 15 40 8.2 3.6 0.8 84 140 8.7 4.2 1 Day 22 14 65 90 20 36 8.3 3.8 1.0 128 190 8.8 5.2 2 ALB, Albumin; GLU, glucose; TBIL, total bilirubin; TG, triglyceride; TP, total protein."
+  },
+  {
+    "id": 1262,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "SITUATION: Biochemistry tests are performed 24 hours apart on a patient and a delta check flag is reported for inorganic phosphorus by the laboratory information system. Given the results shown in the table above, identify the most likely cause.",
+    "options": [
+      "Results suggest altered metabolic status caused by poor insulin control",
+      "The patient was not fasting when the sample was collected on day 2",
+      "The samples were drawn from two different patients",
+      "The delta check limit is invalid when samples are collected 24 or more hours apart"
+    ],
+    "answer": "B",
+    "explanation": "The delta check compares the difference of the patient’s two most recent laboratory results within a 3-day period (longer for more stable analytes) to a delta limit usually determined as a percentage difference. The purpose of the delta check is to detect sample identification errors. A delta check flag can also be caused by random analytical errors and interfering substances, such as hemolysis, icterus, and lipemia, and by metabolic changes associated with disease or treatment. Therefore, results should be carefully considered before determining the cause. In this case, hemolysis and icterus can be ruled out because enzymes sensitive to hemolysis interference (AST, ALT, and LD) and bilirubin are within normal limits. Tests showing a significant difference are inorganic phosphorus, ALP, triglycerides, and glucose. These four tests are elevated by diet (the ALP from postprandial secretion of intestinal ALP). All other tests show a high level of agreement between days, and the differences are attributable to normal physiological and analytical variation."
+  },
+  {
+    "id": 1263,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "A quantitative sandwich enzyme immunoassay for intact serum hCG was performed on week 4 and the result was 40,000 mIU/mL (reference range 10,000–80,000 mIU/mL). The physician suspected a molar pregnancy and requested that the laboratory repeat the test checking for the hook effect. Which process would identify this problem?",
+    "options": [
+      "Obtain a new plasma specimen and heat inactivate before testing",
+      "Obtain a urine specimen and perform the assay",
+      "Perform a qualitative pregnancy test",
+      "Perform a serial dilution of the sample and repeat the test"
+    ],
+    "answer": "D",
+    "explanation": "The hook effect is the result of excessive antigen concentration and results in a dose– response (calibration) curve that reverses direction at very high antigen concentrations. It occurs in two-site double antibody sandwich assays when both the capture antibody and the enzyme-conjugated antibody are incubated with the antigen at the same time. The excess antigen saturates both antibodies preventing formation of a double antibody sandwich. The hook effect can cause results to be sufficiently low to cause misdiagnosis. It can be detected by diluting the sample (antigen) in which case the assay result will be greater than in the undiluted sample. An alternative solution is to perform the test by using a competitive binding assay or a sandwich assay in which the enzyme-labeled antibody is not added until after separation of free and bound antigen."
+  },
+  {
+    "id": 1264,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "A patient presents to the ED with symptoms of intoxication, including impaired speech and movement. The plasma osmolality was measured and found to be 330 mOsm/kg. The osmolal gap was 40 mOsm/kg. Blood alcohol was measured by the ADH method and found to be 0.15% w/v (150 mg/dL). Electrolyte results showed an increased anion gap. Ethylene glycol intoxication was suspected because the osmolal gap was greater than could be explained by ethanol alone, but GC was not available. Which of the following would be abnormal if this suspicion proved correct?",
+    "options": [
+      "Arterial blood gases",
+      "Lactic acid",
+      "Urinary ketones",
+      "Glucose"
+    ],
+    "answer": "A",
+    "explanation": "Ethylene glycol is sometimes used as a substitute for ethanol by alcoholics. It is metabolized to formic acid and glycolic acid by the liver, resulting in metabolic acidosis and an increased anion gap. Lactic acid, glucose, and urinary ketones would be useful in ruling out other causes of metabolic acidosis but would not be abnormal as a result of ethylene glycol intoxication."
+  },
+  {
+    "id": 1265,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "Given the serum protein electrophoresis pattern shown, which transaminase results would you expect?",
+    "options": [
+      "Within normal limits for both",
+      "Marked elevation of both (20–50-fold the normal)",
+      "Mild elevations of both (two- to five-fold the normal)",
+      "Marked elevation of AST but normal ALT"
+    ],
+    "answer": "C",
+    "explanation": "The protein electrophoresis and densitometric scan show a significantly reduced albumin and polyclonal gammopathy. The densitometric scan shows β–α bridging that supports a diagnosis of hepatic cirrhosis. In this condition one would expect two-to fivefold increases of both transaminases with an ALT:AST ratio below 1.",
+    "image": "data:image/jpeg;base64,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UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAeY/tneNI/h3+yL8V9ellWCLQfB+q6i8hUuI1is5ZC2BknAXOAM18++C9I/sDwppNjtZRY2cVvhjkrtQLyfXivZP+CjFnFqn7DfxY06ZTJFrnhm70h0DFfNFzGbfYSCCA3nYJByATivK6qJDCuB/a+8Mx+Mv2YPifpMonMWreFdTsn8j/WbZLSRDtyD82G44PPrXfVm+PdL/tvwZrNn85+2WM0HyDLfMhHHvzVCPsDwlrI8Q+F9Mvw8cgv7SK43R/dbcgbI9ua0q84/ZE8VL43/AGVvhjrKS286ax4T0y+WSBt0UgktIn3IcnKndkHJ47mvR6zNAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDwD/AIKY60uifsl6lkSN/aev+HdJIU4B+165YWuG/wBj9/8AN/s54PQ+fV33/BSC3i1D4KeH7GSOKX7b4y0IgSDKAw30d2Gwe4NtkejBTxjNcDVRIYUUUVQj1H/gm9Zx6X+wV8GdPiZ3j0XwbpulKXGHxb2yQfP/ALf7r5unOeB0r2+vCf8AgnFqqap+yRoCpKso02/1fSsjkqbXVLu2Kt/tqYSrdPmB4HSvdqzNAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD5m/4KSawLGP4L2Gwudb+IKWo5+VfK0fVbzLevFqcf7W09sjmK6f/goJHHf+OfgxbNHHI9p4hvdTQuARHs0u6tyy+j/6XtyP4WcZ5weYqo7EMKKKKoR3f/BNGzi0j9nrVNPj3j7H4z8SOVf7yG41i7vDn2JuSw/2WFfQtfN3/BODWY77SPitpySFm0Dx5PaOhUgxNNp2n32M45yLwNkZxvx1BA+kayW5aCiiimMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii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"
+  },
+  {
+    "id": 1266,
+    "section": "Clinical Chemistry Problem-Solving",
+    "chapter": "Clinical Chemistry",
+    "question": "Serial high sensitivity cTnI assays were performed on a patient at admission and at 1 hour and 3 hours later. The samples were collected in EDTA tubes. Following are the results (reference range 0–18 ng/L): Admission = 34 ng/L 1 hour = 32 ng/L 3 hours = 33 ng/L These results most likely indicate:",
+    "options": [
+      "A positive test for acute MI",
+      "Non-MI cause of high cTnI",
+      "Transmural reinfarction",
+      "Random error with the 3-hour sample"
+    ],
+    "answer": "B",
+    "explanation": "Three serial cTNI results near the upper normal limit are also near the limit of detection for the test. This can be caused by both noncardiac conditions and cardiac conditions other than AMI, including CHF, left ventricular hypertrophy, pulmonary edema, unstable angina, ischemia, myocarditis, and others. AMI is unlikely because serial measurements do not show increasing cTNI."
   }
 ];

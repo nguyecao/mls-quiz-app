@@ -319,7 +319,7 @@
     cursor:pointer;
   }
   .jump-row input[type="number"]{
-    width:56px;
+    width:76px;
     padding:5px 6px;
     border-radius:6px;
     border:1px solid var(--border);
@@ -417,6 +417,45 @@
     margin:0 0 18px 0;
     text-wrap:balance;
     white-space:pre-line;
+  }
+
+  .q-table-wrap{
+    margin:0 0 18px 0;
+    border:1px solid var(--border);
+    border-radius:12px;
+    overflow-x:auto;
+    background:var(--surface);
+    -webkit-overflow-scrolling:touch;
+  }
+  .q-table{
+    border-collapse:collapse;
+    width:100%;
+    font-size:13.5px;
+    line-height:1.4;
+    color:var(--text);
+  }
+  .q-table th, .q-table td{
+    padding:8px 12px;
+    text-align:left;
+    border-bottom:1px solid var(--border);
+    white-space:nowrap;
+    font-variant-numeric:tabular-nums;
+  }
+  .q-table thead th{
+    background:var(--surface-2);
+    font-weight:700;
+    font-size:12.5px;
+    color:var(--text);
+  }
+  .q-table tbody tr:last-child td{border-bottom:none;}
+  .q-table tbody td:first-child{font-weight:600;}
+  .q-table-note{
+    margin:0;
+    padding:8px 12px;
+    font-size:12.5px;
+    color:var(--text-muted);
+    border-top:1px solid var(--border);
+    background:var(--surface-2);
   }
 
   .q-figure{
@@ -548,7 +587,7 @@
   .explanation-verdict.correct{color:var(--success-strong);}
   .explanation-verdict.incorrect{color:var(--danger-strong);}
   .explanation-verdict svg{width:16px;height:16px;}
-  .explanation-body{font-size:13.75px;line-height:1.6;color:var(--text-muted);}
+  .explanation-body{font-size:13.75px;line-height:1.6;color:var(--text-muted);white-space:pre-line;}
   .explanation-body b, .explanation-body strong{color:var(--text);}
 
   .empty-state{
@@ -834,7 +873,7 @@
           </span>
           <div>
             MedLab Boards
-            <div class="brand-sub" id="brandSub">Heme &middot; Coag &middot; UA &middot; Body Fluids</div>
+            <div class="brand-sub" id="brandSub">Clinical Laboratory Science Board Review</div>
           </div>
         </div>
       </div>
@@ -1026,7 +1065,7 @@
 
 <div class="toast" id="toast"></div>
 
-<script src="questions.js"></script>
+<script src="questions.js" charset="utf-8"></script>
 <script>
 (function(){
   "use strict";
@@ -1143,6 +1182,13 @@
         answer: item.answer,
         explanation: item.explanation ? String(item.explanation) : ""
       });
+      if (typeof item.image === "string" && item.image.indexOf("data:image/") === 0) out[out.length-1].image = item.image;
+      if (item.table && Array.isArray(item.table.rows) && item.table.rows.length){
+        out[out.length-1].table = {
+          rows: item.table.rows.map(function(r){ return Array.isArray(r) ? r.map(String) : []; }),
+          note: item.table.note ? String(item.table.note) : ""
+        };
+      }
     });
     return out;
   }
@@ -1296,6 +1342,47 @@
     });
   }
 
+  function figureHtml(q){
+    if (!q.image) return "";
+    return '<div class="q-figure" id="qFigure" tabindex="0" role="button" aria-label="Enlarge figure">' +
+      '<img src="' + q.image + '" alt="Figure for this question" decoding="sync">' +
+      '<span class="q-figure-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg> Enlarge</span>' +
+    '</div>';
+  }
+
+  function tableHtml(q){
+    if (!q.table || !q.table.rows || !q.table.rows.length) return "";
+    var rows = q.table.rows;
+    var html = '<div class="q-table-wrap"><table class="q-table"><thead><tr>';
+    rows[0].forEach(function(c){ html += '<th scope="col">' + escapeHtml(c) + '</th>'; });
+    html += '</tr></thead><tbody>';
+    for (var r = 1; r < rows.length; r++){
+      html += '<tr>';
+      rows[r].forEach(function(c){ html += '<td>' + escapeHtml(c) + '</td>'; });
+      html += '</tr>';
+    }
+    html += '</tbody></table>';
+    if (q.table.note) html += '<p class="q-table-note">' + escapeHtml(q.table.note) + '</p>';
+    html += '</div>';
+    return html;
+  }
+
+  /* stem text, optional figure, optional table. A "{{table}}" marker in the stem
+     says where the table goes (text before it, then the table, then the rest). */
+  function stemBlockHtml(q){
+    var text = String(q.question || "");
+    var parts = text.split("{{table}}");
+    var head = parts[0].trim();
+    var tail = parts.slice(1).join(" ").trim();
+    var hasTable = !!(q.table && q.table.rows && q.table.rows.length);
+    var html = "";
+    if (head) html += '<h2 class="q-stem">' + escapeHtml(head) + '</h2>';
+    html += figureHtml(q);
+    if (hasTable) html += tableHtml(q);
+    if (tail) html += '<h2 class="q-stem">' + escapeHtml(tail) + '</h2>';
+    return html;
+  }
+
   function renderQuestion(){
     var q = currentQuestion();
     var card = el.questionCard;
@@ -1352,12 +1439,7 @@
           '<svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>' +
         '</button>' +
       '</div>' +
-      '<h2 class="q-stem">' + escapeHtml(q.question) + '</h2>' +
-      (q.image ?
-        '<div class="q-figure" id="qFigure" tabindex="0" role="button" aria-label="Enlarge figure">' +
-          '<img src="' + q.image + '" alt="Figure for this question" decoding="sync">' +
-          '<span class="q-figure-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg> Enlarge</span>' +
-        '</div>' : '') +
+      stemBlockHtml(q) +
       '<div class="options">' + optionsHtml + '</div>' +
       explanationHtml;
 
