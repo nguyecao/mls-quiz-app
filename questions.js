@@ -1,6 +1,6 @@
-// MedLab Boards — default question bank (Hematology, Hemostasis & Coagulation, Urinalysis & Body Fluids, Immunology, Clinical Chemistry)
-// Schema: { id, section, chapter, question, options: [4 strings], answer: "A"-"D", explanation, image? (data URI), table? { rows: [[header cells],[row cells],...], note? } }
-// In a question, {{table}} marks where its table appears within the question text.
+// MedLab Boards — default question bank (Hematology, Hemostasis & Coagulation, Urinalysis & Body Fluids, Immunology, Clinical Chemistry, Microbiology)
+// Schema: { id, section, chapter, question, options: [4 strings], answer: "A"-"D", explanation, image? (data URI), table? { rows: [[header cells],[row cells],...], note? }, explanationTables? [ same shape as table ] }
+// In a question, {{table}} marks where its table appears within the question text; in an explanation, each {{table}} is replaced in order by the next explanationTables entry.
 window.QUIZ_DEFAULT_QUESTIONS = [
   {
     "id": 1,
@@ -18029,5 +18029,8001 @@ window.QUIZ_DEFAULT_QUESTIONS = [
     ],
     "answer": "B",
     "explanation": "Three serial cTNI results near the upper normal limit are also near the limit of detection for the test. This can be caused by both noncardiac conditions and cardiac conditions other than AMI, including CHF, left ventricular hypertrophy, pulmonary edema, unstable angina, ischemia, myocarditis, and others. AMI is unlikely because serial measurements do not show increasing cTNI."
+  },
+  {
+    "id": 1267,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "The aseptic collection of blood cultures requires that the skin be cleansed with:",
+    "options": [
+      "2% iodine and then 70% alcohol solution",
+      "70% alcohol and then 2% iodine or an iodophor",
+      "70% alcohol and then 95% alcohol",
+      "95% alcohol only"
+    ],
+    "answer": "B",
+    "explanation": "To attain asepsis of the skin, 70% alcohol followed by 2% iodine is used for obtaining blood cultures."
+  },
+  {
+    "id": 1268,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "When cleansing the skin with alcohol and then iodine for the collection of a blood culture, the iodine (or iodophor) should remain intact on the skin for at least:",
+    "options": [
+      "10 seconds",
+      "30 seconds",
+      "60 seconds",
+      "5 minutes"
+    ],
+    "answer": "C",
+    "explanation": "The iodine should remain on the skin for 1 minute because instant antisepsis does not occur when cleansing the skin for a blood culture."
+  },
+  {
+    "id": 1269,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "What is the purpose of adding 0.025% to 0.050% sodium polyanethol sulfonate (SPS) to nutrient broth media for the collection of blood cultures?",
+    "options": [
+      "It inhibits phagocytosis and complement",
+      "It promotes formation of a blood clot",
+      "It enhances growth of anaerobes",
+      "It functions as a preservative"
+    ],
+    "answer": "A",
+    "explanation": "SPS is used in most commercial blood culture products because it functions as an anticoagulant and prevents phagocytosis and complement activation. In addition, SPS neutralizes aminoglycoside antibiotics. Addition of SPS may inhibit some Neisseria and Peptostreptococcus, but this can be reversed with 1.2% gelatin."
+  },
+  {
+    "id": 1270,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "A flexible calcium alginate nasopharyngeal swab is the collection device of choice for recovery of which organism from the nasopharynx?",
+    "options": [
+      "Staphylococcus aureus",
+      "Streptococcus pneumoniae",
+      "Corynebacterium diphtheriae",
+      "Bacteroides fragilis"
+    ],
+    "answer": "C",
+    "explanation": "C. diphtheriae must be recovered from the deep layers of the pseudomembrane that forms in the nasopharyngeal area. A flexible calcium alginate nasopharyngeal swab is the best choice for collecting a specimen from the posterior nares and pharynx."
+  },
+  {
+    "id": 1271,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "Semisolid transport media, such as Amies, Stuart, or Cary-Blair, are suitable for the transport of swabs for culture of most pathogens except:",
+    "options": [
+      "Neisseria gonorrhoeae",
+      "Enterobacteriaceae",
+      "Campylobacter fetus",
+      "Streptococcus pneumoniae"
+    ],
+    "answer": "A",
+    "explanation": "Specimens for culture of N. gonorrhoeae are best if plated immediately or transported in a medium containing activated charcoal to absorb inhibitory substances that hinder their recovery from the specimens."
+  },
+  {
+    "id": 1272,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "Select the method of choice for recovery of anaerobic bacteria from a deep abscess.",
+    "options": [
+      "Cotton fiber swab of the abscess area",
+      "Skin snip of the surface tissue",
+      "Needle aspirate after surface decontamination",
+      "Swab of the scalpel used for débridement"
+    ],
+    "answer": "C",
+    "explanation": "Anaerobic specimens are easily contaminated with organisms present on the skin or mucosal surfaces when a swab is used. Needle aspiration of an abscess following surface decontamination provides the least exposure to ambient oxygen."
+  },
+  {
+    "id": 1273,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "Select the primary and differential media of choice for recovery of most fecal pathogens.",
+    "options": [
+      "MacConkey, blood, birdseed, and Campylobacter (Campy) agars",
+      "Hektoen, MacConkey, MacConkey-Sorbitol, Campy blood, colistin–nalidixic acid (CNA) agars; Selenite-F broth (SEL)",
+      "CNA and Christensen urea agars and thioglycollate media",
+      "Blood, Campy, Mueller-Hinton agars, and thioglycollate media"
+    ],
+    "answer": "B",
+    "explanation": "Hektoen agar selectively isolates pathogenic coliforms, especially Salmonella and Shigella. MacConkey agar differentiates lactose fermenters from nonfermenters. MacConkey with sorbitol isolates Escherichia coli 0157:H7. CNA agar contains antibiotics that prohibit growth of gram-negative coliforms but not gram-positive cocci. Campy blood agar contains the antibiotics cephalothin, trimethoprim, vancomycin, polymyxin B, and amphotericin B to prevent growth of Enterobacteriaceae, Pseudomonas spp., and fungi."
+  },
+  {
+    "id": 1274,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "Select the media of choice for recovery of Vibrio cholerae from a stool specimen.",
+    "options": [
+      "MacConkey agar and thioglycollate media",
+      "Thiosulfate–citrate–bile–sucrose (TCBS) agar and alkaline peptone water (APW) broth",
+      "Blood agar and SEL broth",
+      "CNA agar"
+    ],
+    "answer": "B",
+    "explanation": "TCBS agar is used to grow V. cholerae, which appear as yellow colonies as a result of the use of both citrate and sucrose. APW is used as an enrichment broth and should be subcultured to TCBS agar for further evaluation of Vibrio colonies."
+  },
+  {
+    "id": 1275,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "CNA agar is used primarily for the recovery of:",
+    "options": [
+      "Neisseria species",
+      "Enterobacteriaceae",
+      "Pseudomonas aeruginosa",
+      "Staphylococcus aureus"
+    ],
+    "answer": "D",
+    "explanation": "CNA agar inhibits the growth of gram-negative bacteria and is used to isolate gram- positive cocci from specimens. This medium is especially useful for stool and wound cultures because these may contain large numbers of gram-negative rods."
+  },
+  {
+    "id": 1276,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "In the United States, most blood agar plates are prepared with 5% or 10% red blood cells (RBCs) obtained from:",
+    "options": [
+      "Sheep",
+      "Horses",
+      "Humans",
+      "Dogs"
+    ],
+    "answer": "A",
+    "explanation": "Sheep RBCs are used in blood agar plates because they are readily available and less inhibitory than cells of other species. The type of hemolysis is determined by the source of RBCs. Sheep RBCs are chosen because of the characteristically clear hemolysis produced by β-hemolytic streptococci, Staphylococcus, and other pathogens producing β-hemolysins. Sheep blood does not support the growth of Haemophilus haemolyticus, eliminating the possibility of confusing it with β-hemolytic streptococci in throat cultures."
+  },
+  {
+    "id": 1277,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "All of the following are appropriate when attempting to isolate N. gonorrhoeae from a genital specimen except:",
+    "options": [
+      "Transport the genital swab in charcoal transport medium",
+      "Plate the specimen directly on modified Thayer-Martin (MTM) medium",
+      "Plate the specimen directly on New York City or Martin-Lewis agar",
+      "Culture specimens in ambient oxygen at 37°C"
+    ],
+    "answer": "D",
+    "explanation": "MTM, New York City, and Martin-Lewis agars contain blood factors needed to support the growth of N. gonorrhoeae as well as antibiotics that prevent growth of normal genital flora. Cultures must be incubated in 3% to 7% carbon dioxide (CO2) at 35°C. Cultures should be held a minimum of 48 hours before being considered negative."
+  },
+  {
+    "id": 1278,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "Chocolate agar and MTM agar are used for the recovery of:",
+    "options": [
+      "Haemophilus spp. and Neisseria spp., respectively",
+      "Haemophilus spp. and N. gonorrhoeae, respectively",
+      "Neisseria spp. and Streptococcus spp., respectively",
+      "Streptococcus spp. and Staphylococcus spp., respectively"
+    ],
+    "answer": "B",
+    "explanation": "Chocolate agar provides X factor (hemin) and V factor (nicotinamide adenine dinucleotide [NAD]) required for the growth of Haemophilus spp. Thayer-Martin medium is a chocolate agar containing the antibiotics that permit isolation of N. gonorrhoeae in specimens containing large numbers of gram-negative bacteria, including commensal Neisseria spp."
+  },
+  {
+    "id": 1279,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "Cycloserine–cefoxitin–fructose agar (CCFA) is used for the recovery of:",
+    "options": [
+      "Yersinia enterocolitica",
+      "Yersinia intermedia",
+      "Clostridium perfringens",
+      "Clostridium difficile"
+    ],
+    "answer": "D",
+    "explanation": "CCFA is used for recovery of C. difficile from stool cultures. Cycloserine and cefoxitin inhibit growth of gram-negative coliforms in the stool specimen. C. difficile ferments fructose, forming acid that, in the presence of neutral red, causes the colonies to become yellow."
+  },
+  {
+    "id": 1280,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "Deoxycholate agar (DCA) is useful for the isolation of:",
+    "options": [
+      "Enterobacteriaceae",
+      "Enterococcus spp.",
+      "Staphylococcus spp.",
+      "Neisseria spp."
+    ],
+    "answer": "A",
+    "explanation": "DCA inhibits gram-positive organisms. N. gonorrhoeae and Neisseria meningitidis are too fastidious to grow on DCA. Citrate and deoxycholate salts inhibit growth of gram-positive bacteria. The media contain lactose and neutral red, allowing differentiation of lactose fermenters (pink colonies) from nonfermenters (colorless)."
+  },
+  {
+    "id": 1281,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "Xylose lysine deoxycholate (XLD) agar is a highly selective medium used for the recovery of which bacteria?",
+    "options": [
+      "Staphylococcus spp. from normal flora",
+      "Yersinia spp. that do not grow on Hektoen agar",
+      "Enterobacteriaceae from gastrointestinal specimens",
+      "Streptococcus spp. from stool cultures"
+    ],
+    "answer": "C",
+    "explanation": "XLD agar is selective for gram-negative coliforms because of a high concentration (0.25%) of deoxycholate, which inhibits gram-positive bacteria. In addition, XLD is differential for Shigella and Salmonella spp. The medium contains xylose, lactose, and sucrose, which are fermented by most normal intestinal coliforms producing yellow colonies. Shigella does not ferment the sugars and produces red (or clear) colonies. Salmonella spp. ferment xylose; however, they also decarboxylate lysine in the medium, causing production of ammonia. Therefore, Salmonella first appear yellow but become red. Some Salmonella produce hydrogen sulfide (H2S) from sodium thiosulfate and therefore appear as red colonies with black centers."
+  },
+  {
+    "id": 1282,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "A sheep blood agar plate is used as a primary isolation medium when all of the following organisms are to be recovered from a wound specimen except:",
+    "options": [
+      "β-Hemolytic streptococci and coagulase-positive staphylococci",
+      "Haemophilus influenzae and Haemophilus parainfluenzae",
+      "Proteus spp. and Escherichia coli",
+      "Pseudomonas spp. and Acinetobacter spp."
+    ],
+    "answer": "B",
+    "explanation": "Both gram-positive cocci and gram-negative bacilli will grow on blood agar plates, but the medium is used in conjunction with a selective medium, such as CNA agar, for gram-positive cocci and MacConkey agar for gram-negative bacilli. H. influenzae requires X and V factors, and H. parainfluenzae requires V factor; the primary isolation medium for Haemophilus is chocolate agar."
+  },
+  {
+    "id": 1283,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "Prereduced and vitamin K1-supplemented blood agar plates are recommended isolation media for:",
+    "options": [
+      "Mycobacterium marinum and Mycobacterium avium intracellulare",
+      "Bacteroides, Peptostreptococcus, and Clostridium spp.",
+      "Proteus spp.",
+      "Enterococcus spp."
+    ],
+    "answer": "B",
+    "explanation": "Anaerobic culture media can be prereduced before sterilization by boiling, saturation with oxygen-free gas, and addition of cysteine or other thiol compounds. The final oxidation reduction potential (Eh) of the medium should be approximately –150 mV to minimize the effects of exposure of organisms to oxygen during inoculation."
+  },
+  {
+    "id": 1284,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "Which procedure(s) is (are) appropriate for the diagnosis of Chlamydia spp. infections when using genital specimens?",
+    "options": [
+      "Obtain urethral, cervical swabs and urine specimens placed in transport media for the direct detection of antigen or nucleic acid and/or culture",
+      "Plate onto blood and chocolate agar",
+      "Inoculate into thioglycollate (THIO) broth",
+      "Plate onto MTM agar within 24 hours"
+    ],
+    "answer": "A",
+    "explanation": "Chlamydiae are strict intracellular organisms and must be cultured using living cells (e.g., cyclohexamide-treated McCoy cells). Direct smears can also be made at the time of culture. Fluorescein-conjugated monoclonal antibodies may be used to identify the organisms in infected cells. Cell cultures present limitations but are used if legal situations (e.g., sexual abuse) are implied. Commercially available kits for antigen detection and nucleic acid amplification and hybridization techniques, which have been approved by the U.S. Food and Drug Administration (FDA), are not culture methods but appear more reliable for the detection of infection in individuals who are symptomatic and shedding large numbers of organisms."
+  },
+  {
+    "id": 1285,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "Specimens for virus culture should be transported in media containing:",
+    "options": [
+      "Antibiotics and 5% sheep blood",
+      "Saline and 5% sheep blood",
+      "22% bovine albumin",
+      "Antibiotics and protein nutrient"
+    ],
+    "answer": "D",
+    "explanation": "Media for transporting specimens for virus culture include Hanks balanced salt solution with bovine albumin, Amies media, Stuart transport media, and Leibovitz- Emory media. Media used for transporting specimens for viral culture are similar to those for bacteria with the addition of a nutrient, such as fetal calf serum or albumin, and antibiotics. Specimens should be refrigerated (not frozen) after being placed in the transport media until the culture media can be inoculated."
+  },
+  {
+    "id": 1286,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "Cerebrospinal fluid (CSF) should be cultured immediately, but if delayed, the specimen should be:",
+    "options": [
+      "Refrigerated at 4°C to 6°C",
+      "Frozen at –20°C",
+      "Stored at room temperature for no longer than 24 hours",
+      "Incubated at 37°C and cultured as soon as possible"
+    ],
+    "answer": "D",
+    "explanation": "Fastidious organisms, such as Neisseria and Haemophilus, frequently isolated from the CSF of patients with bacterial meningitis are preserved by placing the fluid in 3% to 7% CO2 at 35°C to 37°C (or at room temperature for no longer than 30 minutes), if the specimen cannot be cultured immediately."
+  },
+  {
+    "id": 1287,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "The most sensitive method for the detection of β-lactamase in bacteria is by the use of:",
+    "options": [
+      "Chromogenic cephalosporin",
+      "Penicillin",
+      "Oxidase",
+      "Chloramphenicol acetyltransferase"
+    ],
+    "answer": "A",
+    "explanation": "β-Lactamase production by bacteria that are resistant to penicillin and cephalosporin is detected using one of these drugs as a substrate. Penicillin is hydrolyzed by β- lactamase into acidic products that can be detected as a color change by a pH indicator. In the iodometric method, a disk containing a penicillin–starch substrate turns blue when a drop of iodine is added. The most sensitive method of detection is based on the ability of the organism to hydrolyze the β-lactam ring of a chromogenic cephalosporin (e.g., nitrocefin), which is used as the substrate. A positive test indicates the organism’s resistance to penicillin, ampicillin, amoxicillin, carbenicillin, mezlocillin, and piperacillin."
+  },
+  {
+    "id": 1288,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "The breakpoint of an antimicrobial drug refers to:",
+    "options": [
+      "The amount needed to cause bacteriostasis",
+      "A minimum inhibitory concentration (MIC) of 16 µg/mL or greater",
+      "An MIC of 64 µg/mL or greater",
+      "The optimal therapeutic level of drug that is achievable in serum"
+    ],
+    "answer": "D",
+    "explanation": "The term breakpoint refers to an antimicrobial concentration in the serum associated with optimal therapy using the customary dosing schedule. An organism is susceptible if the MIC is at or below the breakpoint."
+  },
+  {
+    "id": 1289,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "Which of the following variables may change the results of an MIC?",
+    "options": [
+      "Inoculum size",
+      "Incubation time",
+      "Growth rate of the bacteria",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "In vitro testing of drugs is reliable if the method is standardized. In addition to the first three variables, the type of media and the stability of antibiotics affect the results of MIC testing and must be carefully controlled."
+  },
+  {
+    "id": 1290,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "According to the Kirby-Bauer standard antimicrobial susceptibility testing method, what should be done when interpreting the zone size of a motile, swarming organism, such as a Proteus species?",
+    "options": [
+      "The swarming area should be ignored",
+      "The results of the disk diffusion method are invalid",
+      "The swarming area should be measured as the growth boundary",
+      "The isolate should be retested after diluting to a 0.05 McFarland standard"
+    ],
+    "answer": "A",
+    "explanation": "A thin film of growth appearing in the zone area of inhibition around the susceptibility disk should be ignored when swarming Proteus or other organisms are encountered. Discontinuous, poor growth or tiny colonies near the end of the zone should also be ignored."
+  },
+  {
+    "id": 1291,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "Which class of antibiotics is used for the treatment of serious gram-negative infections as well as infections with Mycobacterium tuberculosis?",
+    "options": [
+      "Cephalosporins",
+      "Penicillins",
+      "Tetracyclines",
+      "Aminoglycosides"
+    ],
+    "answer": "D",
+    "explanation": "The aminoglycoside antibiotics are bactericidal agents that act by inhibiting protein synthesis. They show a low incidence of bacterial resistance but must be monitored carefully because at high doses they can cause ototoxicity and nephrotoxicity. The group includes amikacin, gentamicin, tobramycin, kanamycin, streptomycin, and spectinomycin. These drugs are usually administered intravenously or intramuscularly because they are poorly absorbed from the gastrointestinal tract."
+  },
+  {
+    "id": 1292,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "Select the medium best suited for the recovery of Y. enterocolitica from a patient with gastroenteritis.",
+    "options": [
+      "Hektoen agar",
+      "Cefsulodin–irgasan–novobiocin (CIN) agar",
+      "Blood agar",
+      "Eosin methylene blue agar"
+    ],
+    "answer": "B",
+    "explanation": "CIN agar inhibits the growth of many organisms from the family Enterobacteriaceae. Yersinia spp. are also recovered from MacConkey and Salmonella-Shigella agars. Y. enterocolitica are seen as “bull’s eye” colonies on CIN agar after 48 hours at room temperature."
+  },
+  {
+    "id": 1293,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "A suspected case of plague requires which of the following procedures to confirm Yersinia pestis?",
+    "options": [
+      "Collection of multiple sets of blood culture specimens",
+      "Incubation of blood cultures at both 28°C and 35°C",
+      "Culture aspirates from bubos to MacConkey agar at room temperature",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "Y. pestis is on the list of agents of bioterrorism. Isolation and identification should be performed in a facility with a Level II or higher biosafety rating. If there is a high risk of aerosolizing the specimen during processing, procedures should be performed under Level III biosafety conditions. Recovery of Y. pestis is highest if the specimen is cultured within 2 hours of collection."
+  },
+  {
+    "id": 1294,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "SITUATION: Abdominal pain, fever, vomiting, and nausea prompted an older male to seek medical attention. A watery stool specimen producing no fecal leukocytes or erythrocytes was cultured, and it grew a predominance of gram-negative fermentative bacilli. The colonies were β-hemolytic on blood agar and cream colored on MacConkey agar. The colonies were both oxidase and catalase positive. What is the most likely identification?",
+    "options": [
+      "Aeromonas hydrophilia",
+      "Escherichia coli",
+      "Salmonella spp.",
+      "Shigella spp."
+    ],
+    "answer": "A",
+    "explanation": "The oxidase positive test result rules out the members of the Enterobacteriaceae family. Colonies of A. hydrophilia and Plesiomonas spp. (both oxidase positive) might be mistaken for Vibrio spp. because all three grow as clear colonies on MacConkey agar, are β-hemolytic on blood agar, and are oxidase positive. Aeromonas spp. will also grow on CNN agar and mimic Y. enterocolitica (a member of the Enterobacteriaceae family and oxidase negative)."
+  },
+  {
+    "id": 1295,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "SITUATION: Several attendees of a medical conference in the Gulf coast area became ill after frequenting a seafood restaurant. A presumptive identification of V. cholerae was made after stool specimens from several subjects grew clear colonies on MacConkey agar and yellow colonies on TCBS agar. Which key tests would help eliminate Aeromonas and Plesiomonas spp.?",
+    "options": [
+      "Mannitol fermentation, Na+ requirement",
+      "Oxidase, motility",
+      "Oxidase, nitrate",
+      "Hemolysis on blood agar, catalase"
+    ],
+    "answer": "A",
+    "explanation": "All three organisms are positive for oxidase production and are motile. Plesiomonas spp. do not grow on TCBS agar. Clear colonies on MacConkey agar and yellow colonies on TCBS agar indicate Vibrio or Aeromonas spp. However, only Vibrio spp. require Na+ (1% NaCl) in the medium for growth. {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "",
+            "Vibrio",
+            "Aeromonas",
+            "Plesiomonas"
+          ],
+          [
+            "Oxidase",
+            "+",
+            "+",
+            "+"
+          ],
+          [
+            "Na⁺ requirement",
+            "+",
+            "Neg",
+            "Neg"
+          ],
+          [
+            "Mannitol fermentation",
+            "+",
+            "+",
+            "Neg"
+          ],
+          [
+            "Growth on TCBS",
+            "+",
+            "+",
+            "Neg"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1296,
+    "section": "Specimen Collection, Media, and Methods",
+    "chapter": "Microbiology",
+    "question": "SITUATION: A group of elementary students became ill after eating undercooked ground beef prepared in the school cafeteria. The suspected pathogen, E. coli serotype 0157:H7, is usually recovered using which of the following media?",
+    "options": [
+      "Xylose lysine deoxycholate agar",
+      "MacConkey agar",
+      "MacConkey agar with sorbitol",
+      "Hektoen agar"
+    ],
+    "answer": "C",
+    "explanation": "E. coli 0157:H7 ferments lactose and, therefore, appears as dark pink colonies on MacConkey agar. To differentiate E. coli 0157:H7 from normal fecal flora, MacConkey agar with sorbitol is used. E. coli 0157:H7 does not ferment sorbitol, and usually are colorless colonies."
+  },
+  {
+    "id": 1297,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Biochemically, Enterobacteriaceae species are gram-negative rods that:",
+    "options": [
+      "Ferment glucose, reduce nitrate to nitrite, and are oxidase negative",
+      "Ferment glucose, produce indophenol oxidase, and form gas",
+      "Ferment lactose and reduce nitrite to nitrogen gas",
+      "Ferment lactose and produce indophenol oxidase"
+    ],
+    "answer": "A",
+    "explanation": "The family Enterobacteriaceae consists of more than 100 species and represents the most commonly encountered isolates in clinical specimens. All Enterobacteriaceae species ferment glucose, are nonsporulating, and are oxidase negative (except for Plesiomonas shigelloides, recently added to the family but which is oxidase positive). Most Enterobacteriaceae species are motile, but the genera Shigella and Klebsiella are not."
+  },
+  {
+    "id": 1298,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "The ortho-nitrophenyl-β-galactopyranoside (ONPG) test is most useful when differentiating:",
+    "options": [
+      "Salmonella spp. from Pseudomonas spp.",
+      "Shigella spp. from some strains of Escherichia coli",
+      "Klebsiella spp. from Enterobacter spp.",
+      "Proteus vulgaris from Salmonella spp."
+    ],
+    "answer": "B",
+    "explanation": "The ONPG test detects β-galactosidase activity and is most useful in distinguishing late lactose fermenters from lactose nonfermenters. Some strains of E. coli are slow lactose fermenters and may be confused with Shigella spp., which do not ferment lactose. E. coli are ONPG positive, whereas Shigella spp. are ONPG negative."
+  },
+  {
+    "id": 1299,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "The Voges-Proskauer (VP) test detects which end product of glucose fermentation?",
+    "options": [
+      "Acetoin",
+      "Nitrite",
+      "Acetic acid",
+      "Hydrogen sulfide"
+    ],
+    "answer": "A",
+    "explanation": "Acetoin or carbinol, an end product of glucose fermentation, is converted to diacetyl after the addition of the VP reagents (β-naphthol and 40% potassium hydroxide [KOH]). Diacetyl is seen as a red- to-pink–colored complex."
+  },
+  {
+    "id": 1300,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "At which pH does the methyl red (MR) test become positive?",
+    "options": [
+      "7.0",
+      "6.5",
+      "6.0",
+      "4.5"
+    ],
+    "answer": "D",
+    "explanation": "Both MR and VP tests detect acid production from the fermentation of glucose. However, a positive MR test result denotes a more complete catabolism of glucose to highly acidic end products, such as formate and acetate, than occurs with organisms that are VP positive only (e.g., Klebsiella pneumoniae)."
+  },
+  {
+    "id": 1301,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "A positive Simmons citrate test is seen as a:",
+    "options": [
+      "Blue color in the medium after 24 hours of incubation at 35°C",
+      "Red color in the medium after 18 hours of incubation at 35°C",
+      "Yellow color in the medium after 24 hours of incubation at 35°C",
+      "Green color in the medium after 18 hours of incubation at 35°C"
+    ],
+    "answer": "A",
+    "explanation": "The Simmons citrate test determines if an organism can utilize citrate as the sole source of carbon. The medium turns blue, indicating the presence of alkaline products, such as carbonate. Tubes are incubated a minimum of 24 hours at 35°C with a loose cap before reading."
+  },
+  {
+    "id": 1302,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "In the test for urease production, ammonia reacts to form which product?",
+    "options": [
+      "Ammonium citrate",
+      "Ammonium carbonate",
+      "Ammonium oxalate",
+      "Ammonium nitrate"
+    ],
+    "answer": "B",
+    "explanation": "The test for urease production is based on the ability of the colonies to hydrolyze urea in Stuart broth or Christensen agar to form CO2 and ammonia. These products form ammonium carbonate, resulting in alkalinization. This turns the pH indicator (phenol red) pink at pH 8.0."
+  },
+  {
+    "id": 1303,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which of the following reagents is added to detect the production of indole?",
+    "options": [
+      "p-Dimethylaminobenzaldehyde",
+      "Bromcresol purple",
+      "Methyl red",
+      "Cytochrome oxidase"
+    ],
+    "answer": "A",
+    "explanation": "The indole test detects the conversion of tryptophan (present in the media) to indole by the enzyme tryptophanase. Indole is detected by the reaction with the aldehyde group of p-dimethylaminobenzaldehyde (the active reagent in Kovac and Ehrlich reagents) in acid, forming a red complex."
+  },
+  {
+    "id": 1304,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Decarboxylation of the amino acids lysine, ornithine, and arginine results in the formation of:",
+    "options": [
+      "Ammonia",
+      "Urea",
+      "Carbonate",
+      "Amines"
+    ],
+    "answer": "D",
+    "explanation": "Specific decarboxylases split dibasic amino acids (lysine, arginine, and ornithine), forming alkaline amines. These products turn the pH indicators in the medium (cresol red and bromcresol purple) from yellow to purple."
+  },
+  {
+    "id": 1305,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Lysine iron agar (LIA) showing a purple slant and a blackened butt indicates:",
+    "options": [
+      "Escherichia coli",
+      "Citrobacter spp.",
+      "Salmonella spp.",
+      "Proteus spp."
+    ],
+    "answer": "C",
+    "explanation": "LIA is used as an aid for the identification of Salmonella species. It contains phenylalanine, lysine, glucose, thiosulfate, ferric ammonium citrate, and bromcresol purple. Salmonella spp. produce H2S from thiosulfate. This reduces ferric ammonium citrate, forming ferrous sulfate and causing the butt to blacken. Salmonella also decarboxylate lysine to produce alkaline amines, giving the slant its purple color and differentiating it from Citrobacter spp., which are lysine decarboxylase negative."
+  },
+  {
+    "id": 1306,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Putrescine is an alkaline amine product of which bacterial enzyme?",
+    "options": [
+      "Arginine decarboxylase",
+      "Phenylalanine deaminase",
+      "Ornithine decarboxylase",
+      "Lysine decarboxylase"
+    ],
+    "answer": "C",
+    "explanation": "Putrescine is the amine product of the decarboxylation of ornithine."
+  },
+  {
+    "id": 1307,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which genera are positive for phenylalanine deaminase?",
+    "options": [
+      "Enterobacter, Escherichia, and Salmonella",
+      "Morganella, Providencia, and Proteus",
+      "Klebsiella and Enterobacter",
+      "Proteus, Escherichia, and Shigella"
+    ],
+    "answer": "B",
+    "explanation": "Phenylalanine deaminase oxidatively deaminates phenylalanine, forming phenylpyruvic acid. When a solution of ferric chloride is added, the iron reacts with phenylpyruvic acid, forming a green-colored complex. Phenylalanine deaminase is found in the genera Morganella, Providencia, and Proteus and is an excellent test to determine if an organism belongs to this group. Rarely, isolates of Enterobacter may be phenylalanine deaminase positive as well."
+  },
+  {
+    "id": 1308,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Kligler iron agar (KIA) differs from triple-sugar iron agar (TSI) in the:",
+    "options": [
+      "Ratio of lactose to glucose",
+      "Ability to detect H2S production",
+      "Use of sucrose in the medium",
+      "Color reaction denoting production of acid"
+    ],
+    "answer": "C",
+    "explanation": "Both KIA and TSI contain 10-fold more lactose than glucose, peptone, and phenol red to detect acid production (turns yellow) and sodium thiosulfate and ferrous ammonium sulfate to detect H2S production. However, TSI contains sucrose, and KIA does not. Organisms fermenting either sucrose or lactose will turn the slant of the agar tube yellow. Therefore, some organisms (e.g., many species of Cedecea, Citrobacter, Edwardsiella, and Serratia) will produce a yellow slant on TSI but a red slant on KIA."
+  },
+  {
+    "id": 1309,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "The malonate test is most useful in differentiating which members of the Enterobacteriaceae family?",
+    "options": [
+      "Shigella",
+      "Proteus",
+      "Salmonella subgroups 2, 3 (the former Arizona)",
+      "Serratia"
+    ],
+    "answer": "C",
+    "explanation": "The malonate test determines whether an organism can utilize sodium malonate as the sole source of carbon. Malonate is broken down, forming alkaline metabolites that raise the pH of the broth above 7.6. This causes bromthymol blue to turn from green to deep blue (Prussian blue). E. coli, Shigella, and most Salmonella are malonate negative, whereas Enterobacter and Salmonella (formerly Arizona) subgroups 2, 3a, and 3b are positive. Proteus, Providencia, Serratia, and Yersinia are also malonate negative."
+  },
+  {
+    "id": 1310,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which genera of the Enterobacteriaceae family are known to cause diarrhea and are considered enteric pathogens?",
+    "options": [
+      "Enterobacter, Klebsiella, Providencia, and Proteus",
+      "Escherichia, Salmonella, Shigella, and Yersinia",
+      "Pseudomonas, Moraxella, Acinetobacter, and Aeromonas",
+      "Enterobacter, Citrobacter, and Morganella"
+    ],
+    "answer": "B",
+    "explanation": "Escherichia, Salmonella, Shigella, and Yersinia are responsible for the majority of enteric diarrhea cases attributable to the Enterobacteriaceae family."
+  },
+  {
+    "id": 1311,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "An isolate of E. coli recovered from the stool of a patient with severe bloody diarrhea should be tested for which sugar before sending it to a reference laboratory for serotyping?",
+    "options": [
+      "Sorbitol (fermentation)",
+      "Mannitol (oxidation)",
+      "Raffinose (fermentation)",
+      "Sucrose (fermentation)"
+    ],
+    "answer": "A",
+    "explanation": "An isolate of E. coli (shiga-like producing toxin of E. coli [STEC]) recovered from a stool culture in hemorrhagic colitis can be definitely identified only by serotyping. The isolate is identified as E. coli by the usual biochemical reactions. The strain of E. coli responsible for hemorrhagic colitis is O157:H7 and is usually negative for sorbitol fermentation. Colonies of this strain of E. coli appear colorless on MacConkey agar with sorbitol added."
+  },
+  {
+    "id": 1312,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Care must be taken when identifying biochemical isolates of Shigella because serological cross reactions occur with:",
+    "options": [
+      "Escherichia coli",
+      "Salmonella spp.",
+      "Pseudomonas spp.",
+      "Proteus spp."
+    ],
+    "answer": "A",
+    "explanation": "Serological confirmation of Shigella isolates is based on O antigen typing. If a suspected Shigella spp. is serologically typed with polyvalent sera before it has been correctly identified biochemically, a false-positive confirmation may occur with an isolate that is E. coli (i.e., anaerogenic, non–gas-producing, lactose-negative or - delayed, and nonmotile strains). These strains were formerly known as the Alkalescens-Dispar serotype."
+  },
+  {
+    "id": 1313,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which species of Shigella is most commonly associated with diarrheal disease in the United States?",
+    "options": [
+      "Shigella dysenteriae",
+      "Shigella flexneri",
+      "Shigella boydii",
+      "Shigella sonnei"
+    ],
+    "answer": "D",
+    "explanation": "The Shigella spp. are lactose nonfermenters that, for the most part, are biochemically inert and are classified into serogroups A, B, C, and D as a result of their biochemical similarity. S. sonnei is the species most often isolated from diarrhea cases in the United States. It is more active biochemically than the other species because of ornithine decarboxylase and β-galactosidase activity. These enzymes, found in most strains of S. sonnei, distinguish it from other Shigella species."
+  },
+  {
+    "id": 1314,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which of the following tests best differentiates Shigella species from E. coli?",
+    "options": [
+      "H2S, VP, citrate, and urease",
+      "Lactose, indole, ONPG, and motility",
+      "Hydrogen sulfide, MR, citrate, and urease",
+      "Gas, citrate, and VP"
+    ],
+    "answer": "B",
+    "explanation": "E. coli, when positive for lactose, indole, and ONPG, are usually motile. Shigella species do not ferment lactose or produce indole, lack β-galactosidase, and are nonmotile."
+  },
+  {
+    "id": 1315,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which genera of Enterobacteriaceae are usually nonmotile at 36°C?",
+    "options": [
+      "Shigella, Klebsiella, and Yersinia",
+      "Escherichia, Edwardsiella, and Enterobacter",
+      "Proteus, Providencia, and Salmonella",
+      "Serratia, Morganella, and Hafnia"
+    ],
+    "answer": "A",
+    "explanation": "Shigella spp. and Klebsiella spp. are, for the most part, nonmotile. Yersinia can be motile at 22°C but is nonmotile at 36°C. Other members of Enterobacteriaceae that have been isolated from human specimens and are usually nonmotile include Leminorella, Rahnella, and Tatumella (considered unusual enteric pathogens)."
+  },
+  {
+    "id": 1316,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Fever, abdominal cramping, watery stools, and fluid and electrolyte loss preceded by bloody stools 2 to 3 days before is characteristic of shigellosis but may also result from infection with:",
+    "options": [
+      "Campylobacter spp.",
+      "Salmonella spp.",
+      "Proteus spp.",
+      "Yersinia spp."
+    ],
+    "answer": "A",
+    "explanation": "Shigella spp. and Campylobacter spp. are both causes of diarrhea, abdominal pain, fever, and sometimes vomiting. Blood is present in the stools of patients infected with Shigella as a result of invasion and penetration of the bowel by the organisms. Young children may also exhibit bloody stools when infected with Campylobacter."
+  },
+  {
+    "id": 1317,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Cold enrichment of feces (incubation at 4°C) in phosphate-buffered saline prior to subculture onto enteric media enhances the recovery of:",
+    "options": [
+      "Enterotoxigenic Escherichia coli",
+      "Salmonella paratyphi",
+      "Hafnia alvei",
+      "Yersinia enterocolitica"
+    ],
+    "answer": "D",
+    "explanation": "Cold enrichment is especially useful when specimens contain large numbers of normal flora that are sensitive to prolonged exposure to near-freezing temperature. In addition to Yersinia, the technique has been used to enhance recovery of Listeria monocytogenes from specimens containing other bacteria."
+  },
+  {
+    "id": 1318,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which group of tests, along with colonial morphology on primary media, aids most in the rapid identification of Enterobacteriaceae?",
+    "options": [
+      "MR and VP, urease, and blood agar plate",
+      "Phenylalanine deaminase, urease, and CDC agar plate",
+      "Bacitracin, β-lactamase, and MacConkey agar plate",
+      "Indole, oxidase, MacConkey, and blood agar plates"
+    ],
+    "answer": "D",
+    "explanation": "All Enterobacteriaceae species are oxidase negative (the exception being Plesiomonas spp., which cluster with the genus Proteus). Through the use of nucleic acid–based methods, oxidase positive Plesiomonas is now included in the family Enterobacteriaceae. Because E. coli and Proteus spp. comprise the majority of the organisms recovered from clinical specimens, they can be initially identified through rapid testing without additional overnight testing. E. coli display a positive indole test, and the colonial morphology on MacConkey agar is distinctive, showing flat, pink (lactose-positive) colonies with a ring of bile precipitation. Proteus spp. swarm on blood agar and are indole negative."
+  },
+  {
+    "id": 1319,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "A routine, complete stool culture procedure should include media for the isolation of E. coli O157:H7 as well as:",
+    "options": [
+      "Salmonella, Shigella, Yersinia, Campylobacter, and Staphylococcus aureus",
+      "Vibrio cholerae, Brucella, and Yersinia spp.",
+      "Staphylococcus aureus, group B streptococci, and group D streptococci",
+      "Clostridium difficile, Clostridium perfringens, and Yersinia spp."
+    ],
+    "answer": "A",
+    "explanation": "V. cholerae and C. difficile are usually not included in a routine stool culture. If Vibrio spp. are suspected, a special request should be included. Although MacConkey agar will support the growth of Vibrio spp., normal enteric flora overgrow and occlude these organisms. C. difficile culture requires special media (e.g., CCFA) that inhibit other anaerobic flora and facultative anaerobic flora, and culture should be requested specifically if symptoms warrant. MacConkey agar with sorbitol will allow the E. coli O157:H7 to be recovered. Yersinia spp. can be detected on a regular MacConkey agar plate."
+  },
+  {
+    "id": 1320,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which group of tests best identifies the Morganella and Proteus genera?",
+    "options": [
+      "Motility, urease, and phenylalanine deaminase",
+      "Malonate, glucose fermentation, and deoxyribonuclease (DNase)",
+      "Indole, oxidase, MR, and VP",
+      "Indole, citrate, and urease"
+    ],
+    "answer": "A",
+    "explanation": "Morganella and Proteus spp. are motile, produce urease, and deaminate phenylalanine."
+  },
+  {
+    "id": 1321,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which group of tests best differentiates Enterobacter aerogenes from Edwardsiella tarda?",
+    "options": [
+      "Motility, citrate, and urease",
+      "H2S production, sucrose fermentation, indole, and VP",
+      "Lysine decarboxylase, urease, and arginine dihydrolase",
+      "Motility, H2S production, and DNase"
+    ],
+    "answer": "B",
+    "explanation": "{{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "Test",
+            "E. aerogenes (% positive)",
+            "E. tarda (% positive)"
+          ],
+          [
+            "H₂S",
+            "0",
+            "100"
+          ],
+          [
+            "Sucrose",
+            ">90",
+            "0"
+          ],
+          [
+            "Indole",
+            "<20",
+            "100"
+          ],
+          [
+            "VP",
+            "100",
+            "0"
+          ],
+          [
+            "Citrate",
+            "95",
+            "0"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1322,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Cronobacter sakazakii (formerly Enterobacter sakazakii) can best be differentiated from Enterobacter cloacae by which of the following characteristics?",
+    "options": [
+      "Yellow pigmentation and negative sorbitol fermentation",
+      "Pink pigmentation and positive arginine dihydrolase",
+      "Yellow pigmentation and positive urease",
+      "H2S production on TSI"
+    ],
+    "answer": "A",
+    "explanation": "C. sakazakii was formally called a yellow-pigmented E. cloacae and is best differentiated from E. cloacae by sorbitol fermentation (95% positive for E. cloacae and 0% for [E.] C. sakazakii). In addition, E. cloacae is usually positive for urease and malonate (65% and 75%, respectively) and (E.) C. sakazakii is usually negative (1% and less than 20%, respectively). Both are usually motile and arginine dihydrolase positive."
+  },
+  {
+    "id": 1323,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Members of the genus Cedecea are best differentiated from Serratia spp. by which test result?",
+    "options": [
+      "Positive motility",
+      "Positive urease",
+      "Positive phenylalanine deaminase",
+      "Negative DNase"
+    ],
+    "answer": "D",
+    "explanation": "DNase is not produced by Cedecea spp. but is produced (along with proteinases) by Serratia spp. Other key differential tests include lipase (positive for Cedecea, negative for Serratia) and gelatin hydrolysis (negative for Cedecea, positive for Serratia)."
+  },
+  {
+    "id": 1324,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which of the following organisms is often confused with the Salmonella species biochemically and on plated media?",
+    "options": [
+      "Escherichia coli",
+      "Citrobacter freundii",
+      "Enterobacter cloacae",
+      "Shigella dysenteriae"
+    ],
+    "answer": "B",
+    "explanation": "Biochemical differentiation is essential because Citrobacter isolates may give a false- positive result on agglutination testing with Salmonella grouping sera. C. freundii strains, like Salmonella spp., are usually H2S producers and may be confused with Salmonella spp. unless the proper biochemical tests are utilized. C. freundii and Salmonella spp. are adonitol, indole, and malonate negative. However, C. freundii is KCN positive, whereas Salmonella spp. are KCN negative. (C. freundii are late lactose fermenters and appear colorless at 24 hours on Mac)."
+  },
+  {
+    "id": 1325,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "A gram-negative rod is recovered from a catheterized urine sample from a nursing home patient. The lactose-negative isolate tested positive for indole, urease, ornithine decarboxylase, and phenylalanine deaminase and negative for H2S. The most probable identification is:",
+    "options": [
+      "Edwardsiella spp.",
+      "Morganella spp.",
+      "Ewingella spp.",
+      "Shigella spp."
+    ],
+    "answer": "B",
+    "explanation": "Morganella spp. are biochemically similar to Proteus spp., both being lactose negative, motile, and positive for phenylalanine deaminase and urease. However, Morganella spp. can be differentiated from Proteus spp. based on H2S, indole, ornithine decarboxylase, and xylose fermentation. Ewingella spp. are usually positive (70%) for lactose fermentation, whereas the other three genera are lactose negative."
+  },
+  {
+    "id": 1326,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which single test best separates Klebsiella oxytoca from K. pneumoniae?",
+    "options": [
+      "Urease",
+      "Sucrose",
+      "Citrate",
+      "Indole"
+    ],
+    "answer": "D",
+    "explanation": "K. oxytoca and K. pneumoniae are almost identical biochemically except for the ability to produce indole. Both organisms are nonmotile and usually test positive for urease, sucrose, and citrate. However, K. oxytoca is indole positive, and K. pneumoniae is indole negative."
+  },
+  {
+    "id": 1327,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which of the following organisms, found in normal fecal flora, may be mistaken biochemically for the genus Yersinia?",
+    "options": [
+      "Klebsiella spp.",
+      "Proteus spp.",
+      "Escherichia coli",
+      "Enterobacter spp."
+    ],
+    "answer": "B",
+    "explanation": "Proteus spp. are urease positive as are approximately 70% of Y. enterocolitica isolates. Both organisms are lactose negative and motile. However, Yersinia is motile at 22°C and not at 35°C (demonstrated by using motility media)."
+  },
+  {
+    "id": 1328,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Why might it be necessary for both pink (lactose-positive) and colorless (lactose- negative) colonies from an initial stool culture on MacConkey agar to be subcultured and tested further for possible pathogens?",
+    "options": [
+      "Most Shigella strains are lactose positive",
+      "Most Salmonella strains are maltose negative",
+      "Most Proteus spp. are lactose negative",
+      "Pathogenic Escherichia coli can be lactose positive or lactose negative"
+    ],
+    "answer": "D",
+    "explanation": "Possible pathogenic strains of E. coli should be picked from MacConkey agar and subcultured onto MacConkey agar with sorbitol. After subculture, these strains can be serotyped or sent to a reference laboratory. Most E. coli normal flora ferment D- sorbitol and appear pink to red on MacConkey–sorbitol agar. The E. coli strain O157:H7 causes the enteric disease hemorrhagic colitis. It ferments D-sorbitol slowly or not at all and appears as colorless colonies on MacConkey–sorbitol agar."
+  },
+  {
+    "id": 1329,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which agar that is used for routine stool cultures is the medium of choice for the isolation of Yersinia strains from stool specimens?",
+    "options": [
+      "Salmonella–Shigella agar",
+      "Hektoen enteric agar",
+      "MacConkey agar",
+      "CNA agar"
+    ],
+    "answer": "C",
+    "explanation": "CIN medium is the best agar for the isolation of Yersinia strains because it inhibits growth of other coliforms, but it is not used routinely in clinical laboratories. Yersinia spp. grow well on MacConkey agar incubated at 37°C, but the colonies are much smaller than the other Enterobacteriaceae species; therefore, 25°C is the temperature recommended for isolation. Some serotypes of Yersinia may be inhibited on more selective media, such as Salmonella–Shigella or Hektoen. CNA agar inhibits the growth of gram-negative bacteria."
+  },
+  {
+    "id": 1330,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which organism is sometimes mistaken for Salmonella and will agglutinate in Salmonella polyvalent antiserum?",
+    "options": [
+      "Citrobacter freundii strains",
+      "Proteus mirabilis strains",
+      "Shigella sonnei strains",
+      "Escherichia coli"
+    ],
+    "answer": "A",
+    "explanation": "C. freundii and Salmonella spp. are H2S positive and indole, VP, and phenylalanine deaminase negative. Biochemical characteristics that help to differentiate C. freundii from Salmonella include lactose fermentation (50% of C. freundii are lactose positive, whereas 100% of Salmonella are lactose negative) and urease production (70% of Citrobacter are positive and greater than 99% of Salmonella are negative)."
+  },
+  {
+    "id": 1331,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "A bloody stool cultured from a 26-year-old woman after 3 days of severe diarrhea showed the following results at 48 hours after being plated on the following media: MacConkey agar: Little normal flora with many non–lactose-fermenting colonies Hektoen enteric agar: Many blue-green colonies Campylobacter blood agar and C. difficile agar: No growth Clear colonies (from MacConkey agar): Negative for oxidase, indole, urease, motility, and H2S The most likely identification is:",
+    "options": [
+      "Shigella spp.",
+      "Salmonella spp.",
+      "Proteus spp.",
+      "Escherichia coli"
+    ],
+    "answer": "A",
+    "explanation": "Shigella is the most likely organism biochemically. E. coli are usually indole and motility positive, and Proteus are motility and urease positive. Most Salmonella are H2S positive. Shigella and Campylobacter cause bloody diarrhea because they invade the epithelial cells of the large bowel; however, Campylobacter spp. do not grow on MacConkey agar, and they are oxidase positive."
+  },
+  {
+    "id": 1332,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which one of the following organisms (are) is generally positive for β-glycosidase (utilizes lactose)?",
+    "options": [
+      "Salmonella spp.",
+      "Shigella spp.",
+      "Proteus spp.",
+      "Escherichia coli"
+    ],
+    "answer": "D",
+    "explanation": "Enterobacteriaceae species are grouped according to their ability to ferment lactose, a β-galactoside. Salmonella, Shigella, Proteus, Providencia, and Morganella are usually lactose nonfermenters. Others—including certain strains of E. coli, S. sonnei, H. alvei, Serratia marcescens, and some Yersinia—appear to be lactose nonfermenters because they lack the permease enzyme that actively transports lactose across the cell membrane. However, true lactose nonfermenters do not possess β-galactosidase. The test for β-galactosidase uses the substrate o-nitrophenyl-β-galactopyranoside. At an alkaline pH, β-galactosidase hydrolyses the substrate, forming o-nitrophenol, which turns the medium yellow."
+  },
+  {
+    "id": 1333,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "In the Kauffmann-White schema, the combined antigens used for serological identification of the Salmonella spp. are:",
+    "options": [
+      "O antigens",
+      "H antigens",
+      "Vi and H antigens",
+      "O, Vi, and H antigens"
+    ],
+    "answer": "D",
+    "explanation": "The Kaufmann-White schema groups Salmonellae on the basis of the somatic O (heat-stable) antigens and subdivides them into serotypes based on their flagellar H (heat-labile) antigens. The Vi (or K) antigen is a capsular polysaccharide that may be removed by heating. In the United States, commercially available slide agglutination tests utilize polyvalent antisera (A, B, C-1, C-2, D, E, and Vi) to group the Salmonella spp. because 95% of isolated organisms belong to groups A through E with the Vi antiserum identifying the capsular or “K” antigen of Salmonella serotype typhi. Antiserum is also used against the flagella (“H”) antigens. If the Vi antigen is positive and the O antigen is negative, the isolate must be heated in boiling water for 15 minutes to remove the capsule and retested with the antisera. There are over 2,200 serotypes of Salmonella."
+  },
+  {
+    "id": 1334,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "The drugs of choice for treatment of infections with Enterobacteriaceae are:",
+    "options": [
+      "Aminoglycosides, sulfamethoxazole-trimethoprim, third-generation cephalosporins",
+      "Ampicillin and nalidixic acid",
+      "Streptomycin and isoniazid (isonicotinylhydrazide [INH])",
+      "Chloramphenicol, ampicillin, and colistin"
+    ],
+    "answer": "A",
+    "explanation": "The drugs of choice for the Enterobacteriaceae species vary, and several genera display patterns of resistance that aid in their identification. K. pneumoniae and Citrobacter diversus are resistant to ampicillin and carbenicillin; most Enterobacter spp. and Hafnia are resistant to ampicillin and cephalothin. Proteus, Morganella, and Serratia are resistant to colistin. Providencia and Serratia are resistant to multiple drugs. Several genera are resistant to chloramphenicol and most are resistant to penicillin."
+  },
+  {
+    "id": 1335,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "The Shiga-like toxin (verotoxin) is produced mainly by which Enterobacteriaceae species?",
+    "options": [
+      "Klebsiella pneumoniae",
+      "Escherichia coli",
+      "Salmonella typhimurium",
+      "Enterobacter cloacae"
+    ],
+    "answer": "B",
+    "explanation": "Strains of E. coli that produce one or both of the Shiga-like toxins (SLT I and SLT II) can cause bloody diarrhea (hemorrhagic colitis). In the United States, E. coli strain O157:H7 is the serotype most often associated with hemorrhagic colitis."
+  },
+  {
+    "id": 1336,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Infections caused by Y. pestis are rare in the United States. Those cases that do occur are most frequently located in which region?",
+    "options": [
+      "New Mexico, Arizona, and California",
+      "Alaska, Oregon, and Utah",
+      "North and South Carolina and Virginia",
+      "Ohio, Michigan, and Indiana"
+    ],
+    "answer": "A",
+    "explanation": "Approximately 15 cases of Y. pestis infection are confirmed in the United States annually. Most originate in the Southwest. It is necessary to be aware of this regional occurrence because untreated cases are associated with a mortality rate of approximately 60%. Y. pestis is not fastidious and grows well on blood agar. It is inactive biochemically, and this helps differentiate it from the other Enterobacteriaceae species. Y. pestis is the only member of the Enterobacteriaceae family that infects humans via an insect vector (animal transmission by a flea bite)."
+  },
+  {
+    "id": 1337,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "A leg culture from a nursing home patient grew gram-negative rods on MacConkey agar as pink to dark pink oxidase-negative colonies. Given the following results, which is the most likely organism? TSI = A/A Indole = Neg MR = Neg VP = + Citrate = + H2S = Neg Urease = + Motility = Neg Antibiotic susceptibility: Resistant to carbenicillin and ampicillin",
+    "options": [
+      "Serratia marcescens",
+      "Proteus vulgaris",
+      "Enterobacter cloacae",
+      "Klebsiella pneumoniae"
+    ],
+    "answer": "D",
+    "explanation": "K. pneumoniae and E. cloacae display similar IMViC (indole, MR, VP, and citrate) reactions (00++) and TSI results. However, approximately 65% of E. cloacae strains are urease positive compared with 98% of those of K. pneumoniae. Enterobacter spp. are motile, and Klebsiella are nonmotile. The antibiotic pattern of resistance to carbenicillin and ampicillin is characteristic of the nonmotile Klebsiella spp."
+  },
+  {
+    "id": 1338,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Four blood cultures were taken over a 24-hour period from a 20-year-old woman with severe diarrhea. The cultures grew motile (room temperature), gram-negative rods. A urine specimen obtained via catheterization also showed gram-negative rods (100,000 col/mL). Given the following results, which is the most likely organism? TSI = A/A gas Indole = + VP = Neg MR = + H2S = Neg Citrate = Neg Urease = Neg Lysine decarboxylase = + (PD) Phenylalanine deaminase = Neg",
+    "options": [
+      "Proteus vulgaris",
+      "Salmonella typhi",
+      "Yersinia enterocolitica",
+      "Escherichia coli"
+    ],
+    "answer": "D",
+    "explanation": "Typically, the IMViC reactions for the organisms listed are: E. coli: (++00) (PD = Neg) S. typhi: (0+00) Y. enterocolitica: (V+00) P. vulgaris: (++00) (PD = +) Note: Indole reaction is variable (V) for Y. enterocolitica."
+  },
+  {
+    "id": 1339,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "A stool culture from a 30-year-old man suffering from bloody mucoid diarrhea gave the following results on differential enteric media: MacConkey agar = clear colonies XLD agar = clear colonies Hektoen agar = green colonies Salmonella–Shigella agar = small, clear colonies Which tests are most appropriate for identification of this enteric pathogen?",
+    "options": [
+      "TSI, motility, indole, urease, Shigella typing with polyvalent sera",
+      "TSI, motility, indole, lysine, Salmonella typing with polyvalent sera",
+      "TSI, indole, MR, VP, citrate",
+      "TSI, indole, MR, and urease"
+    ],
+    "answer": "A",
+    "explanation": "The most likely organism is a species of Shigella. Typically, Salmonella spp. produce H2S-positive colonies that display black centers on the differential media (except on MacConkey agar). The biochemical tests listed are necessary to differentiate Shigella from E. coli because some E. coli strains cross-react with Shigella-typing sera. Shigella spp. are one of the most common causes of bacterial diarrhea; group D (S. sonnei) and group B (S. flexneri) are the species most often isolated."
+  },
+  {
+    "id": 1340,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "A leg-wound culture from a hospitalized 70-year-old man with diabetes grew motile, lactose-negative colonies on MacConkey agar. Given the following biochemical reactions at 24 hours, what is the most probable organism? H2S (TSI) = Neg Indole = Neg MR = Neg VP = + DNase = + Citrate = + Urease = Neg (PD) Phenylalanine deaminase = Neg Ornithine and lysine decarboxylase = + Arginine decarboxylase = Neg Gelatin hydrolysis = +",
+    "options": [
+      "Proteus vulgaris",
+      "Serratia marcescens",
+      "Proteus mirabilis",
+      "Enterobacter cloacae"
+    ],
+    "answer": "B",
+    "explanation": "S. marcescens has been implicated in numerous nosocomial infections and is recognized as an important pathogen with invasive properties. Gelatin hydrolysis and DNase are positive for both the Proteus spp. and Serratia, but the negative urease and phenylalanine deaminase are differential. E. cloacae does not produce DNase, gelatinase, or lysine decarboxylase but will display red-pigmented colonies on MacConkey agar."
+  },
+  {
+    "id": 1341,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Three blood culture specimens taken from a 30-year-old patient with cancer receiving chemotherapy and admitted with a urinary tract infection (UTI) grew lactose-negative, motile, gram-negative rods prior to antibiotic therapy. Given the following biochemical reactions, which is the most likely organism? H2S (TSI) = + Indole = + MR = + VP = Neg Citrate = Neg Urease = + DNase = + (PD) Phenylalanine deaminase = + Gelatin hydrolysis = + Ornithine decarboxylase = Neg",
+    "options": [
+      "Proteus vulgaris",
+      "Proteus mirabilis",
+      "Serratia marcescens",
+      "Klebsiella pneumoniae"
+    ],
+    "answer": "A",
+    "explanation": "Although P. mirabilis is more frequently recovered from patients with UTIs, P. vulgaris is commonly recovered from immunosuppressed patients. P. mirabilis is indole negative and ornithine decarboxylase positive but otherwise is very similar to P. vulgaris."
+  },
+  {
+    "id": 1342,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Three consecutive stool cultures from a 25-year-old male patient produced scant normal fecal flora on MacConkey and Hektoen agars. However, colonies on CIN agar displayed “bull’s eye” colonies after 48 hours of incubation. The patient had been suffering from enterocolitis with fever, diarrhea, and abdominal pain for 2 days. What is the most likely identification of this gram-negative rod?",
+    "options": [
+      "Escherichia coli",
+      "Proteus mirabilis",
+      "Yersinia enterocolitica",
+      "Klebsiella pneumoniae"
+    ],
+    "answer": "C",
+    "explanation": "Most members of the Enterobacteriaceae family produce detectable growth on MacConkey agar within 24 hours. Y. enterocolita produces non–lactose-fermenting colonies on MacConkey agar, salmon-colored colonies on Hektoen agar, and yellow or colorless colonies on XLD agar. If Y. enterocolitica is suspected, specialized agar (CIN) is employed. The typical “bull’s eye” colonies, dark red with a translucent border, can be confused with Aeromonas spp. that appear similarly on CIN agar. To differentiate, an oxidase test must be performed because Yersinia spp. are oxidase negative and Aeromonas spp. are oxidase positive."
+  },
+  {
+    "id": 1343,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "A 6-year-old female patient was admitted to the hospital following 2 days of severe diarrhea. Cultures from three consecutive stool samples contained blood and mucus. Patient history revealed that she had eaten a hamburger at a fast-food restaurant 3 days earlier. Which pathogen is most likely responsible for the following results? Growth on: XLD agar = Yellow colonies HE agar = Yellow colonies Mac agar = Light pink and dark pink colonies Mac with sorbitol agar = Few dark pink and many colorless colonies",
+    "options": [
+      "Salmonella spp.",
+      "Shigella spp.",
+      "Escherichia coli O157:H7",
+      "Yersinia enterocolitica"
+    ],
+    "answer": "C",
+    "explanation": "Inflammation with bleeding of the mucosa of the large intestine (hemorrhagic colitis) is a result of an enterohemorrhagic E. coli (EHEC) infection associated with certain serotypes, such as E. coli O157:H7. The source of the E. coli infection is from ingestion of undercooked ground beef contaminated with fecal matter or drinking raw milk."
+  },
+  {
+    "id": 1344,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Following a 2-week camping trip to the southwest United States, a 65-year-old male patient was hospitalized with a high fever and an inflammatory swelling of the axilla and groin lymph nodes. Several blood cultures were obtained, and cultures showed growth of gram-negative rods resembling “closed safety pins.” The organism grew on MacConkey agar showing non–lactose-fermenting colonies. Testing demonstrated a nonmotile rod that was biochemically inert. What is the most likely pathogen identified?",
+    "options": [
+      "Yersinia pestis",
+      "Klebsiella pneumoniae",
+      "Proteus vulgaris",
+      "Morganella morganii"
+    ],
+    "answer": "A",
+    "explanation": "Y. pestis is the cause of bubonic and pneumonic plague. Bubonic plague causes swelling of the groin lymph nodes (bubos), whereas pneumonic plague involves the lungs. The infection caused by bubonic plague may result in fulminant bacteremia that is usually fatal. The transmission is from rodents (rats, ground squirrels, or prairie dogs) to humans by the bite of fleas (vectors) or by ingestion of contaminated animal tissues. Pneumonic plague is acquired via the airborne route when there is close contact with other pneumonic plague victims."
+  },
+  {
+    "id": 1345,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "The majority of clinical laboratories with a microbiology department should have the capability of serotyping which pathogenic Enterobacteriaceae species?",
+    "options": [
+      "Yersinia enterocolitica, Shigella spp.",
+      "Escherichia coli O157:H7, Salmonella spp., Shigella spp.",
+      "Yersinia pestis, Salmonella spp.",
+      "Edwardsiella spp., Salmonella spp."
+    ],
+    "answer": "B",
+    "explanation": "Preliminary serological grouping of the Salmonella spp. and Shigella spp. should be performed because reliable commercial polyvalent antisera are available. Sorbitol- negative (MacConkey agar with sorbitol) colonies of E. coli should be tested by using commercially available antisera for somatic “O” antigen 157 and flagellar “H” antigen 7. However, Y. pestis isolates should be sent to a public health laboratory for testing because clinical laboratories generally do not have the typing sera available."
+  },
+  {
+    "id": 1346,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Direct spread of pneumonic plague disease occurs by which route?",
+    "options": [
+      "Fecal–oral route",
+      "Rat bite",
+      "Ingestion of contaminated tissue",
+      "Inhalation of contaminated airborne droplets"
+    ],
+    "answer": "D",
+    "explanation": "Bubonic plague involves an inflammatory swelling of the lymph nodes of the axilla and groin, whereas pneumonic plague is associated with an airborne route involving the lungs. Both infections are caused by the same member of the Enterobacteriaceae family—Y. pestis."
+  },
+  {
+    "id": 1347,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which isolates of the Enterobacteriaceae family most commonly produce extended- spectrum β-lactamase (ESBL)?",
+    "options": [
+      "Escherichia coli and Klebsiella pneumoniae",
+      "Yersinia enterocolitica and Yersinia pestis",
+      "Morganella morganii and Proteus vulgaris",
+      "Salmonella typhi and Shigella sonnei"
+    ],
+    "answer": "A",
+    "explanation": "Point mutations occur in most members of the Enterobacteriaceae family that result in production of a β-lactamase that hydrolyzes broad-spectrum antibiotics, such as the cephalosporins, as well as penicillin and monobactam antibiotics. These are known as ESBL producers. The most common ESBL organisms are K. pneumoniae and E. coli. ESBL strains are detected by demonstrating their resistance to β-lactam antibiotics."
+  },
+  {
+    "id": 1348,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Additional methods of definitive identification for the Enterobacteriaceae family include which of the following:",
+    "options": [
+      "Matrix-assisted laser desorption ionization time-of-flight mass spectrometry (MALDI- TOF-MS)",
+      "Serodiagnosis",
+      "Nucleic acid–based studies",
+      "All of the above"
+    ],
+    "answer": "D",
+    "explanation": "Serotyping for grouping of Salmonella spp., Shigella spp., and E.coli 0157:H7 using commercially available slide agglutination test kits is done by most clinical laboratories. Nucleic acid–based studies are usually performed in reference laboratories if the demand is minimal in a clinical laboratory. MALDI-TOF MS is used for the identification of Enterobacteriaceae species. Microbial genomic research showed that many mass spectral peaks represented ribosomal proteins when compared with 16S rRNA gene sequencing and could be used to identify clinically important bacteria (Enterobacteriaceae) with the incorporation of mass spectral libraries and software. One limitation has been identified in that MALDI-TOF MS cannot differentiate between E. coli and Shigella spp. Species-level identification compared with the reference method showed optimal performance in the case of many of the Enterobacteriaceae."
+  },
+  {
+    "id": 1349,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which of the following Shigella spp. serotypes is the most often isolated in the United States?",
+    "options": [
+      "Serotype A (Shigella dysenteriae)",
+      "Serotype B (Shigella flexneri)",
+      "Serotype C (Shigella boydii)",
+      "Serotype D (Shigella sonnei)"
+    ],
+    "answer": "D",
+    "explanation": "S. sonnei (Serotype D) is the most isolated species of Shigella in the United States. Humans are the only reservoirs, and of the estimated 500,000 cases of shigellosis in the United States per year, S. sonnei is responsible for 85% of the infections. It is primarily a pediatric infection, with 60% seen in children under 10 years of age."
+  },
+  {
+    "id": 1350,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "Which organism is transmitted by ingesting undercooked ground beef or raw milk resulting in inflammation and bleeding of the mucosa of the large intestine (i.e., hemorrhagic colitis) which can also lead to hemolytic uremic syndrome (HUS) ?",
+    "options": [
+      "Escherichia coli (STEC)—Shiga toxin",
+      "Escherichia coli (ETEC)—enterotoxigenic",
+      "Escherichia coli (EAEC)—enteroaggregative",
+      "Proteus mirabilis"
+    ],
+    "answer": "A",
+    "explanation": "E. coli (STEC) is the organism referred to as enterohemorrhagic E. coli, which produces a toxin similar to the Shiga toxin produced by S. dysenteriae. Inflammation and bleeding of the mucosa of the large intestine can lead to kidney failure and HUS. HUS is characterized by low platelet counts and hemolytic anemia, leading to transfusions and dialysis and death. The two most common serotypes are 0157:H7 and 0157:NM (nonmotile). Unlike in dysentery, the wet preps of the stools usually lack white blood cells (WBCs)."
+  },
+  {
+    "id": 1351,
+    "section": "Enterobacteriaceae",
+    "chapter": "Microbiology",
+    "question": "This organism is transmitted by ingesting contaminated fresh water and/or shell fish, resulting in watery, dysentery-like stools and chronic diarrhea. Culture on stool media and initial testing show the following results: MacConkey agar = Both lactose-fermenting and non–lactose-fermenting colonies Sheep blood agar = Nonhemolytic, shiny, opaque, smooth, nonspreading Oxidase = + DNase = Neg String test = Neg The most likely preliminary identification is?",
+    "options": [
+      "Proteus vulgaris",
+      "Escherichia coli",
+      "Salmonella spp.",
+      "Plesiomonas shigelloides"
+    ],
+    "answer": "D",
+    "explanation": "P. shigelloides, now considered a new member of the Enterobacteriaceae family, causes gastrointestinal infections. Research shows that it may cross-react with Shigella grouping antisera (Group D) causing misidentification. If an oxidase test is performed first, this error can be avoided (Shigella = oxidase negative, whereas Plesiomonas = oxidase positive)."
+  },
+  {
+    "id": 1352,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "What are the most appropriate screening tests to presumptively differentiate and identify the nonfermentative gram-negative bacilli (NFB) from the Enterobacteriaceae species?",
+    "options": [
+      "Catalase, decarboxylation of arginine, growth on blood agar",
+      "Motility, urease, morphology on blood agar",
+      "Oxidase, TSI, nitrate reduction, growth on MacConkey agar",
+      "Oxidase, indole, and growth on blood agar"
+    ],
+    "answer": "C",
+    "explanation": "NFB will grow on the slant of TSI or KIA, but they do not acidify the butt (glucose fermentation), as do the Enterobacteriaceae. NFB can be cytochrome oxidase positive or negative, but all the Enterobacteriaceae species, except Plesiomonas shigelloides, are oxidase negative. Enterobacteriaceae species grow well on MacConkey agar and reduce nitrate to nitrite, but NFB grow poorly or not at all on MacConkey and most do not reduce nitrate. Nearly 70% of NFB recovered from clinical specimens are strains of P. aeruginosa, Acinetobacter spp., or Stenotrophomonas maltophilia."
+  },
+  {
+    "id": 1353,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "Presumptive tests used for identification of the Pseudomonas spp. are:",
+    "options": [
+      "Oxidase, oxidation–fermentation (OF) glucose (open), OF glucose (sealed), motility, pigment production",
+      "Growth on blood agar plate (BAP) and eosin–methylene blue (EMB) agars, lysine decarboxylation, catalase",
+      "Growth on MacConkey, EMB, and XLD agars and motility",
+      "Growth on mannitol salt agar and flagellar stain"
+    ],
+    "answer": "A",
+    "explanation": "The use of OF tubes helps to determine the presumption of a nonfermentative bacillus (glucose oxidation positive and glucose fermentation negative). The positive cytochrome oxidase test and pigment production indicate a possible Pseudomonas species. Several NFB produce pigments that aid in species identification: P. aeruginosa produces yellow pyoverdins (fluorescein) and/or pyocyanin (blue aqua pigment). The characteristic grapelike odor of aminoacetophenone and growth at 42°C are characteristic of P. aeruginosa."
+  },
+  {
+    "id": 1354,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "Which tests are most appropriate to differentiate between Pseudomonas aeruginosa and Pseudomonas putida?",
+    "options": [
+      "Oxidase, motility, pyoverdin",
+      "Oxidase, motility, lactose",
+      "Oxidase, ONPG, DNase",
+      "Mannitol, nitrate reduction, growth at 42°C"
+    ],
+    "answer": "D",
+    "explanation": "Both organisms are oxidase positive, motile, and produce pyoverdin. Both are negative for ONPG and DNase. The differentiating tests are: {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "Test",
+            "P. aeruginosa",
+            "P. putida"
+          ],
+          [
+            "Mannitol",
+            "+",
+            "Neg"
+          ],
+          [
+            "Reduction of nitrate to nitrite",
+            "+",
+            "Neg"
+          ],
+          [
+            "42°C growth",
+            "+",
+            "Neg"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1355,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "Which test group best differentiates Acinetobacter spp. from P. aeruginosa?",
+    "options": [
+      "Oxidase, motility, nitrate reduction",
+      "MacConkey growth, 37°C growth, catalase",
+      "Blood agar growth, oxidase, catalase",
+      "Oxidase, TSI, MacConkey growth"
+    ],
+    "answer": "A",
+    "explanation": "Acinetobacter spp. are nonmotile rods, which appear as coccobacillary forms in clinical specimens. All are oxidase negative and catalase positive. P. aeruginosa reduces nitrate to nitrite, whereas Acinetobacter spp. do not. The genus Acinetobacter is divided into two groups: saccharolytic or glucose-oxidizing species and asaccharolytic or nonglucose species."
+  },
+  {
+    "id": 1356,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "In addition to motility, which test best differentiates Acinetobacter spp. and Alcaligenes faecalis?",
+    "options": [
+      "Triple sugar iron agar",
+      "Oxidase",
+      "Urease",
+      "Flagellar stain"
+    ],
+    "answer": "B",
+    "explanation": "The two genera, Acinetobacter and Alcaligenes, are very similar. Both use oxidation for the metabolism of carbohydrate, with some strains being nonsaccharolytic. Both grow well on MacConkey agar. However, Acinetobacter is nonmotile and oxidase negative. Alcaligenes is motile by peritrichous flagella and oxidase positive."
+  },
+  {
+    "id": 1357,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "The most noted differences between P. aeruginosa and Stenotrophomonas maltophilia are:",
+    "options": [
+      "Oxidase, catalase, and TSI",
+      "Oxidase, catalase, and ONPG",
+      "Oxidase, 42°C growth, and polar tuft of flagella",
+      "Catalase, TSI, and pigment"
+    ],
+    "answer": "C",
+    "explanation": "The two genera, Pseudomonas and Stenotrophomonas, are motile and grow well on MacConkey agar. However, P. aeruginosa is oxidase positive and grows at 42°C but is motile only by polar monotrichous flagella. S. maltophilia is oxidase negative, does not grow at 42°C, and is motile by a polar tuft of flagella."
+  },
+  {
+    "id": 1358,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "Which nonfermentative bacillus is usually associated with a lung infection related to cystic fibrosis (CF)?",
+    "options": [
+      "Pseudomonas fluorescens",
+      "Pseudomonas aeruginosa",
+      "Pseudomonas putida",
+      "Burkholderia pseudomallei"
+    ],
+    "answer": "B",
+    "explanation": "P. aeruginosa is often recovered from the respiratory secretions of patients with CF. If the patient is chronically infected with the mucoid strain of P. aeruginosa, the biochemical identification is very difficult. The mucoid strain results from production of large amounts of alginate, a polysaccharide that surrounds the cell."
+  },
+  {
+    "id": 1359,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "A nonfermenter recovered from an eye wound is oxidase positive, motile with polar monotrichous flagella, and grows at 42°C. Colonies are dry, wrinkled or smooth, buff to light brown, and are difficult to remove from the agar. In which DNA homology group should this organism be placed?",
+    "options": [
+      "Pseudomonas stutzeri",
+      "Pseudomonas fluorescens",
+      "Pseudomonas putida",
+      "Burkholderia pseudomallei"
+    ],
+    "answer": "A",
+    "explanation": "P. stutzeri produces dry, wrinkled colonies that are tough and adhere to the media as well as smooth colonies. B. pseudomallei produces similar colony types but is distinguished by biochemical tests and susceptibility to the polymyxins. The colonies of P. stutzeri are buff to light brown because of the relatively high concentration of cytochromes."
+  },
+  {
+    "id": 1360,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "Which organism is associated with immunodeficiency syndromes and melioidosis (a glanders-like disease prevalent in Southeast Asia and northern Australia)?",
+    "options": [
+      "Pseudomonas aeruginosa",
+      "Pseudomonas stutzeri",
+      "Pseudomonas putida",
+      "Burkholderia pseudomallei"
+    ],
+    "answer": "D",
+    "explanation": "B. pseudomallei produces wrinkled colonies resembling P. stutzeri. Infections are usually asymptomatic and can be diagnosed only by serological methods. The organism exists in soil and water in an area of latitude 20° north and south of the equator (mainly in Thailand and Vietnam). Thousands of U.S. military personnel were infected with these bacteria during the 1960s and 1970s. The disease may reactivate many years after exposure and has been called the “Vietnamese time bomb.”"
+  },
+  {
+    "id": 1361,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "Which characteristics/biochemical tests are used to differentiate Burkholderia cepacia from S. maltophilia?",
+    "options": [
+      "Pigment on blood agar, oxidase, DNase",
+      "Pigment on MacConkey agar, flagellar stain, motility",
+      "Glucose, maltose, lysine decarboxylase",
+      "Triple-sugar iron agar, motility, oxidase"
+    ],
+    "answer": "A",
+    "explanation": "Both organisms produce yellowish pigment and have polar tuft flagella, but the oxidase and DNase tests are differential. {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "Test",
+            "B. cepacia",
+            "S. maltophilia"
+          ],
+          [
+            "Pigment on BAP",
+            "Green-yellow",
+            "Lavender-green"
+          ],
+          [
+            "Oxidase",
+            "+",
+            "Neg"
+          ],
+          [
+            "DNase",
+            "Neg",
+            "+"
+          ],
+          [
+            "Motility",
+            "+",
+            "+"
+          ],
+          [
+            "Glucose OF (open)",
+            "+",
+            "+"
+          ],
+          [
+            "Maltose OF (open)",
+            "+",
+            "+"
+          ],
+          [
+            "Lysine decarboxylase",
+            "+",
+            "+"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1362,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "The following results were obtained from a pure culture of gram-negative rods recovered from the pulmonary secretions of a 10-year-old cystic fibrosis patient with pneumonia: Oxidase = + Motility = + Glucose OF (open) = + Gelatin hydrolysis = + Pigment = Red Arginine dihydrolase = + (nonfluorescent) Growth at 42°C = + Flagella = + (polar, monotrichous) Which is the most likely organism?",
+    "options": [
+      "Burkholderia pseudomallei",
+      "Pseudomonas stutzeri",
+      "Burkholderia cepacia",
+      "Pseudomonas aeruginosa"
+    ],
+    "answer": "D",
+    "explanation": "The oxidase test and red pigment (pyorubin), as well as growth at 42°C, distinguish P. aeruginosa from the other nonfermenters listed, particularly B. cepacia, which is also associated with CF."
+  },
+  {
+    "id": 1363,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "Alcaligenes faecalis (formerly A. odorans) is distinguished from Bordetella bronchiseptica with which test?",
+    "options": [
+      "Urease (rapid)",
+      "Oxidase",
+      "Growth on MacConkey agar",
+      "Motility"
+    ],
+    "answer": "A",
+    "explanation": "Alcaligenes spp. and Bordetella spp. (nonpertussis) are two organisms that are very similar biochemically, but B. bronchiseptica is urease positive. Both organisms are oxidase positive, grow on MacConkey agar, and are motile by peritrichous flagella. B. bronchiseptica grows well on MacConkey agar, but other species of Bordetella are fastidious gram-negative rods. B. bronchiseptica is the cause of mild respiratory infections, whereas B. pertussis is the cause of whooping cough."
+  },
+  {
+    "id": 1364,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "Chryseobacterium spp. are easily distinguished from Acinetobacter spp. by which of the following two tests?",
+    "options": [
+      "Oxidase, growth on MacConkey agar",
+      "Oxidase and OF (glucose)",
+      "TSI and urea hydrolysis",
+      "TSI and VP"
+    ],
+    "answer": "A",
+    "explanation": "Chryseobacterium spp. and Acinetobacter spp. often produce a yellow pigment on blood or chocolate agar and are nonmotile. Acinetobacter spp. are oxidase negative, grow on MacConkey agar, and are coccobacillary on the Gram-stained smear. In contrast, Chryseobacterium spp. are oxidase positive, do not grow on MacConkey agar, and are typically rod shaped. Elizabethkingia (formerly Chryseobacterium) meningosepticum is highly pathogenic for premature infants. The organism is transmitted to the neonate via the birth canal and is seen in outbreaks of neonatal units as well as long-term care facilities."
+  },
+  {
+    "id": 1365,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "A gram-negative coccobacillus was recovered on chocolate agar from the CSF of an immunosuppressed patient. The organism was nonmotile and positive for indophenol oxidase but failed to grow on MacConkey agar. The organism was highly susceptible to penicillin. The most probable identification is:",
+    "options": [
+      "Acinetobacter spp.",
+      "Pseudomonas aeruginosa",
+      "Pseudomonas stutzeri",
+      "Moraxella lacunata"
+    ],
+    "answer": "D",
+    "explanation": "Moraxella spp. are oxidase positive and nonmotile, and this distinguishes them from Acinetobacter spp. and most Pseudomonas spp. Moraxella spp. are highly sensitive to penicillin, but Acinetobacter spp. and Pseudomonas spp. are penicillin resistant. M. lacunata is implicated in infections involving immunosuppressed patients. M. lacunata is usually associated with eye infections but can also be the cause of bacteremia and respiratory infections in the immunosuppressed patient."
+  },
+  {
+    "id": 1366,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "Cetrimide agar is used as a selective isolation agar for which organism?",
+    "options": [
+      "Acinetobacter spp.",
+      "Pseudomonas aeruginosa",
+      "Moraxella spp.",
+      "Stenotrophomonas maltophilia"
+    ],
+    "answer": "B",
+    "explanation": "Growth on Cetrimide (acetyl trimethyl ammonium bromide) agar is used for the isolation and presumptive identification of P. aeruginosa. With the exception of P. fluorescens, the other pseudomonads are inhibited along with related nonfermentative bacteria. Colonies of P. aeruginosa appear as yellow-green to blue-green colonies on Cetrimide agar."
+  },
+  {
+    "id": 1367,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "A specimen from a 15-year-old female burn patient was cultured after débridement, and the following results were obtained: Oxidase = + Lysine decarboxylase = Neg Catalase = + Motility = + Ornithine decarboxylase = Neg Glucose = + for oxidation (open tube) Arginine dihydrolase = + Maltose = Neg for oxidation (open tube) Penicillin = Resistant Aminoglycosides = Susceptible Colistin (Polymixin B) = Susceptible These results indicate which of the following organisms?",
+    "options": [
+      "Acinetobacter spp.",
+      "Moraxella lacunata",
+      "Pseudomonas aeruginosa",
+      "Alcaligenes spp."
+    ],
+    "answer": "C",
+    "explanation": "P. aeruginosa is a cause of a significant number of burn wound infections; these organisms can exist in distilled water and underchlorinated water. Acinetobacter spp. are oxidase negative and Moraxella spp. are highly susceptible to penicillin, and this helps rule them out as possible causes."
+  },
+  {
+    "id": 1368,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "A yellow pigment–producing organism, growing on chocolate agar, testing oxidase positive, nonmotile and does not grow on MacConkey agar was recovered from the blood of a neonate. What is the most likely organism?",
+    "options": [
+      "Acinetobacter spp.",
+      "Pseudomonas aeruginosa",
+      "Burkholderia cepacia",
+      "Elizabethkingia (formerly Chryseobacterium) meningosepticum"
+    ],
+    "answer": "D",
+    "explanation": "All species of Acinetobacter are oxidase negative, are nonmotile, and grow on MacConkey agar. Elizabethkingia (formerly Chryseobacterium) spp. produce yellow pigment (like some Acinetobacter) but are oxidase positive and do not grow well on MacConkey agar. B. cepacia also produces a yellow pigment but is motile. P. aeruginosa is motile and grows on Mac agar."
+  },
+  {
+    "id": 1369,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "Which reagent(s) is (are) used to develop the red color indicative of a positive reaction in the nitrate reduction test?",
+    "options": [
+      "Sulfanilic acid and α-naphthylamine",
+      "Ehrlich and Kovac reagents",
+      "o-Nitrophenyl-β-D-galactopyranoside",
+      "Kovac reagent"
+    ],
+    "answer": "A",
+    "explanation": "In the nitrate test, nitrites formed by bacterial reduction of nitrates will diazotize sulfanilic acid. The diazonium compound complexes with α-naphthylamine, forming a red product. Media containing nitrates are used for the identification of nonfermenters. When testing nonfermenters, it is wise to confirm a negative reaction using zinc dust. The diazonium compound detects nitrite only, and the organism may have reduced nitrates to nitrogen, ammonia, nitrous oxide, or hydroxylamine. Zinc ions reduce residual nitrates in the media to nitrites. A red color produced after addition of zinc indicates the presence of residual nitrates, confirming a true negative reaction. If a red or pink color does not occur after adding zinc, then the organism reduced the nitrate to a product other than nitrite, and the result is considered positive."
+  },
+  {
+    "id": 1370,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "A culture from an intra-abdominal abscess produced orange-tan colonies on blood agar that gave the following results: Oxidase = + Nitrate reduction = + KIA = Alk/Alk (H2S)+ Motility = + (single polar flagellum) DNase = + Ornithine decarboxylase = + Growth at 42°C = Neg MacConkey agar = NLF (non–lactose fermenter) The most likely identification is:",
+    "options": [
+      "Shewanella putrefaciens",
+      "Acinetobacter spp.",
+      "Pseudomonas aeruginosa",
+      "Chryseobacterium spp."
+    ],
+    "answer": "A",
+    "explanation": "S. putrefaciens produces abundant H2S on KIA or TSI. Shewanellae are the only nonfermenters that produce H2S on these media."
+  },
+  {
+    "id": 1371,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "Chryseobacterium spp. and B. cepacia are easily differentiated by which test?",
+    "options": [
+      "Motility",
+      "OF glucose",
+      "Oxidase",
+      "Cetrimide agar"
+    ],
+    "answer": "A",
+    "explanation": "B. cepacia (93%) are weakly oxidase positive and motile. Chryseobacterium spp. are oxidase positive but are nonmotile."
+  },
+  {
+    "id": 1372,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "A 15-year-old female complained of a severe eye irritation after removing her soft contact lenses. A swab specimen of the infected right eye was obtained by an ophthalmologist, who ordered culture and sensitivity testing. The culture was plated on blood agar and MacConkey agar. At 24 hours, growth of a gram-negative rod that tested positive for cytochrome oxidase was noted. The Mueller-Hinton sensitivity plate showed a bluish-green “lawn” of growth that proved highly resistant to most of the antibiotics tested except amikacin, tobramycin, and ciprofloxacin. What is the most likely identification?",
+    "options": [
+      "Burkholderia cepacia",
+      "Pseudomonas aeruginosa",
+      "Stenotrophomonas maltophilia",
+      "Acinetobacter spp."
+    ],
+    "answer": "B",
+    "explanation": "P. aeruginosa is an opportunistic organism that is not part of the human normal flora. Contact lens solution contamination, eye injury, or contact lens eye trauma are factors that contribute to P. aeruginosa eye infections. The characteristic blue-green pigment on Mueller-Hinton agar (pyocyanin pigment) produced by P. aeruginosa and the high resistance to antibiotics aid in its identification."
+  },
+  {
+    "id": 1373,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "Which of the listed Pseudomonas spp. is associated with the following virulence factors: exotoxin A, endotoxins, proteolytic enzymes, antimicrobial resistance, and production of alginate?",
+    "options": [
+      "Pseudomonas fluorescens",
+      "Pseudomonas putida",
+      "Pseudomonas stutzeri",
+      "Pseudomonas aeruginosa"
+    ],
+    "answer": "D",
+    "explanation": "P. aeruginosa is highly resistant to many antimicrobial drugs as well as being one of the most often cultured opportunistic organisms. This virulence factor allows for many nosocomial infections, such as UTI, wounds (in burn patients), bacteremia, respiratory tract infection, and CNS infection."
+  },
+  {
+    "id": 1374,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "A 20-year-old horse groomer exhibited a “glanders-like” infection. His history indicated he had suffered several open wounds on his hands 2 weeks before the swelling of his lymph nodes. A gram-negative rod was recovered from a blood culture that grew well on blood and MacConkey agars. Most of the biochemical tests were negative, including the cytochrome oxidase test. What is the most likely identification?",
+    "options": [
+      "Burkholderia mallei",
+      "Pseudomonas aeruginosa",
+      "Pseudomonas stutzeri",
+      "Burkholderia pseudomallei"
+    ],
+    "answer": "A",
+    "explanation": "B. mallei is rarely transmitted to humans. It is the causative agent of glanders in mules, donkeys, and horses. It is not part of the human skin flora, and the most likely transmission to humans is through broken skin."
+  },
+  {
+    "id": 1375,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "A Vietnam War veteran presented with a “glanders-like” infection (melioidosis). Several blood cultures produced gram-negative rods that were positive for cytochrome oxidase, oxidized glucose and xylose, and grew at 42°C. What is the most likely organism?",
+    "options": [
+      "Stenotrophomonas maltophilia",
+      "Burkholderia pseudomallei",
+      "Pseudomonas aeruginosa",
+      "Acinetobacter spp."
+    ],
+    "answer": "B",
+    "explanation": "B. pseudomallei infections often produce abscesses in organs (liver, spleen, lungs) as well as on the skin, in soft tissue, and in joints and bones. Vietnam War veterans especially may harbor these organisms, which are limited to tropical and subtropical environments (Southeast Asia and Australia). The organism may surface years later after surviving in a latent state within phagocytes. There is a high prevalence of this organism on the surfaces of rice paddies in northern Thailand."
+  },
+  {
+    "id": 1376,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "Cytochrome oxidase-positive, nonfermentative gram-negative bacilli were recovered from the stool of a patient with CF. The isolates produced wet (mucoidy) light blue colonies on tryptic soy agar. Which identification is most likely?",
+    "options": [
+      "Acinetobacter spp.",
+      "Pseudomonas putida",
+      "Pseudomonas stutzeri",
+      "Pseudomonas aeruginosa"
+    ],
+    "answer": "D",
+    "explanation": "Patients with CF usually do not escape P. aeruginosa infections completely. P. aeruginosa produces alginate that accounts for the “wet, mucoidy” appearance of colonies. This overproduction of alginate is thought to cause the inhibition of phagocytosis. The light blue color results from lower production of polyamine, and the wet or mucoidy appearance is caused by overproduction of alginate. The result is chronic infections in patients with CF with the “wet” form of P. aeruginosa."
+  },
+  {
+    "id": 1377,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "Several postoperative hospitalized patients were colonized with gram-negative coccobacilli growing on MacConkey agar. Specimens were obtained from blood, urine, and wound sites. Testing revealed oxidase negative, nonmotile organisms. Which of the following is the most likely cause of the nosocomial infections?",
+    "options": [
+      "Acinetobacter spp.",
+      "Pseudomonas aeruginosa",
+      "Burkholderia cepacia",
+      "Pseudomonas putida"
+    ],
+    "answer": "A",
+    "explanation": "Acinetobacter spp. often colonize immunocompromised patients through intravenous or urinary catheters. Acinetobacter spp. are nonmotile, oxidase negative, coccobacilli, which grow well on MacConkey agar."
+  },
+  {
+    "id": 1378,
+    "section": "Nonfermentative Bacilli",
+    "chapter": "Microbiology",
+    "question": "A nosocomial infection involving an 80-year-old female patient, recovering from pneumonia, produced many oxidase-negative colonies on MacConkey agar. Further testing results are: Motility = + Maltose = + Resistant to most beta-lactams Glucose = + Resistant to most aminoglycosides The most likely identification is:",
+    "options": [
+      "Acinetobacter spp.",
+      "Stenotrophomonas maltophilia",
+      "Pseudomonas aeruginosa",
+      "Burkholderia gladioli"
+    ],
+    "answer": "B",
+    "explanation": "S. maltophilia are oxidase negative, whereas all the other choices are oxidase positive (B. gladioli are weakly oxidase positive)."
+  },
+  {
+    "id": 1379,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "A visitor to South America who returned with diarrhea is suspected of being infected with V. cholerae. Select the best medium for recovery and identification of this organism.",
+    "options": [
+      "MacConkey agar",
+      "Blood agar",
+      "TCBS agar",
+      "XLD agar"
+    ],
+    "answer": "C",
+    "explanation": "The growth of yellow or green colonies on the selective TCBS agar is dependent on whether the organism ferments sucrose (producing yellow colonies). Vibrio spp. also grow well on 5% sheep blood, chocolate, and MacConkey agars. Enrichment with alkaline peptone broth, pH 8.4, helps recover Vibrio spp. from stool specimens."
+  },
+  {
+    "id": 1380,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "A curved gram-negative, rod-producing, oxidase-positive colonies on blood agar was recovered from a stool culture. Given the following results, what is the most likely identification? Lysine decarboxylase = + Arginine decarboxylase = Neg Indole = + KIA = Alk/Acid VP = Neg Lactose = Neg Urease = ± String test = Neg TCBS agar = Green colonies",
+    "options": [
+      "Vibrio cholerae",
+      "Vibrio parahaemolyticus",
+      "Shigella spp.",
+      "Salmonella spp."
+    ],
+    "answer": "B",
+    "explanation": "V. parahaemolyticus appear as green colonies on TCBS agar, whereas V. cholerae appear as yellow colonies on TCBS. V. cholerae is the only Vibrio species that causes a positive string test result. In the test, a loopful of bacterial colonies is suspended in sodium deoxycholate, 0.5%, on a glass slide. After 60 seconds, the inoculating loop is lifted out of the suspension. V. cholerae forms a long string resembling a string of pearls. Salmonella spp. and Shigella spp. are oxidase negative."
+  },
+  {
+    "id": 1381,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "A gram-negative S-shaped rod recovered from selective media for Campylobacter species gave the following results: Catalase = + Oxidase = + Nitrate Reduction = + Motility = + Hippurate hydrolysis = + Growth at 42°C = + Nalidixic acid = Susceptible Pigment = Neg Grape odor = Neg Cephalothin = Resistant The most likely identification is:",
+    "options": [
+      "Pseudomonas aeruginosa",
+      "Campylobacter jejuni",
+      "Campylobacter fetus",
+      "Pseudomonas putida"
+    ],
+    "answer": "B",
+    "explanation": "The only Campylobacter spp. that hydrolyze hippurate are C. jejuni and subsp. doylei. However, some strains of P. aeruginosa grow on agar selective for Campylobacter at 42°C. C. fetus usually will not grow at 42°C but will grow at 25°C and 37°C."
+  },
+  {
+    "id": 1382,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which atmospheric condition is needed to recover Campylobacter spp. from specimens inoculated onto a Campy-selective agar at 35°C to 37°C and 42°C?",
+    "options": [
+      "5% O2, 10% CO2, and 85% N2",
+      "20% O2, 10% CO2, and 70% N2",
+      "20% O2, 20% CO2, and 60% N2",
+      "20% O2, 5% CO2, and 75% N2"
+    ],
+    "answer": "A",
+    "explanation": "Campylobacter spp. are best recovered in a microaerophilic atmosphere (reduced O2). The use of a CO2 incubator or candle jar is not recommended because the amount of O2 and CO2 do not permit any but the most aerotolerant Campylobacter to survive. Cultures for Campylobacter should be incubated for 48 to 72 hours before reporting no growth."
+  },
+  {
+    "id": 1383,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which group of tests best differentiates Helicobacter pylori from C. jejuni?",
+    "options": [
+      "Catalase, oxidase, and Gram stain",
+      "Catalase, oxidase, and nalidixic acid sensitivity",
+      "Catalase, oxidase, and cephalothin sensitivity",
+      "Urease, nitrate, and hippurate hydrolysis"
+    ],
+    "answer": "D",
+    "explanation": "H. pylori is found in specimens from gastric secretions and biopsies and has been implicated as a cause of gastric ulcers. It is found only in the mucous-secreting epithelial cells of the stomach. Both H. pylori and C. jejuni are catalase and oxidase positive. However, Helicobacter spp. are urease positive, which differentiates them from Campylobacter spp. {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "Test",
+            "H. pylori",
+            "C. jejuni"
+          ],
+          [
+            "Nitrate reduction",
+            "Neg",
+            "+"
+          ],
+          [
+            "Hippurate hydrolysis",
+            "Neg",
+            "+"
+          ],
+          [
+            "Urease",
+            "+",
+            "Neg"
+          ],
+          [
+            "Cephalothin sensitivity",
+            "Sensitive",
+            "Resistant"
+          ],
+          [
+            "Nalidixic acid sensitivity",
+            "Resistant",
+            "Sensitive"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1384,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which of the following tests should be done first to differentiate Aeromonas spp. from the Enterobacteriaceae?",
+    "options": [
+      "Urease",
+      "OF glucose",
+      "Oxidase",
+      "Catalase"
+    ],
+    "answer": "C",
+    "explanation": "Aeromonas hydrophilia and other Aeromonas spp. have been implicated in acute diarrheal disease as well as cellulitis and wound infections. Infections usually follow exposure to contaminated soil, water, or food. Aeromonas growing on enteric media are differentiated from the Enterobacteriaceae species by demonstrating that colonies are oxidase positive. The Aeromonas are sometimes overlooked as pathogens because most strains grow on selective enteric agar as lactose fermenters."
+  },
+  {
+    "id": 1385,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which is the best rapid test to differentiate P. shigelloides from a Shigella species on selective enteric agar?",
+    "options": [
+      "Oxidase",
+      "Indole",
+      "Triple-sugar iron agar",
+      "Urease"
+    ],
+    "answer": "A",
+    "explanation": "P. shigelloides is an NLF that will resemble Shigella spp. on MacConkey agar. Both are TSI Alk/Acid and urease negative. Plesiomonas produces indole and Shigella usually causes delayed production of indole. However, Plesiomonas is oxidase positive, whereas Shigella spp. are oxidase negative. P. shigelloides has been added to the Enterobacteriaceae family through the use of nucleic acid–based methods and is the only member that is oxidase positive."
+  },
+  {
+    "id": 1386,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which are the best two tests to differentiate A. hydrophilia from P. shigelloides?",
+    "options": [
+      "Oxidase and motility",
+      "DNase and Voges-Proskauer test",
+      "Indole and lysine decarboxylase",
+      "Growth on MacConkey and blood agar"
+    ],
+    "answer": "B",
+    "explanation": "Both these bacteria cause diarrhea, grow well on enteric agar, and may be confused with other pathogenic gram-negative rods. Both organisms are positive for oxidase, motility, indole, and lysine decarboxylase. The following reactions are differential: {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "Test",
+            "A. hydrophilia",
+            "P. shigelloides"
+          ],
+          [
+            "β-Hemolysis on sheep blood agar",
+            "+",
+            "Neg"
+          ],
+          [
+            "DNase",
+            "+",
+            "Neg"
+          ],
+          [
+            "Voges-Proskauer",
+            "+",
+            "Neg"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1387,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which genus (in which most species are oxidase and catalase positive) of small gram- negative coccobacilli is associated mainly with animals but may cause endocarditis and bacteremia, as well as wound and dental infections in humans?",
+    "options": [
+      "Aggregatibacter (formerly Actinobacillus spp.)",
+      "Pseudomonas",
+      "Campylobacter",
+      "Vibrio"
+    ],
+    "answer": "A",
+    "explanation": "Aggregatibacter spp. (formerly Actinobacillus spp.) and formerly Centers for Disease Control and Prevention (CDC) groups HB-3 and HB-4 share many biochemical characteristics of the Haemophilus spp. Infections most often associated with this gram-negative coccobacillus are subacute bacterial endocarditis and periodontal disease (its main habitat is the mouth). The most common human isolate is Aggregatibacter (formerly Actinobacillus) actinomycetemcomitans, which grows slowly on chocolate agar. It is positive for catalase, nitrate reduction, and glucose fermentation. It does not grow on MacConkey agar and is negative for oxidase, urease, indole, X, and V requirements."
+  },
+  {
+    "id": 1388,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which of the following tests may be used to differentiate Cardiobacterium hominis from Aggregatibacter spp. (formerly Actinobacillus spp.)?",
+    "options": [
+      "Gram stain",
+      "Indole",
+      "Anaerobic incubation",
+      "Oxidase"
+    ],
+    "answer": "B",
+    "explanation": "C. hominis (indole positive) is a gram-negative coccobacillus biochemically similar to Aggregatibacter (Actinobacillus) spp. (indole negative). Like Aggregatibacter (formerly Actinobacillus) spp., it is a cause of endocarditis. However, Cardiobacterium spp. are positive for cytochrome oxidase and negative for nitrate reduction and catalase, whereas most Aggregatibacter (formerly Actinobacillus) spp. are negative for oxidase and positive for nitrate reduction and catalase. C. hominis will grow on blood agar after 48 to 72 hours in 5% CO2 at 35°C, but Aggregatibacter (formerly Actinobacillus) requires chocolate agar."
+  },
+  {
+    "id": 1389,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "A mixture of slender gram-negative rods and coccobacilli with rounded ends was recovered from blood cultures after a patient’s root canal surgery. Given the following results after 48 hours, what is the most likely organism? Catalase = Neg Ornithine decarboxylase = + Urease = Neg Lysine decarboxylase = + Oxidase = + X and V requirement = Neg Indole = Neg Carbohydrates = Neg (no acid produced) Growth on blood and chocolate agar = + (with pitting of agar) Growth on MacConkey agar = Neg",
+    "options": [
+      "Eikenella corrodens",
+      "Aggregatibacter (formerly Actinobacillus) spp.",
+      "Cardiobacterium hominis",
+      "Proteus spp."
+    ],
+    "answer": "A",
+    "explanation": "E. corrodens is a part of the normal flora of the upper respiratory tract and the mouth. It is often seen after trauma to the head and neck, dental infections, and human bite wounds. It requires blood for growth. The organism causes pits in the agar, where colonies are located. The smell of bleach may be apparent when the plates are uncovered for examination. Aggregatibacter (formerly Actinobacillus) spp. and C. hominis both utilize several carbohydrates, and Proteus spp. are oxidase negative."
+  },
+  {
+    "id": 1390,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Kingella kingae can best be differentiated from E. corrodens by using which medium?",
+    "options": [
+      "Sheep blood agar",
+      "Chocolate agar",
+      "MacConkey agar",
+      "Xylose lysine deoxycholate agar"
+    ],
+    "answer": "A",
+    "explanation": "Both K. kingae and E. corrodens are gram-negative rods that are oxidase positive and catalase negative. Both grow well on blood and chocolate agars and cause pitting of the media, and neither grows on MacConkey or XLD agar. However, K. kingae strains produce a narrow zone of β-hemolysis on sheep blood agar similar to that of group B streptococci."
+  },
+  {
+    "id": 1391,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "K. kingae is usually associated with which type of infection?",
+    "options": [
+      "Middle ear infection",
+      "Endocarditis",
+      "Meningitis",
+      "Urogenital infection"
+    ],
+    "answer": "B",
+    "explanation": "Kingella spp. are gram-negative coccobacilli or plump-looking rods. They are part of the normal flora of the upper respiratory and urogenital tracts of humans. Infection is seen primarily in patients having underlying heart disease, poor oral hygiene, or iatrogenic mucosal ulcerations (e.g., radiation therapy), in whom the organism is recovered from blood cultures."
+  },
+  {
+    "id": 1392,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Cultures obtained from a dog bite wound produced yellow, tan, and slightly pink colonies on blood and chocolate agar, with a margin of fingerlike projections appearing as a film around the colonies. Given the following results at 24 hours, which is the most likely organism? Oxidase = + Catalase = + Growth on MacConkey agar = Neg Motility = Neg",
+    "options": [
+      "Aggregatibacter (formerly Actinobacillus) spp.",
+      "Eikenella spp.",
+      "Capnocytophaga spp.",
+      "Pseudomonas spp."
+    ],
+    "answer": "C",
+    "explanation": "The Capnocytophaga species C. gingivalis, C. sputigena, and C. ochracea are part of the normal oropharyngeal flora of humans; however, C. canimorsus and C. cynodegmi (formerly CDC groups DF-2 and DF-2-like bacteria) are associated with infections resulting from dog bite wounds and cat bites as well as scratch wounds."
+  },
+  {
+    "id": 1393,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Smooth gray colonies showing no hemolytic activity were recovered from an infected cat scratch wound culture; the colonies grew on blood and chocolate agar (a musty odor was noted) but failed to grow on MacConkey agar. The organisms were gram-negative pleomorphic rods that were both catalase and oxidase positive and strongly indole positive. The most likely organism is:",
+    "options": [
+      "Haemophilus spp.",
+      "Pasteurella spp.",
+      "Proteus spp.",
+      "Pseudomonas spp."
+    ],
+    "answer": "B",
+    "explanation": "Pasteurella multocida (P. canis) is part of the normal mouth flora of cats and dogs and is frequently recovered from wounds inflicted by them. It produces large amounts of indole and therefore an odor resembling that of colonies of E. coli. Pseudomonas spp. are also catalase and oxidase positive but can be ruled out because it grows on MacConkey agar and does not produce indole."
+  },
+  {
+    "id": 1394,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which media should be used to recover B. pertussis from a nasopharyngeal specimen?",
+    "options": [
+      "Chocolate agar",
+      "Blood agar",
+      "MacConkey agar",
+      "Bordet-Gengou agar"
+    ],
+    "answer": "D",
+    "explanation": "B. pertussis is an oxidase-positive, nonmotile, gram-negative coccobacillus and appears as small, round colonies resembling droplets of mercury on Bordet-Gengou media with sheep blood agar. It is fastidious and does not grow on chocolate or MacConkey agar. However, B. pertussis adapts to blood agar, growing within 3 to 6 days. This organism is the cause of whooping cough, which can be prevented by immunization with the diphtheria, tetanus, pertussis (DPT) vaccine. The DPT vaccine contains diphtheria and tetanus toxoids and killed whole-cell B. pertussis."
+  },
+  {
+    "id": 1395,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which medium is recommended for the recovery of Brucella spp. from blood and bone marrow specimens?",
+    "options": [
+      "Biphasic Castenada bottles with Brucella broth",
+      "Blood culture bottles with Brucella broth",
+      "Bordet-Gengou agar plates and THIO broth",
+      "Blood culture bottles with THIO broth"
+    ],
+    "answer": "A",
+    "explanation": "Although blood agar will support the growth of Brucella spp., Castenada bottles are the medium of choice. Castenada bottles contain a slant of enriched agar medium that is partially submerged and surrounded by an enriched broth medium. As the specimen is injected into the bottles and mixed, the agar slant is simultaneously coated with the blood (or bone marrow). Brucella is the cause of undulant fever (acquired by ingesting infected, unpasteurized milk products) and is responsible for many cases of fever of unknown origin. Brucella spp. are facultative intracellular (multiply in phagocytic cells) organisms and grow very slowly, usually requiring 4 to 6 weeks for recovery. Brucella melitensis is the most frequently recovered species."
+  },
+  {
+    "id": 1396,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "In addition to CO2 requirements and biochemical characteristics, B. melitensis and Brucella abortus are differentiated by growth on media containing which two dyes?",
+    "options": [
+      "Basic fuchsin and thionin",
+      "Methylene blue and crystal violet",
+      "Carbol fuchsin and iodine",
+      "Safranin and methylene blue"
+    ],
+    "answer": "A",
+    "explanation": "B. abortus can be differentiated from B. melitensis by the following reactions: {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "",
+            "H₂S",
+            "Urease",
+            "CO₂ Requirement",
+            "Basic Fuchsin",
+            "Thionin (20 mg)"
+          ],
+          [
+            "B. melitensis",
+            "Neg",
+            "V",
+            "Neg",
+            "+ growth",
+            "+ growth"
+          ],
+          [
+            "B. abortus",
+            "+",
+            "+",
+            "+/V",
+            "+ growth",
+            "(Neg) No growth"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1397,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which of the following amino acids are required for growth of Francisella tularensis?",
+    "options": [
+      "Leucine and ornithine",
+      "Arginine and lysine",
+      "Cysteine and cystine",
+      "Histidine and tryptophan"
+    ],
+    "answer": "C",
+    "explanation": "F. tularensis (the causative agent of tularemia) is a fastidious gram-negative rod that is best recovered from lymph node aspirates and tissue biopsies. It is oxidase negative, nonmotile, and inert biochemically. Cysteine blood agar is the medium of choice, but F. tularensis will grow on commercially prepared chocolate agar because it contains X factor and is supplemented with a growth enrichment (IsoVitaleX) that contains cysteine. F. tularensis may not grow well on MacConkey agar."
+  },
+  {
+    "id": 1398,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which medium is best for recovery of Legionella pneumophila from clinical specimens?",
+    "options": [
+      "Chocolate agar",
+      "Bordet-Gengou agar",
+      "New yeast extract agar",
+      "Buffered charcoal–yeast extract (CYE) agar"
+    ],
+    "answer": "D",
+    "explanation": "L. pneumophila should be recovered on buffered CYE agar. This agar is nonselective but can be made more selective for Legionella spp. by addition of the antibiotics cefamandole, polymixin B, and anisomycin. Any small, glistening, convex colonies on buffered CYE agar after 2 to 3 days of incubation that do not grow on L-cysteine– deficient buffered CYE agar or routine nonselective media should be further tested by the direct fluorescent antibody (DFA) test for confirmation of L. pneumophila. Rapid detection by using enzyme immunoassay (EIA) and immunochromotographic methods in tissue and urine has proven successful, as well as polymerase chain reaction (PCR) for respiratory specimens."
+  },
+  {
+    "id": 1399,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Haemophilus aegyptius (formerly H. influenzae biogroup aegyptius) causes ocular infections (“pink eye”) and requires X and V factors in the primary medium for growth. H. aegyptius and H. influenzae can further be identified and differentiated by which two tests?",
+    "options": [
+      "Indole and xylose",
+      "Glucose and urease",
+      "Oxidase and catalase",
+      "Aminolevulinic acid (ALA) test and oxidase"
+    ],
+    "answer": "A",
+    "explanation": "Both H. influenzae and H. aegyptius are glucose, urease, oxidase, and catalase positive. H. influenzae (biotype II) is positive for both indole and xylose, whereas H. aegyptius is negative for both tests. Biotype II encompasses 40% to 70% of H. influenzae strains recovered from clinical specimens. H. aegyptius is responsible for epidemics of conjunctivitis in children."
+  },
+  {
+    "id": 1400,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Haemophilus species that require the V factor (NAD) are easily recovered on which primary agar plate?",
+    "options": [
+      "Blood agar made with sheep RBCs",
+      "Blood agar made with horse RBCs",
+      "Chocolate agar",
+      "Xylose agar"
+    ],
+    "answer": "C",
+    "explanation": "The V factor, NAD, must first be released from RBCs before it can be assimilated by Haemophilus spp. Chocolate agar is made by heating blood agar to lyse RBCs. The released NAD is directly available to those Haemophilus species requiring it. Chocolate agar also contains the X factor (hemin). All Haemophilus except H. ducreyi and H. aphrophilus (now called Aggregatibacter aphrophilus) require V factor, whereas X factor is required by H. influenzae, H. haemolyticus, and H. ducreyi. H. H. H. H. *(H.) A. H. influenzae parainfluenzae haemolyticus parahaemolyticus aphrophilus aegyptius X factor + Neg + Neg Neg + V factor + + + + Neg + Hemolysis Neg Neg + + Neg Neg *Aggregatibacter (formerly Haemophilus) aphrophilus."
+  },
+  {
+    "id": 1401,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which of the following products is responsible for satellite growth of Haemophilus spp. around colonies of Staphylococcus growing on sheep blood agar?",
+    "options": [
+      "NAD and Hemin",
+      "Lactose",
+      "Indole",
+      "Oxidase"
+    ],
+    "answer": "A",
+    "explanation": "Staphylococcus growing on sheep blood agar produce NAD (V factor) as a metabolic by-product and β-hemolysins which lyse sheep RBCs, releasing hemin (X factor). This satellite feature allows pinpoint-sized colonies of Haemophilus spp. to grow around Staphylococcus colonies. Sheep blood agar alone does not support the growth of Haemophilus spp., which require V factor because of the presence of V factor– inactivating enzymes that are present in the agar."
+  },
+  {
+    "id": 1402,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which of the following plates should be used to identify H. haemolyticus and H. parahaemolyticus?",
+    "options": [
+      "Sheep blood agar and chocolate agar",
+      "Horse blood agar and Mueller-Hinton agar with X and V strips",
+      "Brain–heart infusion (BHI) agar with sheep red cells added",
+      "Chocolate agar and Mueller-Hinton agar with X factor added"
+    ],
+    "answer": "B",
+    "explanation": "Production of β-hemolysis is used to distinguish these two species from other Haemophilus with the same X and V requirements. Horse blood agar furnishes X factor and, when supplemented with yeast extract, supports the growth of Haemophilus spp. Sheep blood agar is not used because it contains growth inhibitors for some Haemophilus spp. The chart at the top of the page summarizes the characteristics of the Haemophilus spp."
+  },
+  {
+    "id": 1403,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "The majority of H. influenzae infections are caused by which of the following capsular serotypes?",
+    "options": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": "B",
+    "explanation": "The majority of H. influenzae infections occur in children under 5 years of age and are caused by capsular serotype b (Hib), one of six serotypes designated a through f. This capsular strain appears to contain a virulence factor that makes it resistant to phagocytosis and intracellular killing by neutrophils. The nontypable strains do not have a capsule and are part of the normal respiratory flora. Serotyping of Haemophilus is performed by mixing colonies with agglutinating antibodies available as commercial agglutination kits. Identification is also done by using PCR."
+  },
+  {
+    "id": 1404,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which of the following, usually recovered from blood cultures, is generally associated with subacute bacterial endocarditis?",
+    "options": [
+      "Haemophilus influenzae",
+      "Haemophilus ducreyi",
+      "Aggregatibacter (Haemophilus) aphrophilus",
+      "Haemophilus haemolyticus"
+    ],
+    "answer": "C",
+    "explanation": "A. (H.) aphrophilus does not require either X or V factor for growth and is differentiated from the other Haemophilus species by its ability to produce acid from lactose and a positive ALA test. H. influenzae and H. haemolyticus are incapable of synthesizing protoporphyrin from Δ-ALA and are negative for this test."
+  },
+  {
+    "id": 1405,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which Haemophilus species is difficult to isolate and recover from genital ulcers and swollen lymph nodes?",
+    "options": [
+      "Haemophilus aegyptius",
+      "Haemophilus ducreyi",
+      "Haemophilus haemolyticus",
+      "Haemophilus parahaemolyticus"
+    ],
+    "answer": "B",
+    "explanation": "H. ducreyi requires exogenous X factor and causes genital lesions referred to as “soft chancres.” It is difficult to grow and requires commercial chocolate agar or gonococcus base medium containing 1% to 2% hemoglobin, 5% fetal calf serum, and 1% IsoVitaleX enrichment. The plates must be incubated at 33oC in a 3% to 5% CO2 moist environment for 2 to 3 days. Recovery of H. ducreyi from specimens constitutes a reportable sexually transmitted disease (chancroid)."
+  },
+  {
+    "id": 1406,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which of the following is a characteristic of strains of H. influenzae that are resistant to ampicillin?",
+    "options": [
+      "Production of β-lactamase enzymes",
+      "Hydrolysis of chloramphenicol",
+      "Hydrolysis of urea",
+      "All of these options"
+    ],
+    "answer": "A",
+    "explanation": "Roughly 20% of H. influenzae strains produce β-lactamase, which hydrolyses and inactivates the β-lactam ring of ampicillin (and penicillin)."
+  },
+  {
+    "id": 1407,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "A small, gram-negative coccobacillus recovered from the CSF of a 2-year-old unvaccinated child gave the following results: Indole = + Glucose = + (acid) X requirement = + V requirement = + Urease = + Lactose = Neg Sucrose = Neg Hemolysis = Neg Which is the most likely identification?",
+    "options": [
+      "Haemophilus parainfluenzae",
+      "Haemophilus influenzae",
+      "Haemophilus ducreyi",
+      "Aggregatibacter (formerly Haemophilus) aphrophilus"
+    ],
+    "answer": "B",
+    "explanation": "H. influenza is the main cause of meningitis in young, unvaccinated children. Although several biotypes of H. parainfluenzae produce indole and urease, H. parainfluenzae does not require X factor for growth. H. ducreyi requires X factor, but not V factor. A. (H.) aphrophilus does not require either X factor or V factor for growth."
+  },
+  {
+    "id": 1408,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "The ALA test (for porphyrins) is a confirmatory procedure for which test used for identification of Haemophilus species?",
+    "options": [
+      "X factor requirement",
+      "V factor requirement",
+      "Urease production",
+      "Indole production"
+    ],
+    "answer": "A",
+    "explanation": "The X factor requirement for growth is the cause of many inaccuracies when identifying Haemophilus spp. requiring this factor. False-negative results have been attributed to the presence of small amounts of hemin in the basal media, or X factor carryover from colonies transferred from primary media containing blood. The ALA test determines the ability of an organism to synthesize protoporphyrin intermediates in the biosynthetic pathway to hemin from the precursor compound Δ-ALA. Haemophilus species that need exogenous X factor to grow are unable to synthesize protoporphyrin from Δ-ALA and are negative for the ALA test. These include H. influenzae, H. haemolyticus, H. aegyptius, and H. ducreyi."
+  },
+  {
+    "id": 1409,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "An older woman who cared for several domestic cats was hospitalized with suspected cat scratch disease (CSD). Blood cultures appeared negative, but after several days, a small, slightly curved pleomorphic gram-negative bacillus grew on BHI agar (with 5% horse or rabbit blood). Other biochemical testing gave negative results. What is the most likely identification?",
+    "options": [
+      "Bartonella spp.",
+      "Brucella spp.",
+      "Kingella spp.",
+      "Haemophilus spp."
+    ],
+    "answer": "A",
+    "explanation": "Bartonella spp., frequently the cause of zoonoses infections, are difficult to grow on primary culture media because they are facultative intracellular organisms. Bartonella henselae is the organism found in domestic cats, the main reservoir. When CSD is suspected from the patient’s history, blood cultures should be smeared and Gram staining performed. Bartonella spp. are biochemically inert—that is, they are negative for oxidase, catalase, indole, and urease tests. Therefore, commercial identification systems, DNA amplification for various genes, and indirect immunofluorescence assays (IFAs) are used to identify these organisms."
+  },
+  {
+    "id": 1410,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "A 5-year-old nonimmunized male with a persistent cough, fever, and flulike symptoms was admitted to the hospital. Nasopharyngeal swabs were cultured on 15% blood, chocolate, Bordet-Gengou, and Regan-Lowe (with 10% charcoal) agars. All media grew a gram-negative coccobacillus after 3 days incubation. Carbohydrate and biochemical tests gave negative results. What is the most likely identification?",
+    "options": [
+      "Haemophilus influenza",
+      "Bordetella pertussis",
+      "Haemophilus parainfluenzae",
+      "Bordetella bronchiseptica"
+    ],
+    "answer": "B",
+    "explanation": "B. pertussis, the cause of whooping cough, is highly contagious during the 5- to 10- day period after acquisition. The incidence of whooping cough is greater in nonimmunized individuals, and therefore, is higher in children ages less than 1 year. B. bronchiseptica is only rarely found in humans, but may cause respiratory disease in animals. Unlike B. pertussis it is positive for nitrite, urease, and motility. A direct identification by DFA using polyclonal antibody to detect B. pertussis in smears from nasopharyngeal material is the quickest method and less costly compared with PCR."
+  },
+  {
+    "id": 1411,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "A 29-year-old male who often hunted rabbits and spent a lot of time in the woods was admitted to the hospital with skin ulcers on his upper extremities. At 48 hours, a small coccobacillus was recovered only from the aerobic blood culture bottle. The organism stained poorly with Gram stain but did stain with acridine orange. Cultures taken from the ulcers did not grow on primary media. What is the most likely identification?",
+    "options": [
+      "Pseudomonas aeruginosa",
+      "Pseudomonas fluorescens",
+      "Chryseobacterium spp.",
+      "Francisella tularensis"
+    ],
+    "answer": "D",
+    "explanation": "Persons handling samples suspected of containing F. tularensis must wear gloves and use a biological safety cabinet (follow biosafety Level [BSL]-2 controls). For cultures, BSL-3 controls must be followed. Tularemia (rabbit fever or deer fly fever) is one of the most common laboratory-acquired infections, and it is recommended that specimens be sent to a reference laboratory for identification and serological testing. F. tularensis requires cysteine and cystine to grow. It may grow on chocolate agar supplemented with IsoVitaleX and also on charcoal yeast extract agar used to isolate Legionellae."
+  },
+  {
+    "id": 1412,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "A neonate was readmitted to the hospital with a diagnosis of meningitis. CSF revealed gram-negative straight rods. At 24 hours, the organism grew on 5% sheep blood and chocolate agars displaying a yellow pigment. On MacConkey agar, it appeared as an NLF. Colonies were oxidase, DNase, and gelatinase positive, and oxidized glucose and mannitol. What is the most likely identification?",
+    "options": [
+      "Haemophilus influenza",
+      "Elizabethkingia (formerly Chryseobacterium) meningosepticum",
+      "Stenotrophomonas maltophilia",
+      "Acinetobacter spp."
+    ],
+    "answer": "B",
+    "explanation": "Elizabethkingia (formerly Chryseobacterium) meningosepticum can cause septicemia and meningitis in neonates and immunocompromised adults. The ability to encapsulate, produce proteases, and survive in chlorinated tap water are factors that contribute to hospital-acquired infections with this bacterium."
+  },
+  {
+    "id": 1413,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "A 46-year-old dog warden was admitted to the hospital with several puncture bite wounds encountered while wrangling a stray dog. Culture at 48 hours produced small yellow colonies on 5% sheep blood and chocolate agars in 10% CO2, but no growth on MacConkey agar. Gram staining showed gram-negative curved, fusiform rods. Colonies were oxidase and catalase positive. What is the most likely identification?",
+    "options": [
+      "Capnocytophaga canimorsus",
+      "Francisella tularensis",
+      "Legionella pneumophila",
+      "Pseudomonas aeruginosa"
+    ],
+    "answer": "A",
+    "explanation": "C. canimorsus are part of the oral flora of dogs. The organisms require at least 5% CO2 for growth and grow slowly on blood and chocolate agars. Colonies can grow in 48 hours if cultured in high CO2 on BHI agar with 5% sheep blood."
+  },
+  {
+    "id": 1414,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "The AACEK (formerly HACEK) group of organisms consisting of Aggregatibacter (Haemophilus) aphrophilus, Actinobacillus actinomycetemcomitans, Cardiobacterium hominis, Eikenella corrodens, and Kingella spp.) are known by this acronym to denote which type of infection?",
+    "options": [
+      "Urinary tract infection",
+      "Subacute bacterial endocarditis",
+      "Pharyngitis",
+      "Tonsillitis"
+    ],
+    "answer": "B",
+    "explanation": "Blood cultures growing small, gram-negative rods should alert the microbiologist to the possibility of infection with one of the five AACEK (formerly HACEK) organisms. Although responsible for less than 5% of bacterial endocarditis overall, greater than 50% of endocarditis cases caused by gram-negative rods result from one of them."
+  },
+  {
+    "id": 1415,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "A suspected case of Legionnaires disease was noted on the request form for a culture and sensitivity ordered on a sputum sample. The patient was a 70-year-old male, who presented with a positive serological test result for Legionella spp. What is the most efficient way to confirm the infection using the submitted sample?",
+    "options": [
+      "Culture the sputum on MacConkey agar",
+      "Gram stain of the sputum",
+      "Acid-fast staining",
+      "Direct immunofluorescent microscopy"
+    ],
+    "answer": "D",
+    "explanation": "Legionella spp. stain poorly, if at all, with Gram stain. Legionella pneumophilia is not acid fast, although L. micdadei, which accounts for a small percentage of Legionella pneumonia infections, is acid-fast positive. Specimens suspected of containing Legionella spp. should be handled in a Class II biological safety cabinet. Legionella spp. require buffered charcoal–yeast extract (BCYE) agar for growth and will not grow on MacConkey agar. Because culture can take up to 10 days, rapid diagnosis by direct immunofluorescence (DIF) and DNA amplification are preferred. Direct fluorescent antibody (DFA) tests are not as sensitive as culture or PCR but are specific and can be used to rapidly confirm a positive serological test, which may be positive in the absence of disease. MALDI-TOF MS can be used to identify isolates, but this method cannot distinguish serotypes. PCR methods using respiratory specimens directly, (without culture for the identification of Legionella spp.) are 99% specific and 85% sensitive."
+  },
+  {
+    "id": 1416,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Gastric biopsy material was obtained from a 35-year-old male. A suspected case of H. pylori could presumptively be identified and then ultimately confirmed by which of the following methods?",
+    "options": [
+      "Urea broth test and polymerase chain reaction",
+      "Gram staining and culture",
+      "Acid-fast staining and culture",
+      "Giemsa staining and culture"
+    ],
+    "answer": "A",
+    "explanation": "Tissue specimens are immersed in urea broth or placed in urea agar. A positive test indicates the presence of urease produced by H. pylori. Another method is the urea breath test, which is less invasive."
+  },
+  {
+    "id": 1417,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "Which acronym is used in reference to the slow-growing group of gram-negative bacteria indicated in subacute bacterial endocarditis?",
+    "options": [
+      "HLACK",
+      "AACEK",
+      "ANBBC",
+      "NBCCBS"
+    ],
+    "answer": "B",
+    "explanation": "AACEK (formerly HACEK) denotes the following slow-growing gram-negative bacilli causing subacute bacterial endocarditis: Aggregatibacter aphrophilus; Aggregatibacter actinomycetemcomitans; Cardiobacterium hominis; Eikenella corrodens; and Kingella kingae."
+  },
+  {
+    "id": 1418,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "A 20-year-old male presented with soft chancres in the genital area and swollen lymph nodes. A culture specimen was taken but failed to grow after 4 days on chocolate agar, sheep blood agar, and MTM agar. Gram staining showed small, pleomorphic gram- negative rods. What is the most likely presumptive identification?",
+    "options": [
+      "Neisseria gonorrheae",
+      "Haemophilus ducreyi",
+      "Haemophilus influenzae",
+      "Moraxella spp."
+    ],
+    "answer": "B",
+    "explanation": "H. ducreyi may take up to 7 days to grow on chocolate agar (requiring X factor for growth) and preferably at 33°C with high humidity. Testing for chancroid disease requires specialized media."
+  },
+  {
+    "id": 1419,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "A 7-year-old female became ill after eating a chicken sandwich from a fast-food restaurant. After 24 hours of gastroenteritis, a stool swab was obtained for culture, with normal fecal flora growing on Mac and XLD agars at 18 hours. Furthermore, growth was observed on Camp-BA at 48 hours (at both 42°C and 37°C incubation). Which test(s) differentiate C. jejuni subsp. doylei from C. jejuni subsp. jejuni because both grow at 37°C and 42°C?",
+    "options": [
+      "Urease",
+      "Hippurate hydrolysis",
+      "Cephalothin and nalidixic acid antibiotic disks",
+      "Growth at 25°C"
+    ],
+    "answer": "C",
+    "explanation": "To separate C. jejuni subsp. jejuni from C. jejuni subsp. doylei (both are positive for hippurate hydrolysis and grow at 37°C and 42°C), it is best to use cephalothin (30-µg disk) and nalidixic acid (30-µg disk) antibiotic testing. C. jejuni subsp. jejuni are resistant to cephalothin and susceptible to nalidixic acid. C. jejuni subsp. doylei are susceptible to both disks."
+  },
+  {
+    "id": 1420,
+    "section": "Miscellaneous and Fastidious Gram-Negative Rods",
+    "chapter": "Microbiology",
+    "question": "A suspected B. pertussis diagnosis relies on symptoms and growth of the organism on Regan-Lowe agar or Bordet-Gengou agar (displaying small, shiny colonies resembling mercury droplets), and the colonies take several days to grow. The most reliable serologic identification is with which method?",
+    "options": [
+      "Enzyme-linked immunosorbent assay (ELISA) using paired samples",
+      "Agglutination",
+      "Complement fixation",
+      "Enzyme immunoassay"
+    ],
+    "answer": "A",
+    "explanation": "B. pertussis produces a virulence factor, pertussis toxin (PT). The organism attaches to the respiratory ciliated epithelial cells of the upper respiratory tract, causing coughing and irritation. The recommended method for identification of the toxin in serum is by ELISA using paired samples of acute and convalescent sera. PCR on nasopharyngeal swabs as well as DFA tests are available. MALDI-TOF MS can also be used successfully for identification."
+  },
+  {
+    "id": 1421,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "The test used most often to separate Staphylococcus and Micrococcus spp. from Streptococcus spp. is:",
+    "options": [
+      "Bacitracin",
+      "Catalase",
+      "Hemolysis pattern",
+      "All of these options"
+    ],
+    "answer": "B",
+    "explanation": "The catalase test (utilizing a 3% hydrogen peroxide [H2O2] solution stored in a brown bottle under refrigeration) is positive for the Staphylococcus and Micrococcus spp. Members of the Streptococcaceae family are negative. {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "",
+            "Staphylococcus spp.",
+            "Micrococcus spp."
+          ],
+          [
+            "Open tube (oxidation)",
+            "+",
+            "+"
+          ],
+          [
+            "Closed tube (fermentation)",
+            "+",
+            "Neg"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1422,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Micrococcus and Staphylococcus spp. are differentiated by which test(s)?",
+    "options": [
+      "Fermentation of glucose (OF tube)",
+      "Catalase test",
+      "Gram stain",
+      "All of these options"
+    ],
+    "answer": "A",
+    "explanation": "Both micrococci and staphylococci are catalase-positive and gram-positive cocci. On direct smears, they both appear as pairs, short chains (resembling Streptococcus spp.), or clusters. However, the micrococci fail to produce acid from glucose under anaerobic conditions. The OF tube reactions are provided in the table above."
+  },
+  {
+    "id": 1423,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Lysostaphin is used to differentiate Staphylococcus from which other gram-positive, catalase-positive organisms?",
+    "options": [
+      "Streptococcus",
+      "Aerococcus",
+      "Micrococcus",
+      "Enterococcus"
+    ],
+    "answer": "C",
+    "explanation": "Lysostaphin is an endopeptidase that cleaves the glycine-rich pentapeptide cross- bridges in the staphylococcal cell wall peptidoglycan. The susceptibility of the staphylococci to lysostaphin (less than 200 μg/mL) is used to differentiate them from the micrococci. Staphylococci are susceptible and show a 10- to 16-mm zone of inhibition, whereas micrococci are not inhibited and will grow up to the disk."
+  },
+  {
+    "id": 1424,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Which of the following tests is used routinely to identify S. aureus?",
+    "options": [
+      "Slide coagulase test",
+      "Tube coagulase test",
+      "Latex agglutination",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "The slide coagulase test using rabbit plasma with ethylenediaminetetraacetic acid (EDTA) detects bound coagulase or “clumping factor” on the surface of the cell wall, which reacts with the fibrinogen in the plasma. This test is not positive for all strains of S. aureus, and a negative result must be confirmed by the tube method for detecting “free coagulase” or extracellular coagulase. The tube test is usually positive within 4 hours at 35°C; however, a negative result must then be incubated at room temperature for the remainder of 18 to 24 hours. Some strains produce coagulase slowly or produce fibrinolysin, which dissolves the clot at 35°C. Latex agglutination procedures utilize fibrinogen and immunoglobulin G (IgG)-coated latex beads that detect protein A on the staphylococcal cell wall."
+  },
+  {
+    "id": 1425,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Which of the following enzymes contribute to the virulence of S. aureus?",
+    "options": [
+      "Urease and lecithinase",
+      "Hyaluronidase and β-lactamase",
+      "Lecithinase and catalase",
+      "Cytochrome oxidase"
+    ],
+    "answer": "B",
+    "explanation": "In addition to coagulase, the virulence of S. aureus is attributed to hyaluronidase, which damages the intercellular matrix (basement membrane) of tissues. β-Lactamase– producing strains are able to inactivate penicillin and ampicillin, making the organism resistant to these antibiotics. Lecithinase is not produced by S. aureus, and urease is not a virulence factor."
+  },
+  {
+    "id": 1426,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Toxic shock syndrome is attributed to infection with:",
+    "options": [
+      "Staphylococcus epidermidis",
+      "Staphylococcus hominis",
+      "Staphylococcus aureus",
+      "Staphylococcus saprophyticus"
+    ],
+    "answer": "C",
+    "explanation": "S. aureus is the organism most often recovered from female patients. These strains produce toxic shock syndrome toxin 1 (TSST-1). Toxic shock syndrome is attributed to the use of certain highly absorbent tampons by menstruating females. The toxin is also recovered from sites other than the genital area and produces fever and life- threatening systemic damage as well as shock."
+  },
+  {
+    "id": 1427,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Which Staphylococcus species, in addition to S. aureus, also produces coagulase using the tube coagulase test?",
+    "options": [
+      "Staphylococcus intermedius",
+      "Staphylococcus saprophyticus",
+      "Staphylococcus hominis",
+      "Staphylococcus haemolyticus"
+    ],
+    "answer": "A",
+    "explanation": "S. intermedius may be falsely identified as S. aureus in dog bite wounds because it infects mammals and certain birds, but not usually humans. Cases involving humans result from animal bites and are most often seen in persons who work closely with animals. S. intermedius may give a positive latex agglutination coagulase test."
+  },
+  {
+    "id": 1428,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "S. epidermidis (coagulase negative) is recovered from which of the following sources?",
+    "options": [
+      "Prosthetic heart valves",
+      "Intravenous catheters",
+      "Urinary tract",
+      "All of the above"
+    ],
+    "answer": "D",
+    "explanation": "S. epidermidis represents 50% to 80% of all coagulase-negative Staphylococcus spp. recovered from numerous clinical specimens. It is of special concern in nosocomial infections because of its high resistance to antibiotics."
+  },
+  {
+    "id": 1429,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Slime production is associated with which Staphylococcus species?",
+    "options": [
+      "Staphylococcus aureus",
+      "Staphylococcus epidermidis",
+      "Staphylococcus intermedius",
+      "Staphylococcus saprophyticus"
+    ],
+    "answer": "B",
+    "explanation": "S. epidermidis produces an extracellular slime (exopolysaccharide or biofilm) that enhances the adhesion of these organisms to indwelling plastic catheters. The slime production is considered a virulence factor and is associated with infections from prostheses."
+  },
+  {
+    "id": 1430,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Strains of Staphylococcus species resistant to the β-lactam antibiotics by standardized disk diffusion and broth microdilution susceptibility methods are called:",
+    "options": [
+      "Heteroresistant",
+      "Bacteriophage group 52A",
+      "Cross-resistant",
+      "Plasmid-altered"
+    ],
+    "answer": "A",
+    "explanation": "Methicillin-resistant S. aureus (MRSA) and methicillin-resistant S. epidermidis (MRSE) are called heteroresistant. This refers to two subpopulations in a culture, one that is susceptible and the other that is resistant to antibiotic(s). The resistant population grows more slowly than the susceptible one and can be overlooked. Therefore, the more resistant subpopulation should be promoted growthwise by using a neutral pH (7.0–7.4), cooler incubation temperatures (30°C–35°C), the addition of 2% to 4% NaCl, and incubation up to 48 hours. For identification of MRSA, molecular assays (using amplified DNA) and MALDI-TOF MS (used directly from blood cultures) have proven successful."
+  },
+  {
+    "id": 1431,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "S. saprophyticus is best differentiated from S. epidermidis by its resistance to:",
+    "options": [
+      "5 µg of lysostaphin",
+      "5 µg of novobiocin",
+      "10 units of penicillin",
+      "0.04 unit of bacitracin"
+    ],
+    "answer": "B",
+    "explanation": "S. saprophyticus is coagulase negative and resistant to 5 µg of novobiocin. When using the standardized Kirby-Bauer sensitivity procedure, a 6- to 12-mm zone of growth inhibition is considered resistant. Susceptible strains measure 16 to 27 mm (inhibition) zones."
+  },
+  {
+    "id": 1432,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "The following results were observed by using a tube coagulase test: Coagulase at 4 hours = + Coagulase at 18 hours = Neg DNase = + Novobiocin = Sensitive (16-mm zone) Hemolysis on blood agar = β Mannitol salt plate = + (acid production) What is the most probable identification?",
+    "options": [
+      "Staphylococcus saprophyticus",
+      "Staphylococcus epidermidis",
+      "Staphylococcus aureus",
+      "Staphylococcus hominis"
+    ],
+    "answer": "C",
+    "explanation": "S. aureus can produce fibrinolysins that dissolve the clot formed by the coagulase enzyme. The tube method calls for an incubation of 4 hours at 35°C to 37°C and 18 to 24 hours at room temperature. Both must be negative to interpret the result as coagulase negative. This organism is coagulase positive and, therefore, identified as S. aureus."
+  },
+  {
+    "id": 1433,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "S. aureus recovered from a wound culture gave the following antibiotic sensitivity pattern by the standardized Kirby-Bauer method (S = sensitive; R = resistant): Penicillin = R Ampicillin = S Cephalothin = R Cefoxitin = R Vancomycin = S Methicillin = R Which is the drug of choice for treating this infection?",
+    "options": [
+      "Penicillin",
+      "Ampicillin",
+      "Cephalothin",
+      "Vancomycin"
+    ],
+    "answer": "D",
+    "explanation": "Vancomycin, along with rifampin, is used for strains of S. aureus that are resistant to the β-lactams. MRSA strains pose problems when reading the zone sizes for these strains. Their heteroresistance results in a film of growth consisting of very small colonies formed within the defined inhibition zone surrounding the antibiotic disk. Initially, this appears as a mixed culture or contaminant."
+  },
+  {
+    "id": 1434,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Which of the following tests should be used to following a coagulase-positive tube test (free coagulase) to separate S. aureus from S. intermedius? The culture specimen was obtained from a patient who suffered a dog-bite wound.",
+    "options": [
+      "Acetoin",
+      "Catalase",
+      "Slide coagulase",
+      "Urease"
+    ],
+    "answer": "A",
+    "explanation": "The production of acetoin by S. aureus from glucose or pyruvate differentiates it from S. intermedius, which is also coagulase positive (positive for clumping factor and free coagulase or tube test). This test is the Voges-Proskauer (VP) test. Acetoin production is detected by addition of 40% KOH and 1% α-naphthol to the VP test broth after 48 hours of incubation. A distinct pink color within 10 minutes denotes a positive test result."
+  },
+  {
+    "id": 1435,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "A gram-positive coccus recovered from a wound ulcer from a 31-year-old patient with diabetes showed pale yellow, creamy, β-hemolytic colonies on blood agar. Given the following test results, what is the most likely identification? Catalase = + Glucose OF: Positive open tube, negative sealed tube Mannitol salt = Neg Slide coagulase = Neg",
+    "options": [
+      "Staphylococcus aureus",
+      "Staphylococcus epidermidis",
+      "Micrococcus spp.",
+      "Streptococcus spp."
+    ],
+    "answer": "C",
+    "explanation": "Micrococcus spp. utilize glucose oxidatively but not under anaerobic conditions (sealed tube). Staphylococcus spp. utilize glucose oxidatively and anaerobically. The catalase differentiates the Micrococcaceae family (positive) from the Streptococcaceae family (negative)."
+  },
+  {
+    "id": 1436,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Urine cultured from the catheter of an 18-year-old female patient produced more than 100,000 col/mL on a CNA plate. Colonies were catalase positive, coagulase negative by the latex agglutination slide method as well as the tube coagulase test. The best single test for identification is:",
+    "options": [
+      "Lactose fermentation",
+      "Urease",
+      "Catalase",
+      "Novobiocin susceptibility"
+    ],
+    "answer": "D",
+    "explanation": "S. epidermidis and S. saprophyticus are the two possibilities because they are both catalase positive, coagulase negative, urease positive, and ferment lactose. Novobiocin susceptibility is the test of choice for differentiating these two species. S. epidermidis is sensitive, but S. saprophyticus is resistant to 5 μg of novobiocin. UTIs caused by S. saprophyticus are often seen in cultures from sexually active young females."
+  },
+  {
+    "id": 1437,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "A Staphylococcus spp. recovered from a wound (cellulitis) was negative for the slide coagulase test (clumping factor) and negative for novobiocin resistance. The next test(s) needed for identification is (are):",
+    "options": [
+      "Tube coagulase test",
+      "β-Hemolysis on blood agar",
+      "Mannitol salt agar plate",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "S. aureus is novobiocin sensitive and cannot be ruled out by a negative clumping factor test. Most S. aureus produce β-hemolysis on sheep blood agar plates and are mannitol salt positive (produce acid and are not inhibited by the high salt concentration). The tube test (to detect free coagulase) should be performed because the slide test was negative."
+  },
+  {
+    "id": 1438,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Furazolidone (Furoxone) susceptibility is a test used to differentiate:",
+    "options": [
+      "Staphylococcus spp. from Micrococcus spp.",
+      "Streptococcus spp. from Staphylococcus spp.",
+      "Staphylococcus spp. from Pseudomonas spp.",
+      "Streptococcus spp. from Micrococcus spp."
+    ],
+    "answer": "A",
+    "explanation": "Staphylococci are susceptible to furazolidone, giving zones of inhibition that are 15 mm or greater. Micrococcus spp. are resistant to furazolidone, giving zones of 6 to 9 mm. The test is performed as a disk susceptibility procedure using a blood agar plate."
+  },
+  {
+    "id": 1439,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Bacitracin resistance (0.04 unit) is used to differentiate:",
+    "options": [
+      "Micrococcus spp. from Staphylococcus spp.",
+      "Staphylococcus spp. from Neisseria spp.",
+      "Planococcus spp. from Micrococcus spp.",
+      "Staphylococcus spp. from Streptococcus spp."
+    ],
+    "answer": "A",
+    "explanation": "A bacitracin disk (0.04 unit) is used to identify group A β-hemolytic streptococci, but it will also differentiate catalase-positive organisms. A zone of 10 mm or greater is considered susceptible. The Staphylococcus species are resistant and grow up to the disk, whereas Micrococcus species are sensitive."
+  },
+  {
+    "id": 1440,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Which of the following tests will rapidly differentiate micrococci from staphylococci?",
+    "options": [
+      "Catalase",
+      "Coagulase",
+      "Modified oxidase",
+      "Novobiocin susceptibility"
+    ],
+    "answer": "C",
+    "explanation": "The modified oxidase test (Microdase) is used to rapidly identify catalase-positive gram-positive cocci as Micrococcus spp. (positive) or Staphylococcus spp. (negative). Filter paper disks that are saturated with oxidase reagent (tetramethyl-p- phenylenediamine in dimethylsulfoxide) are used. A colony of the isolate is rubbed onto the paper. Oxidase-positive organisms produce a purple color within 30 seconds or a blue color within 2 minutes if using the commercial product Microdase."
+  },
+  {
+    "id": 1441,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Streptococcus species exhibit which of the following properties?",
+    "options": [
+      "Aerobic, oxidase positive, and catalase positive",
+      "Facultative anaerobic, oxidase negative, catalase negative",
+      "Facultative anaerobic, β-hemolytic, catalase positive",
+      "May be α-, β-, or γ-hemolytic, catalase positive"
+    ],
+    "answer": "B",
+    "explanation": "Streptococcus spp. are facultative anaerobes that grow aerobically as well and are oxidase and catalase negative. To demonstrate streptolysin O on blood agar, it is best to stab the agar to create anaerobiosis because streptolysin O is oxygen labile."
+  },
+  {
+    "id": 1442,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Which group of β-hemolytic streptococci is associated with erythrogenic toxin production?",
+    "options": [
+      "Group A",
+      "Group B",
+      "Group C",
+      "Group G"
+    ],
+    "answer": "A",
+    "explanation": "Group A β-hemolytic streptococci are the cause of scarlet fever, and some strains produce toxins (pyrogenic exotoxins A, B, and C) that cause a scarlatiniform rash. Streptococcus pyogenes is the cause of puerperal fever, streptococcal toxic shock, rheumatic fever, and a severe “flesh-eating” bacterial infection."
+  },
+  {
+    "id": 1443,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "A fourfold rise in titer of which antibody is the best indicator of a recent infection with group A β-hemolytic streptococci?",
+    "options": [
+      "Anti-streptolysin O",
+      "Anti-streptolysin S",
+      "Anti-A",
+      "Anti-B"
+    ],
+    "answer": "A",
+    "explanation": "The antistreptolysin O (ASO) titer is used to indicate a recent infection with group A β-hemolytic streptococci. Streptolysin O may also be produced by some strains of groups C and G streptococci."
+  },
+  {
+    "id": 1444,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "The L-pyrrolidonyl-β-napthylamide (PYR), hippurate, and CAMP tests can be used for the presumptive identification of which group of β-hemolytic streptococci?",
+    "options": [
+      "Groups A and B",
+      "Groups C and D",
+      "Group C",
+      "Group F"
+    ],
+    "answer": "A",
+    "explanation": "The bacitracin A disk test is no longer used, but the PYR, hippurate hydrolysis, and CAMP tests are used for the presumptive identification of the β-hemolytic streptococci. In addition to group A, groups C, F, and G are also β-hemolytic and give a positive test result for bacitracin (a zone of inhibition of any size). Therefore, a positive bacitracin A disc test does not confirm the presence of group A β-hemolytic streptococci. Group A strep test positive for PYR but negative for hippurate and the CAMP test. Group B streptococci test negative in the PYR test but positive in the hippurate and CAMP tests. Groups C, G and F test negative in all three tests."
+  },
+  {
+    "id": 1445,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "To diagnose streptococcal pharyngitis, primary plates of blood agar and blood agar with sulfamethoxazole-trimethoprim (SXT) are used to differentiate which streptococci?",
+    "options": [
+      "α-Hemolytic streptococci",
+      "β-Hemolytic streptococci",
+      "Streptococcus pneumoniae",
+      "Enterococcus faecalis"
+    ],
+    "answer": "B",
+    "explanation": "SXT is inhibitory to most streptococci except S. pyogenes and Streptococcus agalactiae. For this reason, SXT is used in a commercially available streptococcal selective agar (SSA) as a primary plating agar for the detection of group A streptococci. Latex agglutination test kits are used for the rapid detection of β- hemolytic streptococci Lancefield groups A, B, C, F, and G."
+  },
+  {
+    "id": 1446,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "β-Hemolytic streptococci, not of group A or B, usually exhibit which of the following reactions?",
+    "options": [
+      "Bacitracin susceptible; SXT resistant",
+      "Bacitracin resistant; SXT resistant",
+      "Bacitracin resistant; SXT susceptible",
+      "Bacitracin susceptible or resistant; SXT susceptible"
+    ],
+    "answer": "D",
+    "explanation": "Streptococci that are not group A or B may be either resistant or susceptible to bacitracin but are usually susceptible to SXT. {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "β-Hemolytic Streptococci",
+            "Bacitracin",
+            "Sulfamethoxazole-Trimethoprim"
+          ],
+          [
+            "Group A",
+            "Susceptible",
+            "Resistant"
+          ],
+          [
+            "Group B",
+            "Resistant",
+            "Resistant"
+          ],
+          [
+            "Non-A, non-B",
+            "Susceptible or resistant",
+            "Susceptible"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1447,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "A false-positive CAMP test result for the presumptive identification of group B streptococci may occur if the plate is incubated in a(n):",
+    "options": [
+      "Candle jar or CO2 incubator",
+      "Ambient air incubator",
+      "35°C incubator",
+      "37°C incubator"
+    ],
+    "answer": "A",
+    "explanation": "The CAMP test (described by Christie, Atkins, and Munch-Petersen in 1944) refers to a hemolytic interaction (flaming arrowhead) that is seen on a blood agar plate between the β-hemolysins produced by most strains of S. aureus and an extracellular protein produced by both hemolytic and nonhemolytic isolates of group B streptococci. In a CAMP test, the plate must be placed in an ambient air incubator at 35°C to 37°C. Group A streptococci may be CAMP positive if the plate is incubated in a candle jar, high CO2 atmosphere, or anaerobically."
+  },
+  {
+    "id": 1448,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Which test is used to differentiate α-hemolytic streptococci from the Enterococcus spp. And S. bovis growing on blood agar?",
+    "options": [
+      "Bacitracin disk test",
+      "CAMP test",
+      "Hippurate hydrolysis test",
+      "Bile esculin test"
+    ],
+    "answer": "D",
+    "explanation": "The bile esculin test differentiates those bacteria that can hydrolyze esculin and also grow in the presence of 4% bile salts or 40% bile. The bile esculin slant or plate is inoculated on the surface and incubated for 24 to 48 hours in a non-CO2 incubator. Group D streptococci (enterococci and nonenterococci) are positive, causing blackening of half or more of the slant within 48 hours. Viridans streptococci are negative (do not grow or hydrolyze esculin)."
+  },
+  {
+    "id": 1449,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "The bile solubility test causes the lysis of:",
+    "options": [
+      "Streptococcus bovis colonies on a blood agar plate",
+      "Streptococcus pneumoniae colonies on a blood agar plate",
+      "Group A streptococci in broth culture",
+      "Group B streptococci in broth culture"
+    ],
+    "answer": "B",
+    "explanation": "The bile solubility test can be performed directly by dropping 2% sodium deoxycholate onto a few well-isolated colonies of S. pneumoniae. The bile salts speed up the autolysis observed in pneumococcal cultures. The colonies lyse and disappear when incubated at 35°C for 30 minutes, leaving a partially hemolyzed area on the plate. The same phenomenon can be seen using a broth culture; addition of 10% deoxycholate to broth containing S. pneumoniae results in visible clearing of the suspension after incubation at 35°C for 3 hours."
+  },
+  {
+    "id": 1450,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "S. pneumoniae and the α-hemolytic viridans streptococci can be differentiated by which test?",
+    "options": [
+      "Optochin P disk test, 5 µg/mL or less",
+      "Bacitracin A disk test, 0.04 unit",
+      "CAMP test",
+      "Bile esculin test"
+    ],
+    "answer": "A",
+    "explanation": "Optochin (P disk) at a concentration of 5 μg/mL or less inhibits the growth of S. pneumoniae but not viridans streptococci. However, optochin at a concentration in excess of 5 μg/mL inhibits viridans streptococci as well if incubated under 5% CO2 at 35°C for 18 to 24 hours. A zone of inhibition of 14 mm or more around the 6-mm disk is considered a presumptive identification of S. pneumoniae. A questionable zone size should be confirmed by performing a bile solubility test."
+  },
+  {
+    "id": 1451,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "The salt tolerance test (6.5% salt broth) is used to presumptively identify:",
+    "options": [
+      "Streptococcus pneumoniae",
+      "Streptococcus bovis",
+      "Viridans streptococci",
+      "Enterococcus faecalis"
+    ],
+    "answer": "D",
+    "explanation": "E. faecalis will grow in 6.5% salt, and the nonenterococci (S. bovis and S. equinus) will not. This test distinguishes the enterococci group from S. bovis and S. equinus (nonenterococci group). Both groups grow on bile esculin agar. Viridans streptococci are negative for 6.5% salt growth and will not grow on bile esculin agar."
+  },
+  {
+    "id": 1452,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "In addition to E. faecalis, which other streptococci will grow in 6.5% salt broth?",
+    "options": [
+      "Group A streptococci",
+      "Group B streptococci",
+      "Streptococcus pneumoniae",
+      "Streptococcus bovis"
+    ],
+    "answer": "B",
+    "explanation": "Approximately 80% of group B streptococci are capable of growing in 6.5% salt broth; however, they do not hydrolyze esculin or grow in media containing 4% bile salts."
+  },
+  {
+    "id": 1453,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "A spinal fluid specimen and blood cultures were obtained from a 1-year-old infant with a respiratory infection. Growth on blood agar showed nonhemolytic, streptococci. The Quellung test is used to identify which of the following Streptococcus species?",
+    "options": [
+      "Streptococcus pyogenes",
+      "Streptococcus agalactiae",
+      "Viridans streptococci",
+      "Streptococcus pneumoniae"
+    ],
+    "answer": "D",
+    "explanation": "A precipitin reaction seen microscopically with methylene blue stain (microprecipitin reaction) occurs between the carbohydrate of the capsule of S. pneumoniae and anticapsular antibody. The antibody may be type specific or polyvalent. Binding of antibodies to the bacteria causes the capsule to swell, identifying the organisms as S. pneumoniae. Antigen detection kits are used to identify S. pneumoniae recovered from CSF and blood cultures. S. pneumoniae is the cause of 95% of the bacterial pneumonias in unvaccinated children and the leading cause of bacterial meningitis."
+  },
+  {
+    "id": 1454,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "The PYR hydrolysis test is a presumptive test for which group of β-hemolytic streptococci?",
+    "options": [
+      "Group A and Enterococcus",
+      "Group A and B β-hemolytic streptococci",
+      "Non–group A or non–group B β-hemolytic streptococci",
+      "Streptococcus pneumoniae and Streptococcus bovis"
+    ],
+    "answer": "A",
+    "explanation": "The PYR hydrolysis test is highly specific for group A streptococci and Enterococcus spp. The test detects the pyrrolidonylarylamidase enzyme, which hydrolyzes PYR."
+  },
+  {
+    "id": 1455,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "A pure culture of β-hemolytic streptococci recovered from a leg wound ulcer gave the following reactions: CAMP test = Neg Hippurate hydrolysis = Neg Bile esculin = Neg 6.5% salt = Neg PYR = Neg Bacitracin = Resistant Optochin = Resistant SXT = Sensitive The most likely identification is:",
+    "options": [
+      "Group A streptococci",
+      "Group B streptococci",
+      "Enterococcus spp.",
+      "Non–group A, non–group B streptococci"
+    ],
+    "answer": "D",
+    "explanation": "The β-hemolytic streptococci—not of groups A or B—are sensitive to SXT and may be either sensitive or resistant to bacitracin. Groups A and B are both resistant to SXT. Group A and E. faecalis are PYR positive. E. faecalis is also positive for bile esculin and 6.5% salt broth. Latex agglutination tests identify β-hemolytic groups A, B, C, F, and G."
+  },
+  {
+    "id": 1456,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "β-Hemolytic streptococci, greater than 50,000 col/mL, were isolated from a urinary tract catheter urine specimen. Given the following reactions, what is the most likely identification? CAMP test = Neg Hippurate hydrolysis = ± Bile solubility = Neg 6.5% salt = + PYR = + Bile esculin = + SXT = Resistant Bacitracin = Resistant Optochin = Resistant Vancomycin = Resistant",
+    "options": [
+      "Group A streptococci",
+      "Group B streptococci",
+      "Enterococcus faecalis, Enterococcus faecium",
+      "Non–group A, non–group B streptococci"
+    ],
+    "answer": "C",
+    "explanation": "VRE (Vancomycin-Resistant Enterococcus) denotes E. faecalis and Enterococcus facium, which have shown resistance to most antimicrobials used to treat infections caused by gram-positive cocci (ampicillin, methicillin and other β-lactams) and therefore have mutated and now are resistant to vancomycin. Group A streptococci are sensitive to bacitracin and negative for bile esculin and 6.5% salt broth. Group B streptococci will grow in 6.5% salt broth but are negative for bile esculin and PYR. The non–group A, non–group B streptococci will not grow in 6.5% salt broth and are sensitive to SXT. E. faecalis is positive for bile esculin, 6.5% salt broth, and PYR."
+  },
+  {
+    "id": 1457,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Abiotrophia spp. or nutritionally variant streptococci (NVS) require specific thiol compounds, cysteine, or the active form (pyridoxal) of vitamin B6. Which of the following tests supplies these requirements for growth?",
+    "options": [
+      "CAMP test",
+      "Bacitracin susceptibility test",
+      "Bile solubility test",
+      "Staphylococcal cross-streak test"
+    ],
+    "answer": "D",
+    "explanation": "The staphylococcal streak, across the NVS inoculum, provides the nutrients needed. Very small colonies of NVS can be seen growing adjacent to the staphylococcal streak on the blood agar plate in a manner similar to the satellite phenomenon of Haemophilus spp. around S. aureus. NVS are normal flora of the oral cavity but may cause life-threatening infections when introduced into sterile areas (cause of endocarditis). Blood culture media will supply the necessary nutrients for their recovery."
+  },
+  {
+    "id": 1458,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Many β-hemolytic streptococci recovered from a wound were found to be penicillin resistant. Given the following results, what is the most likely identification? Bile esculin = + PYR = + 6.5% salt = + Hippurate hydrolysis = + Bile solubility = Neg SXT = Resistant",
+    "options": [
+      "Enterococcus faecalis",
+      "Streptococcus pneumoniae",
+      "Streptococcus bovis",
+      "Group B streptococci"
+    ],
+    "answer": "A",
+    "explanation": "E. faecalis is resistant to penicillin and ampicillin as well as some of the aminoglycoside antibiotics. Pneumococci, group B streptococci, and S. bovis are PYR negative."
+  },
+  {
+    "id": 1459,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Which two tests best differentiate α-hemolytic S. bovis from Streptococcus salivarius which is also α-hemolytic?",
+    "options": [
+      "Bile esculin and 6.5% salt broth",
+      "Starch hydrolysis and acid production from mannitol",
+      "Bacitracin and PYR",
+      "SXT susceptibility and PYR"
+    ],
+    "answer": "B",
+    "explanation": "S. bovis and S. salivarius are physiologically and biochemically similar. They are both PYR and 6.5% salt broth negative and bile esculin positive, but only S. bovis is positive for mannitol and starch reactions. See the following chart: {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "",
+            "Bacitracin",
+            "PYR",
+            "BE",
+            "6.5% Salt",
+            "Mannitol",
+            "Starch"
+          ],
+          [
+            "S. bovis",
+            "R",
+            "Neg",
+            "+",
+            "Neg",
+            "+",
+            "+"
+          ],
+          [
+            "S. salivarius",
+            "R",
+            "Neg",
+            "+",
+            "Neg",
+            "Neg",
+            "Neg"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1460,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Two blood cultures obtained from a newborn grew β-hemolytic streptococci with the following reactions: CAMP test = + Hippurate hydrolysis = + Bile solubility = Neg 6.5% salt = + Bacitracin = Resistant Bile esculin = Neg PYR = Neg SXT = Resistant Which is the most likely identification?",
+    "options": [
+      "Group A streptococci",
+      "Group B streptococci",
+      "Enterococcus faecalis",
+      "Non–group A, non–group B streptococci"
+    ],
+    "answer": "B",
+    "explanation": "Group B streptococci (S. agalactiae) are resistant to both bacitracin and SXT. Unlike group A and E. faecalis, the group B streptococci are negative for PYR. With some exceptions, group B streptococci will grow in 6.5% salt broth. Group B strep infections in newborns are the result of premature rupture of the mother’s membranes. The infection in a newborn happens within the first 5 days after birth and results in fever, sepsis, meningitis, and respiratory distress."
+  },
+  {
+    "id": 1461,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "MTM medium is used primarily for the selective recovery of which pathogenic Neisseria spp. organism from genital specimens?",
+    "options": [
+      "Neisseria gonorrhoeae",
+      "Neisseria lactamica",
+      "Neisseria sicca",
+      "Neisseria flavescens"
+    ],
+    "answer": "A",
+    "explanation": "Both N. gonorrhoeae and N. meningitidis grow selectively on MTM as a result of the addition of vancomycin and colistin, which inhibit gram-positive and gram-negative bacteria, respectively. Trimethoprim is added to inhibit swarming of Proteus spp. because a rectal swab may be used for culture. Nystatin and amphotericin B are used to prevent growth of yeasts and molds from vaginal specimens. N. lactamica will grow on MTM but is rarely involved in human infection."
+  },
+  {
+    "id": 1462,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Variation in colony types seen with fresh isolates of N. gonorrhoeae and sometimes with N. meningitidis are the result of:",
+    "options": [
+      "Multiple nutritional requirements",
+      "Pili on the cell surface",
+      "Use of a transparent medium",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "Upon subculture from a primary plate, various sizes and appearances of gonococci result from multiple nutritional requirements, such as arginine–hypoxanthine–uracil (AHU)–requiring strains. Colony size and coloration (or light reflection) are the basis of the Kellogg scheme (types T1 through T5). Types T1 and T2 have pili on the surface, whereas T3, T4, and T5 do not. Transparent media are not used routinely, but opaque and transparent colonial differences of the gonococci can be seen when using it."
+  },
+  {
+    "id": 1463,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Gram-negative diplococci recovered from an MTM plate and giving a positive oxidase test result can be presumptively identified as:",
+    "options": [
+      "Neisseria gonorrhoeae",
+      "Neisseria meningitidis",
+      "Neisseria lactamica",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "All of the listed Neisseria spp. grow on MTM and are oxidase positive. N. lactamica is a nonpathogenic component of normal throat flora resembling N. meningitidis, but it grows well on selective MTM agar. Presumptive identification of N. meningitidis or N. gonorrhoeae is stated only if the source of the specimen (i.e., urogenital or CSF) is given. The identification must be confirmed by further testing, such as carbohydrate utilization tests, DNA tests, or rapid latex slide agglutination tests."
+  },
+  {
+    "id": 1464,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Colonies growing on MTM and showing a 4+ reaction with the Superoxol test may be considered as a rapid presumptive test for:",
+    "options": [
+      "Neisseria gonorrhoeae",
+      "Neisseria meningitidis",
+      "Neisseria lactamica",
+      "Moraxella (Branhamella) catarrhalis"
+    ],
+    "answer": "A",
+    "explanation": "N. gonorrhoeae colonies recovered from selective MTM media give an immediate 4+ positive reaction (bubbling) when 30% H2O2 is added. The catalase test uses 3% H2O2. This is a presumptive test for N. gonorrhoeae. N. meningitidis and N. lactamica give a weak or delayed bubbling reaction. M. catarrhalis is catalase positive, whereas the Superoxol reactions are negative, weak, or delayed and it shows a variable growth pattern on MTM."
+  },
+  {
+    "id": 1465,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Nonpathogenic Moraxella spp. capable of growing on selective media for Neisseria can best be differentiated from pathogenic Neisseria spp. by which test?",
+    "options": [
+      "Catalase test",
+      "10-unit penicillin disk on blood agar",
+      "Oxidase test",
+      "Superoxol test"
+    ],
+    "answer": "B",
+    "explanation": "Moraxella spp. are oxidase and catalase positive, as are the gonococci. Neisseria spp. and M. catarrhalis will keep their typical coccal morphology after overnight incubation on blood agar with a 10-unit penicillin disk (CO2 incubation). Other Moraxella spp. form long filaments or long spindle-shaped cells when grown near a 10-unit penicillin disk."
+  },
+  {
+    "id": 1466,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "A Gram stain of a urethral discharge from a man showing extracellular and intracellular gram-negative diplococci within segmented neutrophils is a presumptive identification for:",
+    "options": [
+      "Neisseria gonorrhoeae",
+      "Neisseria meningitidis",
+      "Moraxella (Branhamella) catarrhalis",
+      "Neisseria lactamica"
+    ],
+    "answer": "A",
+    "explanation": "Gram staining of urethral discharge (in men only) that shows typical gonococcal cells in PMNs should be reported “presumptive N. gonorrhoeae, confirmation to follow.” With female patients, the normal vaginal flora contain gram-negative cocci and diplococci resembling gonococci, and therefore, no presumptive identification should be reported for N. gonorrhoeae from the vaginal Gram-stained smear."
+  },
+  {
+    "id": 1467,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "The β-galactosidase test aids in the identification of which Neisseria species?",
+    "options": [
+      "Neisseria lactamica",
+      "Neisseria meningitidis",
+      "Neisseria gonorrhoeae",
+      "Neisseria flavescens"
+    ],
+    "answer": "A",
+    "explanation": "N. lactamica utilizes lactose by producing the enzyme β-galactosidase. All other Neisseria spp. that grow on MTM media are lactose negative."
+  },
+  {
+    "id": 1468,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Cystine tryptic digest (CTA) media used for identification of Neisseria spp. should be inoculated and cultured in:",
+    "options": [
+      "A CO2 incubator at 35°C for 24 hours",
+      "A CO2 incubator at 42°C for up to 72 hours",
+      "A non-CO2 incubator at 35°C for up to 72 hours",
+      "An anaerobic incubator at 35°C for up to 72 hours"
+    ],
+    "answer": "C",
+    "explanation": "CTA agar with 1% carbohydrate and phenol red pH indicator added is used for the identification of Neisseria species. CTA carbohydrates must be placed in an ambient air incubator because a high CO2 concentration may reduce the pH, causing a false- positive (acid) result. The utilization of carbohydrates by some fastidious gonococcal strains may take up to 72 hours to produce a color change in the pH indicator is rarely used because identifications are done by rapid biochemical, immunologic, or enzymatic methods as well as with nonamplified DNA probes."
+  },
+  {
+    "id": 1469,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Culture on MTM media of a vaginal swab produced several colonies of gram-negative diplococci that were catalase and oxidase positive and Superoxol negative. Given the following carbohydrate reactions, select the most likely identification. Glucose = + Sucrose = Neg Lactose = + Maltose = + Fructose = Neg",
+    "options": [
+      "Neisseria gonorrhoeae",
+      "Neisseria sicca",
+      "Neisseria flavescens",
+      "Neisseria lactamica"
+    ],
+    "answer": "D",
+    "explanation": "N. lactamica is part of the normal vaginal and throat flora and is the only Neisseria species that grows on MTM that utilizes lactose. Other saprophytic Neisseria spp. may utilize lactose but do not grow on MTM media."
+  },
+  {
+    "id": 1470,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Sputum from a patient with pneumonia produced many colonies of gram-negative diplococci on a chocolate plate that were also present in fewer numbers on MTM after 48 hours. Given the following results, what is the most likely identification? Catalase = + Oxidase = + DNase = + Tributyrin hydrolysis = + Glucose = Neg Sucrose = Neg Lactose = Neg Maltose = Neg Fructose = Neg",
+    "options": [
+      "Moraxella catarrhalis",
+      "Neisseria flavescens",
+      "Neisseria sicca",
+      "Neisseria elongata"
+    ],
+    "answer": "A",
+    "explanation": "M. catarrhalis is part of the normal upper respiratory flora but is implicated in lower respiratory infections, including pneumonia. It produces stunted growth on MTM and is DNase positive, characteristics that differentiate it from the other saprophytic Neisseria spp."
+  },
+  {
+    "id": 1471,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Showing resistance to which drug categorizes a strain of S. aureus as MRSA?",
+    "options": [
+      "Oxacillin",
+      "Colistin",
+      "Sulfamethoxazole-Trimethoprim",
+      "Tetracycline"
+    ],
+    "answer": "A",
+    "explanation": "Oxacillin is the drug used to screen staphylococci for resistance to antibiotics having the β-lactam ring. Included in this group are penicillin, cephalosporin, monobactam, and carbapenem. MRSA defines strains of staphylococci that are resistant to all of these antibiotic groups. MRSA strains are treated with vancomycin or oxazolidinone."
+  },
+  {
+    "id": 1472,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "An oxacillin-disk screen test is used to detect S. pneumoniae resistance to penicillin. Using Mueller-Hinton agar with 5% sheep blood and a 1-µg oxacillin disk, what is the recommended inhibition zone size for penicillin susceptibility?",
+    "options": [
+      "5 mm or greater",
+      "10 mm or greater",
+      "15 mm or greater",
+      "20 mm or greater"
+    ],
+    "answer": "D",
+    "explanation": "The standard Kirby-Bauer method used for disk diffusion susceptibility testing recommended by the Clinical and Laboratory Standards Institute (CLSI) is 20 mm. The test requires 20- to 24-hour incubation at 35°C in 5% to 7% CO2. If the zone size is 19 mm, an MIC should be performed on isolates from CSF or blood."
+  },
+  {
+    "id": 1473,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Which one of the following organisms is a known producer of β-lactamase–producing strains, and should be tested (screened) by a commercial β-lactamase assay prior to susceptibility testing?",
+    "options": [
+      "Streptococcus pneumoniae",
+      "Group B streptococci",
+      "Enterococcus spp.",
+      "Planococcus spp."
+    ],
+    "answer": "C",
+    "explanation": "A test for β-lactamase production should be performed on all isolates of Staphylococcus and Enterococcus as well as N. gonorrhoeae and H. influenzae. Some organisms may appear to be penicillin/ampicillin susceptible by the conventional Kirby-Bauer disk diffusion method for β-lactamase producers, but still produce small amounts of β-lactamase. An example is heteroresistant mecA-positive S. aureus (the mecA gene confers penicillin resistance and is present in all MRSA strains)."
+  },
+  {
+    "id": 1474,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "Which test is used for the determination of inducible clindamycin resistance in staphylococci and streptococci?",
+    "options": [
+      "E-test",
+      "D-zone test",
+      "A-test",
+      "CAMP test"
+    ],
+    "answer": "B",
+    "explanation": "By using a 15-µg erythromycin disk adjacent to a 2-µg clindamycin disk in a disk diffusion procedure, a flattening of the clindamycin zone occurs in inducible clindamycin resistance, causing the zone to look like the letter “D.” This is referred to as being D-zone positive. The CLSI recommends that inducible clindamycin resistant strains be reported as resistant, with a comment that clindamycin may still be effective in some patients; however, an alternative therapy is recommended for treatment of the infection."
+  },
+  {
+    "id": 1475,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "A wound specimen was obtained from an older patient with diabetes and identified as being positive for vancomycin-resistant S. aureus (VRSA). The method used to determine VRSA was the standard microdilution technique. To be considered VSRA positive, which MIC must have been reported?",
+    "options": [
+      "MIC 16µg/mL or greater",
+      "MIC of 8 to 16 µg/mL",
+      "MIC of 4 to 8 µg/mL",
+      "MIC 8 µg/mL or greater"
+    ],
+    "answer": "A",
+    "explanation": "S. aureus (VRSA) is determined if the MIC result is 16 μg/mL or greater. Strains showing high levels of resistance (MIC greater than 8 μg/mL) and intermediate resistance (MIC 4 to 8 μg/mL) are thought to have structural changes within the cell wall. Two new agents available to combat vancomycin-resistant strains are linezolid and daptomycin."
+  },
+  {
+    "id": 1476,
+    "section": "Gram-Positive and Gram-Negative Cocci",
+    "chapter": "Microbiology",
+    "question": "“Scalded skin syndrome” was a suspected infection obtained from a skin culture from a newborn. Gram-positive, catalase-positive white colonies that were β-hemolytic grew on blood agar. What is the most likely identification?",
+    "options": [
+      "Streptococcus pyogenes",
+      "Staphylococcus aureus",
+      "Enterococcus faecalis",
+      "Streptococcus agalactiae"
+    ],
+    "answer": "B",
+    "explanation": "Strains of S. aureus producing toxins A and B are the cause of “scalded skin syndrome,” which refers to skin infections that can be manifested as small blisters or covering 90% or greater of the body surface in newborns."
+  },
+  {
+    "id": 1477,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Large, gram-positive, spore-forming rods growing on blood agar as large, raised, β- hemolytic colonies that spread and appear as frosted green-gray glass are most likely:",
+    "options": [
+      "Pseudomonas spp.",
+      "Bacillus spp.",
+      "Corynebacterium spp.",
+      "Listeria spp."
+    ],
+    "answer": "B",
+    "explanation": "The only spore former listed is the Bacillus spp., which grow as large, spreading colonies on blood agar plates. Pseudomonas spp. are gram-negative rods; Corynebacterium spp. appear as small, very dry colonies on BAP; Listeria spp. appear as very small β-hemolytic colonies on BAP, resembling Streptococcus spp."
+  },
+  {
+    "id": 1478,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Bacillus anthracis and Bacillus cereus can best be differentiated by which tests?",
+    "options": [
+      "Motility and β-hemolysis on a blood agar plate",
+      "Oxidase and β-hemolysis on a blood agar plate",
+      "Lecithinase and glucose",
+      "Lecithinase and catalase"
+    ],
+    "answer": "A",
+    "explanation": "Both species of Bacillus are catalase and lecithinase positive and produce acid from glucose. B. cereus is β-hemolytic and motile, but B. anthracis is neither. See the chart below. {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "",
+            "β Hemolysis",
+            "Motility",
+            "Oxidase",
+            "Catalase",
+            "Lecithinase",
+            "Glucose"
+          ],
+          [
+            "B. cereus",
+            "+",
+            "+",
+            "Neg",
+            "+",
+            "+",
+            "+"
+          ],
+          [
+            "B. anthracis",
+            "Neg",
+            "Neg",
+            "Neg",
+            "+",
+            "+",
+            "+"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1479,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Which is the specimen of choice for proof of food poisoning by B. cereus?",
+    "options": [
+      "Sputum",
+      "Blood",
+      "Stool",
+      "Food"
+    ],
+    "answer": "D",
+    "explanation": "The best specimen is the suspected food itself. Stool cultures are not useful because B. cereus is part of the normal fecal flora. The suspected food can be the source of food poisoning by B. cereus if 100,000 or greater organisms per gram of infected food are demonstrated."
+  },
+  {
+    "id": 1480,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "A suspected B. anthracis culture obtained from a wound specimen produced colonies that had many outgrowths (Medusa-head appearance), but were not β-hemolytic on sheep blood agar. Which test should be performed next?",
+    "options": [
+      "Penicillin (10-unit) susceptibility test",
+      "Lecithinase test",
+      "Glucose test",
+      "Motility test"
+    ],
+    "answer": "A",
+    "explanation": "The best differentiating test to perform on a suspected B. anthracis culture is the 10- unit penicillin disk test. B. anthracis is susceptible, but other Bacillus spp. are not. Organisms suspected to be B. anthracis should be sent to a reference laboratory for final confirmation. All tests should be performed in a biological safety cabinet, and personnel should wear protective clothing to reduce risk from possible production of aerosols."
+  },
+  {
+    "id": 1481,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Which of the following tests should be performed for initial differentiation of L. monocytogenes from group B streptococci?",
+    "options": [
+      "Gram stain, motility at room temperature, catalase",
+      "Gram stain, CAMP test, H2S/TSI",
+      "Oxidase, CAMP test, glucose",
+      "Oxidase, bacitracin"
+    ],
+    "answer": "A",
+    "explanation": "Streptococcus spp. are catalase negative, and L. monocytogenes is catalase positive. L. monocytogenes appears on the Gram-stained smear as gram-positive short, thin, diphtheroidal shapes, whereas streptococci usually appear as short, gram-positive cocci in chains. The reactions shown in the following chart differentiate L. monocytogenes from the group B streptococci. {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "",
+            "Catalase",
+            "Motility",
+            "CAMP",
+            "H₂S",
+            "Bile Esculin"
+          ],
+          [
+            "L. monocytogenes",
+            "+",
+            "+ (umbrella) Wet prep = tumbling",
+            "+",
+            "Neg",
+            "+"
+          ],
+          [
+            "Group B streptococci",
+            "Neg",
+            "Neg",
+            "+",
+            "Neg",
+            "Neg"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1482,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Culture of a finger wound specimen from a meat packer produced short gram-positive, non–spore-forming bacilli on a blood agar plate showing no hemolysis. Given the following test results at 48 hours, what is the most likely identification? Catalase = Neg H2S/TSI = + Motility (wet prep) = Neg Motility (gel media 22 oC) = + (bottle-brush growth in stab culture)",
+    "options": [
+      "Bacillus cereus",
+      "Listeria monocytogenes",
+      "Erysipelothrix rhusiopathiae",
+      "Bacillus subtilis"
+    ],
+    "answer": "C",
+    "explanation": "E. rhusiopathiae is catalase negative, whereas the other three organisms are catalase positive. E. rhusiopathiae is seen primarily as a skin infection on the fingers of workers handling fish, meat, and poultry, as well as in farmers. Colonies growing on blood agar are small and transparent, may be either smooth or rough, and are often surrounded by a green tinge. E. rhusiopathiae is characterized by H2S production in the butt of a TSI slant, which differentiates it from other catalase-negative, gram- positive rods. Motility observation notes a “bottle brush” appearance in gel media at 22°C."
+  },
+  {
+    "id": 1483,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Nonspore-forming, slender, gram-positive, rod-forming palisades and chains were recovered from a vaginal culture and grew well on tomato juice agar. The most likely identification is:",
+    "options": [
+      "Lactobacillus spp.",
+      "Bacillus spp.",
+      "Neisseria spp.",
+      "Streptococcus spp."
+    ],
+    "answer": "A",
+    "explanation": "Lactobacillus spp. produce both long, slender rods or short coccobacilli that form chains. Lactobacillus spp. are part of the normal flora of the vagina (are not considered pathogens) and are sometimes confused with the streptococci. Lactobacillus spp. are absent or few when bacterial vaginosis is present with G. vaginalis."
+  },
+  {
+    "id": 1484,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "A Corynebacterium species recovered from a throat culture is considered a pathogen when it produces:",
+    "options": [
+      "A pseudomembrane of the oropharynx",
+      "An exotoxin",
+      "Gray-black colonies with a brown halo on Tinsdale agar",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "Corynebacterium spp. recovered from a throat culture are usually considered part of the normal throat flora. C. diphtheriae is an exception and should be suspected when one of the conditions described occurs. In this event, direct inoculation on Loeffler serum medium or tellurite medium and the following biochemical tests should be performed to confirm the identification of C. diphtheriae. Gelatin hydrolysis = Neg Catalase = + Motility = + Urease = + Acid from glucose = + Carbohydrate fermentation = +"
+  },
+  {
+    "id": 1485,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "A presumptive diagnosis of Gardnerella vaginalis can be made using which of the following findings?",
+    "options": [
+      "Oxidase and catalase tests",
+      "Pleomorphic bacilli heavily colonized on vaginal epithelium",
+      "Hippurate hydrolysis test",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "A Gram-stained smear from a vaginal secretion showing many squamous epithelial cells loaded with pleomorphic gram-variable (positive and negative) bacilli is considered presumptive for G. vaginalis. Such cells are called clue cells. Other important findings are: β-Hemolysis on BAP = + Catalase = Neg Oxidase = Neg Hippurate hydrolysis = +"
+  },
+  {
+    "id": 1486,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "A gram-positive branching filamentous organism recovered from a sputum specimen was found to be positive with a modified acid-fast stain method. What is the most likely presumptive identification?",
+    "options": [
+      "Bacillus spp.",
+      "Nocardia spp.",
+      "Corynebacterium spp.",
+      "Listeria spp."
+    ],
+    "answer": "B",
+    "explanation": "Nocardia spp. should be suspected if colonies that are partially acid fast by the traditional method are positive with the modified acid-fast method using Kinyoun stain and 1% sulfuric acid as the decolorizing agent. The other organisms listed are negative with acid-fast staining."
+  },
+  {
+    "id": 1487,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Routine laboratory testing for Treponema pallidum involves:",
+    "options": [
+      "Culturing",
+      "Serological analysis",
+      "Acid-fast staining",
+      "Gram staining"
+    ],
+    "answer": "B",
+    "explanation": "Serological tests of the patient’s serum for evidence of syphilis are routinely performed, but culturing is not because research animals must be used for inoculation of the suspected spirochete. T. pallidum stains poorly or not at all by either the Gram or acid-fast technique. Darkfield microscopy for direct visualization, phase-contrast, or indirect immunofluorescence using fluorescein-conjugated antihuman globulin may be used for visualization of spirochetes. Tests for specific antibodies to T. pallidum are available in a wide range of immunoassay formats, including chemiluminescence and point-of-care immunochromatography. Therefore, a reverse algorithm that screens with a specific test for treponemal antibody is often used. If positive, this is followed by a nontreponemal test (rapid plasma regain [RPR] or Venereal Disease Research Laboratory [VDRL]) to assess active infection. If the treponemal test is positive but the nontreponemal test negative, then a second treponemal test, usually the Treponemal pallidum-particle agglutination (TP-PA), is used to confirm the initial positive screening test. Also, PCR can be used to identify T. pallidum DNA within lesions and exudates. Because the bacterium is fastidious, blood samples should be collected in EDTA, CSF should be frozen and sent on dry ice, and samples should be analyzed as soon as possible."
+  },
+  {
+    "id": 1488,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Spirochetes often detected in the hematology laboratory while scanning a blood film, even before the physician suspects the infection, are:",
+    "options": [
+      "Borrelia spp.",
+      "Treponema spp.",
+      "Campylobacter spp.",
+      "Leptospira spp."
+    ],
+    "answer": "A",
+    "explanation": "Borrelia spp. are often seen on Wright-stained smears of peripheral blood as helical bacteria with three to 10 loose coils. They are gram negative but stain well with Giemsa stain. B. recurrentis, is the cause of relapsing fever, a louse-borne epidemic. The use of thick and thin smears is helpful in observing the organism."
+  },
+  {
+    "id": 1489,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Which of the following organisms is the cause of Lyme disease?",
+    "options": [
+      "Treponema pallidum",
+      "Neisseria meningitidis",
+      "Babesia microti",
+      "Borrelia burgdorferi"
+    ],
+    "answer": "D",
+    "explanation": "Lyme disease may result in acute arthritis and meningitis and is caused by B. burgdorferi. This spirochete is carried by the deer tick belonging to the Ixodes genus (I. dammini in the eastern and north-central United States and I. pacificus in the northwest United States). The life cycle of the tick involves small rodents, such as the white-footed mouse and the white-tailed deer."
+  },
+  {
+    "id": 1490,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "The diagnostic method most commonly used for the identification of Lyme disease is:",
+    "options": [
+      "Serology",
+      "Culture",
+      "Gram staining",
+      "Acid-fast staining"
+    ],
+    "answer": "A",
+    "explanation": "Serological analysis using immunofluorescence or EIA is the method of choice for diagnosis of Lyme disease. Titers of IgM remain high throughout the infection. B. burgdorferi can be cultured directly from lesions, and darkfield microscopy can be used for detection of spirochetes in blood cultures after 2 to 3 weeks of incubation at 34°C to 37°C. PCR on synovial fluid, CSF, and skin biopsies is used for detection of early- and late-stage Lyme disease when there is clinical suspicion but serology is negative."
+  },
+  {
+    "id": 1491,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Primary atypical pneumonia is caused by:",
+    "options": [
+      "Streptococcus pneumoniae",
+      "Mycoplasma pneumoniae",
+      "Klebsiella pneumoniae",
+      "Mycobacterium tuberculosis"
+    ],
+    "answer": "B",
+    "explanation": "A common cause of respiratory tract illness, M. pneumoniae, generally causes a self- limited infection (3–10 days) and usually does not require antibiotic therapy. M. pneumoniae can be cultured from the upper and lower respiratory tracts onto specially enriched (diphasic) media but is most frequently diagnosed on the basis of the change in antibody titer from acute to convalescent serum by using EIA or other serological methods. PCR amplification is used to detect relevant Mycoplasma and Ureaplasma spp."
+  },
+  {
+    "id": 1492,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Which organism typically produces “fried egg” colonies on agar within 1 to 5 days of culture obtained from a genital specimen?",
+    "options": [
+      "Mycoplasma hominis",
+      "Borrelia burgdorferi",
+      "Leptospira interrogans",
+      "Treponema pallidum"
+    ],
+    "answer": "A",
+    "explanation": "Genital mycoplasmas (M. hominis and U. urealyticum) are grown on specific agars. M. hominis is grown on “M” agar containing arginine and phenol red. Colonies of mycoplasma are 50 to 300 μm in diameter and display a “fried egg” appearance with red holes. U. urealyticum is isolated from genital specimens on “U” agar (containing urea and phenol red) and then subcultured to A7/A8 agar. Colonies of Ureaplasma are small and golden brown on A7/A8 agar."
+  },
+  {
+    "id": 1493,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "The manganous chloride–urea test is used for the identification of which organism?",
+    "options": [
+      "Mycoplasma pneumoniae",
+      "Ureaplasma urealyticum",
+      "Bacillus cereus",
+      "Borrelia burgdorferi"
+    ],
+    "answer": "B",
+    "explanation": "U. urealyticum is the only human mycoplasma that hydrolyzes urea. The manganous chloride–urea test utilizes manganous chloride (MnCl2) in the presence of urea. Urease produced by the organism hydrolyzes the urea to ammonia. This reacts with MnCl2 forming manganese oxide, which is insoluble and forms a dark brown precipitate around the colonies. The reaction is observed under a dissecting microscope and is a rapid test for the identification of U. urealyticum."
+  },
+  {
+    "id": 1494,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "A gram-positive (gram-variable), beaded organism with delicate branching was recovered from the sputum of a 20-year-old patient with leukemia. The specimen produced orange, glabrous, waxy colonies on Middlebrook agar that showed partial acid-fast staining with the modified Kinyoun stain. What is the most likely identification?",
+    "options": [
+      "Rhodococcus spp.",
+      "Actinomadura spp.",
+      "Streptomyces spp.",
+      "Nocardia spp."
+    ],
+    "answer": "D",
+    "explanation": "All of the listed organisms produce mycelium (aerial or substrate), causing them to appear branched with Gram staining, but only the Nocardia spp. are positive for modified acid-fast stain. Nocardia is an opportunistic pathogen, and cultures typically have a “musty basement” odor."
+  },
+  {
+    "id": 1495,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "A direct smear from a nasopharyngeal swab stained with Loeffler methylene blue stain showed various letter shapes and deep blue, metachromatic granules. The most likely identification is:",
+    "options": [
+      "Corynebacterium spp.",
+      "Nocardia spp.",
+      "Listeria spp.",
+      "Gardnerella spp."
+    ],
+    "answer": "A",
+    "explanation": "Corynebacterium spp. are part of the normal upper respiratory tract flora. Organisms display typical pleomorphic shapes often resembling letters, such as “Y” or “L,” and metachromatic granules. Identification of C. diphtheriae, however, requires selective culture media and biochemical testing."
+  },
+  {
+    "id": 1496,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Which of the following is the best, rapid, nonculture test to perform when G. vaginalis is suspected in a patient with vaginosis?",
+    "options": [
+      "10% KOH test",
+      "3% H2O2 test",
+      "30% H2O2 test",
+      "All of these options"
+    ],
+    "answer": "A",
+    "explanation": "The “whiff” test is used for a presumptive diagnosis of an infection with G. vaginalis. A fishy odor is noted after the addition of one drop of 10% KOH to the vaginal washings. This odor results from the high concentration of amines found in women with vaginosis caused by G. vaginalis. Presumptive identification includes “clue cells” seen on Gram-stained vaginal washings or wet-mount preps."
+  },
+  {
+    "id": 1497,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Which is the test of choice for the confirmation of Chlamydia trachomatis infection in urine?",
+    "options": [
+      "Enzyme immunoassay antigen testing",
+      "PCR molecular testing",
+      "Culture using McCoy and Hela cells",
+      "Microimmunofluorescence (MIF) test"
+    ],
+    "answer": "B",
+    "explanation": "EIA and MIF tests, which are performed on serum, detect antibodies to C. trachomatis but may also detect antibodies that cross react with other organisms. Cell culture is time consuming and dependent on the quality of the specimen. PCR testing is both sensitive and specific and may be performed on urine."
+  },
+  {
+    "id": 1498,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Which test is the most reliable for the detection of M. pneumonia in serum and for the confirmation of diagnosis?",
+    "options": [
+      "EIA testing and direct antigen testing",
+      "Cold agglutinin testing using group O RBCs",
+      "Culture on SP4 glucose broth with arginine",
+      "Complement fixation"
+    ],
+    "answer": "A",
+    "explanation": "The cold agglutinin test is nonspecific, time consuming, and, therefore, outdated for the diagnosis of atypical pneumonia. Although M. pneumonia can be grown on artificial media, many specimens fail to grow, and growth can take up to 3 weeks. CF tests are not as sensitive or specific as EIA tests. Direct antigen assay by immunofluorescence is specific but has a sensitivity at least two orders of magnitude below DNA amplification methods. Although PCR testing is the most sensitive method, it may detect the presence of M. pneumonia in the absence of infection. EIA methods are sensitive, but some persons fail to produce antibodies especially in extra- respiratory infections, and antibody tests alone may detect past, rather than current, infections. Adults may fail to produce an IgM response, especially in recurrent infections, so the best confirmatory approach is a combination of EIA and direct antigen testing."
+  },
+  {
+    "id": 1499,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Identify the following bacterium–specimen pairing that is mismatched (specimen not appropriate for isolation):",
+    "options": [
+      "Chlamydia (Chlamydophila) psittaci–fecal swab",
+      "Chlamydia trachomatis–first voided urine",
+      "Chlamydia trachomatis–endocervical swab",
+      "Chlamydia pneumonia–throat swab or sputum"
+    ],
+    "answer": "A",
+    "explanation": "Chlamydophila psittaci is the new taxonomic classification for Chlamydia psittaci. This bacterium is found naturally in psittacine birds and other avian species. Psittacosis, the human infection, is the result of contact with pet birds and imported nonquarantined birds or from occupational contact in poultry farming or processing. Inhalation of the organisms from aerosols, fecal material, or feather dust causes a respiratory infection, and the specimen of choice is a throat swab or sputum."
+  },
+  {
+    "id": 1500,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Which of the following organisms are transmitted to animals and humans after a tick bite?",
+    "options": [
+      "Leptospira spp.",
+      "Chlamydia and Mycoplasma spp.",
+      "Neisseria sicca",
+      "Ehrlichia and Anaplasma spp."
+    ],
+    "answer": "D",
+    "explanation": "Ehrlichia and Anaplasma spp. are intracellular bacteria and are the causative agents of human monocytotropic ehrlichiosis (HME) and human granulocytotropic anaplasmosis (HGA). The organisms infect humans, dogs, and cattle through the bite of an infected Ixodes tick (named the Lone-Star tick transmitting Ehrlichia spp.), which also transmits Borrelia spp., causing Lyme disease. Blood, CSF, and serum are used for serological or PCR testing. A diagnosis can be made by direct observation of the basophilic inclusions (morulae) in leukocytes of Giemsa- or Wright-stained blood or buffy coat smears. This occurs in about 20% of HME in which the organisms are present in the monocytes and more frequently in HGA in which they are found in the granulocytes."
+  },
+  {
+    "id": 1501,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Following a hike in the woods, a young male noted a tick on his ankle. He removed the tick, but 2 weeks later, he noticed a circular, “bull’s eye” rash at the site of the bite. Which specimen(s) should be obtained to establish a diagnosis of Lyme borreliosis?",
+    "options": [
+      "Lymph node biopsy, skin scraping",
+      "Blood, CSF, skin biopsy",
+      "Hair, fingernails",
+      "Saliva, sputum"
+    ],
+    "answer": "B",
+    "explanation": "In stages I and II of Lyme disease, EIA is performed on serum for antibodies. PCR testing and culture of Borrelia spp. may be performed on a skin biopsy but would be unnecessary in this situation given the characteristic rash associated with Lyme disease. Synovial fluid, skin biopsy, and CSF may be tested for Borrelia spp. using PCR when Lyme disease goes untreated and evolves to stage III."
+  },
+  {
+    "id": 1502,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "Partially acid-fast, gram-positive, filamentous-branching bacteria that fragmented into rods and cocci were seen in a sputum sample from a patient with HIV infection. Which of the following is the most likely presumptive identification?",
+    "options": [
+      "Rhodococcus equi",
+      "Streptococcus spp.",
+      "Bacillus subtillus",
+      "Corynebacterium spp. (diphtheroids)"
+    ],
+    "answer": "A",
+    "explanation": "R. equi are facultative intracellular organisms that are found within macrophages. They are found in soil and animal feces. R. equi is usually opportunistic and infects immunocompromised individuals as well as farm workers through inhalation of the organisms."
+  },
+  {
+    "id": 1503,
+    "section": "Aerobic Gram-Positive Rods, Spirochetes, Mycoplasmas",
+    "chapter": "Microbiology",
+    "question": "An asymptomatic 25-year-old female patient with persistent nongonococcal urethritis (NGC) and pelvic inflammatory disease (PID) was suspected of being infected with Mycoplasma genitalium. Which category of testing should not be utilized to establish a final identification?",
+    "options": [
+      "Nucleic acid amplification test (NAAT)",
+      "Real time PCR",
+      "PCR",
+      "Culture"
+    ],
+    "answer": "D",
+    "explanation": "Culture techniques are time consuming and difficult to use as a screening procedure. The fastidious M. genitalium are difficult to grow. Molecular NAAT testing using conventional PCR will take 2 to 3 days for results, whereas real-time PCR will yield results in 1 day. M. genitalium has been implicated in the sexual transmission of HIV."
+  },
+  {
+    "id": 1504,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Obligate anaerobes, facultative anaerobes, and microaerophiles are terms referring to bacteria that require:",
+    "options": [
+      "Increased nitrogen",
+      "Decreased CO2",
+      "Increased O2",
+      "Decreased O2"
+    ],
+    "answer": "D",
+    "explanation": "In general, anaerobic organisms lack superoxide dismutase (SOD) and catalase enzymes. The anaerobic bacteria are subdivided on the basis of their O2 requirement. Obligate anaerobes are killed by exposure to atmospheric O2 for 10 minutes or longer. Facultative anaerobes grow under aerobic or anaerobic conditions. Microaerophilic organisms do not grow in an aerobic incubator on solid media and only minimally under anaerobic conditions. However, they will grow in minimal O2 (5% O2). SOD is produced by many anaerobes and catalyzes the conversion of superoxide radicals to less toxic H2O2 and molecular O2."
+  },
+  {
+    "id": 1505,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Which of the following most affects the oxidation–reduction potential (Eh, or redox potential) of media for anaerobic bacteria?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "pH",
+      "Glucose"
+    ],
+    "answer": "C",
+    "explanation": "Eh is most affected by pH and is expressed at pH 7.0. In cultivating anaerobic bacteria, reducing agents, such as thioglycollate and L-cysteine, are added to anaerobic transport and culture media to maintain a low Eh. Certain anaerobes do not grow in the media above a specific critical Eh level."
+  },
+  {
+    "id": 1506,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Which of the following is the medium of choice for the selective recovery of gram- negative anaerobes?",
+    "options": [
+      "Kanamycin–vancomycin–anaerobe (KVA) agar",
+      "Phenylethyl alcohol (PEA) agar",
+      "Cycloserine cefoxitin fructose agar (CCFA)",
+      "THIO broth"
+    ],
+    "answer": "A",
+    "explanation": "KVA allows growth of Bacteroides spp., Prevotella spp., and Fusobacterium spp. and inhibits most facultative anaerobic gram-negative rods and gram-positive bacteria (both aerobic and anaerobic). PEA inhibits facultative gram-negative bacteria but will support gram-positive aerobes and anaerobes and gram-negative obligate anaerobes. CCFA is selective for C. difficile from stool, whereas THIO broth supports gram- positive and gram-negative aerobes and anaerobes."
+  },
+  {
+    "id": 1507,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Anaerobic bacteria are routinely isolated from all of the following types of infections except:",
+    "options": [
+      "Lung abscesses",
+      "Brain abscesses",
+      "Dental infections",
+      "Urinary tract infections"
+    ],
+    "answer": "D",
+    "explanation": "The incidence of anaerobic bacteria recovered from the urine is approximately 1% of isolates. The other three types of infection are associated with a 60% to 93% incidence of anaerobic recovery. Urine is not cultured routinely under anaerobic conditions unless the specimen has been obtained surgically (e.g., suprapubic aspiration)."
+  },
+  {
+    "id": 1508,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Methods other than packaged microsystems used to identify anaerobes include:",
+    "options": [
+      "Antimicrobial susceptibility testing",
+      "Gas–liquid chromatography (GLC)",
+      "Special staining",
+      "Enzyme immunoassay"
+    ],
+    "answer": "B",
+    "explanation": "Anaerobic bacteria can be identified by analysis of metabolic products using GLC. Results are evaluated, along with Gram staining characteristics, spore formation, and cellular morphology, to make the identification."
+  },
+  {
+    "id": 1509,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Which broth is used for the cultivation of anaerobic bacteria to detect volatile fatty acids as an aid to identification?",
+    "options": [
+      "Prereduced peptone–yeast extract–glucose (PYG)",
+      "THIO broth",
+      "Gram-negative (GN) broth",
+      "Selenite (SEL) broth"
+    ],
+    "answer": "A",
+    "explanation": "Peptone yeast and chopped meat with carbohydrates support the growth of anaerobic bacteria. The end products from the metabolism of the peptone and carbohydrates are volatile fatty acids that help identify the bacteria. After incubation, the broth is centrifuged, and the supernatant injected into a gas–liquid chromatograph. Peaks for acetic, butyric, or formic acid, for example, can be identified by comparison with the elution time of volatile organic acid standards."
+  },
+  {
+    "id": 1510,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "A gram-positive spore-forming bacillus growing on sheep blood agar anaerobically produces a double zone of β-hemolysis and is positive for lecithinase. What is the presumptive identification?",
+    "options": [
+      "Bacteroides ureolyticus",
+      "Bacteroides fragilis",
+      "Clostridium perfringens",
+      "Clostridium difficile"
+    ],
+    "answer": "C",
+    "explanation": "C. perfringens produces a double zone of β-hemolysis on blood agar, which makes identification relatively easy. The inner zone of complete hemolysis is caused by a θ- toxin and the outer zone of incomplete hemolysis is caused by an α-toxin (lecithinase activity). The Bacteroides spp. are gram-negative bacilli, and C. difficile is lecithinase negative and does not produce a double zone of β-hemolysis."
+  },
+  {
+    "id": 1511,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Egg yolk agar is used to detect which enzyme produced by several Clostridium species?",
+    "options": [
+      "Lecithinase",
+      "β-Lactamase",
+      "Catalase",
+      "Oxidase"
+    ],
+    "answer": "A",
+    "explanation": "Egg yolk agar (modified McClung or neomycin egg yolk agar) is used to determine the presence of lecithinase activity, which causes an insoluble, opaque, whitish precipitate within the agar. Lipase activity is indicated by an iridescent sheen or pearly layer on the surface of the agar."
+  },
+  {
+    "id": 1512,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Which of the following organisms will display lipase activity on egg yolk agar?",
+    "options": [
+      "Clostridium botulinum",
+      "Clostridium sporogenes",
+      "Clostridium novyi",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "Lipase is produced by some Clostridium spp. and is seen as an iridescent pearly layer on the surface of the colonies that extends onto the surface of the egg yolk agar medium surrounding them. C. perfringens, the most frequently isolated Clostridium species, is negative for lipase production. {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "",
+            "Spores",
+            "Motility",
+            "Lecithinase",
+            "Double-Zone Hemolysis",
+            "GLC Products"
+          ],
+          [
+            "C. tetani",
+            "Terminal",
+            "+",
+            "Neg",
+            "Neg",
+            "A, B"
+          ],
+          [
+            "C. perfringens",
+            "Subterminal",
+            "Neg",
+            "+",
+            "+",
+            "A, B"
+          ],
+          [
+            "C. novyi",
+            "Subterminal",
+            "+",
+            "+",
+            "Neg",
+            "A, B, P†"
+          ],
+          [
+            "C. sporogenes",
+            "Subterminal",
+            "+",
+            "Neg",
+            "Neg",
+            "A, B"
+          ]
+        ],
+        "note": "† Propionic acid."
+      }
+    ]
+  },
+  {
+    "id": 1513,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Which spore type and location is found on Clostridium tetani?",
+    "options": [
+      "Round, terminal spores",
+      "Round, subterminal spores",
+      "Ovoid, subterminal spores",
+      "Ovoid, terminal spores"
+    ],
+    "answer": "A",
+    "explanation": "Spore appearance and location, along with Gram stain morphology, aids in distinguishing the Clostridium spp. Round, terminal spores (drumstick spores) are demonstrated when C. tetani is grown in chopped meat with glucose broth. Recognition of spores is particularly important because C. tetani sometimes appears as gram negative."
+  },
+  {
+    "id": 1514,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Gram-positive bacilli recovered from two blood cultures from a 60-year-old patient with diabetes gave the following results: Spores seen = Neg Hemolysis = + (double zone) Motility = Neg Lecithinase = + Volatile acids by GLC (PYG) = acetic acid (A) and butyric acid (B) What is the most likely identification?",
+    "options": [
+      "Clostridium tetani",
+      "Clostridium perfringens",
+      "Clostridium novyi",
+      "Clostridium sporogenes"
+    ],
+    "answer": "B",
+    "explanation": "Spores are generally not demonstrated from clinical specimens containing C. perfringens, which is the only species producing a double zone of hemolysis. The reactions in the chart above distinguish the four species listed. PCR testing for C. perfringens identification is available."
+  },
+  {
+    "id": 1515,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Which mechanism is responsible for botulism in infants caused by C. botulinum?",
+    "options": [
+      "Ingestion of spores in food or liquid",
+      "Ingestion of preformed toxin in food",
+      "Virulence of the organism",
+      "Lipase activity of the organism"
+    ],
+    "answer": "A",
+    "explanation": "Infant botulism is the most frequent form occurring in the United States. Epidemiological studies have demonstrated that infant botulism results from the ingestion of spores via breastfeeding or exposure to honey. Preformed toxin has not been detected in food or liquids taken by the infants. C. botulinum multiplies in the gut of the infant and produces the neurotoxin in situ."
+  },
+  {
+    "id": 1516,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "The classic form of foodborne botulism is characterized by the ingestion of:",
+    "options": [
+      "Spores in food",
+      "Preformed toxin in food",
+      "Toxin H",
+      "All of these options"
+    ],
+    "answer": "B",
+    "explanation": "Foodborne botulism in adults and children is caused by ingestion of the preformed toxin (botulinum toxins A, B, E, and F) in food. The neurotoxins of C. botulinum are protoplastic proteins made during the growing phase and released during lysis of the organisms. C. botulinum is listed as a potential bioterrorism agent (as a possible bio- weapon) by the CDC. Confirmation of botulism is made by demonstration of the botulinum neurotoxin (BoNT) in food, serum, gastric, or stool specimens. The CDC can be reached 24 hours a day for emergency assistance when botulism is suspected. The mouse bioassay is the recommended method for identification of the toxin BoNT, which is extremely dangerous (Biosafety Level 3)."
+  },
+  {
+    "id": 1517,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Which test is performed to confirm an infection with C. botulinum?",
+    "options": [
+      "Toxin neutralization test",
+      "Spore-forming test",
+      "Lipase test",
+      "Gelatin hydrolysis test"
+    ],
+    "answer": "A",
+    "explanation": "C. botulinum and C. sporogenes have similar characteristics biochemically (see the following chart), and definitive identification of C. botulinum is made by the toxin neutralization test for its neurotoxins in serum or feces. Specimens should be kept at 4°C and sent to the CDC for culture and toxin assays. {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "",
+            "Spore Type",
+            "Motility",
+            "Lipase",
+            "GLC Products"
+          ],
+          [
+            "C. botulinum",
+            "Subterminal",
+            "+",
+            "+",
+            "A, (P)*, B, (IB)†, IV‡"
+          ],
+          [
+            "C. sporogenes",
+            "Subterminal",
+            "+",
+            "+",
+            "A, (P), B, (IB), IV"
+          ]
+        ],
+        "note": "* Variable.  † Isobutyric acid.  ‡ Isovaleric acid."
+      }
+    ]
+  },
+  {
+    "id": 1518,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Which Clostridium spp. causes pseudomembranous colitis or antibiotic-associated colitis?",
+    "options": [
+      "Clostridium ramosum",
+      "Clostridium difficile",
+      "Clostridium perfringens",
+      "Clostridium sporogenes"
+    ],
+    "answer": "B",
+    "explanation": "C. difficile is also implicated in hospital- and nursing home–acquired diarrhea and colitis. Clinical testing for C. difficile includes culture and cytotoxin testing. Because culture takes 3 days and will detect nontoxigenic strains that do not cause diarrheal disease, immunoassays using antibodies against either the A toxin or both the A and B toxins are most frequently employed. Assays detecting both toxins are only slightly more sensitive because infections producing only B toxin are infrequent. The cytotoxin assay requires that specimens (only liquid or nonformed stools) be shipped to a reference laboratory on dry ice or kept at 4°C to 6°C if done in-house for up to 72 hours. Nucleic acid–based assays are also available."
+  },
+  {
+    "id": 1519,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Identification of C. tetani is usually based on:",
+    "options": [
+      "Gram staining of the wound site",
+      "Anaerobic culture of the wound site",
+      "Blood culture results",
+      "Clinical findings"
+    ],
+    "answer": "D",
+    "explanation": "The culture and Gram staining of the puncture wound site usually does not produce any evidence of C. tetani.The diagnosis is usually based on clinical findings, which are characterized by spastic muscle contractions, lockjaw, and backward arching of the back caused by muscle contraction. The tetanus neurotoxin (TeNT) is an exotoxin that disrupts nerve impulses to the muscles."
+  },
+  {
+    "id": 1520,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Obligate anaerobic gram-negative bacilli that do not form spores, grow well in 20% bile (Bacteroides bile esculin [BBE] agar), and are resistant to penicillin two-unit disks are most likely:",
+    "options": [
+      "Porphyromonas spp.",
+      "Bacteroides spp.",
+      "Fusobacterium spp.",
+      "Prevotella spp."
+    ],
+    "answer": "B",
+    "explanation": "The Bacteroides group grows well in 20% bile (primary anaerobic plates include BBE agar or bile-esculin plates) and is resistant to penicillin two-unit disks with the exception of B. ureolyticus. Most Prevotella spp. are also resistant to penicillin two- unit disks, but most Fusobacterium spp. and Porphyromonas spp. are sensitive."
+  },
+  {
+    "id": 1521,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Which Bacteroides spp. is noted for “pitting” of the agar and is sensitive to penicillin two-unit disks?",
+    "options": [
+      "Bacteroides vulgatus",
+      "Bacteroides ovatus",
+      "Bacteroides thetaiotaomicron",
+      "Bacteroides ureolyticus"
+    ],
+    "answer": "D",
+    "explanation": "B. ureolyticus spp. is the only species listed that is susceptible to penicillin and produces urease. The other organisms listed are resistant to penicillin."
+  },
+  {
+    "id": 1522,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Which gram-negative bacilli produce brown to black pigment on KVA agar and brick red fluorescence when exposed to an ultraviolet (UV) light source?",
+    "options": [
+      "Porphyromonas spp. and Prevotella spp.",
+      "Fusobacterium spp. and Actinomyces spp.",
+      "Bacteroides spp. and Fusobacterium spp.",
+      "All of these options"
+    ],
+    "answer": "A",
+    "explanation": "Pigmenting Porphyromonas spp. and Prevotella spp. also show hemolysis on anaerobic blood agar and do not grow on BBE agar."
+  },
+  {
+    "id": 1523,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "The following characteristics of an obligate anaerobic gram-negative bacilli best describe which of the listed genera? Gram staining = Long, slender rods with pointed ends Colonial appearance = Dry bread crumbs or “fried-egg” appearance Penicillin two-unit disk test = Susceptible",
+    "options": [
+      "Bacteroides spp.",
+      "Fusobacterium spp.",
+      "Prevotella spp.",
+      "Porphyromonas spp."
+    ],
+    "answer": "B",
+    "explanation": "Fusobacterium spp. are usually spindle-shaped, slim rods, whereas the other genera are small rods (variable length for Bacteroides spp. and tiny coccoid rods for Prevotella and Porphyromonas spp.). Fusobacterium spp. and Porphyromonas spp. are susceptible to penicillin two-unit disks, whereas most Bacteroides spp. and Prevotella spp. are resistant."
+  },
+  {
+    "id": 1524,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "All of the following genera are anaerobic cocci that stain gram positive except:",
+    "options": [
+      "Peptococcus spp.",
+      "Peptostreptococcus spp.",
+      "Streptococcus spp.",
+      "Veillonella spp."
+    ],
+    "answer": "D",
+    "explanation": "Veillonella spp. are gram-negative cocci. All four genera are part of the normal human flora and are the anaerobic cocci most frequently isolated from blood cultures, abscesses, wounds, and body fluids. The Streptococcus spp. are facultative anaerobes."
+  },
+  {
+    "id": 1525,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "The gram-positive non–spore-forming, anaerobic, short, pleomorphic rods most frequently recovered from blood cultures as a contaminant are:",
+    "options": [
+      "Propionibacterium acnes",
+      "Clostridium perfringens",
+      "Staphylococcus intermedius",
+      "Veillonella parvula"
+    ],
+    "answer": "A",
+    "explanation": "P. acnes is a non–spore former and is described as a diphtheroid-shaped rod. It is part of the normal skin, nasopharynx, genitourinary tract, and gastrointestinal tract flora but is implicated as an occasional cause of endocarditis and is seen in the inflammatory process of acne. P. acnes is referred to as the “anaerobic diphtheroid.”"
+  },
+  {
+    "id": 1526,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Which Clostridium species is most often recovered from a wound infection with gas gangrene?",
+    "options": [
+      "Clostridium sporogenes",
+      "Clostridium sordellii",
+      "Clostridium novyi",
+      "Clostridium perfringens"
+    ],
+    "answer": "D",
+    "explanation": "Wounds infected with clostridia are characterized by invasion and liquefactive necrosis of muscle tissue with gas formation. The most frequent isolate is C. perfringens followed by C. novyi and C. septicum. C. perfringens is also seen in food poisoning with the release of the toxin when large numbers of the organism are ingested."
+  },
+  {
+    "id": 1527,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Gram staining of a smear taken from the periodontal pockets of a 30-year-old man with poor dental hygiene showed sulfur granules containing gram-positive rods (short diphtheroids and some unbranched filaments) and were non–acid fast. Colonies on blood agar resembled “molar teeth” in formation. The most likely organism is:",
+    "options": [
+      "Actinomyces israelii",
+      "Propionibacterium acnes",
+      "Staphylococcus intermedius",
+      "Peptostreptococcus anaerobius"
+    ],
+    "answer": "A",
+    "explanation": "A. israelii is part of the normal flora of the mouth and tonsils but may cause upper or lower respiratory tract infections. The sulfur granules are granular microcolonies with a purulent exudate. Like Nocardia, Actinomyces produces unbranched mycelia and is sometimes (erroneously) considered a fungus. It has also been implicated in pelvic infection associated with intrauterine contraceptive devices (IUDs)."
+  },
+  {
+    "id": 1528,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "Antimicrobial susceptibility testing of Bacteroides and Clostridium spp. anaerobes are done by which of the following methods?",
+    "options": [
+      "Broth microdilution",
+      "Agar dilution",
+      "E-Test",
+      "All of the above"
+    ],
+    "answer": "D",
+    "explanation": "The anaerobes are not suited for the broth disk elution or disk agar diffusion tests because of their slow rate of growth. The Kirby-Bauer method reference charts are not designed to be used as a reference of susceptibility for anaerobes. The three methods listed use Brucella blood agar or broth, at 35°C to 37°C. incubation (anaerobically) and take up to 48 hours for results."
+  },
+  {
+    "id": 1529,
+    "section": "Anaerobic Bacteria",
+    "chapter": "Microbiology",
+    "question": "An abdominal postoperative wound specimen grew catalase-positive, indole-negative, nonpigmented, nonfluorescent, gram-negative, pleomorphic bacilli (safety pin–shaped) on 20% bile media. The colonies also grew on KVA agar (resistant to kanamycin, vancomycin, and colistin). What is the most likely identification?",
+    "options": [
+      "Fusobacterium nucleatum",
+      "Bacteroides fragilis",
+      "Prevotella spp.",
+      "Porphyromonas spp."
+    ],
+    "answer": "B",
+    "explanation": "B. fragilis infections usually occur below the diaphragm and it is the most commonly encountered anaerobe in anaerobic infections. The Gram-stained smear showing “safety pin” and pleomorphic bacilli is often seen as a preliminary clue in abdominal fluids."
+  },
+  {
+    "id": 1530,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "The best specimen for recovery of the mycobacteria from a sputum sample is the:",
+    "options": [
+      "First morning specimen",
+      "10-hour evening specimen",
+      "12-hour pooled specimen",
+      "24-hour pooled specimen"
+    ],
+    "answer": "A",
+    "explanation": "Contamination by fungi and other bacteria contributes to lower yields of mycobacteria in a 24-hour sample. The first morning specimen collected by expectoration or nebulization produces the highest concentration of mycobacteria in sputum."
+  },
+  {
+    "id": 1531,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "What concentration of sodium hydroxide (NaOH) is used to prepare a working decontamination solution for the processing of not normally sterile specimens for mycobacteria?",
+    "options": [
+      "1% NaOH",
+      "4% NaOH",
+      "8% NaOH",
+      "12% NaOH"
+    ],
+    "answer": "B",
+    "explanation": "A strong decontamination solution (6% NaOH or greater) may kill or severely damage the mycobacteria. A 4% NaOH solution is mixed with an equal volume of N-acetyl-L- cysteine (NALC), a digestant or mucolytic agent, to yield a final working concentration of 2% NaOH. The time of exposure of the specimen to the digestion/decontamination solution must be monitored because overtreatment may result in fewer positive results on culture."
+  },
+  {
+    "id": 1532,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Which is the most appropriate nonselective medium for recovery of mycobacteria from a heavily contaminated specimen?",
+    "options": [
+      "Löwenstein-Jensen agar",
+      "Middlebrook 7H10 agar",
+      "Petragnani agar",
+      "American Thoracic Society (ATS) medium"
+    ],
+    "answer": "C",
+    "explanation": "All four media contain malachite green as an inhibitory agent of nonmycobacteria, but the Petragnani medium contains a higher concentration (0.052 g/dL) compared with the Löwenstein-Jensen (0.025 g/dL), Middlebrook 7H10 (0.0025 g/dL), or ATS (0.02 g/dL) medium. The last is used for normally sterile specimens, such as from CSF and bone marrow. A combination of solid (17 days for growth) and a liquid (10 days for growth) media is recommended. If there is no growth after 8 weeks, the cultures are reported as negative and discarded."
+  },
+  {
+    "id": 1533,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Mycobacteria stained by using the Ziehl-Neelsen or Kinyoun methods with methylene blue counterstain are seen microscopically as:",
+    "options": [
+      "Bright red rods against a blue background",
+      "Bright yellow rods against a yellow background",
+      "Orange-red rods against a black background",
+      "Bright blue rods against a pink background"
+    ],
+    "answer": "A",
+    "explanation": "Carbolfuchsin (fuchsin with phenol) stains mycobacteria red and does not decolorize after the acid–alcohol is added. The background and any other bacterial elements will decolorize and are counterstained blue by the methylene blue. A fluorescent staining procedure may be used as an alternative to acid-fast staining. Auramine fluorochrome produces bright yellow fluorescent mycobacteria and auramine–rhodamine causes an orange-red (gold) fluorescence against a dark background. A fluorescent microscope must be used, but with this method, the smear can be scanned with a 25× objective instead of the 100× objective, permitting more rapid identification of mycobacteria."
+  },
+  {
+    "id": 1534,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Acid-fast staining of a smear prepared from digested sputum showed slender, slightly curved, beaded, red mycobacterial rods. Growth on the Middlebrook 7H10 medium slants produced buff-colored microcolonies with a serpentine pattern after 14 days at 37°C. Niacin and nitrate reduction test results were positive. What is the most probable presumptive identification?",
+    "options": [
+      "Mycobacterium tuberculosis",
+      "Mycobacterium ulcerans",
+      "Mycobacterium kansasii",
+      "Mycobacterium avium complex"
+    ],
+    "answer": "A",
+    "explanation": "M. tuberculosis is positive for niacin accumulation, whereas the other three species are niacin negative. M. ulcerans is associated with skin infections (in the tropics), does not grow at 37°C (optimal temperature is 33°C), and is not recovered from sputum. A serpentine pattern of growth indicates production of cording factor, a virulence factor for M. tuberculosis."
+  },
+  {
+    "id": 1535,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Which organism, associated with tuberculosis in cattle, causes tuberculosis in humans, especially in regions where dairy farming is prevalent?",
+    "options": [
+      "Mycobacterium avium complex",
+      "Mycobacterium kansasii",
+      "Mycobacterium marinum",
+      "Mycobacterium bovis"
+    ],
+    "answer": "D",
+    "explanation": "M. bovis is also called the bovine tubercle bacillus. A nonvirulent strain, bacillus Calmette-Guérin (BCG), is used as a tuberculosis vaccine throughout the world. Infections with M. bovis resemble infections caused by M. tuberculosis and are seen in circumstances where there is close contact between humans and cattle."
+  },
+  {
+    "id": 1536,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Which of the following organisms are used as controls for rapid growers and slow growers, respectively?",
+    "options": [
+      "Mycobacterium fortuitum and Mycobacterium tuberculosis",
+      "Mycobacterium avium complex and Mycobacterium tuberculosis",
+      "Mycobacterium chelonei and Mycobacterium fortuitum",
+      "Mycobacterium kansasii and Mycobacterium tuberculosis"
+    ],
+    "answer": "A",
+    "explanation": "Growth rates of mycobacteria are used along with biochemical tests as an aid to identification. M. fortuitum grows within 3 to 5 days at 37°C and is used as the control for rapid growers. M. tuberculosis grows in 12 to 25 days at 37°C and is a control organism for slow growers. In addition to M. fortuitum, M. chelonei is a rapid grower (3–5 days at 28°C–35°C). In addition to M. tuberculosis, M. avium, and M. kansasii are slow growers (10–21 days at 37°C)."
+  },
+  {
+    "id": 1537,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Which of the following Mycobacterium spp. produce(s) pigmented colonies in the dark (is a scotochromogen)?",
+    "options": [
+      "Mycobacterium szulgai",
+      "Mycobacterium kansasii",
+      "Mycobacterium tuberculosis",
+      "All of these options"
+    ],
+    "answer": "A",
+    "explanation": "M. tuberculosis does not produce pigmentation in the dark or after exposure to light (photochromogen). A common tapwater scotochromogen is M. gordonae. The pathogenic scotochromogens are M. szulgai, M. scrofulaceum, and M. xenopi. M. kansasii is a photochromogen producing a yellow pigment following exposure to light and red β-carotene crystals after long incubation periods."
+  },
+  {
+    "id": 1538,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "All of the following mycobacteria are associated with skin infections except:",
+    "options": [
+      "Mycobacterium marinum",
+      "Mycobacterium haemophilum",
+      "Mycobacterium ulcerans",
+      "Mycobacterium kansasii"
+    ],
+    "answer": "D",
+    "explanation": "M. kansasii is a photochromogen that causes chronic pulmonary disease (classic tuberculosis). The other three species cause cutaneous or subcutaneous disease. It is important to culture skin lesions at the correct temperature to facilitate growth. {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "",
+            "Optimal Temperature",
+            "Growth at 37°C"
+          ],
+          [
+            "M. marinum",
+            "30°C–32°C",
+            "Poor"
+          ],
+          [
+            "M. haemophilum",
+            "28°C–32°C",
+            "Poor or no"
+          ],
+          [
+            "M. ulcerans",
+            "33°C",
+            "No"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1539,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "All of the following Mycobacterium spp. produce the enzyme required to convert niacin to niacin ribonucleotide except:",
+    "options": [
+      "Mycobacterium kansasii",
+      "Mycobacterium tuberculosis",
+      "Mycobacterium avium complex",
+      "Mycobacterium szulgai"
+    ],
+    "answer": "B",
+    "explanation": "Niacin production is common to all mycobacteria. However, the niacin accumulates as a water-soluble metabolite in the culture medium when the organism cannot form niacin ribonucleotide. M. tuberculosis, M. simiae, and some strains of M. marinum, M. chelonae, and M. bovis lack the enzyme and therefore are called niacin positive because of the accumulation of niacin detected in the test medium."
+  },
+  {
+    "id": 1540,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "The catalase test for mycobacteria differs from that used for other types of bacteria by using:",
+    "options": [
+      "1% H2O2 and 10% Tween 80",
+      "3% H2O2 and phosphate buffer, pH 6.8",
+      "10% H2O2 and 0.85% saline",
+      "30% H2O2 and 10% Tween 80"
+    ],
+    "answer": "D",
+    "explanation": "One milliliter of an equal mixture of 30% H2O2 (Superoxol) and Tween 80 (a strong detergent) is added to a 2-week-old subculture on the Löwenstein-Jensen medium and placed upright for 5 minutes. Catalase activity is determined semiquantitatively by measuring the height of the column of bubbles produced above the culture surface."
+  },
+  {
+    "id": 1541,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Growth inhibition by thiophene-2-carboxylic hydrazide (T2H) is used to differentiate M. tuberculosis from which other Mycobacterium species?",
+    "options": [
+      "Mycobacterium bovis",
+      "Mycobacterium avium complex",
+      "Mycobacterium kansasii",
+      "Mycobacterium marinum"
+    ],
+    "answer": "A",
+    "explanation": "M. bovis and M. tuberculosis are very similar biochemically, and some strains of M. bovis also accumulate niacin. The T2H test differentiates M. tuberculosis from M. bovis. M. tuberculosis is not inhibited by T2H."
+  },
+  {
+    "id": 1542,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Which of the following Mycobacterium spp. is best differentiated by the rapid hydrolysis of Tween 80?",
+    "options": [
+      "Mycobacterium fortuitum",
+      "Mycobacterium chelonae",
+      "Mycobacterium kansasii",
+      "Mycobacterium gordonae"
+    ],
+    "answer": "C",
+    "explanation": "The hydrolysis of Tween 80 is usually positive when testing the clinically insignificant mycobacteria. M. fortuitum, M. chelonae, and M. gordonae are saprophytic (and opportunistic) species, but M. kansasii is a pathogen. M. kansasii hydrolyses Tween 80 more rapidly than the other species (within 3–6 hours). A positive reaction is indicated by a change in the color of neutral red from yellow to pink."
+  },
+  {
+    "id": 1543,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Mycobacteria isolated from the hot water system of a hospital grew at 42°C. Colonies on the Löwenstein-Jensen medium were not pigmented after exposure to light and were negative for niacin accumulation and nitrate reduction. The most likely identification is:",
+    "options": [
+      "Mycobacterium xenopi",
+      "Mycobacterium marinum",
+      "Mycobacterium ulcerans",
+      "Mycobacterium haemophilum"
+    ],
+    "answer": "A",
+    "explanation": "M. xenopi causes a pulmonary infection resembling M. tuberculosis and is frequently isolated from patients with an underlying disease, such as alcoholism, AIDS, diabetes, or malignancy. It is often recovered from hot water taps and contaminated water systems and is a possible source of nosocomial infection. The other three species cause skin infections and grow on artificial media at a much lower temperature than M. xenopi (below 32°C)."
+  },
+  {
+    "id": 1544,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "A Mycobacterium species recovered from a patient with AIDS gave the following results: Niacin = Neg T2H = + Tween 80 hydrolysis = Neg Nitrate reduction = Neg Heat-stable catalase (68°C) = ± Nonphotochromogen What is the most likely identification?",
+    "options": [
+      "Mycobacterium gordonae",
+      "Mycobacterium bovis",
+      "Mycobacterium avium complex",
+      "Mycobacterium kansasii"
+    ],
+    "answer": "C",
+    "explanation": "With the exception of M. tuberculosis, M. avium complex is the Mycobacterium species most often isolated from patients with AIDS. It is biochemically inert, which is a distinguishing factor for identification. M. avium complex is highly resistant to the antibiotics used to treat tuberculosis, including those used in multidrug therapy. Treatment with streptomycin, rifampin, ethionamide, ethambutol with cycloserine, or kanamycin has shown little success."
+  },
+  {
+    "id": 1545,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "The urease test is needed to differentiate M. scrofulaceum from which of the following mycobacteria?",
+    "options": [
+      "Mycobacterium gordonae",
+      "Mycobacterium kansasii",
+      "Mycobacterium avium complex",
+      "Mycobacterium bovis"
+    ],
+    "answer": "A",
+    "explanation": "Both pathogenic and saprophytic mycobacteria may produce urease, and urease production is used to differentiate several mycobacteria species. Biochemically, M. scrofulaceum is identical to M. gordonae, except for the urease reaction for which M. scrofulaceum is positive and M. gordonae is negative. Urease reactions for the other pathogenic mycobacteria are: M. tuberculosis = + M. kansasii = + M. bovis = + M. avium complex = Neg"
+  },
+  {
+    "id": 1546,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "A laboratory provides the following services for identification of mycobacteria: Acid- fast staining of clinical specimens Inoculation of cultures Shipment of positive cultures to a reference laboratory for identification According to the ATS’s definition for levels of service this laboratory is:",
+    "options": [
+      "Level I",
+      "Level II",
+      "Level III",
+      "Level IV"
+    ],
+    "answer": "A",
+    "explanation": "The ATS recognizes three levels of laboratory services for mycobacteria testing. Level I laboratories are those that grow mycobacteria and perform acid-fast stains but do not identify M. tuberculosis (they may or may not perform drug susceptibility tests on M. tuberculosis). Level II laboratories perform all of the functions of Level I laboratories and also identify M. tuberculosis. Level III laboratories identify all mycobacteria species from clinical specimens and perform drug susceptibility tests on all species."
+  },
+  {
+    "id": 1547,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "According to the College of American Pathologists (CAP) guidelines, which services for mycobacteria would be performed by a Level II laboratory?",
+    "options": [
+      "No procedures performed",
+      "Acid-fast staining, inoculation, and referral to a reference laboratory",
+      "Isolation and identification of M. tuberculosis; preliminary identification of other species",
+      "Definitive identification of all mycobacteria"
+    ],
+    "answer": "B",
+    "explanation": "The CAP lists four options for laboratories to follow in order to correlate the services provided with guidelines for inspection and accreditation. A laboratory’s performance on CAP proficiency tests is evaluated by interlaboratory comparison with laboratories within these levels of performance."
+  },
+  {
+    "id": 1548,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Culture of a skin (hand) wound from a manager of a tropical fish store grew on Löwenstein-Jensen agar slants at 30°C in 10 days but did not grow on the same media at 37°C in 20 days. Given the following results, what is the most likely identification? Photochromogen = + Niacin = Neg Urease = + Heat-stable catalase (68°C) = Neg Nitrate reduction = Neg Tween 80 hydrolysis = +",
+    "options": [
+      "Mycobacterium marinum",
+      "Mycobacterium kansasii",
+      "Mycobacterium avium complex",
+      "Mycobacterium tuberculosis"
+    ],
+    "answer": "A",
+    "explanation": "M. marinum is typically recovered from cutaneous wounds resulting from infection when the skin is traumatized and comes into contact with inadequately chlorinated fresh water or salt water, such as in swimming pools or fish aquariums. The other three species are slow growers at 37°C. M. tuberculosis and M. avium complex are nonphotochromogens. M. avium complex is urease negative, M. tuberculosis is positive for niacin and nitrate, and M. kansasii is positive for nitrate and catalase."
+  },
+  {
+    "id": 1549,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Which nonpathogenic Mycobacterium species is isolated most often from clinical specimens and is called the “tapwater bacillus”?",
+    "options": [
+      "Mycobacterium kansasii",
+      "Mycobacterium avium complex",
+      "Mycobacterium leprae",
+      "Mycobacterium gordonae"
+    ],
+    "answer": "D",
+    "explanation": "M. gordonae is a nonpathogen, scotochromogen, and rapid grower (7 days at 37°C). Rarely, it is implicated in opportunistic infections in patients with shunts, prosthetic heart values, or hepatoperitoneal disease. The other three species are pathogenic mycobacteria."
+  },
+  {
+    "id": 1550,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Which of the following drugs are first-line antibiotics used to treat classic tuberculosis for which susceptibility testing is performed by the disk diffusion method on Middlebrook 7H10 or 7H11 agar plates?",
+    "options": [
+      "Ampicillin, penicillin, streptomycin, and carbenicillin",
+      "Ampicillin, penicillin, and methicillin",
+      "Vancomycin, methicillin, and carbenicillin",
+      "Isoniazid, rifampin, ethambutol, streptomycin and pyrazinamide"
+    ],
+    "answer": "D",
+    "explanation": "Second-line antibiotics used to treat first-line drug-resistant tuberculosis include cycloserine, ethionamide, kanamycin, rifabutin, ciprofloxacin, doxycycline, ofloxacin, SXT and capreomycin."
+  },
+  {
+    "id": 1551,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "How long should M. tuberculosis–positive cultures be kept by the laboratory after identification and antibiotic susceptibility testing have been performed?",
+    "options": [
+      "1 to 2 months",
+      "2 to 4 months",
+      "5 to 6 months",
+      "6 to 12 months"
+    ],
+    "answer": "D",
+    "explanation": "Standard therapy using isoniazid and rifampin for classic, uncomplicated pulmonary tuberculosis is 9 months. The patient may not respond to therapy, even when the organism is susceptible to the antibiotics in vitro; therefore, cultures must be kept for up to 1 year to facilitate testing of additional antibiotics should the infection become refractory to therapy."
+  },
+  {
+    "id": 1552,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "According to the reporting standards of the ATS, one or more acid-fast bacilli (AFB) per oil immersion field (1,000×) are reported as:",
+    "options": [
+      "Numerous or 3+",
+      "Few or 2+",
+      "Rare or 1+",
+      "Indeterminate; a new specimen should be requested"
+    ],
+    "answer": "A",
+    "explanation": "Acid-fast smears are standardized by the ATS for reporting the number of AFB seen. The following criteria should be used to uniformly report results: 1 to 2 AFB per smear = Report number seen and request another sample 3 to 9 AFB per smear = Report as rare (1+) 10 or more per smear = Report as few (2+) 1 to 9 per oil immersion field = Report as numerous (3+) Greater than 9 per oil immersion field = Report as (4+)"
+  },
+  {
+    "id": 1553,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Which of the following rapid-growing Mycobacterium spp. would most likely grow on a MacConkey agar plate and on other routine bacteriologic media?",
+    "options": [
+      "Mycobacterium chelonae",
+      "Mycobacterium fortuitum",
+      "Mycobacterium abscessus",
+      "All of the above"
+    ],
+    "answer": "D",
+    "explanation": "Mycobacteria spp. growing on MacConkey agar and other routine media are usually nonpathogens. However, M. chelonae, M. abscessus, and M. fortuitum are rapid growers that will grow on MacConkey agar (with no crystal violet) within 5 days and are considered pathogens causing disseminated diseases in immunocompromised individuals."
+  },
+  {
+    "id": 1554,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Rapid methods for identifying classic infection with M. tuberculosis include:",
+    "options": [
+      "Mass spectrometry",
+      "Nucleic acid probes",
+      "Acid-fast and fluorochrome-stained smears",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "M. tuberculosis is a slow grower with a prolonged culture time of 12 to 25 days and requires 3 to 6 weeks for definitive identification and antibiotic susceptibility testing. The acid-fast and fluorochrome smears remain the number one rapid test for the initial detection of mycobacterial infection. A positive smear has a predictive value of 96% when all laboratory and clinical findings are considered. Mass spectrometry (MALDI- TOF) is used for early culture identification when there is moderate culture growth. Sequencing uses minimal or very little culture growth for identification. DNA probes are available for rapid identification of M. tuberculosis, M. bovis, and M. avium. Amplification of a species-specific target region of DNA is done by PCR with a labeled (biotinylated) oligonucleotide primer. The PCR product is detected by denaturation and hybridization to a capture probe. After washing to remove unbound DNA, strepavidin conjugated to an enzyme is added. After washing to remove unbound conjugate, substrate is added. The presence of product indicates a positive result."
+  },
+  {
+    "id": 1555,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Individuals showing a positive purified protein derivative (PPD) skin test for M. tuberculosis are usually:",
+    "options": [
+      "Infective",
+      "Symptomatic of pulmonary disease",
+      "Latently infected",
+      "Falsely positive"
+    ],
+    "answer": "C",
+    "explanation": "A positive PPD test result indicates a person who is latently infected with M. tuberculosis. Such persons are asymptomatic and not infectious but have a 10% risk of developing tuberculosis during their lifetime."
+  },
+  {
+    "id": 1556,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Which of the following Mycobacterium species is diagnosed by means other than culture?",
+    "options": [
+      "Mycobacterium leprae",
+      "Mycobacterium bovis",
+      "Mycobacterium canetti",
+      "Mycobacterium avium"
+    ],
+    "answer": "A",
+    "explanation": "M. leprae and M. microti are different from all other mycobacteria because they cannot be cultured in vitro. Biopsies from nodules and plaques of skin that show numerous AFB are presumptively diagnosed as positive for M. leprae. Confirmatory identification is made by nucleic acid testing (NAT) using PCR."
+  },
+  {
+    "id": 1557,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Which M. avium complex organism is the most frequently isolated mycobacterium from patients with AIDS?",
+    "options": [
+      "Mycobacterium avium",
+      "Mycobacterium intracellulare",
+      "Mycobacterium scrofulaceum",
+      "Mycobacterium bovis"
+    ],
+    "answer": "A",
+    "explanation": "Greater than 90% of M. avium complex organisms that are isolated from patients with AIDS are M. avium. These are differentiated from M. intracellulare and M. chimaera, which comprise the other two members of the complex by performing NAT."
+  },
+  {
+    "id": 1558,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Which mycobacterium of the M. tuberculosis complex fails to grow in culture and has a characteristic “croissant-like” morphology in stained smears?",
+    "options": [
+      "Mycobacterium africanum",
+      "Mycobacterium microti",
+      "Mycobacterium bovis",
+      "Mycobacterium leprae"
+    ],
+    "answer": "B",
+    "explanation": "M. microti is found in guinea pigs, rabbits, cats, and other warm-blooded animals. It is a cause of tuberculosis in immunocompromised humans but is known to cause tuberculosis in immunocompetent persons as well. M. microti cannot be cultured in vitro but can be distinguished from M. leprae by its distinctive “croissant-like” morphology. Diagnosis is confirmed by performing NAT."
+  },
+  {
+    "id": 1559,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Which two mycobacteria commonly isolated from subcutaneous skin have an optimal growth temperature of 30°C?",
+    "options": [
+      "Mycobacterium haemophilum and Mycobacterium ulcerans",
+      "Mycobacterium kansasii and Mycobacterium xenopi",
+      "Mycobacterium gordonae and Mycobacterium avium",
+      "Mycobacterium simiae and Mycobacterium avium"
+    ],
+    "answer": "A",
+    "explanation": "M. haemophilum, M. ulcerans, and M. marinum grow optimally at 27°C to 30°C. M. xenopi grows optimally at 42°C to 45°C, and is frequently isolated from hot water systems and storage tanks. All other mycobacteria are cultured at 35°C to 37°C."
+  },
+  {
+    "id": 1560,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Which mycobacterium is associated with Crohn disease?",
+    "options": [
+      "Mycobacterium. marinum",
+      "Mycobacterium avium subsp. Mycobacterium paratuberculosis",
+      "M. fortuitum",
+      "M. gordonae"
+    ],
+    "answer": "B",
+    "explanation": "M. avium subsp. paratuberculosis is known to cause an ulcerative intestinal disease with chronic diarrhea in cattle known as Johne disease. Although M. paratuberculosis has been isolated from the intestines of humans with Crohn disease with significantly greater frequency than controls, the organism has not yet been proven to cause ileitis in humans."
+  },
+  {
+    "id": 1561,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Which temperature range is ideal for the recovery of M. marinum?",
+    "options": [
+      "24°C to 26°C",
+      "30°C to 32°C",
+      "42°C to 44°C",
+      "44°C to 48°C"
+    ],
+    "answer": "B",
+    "explanation": "M. marinum is usually recovered from skin lesions that have been in contact with underchlorinated freshwater, saltwater, or tropical fish aquariums."
+  },
+  {
+    "id": 1562,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "Key biochemical tests used to identify M. tuberculosis are:",
+    "options": [
+      "Niacin, nitrate reduction, growth on thiophene-2-carboxylic acid hydrazide (TCH) (10 mg/mL)",
+      "Light and dark incubation, Tween 80 hydrolysis",
+      "Heat resistance, catalase (68°C)",
+      "Growth on MacConkey and blood agars"
+    ],
+    "answer": "A",
+    "explanation": "M. tuberculosis tests positive in the niacin (nicotinic acid) accumulation test, which is done after sufficient cultural growth is observed. Even though all other species produce niacin, M. tuberculosis produces the most which is tested directly on the L-J slant that is at least 3 weeks old, provided sufficient numbers of the typical buff-colored, slow- growing, rough colonies (serpentine) are observed."
+  },
+  {
+    "id": 1563,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "What report should be given for the results of the following AFB smear? Number of AFB seen = 2 per 300 fields (1,000× magnification)",
+    "options": [
+      "1+",
+      "2+",
+      "3+",
+      "Indeterminate; repeat with new specimen"
+    ],
+    "answer": "D",
+    "explanation": "This smear cannot be reported as positive or negative because only two AFB were observed per 300 fields. The two AFB observed could be contaminants in the oil immersion or on the lens of the microscope from a previous positive AFB smear. A new specimen should be requested. The fluorochrome staining method saves time when scanning smears for AFB. With the use of a UV microscope, a lower magnification (450×) allows for more fields to be scanned in less time. Positive results using a fluorochrome staining method, must be confirmed using an acid-fast staining method."
+  },
+  {
+    "id": 1564,
+    "section": "Mycobacteria",
+    "chapter": "Microbiology",
+    "question": "What vaccine against tuberculosis is available, and what is the source of the vaccine?",
+    "options": [
+      "No vaccine is available",
+      "BCG—source M. bovis",
+      "MAC—source M. avium",
+      "INH—source CDC"
+    ],
+    "answer": "B",
+    "explanation": "Presently, BCG (an attenuated strain of M. bovis) has been used in many parts of the world to vaccinate susceptible individuals against tuberculosis."
+  },
+  {
+    "id": 1565,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "All of the following are examples of appropriate specimens for the recovery of fungi except:",
+    "options": [
+      "Tissue biopsy",
+      "Cerebrospinal fluid",
+      "Aspirate of exudate",
+      "Swab"
+    ],
+    "answer": "D",
+    "explanation": "Specimens for fungal culture must be kept in a moist, sterile environment. Swabs that are dried out or submitted with insufficient material on them should be rejected. Generally, swabs are inadequate for the recovery of fungi because they are easily contaminated by surrounding skin flora."
+  },
+  {
+    "id": 1566,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "For which clinical specimens is the KOH direct mount technique for examination of fungal elements used?",
+    "options": [
+      "Skin",
+      "Cerebrospinal fluid",
+      "Blood",
+      "Bone marrow"
+    ],
+    "answer": "A",
+    "explanation": "A solution of 10% KOH is used for contaminated specimens, such as skin, nail scrapings, hair, and sputum, to clear away background debris that may resemble fungal elements. Normally sterile specimens (CSF, blood, and bone marrow) do not require KOH for clearing."
+  },
+  {
+    "id": 1567,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "The India ink stain is used as a presumptive test for the presence of which organism?",
+    "options": [
+      "Aspergillus niger in blood",
+      "Cryptococcus neoformans in CSF",
+      "Histoplasma capsulatum in CSF",
+      "Candida albicans in blood or body fluids"
+    ],
+    "answer": "B",
+    "explanation": "Meningitis caused by C. neoformans is diagnosed through culture, biochemical reactions, and rapid agglutination tests for cryptococcal antigen. The India ink test is not diagnostic for cryptococcal meningitis because positive staining results are demonstrated in less than 50% of confirmed cases. A positive India ink test shows yeast cells in CSF with a surrounding clear area (the capsule) because the capsule of C. neoformans is not penetrated by ink particles."
+  },
+  {
+    "id": 1568,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Cutaneous disease involving skin, hair, and nails usually indicates an infection with a:",
+    "options": [
+      "Dimorphic fungus",
+      "Dermatophyte",
+      "Mucorales (previously Zygomycetes)",
+      "Candida species"
+    ],
+    "answer": "B",
+    "explanation": "Superficial dermatophytes rarely invade the deeper tissues and are the cause of most cutaneous fungal infections. Fungal infections of the skin are most often caused by Microsporum spp., Trichophyton spp., and Epidermophyton spp., although Candida spp. are sometimes implicated as the cause of nail infections."
+  },
+  {
+    "id": 1569,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "What is the first step to be performed in the identification of an unknown yeast isolate?",
+    "options": [
+      "Gram staining",
+      "India ink staining",
+      "Catalase test",
+      "Germ tube test"
+    ],
+    "answer": "D",
+    "explanation": "The true germ tube (filamentous extension from a yeast cell) is approximately one-half the width and three to four times the length of the cell with no true hyphae constriction at the point of origin. C. albicans produce germ tubes (95%), and a positive test is considered a presumptive identification."
+  },
+  {
+    "id": 1570,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "An isolate produced a constriction that was interpreted as a positive germ tube, but C. albicans was ruled out when confirmatory tests were performed. Which of the following fungi is the most likely identification?",
+    "options": [
+      "Candida tropicalis",
+      "Cryptococcus neoformans",
+      "Candida glabrata",
+      "Rhodotorula rubra"
+    ],
+    "answer": "A",
+    "explanation": "C. tropicalis forms pseudohyphae that resemble true germ tubes by producing a constriction at the point of origin of the yeast cell. Germ tubes represent true hyphae without constriction, and therefore the test should have been repeated along with carbohydrate tests before making a presumptive identification. The other three species of yeast listed do not form hyphae."
+  },
+  {
+    "id": 1571,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Cornmeal agar with Tween 80 is used to identify which characteristic of an unknown yeast isolate?",
+    "options": [
+      "Hyphae (true and pseudo)",
+      "Blastoconidia and arthroconidia",
+      "Chlamydoconidia",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "Cornmeal agar with Tween 80 (polysorbate) reduces the surface tension and allows for enhanced formation of hyphae, blastospores, and chlamydoconidia."
+  },
+  {
+    "id": 1572,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Blastoconidia are the beginning of which structures?",
+    "options": [
+      "Arthroconidia",
+      "Germ tubes",
+      "Pseudohyphae",
+      "True hyphae"
+    ],
+    "answer": "C",
+    "explanation": "Pseudohyphae are the result of a pinching-off process, blastoconidiation, with the growth of filaments with constrictions. Germ tubes are the beginning of true hyphae (no constrictions). Arthrospores are the result of a breaking-off process of true septate hyphae resulting in square conidia."
+  },
+  {
+    "id": 1573,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "An isolate from CSF growing on cornmeal agar produces the following structures: Blastoconidia = + Pseudohyphae = Neg Chlamydoconidia = Neg Arthroconidia= Neg Which tests should be performed next?",
+    "options": [
+      "Birdseed agar and urease",
+      "Germ tube and glucose",
+      "India ink and germ tube",
+      "All of these options"
+    ],
+    "answer": "A",
+    "explanation": "A yeast that is isolated from CSF and is producing blastospores is most likely to be C. neoformans, which is positive for urease and produces brown colonies on birdseed agar."
+  },
+  {
+    "id": 1574,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Which of the following yeast enzymes is detected using birdseed (niger seed) agar?",
+    "options": [
+      "Phenol oxidase",
+      "Catalase",
+      "Urease",
+      "Nitrate reductase"
+    ],
+    "answer": "A",
+    "explanation": "Most isolates of C. neoformans produce phenol oxidase when grown on Guizotia abyssinica medium (birdseed medium), producing brown to black pigmented colonies. C. neoformans is the only Cryptococcus species that oxidizes o-diphenol to melanin, which is responsible for the color. {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "",
+            "C. neoformans",
+            "R. rubra",
+            "T. cutaneum",
+            "C. albicans"
+          ],
+          [
+            "Urease",
+            "+",
+            "+",
+            "+",
+            "Neg"
+          ],
+          [
+            "Germ tube",
+            "Neg",
+            "Neg",
+            "Neg",
+            "+"
+          ],
+          [
+            "Brown and black colonies on niger seed agar",
+            "+",
+            "Neg",
+            "Neg",
+            "Neg"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1575,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Which of the following yeasts is characteristically positive for germ tube production?",
+    "options": [
+      "Candida tropicalis",
+      "Candida kefyr (pseudotropicalis)",
+      "Cryptococcus neoformans",
+      "Candida albicans"
+    ],
+    "answer": "D",
+    "explanation": "C. albicans and Candida dubliniensis, a variant of C. albicans, are the only yeasts that produce germ tubes within 1 to 3 hours of incubation at 37°C. C. tropicalis produces pseudohyphae after incubation for 3 hours, which may be mistaken for germ tubes. A careful evaluation of the tube origin for constriction is required to avoid a false-positive interpretation."
+  },
+  {
+    "id": 1576,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Arthroconidia production is used to differentiate which two yeast isolates?",
+    "options": [
+      "Candida albicans and Candida dubliniensis",
+      "Trichosporon cutaneum and Cryptococcus neoformans",
+      "Candida albicans and Candida tropicalis",
+      "Saccharomyces cerevisiae and Candida glabrata"
+    ],
+    "answer": "B",
+    "explanation": "T. cutaneum and C. neoformans are both urease positive, but T. pullulans produces arthroconidia, and C. neoformans does not. In addition to Trichosporon spp., arthroconidia are produced by Geotrichum spp."
+  },
+  {
+    "id": 1577,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "The urease test, niger seed agar test, and the germ tube test are all used for the presumptive identification of:",
+    "options": [
+      "Rhodotorula rubra",
+      "Cryptococcus neoformans",
+      "Trichosporon cutaneum",
+      "Candida albicans"
+    ],
+    "answer": "B",
+    "explanation": "Germ tube–negative isolates producing dark brown to black colonies on niger seed agar and a positive urease test are presumptive of C. neoformans. A positive germ tube test result is a presumptive identification for C. albicans as well as for C. dubliniensis. See the chart above."
+  },
+  {
+    "id": 1578,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Which of the following yeasts produces only blastoconidia on cornmeal Tween 80 agar?",
+    "options": [
+      "Candida spp.",
+      "Trichosporon spp.",
+      "Geotrichum spp.",
+      "Cryptococcus spp."
+    ],
+    "answer": "D",
+    "explanation": "Cryptococcus spp. do not form either pseudohyphae or arthroconidia. Candida spp. produce blastoconidia or pseudohyphae. Trichosporon spp. produce pseudohyphae, blastoconidia, and arthroconidia. See the chart below. {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "",
+            "Blastoconidia",
+            "Pseudohyphae",
+            "Arthroconidia"
+          ],
+          [
+            "Cryptococcus spp.",
+            "+",
+            "Neg",
+            "Neg"
+          ],
+          [
+            "Candida spp.",
+            "+",
+            "+",
+            "Neg"
+          ],
+          [
+            "Trichosporon spp.",
+            "+",
+            "+",
+            "+"
+          ],
+          [
+            "Geotrichum spp.",
+            "Neg",
+            "+",
+            "+"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1579,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Ascospores are formed by which yeast isolate?",
+    "options": [
+      "Saccharomyces cerevisiae",
+      "Candida albicans",
+      "Cryptococcus neoformans",
+      "All of these options"
+    ],
+    "answer": "A",
+    "explanation": "Sexual spore production is a characteristic of the Ascomycotina, which produce an ascus (saclike structure) after the union of two nuclei. The resulting spore is termed ascospore. S. cerevisiae produces ascospores when grown on ascospore agar for 10 days at 25°C."
+  },
+  {
+    "id": 1580,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "A germ tube–negative, pink yeast isolate was recovered from the respiratory secretions and urine of a patient with AIDS. Given the following results, what is the most likely identification? CORNMEAL TWEEN 80 AGAR Blastoconidia = + Pseudohyphae = Neg Arthroconidia= Neg Urease = +",
+    "options": [
+      "Candida albicans",
+      "Rhodotorula spp.",
+      "Cryptococcus spp.",
+      "Trichosporon spp."
+    ],
+    "answer": "B",
+    "explanation": "Rhodotorula spp. produce pink- to coral-colored colonies on Sabouraud agar and cornmeal agar. It is usually considered a contaminant but is an opportunistic pathogen, and must be identified when found in specimens from immunosuppressed patients."
+  },
+  {
+    "id": 1581,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Terminal chlamydoconidia production is demonstrated by which Candida species?",
+    "options": [
+      "Candida glabrata",
+      "Candida krusei",
+      "Candida albicans",
+      "Candida tropicalis"
+    ],
+    "answer": "C",
+    "explanation": "Cornmeal Tween 80 agar supports the growth of C. albicans and the formation of its distinctive thick-walled, usually single, terminal chlamydoconidia. C. dubliniensis also produces chlamydoconidia (in pairs, triplets, and clusters) and germ tubes but is rarely implicated in disease."
+  },
+  {
+    "id": 1582,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Carbohydrate assimilation tests are used for the identification of yeast isolates by inoculating media:",
+    "options": [
+      "Free of carbohydrates",
+      "Free of niger seed",
+      "Containing carbohydrates",
+      "Containing yeast extract"
+    ],
+    "answer": "A",
+    "explanation": "The yeast isolate is inoculated directly into the molten agar base free of carbohydrates or is poured as a suspension onto a yeast nitrogen agar base plate. Carbohydrate disks are then added to the surface of the agar, and the plates are incubated for 24 to 48 hours at 30°C. Growth around the disk indicates the ability of the yeast to utilize the carbohydrate(s) as a sole source of carbon."
+  },
+  {
+    "id": 1583,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Yeast recovered from the urine of a catheterized patient receiving chemotherapy for cancer gave the following results: CORNMEAL TWEEN 80 AGAR Germ tube = + Blastoconidia = + Pseudohyphae = + Arthroconidia= Neg Terminal chlamydoconidia = + What further testing is necessary?",
+    "options": [
+      "Carbohydrate assimilation and urease",
+      "Urease and niger seed",
+      "Nitrate reductase and carbohydrate fermentation",
+      "No further testing is needed for identification"
+    ],
+    "answer": "D",
+    "explanation": "This isolate is C. albicans, which also produces some true hyphae along with pseudohyphae. A positive germ tube is a presumptive identification along with the production of blastoconidia, terminal chlamydoconidia, and pseudohyphae."
+  },
+  {
+    "id": 1584,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "A blood agar plate inoculated with sputum from a patient with diabetes mellitus grew very few bacterial flora and a predominance of yeast. Given the following results, what is the most likely identification of the yeast isolate? CORNMEAL TWEEN 80 AGAR Germ tube = Neg Pseudohyphae = + Arthroconidia = Neg Blastoconidia = + (arranged along pseudohyphae) Chlamydoconidia = Neg",
+    "options": [
+      "Candida tropicalis",
+      "Candida kefyr (pseudotropicalis)",
+      "Trichosporon cutaneum",
+      "Geotrichum candidum"
+    ],
+    "answer": "A",
+    "explanation": "C. tropicalis and C. kefyr (pseudotropicalis) differ in their arrangement of blastoconidia along the pseudohyphae. C. kefyr (pseudotropicalis) forms elongated blastoconidia arranged in parallel clusters that simulate logs in a stream. Trichosporon spp. and Geotrichum spp. form arthroconidia."
+  },
+  {
+    "id": 1585,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Dimorphic molds are found in infected tissue in which form?",
+    "options": [
+      "Mold phase",
+      "Yeast phase",
+      "Encapsulated",
+      "Latent"
+    ],
+    "answer": "B",
+    "explanation": "Dimorphic molds are in the yeast form in infected tissues because they are in the yeast form at 37°C. Specimens are cultured and incubated at both room temperature and 35°C to 37°C. To prove that a mold growing at room temperature (or 30°C) is a dimorphic fungus, conversion to the yeast form must be demonstrated via subculture and incubation at 37°C."
+  },
+  {
+    "id": 1586,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "The mycelial form of which dimorphic mold produces thick-walled, rectangular, or barrel-shaped alternate arthroconidia?",
+    "options": [
+      "Coccidioides immitis",
+      "Sporothrix schenckii",
+      "Histoplasma capsulatum",
+      "Blastomyces dermatitidis"
+    ],
+    "answer": "A",
+    "explanation": "The mold form of C. immitis shows barrel-shaped arthroconidia separated by empty cells (ghost cells) that cause an uneven staining effect when they are examined under a microscope. S. schenckii, H. capsulatum, and B. dermatitidis produce conidia that are round or oval in shape in the mold phase."
+  },
+  {
+    "id": 1587,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "The yeast form of which dimorphic fungus appears as oval or elongated cigar shapes?",
+    "options": [
+      "Coccidioides immitis",
+      "Sporothrix schenckii",
+      "Histoplasma capsulatum",
+      "Blastomyces dermatitidis"
+    ],
+    "answer": "B",
+    "explanation": "S. schenckii is usually acquired by humans through thorns or splinters because it is commonly found on living or dead vegetation. It is called “rose gardener’s disease” because gardeners, florists, and farmers are most often infected. S. schenckii is often recovered from exudates of unopened subcutaneous nodules or open draining lesions."
+  },
+  {
+    "id": 1588,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "The mycelial form of H. capsulatum seen on agar resembles:",
+    "options": [
+      "Sepedonium spp.",
+      "Penicillium spp.",
+      "Sporothrix spp.",
+      "Coccidioides spp."
+    ],
+    "answer": "A",
+    "explanation": "Sepedonium spp. are saprophytic molds that do not have a yeast phase and produce large spherical tuberculate macroconidia, similar to H. capsulatum. Histoplasmosis is a chronic granulomatous infection primarily found in the lungs that invades the reticuloendothelial system. Infection occurs via spores released from decaying bird or chicken droppings that are inhaled when disturbed."
+  },
+  {
+    "id": 1589,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "The yeast form of which dimorphic mold shows a large parent yeast cell surrounded by smaller budding yeast cells?",
+    "options": [
+      "Paracoccidioides brasiliensis",
+      "Sporothrix schenckii",
+      "Coccidioides immitis",
+      "Histoplasma capsulatum"
+    ],
+    "answer": "A",
+    "explanation": "P. brasiliensis yeast forms are sometimes seen as a “mariner’s wheel” because multiple budding cells completely surround the periphery of the parent cell."
+  },
+  {
+    "id": 1590,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Which group of molds can be ruled out when septate hyphae are observed in a culture?",
+    "options": [
+      "Dematiaceous",
+      "Mucorales (formerly Zygomycetes)",
+      "Dermatophytes",
+      "Dimorphic molds"
+    ],
+    "answer": "B",
+    "explanation": "Mucorales (formerly Zygomycetes) commonly recovered from clinical specimens are Rhizopus spp. and Mucor spp. Both display aseptate hyphae, whereas the other groups above display septate hyphae. Mucorales (Zygomycetes) usually not encountered in clinical specimens are also aseptate and include Lichtheimia spp. (formerly Absidia spp.), Rhizomucor spp., Cunninghamella spp., and Syncephalastrum spp."
+  },
+  {
+    "id": 1591,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Tinea versicolor is a skin infection caused by:",
+    "options": [
+      "Malassezia furfur",
+      "Trichophyton rubrum",
+      "Trichophyton schoenleinii",
+      "Microsporum gypseum"
+    ],
+    "answer": "A",
+    "explanation": "M. furfur has a worldwide distribution and causes a superficial, brownish, dry, scaly patch on the skin of light-skinned persons and lighter patches on persons with dark skin. M. furfur is not cultured because diagnosis can be made from microscopic examination of the skin scales. Skin scrapings prepared in KOH show oval- or bottle- shaped cells that exhibit monopolar budding in the presence of a cell wall and also produce small hyphae."
+  },
+  {
+    "id": 1592,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Which of the following structures is (are) invaded by the genus Trichophyton?",
+    "options": [
+      "Hair",
+      "Nails",
+      "Skin",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "Trichophyton spp., Microsporum spp., and Epidermophyton spp. are the organisms causing human dermatomycoses or cutaneous infections. Trichophyton spp. infect hair and nails, as well as skin. Infections with members of the genus Microsporum are confined to the hair and skin, whereas infections caused by the genus Epidermophyton are seen only on skin and nails."
+  },
+  {
+    "id": 1593,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "An organism cultured from the skin produces colonies displaying a cherry-red color on Sabouraud dextrose agar after 3 to 4 weeks and teardrop-shaped microconidia along the sides of the hyphae. The most likely identification is:",
+    "options": [
+      "Trichophyton rubrum",
+      "Trichophyton tonsurans",
+      "Trichophyton schoenleinii",
+      "Trichophyton violaceum"
+    ],
+    "answer": "A",
+    "explanation": "Members of the genus Microsporum produce club-shaped microconidia and are usually pigmented white, buff, yellow, or brown. Epidermophyton does not display microconidia and produces yellow-green or yellow-tan colonies. T. rubrum can be differentiated from the other members of the genus by its distinctive cherry-red color. Trichophyton mentagrophytes may also produce a red pigment, but it is usually rose colored or orange, or deep red. T. tonsurans produces white-tan to yellow, suedelike colonies. T. schoenleinii produces white to cream-colored colonies, and T. violaceum produces port wine to deep violet colonies."
+  },
+  {
+    "id": 1594,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Which Microsporum species causes an epidemic form of tinea capitis in children?",
+    "options": [
+      "Microsporum canis",
+      "Microsporum audouinii",
+      "Microsporum gypseum",
+      "All of these options"
+    ],
+    "answer": "B",
+    "explanation": "M. audouinii and T. tonsurans may both cause epidemic tinea capitis in children. M. audouinii causes a chronic infection transmitted directly via infected hairs on caps, hats, combs, upholstery, and hair clippers. Infected hair shafts fluoresce yellow-green under a Wood lamp. M. audouinii does not usually sporulate in culture and forms atypical vegetative forms, such as antler and racquet hyphae and terminal chlamydoconidia. In contrast, M. canis produces spindle-shaped, thick-walled multicelled macroconidia, and M. gypseum produces ellipsoidal, multicellular macroconidia."
+  },
+  {
+    "id": 1595,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Microscopic examination of a fungus cultured from a patient with athlete’s foot showed large, smooth-walled, club-shaped macroconidia appearing singly or in clusters of two to three from the tips of short conidiophores. The colonies did not produce microconidia. What is the most likely identification?",
+    "options": [
+      "Trichophyton spp.",
+      "Alternaria spp.",
+      "Epidermophyton spp.",
+      "Microsporum spp."
+    ],
+    "answer": "C",
+    "explanation": "Epidermophyton spp. do not produce microconidia; this differentiates them from Trichophyton spp. and Microsporum spp. Alternaria is not a dermatophyte. Epidermophyton floccosum is the most frequently isolated member of the genus and infects skin, but not hair."
+  },
+  {
+    "id": 1596,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Which Trichophyton species causes the favus type of tinea capitis seen in the Scandinavian countries and in the Appalachian region of the United States?",
+    "options": [
+      "Trichophyton verrucosum",
+      "Trichophyton violaceum",
+      "Trichophyton tonsurans",
+      "Trichophyton schoenleinii"
+    ],
+    "answer": "D",
+    "explanation": "T. schoenleinii is identified microscopically by its characteristic antler-shaped hyphae and chlamydoconidia in the absence of conidia."
+  },
+  {
+    "id": 1597,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "The hair baiting test is used to differentiate which two species of Trichophyton that produce red colonies on Sabouraud agar plates?",
+    "options": [
+      "Trichophyton mentagrophytes and Trichophyton rubrum",
+      "Trichophyton tonsurans and Trichophyton schoenleinii",
+      "Trichophyton tonsurans and Trichophyton violaceum",
+      "Trichophyton verrucosum and Trichophyton rubrum"
+    ],
+    "answer": "A",
+    "explanation": "T. mentagrophytes may produce a deep red pigment seen through the reverse side of the agar plate that resembles the cherry-red pigment produced by T. rubrum. However, T. mentagrophytes can be differentiated by its ability to invade the hair shaft. T. rubrum grows on the surface of hair but does not penetrate the shaft."
+  },
+  {
+    "id": 1598,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "A mold that produces colonies with a dark brown, green-black, or black appearance of both the surface and reverse side is classified as a:",
+    "options": [
+      "Dematiaceous mold",
+      "Dermatophyte",
+      "Hyaline mold",
+      "Dimorphic fungus"
+    ],
+    "answer": "A",
+    "explanation": "The dematiaceous molds are easily recognized and confirmed by observing dark- yellow or brown septate hyphae upon microscopic examination."
+  },
+  {
+    "id": 1599,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "A rapidly growing hyaline mold began as a white colony but soon developed a black “pepper” effect on the agar surface. The older colony produced a black matte, making it resemble a dematiaceous mold. What is the most likely identification?",
+    "options": [
+      "Penicillium notatum",
+      "Aspergillus niger",
+      "Paecilomyces spp.",
+      "Scopulariopsis spp."
+    ],
+    "answer": "B",
+    "explanation": "A. niger is the only species listed producing black conidia, which causes a “pepper” effect as the colony grows. The reverse side of the agar plate remains buff or cream colored, which differentiates it from the dematiaceous (dark) molds."
+  },
+  {
+    "id": 1600,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Which dematiaceous mold forms flask-shaped phialides, each with a flask-shaped collarette?",
+    "options": [
+      "Phialophora spp.",
+      "Exophiala spp.",
+      "Wangiella spp.",
+      "All of these options"
+    ],
+    "answer": "A",
+    "explanation": "Phialophora, Exophiala, and Wangiella all produce phialides, but the last two genera form elongated, tubelike phialides without a collarette, as opposed to the flask-shaped phialides of Phialophora, which contain clusters of conidia at the tips."
+  },
+  {
+    "id": 1601,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Which Aspergillus species, recovered from sputum or bronchial mucus, is the most common cause of pulmonary aspergillosis?",
+    "options": [
+      "Aspergillus niger",
+      "Aspergillus flavus",
+      "Aspergillus fumigatus",
+      "All of these options"
+    ],
+    "answer": "C",
+    "explanation": "A. fumigatus is most often associated with compost piles and is found in the soil of potted plants. A. niger is the cause of cavitary fungus ball lesions of the lungs and nasal passages."
+  },
+  {
+    "id": 1602,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "A hyaline mold recovered from a patient with AIDS produced rose-colored colonies with lavender centers on Sabouraud dextrose agar. Microscopic examination showed multiseptate macroconidia appearing as sickles or canoes. What is the most likely identification?",
+    "options": [
+      "Fusarium spp.",
+      "Wangiella spp.",
+      "Exophiala spp.",
+      "Phialophora spp."
+    ],
+    "answer": "A",
+    "explanation": "Fusarium spp. are usually a contaminant but are sometimes seen as a cause of mycotic eye, nail, or skin infection in debilitated patients. Fusarium is a hyaline (light) mold and grows on Sabouraud agar plates at 30°C within 4 days. The other three organisms are members of the Dematiaceae family (dark molds)."
+  },
+  {
+    "id": 1603,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Material from a fungus-ball infection produced colonies with a green surface on Sabouraud agar in 5 days at 30°C. Microscopic examination showed club-shaped vesicles with sporulation only from the top half of the vesicle. This hyaline mold is most probably which Aspergillus spp.?",
+    "options": [
+      "Aspergillus niger",
+      "Aspergillus fumigatus",
+      "Aspergillus flavus",
+      "Aspergillus terreus"
+    ],
+    "answer": "B",
+    "explanation": "A. fumigatus is the most common cause of aspergillosis. It is characterized by sporulation only from the upper half or two-thirds of the vesicle. Colonies of A. niger are white with black pepper growth and produce phialides over the entire vesicle, forming the classic “radiate” head. A. flavus colonies are yellow to yellow-green and produce phialides that cover the entire vesicle and point out in all directions. A. terreus produces brown colonies and phialides that also cover the entire vesicle."
+  },
+  {
+    "id": 1604,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "A rapidly growing nonseptate mold produced colonies with a gray surface resembling cotton candy that covered the entire plate. Microscopic examination revealed sporangiophores arising between, not opposite, the rhizoids and producing pear-shaped sporangia. What is the most likely identification?",
+    "options": [
+      "Lichtheimis (formerly Absidia) spp.",
+      "Penicillium spp.",
+      "Rhizopus spp.",
+      "Aspergillus spp."
+    ],
+    "answer": "A",
+    "explanation": "Lichtheimia (Absidia) spp. are similar to Rhizopus spp. except for the location of rhizoids (rootlike hyphae). The rhizoids of Rhizopus spp. are located at the point where the stolons and sporangiophores meet, whereas those of Lichtheimia (Absidia) spp. arise at a point on the stolon between the rhizoids. Penicillium spp. and Aspergillus spp. do not form rhizoids."
+  },
+  {
+    "id": 1605,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "An India ink test was performed on CSF from a male patient with HIV infection. Many encapsulated yeast cells were seen in the centrifuged sample. Further testing revealed a positive urease test and growth of brown colonies on niger seed agar. The diagnosis of meningitis was caused by which yeast?",
+    "options": [
+      "Candida albicans",
+      "Cryptococcus neoformans",
+      "Cryptococcus laurentii",
+      "Candida tropicalis"
+    ],
+    "answer": "B",
+    "explanation": "Immunocompromised patients are at risk for invasion of C. neoformans. The polysaccharide capsule of C. neoformans is not recognized by phagocytes, which cause patients with impaired cell-mediated immunity to become readily infected with C. neoformans."
+  },
+  {
+    "id": 1606,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "A bone marrow sample obtained from an immunocompromised patient revealed small intracellular cells using a Wright stain preparation. Growth on Sabouraud– dextrose agar plates of a mold phase at 25°C and a yeast phase at 37°C designates the organism as dimorphic. The mold phase produced thick, spherical tuberculated macroconidia. What is the most likely identification?",
+    "options": [
+      "Histoplasma capsulatum",
+      "Sepedonium spp.",
+      "Sporothrix schenckii",
+      "Coccidioides immitis"
+    ],
+    "answer": "A",
+    "explanation": "Thermally dimorphic H. capsulatum produce microconidia and hyphal fragments at 37°C (yeast phase), whereas at 25°C (mold phase), the organism displays large, thick- walled, round macroconidia with knobby or knoblike projections. The yeast form is able to survive within circulating monocytes or tissue macrophages that can be demonstrated with Giemsa or Wright stain."
+  },
+  {
+    "id": 1607,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "A lung biopsy obtained from an immunocompromised patient showed many “cup- shaped” cysts (gray to black) in a foamy exudate (green background) using Gomori methenamine silver (GMS) stain. The organism cannot be cultured because it does not grow on routine culture media for molds. The patient was diagnosed with pneumonia resistant to antibiotic treatment. The most likely identification is:",
+    "options": [
+      "Pneumocystis jirovecii (previously Pneumocystis carinii)",
+      "Histoplasma capsulatum",
+      "Sporothrix schenckii",
+      "Scopulariopsis spp."
+    ],
+    "answer": "A",
+    "explanation": "P. jirovecii (P. carinii) is classified as a fungus but formerly was classified as a parasite. It is best recovered by bronchoalveolar lavage or induced sputum in immunocompromised patients. Open lung biopsy sample was the specimen of choice before the AIDS epidemic. GMS stain is used to identify the organism which stains the cyst form in lung tissue, but not the trophic form. By using hematoxylin and eosin (H&E) staining on a smear, an eosinophilic, foamy material can be detected which is formed from the successful replication of the organism in alveolar lining fluid."
+  },
+  {
+    "id": 1608,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Upon direct examination of a sputum specimen, several spherules that contained endospores were noted. Growth on Sabouraud–dextrose agar showed aerial mycelial elements. The septate hyphae produced barrel-shaped arthroconidia. What is the most likely identification?",
+    "options": [
+      "Talaromyces (formerly Penicillium) marneffei",
+      "Scopulariopsis spp.",
+      "Cryptococcus neoformans",
+      "Coccidioides immitis"
+    ],
+    "answer": "D",
+    "explanation": "C. immitis endospores are often confused with yeast cells, but they do not bud. C. immitis is endemic in the southwestern United States. Because arthroconidia are highly infectious, an open plate should not be used, and a slide culture test should not be performed. Rather, tubed media is used for testing, and all work should be performed in a biological safety cabinet."
+  },
+  {
+    "id": 1609,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "A bone marrow specimen was obtained from an immunocompromised patient who tested positive for HIV. The organism grew rapidly at 3 days showing a mold form (at 25°C), displaying conidiophores with four to five terminal metulae with each having four to six phialides. The conidia at the end of the phialides were oval and in short chains. They appear as a fan or broom when viewing under 10× and 40× magnification. At 37°C, the yeast form grew more slowly, showing conidia that formed hyphal elements breaking at the septa to produce oval arthroconidia. This thermodimorphic mold is most likely:",
+    "options": [
+      "Paecilomyces spp.",
+      "Talaromyces (formerly Penicillium) marneffei",
+      "Rhizomucor spp.",
+      "Aspergillus fumigatus"
+    ],
+    "answer": "B",
+    "explanation": "Other Penicillium spp. are differentiated from Talaromyces (Penicillium) marneffei (thermally dimorphic) through conversion from the mold to yeast phase. Talaromyces (P.) marnerffei are seen as yeast at 35°C to 37°C on 5% sheep blood agar or in BHI broth. Other Penicillium spp. do not display a yeast phase. T. marneffei are recovered from the blood, skin, lymph nodes, bone marrow, and internal organs of immunocompromised patients."
+  },
+  {
+    "id": 1610,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "What is the specimen of choice for the initial diagnosis of P. jirovecii (carinii) in an immunocompromised patient, such as someone with AIDS?",
+    "options": [
+      "Induced sputum",
+      "Open-thorax lung biopsy",
+      "CSF",
+      "Urine"
+    ],
+    "answer": "A",
+    "explanation": "Open lung biopsy is not recommended for persons with AIDS because of the increased risk of death, infection, and complications associated with this surgical procedure. Persons with AIDS and P. jirovecii (carinii) pneumonia (PCP) can be diagnosed with chest radiography, special stains, and PCR methods from specimens obtained by bronchoalveolar lavage (BAL). Patients without AIDS have a much lower yield, and therefore, besides BAL, tracheal aspiration, endoscopic lung biopsy, cellular material from bronchial brushings, and open lung biopsy specimens are more often indicated."
+  },
+  {
+    "id": 1611,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "A transplant patient is suspected of having invasive aspergillosis on the basis of clinical and radiological findings. Which specimen is best for the initial identification of aspergillosis by soluble antigen testing?",
+    "options": [
+      "Blood culture",
+      "Lung biopsy",
+      "Serum or urine",
+      "Sputum"
+    ],
+    "answer": "C",
+    "explanation": "To determine an early diagnosis, soluble antigens (the galactomannan assay targets antigens of Aspergillus spp.) are detected by using such methods as ELISA, latex agglutination, and immunoblotting using serum or body fluids. Blood and sputum cultures are usually negative, and tissue biopsy is associated with a significantly higher risk of complications. Nucleic acid amplification assays, multiplex amplification and reverse transcription PCR (RT-PCR) have been developed which detect systemic aspergillosis in respiratory specimens. MALDI-TOF MS methodology has proven successful on old and young cultures, with 98.6% correct identification."
+  },
+  {
+    "id": 1612,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "What is the most common cause of mucormycosis infection in humans?",
+    "options": [
+      "Penicillium spp.",
+      "Candida albicans",
+      "Scopulariopsis spp.",
+      "Rhizopus spp."
+    ],
+    "answer": "D",
+    "explanation": "Vascular invasion, followed by thrombosis, tissue infarction, and necrosis are the most common clinical manifestations of cutaneous infections caused by Rhizopus spp. Infections occur mainly in patients who are already being treated for other conditions, including lymphoma, leukemia, neutropenia, renal failure, and diabetic ketoacidosis."
+  },
+  {
+    "id": 1613,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "A thermally dimorphic fungus shows a filamentous mold form with tuberculate macroconidia at room temperature, and a yeast form above 35°C. Which organism best fits this description?",
+    "options": [
+      "Histoplasma capsulatum",
+      "Paracoccidioides brasiliensis",
+      "Candida albicans",
+      "Coccidioides immitis"
+    ],
+    "answer": "A",
+    "explanation": "The yeast phase of H. capsulatum develops as small oval budding cells seen in macrophages. The yeast phase of P. brasiliensis develops large cells that bud creating a structure resembling a mariner’s wheel, and C. immitis produces very large spherules. At 25°C, P. brasiliensis produces small single conidia, and C. immitis produces arthroconidia. Candida spp. are not dimorphic. H. capsulatum is found in soil containing excrement of birds and bats. It is endemic in the Ohio and Mississippi River valleys, and the most common systemic mycosis in North America."
+  },
+  {
+    "id": 1614,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "SITUATION: After a vacation to the southwestern United States, a midwesterner complained of flulike symptoms with fever, chills, nonproductive cough, and chest pain. Microscopic examination of sputum, cleared with KOH, revealed large, thick-walled spherules containing endospores. Upon culture, the mold phase showed septate hyphae and alternating barrel-shaped arthroconidia. Which organism is most likely the cause of this pneumonia?",
+    "options": [
+      "Coccidioides immitis",
+      "Histoplasma capsulatum",
+      "Paracoccidioides brasiliensis",
+      "Talaromyces (formerly Penicillium) marneffei"
+    ],
+    "answer": "A",
+    "explanation": "C. immitis is a soil fungus and is endemic to the southwestern United States. Infection results from inhaling the arthroconidia, which form endospore-forming spherules and leads to infection within 1 to 3 weeks. Nonimmunocompromised people usually do not require treatment and are immune to reinfection. However, immunodeficient persons may develop symptomatic pulmonary and multiorgan infections."
+  },
+  {
+    "id": 1615,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Skin scrapings from a young male patient showed many yeast cells of oval and bottle- shapes with monopolar budding. The direct microscopic examination also showed hyphal elements with a “spaghetti and meatball” morphological appearance. The most likely identification of this yeast is?",
+    "options": [
+      "Malassezia furfur",
+      "Candida glabrata",
+      "Candida albicans",
+      "Cryptococcus neoformans"
+    ],
+    "answer": "A",
+    "explanation": "M. furfur, the cause of tinea versicolor, is often diagnosed from a direct skin scraping specimen. The classic “spaghetti and meatball” formations of the yeast and hyphal cells are distinct. In fungemia, the blood culture specimen will show small yeast cells without pseudohyphae."
+  },
+  {
+    "id": 1616,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "Microscopically, Scopulariopsis spp. resemble Penicillium spp. Which of the following best differentiates the two?",
+    "options": [
+      "Nonseptate hyphae and foot cells",
+      "Brush-like conidiophores and large echinulate conidia",
+      "No hyphae and no phialides",
+      "Growth at 45°C."
+    ],
+    "answer": "B",
+    "explanation": "Microscopically, Scopulariopsis spp. resemble Penicillium spp. except for the following: Scopulariopsis spp. produce annellophores with flask-shaped annelides bearing large lemon-shaped, rough-walled conidia in chains; Penicillium spp. display brush-like conidiophores producing metulae with flask-shaped phialides, resulting in chains of small, smooth-walled conidia."
+  },
+  {
+    "id": 1617,
+    "section": "Mycology",
+    "chapter": "Microbiology",
+    "question": "A fast-growing (2–5 days) culture of fluffy white to blue-green colonies from a respiratory specimen obtained from an immunocompromised ICU patient showed septate hyphae with many conidiophores. The tips of the conidiophores expand into large dome-shaped vesicles with bottle-shaped phialides covering the upper half or two- thirds of its surface. Long chains of small conidia form a columnar mass on the surface. At the base of the conidiophore, a “foot cell” is seen attaching the conidiophore to the septate hyphae. The most likely organism is?",
+    "options": [
+      "Penicillium spp.",
+      "Scopulariopsis spp.",
+      "Aspergillus fumigatus",
+      "Paecilomyces spp."
+    ],
+    "answer": "C",
+    "explanation": "A “foot cell” is characteristic of Aspergillus fumigatus. The presence of a foot cell, which is a T- or L-shaped cell at the base of the conidiophore (it is not a separate cell), is characteristic and distinct for A. fumigatus which is thermotolerant, growing at temperatures up to 45°C."
+  },
+  {
+    "id": 1618,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "Classification of viruses is made by:",
+    "options": [
+      "Complement fixation serology",
+      "Electron microscopy",
+      "Nucleic acid composition",
+      "Cellular inclusion bodies"
+    ],
+    "answer": "C",
+    "explanation": "True viruses have nucleic acid that is either RNA or DNA, and this serves as the basis for initial classification. Members of these classes are further divided into groups that cause human disease on the basis of mode of transmission, tissues invaded, diseases produced, and antigenic characteristics."
+  },
+  {
+    "id": 1619,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "Which virus is the most common etiological agent of viral respiratory diseases in infants and children?",
+    "options": [
+      "Respiratory syncytial virus (RSV)",
+      "Measles virus",
+      "Coxsackie A virus",
+      "Coxsackie B virus"
+    ],
+    "answer": "A",
+    "explanation": "RSV is the cause of croup, bronchitis, bronchiolitis, and interstitial pneumonia. Hospitalized children age less than 1 year are the most susceptible group."
+  },
+  {
+    "id": 1620,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "The most common viral syndrome of pericarditis, myocarditis, and pleurodynia (pain upon breathing) is caused by:",
+    "options": [
+      "Herpes simplex virus (HSV)",
+      "Respiratory syncytial virus",
+      "Epstein-Barr virus (EBV)",
+      "Coxsackie B virus"
+    ],
+    "answer": "D",
+    "explanation": "Coxsackie A virus, Coxsackie B virus, and the echoviruses are most commonly implicated in myocarditis and other syndromes, including acute cerebellar ataxia and hepatitis. Like poliovirus, infections are more common in the summer and fall seasons and gain entry through the gastrointestinal tract."
+  },
+  {
+    "id": 1621,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "Which of the following viruses is implicated along with EBV as a cause of infectious mononucleosis?",
+    "options": [
+      "Cytomegalovirus (CMV)",
+      "Coxsackie A virus",
+      "Coxsackie B virus",
+      "Hepatitis B virus"
+    ],
+    "answer": "A",
+    "explanation": "CMV infection in a previously healthy individual causes a self-limiting mononucleosis syndrome. CMV is an opportunistic pathogen that may produce lifelong infections and causes a variety of diseases, including congenital and neonatal infection, hepatitis, pneumonia, and disseminated infection in immunocompromised patients."
+  },
+  {
+    "id": 1622,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "The most common causes of viral pneumonia in adults are:",
+    "options": [
+      "Influenza and adenovirus",
+      "Hepatitis A and B viruses",
+      "Coxsackie A and B viruses",
+      "Herpes simplex and CMV"
+    ],
+    "answer": "A",
+    "explanation": "Influenza and adenoviruses are the main causes of respiratory infections, including the common cold, tracheobronchitis, and pneumonia. Adenoviruses also cause conjunctivitis, keratitis, cystitis, and gastroenteritis and are transmitted by aerosolized droplet, contaminated respiratory secretions, stool or fomites."
+  },
+  {
+    "id": 1623,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "Which virus belonging to the Reoviridae group causes gastroenteritis in infants and young children but an asymptomatic infection in adults?",
+    "options": [
+      "Coxsackie B virus",
+      "Rotavirus",
+      "Respiratory syncytial virus",
+      "Rhabdovirus"
+    ],
+    "answer": "B",
+    "explanation": "Rotaviruses have been implicated in both nosocomial infections and epidemic gastroenteritis. Children ages 3 to 24 months are most commonly affected. Diarrhea begins after an incubation period of 3 days, lasts for 2 to 10 days and is associated with vomiting and dehydration. In immunosuppressed children, rotavirus causes a chronic infection."
+  },
+  {
+    "id": 1624,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "A very small, single-stranded DNA virus that causes a febrile illness with a rash, and is called the fifth childhood disease after rubeola, rubella, varicella, and roseola is:",
+    "options": [
+      "Rotavirus",
+      "Adenovirus type 40",
+      "Coxsackie A virus",
+      "Parvovirus B19"
+    ],
+    "answer": "D",
+    "explanation": "Parvovirus causes a fever and characteristic “slapped cheek” rash in young children. Adults are usually immune, but immunocompromised persons may exhibit arthritis or anemia (the virus infects immature RBCs in bone marrow)."
+  },
+  {
+    "id": 1625,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "Hepatitis B virus can be transmitted by:",
+    "options": [
+      "Acupuncture",
+      "Tattoos",
+      "Sexual contact",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "Although the most common mode of transmission of hepatitis B is via needle puncture, it may also be transmitted by other parenteral means, including through sexual transmission and contact with contaminated blood via broken skin or mucous membranes."
+  },
+  {
+    "id": 1626,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "Which virus has been implicated in adult gastroenteritis resulting from ingestion of contaminated food (especially shellfish) and water?",
+    "options": [
+      "Noroviruses (Norwalk-like viruses)",
+      "Rotavirus",
+      "Hepatitis C virus",
+      "Coronavirus"
+    ],
+    "answer": "A",
+    "explanation": "Noroviruses are small RNA viruses that have been implicated in epidemics of community gastroenteritis as well as sporadic infections. Unlike rotaviruses, which cause gastroenteritis in infants and young children, noroviruses produce infections in all age groups."
+  },
+  {
+    "id": 1627,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "Which virus is associated with venereal and respiratory tract warts and produces lesions of skin and mucous membranes?",
+    "options": [
+      "Polyomavirus",
+      "Poxvirus",
+      "Adenovirus",
+      "Papillomavirus"
+    ],
+    "answer": "D",
+    "explanation": "Human papillomaviruses (HPVs) cause genital warts, the most prevalent sexually transmitted viral disease in the United States. Several strains, including HPV-6, HPV- 11, HPV-16, and HPV-18, are associated with penile, cervical, and vaginal neoplasia, causing more than 60% of the cancers. Because the virus cannot be cultured in vitro, diagnosis is usually made by using DNA probes, histopathology, or cytological examination of cutaneous biopsy of cells. A diagnostic characteristic of infected cells is koilocytosis, a perinuclear clearing in the squamous epithelium accompanied by nuclear atypia. Currently, the FDA has licensed three vaccines for HPV: Cervarix, Gardasil, and Gardasil-9."
+  },
+  {
+    "id": 1628,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "A clinical test used for the detection and identification of viral infections other than culture is:",
+    "options": [
+      "Histology/cytology",
+      "Polymerase chain reaction/DNA probes",
+      "Serology",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "In addition to serological tests for antibodies against the virus and DNA probes that identify viral DNA or RNA, cytological and histological examination aid in the rapid diagnosis of several viruses. The rubella virus is detected serologically by testing for specific IgG and IgM antibodies. Testing is routinely done on pregnant women, as a prenatal precaution."
+  },
+  {
+    "id": 1629,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "Which technique is used for the confirmation of infection with HIV-1 and HIV-2?",
+    "options": [
+      "Western blot (immunoblot) assay",
+      "ELISA",
+      "FDA-approved NAT",
+      "p24 Antigen testing"
+    ],
+    "answer": "C",
+    "explanation": "The Western blot assay is no longer used to confirm a positive serological test of antibodies to HIV. Western blot detects antibodies but it may miss people in the window phase of infection, is not confirmatory for neonatal infections because of the presence of maternal antibodies, and has a long turnaround time resulting in loss of contact with the patient. For these reasons, the CDC recommends a new approach using a simultaneous test for antibodies to both HIV-1 and HIV-2 and p24 antigen to screen for infection by immunoassay. Positive specimens would be tested by separate immunoassays to identify whether the infection is HIV-1 or HIV-2. Samples testing negative in suspected cases should be tested by a nucleic acid amplification method, such as PCR for viral RNA for definite identification."
+  },
+  {
+    "id": 1630,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "A 13-year-old boy was admitted to the hospital with a diagnosis of viral encephalitis. History revealed that the boy harbored wild raccoons from nearby woods. What is the best method to determine if the boy has contracted rabies?",
+    "options": [
+      "Remove the brainstems from all of the raccoons and examine for cytopathic effects",
+      "Request immunofluorescent test for antibody on the saliva from all of the raccoons",
+      "Request immunofluorescent test for antigen in cutaneous nerve specimen obtained by nuchal biopsy",
+      "Isolate the virus from the saliva of both the animals and the patient"
+    ],
+    "answer": "C",
+    "explanation": "Using direct immunofluorescence microscopy (DIF), rabies antigen can be detected in the cutaneous nerves surrounding the hair follicles of the posterior region of the neck (nuchal biopsy) and in the epithelial cells obtained through corneal impression. Antibodies to rabies can be detected in the serum and CSF of infected persons within 8 to 10 days of illness; however, infection usually occurs several months before the onset of symptoms. Isolation of virus from the saliva of the patient may be accomplished by mouse inoculation or by inoculation of susceptible cell culture lines with subsequent detection by immunofluorescent antibodies. Postmortem diagnosis of rabies is accomplished by using direct immunofluorescent assay of brain tissue. Brain tissue testing from the dead animal results in prompt treatment/prophylaxis of the human victim after an animal bite or injury."
+  },
+  {
+    "id": 1631,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "A 65-year-old woman was admitted to the hospital with acute respiratory distress, fever, myalgia, and headache. Influenza A or B was suspected after ruling out bacterial pneumonia. Which of the following methods could be used to confirm influenza infection?",
+    "options": [
+      "EIA",
+      "RT-PCR",
+      "Direct examination of nasal epithelium for virus using fluorescent antibody stain",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "Influenza virus types A, B, and C may be grown and isolated in cell cultures by using primary monkey kidney (PMK) cells permitting identification within 1 to 3 days in specialized laboratories performing viral cultures. Direct fluorescent and enzyme immunoassays by using monoclonal antibodies to nucleoprotein antigens in infected nasal epithelium are used for rapid diagnosis of both influenza A and influenza B infections. Influenza C testing is not routinely requested, and this type is referred to as “mild” influenza. RT-PCR is replacing the cell culture method because of better turn- around time, from collection of specimen to identification. It is also becoming the gold-standard for identifying respiratory viruses."
+  },
+  {
+    "id": 1632,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "The most rapid definitive diagnosis of a genital herpes simplex (HSV-2) infection in a 20-year-old man is made by using which method?",
+    "options": [
+      "Direct immunofluorescence test for viral antigen in vesicle fluid",
+      "Titer of serum and seminal fluid for antibodies to herpes simplex",
+      "Detection of anti–herpes simplex in seminal fluid",
+      "Cell culture of vesicle fluid"
+    ],
+    "answer": "A",
+    "explanation": "DIF testing of vesicle (lesion) fluid for virus using fluorescein-conjugated antibodies is the most rapid method for diagnosis of genital herpes infection. Immunofluorescence and immunoperoxidase methods are also used to distinguish HSV-1 and HSV-2. PCR and real-time PCR are more sensitive rapid methods for detection and identification. Viral cell culture is also very sensitive and may yield a positive result within 24 hours when fluid contains a high concentration of virus. Vero cells or primary human embryonic cells are inoculated with vesicle fluid and examined for cytopathic effects (CPEs), the most common of which are large “balloon” cells and multinucleated giant cells."
+  },
+  {
+    "id": 1633,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "A 20-year-old female college student complained of a sore throat and extreme fatigue. The physician noted lymphadenopathy and ordered a rapid test for infectious mononucleosis antibodies that was negative. Bacterial cultures were negative, as were serological tests for influenza A and B, HIV-1, CMV, hepatitis B, and antistreptolysin O. What would be the next line of viral testing to establish a diagnosis?",
+    "options": [
+      "Herpes simplex",
+      "Rubella",
+      "Epstein-Barr",
+      "West Nile"
+    ],
+    "answer": "C",
+    "explanation": "EBV serological testing for IgM-VCA (viral capsid antigen) during the illness may or may not be positive. Patients who present with an infectious mononucleosis–like syndrome should be tested for both EBV and CMV. Both viruses cause the same symptoms during the acute phase of the illness."
+  },
+  {
+    "id": 1634,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "A 60-year-old male gardener from New York State was hospitalized with flulike symptoms and was eventually diagnosed with encephalitis. While working in his garden, he had noticed several dead birds around his bird feeder. The region is known for heavy mosquito infestation. What is the most likely cause of his illness?",
+    "options": [
+      "West Nile virus",
+      "Epstein-Barr virus",
+      "Parvovirus",
+      "Hantavirus"
+    ],
+    "answer": "A",
+    "explanation": "West Nile virus causes neurological diseases with meningitis and encephalitis at the top of the list. The animal reservoirs are birds, with humans being accidental hosts. Transmission of West Nile virus is from mosquito to bird."
+  },
+  {
+    "id": 1635,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "A 30-year-old male patient, who was a contractor and building inspector in the southwestern United States, complained of difficulty breathing and was admitted to the hospital with severe respiratory disease. The physician noted a high fever and cough. Two days earlier, the patient had inspected an old abandoned warehouse that was infested by rodents. The patient was given intravenous antibiotics, but 2 days into therapy, the pneumonia worsened, leading to pulmonary edema. Which organism should be suspected of causing his illness?",
+    "options": [
+      "Hantavirus",
+      "Rotavirus",
+      "West Nile virus",
+      "Norovirus (formerly Norwalk-like virus)"
+    ],
+    "answer": "A",
+    "explanation": "Hantavirus is transmitted by a rodent host, the deer mouse, was originally endemic in the southwest United States, but currently has been discovered throughout the country. The name of the hantavirus responsible for outbreaks in the southwest is the Sin Nombre virus. Breathing in excrement of mice is the most common mode of infection, and the lung is the site of initial infection, causing labored breathing or hantavirus pulmonary syndrome (HPS). Diagnosis is usually made by using an IgM/IgG ELISA assay and RT-PCR. Isolation of the virus by culture has not been accomplished to date. The primary site of infection for norovirus and rotavirus is the gastrointestinal area and for hantavirus the pulmonary sector."
+  },
+  {
+    "id": 1636,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "A 3-year-old female child was admitted to the hospital following a 2-day visit with relatives over the Christmas holidays. Vomiting and diarrhea left her severely dehydrated. No other members of the family were affected. All bacterial cultures proved negative. A stool sample should be tested for which virus?",
+    "options": [
+      "CMV",
+      "EBV",
+      "Hepatitis D",
+      "Rotavirus"
+    ],
+    "answer": "D",
+    "explanation": "Rotavirus is one of the most common causes of gastroenteritis in infants and young children (ages 6 months to 2 years). Vomiting and diarrhea are also common symptoms of norovirus infections, but the prevalence of rotavirus during the winter months and the absence of illness in other family members point to rotavirus being a more likely cause. Commercial availability of immunoassays for rotavirus makes its diagnosis easier to establish and rule out than infection with norovirus."
+  },
+  {
+    "id": 1637,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "A 25-year-old male patient was diagnosed with HIV-1 by using enzyme immunoassay; the patient tested positive twice, and the diagnosis was confirmed with RT-PCR. Which laboratory test(s) should be performed prior to initiating antiviral therapy and for monitoring during antiviral therapy?",
+    "options": [
+      "Quantitative plasma virus concentration (viral load testing)",
+      "Quantitation of CD4 lymphocytes",
+      "Phenotype/genotype resistance testing",
+      "All of these options"
+    ],
+    "answer": "D",
+    "explanation": "The decision to initiate antiviral therapy is based on the presence or absence of symptoms, CD4 lymphocyte count, and the viral load. For example, treatment is usually withheld from patients with CD4 counts greater than 350/µL and viral load less than 55,000/mL and is instituted in asymptomatic patients if the CD4 count is less than 200/µL, regardless of viral load. Treatment failure within the first year with three-drug regimens is 35% to 45%, and drug resistance testing (genotype and/or phenotype testing) is recommended to identify drug-resistant strains prior to initiating treatment. For successful antiviral therapy, the HIV plasma viral load should be reduced to undetectable levels."
+  },
+  {
+    "id": 1638,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "A 6-month-old male infant was hospitalized with a respiratory infection. He was diagnosed with apnea and bronchiolitis. Further testing revealed congenital heart disease. Bacterial cultures were negative for S. pneumoniae and H. influenzae. What viruses should be tested?",
+    "options": [
+      "RSV",
+      "Rotavirus",
+      "Norovirus (Norwalk-like virus)",
+      "HIV"
+    ],
+    "answer": "A",
+    "explanation": "RSV is spread by large particles, such as dust, and is one of the most common causes of hospitalization for respiratory illness in infants age less than 1 year. RSV causes bronchiolitis, pneumonia, and croup in infants and upper respiratory illness in children. It has also been found to cause nosocomial infection in nursing homes. Diagnosis is made by using EIA, fluorescent antibody (FA) staining, and cell culture (HEp-2)."
+  },
+  {
+    "id": 1639,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "A young male hunter encountered a fox in his path during a walk in the woods. The fox was staggering but appeared nonthreatening. The man tried to avoid contact but was attacked and bitten on the leg. The bite broke the skin but was not deep. Wildlife officials were unable to locate the fox for testing. What procedure should be performed next for the hunter?",
+    "options": [
+      "Spinal tap with CSF testing for rabies virus (within 2 months)",
+      "Administration of hyperimmune antirabies globulin and rabies vaccine",
+      "Biopsy of the wound site",
+      "Throat culture and blood culture (weekly)"
+    ],
+    "answer": "B",
+    "explanation": "Rabies virus can be detected by FA staining and PCR testing. The virus replicates at the site of the bite and penetrates the surrounding tissue, finding its way to the central nervous system. Because the source cannot be tested, the best immediate course of action is to initiate postexposure prophylaxis with antirabies globulin and to immunize the patient with the rabies vaccine."
+  },
+  {
+    "id": 1640,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "A 40-year-old female presented with a respiratory infection after returning home from a visit to her homeland of China. Rapid onset of pneumonia in the lower respiratory area prompted the physician to place her in isolation. She was diagnosed presumptively with severe acute respiratory syndrome (SARS) and placed on a respirator. What type of testing should be done next to diagnose this disease?",
+    "options": [
+      "RT-PCR",
+      "Latex agglutination test",
+      "Blood culture",
+      "Complement fixation"
+    ],
+    "answer": "A",
+    "explanation": "SARS virus was first identified in China in November 2002 when it caused a worldwide outbreak that was finally contained by July 2003. The virus belongs to the group of coronaviruses causing the common cold and is easily transmitted to health care workers who have close contact with infected individuals. This virus is the cause of a severe lower respiratory infection that can be fatal. Laboratory confirmation may be done by using the recommended method, that is, RT-PCR testing, which is available commercially. Typically, PCR is used on two different specimen types or the same specimen type submitted at least 2 days apart. If both tests are positive, the infection is confirmed. Cell culture (Vero-E6 cell line) can be performed if done in a BSL-3 or higher-level laboratory."
+  },
+  {
+    "id": 1641,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "A 25-year-old pregnant female with genital lesions delivered a premature newborn with complications. The baby tested negative for bacterial infection (cultures of blood and urine). Antigen testing of the baby’s urine proved negative for group B streptococci and S. pneumoniae. The mother tested negative for bacterial sexually transmitted diseases (STDs) and for group B streptococci. The baby was treated with acyclovir but failed to survive. What was the most likely cause of death?",
+    "options": [
+      "CMV",
+      "HIV",
+      "RSV",
+      "HSV"
+    ],
+    "answer": "D",
+    "explanation": "HSV-2 infections produce genital lesions. Infants born prematurely with disseminated infection of HSV-2 from HSV-positive mothers have a mortality rate of 50% to 60%. Testing of pregnant women for antibody and cesarean section delivery can prevent most neonatal HSV infections because the virus enters the fetus during the delivery process."
+  },
+  {
+    "id": 1642,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "A young father of two small children complained of a rash on the torso of his body. The children had been diagnosed with chickenpox and confined to their home. The father had experienced chickenpox as a child and knew he did not have the same rash as his children. What is the most likely cause of the father’s rash?",
+    "options": [
+      "HSV 1",
+      "Varicella-zoster virus",
+      "HSV 2",
+      "EBV"
+    ],
+    "answer": "B",
+    "explanation": "Varicella-zoster virus is the cause of an infection with chickenpox. As an adult, the father is experiencing shingles, a reactivation of the virus. The virus lies dormant in the sensory (dorsal root) ganglia of the spinal nerves, and its reactivation produces a nonweeping, blisterlike rash on an inflamed skin base that follows the path of the underlying nerves."
+  },
+  {
+    "id": 1643,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "The organs of a 65-year-old male were donated soon after a fatal auto accident. Three recipients of his corneas and kidneys died within weeks after receiving his organs. Which of the following viruses most likely caused the death of these recipients?",
+    "options": [
+      "Human immunodeficiency virus",
+      "Rabies",
+      "Norovirus (Norwalk-like virus)",
+      "Rotavirus"
+    ],
+    "answer": "B",
+    "explanation": "Transmission of rabies (rhabdovirus) occurs primarily from the bite of a rabid animal, but in 20% of human rabies cases, there is no known exposure to rabid animals. Donor tissues are not routinely tested for rabies. Diagnosis is achieved by performing fluorescent antibody staining of the infected tissues and electron microscopy, which shows the presence of bullet-shaped virus particles."
+  },
+  {
+    "id": 1644,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "While on a 7-day cruise to Vancouver and Alaska, a number of passengers reported to the ship’s medical staff complaining of vomiting and diarrhea. Which is the most likely virus to have infected these mainly adult passengers?",
+    "options": [
+      "Rotavirus",
+      "Parainfluenza virus",
+      "Respiratory syncytial virus",
+      "Norovirus (Norwalk or Norwalk-like viruses)"
+    ],
+    "answer": "D",
+    "explanation": "Adult gastroenteritis caused by norovirus follows a 1 to 2 day incubation. Diagnosis is usually made on the basis of clinical criteria and confirmed by EIA, RT-PCR, or immune electron microscopy. Hepatitis E virus, also of the Caliciviridae family, also causes gastroenteritis 1 to 2 days after exposure but is not endemic in the United States and other developed countries."
+  },
+  {
+    "id": 1645,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "SITUATION: A patient tested positive for HIV-1 infection with use of a RT-PCR method. However, 1 week later, a second blood sample was collected and sent to a reference laboratory, which performed a confirmatory Western blot test. The Western blot test was negative. What best explains these results?",
+    "options": [
+      "The samples for RT-PCR and Western blot were not from the same patient",
+      "RT-PCR is more sensitive for early detection",
+      "The RT-PCR result was falsely positive",
+      "The RT-PCR test detected HIV-2 and the Western blot is specific for HIV-1"
+    ],
+    "answer": "B",
+    "explanation": "Western blot is a test for detecting antibodies to HIV, and sufficient antibodies are not usually present in the first 3 to 4 weeks of infection to cause a positive test result. In some persons, antibodies do not appear until 3 months after the initial HIV infection. RT-PCR detects viral RNA and reduces the window phase of infection to approximately 1 week. RT-PCR tests for HIV-1 have 100% specificity at a cutoff of 20 to 40 copies RNA/mL. PCR is the preferred test for neonates because it avoids detection of maternal antibody and has replaced the Western blot as the confirmatory test of choice."
+  },
+  {
+    "id": 1646,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "SITUATION A pregnant women was seen by her obstetrician with signs of flulike illness during her second trimester. NAT was ordered for Toxoplasma gondii, rubella, CMV, and HSV-1 and -2. All test results were negative. However, after delivery, the newborn exhibited signs of an infection and failed to survive. Which virus in the mother causes a 90% transplacental infection rate?",
+    "options": [
+      "Hepatitis A",
+      "Hepatitis B",
+      "Hepatitis D",
+      "Hepatitis G"
+    ],
+    "answer": "B",
+    "explanation": "Tests for toxoplasmosis, German measles, CMV, and HSV comprise a panel of infectious agents known as the TORCH panel. The TORCH panel consists of serological tests for antibodies to these organisms and has largely been replaced by more sensitive NAT when infection is suspected. The “O” in TORCH stands for “other,” and other viruses that cause transplacental infection, such as HBV and HIV are usually tested prenatally."
+  },
+  {
+    "id": 1647,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "An immunocompromised patient was admitted to the hospital with a diagnosis of hemorrhagic cystitis. Which combination of virus and specimen would be most appropriate to diagnose a viral cause of this disorder?",
+    "options": [
+      "BK virus–urine",
+      "Human papilloma virus–skin",
+      "Hepatitis B virus–serum",
+      "Epstein–Barr virus–serum"
+    ],
+    "answer": "A",
+    "explanation": "BK virus, a polyoma virus, is transmitted by direct contact with infected respiratory secretions. It has tropism for the urinary system and often causes a latent, asymptomatic infection in the kidneys. However, in immunocompromised patients, the virus is often implicated in renal and bladder infections. Kidney failure caused by BK virus is a significant concern in bone marrow and renal transplant recipients."
+  },
+  {
+    "id": 1648,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "Which of the following genera and RNA viruses listed is the cause of viral hemorrhagic fever displaying many filamentous shapes, such as “U” or “6” and circular forms while being viewed under the electron microscope?",
+    "options": [
+      "Filovirus–Ebola virus",
+      "Flavivirus–West Nile virus",
+      "Picornavirus–poliovirus",
+      "Toga virus–western equine encephalitis virus"
+    ],
+    "answer": "A",
+    "explanation": "The Ebola RNA virus is endemic in the Democratic Republic of the Congo with a human case fatality rate of 80% to 90%. The virus is transmitted from person to person or to caregivers through body fluids and respiratory droplets. Transmission of the virus to humans is from monkeys or other wild animals. It is speculated that bats harbor the virus as carriers or reservoirs. Using electron microscopy, the shape described is similar to that of the Marburg virus (“shepherd’s hook” shape), which causes a less severe viral hemorrhagic fever with a fatality rate of 23% to 25%. For diagnosis, electron microscopy (research laboratories), RT-PCR, and antibody detection with ELISA (IgG and IgM) are used along with cell culture in monkey cells in a BSL-4 laboratory. Both infections have no cure or established drug treatment. Several Ebola vaccines are being tested in clinical trials, as reported by the World Health Organization (WHO)."
+  },
+  {
+    "id": 1649,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "Which of the following RNA flaviviruses is responsible for Guillain-Barre syndrome and birth defects of the brain (microcephaly, absent forehead, and triangular face shape) or poor outcomes in pregnant women and was first recognized in 2015 in Brazil?",
+    "options": [
+      "West Nile virus",
+      "Hepatitis C virus",
+      "Zika virus",
+      "Dengue fever virus"
+    ],
+    "answer": "C",
+    "explanation": "The Zika virus is transmitted by the bite of the Aegypti mosquito, and the virus disappears from blood after 2 weeks; however, the virus can linger in sperm for 2 months. Zika virus outbreaks were seen in Brazil and southern Mexico. According to the Pan-American Health Organization (PAHO), reports of local transmission of Zika virus occurred throughout Mexico, with a peak in number of infections occurring in October 2016. To curb the transmission of the virus, genetically modified mosquitoes were used; after mating, the offspring would die before reaching adulthood. Spraying with insecticides kills the adults and larvae, and this was one way used to control outbreaks that occurred in Miami in 2016."
+  },
+  {
+    "id": 1650,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "Which of the following diseases, which are spread through direct contact and aerosols of the (RNA) coronovirus genera, was transmitted to hospital workers who were caring for infected patients in China, causing a severe acute respiratory illness that led to a worldwide outbreak in 2002?",
+    "options": [
+      "Severe acute respiratory syndrome (SARS)",
+      "Encephalitis",
+      "Gastroenteritis",
+      "Liver necrosis"
+    ],
+    "answer": "A",
+    "explanation": "SARS virus is detected with RT-PCR and can be cultured by using the Viro-E6 cell line. Low levels of the virus early in the infection poses a problem in diagnosing SARS."
+  },
+  {
+    "id": 1651,
+    "section": "Virology",
+    "chapter": "Microbiology",
+    "question": "A pregnant patient presented with symptoms similar to hepatitis A but tested negative. She had traveled to India most recently. Which of the following is the cause of a hepatitis infection with a high mortality rate (10%–20%) in pregnant women and is transmitted via the fecal–oral route?",
+    "options": [
+      "Hepatitis B",
+      "Hepatitis E",
+      "Hepatitis C",
+      "Hepatitis D"
+    ],
+    "answer": "B",
+    "explanation": "Hepatitis E virus (HEV) infection is the result of an infection with a new genus, Hepevirus. It is transmitted by the fecal–oral route and mimics hepatitis A, except that HEV has a high rate of fatality (10%–20%) among pregnant women. It is not endemic in the United States or in other developed areas of the world. Pregnant women should be cautioned about drinking contaminated water and traveling to parts of the world where HEV is endemic (India and Pakistan). Fulminant hepatitis, with a fatality rate of 30%, results if infection occurs during the third trimester. Diagnosis is through serology (IgG and IgM antibodies) as well as liver function tests (aspartate aminotransferase [AST], alanine aminotransferase [ALT], and bilirubin) during the early phase of the infection."
+  },
+  {
+    "id": 1652,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The incorrect match between organism and the appropriate diagnostic procedure is:",
+    "options": [
+      "Onchocerca volvulus—examination of skin snips",
+      "Cryptosporidium spp.—modified acid-fast stain",
+      "Enterobius vermicularis—routine ova and parasite examination",
+      "Schistosoma haematobium—examination of urine sediment"
+    ],
+    "answer": "C",
+    "explanation": "The appropriate procedure for the diagnosis of E. vermicularis would involve the microscopic examination of a series of consecutive cellulose tapes. Typical eggs and/or a rare adult pinworm could be identified under the microscope."
+  },
+  {
+    "id": 1653,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "In a patient with diarrhea, occasionally Entamoeba histolytica/E. dispar (four nucleated cysts, no chromatoidal bars) are identified as being present; however, these cells, which are misdiagnosed as protozoa, are really:",
+    "options": [
+      "Macrophages",
+      "Polymorphonuclear leukocytes (PMNs)",
+      "Epithelial cells",
+      "Eosinophils"
+    ],
+    "answer": "B",
+    "explanation": "As PMNs in stool begin to fragment and appear to have four nuclei, they will resemble E. histolytica/E. dispar cysts. However, E. histolytica/E. dispar cysts are rarely seen in cases of diarrhea. The species name E. histolytica is reserved for the true pathogen, whereas E. dispar is used for the nonpathogenic species. Unfortunately, they look identical morphologically. The only time E. histolytica could be identified morphologically would be from trophozoites containing ingested RBCs. Nonpathogenic E. dispar would not contain ingested RBCs. The correct way to report these organisms is E. histolytica/E. dispar (no trophozoites containing ingested RBCs) or E. histolytica (trophozoites seen that contain ingested RBCs). Physicians may base the treatment on patient symptoms."
+  },
+  {
+    "id": 1654,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Charcot-Leyden crystals in stool may be associated with an immune response and are thought to be formed from the breakdown products of:",
+    "options": [
+      "Neutrophils",
+      "Eosinophils",
+      "Monocytes",
+      "Lymphocytes"
+    ],
+    "answer": "B",
+    "explanation": "When eosinophils disintegrate, the granules reform into Charcot-Leyden crystals."
+  },
+  {
+    "id": 1655,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Parasitic organisms that may be transmitted sexually do not include:",
+    "options": [
+      "Entamoeba gingivalis",
+      "Dientamoeba fragilis",
+      "Trichomonas vaginalis",
+      "Diphyllobothrium latum"
+    ],
+    "answer": "D",
+    "explanation": "Of the organisms listed, Diphyllobothrium latum cannot be transmitted sexually; this infection is acquired from the ingestion of infected raw or poorly cooked freshwater fish."
+  },
+  {
+    "id": 1656,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The incorrect match between the organism and one method of acquiring the infection is:",
+    "options": [
+      "Trypanosoma brucei rhodesiense—bite of sand fleas",
+      "Giardia lamblia (G. intestinalis, G. duodenalis)—ingestion of water contaminated with cysts",
+      "Hookworm—skin penetration of larvae from soil",
+      "Toxoplasma gondii—ingestion of infected raw or rare meats"
+    ],
+    "answer": "A",
+    "explanation": "East and West African trypanosomiasis (T. B. rhodesiense and T. B. gambiense) are acquired when infective forms are introduced into the human body through the bite of the tse-tse fly, not sand fleas."
+  },
+  {
+    "id": 1657,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Upon examination of stool material for Cystoisospora belli, one would expect to see:",
+    "options": [
+      "Cysts containing sporozoites",
+      "Precysts containing chromatoidal bars",
+      "Oocysts that are modified acid-fast positive",
+      "Sporozoites that are hematoxylin positive"
+    ],
+    "answer": "C",
+    "explanation": "C. belli oocysts in various stages of maturity would be seen in the concentrate sediment or possibly the direct, wet preparation; these oocysts would stain positive with modified acid-fast stains."
+  },
+  {
+    "id": 1658,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Which specimen is the least likely to provide recovery of Trichomonas vaginalis?",
+    "options": [
+      "Urine",
+      "Urethral discharge",
+      "Vaginal discharge",
+      "Feces"
+    ],
+    "answer": "D",
+    "explanation": "T. vaginalis is site-specific. The organisms are found in the urogenital tract; thus, the intestinal tract is not the normal site for these organisms."
+  },
+  {
+    "id": 1659,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Which of the following is the best technique to identify Dientamoeba fragilis in stool?",
+    "options": [
+      "Formalin concentrate",
+      "Trichrome-stained smear",
+      "Modified acid fast–stained smear",
+      "Giemsa stain"
+    ],
+    "answer": "B",
+    "explanation": "The best technique to recover and identify D. fragilis trophozoites and rare cysts would be the trichrome-stained smear."
+  },
+  {
+    "id": 1660,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "One of the following protozoan organisms has been implicated in waterborne and foodborne outbreaks within the United States. The suspect organism is:",
+    "options": [
+      "Pentatrichomonas hominis",
+      "Dientamoeba fragilis",
+      "Giardia lamblia (G. intestinalis, G. duodenalis)",
+      "Balantidium coli"
+    ],
+    "answer": "C",
+    "explanation": "For a number of years, G. lamblia (G. intestinalis, G. duodenalis) has been implicated in both waterborne and foodborne outbreaks from the ingestion of infective cysts within contaminated water and food."
+  },
+  {
+    "id": 1661,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Gram staining of a sample from a gum lesion showed what appeared to be amoebae. A trichrome smear showed amoebae with a single nucleus and partially digested PMNs. The correct identification is:",
+    "options": [
+      "Trichomonas tenax",
+      "Entamoeba histolytica/Entamoeba dispar",
+      "Entamoeba gingivalis",
+      "Entamoeba polecki"
+    ],
+    "answer": "C",
+    "explanation": "E. gingivalis is known to be an inhabitant of the mouth and is characterized by morphology that resembles E. histolytica/E. dispar. However, E. gingivalis tends to ingest PMNs, whereas E. histolytica/E. dispar do not."
+  },
+  {
+    "id": 1662,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "An E. histolytica (true pathogen) trophozoite has the following characteristics:",
+    "options": [
+      "Compact karyosome in the nucleus, ingested RBCs, and clear pseudopodia",
+      "Ingested RBCs, clear pseudopodia, and uneven chromatin on the nuclear membrane",
+      "Ingested RBCs, clear pseudopodia, and large glycogen vacuoles in cytoplasm",
+      "Large, blotlike karyosome, ingested white blood cells (WBCs), and granular pseudopods"
+    ],
+    "answer": "A",
+    "explanation": "The trophozoite of E. histolytica has evenly arranged chromatin on the nuclear membrane; a central, compact karyosome in the nucleus; clear pseudopodia; and ingested RBCs in the cytoplasm."
+  },
+  {
+    "id": 1663,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "A 12-year-old girl is brought to the emergency room with meningitis and a history of swimming in a warm-water spring. Motile amoebae that measure 10 μm in size are seen in CSF and are most likely:",
+    "options": [
+      "Iodamoeba bütschlii trophozoites",
+      "Endolimax nana trophozoites",
+      "Dientamoeba fragilis trophozoites",
+      "Naegleria fowleri trophozoites"
+    ],
+    "answer": "D",
+    "explanation": "N. fowleri are free-living soil and water amoebae that cause primary amebic meningoencephalitis (PAM). The number of cases reported is few; however, the infection is very acute and almost always fatal."
+  },
+  {
+    "id": 1664,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Characteristics of the rhabditiform (noninfective) larvae of Strongyloides stercoralis include a:",
+    "options": [
+      "Short buccal capsule and large genital primordium",
+      "Long buccal capsule and pointed tail",
+      "Short buccal capsule and small genital primordium",
+      "Small genital primordium and notch in tail"
+    ],
+    "answer": "A",
+    "explanation": "The rhabditiform larvae of S. stercoralis are characterized by the short buccal capsule (mouth) and large genital primordium, whereas hookworm larvae have a long buccal capsule and very small genital primordium."
+  },
+  {
+    "id": 1665,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Visceral larva migrans is associated with which of the following organisms and diagnostic method?",
+    "options": [
+      "Toxocara—serology",
+      "Onchocerca—skin snips",
+      "Dracunculus—skin biopsy",
+      "Angiostrongylus—CSF examination"
+    ],
+    "answer": "A",
+    "explanation": "Toxocara spp. are the cause of visceral larva migrans and occur when humans accidentally ingest the infective eggs of the dog or cat ascarid. The larvae migrate through the deep tissues, including the eye. The test of choice is the serology."
+  },
+  {
+    "id": 1666,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The following organisms are linked with specific, relevant information. The incorrect combination is:",
+    "options": [
+      "Strongyloides stercoralis—internal autoinfection",
+      "Echinococcus granulosus—hydatid examination",
+      "Toxoplasma gondii—serology",
+      "Balantidium coli—common in the United States"
+    ],
+    "answer": "D",
+    "explanation": "B. coli is a ciliate that can cause watery diarrhea in humans; however, it is not commonly found within the United States. It is the largest of the intestinal protozoa and can be found in proficiency testing specimens. Therefore, although it is not common, laboratories must still be able to identify these organisms."
+  },
+  {
+    "id": 1667,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Examination of 24-hour unpreserved urine specimen is sometimes helpful in the recovery of:",
+    "options": [
+      "Trichomonas vaginalis trophozoites",
+      "Schistosoma haematobium eggs",
+      "Enterobius vermicularis eggs",
+      "Strongyloides stercoralis larvae"
+    ],
+    "answer": "B",
+    "explanation": "S. haematobium blood flukes reside in the veins over the bladder. When the eggs are passed from the body, they are often found in urine; egg viability can also be determined in unpreserved urine."
+  },
+  {
+    "id": 1668,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The examination of sputum may be necessary to diagnose infection with:",
+    "options": [
+      "Paragonimus westermani",
+      "Trichinella spiralis",
+      "Wuchereria bancrofti",
+      "Fasciola hepatica"
+    ],
+    "answer": "A",
+    "explanation": "P. westermani adult worms are found in the lung, and eggs may be coughed up in the sputum. Consequently, both sputum and stool (if the sputum containing the eggs is swallowed) are the recommended specimens for examination for the eggs."
+  },
+  {
+    "id": 1669,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Two helminth eggs that may resemble one another are:",
+    "options": [
+      "Diphyllobothrium latum and Paragonimus westermani",
+      "Opisthorchis sinensis and Fasciolopsis buski",
+      "Taenia saginata and Hymenolepis nana",
+      "Ascaris lumbricoides and Trichostrongylus"
+    ],
+    "answer": "A",
+    "explanation": "Both D. latum and P. westermani eggs are operculated and approximately the same size. The morphology is similar, although D. latum has a knob at the abopercular end and P. westermani has a thickened abopercular end and shoulders into which the operculum fits."
+  },
+  {
+    "id": 1670,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Eating poorly cooked infected pork can lead to an infection with:",
+    "options": [
+      "Taenia solium and Trichinella spiralis",
+      "Taenia saginata and Hymenolepis nana",
+      "Trichuris trichiura and Hymenolepis diminuta",
+      "Diphyllobothrium latum and Ascaris lumbricoides"
+    ],
+    "answer": "A",
+    "explanation": "Both T. solium (pork tapeworm) and T. spiralis can be acquired from the ingestion of raw or poorly cooked infected pork."
+  },
+  {
+    "id": 1671,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "An operculated cestode egg that can be recovered from human feces is:",
+    "options": [
+      "Clonorchis sinensis",
+      "Diphyllobothrium latum",
+      "Paragonimus westermani",
+      "Dipylidium caninum"
+    ],
+    "answer": "B",
+    "explanation": "D. latum is the only operculated cestode egg that is found in humans; the infection is acquired from the ingestion of infected raw or poorly cooked freshwater fish."
+  },
+  {
+    "id": 1672,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The adult tapeworm of Echinococcus granulosus is found in the intestine of:",
+    "options": [
+      "Dogs",
+      "Sheep",
+      "Humans",
+      "Cattle"
+    ],
+    "answer": "A",
+    "explanation": "Although hydatid cysts are found in sheep or in humans (accidental intermediate host), the adult tapeworms of E. granulosus are found in the intestine of the dog."
+  },
+  {
+    "id": 1673,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "In infections with Taenia solium, humans can serve as the:",
+    "options": [
+      "Definitive host",
+      "Intermediate host",
+      "Either the definitive or the intermediate host",
+      "None of the above"
+    ],
+    "answer": "C",
+    "explanation": "If humans ingest T. solium cysticerci in uncooked or rare pork, the adult tapeworm will mature within the intestine (human will serve as definitive host); if eggs from the adult tapeworm are ingested, then the cysticerci will develop in human tissues (accidental intermediate host), causing cysticercosis."
+  },
+  {
+    "id": 1674,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Humans acquire infections with Diphyllobothrium latum adult worms by:",
+    "options": [
+      "Ingestion of freshwater crabs",
+      "Skin penetration of cercariae",
+      "Ingestion of water chestnuts",
+      "Ingestion of raw freshwater fish"
+    ],
+    "answer": "D",
+    "explanation": "The ingestion of raw freshwater fish containing the encysted larvae of D. latum will result in the development of an adult tapeworm within the human intestine."
+  },
+  {
+    "id": 1675,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Humans can serve as both the intermediate and definitive host in infections caused by:",
+    "options": [
+      "Enterobius vermicularis",
+      "Hymenolepis nana",
+      "Schistosoma japonicum",
+      "Ascaris lumbricoides"
+    ],
+    "answer": "B",
+    "explanation": "In infections with H. nana, humans serve as both intermediate and definitive hosts. When ingested, the oncosphere penetrates the intestinal mucosa, develops into the mature cysticercoid (human is intermediate host), and returns to the gut, where the adult tapeworm matures (human is definitive host). Thus, the life cycle can go from egg to adult tapeworm within the human host."
+  },
+  {
+    "id": 1676,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Babesia is an organism that has been implicated in disease from both splenectomized and nonsplenectomized patients. Morphologically, the parasites resemble:",
+    "options": [
+      "Plasmodium falciparum rings",
+      "Leishmania donovani amastigotes",
+      "Trypanosoma cruzi trypomastigotes",
+      "Microsporidian spores"
+    ],
+    "answer": "A",
+    "explanation": "Babesia is an intracellular parasite that closely resembles the ring forms (early trophozoites) of P. falciparum. Often in babesiosis there are more rings per cell and the ring form is the only stage seen."
+  },
+  {
+    "id": 1677,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Organisms (and infections) that under normal conditions cannot be transmitted in the laboratory are:",
+    "options": [
+      "Cryptosporidium—cryptosporidiosis",
+      "Taenia solium—cysticercosis",
+      "Ascaris lumbricoides—ascariasis",
+      "Enterobius vermicularis—pinworm infections"
+    ],
+    "answer": "C",
+    "explanation": "A. lumbricoides eggs require a period of development in the soil before they are infective for humans. The other organisms listed can be transmitted within the laboratory or in the hospital setting."
+  },
+  {
+    "id": 1678,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Toxoplasma gondii is characterized by:",
+    "options": [
+      "Possible congenital infection and ingestion of oocysts",
+      "Cosmopolitan distribution and possible difficulties with interpretation of serological results",
+      "None of the above",
+      "Both A and B"
+    ],
+    "answer": "D",
+    "explanation": "Infection with T. gondii is acquired through the ingestion of infected rare or raw meats, infective oocysts from cat feces, or as a congenital transmission. The organism has a cosmopolitan distribution and although serological testing is generally the test of choice, the results may be very difficult to interpret in certain situations (e.g., congenital infection and immunocompromised patients)."
+  },
+  {
+    "id": 1679,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Oocysts of Cryptosporidium spp. can be detected in stool specimens by using:",
+    "options": [
+      "Modified acid-fast stain",
+      "Gram stain",
+      "Methenamine silver stain",
+      "Trichrome stain"
+    ],
+    "answer": "A",
+    "explanation": "Oocysts of Cryptosporidium spp. can be found and identified using microscopic examination of fecal smears stained with modified acid-fast stains. They appear as purple-red-pink round objects, measuring approximately 4 to 6 μm. Often the four sporozoites and residual body can be seen within the oocyst wall."
+  },
+  {
+    "id": 1680,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Which microfilariae are usually not found circulating in peripheral blood?",
+    "options": [
+      "Brugia malayi",
+      "Wuchereria bancrofti",
+      "Onchocerca volvulus",
+      "Loa loa"
+    ],
+    "answer": "C",
+    "explanation": "O. volvulus microfilariae are normally found in the fluid right under the outer layer of skin. Therefore, the skin snip is the proper specimen to examine."
+  },
+  {
+    "id": 1681,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Massive hemolysis, blackwater fever, and central nervous system involvement are most common with:",
+    "options": [
+      "Plasmodium vivax",
+      "Plasmodium falciparum",
+      "Plasmodium ovale",
+      "Plasmodium malariae"
+    ],
+    "answer": "B",
+    "explanation": "The pathogenic sequelae of malarial infections with P. falciparum are the most severe of the four species listed. They can include massive hemolysis, blackwater fever, and multiple organ involvement, including the central nervous system (cerebral malaria)."
+  },
+  {
+    "id": 1682,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Organisms that should be considered in a nursery school outbreak of diarrhea include:",
+    "options": [
+      "Endolimax nana, Giardia lamblia (G. intestinalis, G. duodenalis), and Entamoeba coli",
+      "Giardia lamblia (G. intestinalis, G. duodenalis), Dientamoeba fragilis, and Cryptosporidium parvum",
+      "Cryptosporidium spp., Trichomonas vaginalis, and Entamoeba coli",
+      "Trichomonas hominis, Dientamoeba fragilis, and Endolimax nana"
+    ],
+    "answer": "B",
+    "explanation": "G. lamblia (G. intestinalis, G. duodenalis), D. fragilis, and Cryptosporidium have been implicated in nursery school outbreaks. Among the many protozoa and coccidia found in the human, these three organisms have become the most likely parasites in this type of setting."
+  },
+  {
+    "id": 1683,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The incorrect match between disease and symptoms is:",
+    "options": [
+      "Paragonimiasis—hemoptysis",
+      "Cryptosporidiosis—watery diarrhea",
+      "Toxoplasmosis in compromised host—central nervous system symptoms",
+      "Enterobiasis—dysentery"
+    ],
+    "answer": "D",
+    "explanation": "Infections with E. vermicularis (the pinworm) may cause anal itching, sleeplessness, and possibly some vaginal irritation or discharge; however, dysentery (bloody diarrhea) has not been associated with this infection."
+  },
+  {
+    "id": 1684,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The formalin-ether (ethyl acetate) concentration procedure for feces is used to demonstrate:",
+    "options": [
+      "Motility of helminth larvae",
+      "Protozoan cysts and helminth eggs",
+      "Formation of amoebic pseudopods",
+      "Trophozoites"
+    ],
+    "answer": "B",
+    "explanation": "The ova and parasite examination contains three components: the direct wet film (demonstrates protozoan trophozoite motility), the formalin-ethyl acetate concentration (demonstrates protozoan cysts, coccidian oocysts, and helminth eggs), and the trichrome or iron hematoxylin–stained smear (confirms protozoan cysts and trophozoites)."
+  },
+  {
+    "id": 1685,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Cysts of Iodamoeba bütschlii typically have:",
+    "options": [
+      "Chromatoidal bars with rounded ends",
+      "A heavily vacuolated cytoplasm",
+      "A large glycogen vacuole",
+      "Many ingested bacteria and yeast cells"
+    ],
+    "answer": "C",
+    "explanation": "The cyst of I. bütschlii is characterized by a large glycogen vacuole that is seen on the wet smear (stains brown with iodine) and on the permanent stained smear (vacuole will appear clear). Occasionally the vacuole will be so large that the organism will collapse on itself."
+  },
+  {
+    "id": 1686,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The miracidial hatching test helps to demonstrate the viability of eggs of:",
+    "options": [
+      "Taenia species",
+      "Schistosoma species",
+      "Hookworm species",
+      "Opisthorchis species"
+    ],
+    "answer": "B",
+    "explanation": "The determination of egg viability is important in schistosomiasis; therefore, the miracidial hatching test is helpful in demonstrating the egg viability of Schistosoma species. Once the eggs are hatched, the living miracidium larvae will be visible in the water."
+  },
+  {
+    "id": 1687,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Organisms that should be considered in a waterborne outbreak of diarrheal disease include:",
+    "options": [
+      "Giardia lamblia (G. intestinalis, G. duodenalis) and Cryptosporidium spp.",
+      "Endolimax nana and Entamoeba histolytica",
+      "Blastocystis spp. and Trichomonas vaginalis",
+      "Toxoplasma gondii and Schistosoma mansoni"
+    ],
+    "answer": "A",
+    "explanation": "Both G. lamblia (G. intestinalis, G. duodenalis) and Cryptosporidium have been implicated in waterborne outbreaks or diarrheal disease. These infections would result from the ingestion of Giardia cysts and/or Cryptosporidium oocysts."
+  },
+  {
+    "id": 1688,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Fecal immunoassays have become more commonly used to diagnose infections with:",
+    "options": [
+      "Endolimax nana and Blastocystis spp.",
+      "Giardia lamblia (G. intestinalis, G. duodenalis) and Cryptosporidium spp.",
+      "Ascaris lumbricoides and Trichuris trichiura",
+      "Strongyloides stercoralis and Trichomonas vaginalis"
+    ],
+    "answer": "B",
+    "explanation": "Fecal immunoassays have become more commonly used for the diagnosis of infections with Giardia and Cryptosporidium. These tests are available in EIA, FA, or rapid cartridge formats."
+  },
+  {
+    "id": 1689,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The most common infections with the microsporidia often originate in:",
+    "options": [
+      "The lung",
+      "The nervous system",
+      "The gastrointestinal tract",
+      "Mucocutaneous lesions"
+    ],
+    "answer": "C",
+    "explanation": "With the possible exception of direct inoculation infection in the eye, the microsporidia are thought to initially infect the gastrointestinal (GI) tract through ingestion of the infective spores; infections in other body sites are thought to disseminate from the GI tract."
+  },
+  {
+    "id": 1690,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Eye infections with Acanthamoeba spp. have most commonly been traced to:",
+    "options": [
+      "Use of soft contact lenses",
+      "Use of hard contact lenses",
+      "Use of contaminated lens care solutions",
+      "Failure to remove lenses while swimming"
+    ],
+    "answer": "C",
+    "explanation": "The majority of eye infections with Acanthamoeba spp. have resulted from the use of contaminated eye care solutions, primarily the use of homemade saline. It is recommended that all solutions be discarded at the expiration date. Continued use may increase the risk of environmental contamination of the fluids."
+  },
+  {
+    "id": 1691,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Select the most sensitive recovery method for Acanthamoeba spp. from lens care solutions or corneal biopsies.",
+    "options": [
+      "The trichrome staining method",
+      "The use of monoclonal reagents for the detection of antibody",
+      "The use of non-nutrient agar cultures seeded with Escherichia coli",
+      "The Giemsa stain method"
+    ],
+    "answer": "C",
+    "explanation": "Currently, the most sensitive method of those listed for the recovery of Acanthamoeba spp. from clinical specimens is the non-nutrient agar culture plate seeded with E. coli. The amoebae feed on the bacteria; both trophozoites and cysts can be recovered from the agar surface."
+  },
+  {
+    "id": 1692,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The microsporidia are organisms (now classified with the fungi) that have been implicated in human disease primarily in:",
+    "options": [
+      "Immunocompromised patients",
+      "Pediatric patients under age 5 years",
+      "Adult patients with congenital immunodeficiencies",
+      "Patients who have been traveling in the tropics"
+    ],
+    "answer": "A",
+    "explanation": "Although the microsporidia have been known as pathogens in many groups of animals, their involvement in humans has primarily been in immunocompromised patients, especially those with AIDS. Microsporidia can be found in different tissues, and currently, there are a number of genera implicated in human disease."
+  },
+  {
+    "id": 1693,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "When staining Cystoisospora belli oocysts with modified acid-fast stains, the important difference between these methods and the acid-fast stains used for acid-fast bacilli (AFB) is:",
+    "options": [
+      "The staining time is much longer with regular AFB acid-fast stains.",
+      "The decolorizer is much weaker than acid alcohol used for AFB decolorizing.",
+      "A counterstain must be used for the modified methods.",
+      "The stain is more concentrated when staining for AFB."
+    ],
+    "answer": "B",
+    "explanation": "The decolorizer in modified acid-fast stains (Kinyoun cold method, modified hot method) is usually 1% to 3% sulfuric acid rather than the much stronger acid alcohol used in the routine AFB stains."
+  },
+  {
+    "id": 1694,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The incorrect match between symptoms and disease is:",
+    "options": [
+      "Dysentery and amebiasis",
+      "Malabsorption syndrome and giardiasis",
+      "Cardiac involvement and chronic Chagas disease",
+      "Myalgias and trichuriasis"
+    ],
+    "answer": "D",
+    "explanation": "T. trichiura (whipworm) may cause diarrhea and occasionally dysentery in very heavy infections; however, the worms are confined to the intestine, and myalgias are not seen in this helminth infection."
+  },
+  {
+    "id": 1695,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The incorrect match between organism and characteristic is:",
+    "options": [
+      "Chilomastix mesnili and Shepherd’s crook and lemon shape",
+      "Plasmodium malariae and “band trophozoite”",
+      "Hymenolepis nana and striated shell",
+      "Wuchereria bancrofti and sheathed microfilariae"
+    ],
+    "answer": "C",
+    "explanation": "H. nana has a thin eggshell containing a six-hooked embryo (oncosphere) and polar filaments that lie between the eggshell and the embryo. The striated eggshell is generally associated with the eggs of Taenia spp."
+  },
+  {
+    "id": 1696,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The incorrect match between method and method objective is:",
+    "options": [
+      "Direct wet examination and detection of organism motility",
+      "Knott concentration and the recovery of operculated helminth eggs",
+      "Baermann concentration and the recovery of Strongyloides",
+      "Permanent stained fecal smear and confirmation of protozoa"
+    ],
+    "answer": "B",
+    "explanation": "The Knott concentration is designed to allow the recovery of microfilariae from a blood specimen. Dilute formalin (2%) is used; blood is introduced into the formalin, the red cells lyse, and the sediment can be examined as a wet preparation or permanent stained smear (Giemsa or hematoxylin-based stain) for the presence of microfilariae."
+  },
+  {
+    "id": 1697,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The incorrect match between organism and characteristic/diagnostic method is:",
+    "options": [
+      "Dientamoeba fragilis and tetrad karyosome in the nucleus",
+      "Toxoplasma gondii and diagnostic serology",
+      "Echinococcus granulosus and daughter cysts",
+      "Schistosoma mansoni and egg with terminal spine"
+    ],
+    "answer": "D",
+    "explanation": "The egg of S. mansoni is characterized by a large lateral spine; S. haematobium has the characteristic terminal spine."
+  },
+  {
+    "id": 1698,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "There are few procedures considered STAT in parasitology. The most obvious situation would be:",
+    "options": [
+      "Ova and parasite examination for giardiasis",
+      "Baermann concentration for strongyloidiasis",
+      "Blood films for malaria",
+      "Culture of amebic keratitis"
+    ],
+    "answer": "C",
+    "explanation": "The request for blood films for malaria should always be considered a STAT request. Any laboratory providing these services should have coverage 24 hours a day, 7 days a week. In cases of P. falciparum malaria, any delay in diagnosing the infection could be fatal for the patient."
+  },
+  {
+    "id": 1699,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "An immunosuppressed man has several episodes of pneumonia, intestinal pain, sepsis with gram-negative rods, and a history of military service in Southeast Asia 20 years earlier. The most likely cause is infection with:",
+    "options": [
+      "Trypanosoma cruzi",
+      "Strongyloides stercoralis",
+      "Naegleria fowleri",
+      "Paragonimus westermani"
+    ],
+    "answer": "B",
+    "explanation": "A latent infection with S. stercoralis acquired years before may cause severe symptoms in the immunosuppressed patient (“autoinfective” capability of life cycle and migratory route through the body leading to the hyperinfection syndrome and disseminated disease)."
+  },
+  {
+    "id": 1700,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "In a pediatric patient, the recommended clinical specimens for recovery of Enterobius vermicularis are the:",
+    "options": [
+      "Stool specimens",
+      "Sigmoidoscopy scrapings",
+      "Duodenal aspirates",
+      "Series of cellophane tape preparations"
+    ],
+    "answer": "D",
+    "explanation": "The collection of a series of consecutive Scotch/cellophane tape preparations is recommended for the diagnosis of infection with the pinworm E. vermicularis."
+  },
+  {
+    "id": 1701,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Eosinophilic meningoencephalitis is a form of larva migrans, causing fever, headache, stiff neck, and increased cells in the spinal fluid. It is caused by:",
+    "options": [
+      "Necator americanus",
+      "Angiostrongylus cantonensis",
+      "Ancylostoma braziliense",
+      "Strongyloides stercoralis"
+    ],
+    "answer": "B",
+    "explanation": "Eosinophilic meningoencephalitis is a form of larva migrans and is caused by A. cantonensis, the rat lungworm. This infection, common in the Pacific region, is associated with CSF symptoms and sometimes eye involvement."
+  },
+  {
+    "id": 1702,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "“Cultures of parasites are different from bacterial cultures; no quality control is needed.” This statement is:",
+    "options": [
+      "True, if two tubes of media are set up for each patient",
+      "True, if the media are checked every 24 hours",
+      "False, unless two different types of media are used",
+      "False, and organism and media controls need to be set up"
+    ],
+    "answer": "D",
+    "explanation": "Duplicate cultures should be set up, and specific American Type Culture Collection (ATCC) strains should be cultured along with the patient specimens to confirm that the culture system is operating properly. This approach is somewhat different from that used in diagnostic bacteriology and mycology."
+  },
+  {
+    "id": 1703,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Protozoan cysts were seen in a concentration sediment and tentatively identified as Entamoeba coli. However, the organisms were barely visible on the permanent stained smear because:",
+    "options": [
+      "The organisms were actually not present in the concentration sediment",
+      "There were too few cysts to allow identification on the stained smear",
+      "Entamoeba coli cysts were present but poorly fixed due to the thick cyst wall",
+      "The concentrate and permanent stained smear were not from the same patient"
+    ],
+    "answer": "C",
+    "explanation": "As E. coli cysts mature, the cyst wall becomes more impenetrable to fixatives. Consequently, the cysts may be visible in the concentrate sediment but appear very distorted or pale on the permanent stained smear."
+  },
+  {
+    "id": 1704,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "When humans have hydatid disease, the causative agent and host classification are:",
+    "options": [
+      "Echinococcus granulosus—accidental intermediate host",
+      "Echinococcus granulosus—definitive host",
+      "Taenia solium—accidental intermediate host",
+      "Taenia solium—definitive host"
+    ],
+    "answer": "A",
+    "explanation": "The cause of hydatid disease is E. granulosus, and the human is classified as the accidental intermediate host. Infection occurs when humans accidentally ingest the eggs of E. granulosus and the hydatid cysts develop in the liver, lung, and other organs of the human instead of sheep (normal cycle)."
+  },
+  {
+    "id": 1705,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "A 45-year-old hunter developed fever, myalgia, and periorbital edema. He has a history of bear meat consumption. The most likely causative agent is:",
+    "options": [
+      "Toxoplasma gondii",
+      "Taenia solium",
+      "Hymenolepis nana",
+      "Trichinella spiralis"
+    ],
+    "answer": "D",
+    "explanation": "Bear meat is another excellent source of T. spiralis. In this case, the patient had evidently consumed poorly cooked infected bear meat, thus ingesting the encysted larvae of T. spiralis."
+  },
+  {
+    "id": 1706,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "In a condition resulting from the accidental ingestion of eggs, the human becomes the intermediate host, rather than the definitive host. The correct answer is:",
+    "options": [
+      "Trichinosis",
+      "Cysticercosis",
+      "Ascariasis",
+      "Strongyloidiasis"
+    ],
+    "answer": "B",
+    "explanation": "The accidental ingestion of T. solium eggs can result in the disease called cysticercosis. The cysticerci will develop in a number of different tissues, including the brain, and humans are accidental intermediate hosts."
+  },
+  {
+    "id": 1707,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "A transplant recipient on immunosuppressive drugs developed increasing diarrhea. The most likely combination of disease and diagnostic procedure is:",
+    "options": [
+      "Trichinosis and trichrome staining",
+      "Microsporidiosis and modified trichrome staining",
+      "Toxoplasmosis and Gram staining",
+      "Paragonimiasis and wet preparation"
+    ],
+    "answer": "B",
+    "explanation": "The fact that the patient has received a transplant, is on immunosuppressive drugs, and has increasing diarrhea, suggests infection with microsporidia; the most appropriate method would be the modified trichrome stain."
+  },
+  {
+    "id": 1708,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "After returning from a 2-year stay in India, a patient has eosinophilia, an enlarged left spermatic cord, and bilateral inguinal lymphadenopathy. The most likely clinical specimen and organism match is:",
+    "options": [
+      "Thin blood films and Leishmania",
+      "Urine and concentration for Trichomonas vaginalis",
+      "Thin blood films and Babesia",
+      "Thick blood films and microfilariae"
+    ],
+    "answer": "D",
+    "explanation": "On the basis of the history, the most relevant procedure to perform is the preparation and examination of thick blood films for the recovery and identification of microfilariae. The symptoms suggest early filariasis."
+  },
+  {
+    "id": 1709,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Patients with severe diarrhea should use “enteric precautions” to prevent nosocomial infections with:",
+    "options": [
+      "Giardia lamblia (G. intestinalis, G. duodenalis)",
+      "Ascaris lumbricoides",
+      "Cryptosporidium spp.",
+      "Cystoisospora belli"
+    ],
+    "answer": "C",
+    "explanation": "Cryptosporidium oocysts (unlike those of C. belli) are immediately infective when passed in stool, and nosocomial infections have been well documented with this coccidian."
+  },
+  {
+    "id": 1710,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "A 60-year-old Brazilian patient with cardiac irregularities and congestive heart failure suddenly dies. Examination of the myocardium revealed numerous amastigotes, an indication that the cause of death was most likely:",
+    "options": [
+      "Leishmaniasis with Leishmania donovani",
+      "Leishmaniasis with Leishmania braziliense",
+      "Trypanosomiasis with Trypanosoma gambiense",
+      "Trypanosomiasis with Trypanosoma cruzi"
+    ],
+    "answer": "D",
+    "explanation": "T. cruzi, the cause of Chagas disease, exists in two forms within humans, the trypomastigote in the blood and the amastigote in the striated muscle (usually cardiac muscle and intestinal tract muscle)."
+  },
+  {
+    "id": 1711,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "When analysis of blood smears for malaria are requested, what patient information should be obtained?",
+    "options": [
+      "Diet, age, gender",
+      "Age, antimalarial medication, gender",
+      "Travel history, antimalarial medication, date of return to United States",
+      "Fever patterns, travel history, diet"
+    ],
+    "answer": "C",
+    "explanation": "Travel history (areas of drug resistance), the date of return to the United States (primary versus relapse case), and history of antimalarial medication and illness (severe illness, few organisms on smear) are very important questions to ask. Without this information, a malaria diagnosis can be missed or delayed with severe patient consequences."
+  },
+  {
+    "id": 1712,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "In an outbreak of diarrheal disease traced to a municipal water supply, the most likely causative agent is:",
+    "options": [
+      "Cryptosporidium spp.",
+      "Cystoisospora belli",
+      "Entamoeba histolytica",
+      "Dientamoeba fragilis"
+    ],
+    "answer": "A",
+    "explanation": "Cryptosporidium can be transmitted through contaminated municipal water sources. Such outbreaks have been well documented."
+  },
+  {
+    "id": 1713,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Within the United States, sporadic mini-outbreaks of diarrheal disease have been associated with the ingestion of strawberries, raspberries, fresh basil, mesclun (baby lettuce leaves), and snow peas. The most likely causative agent is:",
+    "options": [
+      "Dientamoeba fragilis",
+      "Cyclospora cayetanensis",
+      "Schistosoma mansoni",
+      "Cystoisospora belli"
+    ],
+    "answer": "B",
+    "explanation": "The coccidian C. cayetanensis has been linked to mini-outbreaks of diarrheal disease. Epidemiological evidence strongly implicates various berries, basil, mesclun, and snow peas as likely causes. These outbreaks are very sporadic and tend to occur primarily in March through May, primarily from imported foods."
+  },
+  {
+    "id": 1714,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Which of the following statements is true regarding onchocerciasis?",
+    "options": [
+      "The adult worm is present in blood",
+      "The microfilariae are in blood during the late evening hours",
+      "The diagnostic test of choice is the skin snip",
+      "The parasite resides in the deep lymphatics"
+    ],
+    "answer": "C",
+    "explanation": "The adult O. volvulus reside in subcutaneous nodules, and the microfilariae are found in the fluids right under the outer layers of skin; thus the appropriate diagnostic test is the microscopic examination of skin snips for the presence of microfilariae."
+  },
+  {
+    "id": 1715,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The most prevalent helminth to infect humans is:",
+    "options": [
+      "Enterobius vermicularis, the pinworm",
+      "Ascaris lumbricoides, the large intestinal roundworm",
+      "Taenia saginata, the beef tapeworm",
+      "Schistosoma mansoni, one of the blood flukes"
+    ],
+    "answer": "A",
+    "explanation": "The pinworm, E. vermicularis, is the most common parasitic infection throughout the world, and the eggs are infective within just a few hours. It has been said, “You either had the infection as a child, have it now, or will have it again when you have children.”"
+  },
+  {
+    "id": 1716,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "A helminth egg is described as having terminal polar plugs. The most likely helminth is:",
+    "options": [
+      "Hookworm",
+      "Trichuris trichiura",
+      "Fasciola hepatica",
+      "Diphyllobothrium latum"
+    ],
+    "answer": "B",
+    "explanation": "The eggs of T. trichiura (the whipworm) have been described as being barrel shaped, with a thick shell and two polar plugs, one at each end of the egg."
+  },
+  {
+    "id": 1717,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Ingestion of which of the following eggs will result in infection?",
+    "options": [
+      "Strongyloides stercoralis",
+      "Schistosoma japonicum",
+      "Toxocara canis",
+      "Opisthorchis sinensis"
+    ],
+    "answer": "C",
+    "explanation": "The eggs of T. canis are infectious for humans and cause visceral and ocular larva migrans. These ascarid eggs of the dog can infect humans; the eggs hatch and the larvae wander through the deep tissues, occasionally the eye. In this case, the human becomes the accidental intermediate host."
+  },
+  {
+    "id": 1718,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Plasmodium vivax and Plasmodium ovale are similar because they:",
+    "options": [
+      "Exhibit Schüffner dots and have a true relapse in the life cycle",
+      "Have no malarial pigment and multiple rings",
+      "Commonly have appliqué forms in the red cells",
+      "Have true stippling, do not have a relapse stage, and infect old red cells"
+    ],
+    "answer": "A",
+    "explanation": "Both P. vivax and P. ovale infect young RBCs, have true stippling (Schüffner dots), contain malarial pigment, and have a true relapse stage in the life cycle."
+  },
+  {
+    "id": 1719,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "The term internal autoinfection can be associated with the following parasites:",
+    "options": [
+      "Cryptosporidium spp. and Giardia lamblia (G. intestinalis, G. duodenalis)",
+      "Cystoisospora belli and Strongyloides stercoralis",
+      "Cryptosporidium spp. and Strongyloides stercoralis",
+      "Giardia lamblia (G. intestinalis, G. duodenalis) and Cystoisospora belli"
+    ],
+    "answer": "C",
+    "explanation": "Both Cryptosporidium and Strongyloides have the capability for internal autoinfection in their life cycles. This means that the cycle and infection can continue even after the patient has left the endemic area. In the case of Cryptosporidium, the cycle continues in patients who are immunocompromised and incapable of self cure."
+  },
+  {
+    "id": 1720,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Microsporidia have been identified as causing severe diarrhea, disseminated disease in other body sites, and ocular infections. Routes of infection have been identified as:",
+    "options": [
+      "Ingestion",
+      "Inhalation",
+      "Direct contamination from the environment",
+      "Ingestion, inhalation, and direct contamination from the environment"
+    ],
+    "answer": "D",
+    "explanation": "Infectious routes for microsporidial infections have been confirmed as ingestion and inhalation of the spores; direct transfer of infectious spores from environmental surfaces to the eyes has also been reported."
+  },
+  {
+    "id": 1721,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "An immunocompromised patient continues to have diarrhea after repeated ova and parasites (O&P) examinations (sedimentation concentration, trichrome permanent stained smear) were reported as negative; organisms that might be responsible for the diarrhea include:",
+    "options": [
+      "Cryptosporidium spp., Giardia lamblia (G. intestinalis, G. duodenalis), and Cystoisospora belli",
+      "Giardia lamblia (G. intestinalis, G. duodenalis), microsporidia, and Endolimax nana",
+      "Taenia solium and Endolimax nana",
+      "Cryptosporidium spp. and microsporidia"
+    ],
+    "answer": "D",
+    "explanation": "Routine O&P examinations usually do not allow the detection of Cryptosporidium oocysts and microsporidial spores; special stains are required. Modified acid-fast stains for Cryptosporidium and modified trichrome stains for the microsporidia are recommended."
+  },
+  {
+    "id": 1722,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Confirmation of an infection with microsporidia can be achieved by seeing:",
+    "options": [
+      "The oocyst wall",
+      "Sporozoites within the oocyst",
+      "Evidence of the polar tubule",
+      "Organisms stained with modified acid-fast stains"
+    ],
+    "answer": "C",
+    "explanation": "Evidence of the cross/diagonal line polar tubules provides confirmation for microsporidial spores in the clinical specimen. Not all spores will contain visible polar tubules; the stain of choice is the modified trichrome stain (Ryan/blue or Weber/green)."
+  },
+  {
+    "id": 1723,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Early ring forms of the fifth human malaria, Plasmodium knowlesi, resemble those of:",
+    "options": [
+      "Plasmodium vivax",
+      "Plasmodium ovale",
+      "Plasmodium malariae",
+      "Plasmodium falciparum"
+    ],
+    "answer": "D",
+    "explanation": "Early ring forms of the fifth human malaria, P. knowlesi, resemble most closely ring forms of P. falciparum. However, in the early ring form stage, all human malaria species tend to look very similar."
+  },
+  {
+    "id": 1724,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Parasite stages that are immediately infective for humans on passage from the gastrointestinal tract include:",
+    "options": [
+      "Schistosoma spp. eggs",
+      "Toxoplasma gondii bradyzoites",
+      "Ascaris lumbricoides eggs",
+      "Cryptosporidium spp. oocysts"
+    ],
+    "answer": "D",
+    "explanation": "On passage in stool from the gastrointestinal tract, the oocysts of Cryptosporidium are immediately infective; nosocomial infections have been documented with this organism. The oocysts of other coccidia have to undergo further development before they are infective."
+  },
+  {
+    "id": 1725,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Older developing stages (trophozoites, schizonts) of the fifth human malaria, Plasmodium knowlesi, resemble those of:",
+    "options": [
+      "Plasmodium vivax",
+      "Plasmodium ovale",
+      "Plasmodium malariae",
+      "Plasmodium falciparum"
+    ],
+    "answer": "C",
+    "explanation": "Older developing stages (developing trophozoites, schizonts) of the fifth human malaria, P. knowlesi, tend to closely resemble those of P. malariae (band forms, “daisy head” mature schizont)."
+  },
+  {
+    "id": 1726,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Autofluorescence requires no stain and is recommended for the presumptive identification of:",
+    "options": [
+      "Entamoeba histolytica cysts",
+      "Toxoplasma gondii tachyzoites",
+      "Dientamoeba fragilis trophozoites",
+      "Cyclospora cayetanensis oocysts"
+    ],
+    "answer": "D",
+    "explanation": "Autofluorescence is often used in preliminary testing for the presence of C. cayetanensis oocysts (8–10 μm). If positive, then the specimen can be stained using modified acid-fast stains for confirmation."
+  },
+  {
+    "id": 1727,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Key characteristics of infection with Plasmodium knowlesi include:",
+    "options": [
+      "Rapid erythrocyte cycle (24 hours), will infect all ages of RBCs, and can cause serious disease",
+      "Erythrocytic cycle limited to young RBCs and causes a relatively benign disease",
+      "The possibility of a true relapse from the liver, infection in older RBCs, and causes serious disease",
+      "Extended life cycle (72 hours), will infect all ages of RBCs, and disease is similar to that caused by Plasmodium ovale."
+    ],
+    "answer": "A",
+    "explanation": "Characteristics of the fifth human malaria, P. knowlesi, include a rapid erythrocytic cycle of 24 hours, possible infection of all ages of RBCs (as with P. falciparum), and the potential for serious disease (as with P. falciparum)."
+  },
+  {
+    "id": 1728,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Microsporidial infections can be confirmed by using:",
+    "options": [
+      "Light microscopy and modified trichrome staining",
+      "Phase contrast microscopy and routine trichrome staining",
+      "Electron microscopy and modified acid-fast staining",
+      "Fluorescence microscopy and hematoxylin staining"
+    ],
+    "answer": "A",
+    "explanation": "The use of a modified trichrome stain (Ryan/blue, Weber/green; both with a very high dye content) and light microscopy (oil immersion using the 100× objective) can be used to confirm a microsporidial infection."
+  },
+  {
+    "id": 1729,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Although the pathogenicity of Blastocystis spp. remains controversial, newer information suggests that:",
+    "options": [
+      "Most organisms are misdiagnosed as artifacts",
+      "Approximately 10 subtypes/strains are included in the name, some of which are pathogenic and some are nonpathogenic",
+      "The immune status of the host is solely responsible for symptomatic infections",
+      "The number of organisms present determines pathogenicity"
+    ],
+    "answer": "B",
+    "explanation": "Although the pathogenicity of Blastocystis spp. continues to be debated (some patients are symptomatic, and some are asymptomatic), it is now known that the organisms we see microscopically comprise a number of subtypes/strains/subspecies. Approximately half these subtypes are pathogenic for humans, and half are nonpathogenic; however, morphologically they all look the same. Correct reporting of this infection should be Blastocystis spp.; numbers should also be reported (rare, few, moderate, many, packed)."
+  },
+  {
+    "id": 1730,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Potential problems using EDTA anticoagulant and holding the blood too long prior to preparation of thick and thin blood films include:",
+    "options": [
+      "Changes in parasite morphology, loss of organisms within several hours, and poor staining",
+      "Loss of Schüffner dots, poor adherence of the blood to the glass slide, and parasites beginning the vector cycle within the tube of blood",
+      "None of the above",
+      "All of the above"
+    ],
+    "answer": "D",
+    "explanation": "All of the changes mentioned are seen in a tube of EDTA blood that has been held too long prior to blood film preparation. Many morphological changes of the parasites, as well as lost organisms, occur under these conditions. These blood specimens should always be handled STAT (ordering, collection, processing, examination, and reporting)."
+  },
+  {
+    "id": 1731,
+    "section": "Parasitology",
+    "chapter": "Microbiology",
+    "question": "Key characteristics of the thick film include:",
+    "options": [
+      "The ability to see the parasite within the RBCs",
+      "The ability to identify the parasites to the species level",
+      "The examination of less blood than the thin blood film",
+      "The necessity to lake the RBCs during or prior to staining"
+    ],
+    "answer": "D",
+    "explanation": "With thick blood films, the RBCs must be ruptured/laked either prior to or during staining. Without laking the RBCs, the stained smears would be too thick or too dark to be able to visualize any morphology. In contrast, the thin blood film is fixed prior to/during staining to preserve the RBC morphology; the parasite morphology within the infected RBC can be reviewed for possible diagnosis to the species level. The thin film has a much smaller amount of blood than the thick blood film."
+  },
+  {
+    "id": 1732,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "An emergency department physician ordered a culture and sensitivity test on a catheterized urine specimen obtained from a 24-year-old female patient. A colony count was done, and the following results were obtained after 24 hours: Blood agar plate = >100,000 col/mL of gram-positive cocci resembling staphylococci MacConkey agar = No growth CNA plate = Inhibited growth Hemolysis = Neg Catalase = + Novobiocin = Resistant This isolate is:",
+    "options": [
+      "Staphylococcus saprophyticus",
+      "Micrococcus luteus",
+      "Staphylococcus aureus",
+      "Streptococcus pyogenes"
+    ],
+    "answer": "A",
+    "explanation": "CNA inhibits most strains of S.saprophyticus. Therefore, blood agar should be used when culturing catheterized urine samples from young female patients. Most S. saprophyticus isolates are obtained from female patients ages 20 to 30 years."
+  },
+  {
+    "id": 1733,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "An outbreak of S. aureus in the hospital nursery prompted the Infection Control Committee to proceed with an environmental screening procedure. The best screening media to use for this purpose would be:",
+    "options": [
+      "CNA agar",
+      "THIO broth",
+      "Mannitol salt agar",
+      "PEA agar"
+    ],
+    "answer": "C",
+    "explanation": "The high concentration of NaCl (7.5%) in mannitol salt agar allows for the recovery of S. aureus from heavily contaminated specimens while inhibiting other organisms. Furthermore, S. aureus ferments mannitol, thus allowing for easy detection of yellow- haloed colonies of S. aureus on red mannitol salt agar."
+  },
+  {
+    "id": 1734,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A 12-month-old boy who had a fever of 103°F and was listless was taken to the emergency department. He had been diagnosed with an ear infection 3 days earlier. A spinal tap was performed, but only one tube of CSF was obtained from the lumbar puncture. The single tube of CSF should be submitted first to which department?",
+    "options": [
+      "Chemistry",
+      "Microbiology",
+      "Hematology",
+      "Cytology/Histology"
+    ],
+    "answer": "B",
+    "explanation": "Generally, tube 2 or 3 is submitted to the microbiology laboratory for culture and Gram staining. To ensure recovery of any pathogens and correct diagnosis without contamination by other bacteria, immediate centrifugation and inoculation to the appropriate media, as well as Gram staining, should be performed prior to delivery of the specimen to the other departments for testing."
+  },
+  {
+    "id": 1735,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A 65-year-old female outpatient was requested by her physician to submit a 24-hour urine specimen for protein and creatinine tests. He also requested testing for mycobacteria in the urine. Should the microbiology laboratory accept this 24-hour specimen for culture?",
+    "options": [
+      "Yes, if the specimen is kept on ice",
+      "Yes, if the specimen is for aerobic culture only",
+      "No, the specimen must be kept at room temperature",
+      "No, the specimen is unsuitable for the recovery of mycobacteria"
+    ],
+    "answer": "D",
+    "explanation": "In general, a 24-hour urine is unsuitable for culture; a first morning specimen is best for the recovery of mycobacteria in the urine."
+  },
+  {
+    "id": 1736,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A lymph node biopsy specimen obtained from a 30-year-old male patient was submitted to the microbiology laboratory for culture and AFB smear for mycobacteria. The specimen was fixed in formalin. This specimen should be:",
+    "options": [
+      "Accepted for AFB smear preparation and cultured",
+      "Rejected",
+      "Held at room temperature for 24 hours and then cultured",
+      "Cultured for anaerobes only"
+    ],
+    "answer": "B",
+    "explanation": "Specimens submitted for culture and recovery of any bacteria should be submitted without fixatives."
+  },
+  {
+    "id": 1737,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A 49-year-old man who traveled to Mexico City returned with severe dysentery. His symptoms were fever; abdominal cramping; and bloody, mucoidal, frequent stools. In addition to this, many WBCs were seen in the Gram-stained smear. Stool culture gave the following results: Gram staining = gram-negative rods Lactose = + Indole = + Lysine decarboxylase = Neg Urease = Neg Motility = Neg What is the most likely organism?",
+    "options": [
+      "Salmonella spp.",
+      "Proteus mirabilis",
+      "Escherichia coli",
+      "Enteroinvasive E. coli (EIEC)"
+    ],
+    "answer": "D",
+    "explanation": "EIEC produces dysentery similar to that by Shigella, with invasion and destruction of the intestinal mucosal epithelium. Leukocytes are seen on the Gram-stained smear. Adults who travel to foreign countries, especially Mexico, are at greatest risk."
+  },
+  {
+    "id": 1738,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "An 80-year-old male patient was admitted to the hospital with a fever of 102°F. A sputum culture revealed many gram-negative rods on MacConkey agar and blood agar. The patient was diagnosed with pneumonia. The following biochemical results were obtained from the culture: H2S = Neg Lactose = + Urease = + Citrate = + Indole = + VP = + Motility = Neg Resistance to ampicillin and carbenicillin What is the most likely identification?",
+    "options": [
+      "Klebsiella oxytoca",
+      "Proteus mirabilis",
+      "Escherichia coli",
+      "Klebsiella pneumoniae"
+    ],
+    "answer": "A",
+    "explanation": "K. oxytoca is similar to K. pneumoniae except that the indole test is positive for K. oxytoca."
+  },
+  {
+    "id": 1739,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "An immunocompromised 58-year-old female patient on chemotherapy received 2 units of packed RBCs. The patient died 3 days later, and the report from the autopsy revealed that her death resulted from septic shock. The blood bags were submitted for culture, and the following results were noted: GROWTH OF AEROBIC GRAM-NEGATIVE RODS ON BOTH MACCONKEY AND BLOOD AGARS Lactose = Neg Sucrose = + Citrate = Neg Indole = Neg VP = Neg H2S = Neg Urease = + Motility 22°C = + Motility 37°C = Neg What is the most likely identification?",
+    "options": [
+      "Escherichia coli",
+      "Yersinia enterocolitica",
+      "Enterobacter cloacae",
+      "Citrobacter freundii"
+    ],
+    "answer": "B",
+    "explanation": "Y. enterocolitica has been associated with fatal bacteremia and septic shock from contaminated blood transfusion products. The motility at room temperature is a clue to this identification."
+  },
+  {
+    "id": 1740,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A pediatric patient who had had been camping with his parents was admitted to the hospital with severe bloody diarrhea and complications of hemolytic uremic syndrome (HUS). Several stool specimens were submitted for culture and the following results noted: Gram staining = Many gram-negative rods, with no WBCs seen Blood agar = Normal flora MacConkey agar = Normal flora MacConkey agar with sorbitol = Many clear colonies (sorbitol negative) Hektoen agar = Normal flora Campy agar = No growth What is the most likely identification?",
+    "options": [
+      "Yersinia spp.",
+      "E. coli O157:H7",
+      "Salmonella spp.",
+      "Shigella spp."
+    ],
+    "answer": "B",
+    "explanation": "E. coli O157:H7 is usually the most common isolate from bloody stools of the EHEC group, which results from undercooked beef. These strains are waterborne and foodborne, and the infections from E. coli O157:H7 are greatest during the summer months in temperate climates."
+  },
+  {
+    "id": 1741,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A 14-year-old patient presented to the emergency department; he had been to the doctor’s office 2 days ago with abdominal pain, diarrhea, and a low-grade fever. He was diagnosed at the emergency department with pseudoappendicular syndrome. Cultures from the stool containing blood and WBCs showed the following results: AEROBIC GRAM-NEGATIVE RODS ON MACCONKEY AGAR (CLEAR COLONIES) Campy agar = No growth Lactose = Neg Sucrose = + Citrate = Neg Indole = Neg VP = Neg H2S = Neg Motility 37°C = Motility 22°C = + Hektoen agar = NF Neg What is the most likely identification?",
+    "options": [
+      "Yersinia enterocolitica",
+      "Salmonella spp.",
+      "Shigella spp.",
+      "Escherichia coli"
+    ],
+    "answer": "A",
+    "explanation": "Y. enterocolitica is responsible for diseases in younger persons. Blood and leukocytes can be present in stools. Patients (usually teens) exhibiting appendicitislike symptoms with lactose-negative colonies growing on MacConkey agar (small colonies at 24 hours, but larger colonies at 48 hours if incubated at room temperature) should be tested for the growth of Y. enterocolitica."
+  },
+  {
+    "id": 1742,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "Culture of the sputum specimen from a 13-year-old patient with CF grew a predominance of short, gram-negative rods that tested oxidase negative. On MacConkey, chocolate, and blood agar plates, the organism appeared to have lavender- green pigmentation. Further testing showed the following: Motility = + DNase = + Glucose = + (oxidative) Maltose = + (oxidative) Lysine decarboxylase = + Esculin hydrolysis = + What is the most likely identification?",
+    "options": [
+      "Stenotrophomonas maltophilia",
+      "Acinetobacter spp.",
+      "Pseudomonas aeruginosa",
+      "Burkholderia (P.) cepacia"
+    ],
+    "answer": "A",
+    "explanation": "S. maltophilia is the third most frequently isolated nonfermentative gram-negative rod in the clinical laboratory. Patients with CF are at greater risk for infections because of previous antimicrobial treatment and recurrent pneumonia and because"
+  },
+  {
+    "id": 1743,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A patient with a human bite wound on the right forearm arrived at the clinic for treatment. The wound was inflicted 36 hours earlier, and a culture was taken by the physician on duty. After 48 hours, the culture results were as follows: GRAM-STAINING = GRAM-NEGATIVE STRAIGHT, SLENDER RODS Chocolate agar plate = “Pitting” of the agar by small, yellow, opaque colonies Oxidase = + Motility = Neg Catalase = Neg Glucose = + Growth in increased CO2 = + Growth at 42°C = Neg What is the most likely identification of this facultative anaerobe?",
+    "options": [
+      "Pseudomonas aeruginosa",
+      "Acinetobacter spp.",
+      "Kingella kingae",
+      "Eikenella corrodens"
+    ],
+    "answer": "D",
+    "explanation": "E. corrodens is part of the normal flora of the human mouth and typically “pits” the agar. This organism is capnophilic (needing increased CO2)."
+  },
+  {
+    "id": 1744,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A dog bite wound to the thumb of a 20-year-old male patient became infected. Culture grew a gram-negative, slender rod, which was a facultative anaerobe. The following results were noted: Oxidase = + Motility = Neg Catalase = + Capnophilic = + “Gliding” on the agar was noted. What is the most likely identification?",
+    "options": [
+      "Pseudomonas aeruginosa",
+      "Capnocytophaga canimorsus",
+      "Acinetobacter spp.",
+      "Proteus mirabilis"
+    ],
+    "answer": "B",
+    "explanation": "C. canimorsus is associated with septicemia or meningitis following dog bites. All Capnocytophaga strains are capnophilic, facultative anaerobic, gram-negative, slender or filamentous rods with tapered ends."
+  },
+  {
+    "id": 1745,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A patient exhibits fever, chills, abdominal cramps, diarrhea, vomiting, and bloody stools 10 to 12 hours after eating. Which organisms will most likely grow from this patient’s stool culture?",
+    "options": [
+      "Salmonella or Yersinia spp.",
+      "Escherichia coli O157:H7 or Shigella spp.",
+      "Staphylococcus aureus or Clostridium perfringens",
+      "Salmonella or Staphylococcus spp."
+    ],
+    "answer": "B",
+    "explanation": "Both E. coli O157:H7 and Shigella spp. are invasive and cause bloody stools."
+  },
+  {
+    "id": 1746,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "When testing for coagulase properties, staphylococci isolates from a 67-year-old male patient with diabetes showed a positive tube test (free coagulase) result. The organism should be identified as:",
+    "options": [
+      "Staphylococcus aureus",
+      "Staphylococcus haemolyticus",
+      "Staphylococcus saprophyticus",
+      "Micrococcus luteus"
+    ],
+    "answer": "A",
+    "explanation": "S. aureus is an opportunistic human pathogen. A wound or ulcer infected with S. aureus that is left untreated is especially detrimental to a patient with diabetes."
+  },
+  {
+    "id": 1747,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "An isolate of S. aureus was cultured from an ulcer obtained from the leg of a 79-year- old female patient with diabetes. The organism showed resistance to methicillin. This isolate should be additionally tested for resistance or susceptibility to:",
+    "options": [
+      "Erythromycin",
+      "Gentamicin",
+      "Vancomycin",
+      "Kanamycin"
+    ],
+    "answer": "C",
+    "explanation": "MRSA isolates are usually tested for susceptibility or resistance to vancomycin, a glycopeptide."
+  },
+  {
+    "id": 1748,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "An isolate recovered from a vaginal culture obtained from a 25-year-old female patient who is 8 months pregnant is shown to be gram-positive cocci, catalase negative, and β-hemolytic on blood agar. Which tests are needed for further identification?",
+    "options": [
+      "Optochin, bile solubility, PYR",
+      "Bacitracin, CAMP, PYR",
+      "Methicillin, PYR, trehalose",
+      "Coagulase, glucose, PYR"
+    ],
+    "answer": "B",
+    "explanation": "Group B streptococci (S. agalactiae) are important pathogens and can cause serious neonatal infections. Women who are found to be heavily colonized vaginally with S. agalactiae pose a threat to the newborn, especially within the first few days after delivery. The infection acquired by the infant is associated with pneumonia."
+  },
+  {
+    "id": 1749,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "Which organism is the most often recovered gram-positive coccus (catalase negative), displaying α-, β-, or γ-hemolysis on blood agar from a series of blood culture specimens obtained from patients with endocarditis?",
+    "options": [
+      "Streptococcus agalactiae",
+      "Clostridium perfringens",
+      "Enterococcus faecalis",
+      "Pediococcus spp."
+    ],
+    "answer": "C",
+    "explanation": "Enterococcus (Streptococcus) faecalis is the cause of up to 20% of the bacterial endocarditis cases and is the most commonly encountered species in this condition."
+  },
+  {
+    "id": 1750,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A presumptive diagnosis of gonorrhea can be made from an exudate from a 20-year-old emergency department patient if which of the following criteria are present?",
+    "options": [
+      "Smear of urethral exudate (male only) shows typical gram-negative, intracellular diplococci; growth of oxidase-positive, gram-negative diplococci on selective agar (MTM)",
+      "Smear from vaginal area shows gram-negative diplococci; growth of typical colonies on blood agar",
+      "Smear from rectum shows typical gram-negative diplococci; no growth on chocolate agar",
+      "Growth of gram-negative cocci on MacConkey agar and blood agar"
+    ],
+    "answer": "A",
+    "explanation": "N. gonorrhoeae can be presumptively identified from a male patient (only) from Gram staining and growth on selective agar. In female patients, the normal flora from a urethral swab may appear to be N. gonorrhoeae (gram-negative diplococci) but may be part of the normal flora, such as Veillonella spp. (anaerobic gram-negative cocci resembling N. gonorrhoeae)."
+  },
+  {
+    "id": 1751,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "“Clue cells” are seen on a smear of vaginal discharge obtained from an 18-year-old female emergency department patient. This finding, along with a fishy odor (amine) after the addition of 10% KOH, suggests bacterial vaginosis caused by which organism?",
+    "options": [
+      "Staphylococcus epidermidis",
+      "Streptococcus agalactiae",
+      "Gardnerella vaginalis",
+      "Escherichia coli"
+    ],
+    "answer": "C",
+    "explanation": "G. vaginalis, a gram-negative or gram-variable pleomorphic coccobacillus, causes bacterial vaginosis, but is also present as part of the normal vaginal flora of women of reproductive age with a normal vaginal examination. “Clue cells” are vaginal epithelial cells with gram-negative or gram-variable coccobacilli attached to them."
+  },
+  {
+    "id": 1752,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A 1-month-old infant underwent a spinal tap to rule out bacterial meningitis. The CSF was cloudy, and the smear showed many pus cells and short gram-positive rods. After 18 hours, many colonies appeared on blood agar that resembled Streptococcus spp. or L. monocytogenes. Which of the following preliminary tests should be performed on the colonies to best differentiate L. monocytogenes from Streptococcus spp.?",
+    "options": [
+      "Hanging-drop motility (25°C) and catalase",
+      "PYR and bacitracin",
+      "Oxidase and glucose",
+      "Coagulase and catalase"
+    ],
+    "answer": "A",
+    "explanation": "L. monocytogenes is catalase positive and displays a “tumbling” motility at room temperature. Streptococcus spp. are catalase negative and nonmotile."
+  },
+  {
+    "id": 1753,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "Acid-fast-positive bacilli were recovered from the sputum of a 79-year-old man who had been treated for pneumonia. Which of the following test reactions after 3 weeks of incubation on Löwenstein-Jensen agar are consistent with M. tuberculosis?",
+    "options": [
+      "Niacin = + Nitrate Photochromogenic = reduction = + Neg",
+      "Niacin= Neg Optochin = + Catalase = +",
+      "PYR = + Urease = + Bacitracin = +",
+      "Ampicillin = Penicillin = Resistant Resistant"
+    ],
+    "answer": "A",
+    "explanation": "M. tuberculosis is niacin positive and nonphotochromogenic. This organism takes up to 3 weeks to grow on selective agar."
+  },
+  {
+    "id": 1754,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "Which biochemical tests should be performed to identify colorless colonies growing on MacConkey agar (swarming colonies on blood agar) from a catheterized urine specimen?",
+    "options": [
+      "Indole, phenylalanine deaminase, and urease",
+      "Glucose, oxidase, and lactose utilization",
+      "Phenylalanine deaminase and bile solubility",
+      "H2S and catalase"
+    ],
+    "answer": "A",
+    "explanation": "A swarmer on blood agar would most likely be a Proteus spp. A lactose nonfermenter and swarmer that is often isolated from UTIs is P. mirabilis."
+  },
+  {
+    "id": 1755,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A gram-negative nonfermenter was isolated from a culture taken from a patient who had suffered burns. Which of the following is the best choice of tests to differentiate P. aeruginosa from Acinetobacter spp.?",
+    "options": [
+      "Growth on MacConkey agar, catalase, growth at 37°C",
+      "Oxidase, motility, growth at 42°C",
+      "Growth on blood agar, oxidase, growth at 35°C",
+      "String test and coagulase test"
+    ],
+    "answer": "B",
+    "explanation": "P. aeruginosa has a distinctive grape odor. The best tests to differentiate it from Acinetobacter spp. are growth at 42°C, oxidase and motility which give the following results: {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "",
+            "42°C Growth",
+            "Oxidase",
+            "Motility"
+          ],
+          [
+            "P. aeruginosa",
+            "+",
+            "+",
+            "+"
+          ],
+          [
+            "Acinetobacter spp.",
+            "+/Neg",
+            "Neg",
+            "Neg"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1756,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A Haemophilus species recovered from a throat culture specimen obtained from a 59- year-old male patient undergoing chemotherapy required hemin (X factor) and NAD (V factor) for growth. This species also hemolyzed horse erythrocytes on blood agar. What is the most likely species?",
+    "options": [
+      "Haemophilus ducreyi",
+      "Haemophilus parahaemolyticus",
+      "Haemophilus haemolyticus",
+      "Haemophilus aegyptius"
+    ],
+    "answer": "C",
+    "explanation": "H. haemolyticus requires both X and V factors for growth and lyses horse erythrocytes."
+  },
+  {
+    "id": 1757,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "Large gram-positive bacilli (boxcar shaped) were recovered from a blood culture specimen taken from a 70-year-old female patient with diabetes. The following results were recorded: Aerobic growth = Neg Anaerobic growth = + Spores = Neg Motility = Neg Lecithinase = + Hemolysis = β (double zone) GLC (volatile acids) = acetic acid and butyric acid What is the most likely identification?",
+    "options": [
+      "Clostridium perfringens",
+      "Fusobacterium spp.",
+      "Bacteroides spp.",
+      "Clostridium sporogenes"
+    ],
+    "answer": "A",
+    "explanation": "C. perfringens is an anaerobic gram-positive rod that is often isolated from the tissue of patients with gas gangrene (myonecrosis). Spore production is not usually seen with this organism, which may also stain gram-negative."
+  },
+  {
+    "id": 1758,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "Anaerobic gram-negative rods were recovered from the blood of a patient after gallbladder surgery. The bacteria grew well on agar containing 20% bile but were resistant to kanamycin and vancomycin. What is the most likely identification?",
+    "options": [
+      "Clostridium perfringens",
+      "Bacteroides fragilis group",
+      "Prevotella spp.",
+      "Porphyromonas spp."
+    ],
+    "answer": "B",
+    "explanation": "B. fragilis is the most frequently isolated gram-negative anaerobic bacillus. It is resistant to many antibiotics. A good screening agar is a 20% bile plate that does not support the growth of Prevotella spp. or Porphyromonas spp."
+  },
+  {
+    "id": 1759,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "In breakpoint antimicrobial drug testing, interpretation of susceptible (S), intermediate (I), and resistant (R) refers to testing antibiotics by using:",
+    "options": [
+      "The amount needed to cause bacteriostasis",
+      "Only the specific concentrations necessary to report S, I, or R",
+      "An MIC of 64 µg/mL",
+      "A dilution of drug that is one tube less than the toxic level"
+    ],
+    "answer": "B",
+    "explanation": "Breakpoint susceptibility testing is done by selecting only two appropriate drug concentrations for testing. If the results show growth at both concentrations, then resistance is indicated; growth only at the lower concentration signifies an intermediate result; no growth at either concentration is interpreted as susceptible."
+  },
+  {
+    "id": 1760,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A CSF sample obtained from a 2-week old infant with suspected bacterial meningitis grew gram-negative rods on blood and chocolate agars. The following results were noted: MacConkey agar = No growth ONPG = + Glucose (open) OF = + Urease = Neg Glucose (closed) OF = Neg Catalase = + Indole = + Oxidase = + Motility = Neg Pigment = Yellow 42°C growth = Neg What is the correct identification?",
+    "options": [
+      "Pseudomonas aeruginosa",
+      "Elizabethkingia (Chryseobacterium) meningosepticum",
+      "Acinetobacter spp.",
+      "Escherichia coli"
+    ],
+    "answer": "B",
+    "explanation": "Elizabethkingia (formerly Chryseobacterium) meningosepticum is a well-known cause of neonatal meningitis. It grows well on chocolate agar, producing yellow- pigmented colonies."
+  },
+  {
+    "id": 1761,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "During the summer break, several elementary school teachers, all middle-aged, from the same school district attended a 3-day seminar in Chicago. Upon returning home, three female teachers from the group were hospitalized with pneumonia, flulike symptoms, and a nonproductive cough. Routine testing of sputum samples revealed normal flora. Further testing with buffered CYE agar with L-cysteine and α- ketoglutarate in 5% CO2 produced growth of opaque colonies that stained faintly, showing thin gram-negative rods. What is the most likely identification?",
+    "options": [
+      "Legionella pneumophila",
+      "Haemophilus influenzae",
+      "Eikenella corrodens",
+      "Streptococcus pneumoniae"
+    ],
+    "answer": "A",
+    "explanation": "L. pneumophila is the cause of pneumonia and can occur as part of an epidemic sporadically or as a nosocomial infection or may be community acquired. The appearance of mottled, cut-glass colonies on buffered CYE agar under low power and the use of a DIF technique on sputum samples determine the presence of L. pneumophila. The most common environmental sites for recovery are shower heads, faucets, water tanks, and air-conditioning systems."
+  },
+  {
+    "id": 1762,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A vancomycin-resistant gram-positive coccobacillus resembling the S. viridans group was isolated from the blood of a 42-year-old female patient undergoing bone marrow transplantation. The PYR and leucine aminopeptidase (LAP) tests were negative. The following results were noted: Catalase = Neg CAMP = Neg Esculin hydrolysis = Neg Gas from glucose = + Hippurate hydrolysis = Neg 6.5% salt broth = Neg What is the correct identification?",
+    "options": [
+      "Leuconostoc spp.",
+      "Enterococcus spp.",
+      "Staphylococcus spp.",
+      "Micrococcus spp."
+    ],
+    "answer": "A",
+    "explanation": "Leuconostoc spp. are vancomycin-resistant opportunistic pathogens, and infection with them occurs after invasive procedures. The organisms are often recovered from positive neonatal blood culture specimens following colonization during delivery."
+  },
+  {
+    "id": 1763,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A catalase-negative, gram-positive coccus resembling staphylococci (clusters on the Gram-stained smear) was recovered from three different blood culture specimens obtained from a 60-year-old patient diagnosed with endocarditis. The following test results were noted: PYR = Neg LAP = Neg (V) Esculin hydrolysis = Neg 6.5% Salt broth = Neg Vancomycin = Sensitive CAMP test = Neg What is the correct identification?",
+    "options": [
+      "Leuconostoc spp.",
+      "Gemella spp.",
+      "Enterococcus spp.",
+      "Micrococcus spp."
+    ],
+    "answer": "B",
+    "explanation": "Gemella spp. are often recovered from patients with endocarditis and meningitis. In the Gram-stained smear, they resemble staphylococci morphologically but are catalase negative."
+  },
+  {
+    "id": 1764,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "Several clinical culture specimens obtained from an immunocompromised patient with prior antibiotic treatment grew aerobic gram-positive cocci. The organism was vancomycin resistant and catalase negative. Additional testing proved negative for enterococci. What other groups of organisms might be responsible?",
+    "options": [
+      "Leuconostoc spp. and Pediococcus spp.",
+      "Streptococcus pyogenes and Streptococcus agalactiae",
+      "Micrococcus spp. and Gemella spp.",
+      "Clostridium spp. and Streptococcus bovis"
+    ],
+    "answer": "A",
+    "explanation": "Leuconostoc spp. and Pediococcus spp. are vancomycin-resistant, catalase-negative, gram-positive aerobic organisms recovered from immunosuppressed patients."
+  },
+  {
+    "id": 1765,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A catalase-positive, gram-positive coccus (clusters on the Gram-stained smear) grew pale yellow, creamy colonies on 5% sheep blood agar. The specimen was recovered from pustules on the face of a 5-year-old girl with impetigo. The following test reactions indicate which organism? Glucose = + (Fermentation) Oxidase = Neg PYR = Neg Bacitracin = Sensitive Lysostaphin = Sensitive",
+    "options": [
+      "Micrococcus spp.",
+      "Streptococcus spp.",
+      "Enterococcus spp.",
+      "Staphylococcus spp."
+    ],
+    "answer": "D",
+    "explanation": "S. aureus is a usual cause of skin infections and a common cause of cellulitis, impetigo, postsurgical wounds, and scalded skin syndrome in infants."
+  },
+  {
+    "id": 1766,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A wound (skin lesion) specimen obtained from a newborn grew predominantly β- hemolytic colonies of gram-positive cocci on 5% sheep blood agar. The newborn infant was covered with small skin eruptions that gave the appearance of a “scalding of the skin.” The gram-positive cocci proved to be catalase positive. Which tests should be performed next for appropriate identification?",
+    "options": [
+      "Optochin, bile solubility, PYR",
+      "Coagulase, glucose fermentation, DNase",
+      "Bacitracin, PYR, 6.5% salt broth",
+      "CAMP, bile-esculin, 6.5% salt broth"
+    ],
+    "answer": "B",
+    "explanation": "S. aureus is the cause of “scalded skin” syndrome in newborn infants. The production of a potent exotoxin (exfoliatin) causes the epidermis to slough off, leaving the newborn’s skin with a red, raw texture or a burned, scalded look."
+  },
+  {
+    "id": 1767,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A 20-year-old female patient presented to the emergency department complaining of abdominal pain, fever, and a burning sensation during urination. An above-normal WBC count, along with pus cells and bacteria in the urine specimen, prompted the physician to order a urine culture. The colony count reported for this patient revealed greater than100,000 col/mL of a nonhemolytic, catalase-negative, gram-positive organism on 5% sheep blood agar. The following test results indicate which organism? PYR = + Bile esculin = + 6.5% Salt broth = + growth Optochin = Neg Bacitracin = Neg",
+    "options": [
+      "Enterococcus faecalis",
+      "Streptococcus pyogenes",
+      "Streptococcus agalactiae",
+      "Streptococcus bovis"
+    ],
+    "answer": "A",
+    "explanation": "E. faecalis gives a positive reaction to the PYR test and is often implicated in UTIs. It is part of the normal flora of the female genitourinary tract and the human gastrointestinal tract. On 5% sheep blood agar, E. faecalis colonies may appear as nonhemolytic, α-hemolytic, or β-hemolytic colonies, depending on the strain."
+  },
+  {
+    "id": 1768,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A sputum specimen from an 89-year-old male patient with suspected bacterial pneumonia grew a predominance of gram-positive cocci displaying α-hemolysis on 5% sheep blood agar. The colonies appeared donut shaped and mucoidy and tested negative for catalase. The most appropriate tests for a final identification are:",
+    "options": [
+      "Coagulase, glucose fermentation, lysostaphin",
+      "Penicillin, bacitracin, CAMP",
+      "Optochin, bile solubility, PYR",
+      "Bile esculin, hippurate hydrolysis"
+    ],
+    "answer": "C",
+    "explanation": "S. pneumoniae colonies appear as α-hemolytic donut-shaped colonies on 5% sheep blood agar. The mucoid colonies may appear “wet” or “watery” because of the capsule surrounding the organism. The Gram stain smear reveals lancet-shaped gram-positive cocci in pairs surrounded by a clear area (the capsule). To differentiate the viridans streptococci from S. pneumoniae, the most appropriate test is the optochin disk test. S. pneumoniae on blood agar are susceptible to optochin, but viridans streptococci are resistant."
+  },
+  {
+    "id": 1769,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A tissue biopsy specimen of the stomach was obtained from a 38-year-old male patient diagnosed with gastric ulcers. The specimen was transported immediately and processed for culture and histology. At 5 days, the culture produced colonies of gram- negative (curved) bacilli on chocolate and Brucella agar with 5% sheep blood. The cultures were held at 35°C to 37°C in a microaerophilic atmosphere. The colonies tested positive for urease. The most likely identification is:",
+    "options": [
+      "Escherichia coli",
+      "Helicobacter pylori",
+      "Enterococcus faecalis",
+      "Streptococcus bovis"
+    ],
+    "answer": "B",
+    "explanation": "H. pylori is not easily cultured for growth and identification. Tissue samples should be transported in appropriate media and tested immediately. Other means of successful identification are rapid urease test on biopsy material; urea breath test; and serological tests for the detection of antibodies to H. pylori by ELISA and IFA procedures."
+  },
+  {
+    "id": 1770,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A catalase-positive, gram-positive short rod was recovered from the blood of a prenatal patient. The organism appeared on 5% sheep blood as white colonies surrounded by a small zone of β-hemolysis. The following tests were performed, indicating the patient was infected with which organism? Motility = + (tumbling on wet prep) room temperature Motility = + (umbrella-shape on semisolid agar) room temperature Glucose = + (fermentation) Bile esculin = + Voges Proskauer = +",
+    "options": [
+      "Listeria monocytogenes",
+      "Streptococcus agalactiae",
+      "Streptococcus pyogenes",
+      "Lactobacillus spp."
+    ],
+    "answer": "A",
+    "explanation": "L. monocytogenes colonies recovered from blood and CSF display a narrow zone of β-hemolysis on 5% sheep blood agar, which often mimics group B β-hemolytic streptococci. A catalase test and Gram staining will differentiate the two organisms. L. monocytogenes are catalase positive, motile (tumbling motility at room temperature), and rod shaped instead of being coccus shaped."
+  },
+  {
+    "id": 1771,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "An emergency department physician suspected C. diphtheriae when examining the sore throat of an exchange student from South America. What is the appropriate medium for the culture of the nasopharyngeal swab obtained from the patient?",
+    "options": [
+      "Chocolate agar",
+      "Thayer-Martin agar",
+      "Tinsdale medium",
+      "MacConkey agar"
+    ],
+    "answer": "C",
+    "explanation": "C. diphtheriae, unlike other Corynebacterium spp., are not part of the normal flora of the human nasopharynx. Exposure through direct contact (respiratory or cutaneous lesions) is the most likely mode of transmission. Underdeveloped countries are the prime areas where exposure to C. diphtheriae occurs. The diagnosis is made more rapidly when the examining physician alerts the laboratory that diphtheria is suspected so that Tinsdale agar or other media containing tellurite salts can be used for culture. Corynebacterium will grow on blood and chocolate agars, but Tinsdale agar is the preferred culture medium because the potassium tellurite in the agar causes C. diphtheriae to produce brown colonies surrounded by a brown halo. The halo effect is seen with C. diphtheriae, C. ulcerans, and C. pseudotuberculosis, but not with other Corynebacterium or with other pigmented colonies growing on Tinsdale agar, such as Streptococcus or Staphylococcus spp."
+  },
+  {
+    "id": 1772,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A 25-year-old pregnant patient complained of vaginal irritation. Cultures taken for STDs proved negative. The Gram-stained vaginal smear revealed many epithelial cells with gram-variable short rods (coccobacilli) covering the margins. What is the most likely cause of the vaginosis?",
+    "options": [
+      "Group B streptococci",
+      "Gardnerella vaginalis",
+      "Staphylococcus aureus",
+      "Staphylococcus saprophyticus"
+    ],
+    "answer": "B",
+    "explanation": "G. vaginalis is part of the normal flora (anorectal) of adults and children. Clue cells (vaginal epithelial cells with gram-variable coccobacilli on the cell margins) are seen in vaginal washings and the organism grows slowly on chocolate agar, 5% sheep blood agar, and V-agar."
+  },
+  {
+    "id": 1773,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A 50-year-old male transplant recipient was experiencing neurological difficulties after a pulmonary infection. A spinal tap revealed a cloudy CSF with the Gram-stained smear revealing gram-positive long-beaded bacilli. An acid-fast smear showed filamentous partially acid-fast bacilli. What is the most likely identification of the organism?",
+    "options": [
+      "Nocardia asteroides",
+      "Mycobacterium avium",
+      "Mycobacterium bovis",
+      "Legionella spp."
+    ],
+    "answer": "A",
+    "explanation": "N. asteroides is a gram-positive, beaded, long bacillus and is partially acid fast. It is an intracellular pathogen that grows in human cells. Immunocompromised patients are susceptible to infections, especially pulmonary infections, which then disseminate to other organs, often proving fatal."
+  },
+  {
+    "id": 1774,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A 22-year-old pregnant woman (third trimester) presented to the emergency department complaining of diarrhea, fever, and other flulike symptoms. Blood culture, along with a urine culture, were ordered. After 24 hours, the urine culture was negative, but the blood culture revealed a gram-positive, short rod that grew aerobically on blood agar. The colonies were small and smooth, resembling a Streptococcus spp. with a small narrow zone of β-hemolysis. The following test results indicate which organism? Motility = + (Wet mount = Tumbling) Catalase = + Glucose = + (Acid) Esculin hydrolysis = +",
+    "options": [
+      "Listeria monocytogenes",
+      "Streptococcus pneumoniae",
+      "Streptococcus agalactiae",
+      "Corynebacterium spp."
+    ],
+    "answer": "A",
+    "explanation": "Early detection in pregnant women is very important when dealing with L. monocytogenes. If it is not detected and treated, infection of the fetus, resulting in stillbirth, abortion, or premature birth may result. Detection can also be made postpartum by culturing the CSF, blood, amniotic fluid, and respiratory secretions of the neonate."
+  },
+  {
+    "id": 1775,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "Anaerobic gram-positive, spore-forming bacilli were recovered from the feces of a chemotherapy patient with severe diarrhea. The patient had undergone antibiotic therapy 1 week earlier. The fecal culture produced growth only on the CCFA plate. No aerobic growth of normal flora was seen after 48 hours. The following results were noted: Kanamycin = Sensitive Vancomycin = Sensitive Colistin = Resistant Lecithinase = Neg Lipase = Neg Nitrate = Neg Indole = Neg Urease = Neg Catalase = Neg Spores = + CCFA agar = Growth of yellow, “ground-glass” colonies that fluoresce chartreuse (yellow- green) What is the correct identification?",
+    "options": [
+      "Clostridium perfringens",
+      "Clostridium tetani",
+      "Clostridium sordellii",
+      "Clostridium difficile"
+    ],
+    "answer": "D",
+    "explanation": "The overgrowth of C. difficile in the bowel is the cause of antimicrobial-associated colitis. Culturing for C. difficile is less specific for infection than toxin testing, but is the more sensitive method, along with NAT, to detect possible disease related to C. difficile. A characteristic “horse stable” odor is noted on CCFA growing C. difficile."
+  },
+  {
+    "id": 1776,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "Anaerobic gram-positive diphtheroids (non–spore formers) were cultured from two separate blood culture bottles (at 5 days) obtained from a 25-year-old patient admitted to the hospital with dehydration, diarrhea, and other flulike symptoms. Four other blood culture bottles did not grow any organisms at 7 days and were discarded. The following results were obtained from the recovered anaerobe: Indole = + Nitrate = + Catalase = + Kanamycin = Sensitive Vancomycin = Sensitive Colistin = Resistant Major acid from PYG broth by GLC = Propionic acid What is the correct identification?",
+    "options": [
+      "Eggerthella (Eubacterium) lentum",
+      "Propionibacterium acnes",
+      "Actinomyces spp.",
+      "Peptostreptococcus spp."
+    ],
+    "answer": "B",
+    "explanation": "P. acnes is a diphtheroid (pleomorphic rod) that may appear to branch on the Gram- stained smear. It is one of the most common organisms isolated from blood cultures and is often a contaminant. Abundant propionic acid is produced by GLC."
+  },
+  {
+    "id": 1777,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "Anaerobic gram-positive bacilli with subterminal spores were recovered from several blood cultures obtained from a patient diagnosed with a malignancy of the colon. The following results were recorded: Indole = Neg Urease = Neg Lipase = Neg Catalase = Neg Lecithinase = Neg Double-zone of Beta hemolysis = Neg Growth on blood agar = Swarming colonies What is the correct identification?",
+    "options": [
+      "Clostridium septicum",
+      "Clostridium perfringens",
+      "Clostridium sordellii",
+      "Propionibacterium acnes"
+    ],
+    "answer": "A",
+    "explanation": "C. septicum is often recovered from patients with malignancies or other diseases of the colon, especially the cecum. The following chart defines the swarming Clostridium spp. {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "",
+            "Indole",
+            "Urease",
+            "Spores"
+          ],
+          [
+            "C. septicum",
+            "Neg",
+            "Neg",
+            "Subterminal"
+          ],
+          [
+            "C. tetani",
+            "–/+",
+            "Neg",
+            "Terminal"
+          ],
+          [
+            "C. sordellii",
+            "+",
+            "+",
+            "Subterminal"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1778,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "Anaerobic gram-negative bacilli were recovered from fluid obtained from drainage of a postsurgical abdominal wound. The following test results were recorded: Kanamycin = Resistant Vancomycin = Resistant Colistin = Resistant Pigment = Neg Growth on 20% bile plate = + Nitrate = Neg Indole = V (Neg) Lipase = Neg Urease = Neg What is the correct identification?",
+    "options": [
+      "Prevotella spp.",
+      "Bacteroides fragilis group",
+      "Porphyromonas spp.",
+      "Clostridium spp."
+    ],
+    "answer": "B",
+    "explanation": "The B. fragilis group is a dominant part of the indigenous flora of the large bowel and is recovered most commonly from postoperative abdominal fluids. The B. fragilis group is more resistant to antibiotics and is not pigmented. Prevotella and Porphyromonas spp. are pigmented."
+  },
+  {
+    "id": 1779,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "Anaerobic, nonpigmented, gram-negative rods were recovered from an anaerobic blood agar plate after 48 hours of incubation. The Gram-stained smear showed thin bacilli with pointed ends. The colonies on blood agar had the appearance of dry, irregular, white breadcrumb-like morphology with greening of the agar. The following reactions were noted: Kanamycin = Sensitive Vancomycin = Resistant Colistin = Sensitive Nitrate = Neg Indole = + Catalase = Neg Lipase = Neg Urease = Neg Growth on 20% bile agar = Neg What is the correct identification?",
+    "options": [
+      "Fusobacterium nucleatum",
+      "Bacteroides fragilis",
+      "Clostridium perfringens",
+      "Peptostreptococcus spp."
+    ],
+    "answer": "A",
+    "explanation": "A slender gram-negative rod with pointed ends that does not grow on 20% bile agar rules out B. fragilis group and indicates F. nucleatum."
+  },
+  {
+    "id": 1780,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A 2-month-old infant in good health was scheduled for a checkup at the pediatrician’s office. After arriving for the appointment, the mother noted white patches on the baby’s tongue and in his mouth. The baby constantly used a pacifier. What is the most likely organism causing the white patches?",
+    "options": [
+      "Cryptococcus neoformans",
+      "Candida albicans",
+      "Aspergillus fumigatus",
+      "None of these options"
+    ],
+    "answer": "B",
+    "explanation": "C. albicans is the common cause of oral thrush involving the mucocutaneous membranes of the mouth. C. albicans is part of the normal flora of skin, mucous membranes, and the gastrointestinal tract."
+  },
+  {
+    "id": 1781,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A 69-year-old male patient who was a cigarette smoker visited the doctor’s office complaining of a cough and congestion of the lungs. Routine cultures of early morning sputum for bacteria and AFB revealed no pathogens. A fungal culture grew the following on Sabouraud dextrose agar after 3 days: Hyphae = Septate with dichotomous branching Spores = Produced by conidial heads with numerous conidia Colonies = Velvety or powdery, white at first, then turning dark greenish to gray (reverse = white to tan) Vesicle = Holding phialides usually on upper two-thirds only What is the most likely identification?",
+    "options": [
+      "Aspergillus niger",
+      "Lichthemia (Absidia) spp.",
+      "Mucor spp.",
+      "Aspergillus fumigatus"
+    ],
+    "answer": "D",
+    "explanation": "A. fumigatus is the cause of aspergillosis and involves the organism colonizing the mucous plugs in the lung. This is called allergic aspergillosis and is characterized by a high titer of IgE antibody to Aspergillus. Invasive aspergillosis seen in patients with neutropenia exhibits sinusitis and is disseminated throughout the body."
+  },
+  {
+    "id": 1782,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A young male patient with a fungus of the feet visited the podiatrist seeking relief from the itching. A culture specimen was sent to the microbiology laboratory that grew after 8 days on Sabouraud dextrose agar. Colonies were powdery pink with concentric and radial folds, with the reverse side showing brownish-tan to red. Other observations were as follows: Hyphae = Septate Urease = + Macroconidia = Cigar shaped, thin walled with 1 to 6 cells Microconidia = Round and clustered on branched conidiophores Red pigment on cornmeal (1% dextrose) = Neg In vitro hair perforation = + The most likely identification is:",
+    "options": [
+      "Trichophyton mentagrophytes",
+      "Trichophyton rubrum",
+      "Candida albicans",
+      "Aspergillus niger"
+    ],
+    "answer": "A",
+    "explanation": "T. mentagrophytes, a common cause of athletes’ foot, is sometimes confused with T. rubrum, the most common dermatophyte to infect humans. The differential tests are shown in the following chart. {{table}}",
+    "explanationTables": [
+      {
+        "rows": [
+          [
+            "",
+            "Urease",
+            "In Vitro Hair Perforation Test",
+            "Red Pigment on Cornmeal Agar"
+          ],
+          [
+            "T. mentagrophytes",
+            "+",
+            "+",
+            "Neg"
+          ],
+          [
+            "T. rubrum",
+            "Neg or weak",
+            "Neg",
+            "+"
+          ]
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": 1783,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A 79-year-old female nursing home patient was admitted to the hospital with a fever and central nervous system dysfunction. Routine blood work and blood cultures were ordered. After 48 hours, the blood cultures showed budding yeast. The following tests performed from Sabouraud dextrose agar (after 3 days of growth) showed: Germ tube = Neg growth Birdseed agar = Brown Urease = + Pseudohyphae = Neg Blastospores =+ Chlamydoconidia Arthrospores = Neg (spores) = Neg Assimilation agar = + (dextrose, sucrose, maltose) What is the most likely identification?",
+    "options": [
+      "Candida albicans",
+      "Cryptococcus laurentii",
+      "Cryptococcus neoformans",
+      "Candida tropicalis"
+    ],
+    "answer": "C",
+    "explanation": "C. neoformans produces brown colonies on birdseed agar, is urease positive, and produces only blastospores. Immunosuppressed patients are susceptible to this organism."
+  },
+  {
+    "id": 1784,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A dehydrated 25-year-old male patient was admitted to the hospital with symptoms similar to those of chronic fatigue syndrome. Serological testing proved negative for recent streptococcal infection, EBV, and hepatitis. Which of the following viral serological tests should help with a possible diagnosis?",
+    "options": [
+      "CMV",
+      "Echovirus",
+      "RSV",
+      "Measles virus"
+    ],
+    "answer": "A",
+    "explanation": "CMV infection in young adults causes a self-limiting mononucleosis syndrome. CMV infections are common and usually self-limiting, except in neonates and immunosuppressed patients, in whom they may cause a life-threatening situation."
+  },
+  {
+    "id": 1785,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A nursing student working in the emergency department accidentally suffered a needlestick after removing an intravenous set from a suspected drug user. The best course of action, after reporting the incident to her supervisor, is to:",
+    "options": [
+      "Test the student for HIV virus if flulike symptoms develop in 2 to 4 weeks",
+      "Immediately test the patient and the student for HIV by using an EIA or ELISA test",
+      "Perform a Western blot assay on the student’s serum",
+      "Draw blood from the student only and freeze it for further testing"
+    ],
+    "answer": "B",
+    "explanation": "With the permission of the patient (state law may require him or her to sign a consent form) and after counseling of the student nurse, the appropriate course of action is to test the patient for HIV by using a screening test (EIA or ELISA). The student should also be tested for baseline values. If the HIV test result is positive for the patient, the student is administered the appropriate antiviral drug(s) immediately or within 2 hours of the incident. Confirmatory testing should be done after an initial positive HIV test result."
+  },
+  {
+    "id": 1786,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A 30-year-old female patient complained of vaginal irritation and symptoms (fever, dysuria, and inguinal lymphadenopathy) associated with STDs. Examination showed extensive lesions in the genital area. Chlamydia spp. testing, N. gonorrhoeae, and G. vaginalis cultures were negative. RPR testing was also negative. What is the next line of testing?",
+    "options": [
+      "Darkfield examination",
+      "HSV testing",
+      "Trichomonas spp. testing",
+      "Group B streptococci testing"
+    ],
+    "answer": "B",
+    "explanation": "Herpes genitalis is an infection caused by HSV-2. Symptomatic primary herpes by HSV-2 is responsible for about 85% of herpes infections. HSV-1 (causing the other 15%) does not involve recurring infections of herpes and causes fever blisters. HSV-2 causes 99% of recurrent genital herpes."
+  },
+  {
+    "id": 1787,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A patient is being seen in the emergency room for a low-grade fever, headache, and general malaise after returning from a photographic safari in Africa. The physician has requested blood analysis for malaria; the laboratory would like to have patient information regarding:",
+    "options": [
+      "Specific travel history and body temperature every 4 hours",
+      "Liver function tests and prophylactic medication history",
+      "Transfusion history and body temperature every 4 hours",
+      "Prophylactic medication history and specific travel history"
+    ],
+    "answer": "D",
+    "explanation": "If the patient has malaria and has been taking prophylaxis (often sporadically), the number of parasites on the blood smear will be reduced and examination of routine thick and thin blood films should be more exhaustive. Furthermore, specific geographic travel history may help to determine whether chloroquine-resistant P. falciparum may be a factor. Also, if the patient is immunologically naïve (no prior exposure to malaria), these patients usually come into an emergency room with a very low parasitemia and no periodicity; thus malaria may not even be suspected."
+  },
+  {
+    "id": 1788,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "Examination of a modified acid-fast–stained fecal smear reveals round structures measuring approximately 8 to 10 µm, some of which are stained and some of which are not. They do not appear to show any internal morphology. The patient is symptomatic with diarrhea, and the cause may be:",
+    "options": [
+      "Blastocystis spp.",
+      "Polymorphonuclear leukocytes",
+      "Cyclospora cayetanensis",
+      "Large yeast cells"
+    ],
+    "answer": "C",
+    "explanation": "One of the coccidian parasites, C. cayetanensis, has been implicated in cases of human diarrhea. The recommended stains are modified acid-fast stains, and the organisms are quite variable in their staining characteristics. The color can range from clear (resembling wrinkled cellophane) to red-purple. The oocysts are immature when passed (no internal morphology) and they measure about 8 to 10 μm."
+  },
+  {
+    "id": 1789,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A patient has been diagnosed as having amebiasis but continues to be asymptomatic. The physician has asked for an explanation and recommendations regarding follow-up. Suggestions should include:",
+    "options": [
+      "Consideration of Entamoeba histolytica versus Entamoeba dispar",
+      "A request for an additional three stools for culture",
+      "Initiating therapy, regardless of the patient’s asymptomatic status",
+      "Performance of barium x-ray studies"
+    ],
+    "answer": "A",
+    "explanation": "It is now well established that E. histolytica is being used to designate the true pathogenic species, whereas E. dispar is now being used to designate nonpathogenic species. Unless trophozoites containing ingested RBCs (E. histolytica) are seen, the two organisms cannot be differentiated on the basis of morphology. On the basis of this information, there are now two separate species, only one of which (E. histolytica) is pathogenic. Because this patient is asymptomatic, the organisms seen in the fecal smears are probably E. dispar (nonpathogen); the laboratory report should have said “Entamoeba histolytica/Entamoeba dispar”—unable to differentiate on the basis of morphology unless trophozoites are seen to contain ingested RBCs (E. histolytica— true pathogen). Immunoassays and real time PCR can differentiate the true pathogen, E. histolytica, from nonpathogenic species of Entamoeba, and are more sensitive and specific than microscopic examination alone."
+  },
+  {
+    "id": 1790,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "Although a patient is strongly suspected of having giardiasis and is still symptomatic, three routine stool examinations (O&P examination) have been performed correctly and reported as negative. Biopsy confirmed the patient had giardiasis. Reasons for these findings may include:",
+    "options": [
+      "The patient was coinfected with several bacterial species",
+      "Giardia lamblia (G. intestinalis, G. duodenalis) tends to adhere to the mucosal surface and more than three stool examinations may be required to confirm a suspected infection",
+      "The organisms present did not stain with trichrome stain, and therefore the morphology is very atypical",
+      "Special diagnostic procedures, such as the Knott concentration and nutrient-free agar cultures, should have been used"
+    ],
+    "answer": "B",
+    "explanation": "It is well known that G. lamblia (G. intestinalis, G. duodenalis) trophozoites adhere to the intestinal mucosal surface by means of the sucking disk. Although a patient may have giardiasis and be symptomatic, confirmation of the infection from stool examinations may require more than the routine three stools or may require the examination of duodenal contents. These organisms are shed very sporadically. Two fecal immunoassays may be required to diagnose giardiasis; this also relates to sporadic shedding. The need for two fecal immunoassays does not apply to cryptosporidiosis; a single immunoassay is sufficient."
+  },
+  {
+    "id": 1791,
+    "section": "Microbiology and Parasitology Problem-Solving",
+    "chapter": "Microbiology",
+    "question": "A transplant recipient is currently receiving steroids. The patient is now complaining of abdominal pain and has symptoms of pneumonia and positive blood cultures with gram-negative rods. The individual has been living in the United States for 20 years but grew up in Central America. The most likely parasite causing these symptoms is:",
+    "options": [
+      "Trypanosoma brucei rhodesiense",
+      "Giardia lamblia (G. intestinalis, G. duodenalis)",
+      "Strongyloides stercoralis",
+      "Schistosoma japonicum"
+    ],
+    "answer": "C",
+    "explanation": "Although infection with S. stercoralis may have been acquired in Central America many years before, the patient may have remained asymptomatic while the infection was maintained at a low level in the body via the autoinfective portion of the life cycle. As the patient became more immunosuppressed (steroids), the life cycle began to reactivate with penetration of the larvae through the intestinal wall (abdominal pain) and larval migration through the lungs (pneumonia), and the patient may have presented with evidence of sepsis (often with gram-negative bacteria carried with the larvae as they penetrate the intestinal wall). In patients who become immunosuppressed, the life cycle of Strongyloides may be reactivated, and this results in serious illness (e.g., hyperinfection syndrome, disseminated disease); this can occur many years after the initial infection and after the patient has left the endemic area."
   }
 ];

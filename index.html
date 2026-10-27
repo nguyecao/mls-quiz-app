@@ -449,6 +449,9 @@
   }
   .q-table tbody tr:last-child td{border-bottom:none;}
   .q-table tbody td:first-child{font-weight:600;}
+  .explanation-body .q-table-wrap{margin:10px 0 12px 0;white-space:normal;}
+  .explanation-body > span{display:block;}
+  .explanation-body > span + .q-table-wrap{margin-top:10px;}
   .q-table-note{
     margin:0;
     padding:8px 12px;
@@ -1183,6 +1186,11 @@
         explanation: item.explanation ? String(item.explanation) : ""
       });
       if (typeof item.image === "string" && item.image.indexOf("data:image/") === 0) out[out.length-1].image = item.image;
+      if (Array.isArray(item.explanationTables) && item.explanationTables.length){
+        out[out.length-1].explanationTables = item.explanationTables.filter(function(t){ return t && Array.isArray(t.rows) && t.rows.length; }).map(function(t){
+          return { rows: t.rows.map(function(r){ return Array.isArray(r) ? r.map(String) : []; }), note: t.note ? String(t.note) : "" };
+        });
+      }
       if (item.table && Array.isArray(item.table.rows) && item.table.rows.length){
         out[out.length-1].table = {
           rows: item.table.rows.map(function(r){ return Array.isArray(r) ? r.map(String) : []; }),
@@ -1350,9 +1358,11 @@
     '</div>';
   }
 
-  function tableHtml(q){
-    if (!q.table || !q.table.rows || !q.table.rows.length) return "";
-    var rows = q.table.rows;
+  function tableHtml(q){ return tableObjHtml(q.table); }
+
+  function tableObjHtml(t){
+    if (!t || !t.rows || !t.rows.length) return "";
+    var rows = t.rows;
     var html = '<div class="q-table-wrap"><table class="q-table"><thead><tr>';
     rows[0].forEach(function(c){ html += '<th scope="col">' + escapeHtml(c) + '</th>'; });
     html += '</tr></thead><tbody>';
@@ -1362,7 +1372,7 @@
       html += '</tr>';
     }
     html += '</tbody></table>';
-    if (q.table.note) html += '<p class="q-table-note">' + escapeHtml(q.table.note) + '</p>';
+    if (t.note) html += '<p class="q-table-note">' + escapeHtml(t.note) + '</p>';
     html += '</div>';
     return html;
   }
@@ -1380,6 +1390,22 @@
     html += figureHtml(q);
     if (hasTable) html += tableHtml(q);
     if (tail) html += '<h2 class="q-stem">' + escapeHtml(tail) + '</h2>';
+    return html;
+  }
+
+  /* explanation text; a "{{table}}" marker is replaced, in order, by the entries
+     of q.explanationTables */
+  function explanationBodyHtml(q){
+    var text = String(q.explanation || "");
+    var tabs = q.explanationTables || [];
+    if (text.indexOf("{{table}}") === -1 || !tabs.length) return escapeHtml(text.split("{{table}}").join(" ").trim());
+    var parts = text.split("{{table}}");
+    var html = "";
+    parts.forEach(function(p, i){
+      var t = p.trim();
+      if (t) html += '<span>' + escapeHtml(t) + '</span>';
+      if (i < parts.length - 1 && tabs[i]) html += tableObjHtml(tabs[i]);
+    });
     return html;
   }
 
@@ -1423,7 +1449,7 @@
       explanationHtml =
         '<div class="explanation">' +
           '<div class="explanation-verdict ' + verdictClass + '">' + verdictIcon + '<span>' + verdictText + '</span></div>' +
-          '<div class="explanation-body">' + (q.explanation ? escapeHtml(q.explanation) : "<em>No rationale provided for this question.</em>") + '</div>' +
+          '<div class="explanation-body">' + (q.explanation ? explanationBodyHtml(q) : "<em>No rationale provided for this question.</em>") + '</div>' +
           (answered.correct ? "" :
             '<button type="button" class="retry-inline-btn" id="retryInlineBtn">' + iconRetry() + ' Try this question again</button>') +
         '</div>';
