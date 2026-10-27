@@ -1,9 +1,9 @@
 # MedLab Boards — Quiz App
 
 A self-contained, single-page quiz app for practicing multiple-choice board-exam
-questions, pre-loaded with **1,266 questions** across five chapters:
+questions, pre-loaded with **1,791 questions** across six chapters:
 Hematology, Hemostasis & Coagulation, Urinalysis & Body Fluids, Immunology,
-and Clinical Chemistry.
+Clinical Chemistry, and Microbiology.
 
 No build step, no server-side code, no dependencies to install — it's just
 HTML, CSS, and JavaScript that runs entirely in your browser.
@@ -13,7 +13,7 @@ HTML, CSS, and JavaScript that runs entirely in your browser.
 | File            | What it is                                                         |
 |-----------------|--------------------------------------------------------------------|
 | `index.html`    | The app itself — layout, styling, and all quiz logic.              |
-| `questions.js`  | The default question bank (1,266 questions) as a plain JS array.   |
+| `questions.js`  | The default question bank (1,791 questions) as a plain JS array.   |
 | `README.md`     | This file.                                                         |
 
 `questions.md` and `questions.txt` are identical copies of `questions.js`
@@ -29,7 +29,7 @@ loads `questions.js` alongside it.
 ### Option 1 — Just open it (fastest)
 
 Double-click `index.html`, or drag it into your browser window. The quiz loads
-immediately with all 1,266 questions. Works in Chrome, Firefox, Safari, and
+immediately with all 1,791 questions. Works in Chrome, Firefox, Safari, and
 Edge.
 
 ### Option 2 — Run it through a local web server (recommended)
@@ -103,9 +103,12 @@ Optional extras:
 - `"table"`: `{ "rows": [["Header 1", "Header 2"], ["a", "b"]], "note": "optional footnote" }`.
   The first row is the header. Put `{{table}}` in the question text to place
   the table in the middle of it; otherwise it appears right after the question.
+- `"explanationTables"`: a list of tables (same shape as `table`) for the
+  explanation. Each `{{table}}` in the explanation text is replaced, in order,
+  by the next entry.
 
 Use "Use sample bank instead" in the import dialog to switch back to the
-built-in 1,266 questions at any time.
+built-in 1,791 questions at any time.
 
 ## Notes
 
@@ -115,5 +118,6 @@ built-in 1,266 questions at any time.
 - Progress, flags, and any imported bank are saved in your browser's local
   storage. Clearing your browser's site data for this page resets everything.
 - Question numbers 1–511 are unchanged from the earlier version, so progress
-  you already saved still lines up; the new Immunology and Clinical Chemistry
-  questions are numbered 512–1266.
+  you already saved still lines up; the Immunology and Clinical Chemistry
+  questions are numbered 512–1266, and the new Microbiology questions are
+  numbered 1267–1791.
