@@ -71,6 +71,19 @@ two different sites, so each keeps its own progress.
   enlarge. Some questions include a data table.
 - The bar-chart icon opens an accuracy breakdown by topic.
 
+## Figures and tables in the original bank
+
+The 130 original-bank questions that rely on a figure, graph or table
+(scatterplots and histograms, chromatograms, electrophoresis tracings, lab
+result tables and lists of biochemical reactions) now show a full-size image
+cropped directly from the Harr 5th Edition PDFs, placed where `{{table}}`
+appears in the question text, instead of text pasted from the PDF. A few short
+result tables (11 questions, e.g. 162, 300, 707, 1225, 1262) are typed tables
+that the app draws as a native table, because the PDF clipped them at the page
+edge or they read better that way. Exponents and subscripts (10⁹/L, B₁₂,
+Hgb A₂) were also restored in about 160 other stems and options. Explanation
+text and explanation tables are unchanged.
+
 ## Loading your own questions
 
 Click the upload icon to import your own question bank as a JSON file. The
