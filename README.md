@@ -121,3 +121,27 @@ built-in 1,791 questions at any time.
   you already saved still lines up; the Immunology and Clinical Chemistry
   questions are numbered 512–1266, and the new Microbiology questions are
   numbered 1267–1791.
+
+## Switching between the two question banks
+
+If `questions.js` and `questions_boc.js` both sit next to `index.html`, the app
+shows an **Original | BOC 7th Ed.** switch at the top of the page. Tap it to
+change banks at any time. Your score, flags and place in each bank are kept
+separately, and the choice is remembered the next time you open the app.
+Resetting progress only clears the bank you are currently in. If
+`questions_boc.js` is missing, the switch is simply hidden and the app runs
+with the original bank.
+
+`questions_boc.js` (2,469 questions from the BOC Study Guide, 7th Edition) uses
+exactly the same format as `questions.js`. Tables, charts and figures in the
+question stems are embedded as images (`"image"`, placed where `{{table}}`
+appears in the question text). To use only one bank, delete or rename the other
+file (or remove its `<script src=...>` line in `index.html`).
+
+- BOC question ids start at 10001, so they never collide with the original
+  bank's ids.
+- Urinalysis & Body Fluids questions 154–246 are not in the PDF (only their
+  answers are), so they are omitted.
+- Explanation figures from the answer section are not included; "MLS only"
+  tags are not shown. The text was OCR'd from a scanned PDF, so a stray
+  character here and there is possible.

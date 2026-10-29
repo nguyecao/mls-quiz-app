@@ -232,6 +232,34 @@
     scrollbar-width:none;
   }
   .tabbar::-webkit-scrollbar{display:none;}
+  .bank-switch{
+    display:flex;
+    padding:3px;
+    gap:3px;
+    border-radius:11px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    margin-bottom:10px;
+  }
+  .bank-switch[hidden]{display:none;}
+  .bank-btn{
+    flex:1 1 0;
+    min-width:0;
+    padding:8px 10px;
+    border:none;
+    border-radius:8px;
+    background:transparent;
+    color:var(--text-muted);
+    font-size:13px;
+    font-weight:700;
+    cursor:pointer;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .bank-btn:hover{color:var(--text);}
+  .bank-btn.active{background:var(--accent);color:var(--accent-contrast);}
+  .bank-btn .bank-count{font-weight:500;opacity:.8;margin-left:4px;}
   .tab-btn{
     white-space:nowrap;
     padding:7px 13px;
@@ -902,6 +930,7 @@
   </header>
 
   <div class="controls">
+    <div class="bank-switch" id="bankSwitch" role="group" aria-label="Question bank" hidden></div>
     <div class="tabbar" id="chapterTabs"></div>
 
     <div class="controls-row2">
@@ -1070,6 +1099,25 @@
 
 <script src="questions.js" charset="utf-8"></script>
 <script>
+/* Question banks: each bank file sets window.QUIZ_DEFAULT_QUESTIONS; collect them as they load. */
+window.QUIZ_BANKS = [];
+(function(){
+  if (Array.isArray(window.QUIZ_DEFAULT_QUESTIONS)) {
+    window.QUIZ_BANKS.push({ key: "original", label: "Original", questions: window.QUIZ_DEFAULT_QUESTIONS });
+  }
+  window.QUIZ_DEFAULT_QUESTIONS = undefined;
+})();
+</script>
+<script src="questions_boc.js" charset="utf-8"></script>
+<script>
+(function(){
+  if (Array.isArray(window.QUIZ_DEFAULT_QUESTIONS)) {
+    window.QUIZ_BANKS.push({ key: "boc", label: "BOC 7th Ed.", questions: window.QUIZ_DEFAULT_QUESTIONS });
+  }
+  window.QUIZ_DEFAULT_QUESTIONS = window.QUIZ_BANKS.length ? window.QUIZ_BANKS[0].questions : [];
+})();
+</script>
+<script>
 (function(){
   "use strict";
 
@@ -1080,6 +1128,9 @@
     questions: [],
     usingCustom: false,
     customLabel: "",
+    bank: "",
+    lastQ: {},
+    stash: null,
     progress: {},
     flags: {},
     filterChapter: "All",
@@ -1102,7 +1153,7 @@
      "copySchemaLabel","useSampleBtn","statsOverlay","statsCloseBtn","statSummaryGrid","sectionStatsList",
      "toast","brandSub","confirmOverlay","confirmTitle","confirmMessage","confirmCloseBtn","confirmCancelBtn",
      "confirmOkBtn","missedToggle","missedToggleLabel","missedOverlay","missedCloseBtn","missedList",
-     "lightboxOverlay","lightboxImg","lightboxCloseBtn"
+     "lightboxOverlay","lightboxImg","lightboxCloseBtn","bankSwitch"
      ].forEach(function(id){ el[id] = $(id); });
   }
 
@@ -1125,7 +1176,10 @@
         filterSection: state.filterSection,
         flaggedOnly: state.flaggedOnly,
         usingCustom: state.usingCustom,
-        customLabel: state.customLabel
+        customLabel: state.customLabel,
+        bank: state.bank,
+        lastQ: lastQSnapshot(),
+        stash: state.stash
       };
       if (state.usingCustom) {
         var json = JSON.stringify(state.questions);
@@ -1133,6 +1187,67 @@
       }
       localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
     } catch(e){ /* storage unavailable or full — ignore, app still works in-memory */ }
+  }
+
+  /* ---------------- question banks ---------------- */
+  function getBanks(){
+    var b = window.QUIZ_BANKS;
+    if (Array.isArray(b) && b.length) return b;
+    return [{ key: "original", label: "Original", questions: window.QUIZ_DEFAULT_QUESTIONS || [] }];
+  }
+  function getBank(key){
+    var banks = getBanks();
+    for (var i = 0; i < banks.length; i++) if (banks[i].key === key) return banks[i];
+    return banks[0];
+  }
+  function lastQSnapshot(){
+    var q = currentQuestion();
+    if (q && state.bank && !state.usingCustom) state.lastQ[state.bank] = q.id;
+    return state.lastQ;
+  }
+  function renderBankSwitch(){
+    var banks = getBanks();
+    if (banks.length < 2){ el.bankSwitch.hidden = true; return; }
+    el.bankSwitch.hidden = false;
+    el.bankSwitch.innerHTML = "";
+    banks.forEach(function(b){
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "bank-btn" + (!state.usingCustom && b.key === state.bank ? " active" : "");
+      btn.setAttribute("data-bank", b.key);
+      btn.setAttribute("aria-pressed", (!state.usingCustom && b.key === state.bank) ? "true" : "false");
+      btn.appendChild(document.createTextNode(b.label));
+      var c = document.createElement("span");
+      c.className = "bank-count";
+      c.textContent = b.questions.length.toLocaleString();
+      btn.appendChild(c);
+      btn.addEventListener("click", function(){ switchBank(b.key); });
+      el.bankSwitch.appendChild(btn);
+    });
+  }
+  function switchBank(key){
+    if (key === state.bank && !state.usingCustom) return;
+    lastQSnapshot();
+    var bank = getBank(key);
+    state.bank = bank.key;
+    state.questions = bank.questions.slice();
+    state.usingCustom = false;
+    state.customLabel = "";
+    state.filterChapter = "All";
+    state.filterSection = "All";
+    state.flaggedOnly = false;
+    state.shuffleActive = false;
+    buildChapterTabs();
+    buildSectionSelect();
+    applyFilter(true);
+    var want = state.lastQ[bank.key];
+    if (want != null){
+      var idx = state.order.findIndex(function(q){ return q.id === want; });
+      if (idx >= 0) state.currentPos = idx;
+    }
+    renderAll();
+    persist();
+    showToast("Switched to " + bank.label + " (" + bank.questions.length.toLocaleString() + " questions).");
   }
 
   /* ---------------- hot state (open viewers keep progress across republish) ---------------- */
@@ -1147,6 +1262,9 @@
       currentQId: currentQuestion() ? currentQuestion().id : null,
       usingCustom: state.usingCustom,
       customLabel: state.customLabel,
+      bank: state.bank,
+      lastQ: lastQSnapshot(),
+      stash: state.stash,
       customQuestions: state.usingCustom ? state.questions : null
     };
   }
@@ -1555,6 +1673,7 @@
   }
 
   function renderAll(){
+    renderBankSwitch();
     renderQuestion();
     renderNav();
     renderJumpControls();
@@ -1713,11 +1832,22 @@
   }
 
   function loadBank(questions, isCustom, label){
+    lastQSnapshot();
+    var wasCustom = state.usingCustom;
     state.questions = questions;
     state.usingCustom = !!isCustom;
     state.customLabel = label || "";
-    state.progress = {};
-    state.flags = {};
+    if (isCustom){
+      /* keep the built-in banks' progress aside while a custom bank is loaded */
+      if (!wasCustom) state.stash = { progress: state.progress, flags: state.flags };
+      state.progress = {};
+      state.flags = {};
+    } else {
+      var st = state.stash;
+      state.progress = (st && st.progress) || (wasCustom ? {} : state.progress);
+      state.flags = (st && st.flags) || (wasCustom ? {} : state.flags);
+      state.stash = null;
+    }
     state.filterChapter = "All";
     state.filterSection = "All";
     state.flaggedOnly = false;
@@ -1755,8 +1885,10 @@
         "Reset progress?",
         "This clears your score, answered questions, and flags for the current question bank. It can't be undone.",
         function(){
-          state.progress = {};
-          state.flags = {};
+          state.questions.forEach(function(q){
+            delete state.progress[q.id];
+            delete state.flags[q.id];
+          });
           persist();
           renderAll();
           showToast("Progress reset.");
@@ -1806,13 +1938,13 @@
     el.importCloseBtn.addEventListener("click", closeImportModal);
     el.importOverlay.addEventListener("click", function(e){ if (e.target === el.importOverlay) closeImportModal(); });
     el.useSampleBtn.addEventListener("click", function(){
-      loadBank(window.QUIZ_DEFAULT_QUESTIONS.slice(), false, "");
+      loadBank(getBank(state.bank).questions.slice(), false, "");
       closeImportModal();
-      showToast("Restored the sample question bank.");
+      showToast("Restored the " + getBank(state.bank).label + " question bank.");
     });
     el.restoreDefaultBtn.addEventListener("click", function(){
-      loadBank(window.QUIZ_DEFAULT_QUESTIONS.slice(), false, "");
-      showToast("Restored the sample question bank.");
+      loadBank(getBank(state.bank).questions.slice(), false, "");
+      showToast("Restored the " + getBank(state.bank).label + " question bank.");
     });
 
     el.dropzone.addEventListener("click", function(){ el.fileInput.click(); });
@@ -1884,8 +2016,13 @@
       state.usingCustom = true;
       state.customLabel = seed.customLabel || "imported bank";
     } else {
-      state.questions = (window.QUIZ_DEFAULT_QUESTIONS || []).slice();
+      var bank = getBank(seed && seed.bank);
+      state.bank = bank.key;
+      state.questions = bank.questions.slice();
     }
+    if (!state.bank) state.bank = getBank(seed && seed.bank).key;
+    state.stash = (seed && seed.stash) || null;
+    state.lastQ = (seed && seed.lastQ && typeof seed.lastQ === "object") ? seed.lastQ : {};
     state.progress = (seed && seed.progress) || {};
     state.flags = (seed && seed.flags) || {};
     state.filterChapter = (seed && seed.filterChapter) || "All";
